@@ -11,7 +11,7 @@
 | MEX6815-3     | 8K Dynamic RAM            |               |
 |               | 16K Static RAM            | MEX6816-22S   |
 | MEX6816-1 HR  | 16K Hidden Refresh RAM    |               |
-| MEX6816-1     | 16K Dynamic RAM           | MEX6816-22D   |
+| MEX6816-1     | 16K Dynamic RAM           | [MEX6816-22D](../images/MEX6816-22D.1.png)    |
 | MEX6832-1 HR  | 32K Hidden Refresh RAM    |               |
 |               | 32K Dynamic RAM           | MEX6832-22    |
 | MEX6848-1 HR  | 48K Hidden Refresh RAM    |               |
