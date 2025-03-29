@@ -42,11 +42,10 @@
 |---	        |---	|
 | MEX6808-22    | 8K Static RAM   |
 | MEX6816-22S   | 16K Static RAM  |
-| :white_check_mark: [MEX6816-22D](../images/MEX6816-22D.1.png)   | 16K Dynamic RAM  |
+| :white_check_mark: [MEX6816-22D](MEX6816-22D.md)   | 16K Dynamic RAM  |
 | MEX6832-22    | 32K Dynamic RAM |
 | MEX6848-22    | 48K Dynamic RAM |
 | MEX6864-22    | 64K Dynamic RAM |
-:white_check_mark: [MEX6816-22D](../images/MEX6816-22D.1.png)    |
 
 
 ### I/O Add-Ons
