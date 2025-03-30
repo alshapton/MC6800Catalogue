@@ -4,6 +4,6 @@
 
 | Part Number   | Name      | Comments |
 |---             |---           |--                    |
-| N/A | MPU Vocabulary (First Edition 1977)| :white_check_mark: [MPU Vocabulary](../../images/MPU_Vocabulary.1.png) |
+| :white_check_mark: [MPU Vocabulary](../../images/MPU_Vocabulary.1.png) | MPU Vocabulary (First Edition 1977)|  |
 
 

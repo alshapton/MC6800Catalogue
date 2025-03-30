@@ -2,7 +2,7 @@
 
 ### Options
 
-| Part      	| Name   	|
+| Part Number      	| Name   	|
 |---	        |---	                    |
 | M68MM06       | 2K Static RAM  	        |
 | MEX6812-1     | 2K Static RAM  	        |
@@ -18,14 +18,14 @@
 
 ### I/O Add-Ons
 
-| Part	            | Name  	| 
+| Part Number            | Name  	| 
 |---	        |---	    |
 | MEX6820       | PIA Module with four 8-bit I/O <br /> ports for parallel-oriented peripherals  |
 | MEX6850       | ACIA Module  |
 
 ### Auxilliary Modules
 
-| Part	            | Name| 
+| Part Number	            | Name| 
 |---	        |---	|
 | MEX68PP3A/B/M | PROM Programmer  |
 | MEX68USM      | Universal Support Module to <br /> support 6800 family of devices |
@@ -38,11 +38,11 @@
 ### Options
 
 
-| Part	            | Name| 
+| Part Number	            | Name| 
 |---	        |---	|
 | MEX6808-22    | 8K Static RAM   |
 | MEX6816-22S   | 16K Static RAM  |
-| :white_check_mark: [MEX6816-22D](MEX6816-22D.md)   | 16K Dynamic RAM  |
+| :white_check_mark: [MEX6816-22D](@MEX6816-22D.md)   | 16K Dynamic RAM  |
 | MEX6832-22    | 32K Dynamic RAM |
 | MEX6848-22    | 48K Dynamic RAM |
 | MEX6864-22    | 64K Dynamic RAM |
@@ -50,14 +50,14 @@
 
 ### I/O Add-Ons
 
-| Part	            | Name  	| 
+| Part Number	            | Name  	| 
 |---	        |---	    |
 | MEX6821-2      | PIA Module with four 8-bit I/O <br /> ports for parallel-oriented peripherals  |
 | MEX6850-2       | ACIA Module  |
 
 ### Auxilliary Modules
 
-| Part	            | Name| 
+| Part Number	            | Name| 
 |---	        |---	|
 | PROM Programmer  | MEX68PP3A/B/M  |
 | Universal Support Module to <br /> support 6800 family of devices | MEX68USM  |
