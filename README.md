@@ -14,7 +14,7 @@ The following categories are available:
 
 ## Collection
 
-There are items in the collection which are detailed here which increase over time.
+There are items in the collection which are detailed here which increase over time. The collection can be found [here](collection.md)
 
 ## Conventions Used
 
