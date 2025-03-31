@@ -6,7 +6,7 @@ import glob
 import time
 import os
 
-# Find all .txt files in the current directory and subdirectories
+# Find all .md files in the current directory and subdirectories
 files = glob.glob('**/*.md', recursive=True)
 with open("collection.md","w") as c:
     c.write ('# Collection of Motorola MC6800 artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
@@ -23,6 +23,8 @@ with open("collection.md","w") as c:
             with open(file) as f:
                 type = os.path.dirname(file)
                 match type:
+                    case "Documents/Reference":
+                        doc_type = "Reference Manual"
                     case "Documents/Datasheets":
                         doc_type = "Datasheet"
                     case "Documents/ReferenceCards":
