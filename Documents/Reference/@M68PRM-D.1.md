@@ -4,9 +4,9 @@
 
 ### Collection Information
 
-| Component | Datasheet |
-|--         |--         |
-| :white_check_mark: 05-DEC-2024 | N/A |
+| Acquired |
+|--         |
+| :white_check_mark: 05-DEC-2024 |
 
 
 
