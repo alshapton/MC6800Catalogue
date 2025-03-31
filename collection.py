@@ -34,7 +34,9 @@ with open("collection.md","w") as c:
                     case "software":
                         doc_type = "Software"
                     case "Hardware/EXORciser":
-                        doc_type = "Hardware"
+                        doc_type = "Exorciser Hardware"
+                    case "Hardware/Other":
+                        doc_type = "Other Hardware"
                     case _:
                         doc_type = " "
                 doc_type = doc_type + "|"

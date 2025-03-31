@@ -7,6 +7,7 @@ This is a catalogue of the items produced by Motorola in the MC6800 Range of CPU
 The following categories are available:
 
 * [Development Systems](Hardware/EXORciser/index.md)
+* [Other Hardware](Hardware/Other/index.md)
 * [Reference Manuals](Documents/Reference/index.md)
 * [Reference Cards](Documents/ReferenceCards/index.md)
 * [Generic Documents](Documents/Generic/index.md)
