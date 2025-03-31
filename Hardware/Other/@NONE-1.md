@@ -1,15 +1,16 @@
 # Motorola HEP Kit Educator II           
-|<img src="/images/hk1000.1.jpg" width="200">|<img src="/images/hk1000.2.jpg" width="200"> | <img src="/images/hk1000.3.jpg" width="200">|
 
-|<img src="/images/hk1000.4.jpg" width="200">|<img src="/images/hk1000.5.jpg" width="200"> | <img src="/images/hk1000.6.jpg" width="200">|
+ <img src="/images/hk1000.1.jpg" width="200"> <img src="/images/hk1000.2.jpg" width="200">   <img src="/images/hk1000.3.jpg" width="200"> 
 
-|<img src="/images/hk1000.7.jpg" width="200">|<img src="/images/hk1000.8.jpg" width="200"> | <img src="/images/hk1000.9.jpg" width="200">|
+ <img src="/images/hk1000.4.jpg" width="200"> <img src="/images/hk1000.5.jpg" width="200">   <img src="/images/hk1000.6.jpg" width="200"> 
 
-|<img src="/images/hk1000.10.jpg" width="200">|<img src="/images/hk1000.11.jpg" width="200"> | <img src="/images/hk1000.12.jpg" width="200">|
+ <img src="/images/hk1000.7.jpg" width="200"> <img src="/images/hk1000.8.jpg" width="200">   <img src="/images/hk1000.9.jpg" width="200"> 
 
-|<img src="/images/hk1000.13.jpg" width="200">|<img src="/images/hk1000.14.jpg" width="200"> | <img src="/images/hk1000.15.jpg" width="200">|
+ <img src="/images/hk1000.10.jpg" width="200"> <img src="/images/hk1000.11.jpg" width="200">   <img src="/images/hk1000.12.jpg" width="200"> 
 
-|--         |--- |---  |
+ <img src="/images/hk1000.13.jpg" width="200"> 
+
+
 ### Notes
 
 From the June 1977 issue of IEEE Computer magazine:
@@ -25,7 +26,7 @@ From the June 1977 issue of IEEE Computer magazine:
 
 ### Collection Information
 
-| Component | Datasheet |
+  Component | Datasheet |
 |--         |--         |
 | N/A | N/A |
 
