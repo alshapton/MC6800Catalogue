@@ -25,13 +25,15 @@ with open("collection.md","w") as c:
                 match type:
                     case "Documents/Reference":
                         doc_type = "Reference Manual"
+                    case "Documents/Reference":
+                        doc_type = "Reference Manual"
                     case "Documents/Datasheets":
                         doc_type = "Datasheet"
                     case "Documents/ReferenceCards":
                         doc_type = "Reference Card" 
                     case "Documents/Generic":
                         doc_type = "Generic Document"
-                    case "software":
+                    case "Software":
                         doc_type = "Software"
                     case "Hardware/EXORciser":
                         doc_type = "Exorciser Hardware"

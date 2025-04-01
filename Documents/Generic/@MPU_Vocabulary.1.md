@@ -4,7 +4,7 @@
 
 ### Collection Information
 
-| Aquired |
+| Acquired |
 |--         |
 | :white_check_mark: 28-MAR-2025 |
 
