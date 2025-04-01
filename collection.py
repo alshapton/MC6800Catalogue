@@ -9,10 +9,10 @@ import os
 # Find all .md files in the current directory and subdirectories
 files = glob.glob('**/*.md', recursive=True)
 with open("collection.md","w") as c:
-    c.write ('# Collection of Motorola MC6800 artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
+    c.write ('# Collection of Motorola MC6800 and related artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
 
     c.write('\n\n')
-    c.write('| File | Description | Type |\n') 
+    c.write('| Part Number | Description | Type |\n') 
     c.write('|----- |------------ |--    |\n')
 
     for file in files:
