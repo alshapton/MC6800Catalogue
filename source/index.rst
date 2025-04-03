@@ -14,12 +14,14 @@ This is a catalogue of the items produced by Motorola in the MC6800 Range of CPU
 The following categories are available:
 
 - :ref:`development systems page`.
+- :ref:`Datasheets page`.
+- :ref:`generic documents page`
+- :ref:`reference documents page`
 
 * [Other Hardware](Hardware/Other/index.md)
 * [Reference Manuals](Documents/Reference/index.md)
 * [Reference Cards](Documents/ReferenceCards/index.md)
 * [Generic Documents](Documents/Generic/index.md)
-* [Datasheets](Documents/Datasheets/index.md)
 * [Software](Software/index.md)
 
 ## Collection
@@ -41,6 +43,17 @@ A :white_check_mark: symbol indicates that this item is present in the collectio
    Hardware/EXORciser/index
    Hardware/EXORciser/basic_options
    Hardware/EXORciser/@MEX6816-22D
+   Documents/Datasheets/index
+   Documents/Datasheets/@M68MM07.1
+   Documents/Datasheets/@MC6850.1
+   Documents/Datasheets/@M68ADS.1
+   Documents/Datasheets/@M68ADS-1.1
+   Documents/Generic/index
+   Documents/Generic/@MPU_Vocabulary.1
+   Documents/Reference/index
+   Documents/Reference/@M68PRM-D.1
+   Documents/Reference/@NONE-1
+   Documents/Reference/@NONE-2
    
 
    
