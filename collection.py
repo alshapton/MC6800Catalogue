@@ -79,7 +79,8 @@ with open(OUTPUT_FILE,"w") as c:
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
                             description = splitline[1].strip().replace('""','"')
-                            c.write('\t' + part_number + '","' + description + ',"' + doc_type + '"\n')
+                            outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
+                            c.write(outline)
                         if target=='github':
                             doc_type = doc_type + "|"
                             splitline = line.split('|')

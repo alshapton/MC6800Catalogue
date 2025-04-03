@@ -17,11 +17,9 @@ The following categories are available:
 - :ref:`Datasheets page`.
 - :ref:`generic documents page`
 - :ref:`reference documents page`
+- :ref:`reference cards page`
 
 * [Other Hardware](Hardware/Other/index.md)
-* [Reference Manuals](Documents/Reference/index.md)
-* [Reference Cards](Documents/ReferenceCards/index.md)
-* [Generic Documents](Documents/Generic/index.md)
 * [Software](Software/index.md)
 
 ## Collection
@@ -54,6 +52,13 @@ A :white_check_mark: symbol indicates that this item is present in the collectio
    Documents/Reference/@M68PRM-D.1
    Documents/Reference/@NONE-1
    Documents/Reference/@NONE-2
+   Documents/ReferenceCards/index
+   Documents/ReferenceCards/@MC6800.1
+   Documents/ReferenceCards/@MC6840.1
+   Documents/ReferenceCards/@MC6845.1
+   Documents/ReferenceCards/@MC68488.1
+
+
    
 
    
