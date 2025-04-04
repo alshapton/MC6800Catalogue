@@ -1,5 +1,7 @@
+.. _HW-OTHER-NONE-1-3:
 
-### From the June 1977 issue of IEEE Computer magazine:
+From the June 1977 issue of IEEE Computer magazine:
+===================================================
 
 >Motorola offers new NMOS microcomputer kit, Educator II
 >Motorola's HEP/MRO Operations group has introduced an 8-bit microcomputer system in kit form. Called the Educator II, the kit contains an NMOS 8-bit MPU, PIA, 128x8-bit static RAM, two TTL 512x4-bit ROMs, and a TTL clock circuit. The NMOS components are the HEP versions of the M6800 microcomputer products. Educator II utilizes the full instruction set and address modes of the MC6800 MPU. The clock frequency is approximately 625 kHz.

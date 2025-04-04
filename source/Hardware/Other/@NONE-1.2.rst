@@ -1,4 +1,8 @@
-## From the March 1978 issue of Radio-Electronics magazine:
+.. _HW-OTHER-NONE-1-2:
+
+
+From the March 1978 issue of Radio-Electronics magazine
+=======================================================
 
 >The Motorola Educator II HEP kit IS AN M6800 microcomputer system learning tool designed with future expansion in mind. Data is entered through eight toggle switches, and the system is controlled by three additional center-off, spring-loaded toggle switches. The binary data-output display consists of eight discrete LED's. A ninth LED is extinguished when the processor is running. To power the unit an external 5-volt, 1-amp supply such as the Motorola HK/001 is required. A beginner should start out by confronting data and instructions on a bit-by-bit basis with the toggle switches. As he advances, the computerist will seek more convenient modes of operation, and can add more sophisticated keyboard and display systems through two 44-pin edge connectors.
 >The Educator 11 microcomputer board uses a HEP version of the M6800 (HEP C4801), two IC's with 512 words of RAM that contain utility programs, 128 words of user RAM and a C4821 peripheral interface adapter (PIA) with 16 inputs and outputs, and some hand-shaking leads.

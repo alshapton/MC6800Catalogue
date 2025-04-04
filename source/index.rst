@@ -18,9 +18,9 @@ The following categories are available:
 - :ref:`generic documents page`
 - :ref:`reference documents page`
 - :ref:`reference cards page`
+- :ref:`Other hardware page`
+- :ref:`software index page`
 
-* [Other Hardware](Hardware/Other/index.md)
-* [Software](Software/index.md)
 
 ## Collection
 
@@ -57,6 +57,13 @@ A :white_check_mark: symbol indicates that this item is present in the collectio
    Documents/ReferenceCards/@MC6840.1
    Documents/ReferenceCards/@MC6845.1
    Documents/ReferenceCards/@MC68488.1
+   Hardware/Other/index
+   Hardware/Other/@NONE-1
+   Hardware/Other/@NONE-2
+   Hardware/Other/@NONE-1.3
+   Hardware/Other/@NONE-1.2
+   Software/index
+   
 
 
    
