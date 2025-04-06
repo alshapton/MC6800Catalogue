@@ -19,34 +19,24 @@ if target=='sphinx':
     OUTPUT_FILE = 'source/collection.rst'
     SUFFIX = 'rst'
     PREFIX ='source/'
-else:
-    # Target is Github
-    CHECK_MARK = ':white_check_mark:'
-    OUTPUT_FILE = 'collection.md'
-    SUFFIX = 'md'
-
 
 # Find all .md files in the current directory and subdirectories
 files = glob.glob('**/*.'+SUFFIX, recursive=True)
-print(files)
 with open(OUTPUT_FILE,"w") as c:
     if target=='sphinx':
         c.write('.. _collection page:\n\n')
-        c.write ('Collection of Motorola MC6800 and related artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
-        c.write('====================================================================')
+        c.write ('Collection\n')
+        c.write('===========')
+        c.write('\n')
+        c.write('This is the current collection (as at ' + time.strftime("%d-%m-%Y") + ') of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling\n')
         c.write('\n\n')
         c.write('.. csv-table:: \n')
         c.write('\t:header: "Part Number","Description","Type"\n')
         c.write('\t:widths: auto\n\n')
    
-    if target=='github':
-        c.write ('# Collection of Motorola MC6800 and related artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
-        c.write('\n\n')
-        c.write('| Part Number | Description | Type |\n') 
-        c.write('|----- |------------ |--    |\n')
 
     for file in files:
-        if (file != "README.md" and 
+        if (file != "README.md" 
             "collection" not in file and
             "@" not in file):
             
@@ -73,7 +63,7 @@ with open(OUTPUT_FILE,"w") as c:
                         doc_type = " "
                 
                 for line in f:
-                    if CHECK_MARK in line:
+                    if CHECK_MARK in line and 'This item is present in the collection' not in line:
 
                         if target=='sphinx':
                             splitline = line.split('","')
@@ -81,10 +71,3 @@ with open(OUTPUT_FILE,"w") as c:
                             description = splitline[1].strip().replace('""','"')
                             outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
                             c.write(outline)
-                        if target=='github':
-                            doc_type = doc_type + "|"
-                            splitline = line.split('|')
-                            part_number = splitline[1].strip().replace(CHECK_MARK,'')
-                            description = splitline[2].strip()
-                            c.write('|' + part_number + '|' + description + '|' + doc_type + '\n')
-                    
