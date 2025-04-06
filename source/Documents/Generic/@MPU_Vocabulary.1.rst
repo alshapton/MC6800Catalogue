@@ -1,3 +1,5 @@
+:orphan:
+
 .. _MPUVocabulary:
 
 Motorola MPU Vocabulary 
@@ -8,9 +10,10 @@ Motorola MPU Vocabulary
    :align: center
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

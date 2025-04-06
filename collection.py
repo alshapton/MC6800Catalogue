@@ -35,7 +35,7 @@ with open(OUTPUT_FILE,"w") as c:
         c.write ('Collection of Motorola MC6800 and related artefacts as at '+ time.strftime("%d-%m-%Y") + '\n')
         c.write('====================================================================')
         c.write('\n\n')
-        c.write('.. csv-table:: Collection Information\n')
+        c.write('.. csv-table:: \n')
         c.write('\t:header: "Part Number","Description","Type"\n')
         c.write('\t:widths: auto\n\n')
    

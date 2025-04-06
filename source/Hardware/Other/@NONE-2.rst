@@ -1,3 +1,5 @@
+:orphan:
+
 .. _HW-OTHER-NONE-2:
 
 MPU Evalution Card MC6800 Microprocessor Board     
@@ -19,9 +21,10 @@ MPU Evalution Card MC6800 Microprocessor Board
    :width: 200
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

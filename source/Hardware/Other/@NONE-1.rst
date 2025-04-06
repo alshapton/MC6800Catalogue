@@ -1,3 +1,5 @@
+:orphan:
+
 .. _HW-OTHER-NONE-1:
 
 Motorola HEP Kit Educator II
@@ -75,9 +77,10 @@ References
 :ref:`From the March 1978 issue of Radio-Electronics magazine <HW-OTHER-NONE-1-2>`
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

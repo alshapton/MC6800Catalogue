@@ -1,3 +1,5 @@
+:orphan:
+
 .. _M68ADS1:
 
 Autonomous Development System
@@ -8,9 +10,10 @@ Autonomous Development System
    :align: center
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Component","Datasheet"
    :widths: auto
 

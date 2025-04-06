@@ -1,3 +1,5 @@
+:orphan:
+
 .. _HW-OTHER-NONE-1-3:
 
 From the June 1977 issue of IEEE Computer magazine:

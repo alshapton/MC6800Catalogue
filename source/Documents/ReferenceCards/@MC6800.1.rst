@@ -1,3 +1,5 @@
+:orphan:
+
 .. _REF-MC6800-1:
 
 M6800 Microprocessor Instruction Set Summary
@@ -7,9 +9,10 @@ M6800 Microprocessor Instruction Set Summary
    :width: 400
    :align: center
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

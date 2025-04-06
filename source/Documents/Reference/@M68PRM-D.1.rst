@@ -1,3 +1,5 @@
+:orphan:
+
 .. _M68PRM-D:
 
 M6800 Programming Reference Manual
@@ -8,9 +10,10 @@ M6800 Programming Reference Manual
    :align: center
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

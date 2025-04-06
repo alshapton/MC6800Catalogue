@@ -1,3 +1,5 @@
+:orphan:
+
 .. _NONE-2:
 
 Microprocessor Applications Manual
@@ -8,9 +10,10 @@ Microprocessor Applications Manual
    :align: center
 
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

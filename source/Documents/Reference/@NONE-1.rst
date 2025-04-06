@@ -1,3 +1,5 @@
+:orphan:
+
 .. _NONE-1:
 
 Motorola Microcomputer System Design Data Manual
@@ -9,10 +11,9 @@ Motorola Microcomputer System Design Data Manual
 .. image:: ../../images/MicroComputerSystemDesignDataManual.2.png
    :width: 400
 
+.. rubric:: Collection Information
 
-Collection Information
-
-.. csv-table:: Collection Information
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

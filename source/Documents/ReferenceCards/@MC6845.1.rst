@@ -1,3 +1,5 @@
+:orphan:
+
 .. _REF-MC6845-1:
 
 MC6845 Cathode Ray Tube Controller Programming Reference Card
@@ -7,9 +9,10 @@ MC6845 Cathode Ray Tube Controller Programming Reference Card
    :width: 400
    :align: center
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

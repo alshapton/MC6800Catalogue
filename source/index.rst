@@ -5,7 +5,6 @@
 
 Motorola MC6800 Family Product Catalogue documentation
 ======================================================
-# Catalogue
 
 .. image:: ./images/mc6800logo.jpeg
 
@@ -22,19 +21,27 @@ The following categories are available:
 - :ref:`software index page`
 
 
-## Collection
+Collection
+==========
 
 There are items in the collection which are detailed here which increase over time. The collection can be found on the :ref:`collection page`.
 
-## Conventions Used
+Conventions Used
+================ 
 
-Where the phrase "Advance?" is used, it is synonymous with "Preliminary". This means that the information was released prior to the release of the actual product, therefore was subject to change prior to the product's open market launch.
+.. csv-table:: Conventions used
+   :header: "Symbol","Description"
+   :widths: auto
 
-A :white_check_mark: symbol indicates that this item is present in the collection.
+   ":material-regular:`verified;2em;sd-text-success`","This item is present in the collection."
+   ":material-regular:`thumb_down;2em;sd-text-danger`","This item has not yet been acquired for the collection."
+   ":material-regular:`lock_open;2em;sd-text-danger`","Usually datasheets, this is preliminary or advance information and will be subject to change."
+   ":material-regular:`lock;2em;sd-text-success`","This is published material relating to the product as sold."
 
 
 .. toctree::
-   :maxdepth: 5
+   :titlesonly:
+   :maxdepth: 1
    :caption: Contents:
 
    collection
@@ -42,26 +49,10 @@ A :white_check_mark: symbol indicates that this item is present in the collectio
    Hardware/EXORciser/basic_options
    Hardware/EXORciser/@MEX6816-22D
    Documents/Datasheets/index
-   Documents/Datasheets/@M68MM07.1
-   Documents/Datasheets/@MC6850.1
-   Documents/Datasheets/@M68ADS.1
-   Documents/Datasheets/@M68ADS-1.1
    Documents/Generic/index
-   Documents/Generic/@MPU_Vocabulary.1
    Documents/Reference/index
-   Documents/Reference/@M68PRM-D.1
-   Documents/Reference/@NONE-1
-   Documents/Reference/@NONE-2
    Documents/ReferenceCards/index
-   Documents/ReferenceCards/@MC6800.1
-   Documents/ReferenceCards/@MC6840.1
-   Documents/ReferenceCards/@MC6845.1
-   Documents/ReferenceCards/@MC68488.1
    Hardware/Other/index
-   Hardware/Other/@NONE-1
-   Hardware/Other/@NONE-2
-   Hardware/Other/@NONE-1.3
-   Hardware/Other/@NONE-1.2
    Software/index
    
 

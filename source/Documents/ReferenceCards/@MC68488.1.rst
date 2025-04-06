@@ -1,3 +1,5 @@
+:orphan:
+
 .. _REF-MC68488-1:
 
 MC68488 GPIA for IEEE-488 Bus Reference Card
@@ -7,9 +9,10 @@ MC68488 GPIA for IEEE-488 Bus Reference Card
    :width: 400
    :align: center
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Acquired"
    :widths: auto
 

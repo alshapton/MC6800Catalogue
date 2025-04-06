@@ -1,3 +1,5 @@
+:orphan:
+
 .. _M68MM07:
 
 M68MM07 Quad Communications Micromodule
@@ -7,9 +9,10 @@ M68MM07 Quad Communications Micromodule
    :width: 400
    :align: center
 
-Collection Information
+.. rubric:: Collection Information
 
-.. csv-table:: Collection Information
+
+.. csv-table:: 
    :header: "Component","Datasheet"
    :widths: auto
 
