@@ -17,6 +17,7 @@ Micromodule 5A 8 Channel 12 Bit A/D Converter
 .. image:: ../../images/M68MM05A/M68MM05A.4.jpg
    :width: 200
 
+Need to move to new micromodules section
 
 .. rubric:: Collection Information
 
