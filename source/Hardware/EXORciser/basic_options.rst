@@ -66,5 +66,7 @@ For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
     "MEX68SA2","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 <br />Microprocessor Systems "
     "MEX68WW","Universal Wirewrap Module for prototype Development"
     "MEX68XT","Extender Module permits access to any development module from outside the EXORciser chassis"
+    ":ref:`M68MM05A <M68MM05A>`","Micromodule 5A 8 Channel 12 Bit A/D Converter"
+
 
 Reference: Page 7 1970 Motorola Microcomputer Development Systems and Subsystems

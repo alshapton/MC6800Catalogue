@@ -11,7 +11,6 @@ MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
