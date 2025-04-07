@@ -3,7 +3,7 @@
 Development Systems
 ===================
 
-.. csv-table:: Development System Options
+.. csv-table::
    :header: "Part Number","Name","Main Purpose","Firmware","MPU Module","Freq.","RAM","Included Options" 
    :widths: auto
 

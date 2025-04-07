@@ -9,7 +9,7 @@ print("Enter the following information:")
 product_name = input("  Product name: ")
 product_number = input("  Product number: ")
 product_type = input("  Product Type:\n      (D)atasheet,\n      (G)eneric,\n      (R)eference,\n      Reference (C)ard.\n      Software (M)onitors,\n      (E)XORciser hardware,\n      (O)ther hardware: ")
-
+images = '../../images/'
 match product_type:
     case "R":
         location = "Documents/Reference"
@@ -33,8 +33,10 @@ acquired = input("Acquired ? (Y/N): ")
 if acquired == "Y":
     acquired = True
     acquired_date = input("Acquired date (DD-MON-YYYY): ")
+    acquired_status=":material-regular:`verified;2em;sd-text-success` '" + acquired_date + '"\n\n'
 else:
     acquired = False
+    acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
 OUTPUT_FILE = f"source/{location}/{product_number}.rst"
 if os.path.exists(OUTPUT_FILE):
@@ -50,16 +52,15 @@ with open(OUTPUT_FILE,"w") as c:
     for i in product_name:
         c.write('=')
     c.write('\n\n')
-    c.write('.. image:: ../../images/' + product_number + '.png\n')
+    c.write('.. image:: '+ images + product_number + '.png\n')
     c.write('   :width: 400\n')
     c.write('   :align: center\n\n')
 
     c.write('.. rubric:: Collection Information\n\n')
     c.write('.. csv-table:: \n')
-    c.write('\t:header: "Acquired"\n')
-    c.write('\t:widths: auto\n\n')     
-    if acquired:
-        c.write('   ":material-regular:`verified;2em;sd-text-success` ' + acquired_date + '"\n\n')
-    else:   
-        c.write('   ":material-regular:`thumb_down;2em;sd-text-danger`')
+    c.write('   :header: "Acquired"\n')
+    c.write('   :widths: auto\n\n')     
+
+    c.write('   ' + acquired_status)
+
     
