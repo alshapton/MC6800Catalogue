@@ -26,6 +26,10 @@ MC6840 Programmable Timer Fundamentals and Applications
 
     ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
 
+.. rubric:: Links
+
+:download:`MC6840 Programmable Timer Fundamentals and Applications <../../_static/Documents/Reference/MC6840UM.pdf>`
+
 
 
 
