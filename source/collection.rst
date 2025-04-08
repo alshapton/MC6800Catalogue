@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 06-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 08-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 .. csv-table:: 
@@ -11,9 +11,9 @@ This is the current collection (as at 06-04-2025) of the items produced by Motor
 
 	" :ref:`N/A <HW-OTHER-NONE-2>`","MPU Evalution Card MC6800 Microprocessor Board","Other Hardware"
 	" :ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM ","Exorciser Hardware"
-	" `Go <https://github.com/Sphere-Corporation/MUG>`_","MC6800 User's Group Software Library","Software"
-	" :download:`Download <./Monitors/EDUCATOR-II/monitor.asm>`","EDUCATOR-II Monitor Disassembled Source","Software"
-	" :download:`Download <./Monitors/EDUCATOR-II/monitor.hex>`","EDUCATOR-II Monitor hex dump","Software"
+	" `Internet <https://github.com/Sphere-Corporation/MUG>`_","MC6800 User's Group Software Library","Software"
+	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_asm>`","EDUCATOR-II Monitor Assembly Listing","Software"
+	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_hex>`","EDUCATOR-II Monitor hex dump","Software"
 	" :ref:`N/A <REF-MC6800-1>`","M6800 Microprocessor Instruction Set Summary","Reference Card"
 	" :ref:`N/A <REF-MC6840-1>`","MC6840 Programmable Timer Module Programming Summary","Reference Card"
 	" :ref:`N/A <REF-MC6845-1>`","MC6845 Cathode Ray Tube Controller Programming","Reference Card"
@@ -24,6 +24,7 @@ This is the current collection (as at 06-04-2025) of the items produced by Motor
 	" :ref:`M68ADS-1 <M68ADS-1>`","Autonomous Development System (French)","Datasheet"
 	" :ref:`M68ADS1 <M68ADS1>`","Autonomous Development System","Datasheet"
 	" :ref:`N/A <MPUVocabulary>`","MPU Vocabulary","Generic Document"
+	" :ref:`N/A <1979_Microcomputer_Development_Systems>`","Microcomputer Development Systems and Subsystems","Generic Document"
 	" :ref:`M68PRM-D <M68PRM-D>`","M6800 Programming Reference Manual","Reference Manual"
 	" :ref:`N/A <NONE-1>`","M6800 Microcomputer System Design Data Manual","Reference Manual"
 	" :ref:`N/A <NONE-2>`","M6800 Microprocessor Applications Manual","Reference Manual"
