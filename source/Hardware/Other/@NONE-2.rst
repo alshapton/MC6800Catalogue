@@ -21,6 +21,9 @@ MPU Evalution Card MC6800 Microprocessor Board
    :width: 200
 
 
+.. Note:: 
+    The briefcase-mounted evaluation system was acquired with the user manual for it.
+
 .. rubric:: Collection Information
 
 
@@ -28,6 +31,10 @@ MPU Evalution Card MC6800 Microprocessor Board
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 30-JAN-2025"
+    :material-regular:`verified;2em;sd-text-success` 30-JAN-2025
 
 
+
+.. rubric:: Links
+
+:ref:`Users Guide for the Motorola Microcomputer Evaluation System <MES6800>`

@@ -14,5 +14,6 @@ Reference Documents
    " :ref:`M68COB(D) <M68COB(D)>`","M6800 Resident COBOL Language Reference Manual","1978"
    ":material-regular:`verified;2em;sd-text-success` :ref:`M684CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","1977"
    " :ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
-
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MES6800 <MES6800>`","MES6800 User Guide",""
+   " :ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
 
