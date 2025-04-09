@@ -1,0 +1,27 @@
+:orphan:
+
+.. _MC68B21L:
+
+Peripheral Interface Adapter
+============================
+
+.. image:: ../../images/ICs/MC68B21L.1.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
+   :widths: auto
+
+   "BR7720","09-MAY-1977 to 15-MAY-1977","Plastic","Production","Drawer 1","Possibly inoperable"
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025","N/A"
+

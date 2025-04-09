@@ -1,6 +1,6 @@
 # Catalogue
 
-![logo](source/images/mc6800logo.jpeg)
+![logo](source/images/General/mc6800logo.jpeg)
 
 This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling.
 

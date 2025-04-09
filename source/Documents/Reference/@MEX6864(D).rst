@@ -1,0 +1,31 @@
+:orphan:
+
+.. _MEX6864(D):
+
+16K/64K Dynamic RAM Module Users Guide
+======================================
+
+.. image:: ../../images/MEX6864(D).png
+   :width: 400
+   :align: center
+
+.. Note:: 
+    This is the User Guide for the following products:
+      * MEX6816-22D - 16K Dynamic RAM
+      * MEX6832-22  - 32K Dynamic RAM
+      * MEX6848-22  - 48K Dynamic RAM
+      * MEX6864-22  - 64K Dynamic RAM
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`16K/64K Dynamic RAM Module Users Guide <../../_static/Documents/Manuals/MEX6864_16K_64K_DRAM_Module_197805.pdf>`
+
+:ref:`MEX6816-22D 16K Dynamic RAM <MEX6816-22D>`

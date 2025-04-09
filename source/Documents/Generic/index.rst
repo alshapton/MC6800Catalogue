@@ -10,3 +10,4 @@ Generic Documents
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MPUVocabulary>`","MPU Vocabulary","First Edition 1977"
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <1979_Microcomputer_Development_Systems>`","Microcomputer Development Systems and Subsystems","1979"
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <1979_Memory_Products>`","Memory Products","1979"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MC6800COURSEBNDR>`","Microprocessor Course",""

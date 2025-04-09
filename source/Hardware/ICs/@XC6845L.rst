@@ -1,0 +1,27 @@
+:orphan:
+
+.. _XC6845L:
+
+CRT Controller
+==============
+
+.. image:: ../../images/ICs/XC6845L.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
+   :widths: auto
+
+   "7749","28-NOV-1977 to 04-DEC-1977","Ceramic","Engineering","Drawer 2",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired","Datasheet"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 20-MAR-2025,N/A
+

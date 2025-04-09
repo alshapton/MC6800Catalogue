@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MEK6800D2.1:
+
+MEK6800D2 Evaluation Kit II Manual
+==================================
+
+.. image:: ../../images/MEK6800D2.1.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`.. 
+   
+.. rubric:: Links
+
+:download:`MEK6800D2 Evaluation Kit II Manual <../../_static/Documents/Manuals/MEK6800D2_Evaluation_Kit_II.pdf>`

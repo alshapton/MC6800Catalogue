@@ -16,6 +16,7 @@ release = '0.1'
 
 extensions = [
         'sphinx.ext.autosectionlabel',
+        'sphinx_collapse',
         'sphinx_design',
 ]
 
@@ -30,4 +31,9 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
+
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/custom.css',
+]

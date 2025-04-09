@@ -1,0 +1,22 @@
+:orphan:
+
+.. _AN-851:
+
+Motorola MC6845 CRTC Simplifies Video Display Control
+=====================================================
+
+.. image:: ../../images/ApplicationNotes/AN-851.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Motorola MC6845 CRTC Simplifies Video Display Control <../../_static/Documents/ApplicationNotes/AN-851.pdf>`

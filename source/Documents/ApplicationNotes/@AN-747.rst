@@ -1,0 +1,22 @@
+:orphan:
+
+.. _AN-747:
+
+Low Speed Modem Design using the MC6860
+=======================================
+
+.. image:: ../../images/ApplicationNotes/AN-747.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Low Speed Modem Design using the MC6860 <../../_static/Documents/ApplicationNotes/AN-747.pdf>`

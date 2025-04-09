@@ -15,3 +15,160 @@ http://bitsavers.org/pdf/motorola/terminal/EXORterm_150/firmware/
 
 http://bitsavers.org/pdf/motorola/terminal/
 
+https://archive.org/search?query=motorola&sort=-date&and%5B%5D=mediatype%3A%22texts%22&and%5B%5D=year%3A%221974%22&and%5B%5D=year%3A%221975%22&and%5B%5D=year%3A%221976%22&and%5B%5D=year%3A%221977%22&and%5B%5D=year%3A%221978%22&and%5B%5D=year%3A%221979%22
+There is more here.....
+
+https://github.com/crsjones/MIKBUG2
+
+Info out there:  Need to go through and delete the ones we already have
+
+•⁠  ⁠"Engineering Note 100, MCM6830L7, MIKBUG/MINIBUG ROM", Mike Wiles, Andres Felix, Motorola Semiconductor Products Inc. 1975?
+Note: could not find the date for this, but it includes ROM listings for mid 1970's 6800 systems.
+
+•⁠  ⁠"Assembly Instructions, Motorola M6800 Microcomputer Systems Design Evaluation Kit.", Motorola, 1975?
+Note: MEK6800D1.
+•⁠  ⁠"MEK6800D2 Manual, Second Edition.", Motorola Inc. 1977. Note this manual includes a listing of the JBUG monitor ROM.
+This is a relatively common document.
+
+•⁠  ⁠"Programming the 6800 microprocessor", Bob Southern, Motorola 1977.
+Very common document found in many libraries.
+
+•⁠  ⁠"MC68488 - Advance Information - General Purpose Interface Adapter", Motorola Inc. 1977.
+A common data sheet.
+
+•⁠  ⁠"MC6845 - Advance Information - CRT Controller (CRTC)", Motorola Inc. 1977.
+A common data sheet.
+
+•⁠  ⁠"MEK6800AB - Adaptor/Motherboard", Motorola Inc. 1977?
+Note I do not have a copy of this manual or datasheet, but functionality seems obvious.
+
+•⁠  ⁠"M68EML(D) - M6800 Simulator Reference Manual", First Edition, Motorola Inc. 1977
+To be scanned.
+
+•⁠  ⁠"MC6821, MC68A21, MC68B21 - Peripheral Interface Adapter (PIA)", Motorola Inc. 1978.
+A common data sheet.
+
+•⁠  ⁠"Micro Chroma 68: The new "bug" from Motorola TVBUG 1.2", Motorola Semiconductor Products Inc. Microprocessor Operations., 1978
+Note this manual includes a listing of the monitor ROM.
+This is a relatively rare document contributed by the author.
+
+•⁠  ⁠"m6800 Microprocessor - Instruction Set Summary", Motorola, Microcomputer Applications Engineering. 9147-12 Printed in USA 3-79 Impertial Litho B77675.
+
+•⁠  ⁠"MC6850, MC68A50, MV68B50 - Asynchronous Communications Interface Adapter (ACIA)", Motorola Inc. 1978.
+A common data sheet.
+
+•⁠  ⁠"MC6846 - Advance Information - ROM-I/O-TIMER", Motorola Inc, 1978.
+A common data sheet.
+
+•⁠  ⁠"M6800 EXORcisor User's Guide", Motorola
+
+•⁠  ⁠"M68SFDC2 EXORdisk II - Floppy Disk Controller Module, User's Guide.", Motorola, June 1978.
+
+•⁠  ⁠"The Complete Motorola Microcomputer Data Library.", Motorola Inc, 1978.
+To be scanned.
+•⁠  ⁠"M68MDOS3, EXORdisk II/III, Operating System, User's Guide, M68MDOS3(D)", Motorola, June 1979.
+
+•⁠  ⁠"MEK6802D3 - Microcomputer Unit, First Edition", Motorola Inc, March 1979.
+Note this manual includes a listing of the D3BUG ROM.
+This is a rare document, and this is the only know copy.
+
+•⁠  ⁠"MEK68R2M - Programmable CRT Video Interface, First Edition", Motorola Inc. 1979.
+Note this manual includes a listing of the D3BUG2 ROM.
+This is a rare document, and this is the only know copy.
+
+•⁠  ⁠"MEK6802D3, MEK6802D3C - Advance Information - Microcomputer Module", Motorola Inc. 1979. ADI-548. 12580 Printed in USA 4/79 Imperial Litho #78354.
+Rare.
+
+•⁠  ⁠"MEK68CC - Advance Information - Card Cage", Motorola Inc. 1979.
+Rare.
+
+•⁠  ⁠"MEK68MB5 - Advance Information - Motherboard", Motorola Inc. 1979.
+Rare.
+
+•⁠  ⁠"MEK68MM32, MEK68MM16 - Advance Information - Memory Module", Motorola Inc. 1979.
+Rare.
+
+•⁠  ⁠"MEK68R2, MEK68R2M - Advance Information - Programmable CRT Interface.", Motorola Inc. 1979.
+Rare.
+
+•⁠  ⁠"MEK68RR - Advance Information - ROM/RAM Module", Motorola Inc. 1979.
+Rare
+
+•⁠  ⁠"MEK68WW, MEK68WW1 - Advance Information - Wirewrap Module", Mororola Inc. 1979.
+Rare
+
+•⁠  ⁠"MEK68IO - Input/Output Interface Board, First Edition.", Motorola Inc. 1979.
+Rare
+
+•⁠  ⁠"MEK68MM - Memory system, Second Edition.", Motorola Inc., April 1979.
+Rare
+
+•⁠  ⁠"MC6802 - Advance Information - Microprocessor with Clock and RAM", Motorola Inc. 1979.
+A common data sheet.
+
+•⁠  ⁠"Motorola Semiconductor - Master Selection Guide and Catalog", Motorola Inc 1979.
+Note this includes a section "Microcomputer and Memory Products" related to the M6800 microprocessors which I would like to publish.
+•⁠  ⁠"Motorola ProBug Monitor", 1980?
+Note I only have a binary dump for this. It seems to be a 6801/6803 monitor. Early 1980's.
+•⁠  ⁠"MEK6802D5 Microcomputer Evaluation Board User's Manual. MEK6802D5(D2). Second edition", Motorola Inc. 1980.
+Note this manual includes a listing of the D5BUG monitor ROM.
+
+•⁠  ⁠"MC6852, MC68A52, MC68B52 Synchronous Serial Data Adapter (SSDA)", Motorola Inc. 1980.
+A common data sheet.
+
+•⁠  ⁠"MC6840 Programmable Timer - Fundamentals and Applications, MC6840UM(AD-1), Second Edition", Motorola Inc. 1981.
+
+•⁠  ⁠"MC6840 Programmable Timer Module (PTM)", Motorola Inc, 1983.
+A common data sheet.
+
+
+
+
+
+
+Packaging and info codes (as far as I know):
+
+L Suffix – Ceramic Package 		Temp range 0 o-70o
+P Suffix – Plastic Package		Temp range 0 o-70o
+C Suffix – Ceramic Package		Temp range -40 o-85o
+
+
+
+Some chips have additional suffixes:
+
+MCM68316E			Mask-programmable ROM
+MCM68316E1		Mask-programmable ROM
+
+
+MCM6810A
+(0 to 700 C; Lor P Suffix)
+MCM6810AC
+(-40 to 850 C; L Suffix only)
+
+
+
+XC6885 XC8T95
+XC6886 XC8T96
+XC6887 XC8T97
+XC6888 XC8T98
+HEX THREE-STATE
+BUFFERIINVERTERS
+MONOLITHIC SCHOTTKY
+INTEGRATED CIRCUITS
+
+XC6881
+BI-DIRECTIONAL
+BUS EXTENDER/SWITCH
+
+
+MC6870A	limited function microprocessor clock	250 kHz to 2.5 MHz
+
+MC6871A 	full function microprocessor clock	850 kHz to 2.5 MHz
+
+
+
+MC6871B	alternate function microprocessor clock	250 kHz to 2.5 MHz
+
+
+
+A Cross- assembler : https://github.com/colinbourassa/crasm

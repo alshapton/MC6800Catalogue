@@ -1,0 +1,22 @@
+:orphan:
+
+.. _EN-100:
+
+MCM6830L7 MIKBUG/MINIBUG ROM
+============================
+
+.. image:: ../../images/EngineeringNotes/EN-100.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MCM6830L7 MIKBUG/MINIBUG ROM <../../_static/Documents/EngineeringNotes/EN-100.pdf>`

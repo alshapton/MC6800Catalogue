@@ -1,0 +1,27 @@
+:orphan:
+
+.. _MES6800:
+
+MES6800 User Guide
+==================
+
+.. image:: ../../images/MES6800.1.png
+   :width: 400
+   :align: center
+
+.. Note:: 
+    This is the User Manual acquired with the Briefcase edition of the MPU 6800 Evaluation Card. See link below.
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 30-JAN-2025
+
+.. rubric:: Links
+
+:ref:`MPU Evalution Card MC6800 Microprocessor Board <HW-OTHER-NONE-2>`
+
+:download:`Users Guide for the Motorola MC6800 Microcomputer Evaluation System <../../_static/Documents/Manuals/MES6800_User_Manual_Sep_1975.pdf>`

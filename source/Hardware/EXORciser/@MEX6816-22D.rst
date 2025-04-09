@@ -17,3 +17,7 @@ MEX6816-22D 16K Dynamic RAM
    :widths: auto
 
     ":material-regular:`verified;2em;sd-text-success` 20-MAR-2025","N/A"
+
+.. rubric:: Links
+
+:download:`16K/64K Dynamic RAM Module Users Guide <../../_static/Documents/Manuals/MEX6864_16K_64K_DRAM_Module_197805.pdf>`

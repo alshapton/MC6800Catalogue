@@ -1,0 +1,22 @@
+:orphan:
+
+.. _AN-777:
+
+A Dual Processor System For Use In The EXORcisor
+================================================
+
+.. image:: ../../images/ApplicationNotes/AN-777.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`A Dual Processor System For Use In The EXORcisor <../../_static/Documents/ApplicationNotes/AN-777.pdf>`

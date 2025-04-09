@@ -1,0 +1,32 @@
+:orphan:
+
+.. _MC6847:
+
+MC6847/MC6847Y Video Display Generator (VDG)
+============================================
+
+.. image:: ../../images/MC6847.png
+   :width: 400
+   :align: center
+
+.. rubric:: This IC comes in 2 forms:
+   
++-----------+-----------------+
+| IC Name   | Description     |   
++-----------+-----------------+
+| MC6847    | Non-Interlace   |
++-----------+-----------------+
+| MC6847Y   | Interlace       |
++-----------+-----------------+
+
+.. rubric:: Collection Information
+   
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6847/MC6847Y Video Display Generator (VDG) <../../_static/Documents/Datasheets/MC6847.pdf>`
