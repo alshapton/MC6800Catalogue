@@ -13,6 +13,6 @@ Reference Documents
    ":material-regular:`verified;2em;sd-text-success` :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications","1976"
    " :ref:`M68COB(D) <M68COB(D)>`","M6800 Resident COBOL Language Reference Manual","1978"
    ":material-regular:`verified;2em;sd-text-success` :ref:`M684CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","1977"
-   " :ref:`MEX68B00(D) <MEX68B00(D)>`"MEX6800-2 MPU II MODULE Users Guide","June 1978"
+   " :ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
 
 

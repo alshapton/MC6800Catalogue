@@ -33,14 +33,15 @@ comments = input("Comments: ")
 acquired = input("Acquired ? (Y/N): ")
 if acquired == "Y":
     acquired = True
-    index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
+    index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`","' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
     acquired_date = input("Acquired date (DD-MON-YYYY): ")
     acquired_status=":material-regular:`verified;2em;sd-text-success` '" + acquired_date + '"\n\n'
 else:
     acquired = False
-    index_entry = '" :ref:`' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
+    index_entry = '" :ref:`","' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
 
     acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
+links = input("Links ? (Y/N): ")
 
 OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
 if os.path.exists(OUTPUT_FILE):
@@ -66,6 +67,10 @@ with open(OUTPUT_FILE,"w") as c:
     c.write('   :widths: auto\n\n')     
 
     c.write('   ' + acquired_status)
+
+if links == "Y":
+    c.write('.. rubric:: Links')
+    c.write(":download:`" + product_name + " <" + images + "_static/" + location + "/{INSERT DOCUMENT NAME HERE}"+ ">`"
 
 
 print(index_entry)
