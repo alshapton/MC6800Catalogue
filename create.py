@@ -38,7 +38,7 @@ else:
     acquired = False
     acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
-OUTPUT_FILE = f"source/{location}/{product_number}.rst"
+OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
 if os.path.exists(OUTPUT_FILE):
     print(f"File {OUTPUT_FILE} already exists")
     exit()

@@ -46,8 +46,6 @@ Conventions Used
 
    collection
    Hardware/EXORciser/index
-   Hardware/EXORciser/basic_options
-   Hardware/EXORciser/@MEX6816-22D
    Documents/Datasheets/index
    Documents/Generic/index
    Documents/Reference/index

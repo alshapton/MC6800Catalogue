@@ -1,3 +1,5 @@
+:orphan:
+
 .. _MEX6816-22D:
 
 MEX6816-22D 16K Dynamic RAM           

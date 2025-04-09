@@ -1,3 +1,5 @@
+:orphan:
+
 .. _basic options page:
 
 Basic Options for EXORciser

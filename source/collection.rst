@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 08-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 09-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 .. csv-table:: 
@@ -25,7 +25,8 @@ This is the current collection (as at 08-04-2025) of the items produced by Motor
 	" :ref:`M68ADS1 <M68ADS1>`","Autonomous Development System","Datasheet"
 	" :ref:`N/A <MPUVocabulary>`","MPU Vocabulary","Generic Document"
 	" :ref:`N/A <1979_Microcomputer_Development_Systems>`","Microcomputer Development Systems and Subsystems","Generic Document"
-	" :ref:`M68PRM-D <M68PRM-D>`","M6800 Programming Reference Manual","Reference Manual"
+	" :ref:`N/A <1979_Memory_Products>`","Memory Products","Generic Document"
+	" :ref:`M68PRM(D) <M68PRM(D)>`","M6800 Programming Reference Manual","Reference Manual"
 	" :ref:`N/A <NONE-1>`","M6800 Microcomputer System Design Data Manual","Reference Manual"
 	" :ref:`N/A <NONE-2>`","M6800 Microprocessor Applications Manual","Reference Manual"
 	" :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications","Reference Manual"

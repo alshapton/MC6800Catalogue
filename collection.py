@@ -56,7 +56,6 @@ with open(OUTPUT_FILE,"w") as c:
                 
                 for line in f:
                     if CHECK_MARK in line and 'This item is present in the collection' not in line:
-
                         splitline = line.split('","')
                         part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
                         description = splitline[1].strip().replace('""','"')

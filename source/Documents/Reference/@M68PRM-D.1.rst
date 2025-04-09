@@ -1,6 +1,6 @@
 :orphan:
 
-.. _M68PRM-D:
+.. _M68PRM(D):
 
 M6800 Programming Reference Manual
 ==================================
