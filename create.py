@@ -29,13 +29,17 @@ match product_type:
         print("Invalid product type")
         exit() 
 orphan = input("Orphan ? (Y/N): ")
+comments = input("Comments: ")
 acquired = input("Acquired ? (Y/N): ")
 if acquired == "Y":
     acquired = True
+    index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
     acquired_date = input("Acquired date (DD-MON-YYYY): ")
     acquired_status=":material-regular:`verified;2em;sd-text-success` '" + acquired_date + '"\n\n'
 else:
     acquired = False
+    index_entry = '" :ref:`' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
+
     acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
 OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
@@ -63,4 +67,6 @@ with open(OUTPUT_FILE,"w") as c:
 
     c.write('   ' + acquired_status)
 
+
+print(index_entry)
     

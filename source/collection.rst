@@ -30,3 +30,4 @@ This is the current collection (as at 09-04-2025) of the items produced by Motor
 	" :ref:`N/A <NONE-1>`","M6800 Microcomputer System Design Data Manual","Reference Manual"
 	" :ref:`N/A <NONE-2>`","M6800 Microprocessor Applications Manual","Reference Manual"
 	" :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications","Reference Manual"
+	" :ref:`M684CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","Reference Manual"
