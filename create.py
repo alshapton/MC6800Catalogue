@@ -9,7 +9,8 @@ print("Enter the following information:")
 product_name = input("  Product name: ")
 product_number = input("  Product number: ")
 product_type = input("  Product Type:\n      (D)atasheet,\n      (I)Cs,\n      (G)eneric,\n      (R)eference,\n      Reference (C)ard.\n      Software (M)onitors,\n      (E)XORciser hardware,\n      (O)ther hardware: ")
-images = '../../images/'
+dotdot = '../../'
+images = dotdot + 'images/'
 match product_type:
     case "R":
         location = "Documents/Reference"
@@ -35,12 +36,12 @@ comments = input("Comments: ")
 acquired = input("Acquired ? (Y/N): ")
 if acquired == "Y":
     acquired = True
-    index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`","' + product_name + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
+    index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_name + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
     acquired_date = input("Acquired date (DD-MON-YYYY): ")
     acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
 else:
     acquired = False
-    index_entry = '" :ref:`","' + product_number + ' <' + product_number + '>`"' + product_name + '","' + comments + '"' 
+    index_entry = '" :ref:`' + product_name + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
     acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
 links = input("Links ? (Y/N): ")
@@ -71,8 +72,8 @@ with open(OUTPUT_FILE,"w") as c:
     c.write('   ' + acquired_status)
 
     if links == "Y":
-        c.write('.. rubric:: Links')
-        c.write(":download:`" + product_name + " <" + images + "_static/" + location + "/{INSERT DOCUMENT NAME HERE}"+ ">`")
+        c.write('.. rubric:: Links\n\n')
+        c.write(":download:`" + product_name + " <" + dotdot + "_static/" + location + "/{INSERT DOCUMENT NAME HERE}"+ ">`")
 
 
 print(index_entry)

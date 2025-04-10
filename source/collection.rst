@@ -77,6 +77,7 @@ This is the current collection (as at 10-04-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: auto
 
+	" :ref:`M6800 Co-Resident Assembler Reference Manual <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
 	" :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications"
 	" :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
 	" :ref:`M68PRM(D) <M68PRM(D)>`","M6800 Programming Reference Manual"

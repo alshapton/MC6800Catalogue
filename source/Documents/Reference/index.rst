@@ -16,4 +16,4 @@ Reference Documents
    " :ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MES6800 <MES6800>`","MES6800 User Guide",""
    " :ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
-
+   ":material-regular:`verified;2em;sd-text-success` :ref:`M6800 Co-Resident Assembler Reference Manual <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual","First Edition Nov. 1976"
