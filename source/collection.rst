@@ -15,6 +15,7 @@ This is the current collection (as at 10-04-2025) of the items produced by Motor
 
 	" :ref:`M68ADS-1 <M68ADS-1>`","Autonomous Development System (French)"
 	" :ref:`M68ADS1 <M68ADS1>`","Autonomous Development System"
+	" :ref:`M68MM01D Monoboard Microcomputer Module <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module"
 	" :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule"
 	" :ref:`MC6850 (1 Mhz)/MC68A50 (1.5 Mhz)/MC68B50 (2 Mhz) <MC6850>`","Asynchronous Communications Interface Adapter"
 
