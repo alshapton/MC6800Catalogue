@@ -8,7 +8,7 @@ import os
 print("Enter the following information:")
 product_name = input("  Product name: ")
 product_number = input("  Product number: ")
-product_type = input("  Product Type:\n      (D)atasheet,\n      (G)eneric,\n      (R)eference,\n      Reference (C)ard.\n      Software (M)onitors,\n      (E)XORciser hardware,\n      (O)ther hardware: ")
+product_type = input("  Product Type:\n      (D)atasheet,\n      (I)Cs,\n      (G)eneric,\n      (R)eference,\n      Reference (C)ard.\n      Software (M)onitors,\n      (E)XORciser hardware,\n      (O)ther hardware: ")
 images = '../../images/'
 match product_type:
     case "R":
@@ -21,6 +21,8 @@ match product_type:
         location = "Software/Monitors"
     case "G":
         location = "Documents/Generic"
+    case "I":
+        location = "Hardware/ICs"        
     case "E":
         location = "Hardware/EXORciser"
     case "O":

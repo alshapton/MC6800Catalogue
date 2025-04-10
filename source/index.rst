@@ -8,18 +8,20 @@ Motorola MC6800 Family Product Catalogue documentation
 
 .. image:: ./images/mc6800logo.jpeg
 
+The Motorola 6800  (P/N 156-0426-00,156-0426-04,156-2413-00,156-5472-01) is an 8-bit microprocessor monolithic integrated circuit family introduced in 1974.
+The original 6800 requires a +5 V supply only (generating bias voltages on chip) and came initially in 40-pin DIL packages. The 6800 has non-multiplexed data (8 bit) and address (16 bit) buses, and requires an external non-overlapping two-phase 0.1 − 1 MHz clock (later versions from 1976 on up to 2 MHz).
+
+The 6802, introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. The 6808 is the same without RAM.
+
+The 68HC11, introduced in 1984, is an upward-compatible microcontroller that adds a second index register, 8x8 multiply and 16/16 divide instructions, as well as a range of 16-bit instructions that treat A and B as a combined 16-bit accumulator. On-chip peripherals include timers, parallel ports, A/D, SPI and UART.
 This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling.
 
-The following categories are available:
+.. Important:: 
+   The 6805 CMOS family, which includes the MC146805, is neither source- nor object-code compatible with the MC6800 but very similar.
+   As such, it is considered a derivative of the 6800 family, not part of it, since it cannot run assembled 6800 code. None of the ICs within this family are in the scope of this collection.
 
-- :ref:`development systems page`.
-- :ref:`Datasheets page`.
-- :ref:`generic documents page`
-- :ref:`reference documents page`
-- :ref:`reference cards page`
-- :ref:`Other hardware page`
-- :ref:`software index page`
-
+.. Important:: 
+   2nd source manufacturers (e.g. Hitachi, NEC, Advanced Micros etc.) are not specifically included in this collection unless an item of hardware is not easily available in its native Motorola implementation.
 
 Collection
 ==========
@@ -43,8 +45,10 @@ Conventions Used
    :titlesonly:
    :maxdepth: 1
    :caption: Contents:
+   :hidden:
 
    collection
+   Hardware/ICs/index
    Hardware/EXORciser/index
    Documents/Datasheets/index
    Documents/Generic/index

@@ -1,0 +1,25 @@
+:orphan:
+
+.. _MC6860P:
+
+0-600 bps Digital Modem
+=======================
+
+.. image:: ../../images/MC6860P.1.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025
+
+.. rubric:: Links
+
+
+:download:`MC6860 Datasheet <../../_static/Documents/Datasheets/MC6860.pdf>`
+
+:download:`MC6860L Advance Information Datasheet <../../_static/Documents/Datasheets/MC6860L.1.pdf>`
