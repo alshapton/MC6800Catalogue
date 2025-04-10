@@ -12,6 +12,7 @@ SUFFIX = 'rst'
 PREFIX ='source/'
 
 
+
 # Find all .rst files in the current directory and subdirectories
 files = glob.glob('**/*.'+SUFFIX, recursive=True)
 with open(OUTPUT_FILE,"w") as c:
@@ -26,6 +27,8 @@ with open(OUTPUT_FILE,"w") as c:
     c.write('\t:header: "Part Number","Description","Type"\n')
     c.write('\t:widths: auto\n\n')
    
+    collection=[]
+
 
     for file in files:
         if (file != "README.md" 
@@ -60,4 +63,13 @@ with open(OUTPUT_FILE,"w") as c:
                         part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
                         description = splitline[1].strip().replace('""','"')
                         outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
-                        c.write(outline)
+                        thisdict = {"PN"    : part_number, 
+                                    "DESC"  : description, 
+                                    "DTYPE" : doc_type, 
+                                    "OLINE" : outline }
+                        collection.append(thisdict)
+                        # c.write(outline)
+            newlist = sorted(collection, key=lambda d: d['DTYPE'])  
+    for i in newlist:
+        #print(i['OLINE'])        
+        c.write(i['OLINE'])
