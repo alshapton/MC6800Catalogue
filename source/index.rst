@@ -53,15 +53,17 @@ Conventions Used
    ":material-regular:`lock;2em;sd-text-success`","This is published material relating to the product as sold."
 
 
+.. toctree::
+   :hidden:
+
+   Home <self>
+   Collection <collection>
 
 .. toctree::
    :titlesonly:
    :maxdepth: 1
-   :caption: Contents:
    :hidden:
 
-   
-   collection
    Documents/ApplicationNotes/index
    Documents/Datasheets/index
    Documents/EngineeringNotes/index
