@@ -1,9 +1,12 @@
+:orphan:
+
 .. _development systems page:
 
 Development Systems
 ===================
 
-.. csv-table::
+
+.. csv-table:: 
    :header: "Part Number","Name","Main Purpose","Firmware","MPU Module","Freq.","RAM","Included Options" ,"Notes"
    :widths: auto
 
