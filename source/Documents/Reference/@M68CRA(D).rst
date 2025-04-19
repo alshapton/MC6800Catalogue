@@ -5,7 +5,7 @@
 M6800 Co-Resident Assembler Reference Manual
 ============================================
 
-.. image:: ../../images/M68CRA(D).1.png
+.. image:: ../../images/Manuals/M68CRA(D).1.png
    :width: 400
    :align: center
 

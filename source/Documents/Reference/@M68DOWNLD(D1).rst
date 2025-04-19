@@ -5,7 +5,7 @@
 M6800/M6801/M6809 Download Program User's Guide
 ===============================================
 
-.. image:: ../../images/M68DOWNLD(D1).png
+.. image:: ../../images/Manuals/M68DOWNLD(D1).png
    :width: 400
    :align: center
 

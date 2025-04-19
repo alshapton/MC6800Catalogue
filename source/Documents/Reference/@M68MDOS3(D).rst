@@ -5,7 +5,7 @@
 M68MDOS3 EXORdisk II/III OS User's Guide
 ========================================
 
-.. image:: ../../images/M68MDOS3(D).png
+.. image:: ../../images/Manuals/M68MDOS3(D).png
    :width: 400
    :align: center
 

@@ -5,7 +5,7 @@
 M6800 Microprocessor Instruction Set Summary
 ============================================
 
-.. image:: ../../images/M6800InstructionSetSummary.1.png
+.. image:: ../../images/ReferenceCards/M6800InstructionSetSummary.1.png
    :width: 400
    :align: center
 

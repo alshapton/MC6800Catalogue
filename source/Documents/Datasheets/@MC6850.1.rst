@@ -5,7 +5,7 @@
 MC6850 (1 Mhz)/MC68A50 (1.5 Mhz)/MC68B50 (2 Mhz) Asynchronous Communications Interface Adapter 
 ==============================================================================================
 
-.. image:: ../../images/MC6850.1.png
+.. image:: ../../images/DataSheets/MC6850.1.png
    :width: 400
    :align: center
 

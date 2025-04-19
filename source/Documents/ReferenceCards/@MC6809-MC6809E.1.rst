@@ -5,7 +5,7 @@
 MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model
 ======================================================================
 
-.. image:: ../../images/MC6809-MC6809EBitMicroprocessorReferenceCardProgrammingModel.1.png
+.. image:: ../../images/ReferenceCards/MC6809-MC6809EBitMicroprocessorReferenceCardProgrammingModel.1.png
    :width: 400
    :align: center
 

@@ -5,7 +5,7 @@
 M6800 Resident COBOL Language Reference Manual
 ==============================================
 
-.. image:: ../../images/M68COB(D).1.png
+.. image:: ../../images/Manuals/M68COB(D).1.png
    :width: 400
    :align: center
 

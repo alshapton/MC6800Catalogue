@@ -5,7 +5,7 @@
 MEX6800-2 MPU II MODULE Users Guide
 ===================================
 
-.. image:: ../../images/MEX6800-2.png
+.. image:: ../../images/Manuals/MEX6800-2.png
    :width: 400
    :align: center
 

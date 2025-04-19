@@ -5,7 +5,7 @@
 Microcomputer Development Systems and Subsystems
 ================================================
 
-.. image:: ../../images/1979_Microcomputer_Development_Systems.jpg
+.. image:: ../../images/Generic/1979_Microcomputer_Development_Systems.jpg
    :width: 400
    :align: center
 

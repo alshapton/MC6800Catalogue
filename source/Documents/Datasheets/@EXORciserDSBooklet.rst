@@ -5,7 +5,7 @@
 EXORciser Data Sheets
 =====================
 
-.. image:: ../../images/EXORciser/EXORciserDS.png
+.. image:: ../../images/Hardware/EXORciser/EXORciserDS.png
    :width: 400
    :align: center
 

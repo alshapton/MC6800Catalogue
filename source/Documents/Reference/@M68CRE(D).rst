@@ -5,7 +5,7 @@
 M6800 Co-Resident Editor Reference Manual
 =========================================
 
-.. image:: ../../images/M68CRE(D).png
+.. image:: ../../images/Manuals/M68CRE(D).png
    :width: 400
    :align: center
 

@@ -5,7 +5,7 @@
 MC68488 GPIA for IEEE-488 Bus Reference Card
 ============================================
 
-.. image:: ../../images/MC68488.1.png
+.. image:: ../../images/ReferenceCards/MC68488.1.png
    :width: 400
    :align: center
 

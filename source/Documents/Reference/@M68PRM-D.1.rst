@@ -5,7 +5,7 @@
 M6800 Programming Reference Manual
 ==================================
 
-.. image:: ../../images/M68PRM-D.1.png
+.. image:: ../../images/Manuals/M68PRM-D.1.png
    :width: 400
    :align: center
 

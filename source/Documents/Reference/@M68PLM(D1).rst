@@ -5,7 +5,7 @@
 Motorola PASCAL Language Manual
 ===============================
 
-.. image:: ../../images/M68PLM(D1).png
+.. image:: ../../images/Manuals/M68PLM(D1).png
    :width: 400
    :align: center
 

@@ -5,10 +5,10 @@
 Motorola Memory Products
 ========================
 
-.. image:: ../../images/1979_Memory_Products_Front.jpg
+.. image:: ../../images/Generic/1979_Memory_Products_Front.jpg
    :width: 200
    
-.. image:: ../../images/1979_Memory_Products_Back.jpg
+.. image:: ../../images/Generic/1979_Memory_Products_Back.jpg
    :width: 200
       
 .. rubric:: Collection Information

@@ -5,7 +5,7 @@
 Autonomous Development System
 =============================
 
-.. image:: ../../images/M68ADS.1.jpg
+.. image:: ../../images/DataSheets/M68ADS.1.jpg
    :width: 400
    :align: center
 

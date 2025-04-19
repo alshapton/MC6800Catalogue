@@ -5,7 +5,7 @@
 M6800 BASIC Interpreter Reference Manual
 ========================================
 
-.. image:: ../../images/M68BAS(D3).png
+.. image:: ../../images/Manuals/M68BAS(D3).png
    :width: 400
    :align: center
 

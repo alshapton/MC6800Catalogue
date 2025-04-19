@@ -5,7 +5,7 @@
 16K/64K Dynamic RAM Module Users Guide
 ======================================
 
-.. image:: ../../images/MEX6864(D).png
+.. image:: ../../images/Manuals/MEX6864(D).png
    :width: 400
    :align: center
 
