@@ -5,7 +5,7 @@
 Microprocessor Applications Manual
 ==================================
 
-.. image:: ../../images/MicroProcessorApplicationsManual.1.png
+.. image:: ../../images/Reference/MicroProcessorApplicationsManual.1.png
    :width: 400
    :align: center
 

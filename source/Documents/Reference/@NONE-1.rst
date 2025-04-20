@@ -5,10 +5,10 @@
 Motorola Microcomputer System Design Data Manual
 ================================================
 
-.. image:: ../../images/MicroComputerSystemDesignDataManual.1.png
+.. image:: ../../images/Reference/MicroComputerSystemDesignDataManual.1.png
    :width: 400
 
-.. image:: ../../images/MicroComputerSystemDesignDataManual.2.png
+.. image:: ../../images/Reference/MicroComputerSystemDesignDataManual.2.png
    :width: 400
 
 .. rubric:: Collection Information

@@ -70,9 +70,9 @@ Conventions Used
    Documents/Generic/index
    Documents/Reference/index
    Documents/ReferenceCards/index
-   Hardware/EXORciser/index
-   Hardware/ICs/index
-   Hardware/Other/index
+   Documents/Hardware/EXORciser/index
+   Documents/Hardware/ICs/index
+   Documents/Hardware/Other/index
    Software/index
    ForSale/index
 

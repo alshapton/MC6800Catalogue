@@ -71,5 +71,5 @@ For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
     ":ref:`M68MM05A <M68MM05A>`","Micromodule 5A 8 Channel 12 Bit A/D Converter"
 
 
-Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../_static/Documents/Generic/1979_Microcomputer_Development_Systems.pdf>`
+Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../../_static/Documents/Generic/1979_Microcomputer_Development_Systems.pdf>`
 

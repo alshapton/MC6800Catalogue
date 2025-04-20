@@ -5,10 +5,10 @@
 Microprocessor Course
 =====================
 
-.. image:: ../../images/MicroprocessorCourseBinder.1.png
+.. image:: ../../images/Reference/MicroprocessorCourseBinder.1.png
    :width: 200
    
-.. image:: ../../images/MicroprocessorCourseBinder.2.png
+.. image:: ../../images/Reference/MicroprocessorCourseBinder.2.png
    :width: 200
    
 .. rubric:: Collection Information

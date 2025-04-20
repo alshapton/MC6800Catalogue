@@ -5,7 +5,7 @@
 M68SXS EXORterm 200
 ===================
 
-.. image:: ../../images/Hardware/EXORciser/M68SXS.jpeg
+.. image:: ../../images/DataSheets/M68SXS.jpeg
    :width: 400
    :align: center
 

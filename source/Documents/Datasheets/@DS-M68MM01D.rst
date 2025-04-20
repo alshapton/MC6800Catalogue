@@ -5,7 +5,7 @@
 M68MM01D Monoboard Microcomputer Module
 =======================================
 
-.. image:: ../../images/M68MM01D.1.png
+.. image:: ../../images/DataSheets/M68MM01D.1.png
    :width: 400
    :align: center
 

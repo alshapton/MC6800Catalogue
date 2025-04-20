@@ -5,7 +5,7 @@
 Motorola MPU Vocabulary 
 =======================
 
-.. image:: ../../images/MPU_Vocabulary.1.png
+.. image:: ../../images/Reference/MPU_Vocabulary.1.png
    :width: 400
    :align: center
 

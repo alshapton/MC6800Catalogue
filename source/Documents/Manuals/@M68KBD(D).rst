@@ -7,7 +7,7 @@ KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)
 
 This document is marked as PRELIMINARY :material-regular:`lock_open;2em;sd-text-danger`
 
-.. image:: ../../images/Hardware/EXORciser/M68KBD(D).png
+.. image:: ../../images/Manuals/M68KBD(D).png
    :width: 400
    :align: center
 

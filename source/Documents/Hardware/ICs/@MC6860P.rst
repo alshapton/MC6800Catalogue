@@ -5,7 +5,7 @@
 0-600 bps Digital Modem
 =======================
 
-.. image:: ../../images/Hardware/ICs/MC6860P.1.png
+.. image:: ../../../images/Hardware/ICs/MC6860P.1.png
    :width: 400
    :align: center
 
@@ -28,6 +28,6 @@
 .. rubric:: Links
 
 
-:download:`MC6860 Datasheet <../../_static/Documents/Datasheets/MC6860.pdf>`
+:download:`MC6860 Datasheet <../../../_static/Documents/Datasheets/MC6860.pdf>`
 
-:download:`MC6860L Advance Information Datasheet <../../_static/Documents/Datasheets/MC6860L.1.pdf>`
+:download:`MC6860L Advance Information Datasheet <../../../_static/Documents/Datasheets/MC6860L.1.pdf>`

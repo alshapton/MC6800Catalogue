@@ -5,7 +5,7 @@
 MEX6816-22D 16K Dynamic RAM           
 ===========================
 
-.. image:: ../../images/MEX6816-22D.1.png
+.. image:: ../../../images/MEX6816-22D.1.png
    :width: 400
    :align: center
 
@@ -20,4 +20,4 @@ MEX6816-22D 16K Dynamic RAM
 
 .. rubric:: Links
 
-:download:`16K/64K Dynamic RAM Module Users Guide <../../_static/Documents/Manuals/MEX6864_16K_64K_DRAM_Module_197805.pdf>`
+:download:`16K/64K Dynamic RAM Module Users Guide <../../../_static/Documents/Manuals/MEX6864_16K_64K_DRAM_Module_197805.pdf>`
