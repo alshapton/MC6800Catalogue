@@ -69,6 +69,8 @@ Conventions Used
    Documents/EngineeringNotes/index
    Documents/Generic/index
    Documents/Reference/index
+   Documents/Manuals/index
+
    Documents/ReferenceCards/index
    Documents/Hardware/EXORciser/index
    Documents/Hardware/ICs/index

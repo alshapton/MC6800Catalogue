@@ -85,20 +85,28 @@ This is the current collection (as at 20-04-2025) of the items produced by Motor
 	" :ref:`N/A <REF-MC68488-1>`","MC68488 GPIA for IEEE-488 Bus"
 
 
-.. rubric:: Reference Manuals
+.. rubric:: Reference Documents
 
 .. csv-table:: 
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
 	" :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications"
-	" :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
-	" :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
 	" :ref:`M68PRM(D) <M68PRM(D)>`","M6800 Programming Reference Manual"
-	" :ref:`MES6800 <MES6800>`","MES6800 User Guide"
 	" :ref:`N/A <NONE-1>`","M6800 Microcomputer System Design Data Manual"
 	" :ref:`N/A <NONE-2>`","M6800 Microprocessor Applications Manual"
 	" :ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets"
+
+
+.. rubric:: Reference Manuals
+
+.. csv-table:: 
+	:header: "Part Number","Description"
+	:widths: 30, 70
+
+	" :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
+	" :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
+	" :ref:`MES6800 <MES6800>`","MES6800 User Guide"
 
 
 .. rubric:: Software

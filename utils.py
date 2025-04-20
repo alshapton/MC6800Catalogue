@@ -41,6 +41,8 @@ def do_collection():
                         case "Documents/Hardware/ICs":
                             doc_type = "ICs"
                         case "Documents/Reference":
+                            doc_type = "Reference Documents"
+                        case "Documents/Manuals":
                             doc_type = "Reference Manuals"
                         case "Documents/Datasheets":
                             doc_type = "Datasheets"
@@ -90,7 +92,7 @@ def do_create():
     print("Enter the following information:")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
-    product_type = input("  Product Type:\n      (A)pplication Note,\n      Reference (C)ard,\n      (D)atasheet,\n      (G)eneric,\n      (I)Cs,\n     (M)onitors,\n      (R)eference,\n            (E)XORciser hardware,\n      (O)ther hardware: ")
+    product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
     dotdot = '../../'
     images = dotdot + 'images/'
     match product_type:
@@ -104,15 +106,19 @@ def do_create():
             location = "Documents/ReferenceCards"
         case "M":
             location = "Software/Monitors"
+        case "N":
+            location = "Software/Manuals"            
         case "G":
             location = "Documents/Generic"
         case "I":
-            location = "Hardware/ICs"   
-            images = dotdot + 'images/ICs/'
+            location = "Documents/Hardware/ICs"   
+            images = dotdot + 'images/Hardware/ICs/'
         case "E":
-            location = "Hardware/EXORciser"
+            location = "Documents/Hardware/EXORciser"
+            images = dotdot + 'images/Hardware/EXORciser/'
         case "O":
-            location = "Hardware/Other"
+            location = "Documents/Hardware/Other"
+            images = dotdot + 'images/Hardware/Other/'
         case _:
             print("Invalid product type")
             exit() 
