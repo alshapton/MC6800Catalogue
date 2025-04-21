@@ -33,5 +33,6 @@ Reference Manuals
    ":ref:`M68MDOS3(D) <M68MDOS3(D)>`","EXORdisk II/III OS User's Guide","1978 1st Edition"
    ":ref:`M68MDOS3(D2) <M68MDOS3(D2)>`","EXORdisk II/III OS User's Guide","1979 2nd Edition"
    ":ref:`M68DOWNLD(D1) <M68DOWNLD(D1)>`","M6800/M6801/M6809 Download Program User's Guide","August 1979 1st Edition"
-
-   
+   ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
+   ":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
+   ":ref:`M68DSP(D) <M68DSP(D)>`","Extended Display Supplement Basic Display Unit User's Guide","First Edition January 1978"

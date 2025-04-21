@@ -51,9 +51,9 @@ def do_collection():
                         case "Documents/Generic":
                             doc_type = "Generic Documents"
                         case "Software/NonResident":
-                            doc_type = "Software"
+                            doc_type = "NonResident Software"
                         case "Software/Resident":
-                            doc_type = "Software"
+                            doc_type = "Resident Software"
                         case "Documents/Hardware/EXORciser":
                             doc_type = "Exorciser Hardware"
                         case "Documents/Hardware/Other":
@@ -107,7 +107,7 @@ def do_create():
         case "M":
             location = "Software/Monitors"
         case "N":
-            location = "Software/Manuals"            
+            location = "Documents/Manuals"            
         case "G":
             location = "Documents/Generic"
         case "I":
@@ -132,7 +132,7 @@ def do_create():
         acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
     else:
         acquired = False
-        index_entry = '" :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
         acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
     links = input("Links ? (Y/N): ")
@@ -163,8 +163,9 @@ def do_create():
         c.write('   ' + acquired_status)
 
         if links == "Y":
+            linkdocument = input("Document Name : ")
             c.write('\n\n.. rubric:: Links\n\n')
-            c.write(":download:`" + product_name + " <" + dotdot + "_static/" + location + "/{INSERT DOCUMENT NAME HERE}"+ ">`")
+            c.write(":download:`" + product_name + " <" + dotdot + "_static/" + location + "/"+ linkdocument + ">`")
 
 
     return index_entry

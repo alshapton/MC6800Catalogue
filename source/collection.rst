@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 20-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 21-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -63,6 +63,18 @@ This is the current collection (as at 20-04-2025) of the items produced by Motor
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
 
 
+.. rubric:: NonResident Software
+
+.. csv-table:: 
+	:header: "Part Number","Description"
+	:widths: 30, 70
+
+	" :ref:`N/A <M-GE>`","Motorola Software for General Electric"
+	" :ref:`N/A <M-MTSS>`","Motorola Software for Motorola Time Sharing System"
+	" :ref:`N/A <M-PDP-11>`","Motorola Software for DEC PDP-11"
+	" :ref:`N/A <M-UCS>`","Motorola Software for United Computing Service"
+
+
 .. rubric:: Other Hardware
 
 .. csv-table:: 
@@ -109,12 +121,13 @@ This is the current collection (as at 20-04-2025) of the items produced by Motor
 	" :ref:`MES6800 <MES6800>`","MES6800 User Guide"
 
 
-.. rubric:: Software
+.. rubric:: Resident Software
 
 .. csv-table:: 
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`N/A <M-EXORciser>`","Motorola Software for Exorciser InfoSheet"
 	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_asm>`","EDUCATOR-II Monitor Assembly Listing"
 	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_hex>`","EDUCATOR-II Monitor hex dump"
 	" :ref:`N/A <Monitors_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`","MIKBUG Monitor Assembly Listing REV 009"

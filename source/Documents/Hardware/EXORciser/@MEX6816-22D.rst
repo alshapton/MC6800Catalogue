@@ -5,7 +5,7 @@
 MEX6816-22D 16K Dynamic RAM           
 ===========================
 
-.. image:: ../../../images/MEX6816-22D.1.png
+.. image:: ../../../images/Hardware/EXORciser/MEX6816-22D.1.png
    :width: 400
    :align: center
 

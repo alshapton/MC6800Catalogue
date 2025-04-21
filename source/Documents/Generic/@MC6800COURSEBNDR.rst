@@ -23,4 +23,12 @@ Microprocessor Course
 
 - 6800 Microprocessor Course
 - :ref:`M6800 Systems Reference and Data Sheets (May 1975 Edition) <SYSREF>`
+- :ref:`M-GE`
+- :ref:`M-PDP-11`
+- :ref:`M-MTSS`
+- :ref:`M-UCS`
+- :ref:`M-EXORciser`
+
+
+
 

@@ -19,3 +19,12 @@
 +             +----------------+-------------+-----------------+-------------+--------------+-------------+--------------+-------------+
 |             | Data Cartridge |             | M68EML0411F     |             | M68EML0811F  |             | M68EML1011F  |             |
 +-------------+----------------+-------------+-----------------+-------------+--------------+-------------+--------------+-------------+
+
+.. rubric:: Non-Resident Software for Mainframe and Mincomputers Information
+
+.. csv-table:: 
+
+    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-PDP-11>`","Motorola Software for DEC PDP-11"
+    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-GE>`","Motorola Software for General Electric"
+    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-MTSS>`","Motorola Software for Motorola Time Sharing System"
+    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-UCS>`","Motorola Software for United Computing Service"
