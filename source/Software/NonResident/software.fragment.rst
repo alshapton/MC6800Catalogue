@@ -28,3 +28,4 @@
     ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-GE>`","Motorola Software for General Electric"
     ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-MTSS>`","Motorola Software for Motorola Time Sharing System"
     ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-UCS>`","Motorola Software for United Computing Service"
+    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <SRC-FOR-MASM-PDP-11>`","FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)"
