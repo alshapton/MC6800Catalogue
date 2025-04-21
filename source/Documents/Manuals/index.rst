@@ -36,3 +36,4 @@ Reference Manuals
    ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
    ":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
    ":ref:`M68DSP(D) <M68DSP(D)>`","Extended Display Supplement Basic Display Unit User's Guide","First Edition January 1978"
+   ":ref:`MSETPLOT1(D1) <MSETPLOT1(D1)>`","EXORset 30 PLOT 1 User's Guide",""

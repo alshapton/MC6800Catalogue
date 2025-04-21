@@ -5,16 +5,16 @@
 MC6840 Programmable Timer Fundamentals and Applications
 =======================================================
 
-.. image:: ../../images/MC6840UM-AD/MC6840UM-AD.1.jpg
+.. image:: ../../images/Generic/MC6840UM-AD/MC6840UM-AD.1.jpg
    :width: 200
 
-.. image:: ../../images/MC6840UM-AD/MC6840UM-AD.2.jpg
+.. image:: ../../images/Generic/MC6840UM-AD/MC6840UM-AD.2.jpg
    :width: 200
 
-.. image:: ../../images/MC6840UM-AD/MC6840UM-AD.3.jpg
+.. image:: ../../images/Generic/MC6840UM-AD/MC6840UM-AD.3.jpg
    :width: 200
 
-.. image:: ../../images/MC6840UM-AD/MC6840UM-AD.4.jpg
+.. image:: ../../images/Generic/MC6840UM-AD/MC6840UM-AD.4.jpg
    :width: 200
 
 .. rubric:: Collection Information
