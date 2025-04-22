@@ -108,6 +108,7 @@ def do_create():
             location = "Software/Monitors"
         case "N":
             location = "Documents/Manuals"            
+            images = dotdot + 'images/Manuals/'
         case "G":
             location = "Documents/Generic"
         case "I":

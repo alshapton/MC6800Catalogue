@@ -10,7 +10,9 @@ Integrated Circuits
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem","Date: 7625A"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","Date: 3CF7928"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","Date: 3CF7928" 
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850L <MC6850L>`","Asynchr Comms I/face Adapter",""
+
 
 .. rubric:: Catalogue of ICs
 
@@ -35,7 +37,7 @@ Integrated Circuits
 
       "","","","","",""
       "","","","","",""
-      "MC6850L",":ref:`MC6860P <MC6860P>`","MC68B50P","MC6862P","",""
+      ":ref:`MC6850L<MC6850L>`",":ref:`MC6860P <MC6860P>`","MC68B50P","MC6862P","",""
 
 
 

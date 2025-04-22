@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 21-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 22-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -58,6 +58,7 @@ This is the current collection (as at 21-04-2025) of the items produced by Motor
 	:widths: 30, 70
 
 	" :ref:`MC6840P <MC68B40P>`","Programmable Timer"
+	" :ref:`MC6850L <MC6850L>`","Asynchr Comms I/face Adapter"
 	" :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"

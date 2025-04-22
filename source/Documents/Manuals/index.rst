@@ -17,7 +17,7 @@ Reference Manuals
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"
    ":ref:`N/A <M6800EXORUG>`","M6800 EXORciser User's Guide","First Edition 1975"
    ":ref:`N/A <M6800EXORUG.2>`","M6800 EXORciser User's Guide","Second Edition 1975"
-
+   ":ref:`M68EBS(D1) <M68EBS(D1)>`","EXORbus Specification Manual","First Edition December 1981"
 
 .. rubric:: Sofware Manuals
 
@@ -37,3 +37,4 @@ Reference Manuals
    ":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
    ":ref:`M68DSP(D) <M68DSP(D)>`","Extended Display Supplement Basic Display Unit User's Guide","First Edition January 1978"
    ":ref:`MSETPLOT1(D1) <MSETPLOT1(D1)>`","EXORset 30 PLOT 1 User's Guide",""
+   ":ref:`M68EDITORM(D3) <M68EDITORM(D3)>`","M6800/M6809 EDITORM Resident Editor Reference Manual","Third Edition June 1980"

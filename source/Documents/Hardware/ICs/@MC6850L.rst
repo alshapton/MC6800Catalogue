@@ -1,0 +1,27 @@
+:orphan:
+
+.. _MC6850L:
+
+Asynchronous Communications Interface Adapter
+============================================= 
+
+.. image:: ../../../images/Hardware/ICs/MC6850L.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
+   :widths: auto
+
+   "7527","30-JUN-1975 to 06-JUL-1975","Ceramic","Production","Drawer 2",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired","Datasheet"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A
+
