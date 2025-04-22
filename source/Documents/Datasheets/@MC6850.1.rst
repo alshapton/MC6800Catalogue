@@ -17,7 +17,7 @@ MC6850 (1 Mhz)/MC68A50 (1.5 Mhz)/MC68B50 (2 Mhz) Asynchronous Communications Int
    :header: "Component","Datasheet"
    :widths: auto
 
-    "N/A",":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+    :material-regular:`verified;2em;sd-text-success` 12-MAR-2025 :ref:`MC6850L <MC6850L>`,:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
 
 
 

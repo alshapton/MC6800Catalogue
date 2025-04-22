@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC6860P:
+.. _MC6862P:
 
-0-600 bps Digital Modem
-=======================
+2400 bps Digital Modulator
+==========================
 
-.. image:: ../../../images/Hardware/ICs/MC6860P.1.png
+.. image:: ../../../images/Hardware/ICs/MC6862P.1.png
    :width: 400
    :align: center
 
@@ -15,7 +15,7 @@
    :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7625","14-JUN-1976 to 20-JUN-1976","Plastic","Production","Drawer 2","Notes"
+   "7644","25-OCT-1976 to 31-OCT-1976","Plastic","Production","Drawer 2",""
 
 .. rubric:: Collection Information
 

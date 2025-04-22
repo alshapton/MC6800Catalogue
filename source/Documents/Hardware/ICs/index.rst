@@ -12,6 +12,7 @@ Integrated Circuits
    ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","Date: 3CF7928" 
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850L <MC6850L>`","Asynchr Comms I/face Adapter",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator",""
 
 
 .. rubric:: Catalogue of ICs
@@ -37,7 +38,7 @@ Integrated Circuits
 
       "","","","","",""
       "","","","","",""
-      ":ref:`MC6850L<MC6850L>`",":ref:`MC6860P <MC6860P>`","MC68B50P","MC6862P","",""
+      ":ref:`MC6850L<MC6850L>`",":ref:`MC6860P <MC6860P>`","MC68B50P",":ref:`MC6862P <MC6862P>`","",""
 
 
 

@@ -60,6 +60,7 @@ This is the current collection (as at 22-04-2025) of the items produced by Motor
 	" :ref:`MC6840P <MC68B40P>`","Programmable Timer"
 	" :ref:`MC6850L <MC6850L>`","Asynchr Comms I/face Adapter"
 	" :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem"
+	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
 

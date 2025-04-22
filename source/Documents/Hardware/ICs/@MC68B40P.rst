@@ -22,7 +22,7 @@ Programmable Timer
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired","Datasheet"
+   :header: "Component","Datasheet"
    :widths: auto
 
    :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A

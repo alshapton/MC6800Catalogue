@@ -20,8 +20,8 @@ Asynchronous Communications Interface Adapter
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired","Datasheet"
+   :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A
+   :material-regular:`verified;2em;sd-text-success` :ref:`12-MAR-2025 <MC6850>`,:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
 
