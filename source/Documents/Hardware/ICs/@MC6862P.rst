@@ -12,10 +12,14 @@
 .. rubric:: Specific Information
 
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7644","25-OCT-1976 to 31-OCT-1976","Plastic","Production","Drawer 2",""
+   "Date Code","7644"
+   "Manufacture Date","5-OCT-1976 to 31-OCT-1976"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 2"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -23,11 +27,5 @@
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
 
-.. rubric:: Links
-
-
-:download:`MC6860 Datasheet <../../../_static/Documents/Datasheets/MC6860.pdf>`
-
-:download:`MC6860L Advance Information Datasheet <../../../_static/Documents/Datasheets/MC6860L.1.pdf>`

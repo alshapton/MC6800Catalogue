@@ -12,10 +12,14 @@ Programmable Timer
 .. rubric:: Specific Information
 
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7928","02-JUL-1979 to 08-JUL-1979","Plastic","Production","Drawer 1",""
+   "Date Code","7928"
+   "Manufacture Date","02-JUL-1979 to 08-JUL-1979"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 1"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -25,7 +29,6 @@ Programmable Timer
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
 
-.. rubric:: Links
 

@@ -81,9 +81,9 @@ References
 
 
 .. csv-table:: 
-   :header: "Acquired"
+   :header: "Acquired","DataSheet"
    :widths: auto
 
-    ":material-regular:`thumb_down;2em;sd-text-danger`"
+    ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 

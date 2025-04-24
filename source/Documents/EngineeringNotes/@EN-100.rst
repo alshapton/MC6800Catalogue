@@ -2,8 +2,8 @@
 
 .. _EN-100:
 
-MCM6830L7 MIKBUG/MINIBUG ROM
-============================
+Engineering Note EN-100 - MIKBUG/MINIBUG ROM
+============================================
 
 .. image:: ../../images/EngineeringNotes/EN-100.png
    :width: 400
@@ -19,4 +19,6 @@ MCM6830L7 MIKBUG/MINIBUG ROM
 
 .. rubric:: Links
 
-:download:`MCM6830L7 MIKBUG/MINIBUG ROM <../../_static/Documents/EngineeringNotes/EN-100.pdf>`
+:download:`Engineering Note EN-100 <../../_static/Documents/EngineeringNotes/EN-100.pdf>`
+
+:ref:`MCM6830L7`

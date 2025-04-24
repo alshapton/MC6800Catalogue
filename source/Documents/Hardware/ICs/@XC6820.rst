@@ -1,0 +1,31 @@
+:orphan:
+
+.. _XC6820:
+
+Peripheral Interface Adapter
+============================
+
+.. image:: ../../../images/Hardware/ICs/XC6820.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","7517"
+   "Manufacture Date","21-APR-1975 to 27-APR-1975"
+   "Packaging","Ceramic"
+   "Status","Engineering"
+   "Location","Briefcase"
+   "Notes","This IC is an engineering sample of the MC6820."
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+   ":material-regular:`verified;2em;sd-text-success` 30-JAN-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+

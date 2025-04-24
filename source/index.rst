@@ -52,7 +52,7 @@ Conventions Used
    ":material-regular:`lock_open;2em;sd-text-danger`","Usually datasheets, this is preliminary or advance information and will be subject to change."
    ":material-regular:`lock;2em;sd-text-success`","This is published material relating to the product as sold."
    ":octicon:`list-ordered;2em`","A second-source item."
-
+   ":material-regular:`local_shipping;2em`","An item in transit"
 
 .. toctree::
    :hidden:

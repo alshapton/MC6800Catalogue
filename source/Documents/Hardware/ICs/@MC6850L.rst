@@ -12,10 +12,14 @@ Asynchronous Communications Interface Adapter
 .. rubric:: Specific Information
 
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7527","30-JUN-1975 to 06-JUL-1975","Ceramic","Production","Drawer 2",""
+   "Date Code","7527"
+   "Manufacture Date","30-JUN-1975 to 06-JUL-1975"
+   "Packaging","Ceramic"
+   "Status","Production"
+   "Location","Drawer 2"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -23,5 +27,5 @@ Asynchronous Communications Interface Adapter
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` :ref:`12-MAR-2025 <MC6850>`,:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,:material-regular:`verified;2em;sd-text-success` :ref:`28-MAR-2025 <MC6850>`
 

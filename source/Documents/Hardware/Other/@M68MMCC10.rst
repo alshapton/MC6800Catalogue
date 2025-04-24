@@ -59,7 +59,7 @@ Card Cage (10 Card)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired"
+   :header: "Acquired","DataSheet"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   :material-regular:`local_shipping;2em;`,":material-regular:`thumb_down;2em;sd-text-danger`"

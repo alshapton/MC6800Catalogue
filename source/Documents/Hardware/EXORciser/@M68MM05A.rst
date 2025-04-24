@@ -22,8 +22,8 @@ Need to move to new micromodules section
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired"
+   :header: "Component","DataSheet"
    :widths: auto
 
-    ":material-regular:`thumb_down;2em;sd-text-danger` "
+    ":material-regular:`thumb_down;2em;sd-text-danger` ",":material-regular:`thumb_down;2em;sd-text-danger`"
 

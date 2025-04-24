@@ -12,10 +12,14 @@
 .. rubric:: Specific Information
 
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7625","14-JUN-1976 to 20-JUN-1976","Plastic","Production","Drawer 2","Notes"
+   "Date Code","7625"
+   "Manufacture Date","14-JUN-1976 to 20-JUN-1976"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 2"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -23,7 +27,7 @@
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,N/A
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 

@@ -12,10 +12,16 @@ Peripheral Interface Adapter
 .. rubric:: Specific Information
 
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "BR7720","09-MAY-1977 to 15-MAY-1977","Plastic","Production","Drawer 1","Possibly inoperable"
+   "Date Code","BR7720"
+   "Manufacture Date","09-MAY-1977 to 15-MAY-1977"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 1"
+   "Notes","This IC is marked as possibly defective."
+
+This is a version of the MC6820 introduced using depletion mode technology and is fully compatible with the earlier MC6820.
 
 .. rubric:: Collection Information
 
@@ -23,5 +29,5 @@ Peripheral Interface Adapter
    :header: "Component","DataSheet"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025","N/A"
+   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
 

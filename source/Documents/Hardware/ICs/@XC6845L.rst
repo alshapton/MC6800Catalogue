@@ -11,11 +11,16 @@ CRT Controller
 
 .. rubric:: Specific Information
 
+
 .. csv-table:: 
-   :header: "Manufacture Date Code","Date","Packaging","Status","Location","Notes"
    :widths: auto
 
-   "7749","28-NOV-1977 to 04-DEC-1977","Ceramic","Engineering","Drawer 2",""
+   "Date Code","7749"
+   "Manufacture Date","28-NOV-1977 to 04-DEC-1977"
+   "Packaging","Ceramic"
+   "Status","Engineering"
+   "Location","Drawer 2"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -23,5 +28,5 @@ CRT Controller
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 20-MAR-2025,N/A
+   :material-regular:`verified;2em;sd-text-success` 20-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
 
