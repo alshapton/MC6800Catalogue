@@ -167,14 +167,20 @@ def do_create():
 
         c.write('   ' + acquired_status)
 
+        original_document = ''
         if links == "Y":
             linkdocument = input("Document Name : ")
             c.write('\n\n.. rubric:: Links\n\n')
-            c.write(":download:`" + product_name + " <" + dotdot + "_static/" + location + "/"+ linkdocument + ">`")
+            target_document =  "../source/_static/" + location + "/"+ linkdocument
+            c.write(":download:`" + product_name + " <" + target_document+ ">`")
             original_document = MOVE + '/' + linkdocument
         original_image = MOVE + '/' + product_number + '.png'
-        
-            
+        target_image = images.replace(dotdot,'../source/') + product_number + '.png'
+        print('Ready to move.....')
+        print(original_document + ' -> ' + target_document)
+        print(original_image +' -> '+ target_image)
+
+
     return index_entry
     
 

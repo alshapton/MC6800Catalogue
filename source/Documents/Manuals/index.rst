@@ -42,3 +42,4 @@ Reference Manuals
    ":ref:`M68EDITORM(D3) <M68EDITORM(D3)>`","M6800/M6809 EDITORM Resident Editor Reference Manual","Third Edition June 1980"
    ":ref:`N/A <MPLLREF(PRELIM)>`","MPL Language Reference Manual","Prelimimary March 1976"
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
+   ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   

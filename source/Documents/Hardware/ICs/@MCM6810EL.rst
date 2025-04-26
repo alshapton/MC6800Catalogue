@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MCM6810L:
+.. _MCM6810EL:
 
 128 x 8-bit RAM
 ===============
 
-.. image:: ../../../images/Hardware/ICs/MCM6810L.png
+.. image:: ../../../images/Hardware/ICs/MCM6810EL.png
    :width: 400
    :align: center
 
@@ -14,11 +14,11 @@
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","7530"
-   "Manufacture Date"," 21-JUL-1975 to 27-JUL-1975"
-   "Packaging","Ceramic"
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","TBD"
    "Status","Production"
-   "Location","Briefcase"
+   "Location","TBD"
    "Notes",""
 
 .. rubric:: Collection Information
@@ -27,9 +27,12 @@
    :header: "Component","DataSheet"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 30-JAN-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 
 :download:`MC6810 DataSheet <../../../_static/Documents/Datasheets/MCM6810.pdf>`
+
+
+
 

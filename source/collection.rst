@@ -65,7 +65,7 @@ This is the current collection (as at 26-04-2025) of the items produced by Motor
 	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
 	" :ref:`MC68B50P <MC68B50P>`","Plastic"
-	" :ref:`MCM6810L <MCM6810L>`","128 x 8-bit RAM"
+	" :ref:`MCM6810L <MCM6810L>`","Ceramic"
 	" :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG"
 	" :ref:`XC6820 <XC6820>`","Peripheral Interface Adapter"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
