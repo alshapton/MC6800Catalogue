@@ -3,15 +3,19 @@ import time
 
 import glob
 import os
+import shutil
 
-# Script to collect together all the data from each of the MD files and collect it together to produce a single collection document.
 
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 OUTPUT_FILE = 'source/collection.rst'
 SUFFIX = 'rst'
 PREFIX ='source/'
+MOVE='tmp/move'
 
+
+def movefile(old, new):
+    shutil.move(old, new)
 
 def do_collection():
     # Find all .rst files in the current directory and subdirectories
@@ -167,8 +171,10 @@ def do_create():
             linkdocument = input("Document Name : ")
             c.write('\n\n.. rubric:: Links\n\n')
             c.write(":download:`" + product_name + " <" + dotdot + "_static/" + location + "/"+ linkdocument + ">`")
-
-
+            original_document = MOVE + '/' + linkdocument
+        original_image = MOVE + '/' + product_number + '.png'
+        
+            
     return index_entry
     
 

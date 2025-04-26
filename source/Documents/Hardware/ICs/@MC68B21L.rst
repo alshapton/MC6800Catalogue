@@ -31,3 +31,9 @@ This is a version of the MC6820 introduced using depletion mode technology and i
 
    ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
 
+.. rubric:: Links
+
+
+:download:`MC6821 Datasheet <../../../_static/Documents/Datasheets/MC6821.1.pdf>`
+
+

@@ -1,0 +1,24 @@
+:orphan:
+
+.. _MC6821:
+
+Peripheral Interface Adapter
+============================
+
+.. image:: ../../images/DataSheets/MC6821.1.png
+   :width: 400
+   :align: center
+
+
+.. rubric:: Collection Information
+   
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`, :material-regular:`thumb_down;2em;sd-text-danger`
+
+
+.. rubric:: Links
+
+:download:`MC6821 DataSheet <../../_static/Documents/Datasheets/MC6821.1.pdf>`

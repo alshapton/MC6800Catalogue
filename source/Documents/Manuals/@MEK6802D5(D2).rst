@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MEK6802D5(D2):
+
+MEK6802D5 Microcomputer Evaluation Board User's Manual
+======================================================
+
+.. image:: ../../images/Manuals/MEK6802D5(D2).png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MEK6802D5 Microcomputer Evaluation Board User's Manual <../../_static/Documents/Manuals/MEK6802d5-microcomputer-evaluation-board-users-manual.pdf>`

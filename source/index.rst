@@ -40,8 +40,6 @@ There are items in the collection which are detailed here which increase over ti
 Conventions Used
 ================ 
 
-.. rst-class:: center-align-center-col
-
 .. csv-table:: 
    :header: "Symbol","Description"
    :widths: 14, 86

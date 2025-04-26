@@ -27,5 +27,5 @@ HEP version of MC6800
    :header: "Component","Datasheet"
    :widths: auto
 
-   N/A,N/A
+      ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
 

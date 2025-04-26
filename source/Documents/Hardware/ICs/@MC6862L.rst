@@ -14,11 +14,11 @@
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","7534"
+   "Manufacture Date","18-AUG-1975 to 24-AUG-1975"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBD"
+   "Location","Drawer 2"
    "Notes",""
 
 .. rubric:: Collection Information
@@ -27,4 +27,4 @@
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`local_shipping;2em` 12-MAR-2025, ":material-regular:`thumb_down;2em;sd-text-danger`"
+   :material-regular:`verified;2em;sd-text-success` 25-APR-2025, ":material-regular:`thumb_down;2em;sd-text-danger`"
