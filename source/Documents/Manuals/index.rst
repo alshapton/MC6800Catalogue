@@ -28,6 +28,11 @@ Reference Manuals
    ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`M6809EXOR(D1) <M6809EXOR(D1)>`","M6809 EXORciser User's Guide","First Edition September 1979"
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
+   ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
+   ":ref:`M68SXD150(D2) <M68SXD150(D2)>`","EXORterm 150 EXORciser Display Console User's Guide","Second Edition April 1979"
+   ":ref:`MEX68PP3(D) <MEX68PP3(D)>`","PROM Programmer III User's Guide","First Edition April 1978"
+   ":ref:`M68SVS(D) <M68SVS(D)>`","Basic Display Unit User's Guide","First Edition 1977"
+   ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
 
 
 .. rubric:: Software Manuals

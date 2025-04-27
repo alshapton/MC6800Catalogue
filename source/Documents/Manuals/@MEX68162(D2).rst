@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MEX68162(D2):
+
+8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide
+========================================================
+
+.. image:: ../../images/Manuals/MEX68162(D2).png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide <../../_static/Documents/Manuals/MEX68162_8K_16K_Static_RAM_Module_197812.pdf>`
