@@ -142,6 +142,9 @@ def do_create():
 
     links = input("Links ? (Y/N): ")
 
+    if links == "Y":
+        linkdocument = input("Document Name : ")
+
     OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
     if os.path.exists(OUTPUT_FILE):
         print(f"File {OUTPUT_FILE} already exists")
@@ -169,16 +172,20 @@ def do_create():
 
         original_document = ''
         if links == "Y":
-            linkdocument = input("Document Name : ")
             c.write('\n\n.. rubric:: Links\n\n')
-            target_document =  "../source/_static/" + location + "/"+ linkdocument
+            target_document =  dotdot + '_static/' + location + "/"+ linkdocument
             c.write(":download:`" + product_name + " <" + target_document+ ">`")
             original_document = MOVE + '/' + linkdocument
         original_image = MOVE + '/' + product_number + '.png'
-        target_image = images.replace(dotdot,'../source/') + product_number + '.png'
+        target_image = images.replace(dotdot,'source/') + product_number + '.png'
         print('Ready to move.....')
+        target_document =  "source/_static/" + location + "/"+ linkdocument
+
         print(original_document + ' -> ' + target_document)
         print(original_image +' -> '+ target_image)
+        #movefile(original_document, target_document)
+        #movefile(original_image, target_image)
+        #print('Moved images and source data')
 
 
     return index_entry

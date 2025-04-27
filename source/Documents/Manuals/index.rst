@@ -20,7 +20,11 @@ Reference Manuals
    ":ref:`M68EBS(D1) <M68EBS(D1)>`","EXORbus Specification Manual","First Edition December 1981"
    ":ref:`MEK6802D5(D2) <MEK6802D5(D2)>`","MEK6802D5 Microcomputer Evaluation Board User's Manual","Second Edition 1980"
    ":ref:`MEK6800D1 <MEK6800D1>`","Assembly Instructions M6800 Design Evaluation Kit","1975"
+   ":ref:`MEX68DB2(D2) <MEX68DB2(D2)>`","MEX68DB2 DEBUG II Module User's Guide","Second Edition March 1979"
+   ":ref:`M68SFDC2(D) <M68SFDC2(D)>`","EXORdisk II Floppy Disk Controller Module User's Guide","First Edition June 1978"
+   ":ref:`M68FD3601-3604 <M68FD3601-3604>`","EXORdisk User's Guide","Preliminary"
 
+   
 .. rubric:: Software Manuals
 
 .. csv-table:: 
@@ -43,3 +47,4 @@ Reference Manuals
    ":ref:`N/A <MPLLREF(PRELIM)>`","MPL Language Reference Manual","Prelimimary March 1976"
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
    ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   
+   ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"

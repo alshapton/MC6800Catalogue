@@ -1,0 +1,22 @@
+:orphan:
+
+.. _M68FD3601-3604:
+
+EXORdisk User's Guide
+=====================
+
+.. image:: ../../images/Manuals/M68FD3601-3604.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`EXORdisk User's Guide <../../_static/Documents/Manuals/M68FD3601-3604_EXORdisk_Floppy_Disk_System_Users_Guide_1975.pdf>`

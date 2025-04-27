@@ -16,7 +16,7 @@ The original 6800 requires a +5 V supply only (generating bias voltages on chip
 The 6802, introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. The 6808 is the same without RAM.
 
 The 68HC11, introduced in 1984, is an upward-compatible microcontroller that adds a second index register, 8x8 multiply and 16/16 divide instructions, as well as a range of 16-bit instructions that treat A and B as a combined 16-bit accumulator. On-chip peripherals include timers, parallel ports, A/D, SPI and UART.
-This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling.
+This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their compatible derivatives, support chips and tooling.
 
 .. Important:: 
    The 6805 CMOS family, which includes the MC146805, is neither source- nor object-code compatible with the MC6800 but very similar.
