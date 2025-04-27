@@ -183,9 +183,9 @@ def do_create():
 
         print(original_document + ' -> ' + target_document)
         print(original_image +' -> '+ target_image)
-        #movefile(original_document, target_document)
-        #movefile(original_image, target_image)
-        #print('Moved images and source data')
+        movefile(original_document, target_document)
+        movefile(original_image, target_image)
+        print('Moved images and source data')
 
 
     return index_entry
