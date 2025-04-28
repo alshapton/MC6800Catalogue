@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M68MM01:
+
+Micromodule 1 M6800 CPU Module
+==============================
+
+.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM01/M68MM01.jpg
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+    ":material-regular:`thumb_down;2em;sd-text-danger` ",":material-regular:`thumb_down;2em;sd-text-danger`"

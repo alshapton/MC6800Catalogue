@@ -1,0 +1,24 @@
+:orphan:
+
+.. collapse:: Microprocessor Unit (MC6800)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Frequency","Temperature" 
+      :widths: auto  
+
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6800L <MC6800L>`","Ceramic","1Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00CL <MC68A00CL>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B00L <MC68B00L>`","Ceramic","2Mhz","-0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800S <MC6800S>`","CERDIP","1Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800CS  <MC6800CS>`","CERDIP","1Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00S <MC68A00S>`","CERDIP","1.5Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00CS  <MC68A00CS>`","CERDIP","1.5Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B00S <MC68B00S>`","CERDIP","2Mhz","-0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800P <MC6800P>`","Plastic","1Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800CP <MC6800CP>`","Plastic","1Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00P <MC68A00P>`","Plastic","1.5Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00CP <MC68A00CP>`","Plastic","1.5Mhz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B00P <MC68B00P>`","Plastic","2Mhz","-0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`HEPC4801L <HEPC4801L>`","Ceramic","",""

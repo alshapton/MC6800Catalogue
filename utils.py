@@ -42,7 +42,7 @@ def do_collection():
                     match type:
                         case "Documents/ApplicationNotes":
                             doc_type = "Application Notes"
-                        case "Documents/Hardware/ICs":
+                        case "Documents/Hardware/ICs":    
                             doc_type = "ICs"
                         case "Documents/Reference":
                             doc_type = "Reference Documents"
@@ -64,6 +64,8 @@ def do_collection():
                             doc_type = "Other Hardware"
                         case _:
                             doc_type = "Other"  
+                            if "/ICs" in type:
+                                doc_type = "ICs"
                     
                     for line in f:
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:

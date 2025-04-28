@@ -1,0 +1,23 @@
+:orphan:
+
+.. collapse:: Asynchronous Communications Interface Adapter (MC6850)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Frequency","Temperature" 
+      :widths: auto
+
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850L <MC6850L>`","Ceramic","1Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC6850CL","Ceramic","1MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50L","Ceramic","1.5MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50CL","Ceramic","1.5MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B50C","Ceramic","2MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC6850S","CERDIP","1MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC6850CS","CERDIP","1MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50S","CERDIP","1.5MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50CS","CERDIP","1.5MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B50S","CERDIP","2MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC6850P","Plastic","1MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC6850CP","Plastic","1MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50P","Plastic","1.5MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A50CP","Plastic","1.5MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B50P <MC68B50P>`","Plastic","2MHz","0-70\ :sup:`o`\ C"

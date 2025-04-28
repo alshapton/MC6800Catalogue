@@ -1,0 +1,35 @@
+:orphan:
+
+.. _MC6800L:
+
+Microprocessor Unit
+===================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","7634"
+   "Manufacture Date","16-AUG-1976 to 22-AUG-1976"
+   "Packaging","Ceramic"
+   "Status","Production"
+   "Location","Briefcase"
+   "Notes",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 30-JAN-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
+

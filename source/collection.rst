@@ -57,7 +57,7 @@ This is the current collection (as at 28-04-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`MC6800L <MC6800L>`","Microprocessor Unit"
+	" :ref:`MC6800L <MC6800L>`","Ceramic"
 	" :ref:`MC6840P <MC68B40P>`","Programmable Timer"
 	" :ref:`MC6850L <MC6850L>`","Ceramic"
 	" :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem"
@@ -90,6 +90,7 @@ This is the current collection (as at 28-04-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)"
 	" :ref:`N/A <HW-OTHER-NONE-2>`","MPU Evalution Card MC6800 Microprocessor Board"
 
 

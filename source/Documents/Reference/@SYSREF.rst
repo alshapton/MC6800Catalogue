@@ -5,7 +5,7 @@
 M6800 Systems Reference and Data Sheets
 =======================================
 
-.. image:: ../../images/M6800SystemsReferenceDataSheets_May75.png
+.. image:: ../../images/Generic/M6800SystemsReferenceDataSheets_May75.png
    :width: 400
    :align: center
 

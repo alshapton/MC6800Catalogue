@@ -62,4 +62,4 @@ Card Cage (10 Card)
    :header: "Acquired","DataSheet"
    :widths: auto
 
-   :material-regular:`local_shipping;2em;`,":material-regular:`thumb_down;2em;sd-text-danger`"
+   :material-regular:`verified;2em;sd-text-success` 28-APR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"

@@ -17,6 +17,7 @@ Development Systems
    "M68SXS10200","EXORterm 200 Development System 220V","(ii)","(ii)","MPU","1 MHz","N/A","(ii),  (iii)"     
    "M68SXS102B0","USE EXORterm 200 Development System 220V","(ii)","(ii)","MPU","1 MHz","N/A","(ii), (iii)"     
 
+There were also :ref:`basic options page` for these systems.
 
 Purpose:
 
@@ -40,4 +41,3 @@ Included Options:
    viii) RS232/TTY Interface
    
 
-There were also :ref:`basic options page` for these systems.

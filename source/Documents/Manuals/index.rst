@@ -14,6 +14,7 @@ Reference Manuals
    ":material-regular:`verified;2em;sd-text-success` :ref:`MES6800 <MES6800>`","MES6800 User Guide","September 1975"
    ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
+   ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"
    ":ref:`N/A <M6800EXORUG>`","M6800 EXORciser User's Guide","First Edition 1975"
    ":ref:`N/A <M6800EXORUG.2>`","M6800 EXORciser User's Guide","Second Edition 1975"
