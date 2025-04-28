@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MEX6815-1:
+
+8K Dynamic RAM Module Supplement
+================================
+
+.. image:: ../../images/Manuals/MEX6815-1.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`8K Dynamic RAM Module Supplement <../../_static/Documents/Manuals/MEX6815-1_8K_Dynamic_RAM_Module_Supplement_1975.pdf>`

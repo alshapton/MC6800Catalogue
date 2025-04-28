@@ -1,0 +1,23 @@
+:orphan:
+
+.. _M68MM04A:
+
+Micromodule 4A ROM/EPROM Module
+===============================
+
+.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.1.jpg
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+    ":material-regular:`thumb_down;2em;sd-text-danger` ",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:ref:`M68MM04A(D2) - ROM/EPROM Module Micromodule 4A <M68MM04A(D2)>`
+

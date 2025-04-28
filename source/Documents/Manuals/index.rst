@@ -33,8 +33,9 @@ Reference Manuals
    ":ref:`MEX68PP3(D) <MEX68PP3(D)>`","PROM Programmer III User's Guide","First Edition April 1978"
    ":ref:`M68SVS(D) <M68SVS(D)>`","Basic Display Unit User's Guide","First Edition 1977"
    ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
-
-
+   ":ref:`MEX6815-1 <MEX6815-1>`","8K Dynamic RAM Module Supplement","First Edition 1975"
+   ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
+   
 .. rubric:: Software Manuals
 
 .. csv-table:: 
@@ -73,3 +74,4 @@ Reference Manuals
    ":ref:`M68BAS(D3) <M68BAS(D3)>`","M6800 BASIC Interpreter Reference Manual","3rd Edition 1980"
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
+   ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
