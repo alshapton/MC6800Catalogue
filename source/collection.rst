@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 28-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 30-04-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -59,13 +59,17 @@ This is the current collection (as at 28-04-2025) of the items produced by Motor
 
 	" :ref:`MC6800L <MC6800L>`","Ceramic"
 	" :ref:`MC6840P <MC68B40P>`","Programmable Timer"
+	" :ref:`MC6845P <MC6845P>`","CRT Controller"
 	" :ref:`MC6850L <MC6850L>`","Ceramic"
 	" :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem"
 	" :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator"
 	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
+	" :ref:`MC68B44P <MC68B44P>`","Direct Memory Access Controller (DMAC)"
 	" :ref:`MC68B50P <MC68B50P>`","Plastic"
+	" :ref:`MCM6810EL <MCM6810EL>`","Ceramic"
 	" :ref:`MCM6810L <MCM6810L>`","Ceramic"
+	" :ref:`MCM6810P <MCM6810P>`","Plastic"
 	" :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG"
 	" :ref:`XC6820 <XC6820>`","Peripheral Interface Adapter"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
@@ -128,6 +132,7 @@ This is the current collection (as at 28-04-2025) of the items produced by Motor
 
 	" :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
 	" :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
+	" :ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual"
 	" :ref:`MES6800 <MES6800>`","MES6800 User Guide"
 
 

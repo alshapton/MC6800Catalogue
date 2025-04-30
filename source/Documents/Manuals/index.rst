@@ -58,7 +58,7 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
-   ":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
    ":ref:`M68MASR(D2) <M68MASR(D2)>`","Macro Assemblers Reference Manual","Second Edition September 1979"
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual","First Edition Nov. 1976"
 

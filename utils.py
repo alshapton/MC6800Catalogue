@@ -5,6 +5,16 @@ import glob
 import os
 import shutil
 
+from dataclasses import dataclass
+from mininterface import run
+
+@dataclass
+class Env:
+  
+  my_flag: bool = False
+  manu_year: int = "1975"
+  manu_week: int = "15"
+  
 
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
@@ -209,6 +219,15 @@ while True:
     type = input('Enter choice: ')
     match type:
         case "1":
+            with run(Env) as m:
+                results = m.form({
+                "Enter Manufacture Year": m.env.manu_year,
+                "Enter Manufacture Week": m.env.manu_week
+                })    
+
+            print(results["Enter Manufacture Year"])
+            input('Press Enter to continue...')
+            #Get year and week from user
             y = input('Enter year: ')
             w = input('Enter week: ')
             #Call function to get dates range 

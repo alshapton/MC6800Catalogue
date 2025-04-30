@@ -1,0 +1,32 @@
+:orphan:
+
+.. _MC68B44P:
+
+Direct Memory Access Controller (DMAC)
+======================================
+
+.. image:: ../../../images/Hardware/ICs/MC68B44P.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","8853"
+   "Manufacture Date","26-DEC-1988 to 01-JAN-1989"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 1"
+   "Notes",""
+   "Frequency","TBD"
+   "Temperature","TBD"
+   
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
