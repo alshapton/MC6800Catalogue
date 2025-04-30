@@ -58,6 +58,7 @@ This is the current collection (as at 30-04-2025) of the items produced by Motor
 	:widths: 30, 70
 
 	" :ref:`MC6800L <MC6800L>`","Ceramic"
+	" :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter"
 	" :ref:`MC6840P <MC68B40P>`","Programmable Timer"
 	" :ref:`MC6845P <MC6845P>`","CRT Controller"
 	" :ref:`MC6850L <MC6850L>`","Ceramic"
@@ -67,6 +68,7 @@ This is the current collection (as at 30-04-2025) of the items produced by Motor
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
 	" :ref:`MC68B44P <MC68B44P>`","Direct Memory Access Controller (DMAC)"
 	" :ref:`MC68B50P <MC68B50P>`","Plastic"
+	" :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
 	" :ref:`MCM6810EL <MCM6810EL>`","Ceramic"
 	" :ref:`MCM6810L <MCM6810L>`","Ceramic"
 	" :ref:`MCM6810P <MCM6810P>`","Plastic"

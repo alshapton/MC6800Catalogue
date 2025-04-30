@@ -1,0 +1,32 @@
+:orphan:
+
+.. _MC6821P:
+
+Peripheral Interface Adapter
+============================
+
+.. image:: ../../../images/Hardware/ICs/MC6821P.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","8005"
+   "Manufacture Date","28-JAN-1980 to 03-FEB-1980"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","Drawer 1"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+

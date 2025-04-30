@@ -9,6 +9,7 @@ Integrated Circuits
 
    ":material-regular:`verified;2em;sd-text-success` :ref:`XC6820 <XC6820>`","Peripheral Interface Adapter",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter",""
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MCM6830","1024 byte ROM"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
@@ -20,7 +21,7 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6847","Video Display Generator (VDG)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC68488","General Purpose Interface Adapter (GPIB) IEEE488"   
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6852","Synchronous Serial Data Adapter (SDAA)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6854","Advanced Data Link Controller (ADLC)"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator","Ceramic"
@@ -47,9 +48,9 @@ Integrated Circuits
       :widths: 33, 34, 33
       :header-rows: 0
 
-      ":ref:`MC68B21L <MC68B21L>`","MC68B21P","MC68B54P"
-      ":ref:`MC68B40P <MC68B40P>`",":ref:`MC68B44P <MC68B44P>`",""
-      ":ref:`XC6845L  <XC6845L>`", ":ref:`MC6845P <MC6845P>`",""
+      ":ref:`MC68B21L <MC68B21L>`", ":ref:`MC6821P  <MC6821P>`",  ":ref:`MC68B54P <MC68B54P>`"
+      ":ref:`MC68B40P <MC68B40P>`", ":ref:`MC68B44P <MC68B44P>`", ""
+      ":ref:`XC6845L  <XC6845L>`",  ":ref:`MC6845P  <MC6845P>`", ""
 
 
 .. collapse:: Drawer 2
@@ -58,9 +59,9 @@ Integrated Circuits
       :widths: 16, 16, 16, 16, 16, 16 
       :header-rows: 0
 
-      ":ref:`MC6850L<MC6850L>`",":ref:`MC6862L <MC6862L>`",":ref:`MCM6810EL <MCM6810EL>`","","",""
-      ":ref:`MC68B50P<MC68B50P>`",":ref:`MC6862P <MC6862P>`","","","",""
-      ":ref:`MC6860P <MC6860P>`",":ref:`MCM6810P <MCM6810P>`","","","",""
+      ":ref:`MC6850L  <MC6850L>`",  ":ref:`MC6862L <MC6862L>`",   ":ref:`MCM6810EL <MCM6810EL>`","","",""
+      ":ref:`MC68B50P <MC68B50P>`", ":ref:`MC6862P <MC6862P>`",   "","","",""
+      ":ref:`MC6860P  <MC6860P>`",  ":ref:`MCM6810P <MCM6810P>`", "","","",""
 
 
 
