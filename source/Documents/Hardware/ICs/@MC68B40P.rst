@@ -2,8 +2,10 @@
 
 .. _MC68B40P:
 
-Programmable Timer
-==================
+.. #Metadata {'Product':'MC68B40P','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':1}
+
+MC68B40P Programmable Timer
+===========================
 
 .. image:: ../../../images/Hardware/ICs/MC68B40L.png
    :width: 400

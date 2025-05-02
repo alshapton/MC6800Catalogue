@@ -2,8 +2,8 @@
 
 .. _MC68A00L:
 
-Microprocessor Unit
-===================
+MC68A00L Microprocessor Unit
+============================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

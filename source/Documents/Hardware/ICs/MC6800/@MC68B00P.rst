@@ -2,8 +2,8 @@
 
 .. _MC68B00P:
 
-Microprocessor Unit
-===================
+MC68B00P Microprocessor Unit
+============================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

@@ -1,0 +1,34 @@
+:orphan:
+
+.. _MC68701L:
+
+.. #Transit {'Product':'MC68701L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
+
+MC68701L Microprocessor Unit
+============================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","TBD"
+   "Status","TBD"
+   "Location","TBD"
+   "Notes",""
+   "Frequency","TBD"
+   "Temperature","TBD"
+   
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"

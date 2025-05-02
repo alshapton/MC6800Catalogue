@@ -2,8 +2,10 @@
 
 .. _MCM6810EL:
 
-128 x 8-bit RAM
-===============
+.. #Metadata {'Product':'MCM6810EL','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':3}
+
+MCM6810EL 128 x 8-bit RAM
+=========================
 
 .. image:: ../../../../images/Hardware/ICs/MCM6810EL.png
    :width: 400

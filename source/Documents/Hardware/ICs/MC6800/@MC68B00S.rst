@@ -2,8 +2,10 @@
 
 .. _MC68B00S:
 
-Microprocessor Unit
-===================
+.. #Transit {'Product':'MC68B00S','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
+
+MC68B00S Microprocessor Unit
+============================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -29,7 +31,7 @@ Microprocessor Unit
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 
 .. rubric:: Links

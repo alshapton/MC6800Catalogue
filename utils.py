@@ -7,6 +7,7 @@ import shutil
 
 from dataclasses import dataclass
 from mininterface import run
+import ast
 
 @dataclass
 class Env:
@@ -26,6 +27,120 @@ MOVE='tmp/move'
 
 def movefile(old, new):
     shutil.move(old, new)
+
+def get_cols_for_drawer(st,dr,rw, info):
+    cols = []
+
+    for i in range(0,len(info)):
+        j=ast.literal_eval(info[i])
+        k=j['Storage']        
+        if k['Name'] == st:
+            drws=k['Drawers']
+            for d in range(0,len(drws)):
+                cd=drws[d]
+                if dr == cd['Drawer']:
+                    cols = cd['Columns']
+    return cols
+
+def update_storage():
+    storage=[]
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    ICLABELSNAME='labels.fragment.rst'
+    ICLABELS_FILE='source/Documents/Hardware/ICs/' + ICLABELSNAME
+    TABLES_FILE='source/Documents/Hardware/ICs/tables.fragment.rst'
+    PROPERTIES_FILE='storage.properties'
+    file1 = open(PROPERTIES_FILE, 'r')
+    storage_properties = file1.readlines()
+
+        
+    with open(ICLABELS_FILE,"w") as c:
+        for file in files:
+            if 'ICs' in file and 'fragment' not in file and 'index' not in file:
+                filename = file
+                got_image=False
+                with open(file) as f:
+                    for line in f:
+                        if '.. image:: ' in line and got_image == False:
+                            if 'NOIMAGE.png' not in line:
+                                image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
+                                got_image=True
+                                
+                        if '.. #Metadata' in line:
+                            this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
+                            loc = ast.literal_eval(this_loc)
+                            storage.append(loc)
+
+                if got_image == True:
+                    label = 'i'+filename.split('@')[-1].replace('.rst','')
+                    c.write('.. |' + label + '| ' + ' image:: ' + image + '\n')                        
+                    c.write('   :width: 200\n')                            
+                    c.write('   :class: no-scaled-links\n\n')
+                
+    sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
+    storagebox=''
+    drawer=0
+    row=0
+    column=0
+    colcount=0
+
+    with open(TABLES_FILE,"w") as c:
+
+        c.write('.. include:: ./' + ICLABELSNAME)
+
+        for item in sorted_storage:
+            if item['Storage'] != storagebox:   
+                c.write('\n\n.. rubric:: ' + item['Storage'])
+                storagebox=item['Storage']
+                drawer=0
+                row=0
+                column=0
+                rowcnt=0
+                cols=0
+            if item['Drawer'] != drawer:
+                if cols > colcount:
+                    for i in range(colcount,cols):
+                        c.write(',""')
+                c.write('\n\n.. collapse:: Drawer ' + str(item['Drawer']) + '\n')
+                c.write('\n    .. csv-table::\n')
+                c.write('       :header-rows: 0\n')
+                cols = get_cols_for_drawer(item['Storage'],item['Drawer'],item['Row'],storage_properties)
+                c.write('       :widths: ' + str(cols).replace('[','').replace(']','') +'\n')
+                drawer=item['Drawer']
+                row=0
+                column=0
+                first_row = True
+            if item['Row'] != row:
+                rowcnt += 1
+                cols = len(get_cols_for_drawer(item['Storage'],item['Drawer'],item['Row'],storage_properties))
+                    
+                rowcnt = 0
+                if first_row == True:
+                    c.write('\n       ')
+                    first_row = False
+                else:
+                    if cols > colcount:
+                        for i in range(colcount,cols):
+                            c.write(',""')
+                    c.write('\n       ')
+                            
+                row=item['Row']
+                column=0
+                colcount=0
+            if item['Column'] != column:
+                prod = item['Product'].strip()
+                if item['Column'] == 1:
+                    comma = ''
+                else:
+                    comma = ','
+                c.write(comma + '"|i' + prod + '| :ref:`'+ prod + ' <' + prod + '>`"')
+                column=item['Column']
+                colcount += 1
+        if cols > colcount:
+            for i in range(colcount,cols):
+                c.write(',""')                
+
+    print('\nStorage updated')      
+
 
 def do_collection():
     # Find all .rst files in the current directory and subdirectories
@@ -88,7 +203,6 @@ def do_collection():
                                         "DTYPE" : doc_type, 
                                         "OLINE" : outline }
                             collection.append(thisdict)
-                            # c.write(outline)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
 
         HEADING=''
@@ -214,7 +328,8 @@ def getDateRangeFromWeek(p_year,p_week):
 while True:
     print('\t1. Get date range from week')
     print('\t2. Create new entry')
-    print('\t3. Update collection')
+    print('\t3. Update just storage')
+    print('\t`. Update ALL ')
     print('\t0. Exit')
     type = input('Enter choice: ')
     match type:
@@ -237,11 +352,14 @@ while True:
         case "2":
             index_entry = do_create()
             print(index_entry)
-        case "3":
+        case "`":
+            update_storage()
             do_collection()
             print('Collection updated')
             os.system("make clean html")
-            
+        case "3":
+            update_storage()
+            #os.system("make clean html")
         case "0":
             print('Exiting')
             exit()

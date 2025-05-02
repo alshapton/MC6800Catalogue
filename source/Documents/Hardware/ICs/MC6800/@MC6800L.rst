@@ -2,8 +2,8 @@
 
 .. _MC6800L:
 
-Microprocessor Unit
-===================
+MC6800L Microprocessor Unit
+===========================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

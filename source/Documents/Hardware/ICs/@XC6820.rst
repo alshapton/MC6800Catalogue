@@ -2,8 +2,8 @@
 
 .. _XC6820:
 
-Peripheral Interface Adapter
-============================
+XC6820 Peripheral Interface Adapter
+===================================
 
 .. image:: ../../../images/Hardware/ICs/XC6820.png
    :width: 400

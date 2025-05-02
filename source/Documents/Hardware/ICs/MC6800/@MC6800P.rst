@@ -2,8 +2,8 @@
 
 .. _MC6800P:
 
-Microprocessor Unit
-===================
+MC6800P Microprocessor Unit
+===========================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

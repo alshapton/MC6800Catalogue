@@ -1,9 +1,10 @@
 :orphan:
 
 .. _MC6862L:
+.. #Metadata {'Product':'MC6862L','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
 
-2400 bps Digital Modulator
-==========================
+MC6862L 2400 bps Digital Modulator
+==================================
 
 .. image:: ../../../images/Hardware/ICs/MC6862L.png
    :width: 400

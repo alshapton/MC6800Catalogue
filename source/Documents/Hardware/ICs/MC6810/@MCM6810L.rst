@@ -2,8 +2,8 @@
 
 .. _MCM6810L:
 
-128 x 8-bit RAM
-===============
+MCM6810L 128 x 8-bit RAM
+========================
 
 .. image:: ../../../../images/Hardware/ICs/MCM6810L.png
    :width: 400

@@ -2,8 +2,8 @@
 
 .. _MC6800CP:
 
-Microprocessor Unit
-===================
+MC6800CP Microprocessor Unit
+============================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

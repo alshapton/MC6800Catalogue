@@ -2,8 +2,10 @@
 
 .. _MC68B44P:
 
-Direct Memory Access Controller (DMAC)
-======================================
+.. #Metadata {'Product':'MC68B44P','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
+
+MC68B44P Direct Memory Access Controller (DMAC)
+===============================================
 
 .. image:: ../../../images/Hardware/ICs/MC68B44P.png
    :width: 400

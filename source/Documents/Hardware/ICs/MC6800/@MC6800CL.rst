@@ -2,8 +2,8 @@
 
 .. _MC6800CL:
 
-Microprocessor Unit
-===================
+MC6800CL Microprocessor Unit
+============================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

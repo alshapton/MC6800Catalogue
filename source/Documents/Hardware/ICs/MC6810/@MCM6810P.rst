@@ -2,8 +2,10 @@
 
 .. _MCM6810P:
 
-128 x 8-bit RAM
-===============
+.. #Metadata {'Product':'MCM6810P','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':2}
+
+MCM6810P 128 x 8-bit RAM
+========================
 
 .. image:: ../../../../images/Hardware/ICs/MCM6810P.png
    :width: 400

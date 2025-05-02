@@ -2,8 +2,10 @@
 
 .. _XC6845L:
 
-CRT Controller
-==============
+.. #Metadata {'Product':'XC6845L','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':1}
+
+XC6845L CRT Controller
+======================
 
 .. image:: ../../../images/Hardware/ICs/XC6845L.png
    :width: 400

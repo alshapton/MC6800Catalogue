@@ -1,5 +1,8 @@
 .. _IC Index page:
 
+
+
+
 Integrated Circuits
 ===================
 
@@ -14,6 +17,7 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MCM6830","1024 byte ROM"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
+   ":material-regular:`local_shipping;2em;` :ref:`MC68B44L <MC68B44L>`","Direct Memory Access Controller (DMAC)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B44P <MC68B44P>`","Direct Memory Access Controller (DMAC)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","CRT Controller",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller","Engineering Sample"
@@ -30,6 +34,7 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6875","Clock Generator"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG",""
+   ":material-regular:`local_shipping;2em` :ref:`MC68701L <MC68701L>`","8-bit Microprocessor Unit",""
 
 
 .. include:: ./MC6800/mc6800.fragment.rst
@@ -40,30 +45,4 @@ Integrated Circuits
       
 .. rubric:: Catalogue of ICs
 
-.. rubric:: Storage Box
-
-.. collapse:: Drawer 1
-
-   .. csv-table:: 
-      :widths: 33, 34, 33
-      :header-rows: 0
-
-      ":ref:`MC68B21L <MC68B21L>`", ":ref:`MC6821P  <MC6821P>`",  ":ref:`MC68B54P <MC68B54P>`"
-      ":ref:`MC68B40P <MC68B40P>`", ":ref:`MC68B44P <MC68B44P>`", ""
-      ":ref:`XC6845L  <XC6845L>`",  ":ref:`MC6845P  <MC6845P>`", ""
-
-
-.. collapse:: Drawer 2
-
-   .. csv-table:: 
-      :widths: 16, 16, 16, 16, 16, 16 
-      :header-rows: 0
-
-      ":ref:`MC6850L  <MC6850L>`",  ":ref:`MC6862L <MC6862L>`",   ":ref:`MCM6810EL <MCM6810EL>`","","",""
-      ":ref:`MC68B50P <MC68B50P>`", ":ref:`MC6862P <MC6862P>`",   "","","",""
-      ":ref:`MC6860P  <MC6860P>`",  ":ref:`MCM6810P <MCM6810P>`", "","","",""
-
-
-
-
-
+.. include:: ./tables.fragment.rst

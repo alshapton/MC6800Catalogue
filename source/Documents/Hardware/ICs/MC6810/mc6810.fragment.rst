@@ -18,4 +18,4 @@
       ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6810P <MCM6810P>`","Plastic","1Mhz","0-70\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` MC6810CP","Plastic","1MHz","-40-85\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` MC6810CL","Plastic","1MHz","-55-125\ :sup:`o`\ C"
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B10P","Plastic","1.5MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`local_shipping;2em` :ref:`MC68B10P <MCM68B10P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C"

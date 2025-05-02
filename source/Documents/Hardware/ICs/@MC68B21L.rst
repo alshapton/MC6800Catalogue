@@ -2,8 +2,10 @@
 
 .. _MC68B21L:
 
-Peripheral Interface Adapter
-============================
+.. #Metadata {'Product':'MC68B21L','Storage': 'Storage Box 1', 'Drawer':1,'Row':1,'Column':2}
+
+MC68B21L Peripheral Interface Adapter
+=====================================
 
 .. image:: ../../../images/Hardware/ICs/MC68B21L.1.png
    :width: 400
