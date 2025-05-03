@@ -17,3 +17,4 @@ Application Notes
    ":ref:`AN-797 <AN-797>`","MC6801/03 Port Expansion","1979"
    ":ref:`AN-807 <AN-807>`","Special Considerations Using the MC6801 Interrupt Capabilities","1981"
    ":ref:`AN-851 <AN-851>`","Motorola MC6845 CRTC Simplifies Video Display Control","1981"
+   ":ref:`AN906A/D <AN906A-D>`","Self-Programming the MC68701 and the MC68701U4","1987"

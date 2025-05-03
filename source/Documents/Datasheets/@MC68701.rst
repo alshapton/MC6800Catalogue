@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC68701:
+
+MC68701 Microcomputer Unit
+==========================
+
+.. image:: ../../images/DataSheets/MC68701.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC68701 Microcomputer Unit <../../_static/Documents/Datasheets/mc68701.pdf>`

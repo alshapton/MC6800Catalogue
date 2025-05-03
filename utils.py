@@ -305,11 +305,11 @@ def do_create():
         original_image = MOVE + '/' + product_number + '.png'
         target_image = images.replace(dotdot,'source/') + product_number + '.png'
         print('Ready to move.....')
-        target_document =  "source/_static/" + location + "/"+ linkdocument
-
-        print(original_document + ' -> ' + target_document)
-        print(original_image +' -> '+ target_image)
-        movefile(original_document, target_document)
+        
+        if links =="Y":
+            target_document =  "source/_static/" + location + "/"+ linkdocument
+            movefile(original_document, target_document)
+            
         movefile(original_image, target_image)
         print('Moved images and source data')
 
