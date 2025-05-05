@@ -5,39 +5,119 @@
 Development Systems
 ===================
 
-.. csv-table:: 
-   :header: "Part Number","Name","Main Purpose","Firmware","MPU Module","Freq.","RAM","Included Options" 
-   :widths: auto
+.. tab-set::
 
-   "M68TDS1","TDS1","(i)","(i)","SAC","921.6 KHz","8K","(i), (iii), (iv), (v), (vi)"     
-   "M68TDS2","TDS2","(i))","(i)","SAC","921.6 KHz","8K","(i), (iii), (iv), (v), (vi), (vii)"
-   "M68TDS4","TDS3","(i))","(i)","SAC","921.6 KHz","16K","(i), (iii), (iv), (v), (vi)"     
-   "M68TDS4","TDS4","(i))","(i)","SAC","921.6 KHz","16K","(i), (iii), (iv), (v), (vi), (vii)"
-   "M68SDTD2","EXORciser I","(ii))","(ii)","MPU","1 MHz","N/A","(viii)"
-   "M68SXS10200","EXORterm 200 Development System 220V","(ii)","(ii)","MPU","1 MHz","N/A","(ii),  (iii)"     
-   "M68SXS102B0","USE EXORterm 200 Development System 220V","(ii)","(ii)","MPU","1 MHz","N/A","(ii), (iii)"     
+    .. tab-item:: TDS1
+
+         .. rubric:: TDS1
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","M68TDS1"
+            "Purpose","Medium Size Software Development"
+            "Firmware","MINIBUG 3E"
+            "MPU Module","SAC"
+            "Frequency","921.6 KHz"
+            "RAM","8K"
+            "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler"
+            "Notes",""
+
+    .. tab-item:: TDS2
+
+         .. rubric:: TDS2
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","M68TDS2"
+            "Purpose","Medium Size Software Development"
+            "Firmware","MINIBUG 3E"
+            "MPU Module","SAC"
+            "Frequency","921.6 KHz"
+            "RAM","8K"
+            "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler, BASIC"
+            "Notes",""
+
+    .. tab-item:: TDS3
+
+         .. rubric:: TDS3
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","M68TDS3"
+            "Purpose","Medium Size Software Development"
+            "Firmware","MINIBUG 3E"
+            "MPU Module","SAC"
+            "Frequency","921.6 KHz"
+            "RAM","16K"
+            "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler"
+            "Notes",""
+
+    .. tab-item:: TDS4
+
+         .. rubric:: TDS4
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","M68TDS4"
+            "Purpose","Medium Size Software Development"
+            "Firmware","MINIBUG 3E"
+            "MPU Module","SAC"
+            "Frequency","921.6 KHz"
+            "RAM","16K"
+            "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler, BASIC"
+            "Notes",""
+
+    .. tab-item:: SDTD2
+
+         .. rubric:: EXORciser I
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","M68SDTD2"
+            "Purpose","Software/Hardware Development"
+            "Firmware","EXbug 1.2"
+            "MPU Module","MPU"
+            "Frequency","1 MHz"
+            "RAM","N/A"
+            "Included Options","RS232/TTY Interface"
+            "Notes",""
+
+    .. tab-item:: SXS10200
+
+         .. rubric:: EXORterm 200 Development System 220V
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","SXS10200"
+            "Purpose","Software/Hardware Development"
+            "Firmware","EXbug 1.2"
+            "MPU Module","MPU"
+            "Frequency","1 MHz"
+            "RAM","N/A"
+            "Included Options","12 inch CRT, Keyboard"
+            "Notes",""
+
+    .. tab-item:: SXS102B0
+
+         .. rubric:: USE EXORterm 200 Development System 220V
+
+         .. csv-table:: 
+            :widths: 25,75
+
+            "Part #","SXS102B0"
+            "Purpose","Software/Hardware Development"
+            "Firmware","EXbug 1.2"
+            "MPU Module","MPU"
+            "Frequency","1 MHz"
+            "RAM","N/A"
+            "Included Options","12 inch CRT, Keyboard"
+            "Notes",""
+
 
 There were also :ref:`basic options page` for these systems.
-
-Purpose:
-
-i) Medium Size Software
-ii) Software/Hardware
-
-Firmware:
-
-(i) MINIBUG 3E 
-(ii) EXbug 1.2
-
-Included Options:
-
-   i) 5 inch CRT
-   ii) 12 inch CRT
-   iii) Keyboard
-   iv) Kansas City Interface
-   v) Printer Interface
-   vi) Editor/Assembler
-   vii) BASIC
-   viii) RS232/TTY Interface
-   
-

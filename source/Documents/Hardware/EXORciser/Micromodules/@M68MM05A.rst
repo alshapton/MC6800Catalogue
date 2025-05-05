@@ -5,17 +5,27 @@
 Micromodule 5A 8 Channel 12 Bit A/D Converter
 =============================================
 
-.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.1.png
-   :width: 200
+.. card-carousel:: 2
 
-.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.2.jpg
-   :width: 200
+    .. card:: 
 
-.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.3.jpg
-   :width: 200
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.1.png
+         :width: 800
 
-.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.4.jpg
-   :width: 200
+    .. card:: 
+
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.2.jpg
+         :width: 800
+
+    .. card:: 
+
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.3.jpg
+         :width: 800
+
+    .. card:: 
+
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM05A/M68MM05A.4.jpg
+         :width: 800
 
 Need to move to new micromodules section
 

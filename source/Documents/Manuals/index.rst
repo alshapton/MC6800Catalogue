@@ -36,6 +36,9 @@ Reference Manuals
    ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
    ":ref:`MEX6815-1 <MEX6815-1>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
+   ":ref:`MEX3870OM <MEX3870OM>`","MEX3870OM 3870 Emulator User's Guide",""
+   ":ref:`MEX6801EVM1 <MEX6801EVM1>`","MEX6801EVM1 Evaluation Module User's Guide",""
+   ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
    
 .. rubric:: Software Manuals
 

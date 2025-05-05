@@ -5,9 +5,75 @@
 Micromodule 4A ROM/EPROM Module
 ===============================
 
-.. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.1.jpg
-   :width: 400
-   :align: center
+
+.. card-carousel:: 2
+
+    .. card:: 
+
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.3.png
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.4.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.5.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.6.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.7.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.8.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.9.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.10.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.11.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.12.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.13.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.14.jpg
+         :width: 800
+
+    .. card:: 
+      
+      .. image:: ../../../../images/Hardware/Exorciser/Micromodules/M68MM04A/M68MM04A.1.jpg
+         :width: 800
+
+      :octicon:`list-ordered;2em` Micro Industries
 
 .. rubric:: Collection Information
 

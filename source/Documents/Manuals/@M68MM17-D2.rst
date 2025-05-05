@@ -1,0 +1,22 @@
+:orphan:
+
+.. _M68MM17-D2:
+
+Monoboard Microcomputer Micromodule 17 User's Manual
+====================================================
+
+.. image:: ../../images/Manuals/M68MM17-D2.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Monoboard Microcomputer Micromodule 17 User's Manual <../../_static/Documents/Manuals/Motorola_MM17.pdf>`
