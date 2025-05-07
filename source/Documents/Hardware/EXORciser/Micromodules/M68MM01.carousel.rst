@@ -1,0 +1,32 @@
+.. card-carousel:: 2
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.1.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.2.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.3.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.4.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.5.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01/M68MM01.6.jpg
+         :width: 800
+

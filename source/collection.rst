@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 06-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 07-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -24,6 +24,7 @@ This is the current collection (as at 06-05-2025) of the items produced by Motor
 
 	" :ref:`M68ADS-1 <M68ADS-1>`","Autonomous Development System (French)"
 	" :ref:`M68ADS1 <M68ADS1>`","Autonomous Development System"
+	" :ref:`M68MM01B1A <DS-M68MM01B1(A)>`","M68MM01B1A Monoboard Microcomputer Module"
 	" :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module"
 	" :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule"
 	" :ref:`M68SXS <M68SXS>`","M68SXS EXORterm 200"
@@ -97,7 +98,7 @@ This is the current collection (as at 06-05-2025) of the items produced by Motor
 	:widths: 30, 70
 
 	" :ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)"
-	" :ref:`N/A <HW-OTHER-NONE-2>`","MPU Evalution Card MC6800 Microprocessor Board"
+	" :ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board"
 
 
 .. rubric:: Reference Cards

@@ -1,0 +1,22 @@
+.. card-carousel:: 2
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM05A/M68MM05A.1.png
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM05A/M68MM05A.2.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM05A/M68MM05A.3.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM05A/M68MM05A.4.jpg
+         :width: 800
+

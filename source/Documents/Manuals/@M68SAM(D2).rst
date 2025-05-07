@@ -5,6 +5,8 @@
 M6800 Cross Assembler Reference Manual
 ======================================
 
+.. include::  M68SAM(D2).carousel.rst
+
 .. image:: ../../images/Manuals/M68SAM(D2)/M68SAM(D2).1.png
    :width: 200
 .. image:: ../../images/Manuals/M68SAM(D2)/M68SAM(D2).2.jpg

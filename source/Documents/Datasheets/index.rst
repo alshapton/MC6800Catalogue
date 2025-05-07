@@ -10,6 +10,7 @@ DataSheets
    :widths: 27,34,7,15,22
    
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01B1A <DS-M68MM01B1(A)>`","M68MM01B1A Monoboard Microcomputer Module",":material-regular:`lock;2em;sd-text-success`","Issue B 1979"
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979",""
 
 

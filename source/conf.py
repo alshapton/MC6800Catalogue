@@ -24,6 +24,7 @@ autosectionlabel_prefix_document = True
 
 templates_path = ['_templates']
 exclude_patterns = []
+root_prefix = '/Users/andrew/MyProjects/Motorola-6800/MC6800Catalogue'
 
 
 

@@ -22,6 +22,6 @@ MES6800 User Guide
 
 .. rubric:: Links
 
-:ref:`MPU Evalution Card MC6800 Microprocessor Board <HW-OTHER-NONE-2>`
+:ref:`MPU Evalution Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
 
 :download:`Users Guide for the Motorola MC6800 Microcomputer Evaluation System <../../_static/Documents/Manuals/MES6800_User_Manual_Sep_1975.pdf>`

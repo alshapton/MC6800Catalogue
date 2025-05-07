@@ -23,7 +23,61 @@ OUTPUT_FILE = 'source/collection.rst'
 SUFFIX = 'rst'
 PREFIX ='source/'
 MOVE='tmp/move'
+CAROUSEL='carousel'
 
+def does_file_exist(filename):
+    try:
+        _ = filename.resolve(strict=True)
+    except FileNotFoundError:
+        return False
+    else:
+        return True
+
+def update_carousel():
+    files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
+    for filename in files:   
+        i=str(filename)
+        images_loc = i.replace('Documents','images').replace('.'+ CAROUSEL + '.' + SUFFIX,'')
+        base=os.path.basename(i).replace('.'+CAROUSEL+'.'+SUFFIX,'')
+        fullbase = i.replace(os.path.basename(i),'') +  base + os.sep + base + '.'  + CAROUSEL + '.' + SUFFIX
+        f=i.count(os.sep)
+        dotdot = ''
+        for f in range(0,f-1):
+            dotdot += '../'
+        images_loc_full=dotdot + images_loc.replace('source/','')
+        picfiles = os.listdir(images_loc)
+        picfiles.sort()
+
+
+        if ('carousel.properties' in picfiles):
+            carouselfile=images_loc + os.sep + 'carousel.properties'
+            with open(carouselfile, "r") as cf:
+                carousel_properties = cf.readlines()[0]
+                cp=ast.literal_eval(carousel_properties)
+                cars=cp["Carousels"]
+                with open(i ,"w") as d:
+                    for car in cars:
+                        print(car["Number"])
+                        carousel_number=str(car["Number"])
+                        carousel_title=car["Title"]
+                        d.write('.. rubric:: ' + carousel_title + '\n\n')
+                        d.write('.. card-carousel:: ' + carousel_number + '\n\n')
+                        for picfile in picfiles:
+                            if picfile.startswith(carousel_number):
+                                fullfile=images_loc_full + os.sep + picfile
+                                d.write('    .. card::\n\n')
+                                d.write('      .. image:: ' + fullfile + '\n')
+                                d.write('         :width: 800\n\n')        
+        else:
+            with open(i ,"w") as d:
+                d.write('.. card-carousel:: 2\n\n')
+                for picfile in picfiles:
+                    if not picfile.startswith('_'):
+                        fullfile=images_loc_full + os.sep + picfile
+                        d.write('    .. card::\n\n')
+                        d.write('      .. image:: ' + fullfile + '\n')
+                        d.write('         :width: 800\n\n')
+    print('Carousels updated')
 
 def movefile(old, new):
     shutil.move(old, new)
@@ -160,7 +214,7 @@ def do_collection():
         for file in files:
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and
-                "@" not in file):
+                "@" not in file and "carousel" not in file):
                 
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
@@ -328,9 +382,10 @@ def getDateRangeFromWeek(p_year,p_week):
 while True:
     print('\t1. Get date range from week')
     print('\t2. Create new entry')
-    print('\t3. Update just storage')
-    print('\t`. Update ALL ')
-    print('\t0. Exit')
+    print('\t3. Update just storage')    
+    print('\t4. Update carousels')
+    print('\t0. Update ALL ')
+    print('\tX. Exit')
     type = input('Enter choice: ')
     match type:
         case "1":
@@ -352,7 +407,8 @@ while True:
         case "2":
             index_entry = do_create()
             print(index_entry)
-        case "`":
+        case "0":
+            update_carousel()
             update_storage()
             do_collection()
             print('Collection updated')
@@ -360,7 +416,13 @@ while True:
         case "3":
             update_storage()
             #os.system("make clean html")
-        case "0":
+        case "4":
+            update_carousel()
+            #os.system("make clean html")
+        case "X":
+            print('Exiting')
+            exit()
+        case "x":
             print('Exiting')
             exit()
 
