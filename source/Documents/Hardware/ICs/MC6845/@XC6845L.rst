@@ -7,7 +7,7 @@
 XC6845L CRT Controller
 ======================
 
-.. image:: ../../../images/Hardware/ICs/XC6845L.png
+.. image:: ../../../../images/Hardware/ICs/XC6845L.png
    :width: 400
    :align: center
 

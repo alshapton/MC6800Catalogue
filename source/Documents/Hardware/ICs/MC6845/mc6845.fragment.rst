@@ -1,0 +1,9 @@
+
+.. collapse:: Cathode Ray Tube (CRT) Controller (MC6845)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Notes" 
+      :widths: auto
+
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","CRT Controller",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller","Engineering Sample"

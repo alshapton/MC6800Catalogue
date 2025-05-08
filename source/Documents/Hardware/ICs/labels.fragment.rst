@@ -1,7 +1,3 @@
-.. |iXC6845L|  image:: ../../../images/Hardware/ICs/XC6845L.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iXC6820|  image:: ../../../images/Hardware/ICs/XC6820.png
    :width: 200
    :class: no-scaled-links
@@ -34,10 +30,6 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC6845P|  image:: ../../../images/Hardware/ICs/MC6845P.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iMC68B50P|  image:: ../../../images/Hardware/ICs/MC68B50P.png
    :width: 200
    :class: no-scaled-links
@@ -59,6 +51,14 @@
    :class: no-scaled-links
 
 .. |iMC68B44P|  image:: ../../../images/Hardware/ICs/MC68B44P.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iXC6845L|  image:: ../../../images/Hardware/ICs/XC6845L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6845P|  image:: ../../../images/Hardware/ICs/MC6845P.png
    :width: 200
    :class: no-scaled-links
 

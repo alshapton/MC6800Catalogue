@@ -16,8 +16,6 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","CRT Controller",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller","Engineering Sample"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6847","Video Display Generator (VDG)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC68488","General Purpose Interface Adapter (GPIB) IEEE488"   
@@ -44,6 +42,9 @@ Integrated Circuits
 |
 
 .. include:: ./MC6844/mc6844.fragment.rst
+|
+
+.. include:: ./MC6845/mc6845.fragment.rst
 |
 
 .. include:: ./MC6847/mc6847.fragment.rst
