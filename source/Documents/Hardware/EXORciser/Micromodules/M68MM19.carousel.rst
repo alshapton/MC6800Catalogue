@@ -1,0 +1,12 @@
+.. card-carousel:: 2
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM19/M68MM19_6809_CPU.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM19/Motorola-SBC68B09-M68MM19A.jpg
+         :width: 800
+

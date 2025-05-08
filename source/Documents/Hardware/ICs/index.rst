@@ -14,11 +14,8 @@ Integrated Circuits
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter",""
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MCM6830","1024 byte ROM"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
-   ":material-regular:`local_shipping;2em;` :ref:`MC68B44L <MC68B44L>`","Direct Memory Access Controller (DMAC)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B44P <MC68B44P>`","Direct Memory Access Controller (DMAC)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","CRT Controller",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","CRT Controller","Engineering Sample"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
@@ -33,16 +30,30 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6875","Clock Generator"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG",""
    ":material-regular:`local_shipping;2em` :ref:`MC68701L <MC68701L>`","8-bit Microprocessor Unit",""
 
+|
 
 .. include:: ./MC6800/mc6800.fragment.rst
+|
 
 .. include:: ./MC6810/mc6810.fragment.rst
+|
+
+.. include:: ./MCM6830/mcm6830.fragment.rst
+|
+
+.. include:: ./MC6844/mc6844.fragment.rst
+|
+
+.. include:: ./MC6847/mc6847.fragment.rst
+|
 
 .. include:: ./MC6850/mc6850.fragment.rst
-      
+
+
+|
+
 .. rubric:: Catalogue of ICs
 
 .. include:: ./tables.fragment.rst

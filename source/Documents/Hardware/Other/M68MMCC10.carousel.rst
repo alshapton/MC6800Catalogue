@@ -47,7 +47,7 @@
       .. image:: ../../../images/Hardware/Other/M68MMCC10/1.M68MMCC10.9.png
          :width: 800
 
-.. rubric:: :octicon:`list-ordered;2em` - Micro Industries
+.. rubric:: :octicon:`list-ordered;2em` Micro Industries
 
 .. card-carousel:: 2
 

@@ -57,7 +57,6 @@ def update_carousel():
                 cars=cp["Carousels"]
                 with open(i ,"w") as d:
                     for car in cars:
-                        print(car["Number"])
                         carousel_number=str(car["Number"])
                         carousel_title=car["Title"]
                         d.write('.. rubric:: ' + carousel_title + '\n\n')
@@ -77,7 +76,7 @@ def update_carousel():
                         d.write('    .. card::\n\n')
                         d.write('      .. image:: ' + fullfile + '\n')
                         d.write('         :width: 800\n\n')
-    print('Carousels updated')
+    print('\n\nCarousels updated')
 
 def movefile(old, new):
     shutil.move(old, new)

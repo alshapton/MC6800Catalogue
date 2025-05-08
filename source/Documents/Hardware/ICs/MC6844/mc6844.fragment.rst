@@ -1,0 +1,10 @@
+
+.. collapse:: Direct Memory Access Controller (DMAC) (MC6844)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Notes" 
+      :widths: auto
+
+      ":material-regular:`local_shipping;2em;` :ref:`MC68B44L <MC68B44L>`","Ceramic",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B44P <MC68B44P>`","Plastic",""
+      

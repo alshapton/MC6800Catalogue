@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M68MM19:
+
+M68MM19 Micromodule 17 6809 Monoboard Microcomputer
+===================================================
+
+.. include::  M68MM19.carousel.rst
+   
+Need to move to new micromodules section
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+    ":material-regular:`thumb_down;2em;sd-text-danger` ",":material-regular:`thumb_down;2em;sd-text-danger`"

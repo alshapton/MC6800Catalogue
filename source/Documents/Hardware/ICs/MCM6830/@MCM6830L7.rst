@@ -5,7 +5,7 @@
 MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
 ====================================================
 
-.. image:: ../../../images/Hardware/ICs/MCM6830L7.png
+.. image:: ../../../../images/Hardware/ICs/MCM6830L7.png
    :width: 400
    :align: center
 

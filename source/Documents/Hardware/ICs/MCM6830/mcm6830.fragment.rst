@@ -1,0 +1,9 @@
+
+.. collapse:: 1024 Byte ROM (MC6830)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Frequency","Temperature" 
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` MCM6830","1024 byte ROM"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG",""
