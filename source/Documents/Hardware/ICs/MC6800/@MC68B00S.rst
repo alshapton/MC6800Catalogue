@@ -2,12 +2,12 @@
 
 .. _MC68B00S:
 
-.. #Transit {'Product':'MC68B00S','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
+.. #Metadata {'Product':'MC68B00S','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':3}
 
 MC68B00S Microprocessor Unit
 ============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC68B00S.png
    :width: 400
    :align: center
 
@@ -16,11 +16,11 @@ MC68B00S Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8241"
+   "Manufacture Date","04-OCT-1982 to 10-OCT-1982"
    "Packaging","CERDIP"
    "Status","Production"
-   "Location","TBD"
+   "Location","Drawer 1"
    "Frequency","2Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
       
@@ -31,7 +31,7 @@ MC68B00S Microprocessor Unit
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 
 .. rubric:: Links

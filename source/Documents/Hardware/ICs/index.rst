@@ -28,14 +28,13 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6875","Clock Generator"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
-   ":material-regular:`local_shipping;2em` :ref:`MC68701L <MC68701L>`","8-bit Microprocessor Unit",""
 
 |
 
 .. include:: ./MC6800/mc6800.fragment.rst
 |
 
-.. include:: ./MC6810/mc6810.fragment.rst
+.. include:: ./MCM6810/mcm6810.fragment.rst
 |
 
 .. include:: ./MCM6830/mcm6830.fragment.rst
@@ -51,6 +50,10 @@ Integrated Circuits
 |
 
 .. include:: ./MC6850/mc6850.fragment.rst
+|
+
+.. include:: ./MC68701/mc68701.fragment.rst
+|
 
 
 |

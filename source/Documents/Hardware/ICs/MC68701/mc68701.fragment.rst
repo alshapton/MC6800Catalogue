@@ -1,0 +1,14 @@
+
+.. collapse:: Enhanced MC6800 Microcomputer Unit MC68701
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Frequency","Temperature" 
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701L","Ceramic","1MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701CL","Ceramic","1MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701L-1","Ceramic","1.25MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic","1.25MHz","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A701L","Ceramic","1.5MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B701L","Ceramic","2MHz","0-70\ :sup:`o`\ C"
+

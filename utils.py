@@ -45,6 +45,7 @@ def update_carousel():
         for f in range(0,f-1):
             dotdot += '../'
         images_loc_full=dotdot + images_loc.replace('source/','')
+
         picfiles = os.listdir(images_loc)
         picfiles.sort()
 

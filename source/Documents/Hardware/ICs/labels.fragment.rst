@@ -30,15 +30,11 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC68B50P|  image:: ../../../images/Hardware/ICs/MC68B50P.png
-   :width: 200
-   :class: no-scaled-links
-
-.. |iMC6850L|  image:: ../../../images/Hardware/ICs/MC6850L.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iMCM6810P|  image:: ../../../images/Hardware/ICs/MCM6810P.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMCM68B10P|  image:: ../../../images/Hardware/ICs/MCM68B10P.png
    :width: 200
    :class: no-scaled-links
 
@@ -47,6 +43,14 @@
    :class: no-scaled-links
 
 .. |iMCM6810L|  image:: ../../../images/Hardware/ICs/MCM6810L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC68B50P|  image:: ../../../images/Hardware/ICs/MC68B50P.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6850L|  image:: ../../../images/Hardware/ICs/MC6850L.png
    :width: 200
    :class: no-scaled-links
 
@@ -62,7 +66,19 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68701CL-1|  image:: ../../../images/Hardware/ICs/MC68701/MC68701CL-1/1.MC68701CL-1.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iHEPC4801L|  image:: ../../../images/Hardware/ICs/HEPC4801L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC68B00S|  image:: ../../../images/Hardware/ICs/MC68B00S.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC68B00L|  image:: ../../../images/Hardware/ICs/MC68B00L.png
    :width: 200
    :class: no-scaled-links
 
