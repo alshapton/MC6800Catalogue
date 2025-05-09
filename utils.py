@@ -24,6 +24,7 @@ SUFFIX = 'rst'
 PREFIX ='source/'
 MOVE='tmp/move'
 CAROUSEL='carousel'
+NEW_GROUP_TMP_LOC='tmp/'
 
 def does_file_exist(filename):
     try:
@@ -32,6 +33,69 @@ def does_file_exist(filename):
         return False
     else:
         return True
+
+def create_new_group_index():
+    newchipbasename=input("Enter new chip base name (e.g. Asynchronous Adapter): ")
+    newgroupname=input("Enter new group name: ")
+    chipprefix=input("Enter chip prefix (e.g. MC68): ")
+    p=input("Enter packaging types (S-CERDIP,P-plastic,L-Ceramic etc)- comma-separated: ")
+    packaging=p.split(',')
+    print(packaging)     
+    chips=[]
+    temps=['']
+    f=input("Enter extra frequencies (A=1.5 MHz, B=2 MHz) - comma-separated: ")
+    frequencies=f.split(',')  
+    if len(frequencies) > 0:
+        frequencies.append("")
+    t=input("Enter extra temperature (C): ")
+    if t== 'C':
+        temps.append("C")
+    if len(frequencies) > 0:
+        frequencies.append("")
+    
+    LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
+    with open(LOC ,"w") as d:
+        for packagetype in packaging:
+
+            for frequency in frequencies:
+                for temper in temps:
+
+                    chip=chipprefix + frequency + newgroupname.replace(chipprefix,'') + temper.strip() + packagetype.strip()
+                    if frequency == '':
+                        freq = '1 Mhz'
+                    if frequency == 'A':
+                        freq = '1.5 Mhz'
+                    if frequency == 'B':
+                        freq = '2 Mhz'
+                    
+                    if temper.strip() == '':
+                        temp = "0-70\\ :sup:`o`\\ C"
+                    if temper.strip() == 'C':
+                        temp = "-40-85\\ :sup:`o`\\ C"
+
+                    if packagetype.strip() == 'S':
+                        pt = 'CERDIP'
+                    if packagetype.strip() == 'P':
+                        pt = 'Plastic'
+                    if packagetype.strip() == 'L':
+                        pt = 'Ceramic'
+
+                    d.write('       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`' + chip + ' <' + chip + '>`","'+ pt +'","'+ freq +'","'+temp+'",""\n')
+
+    with open(LOC, "r") as cf:
+        lines = cf.readlines()
+    lines = list(set(lines))
+
+    with open(LOC ,"w") as d:
+        d.write('.. collapse::  ' + newchipbasename + '\n\n')
+        d.write('   .. csv-table::\n')
+        d.write('       :header: "Part Number","Packaging","Frequency","Temperature","Notes" \n')
+        d.write('       :widths: auto\n\n')  
+        for line in lines:
+            d.write(line)
+
+    print('New group index created in ' + LOC)
+    exit()
 
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
@@ -382,8 +446,9 @@ def getDateRangeFromWeek(p_year,p_week):
 while True:
     print('\t1. Get date range from week')
     print('\t2. Create new entry')
-    print('\t3. Update just storage')    
-    print('\t4. Update carousels')
+    print('\t3. Create new IC group')    
+    print('\t4. Update storage')
+    print('\t5. Update carousels')
     print('\t0. Update ALL ')
     print('\tX. Exit')
     type = input('Enter choice: ')
@@ -413,11 +478,14 @@ while True:
             do_collection()
             print('Collection updated')
             os.system("make clean html")
-        case "3":
+        case "4":
             update_storage()
             #os.system("make clean html")
-        case "4":
+        case "5":
             update_carousel()
+            #os.system("make clean html")
+        case "3":
+            create_new_group_index()
             #os.system("make clean html")
         case "X":
             print('Exiting')
