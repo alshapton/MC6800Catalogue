@@ -1,0 +1,34 @@
+:orphan:
+
+.. _MC6844P:
+
+.. #Note {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+
+MC6844P Direct Memory Access Controller (DMAC)
+===============================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","TBD"
+   "Status","TBD"
+   "Location","TBD"
+   "Notes",""
+   "Frequency","TBD"
+   "Temperature","TBD"
+   
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger` ,":material-regular:`thumb_down;2em;sd-text-danger`"

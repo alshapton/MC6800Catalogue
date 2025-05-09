@@ -1,10 +1,10 @@
 :orphan:
 
-.. _MC68B44L:
+.. _MC68B44S:
 
-.. #Metadata {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+.. #None {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
 
-MC68B44L Direct Memory Access Controller (DMAC)
+MC68B44S Direct Memory Access Controller (DMAC)
 ===============================================
 
 .. image:: ../../../../images/Hardware/ICs/MC68B44L.png

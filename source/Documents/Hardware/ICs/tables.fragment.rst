@@ -29,3 +29,4 @@
        :widths: 33, 34, 33
 
        "|iMC68B00L| :ref:`MC68B00L <MC68B00L>`","",""
+       "|iMC68B44L| :ref:`MC68B44L <MC68B44L>`","",""

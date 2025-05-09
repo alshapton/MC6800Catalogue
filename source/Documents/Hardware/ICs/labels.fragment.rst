@@ -54,7 +54,15 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68B44L|  image:: ../../../images/Hardware/ICs/MC68B44L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B44P|  image:: ../../../images/Hardware/ICs/MC68B44P.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC68B44S|  image:: ../../../images/Hardware/ICs/MC68B44L.png
    :width: 200
    :class: no-scaled-links
 

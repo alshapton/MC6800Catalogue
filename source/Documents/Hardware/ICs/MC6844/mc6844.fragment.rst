@@ -2,9 +2,21 @@
 .. collapse:: Direct Memory Access Controller (DMAC) (MC6844)
 
    .. csv-table::
-      :header: "Part Number","Packaging","Notes" 
+      :header: "Part Number","Packaging","Notes","Frequency","Temperature" 
       :widths: auto
 
-      ":material-regular:`local_shipping;2em;` :ref:`MC68B44L <MC68B44L>`","Ceramic",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B44P <MC68B44P>`","Plastic",""
-      
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844S <MC6844S>`","CERDIP","1MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844CS <MC6844CS>`","CERDIP","1MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44S <MC68A44S>`","CERDIP","1.5MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44CS <MC68A44CS>`","CERDIP","1.5MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B44S <MC68B44S>`","CERDIP","2MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844P <MC6844P>`","Plastic","1MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844CP <MC6844CP>`","Plastic","1MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44P <MC68A44P>`","Plastic","1.5MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44CP <MC68A44CP>`","Plastic","1.5MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B44P <MC68B44P>`","Plastic","2MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844L <MC6844L>`","Ceramic","1MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6844CL <MC6844CL>`","Ceramic","1MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44L <MC68A44L>`","Ceramic","1.5MHz","Temperature","0-70\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A44CL <MC68A44CL>`","Ceramic","1.5MHz","Temperature","-40-85\ :sup:`o`\ C"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B44L <MC68B44L>`","Ceramic","2MHz","Temperature","0-70\ :sup:`o`\ C"

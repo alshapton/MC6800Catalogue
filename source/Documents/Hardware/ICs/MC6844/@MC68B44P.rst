@@ -22,8 +22,8 @@ MC68B44P Direct Memory Access Controller (DMAC)
    "Status","Production"
    "Location","Drawer 1"
    "Notes",""
-   "Frequency","TBD"
-   "Temperature","TBD"
+   "Frequency","2 MHz"
+   "Temperature","0-70\ :sup:`o`\ C"
    
 .. rubric:: Collection Information
 

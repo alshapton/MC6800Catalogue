@@ -71,7 +71,6 @@ This is the current collection (as at 09-05-2025) of the items produced by Motor
 	" :ref:`MC68B00S <MC68B00S>`","CERDIP"
 	" :ref:`MC68B10P <MCM68B10P>`","Plastic"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
-	" :ref:`MC68B44P <MC68B44P>`","Plastic"
 	" :ref:`MC68B50P <MC68B50P>`","Plastic"
 	" :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
 	" :ref:`MCM6810EL <MCM6810EL>`","Ceramic"
