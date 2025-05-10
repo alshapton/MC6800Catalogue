@@ -1,5 +1,5 @@
 
-.. collapse:: Asynchronous Communications Interface Adapter (MCM6850)
+.. collapse:: Asynchronous Communications Interface Adapter (MC6850)
 
    .. csv-table::
       :header: "Part Number","Packaging","Frequency","Temperature" 
