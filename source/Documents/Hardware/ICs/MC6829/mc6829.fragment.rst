@@ -1,0 +1,21 @@
+.. collapse::  Memory Management Unit
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829L <MC6829L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829CL <MC6829CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29L <MC68A29L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""       
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29CL <MC68A29CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B29L <MC68B29L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829P <MC6829P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829CP <MC6829CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29P <MC68A29P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29CP <MC68A29CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B29P <MC68B29P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829S <MC6829S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829CS <MC6829CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29S <MC68A29S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""      
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A29CS <MC68A29CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B29S <MC68B29S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
