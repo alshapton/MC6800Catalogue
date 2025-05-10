@@ -19,6 +19,8 @@ class Env:
 
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
+CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
+
 OUTPUT_FILE = 'source/collection.rst'
 SUFFIX = 'rst'
 PREFIX ='source/'
@@ -26,13 +28,73 @@ MOVE='tmp/move'
 CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp/'
 
-def does_file_exist(filename):
+def make_directory(path):
     try:
-        _ = filename.resolve(strict=True)
-    except FileNotFoundError:
-        return False
-    else:
+        os.mkdir(path)
         return True
+    except FileExistsError:
+        return True
+
+def create_new_group_from_index():
+    newgroupname=input("Enter group name: ")
+    LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
+    NEW_LOC=NEW_GROUP_TMP_LOC + newgroupname
+    if not os.path.exists(LOC.lower()):
+        print('Index file for ' + newgroupname + ' does not exist')
+        exit()
+    print('Creating new group from index file for IC: ' + newgroupname)
+
+    direc=make_directory(NEW_LOC)
+
+    
+    with open(LOC.lower() ,"r") as d:
+        lines = d.readlines()
+
+    for line in lines:
+        if line.startswith('.. collapse::'):
+            group_name = line.split('.. collapse::')[1].strip()
+            print('Group name: ' + group_name)
+        if not line.startswith('.. collapse::') \
+            and line.find('widths') == -1 \
+            and line.find('csv-table') == -1 \
+            and line.find('header') == -1 \
+            and len(line) > 0 : 
+            startref=line.find('<')
+            endref=line.find('>')
+            lengthref=endref - startref
+            chip=line[startref+1:endref]
+            new_file_name = '@' + chip + '.rst'
+            new_file = os.path.join(NEW_LOC, new_file_name)
+            
+            if len(new_file) != 16:
+                info=line.split(',')
+                packaging=info[1].strip()
+                frequency=info[2].strip()
+                temperature=info[3].strip()
+                with open(new_file, "w") as c:
+                    c.write(':orphan:\n\n')
+                    c.write('.. _' + chip + ':\n\n')
+                    c.write(chip + ' ' + group_name + '\n')
+                    c.write('=' * (len(chip) + len(group_name) + 1) + '\n\n')
+                    c.write('.. image:: ../../../../images/NOIMAGE.png\n')
+                    c.write('   :width: 400\n')
+                    c.write('   :align: center\n\n')
+                    c.write('.. rubric:: Specific Information\n\n')
+                    c.write('.. csv-table:: \n')
+                    c.write('   :widths: auto\n\n')
+                    c.write('   "Date Code","TBD"\n')
+                    c.write('   "Manufacture Date","TBD"\n')         
+                    c.write('   "Packaging",'+packaging+'\n')
+                    c.write('   "Status","TBD"\n')
+                    c.write('   "Location","TBD"\n')
+                    c.write('   "Temperature",'+temperature+'\n')
+                    c.write('   "Frequency",'+frequency+'\n')
+                    c.write('   "Notes",""\n\n\n')
+                    c.write('.. rubric:: Collection Information\n\n')
+                    c.write('.. csv-table:: \n')
+                    c.write('   :header: "Component","Datasheet"\n') 
+                    c.write('   :widths: auto\n\n')
+                    c.write('   "'+ CROSS_MARK + '","' + CROSS_MARK + '"\n')
 
 def create_new_group_index():
     newchipbasename=input("Enter new chip base name (e.g. Asynchronous Adapter): ")
@@ -54,24 +116,33 @@ def create_new_group_index():
         frequencies.append("")
     
     LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
-    with open(LOC ,"w") as d:
+    with open(LOC.lower() ,"w") as d:
         for packagetype in packaging:
 
             for frequency in frequencies:
+
                 for temper in temps:
+                    chiptype=packagetype.strip()
 
                     chip=chipprefix + frequency + newgroupname.replace(chipprefix,'') + temper.strip() + packagetype.strip()
                     if frequency == '':
                         freq = '1 Mhz'
+                        chiptype=chiptype + '1'
+
                     if frequency == 'A':
                         freq = '1.5 Mhz'
+                        chiptype=chiptype + '2'
                     if frequency == 'B':
                         freq = '2 Mhz'
+                        chiptype=chiptype + '3'
                     
                     if temper.strip() == '':
                         temp = "0-70\\ :sup:`o`\\ C"
+                        chiptype=chiptype + '0'
+
                     if temper.strip() == 'C':
                         temp = "-40-85\\ :sup:`o`\\ C"
+                        chiptype=chiptype + '1'
 
                     if packagetype.strip() == 'S':
                         pt = 'CERDIP'
@@ -79,23 +150,22 @@ def create_new_group_index():
                         pt = 'Plastic'
                     if packagetype.strip() == 'L':
                         pt = 'Ceramic'
-
+                    chiptype=chiptype + '|'
                     d.write('       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`' + chip + ' <' + chip + '>`","'+ pt +'","'+ freq +'","'+temp+'",""\n')
 
-    with open(LOC, "r") as cf:
+    with open(LOC.lower(), "r") as cf:
         lines = cf.readlines()
     lines = list(set(lines))
 
-    with open(LOC ,"w") as d:
+    with open(LOC.lower() ,"w") as d:
         d.write('.. collapse::  ' + newchipbasename + '\n\n')
         d.write('   .. csv-table::\n')
         d.write('       :header: "Part Number","Packaging","Frequency","Temperature","Notes" \n')
         d.write('       :widths: auto\n\n')  
-        for line in lines:
+        for line in sorted(lines):
             d.write(line)
 
-    print('New group index created in ' + LOC)
-    exit()
+    print('New group index created in ' + LOC.lower())
 
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
@@ -446,9 +516,10 @@ def getDateRangeFromWeek(p_year,p_week):
 while True:
     print('\t1. Get date range from week')
     print('\t2. Create new entry')
-    print('\t3. Create new IC group')    
-    print('\t4. Update storage')
-    print('\t5. Update carousels')
+    print('\t3. Create new IC group index')    
+    print('\t4. Create new IC group from index')    
+    print('\t5. Update storage')
+    print('\t6. Update carousels')
     print('\t0. Update ALL ')
     print('\tX. Exit')
     type = input('Enter choice: ')
@@ -472,21 +543,24 @@ while True:
         case "2":
             index_entry = do_create()
             print(index_entry)
+        case "3":
+            create_new_group_index()
+        case "4":
+            create_new_group_from_index()
+        
         case "0":
             update_carousel()
             update_storage()
             do_collection()
             print('Collection updated')
             os.system("make clean html")
-        case "4":
+        case "5":
             update_storage()
             #os.system("make clean html")
-        case "5":
+        case "6":
             update_carousel()
             #os.system("make clean html")
-        case "3":
-            create_new_group_index()
-            #os.system("make clean html")
+        
         case "X":
             print('Exiting')
             exit()
