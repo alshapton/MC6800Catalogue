@@ -1,0 +1,24 @@
+:orphan:
+
+.. _MC6829:
+
+MC6829 Memory Management Unit
+=============================
+
+.. image:: ../../images/DataSheets/MC6829.png
+   :width: 400
+   :align: center
+
+
+.. rubric:: Collection Information
+   
+.. csv-table:: 
+   :header: "Component","DataSheet"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`, :material-regular:`thumb_down;2em;sd-text-danger`
+
+
+.. rubric:: Links
+
+:download:`MC6829 Memory Management Unit <../../_static/Documents/Datasheets/MC6829.pdf>`

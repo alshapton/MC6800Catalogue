@@ -74,6 +74,7 @@ def create_new_group_from_index():
                 with open(new_file, "w") as c:
                     c.write(':orphan:\n\n')
                     c.write('.. _' + chip + ':\n\n')
+                    c.write(".. #None {'Product':'" + chip + "','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}\n\n")
                     c.write(chip + ' ' + group_name + '\n')
                     c.write('=' * (len(chip) + len(group_name) + 1) + '\n\n')
                     c.write('.. image:: ../../../../images/NOIMAGE.png\n')

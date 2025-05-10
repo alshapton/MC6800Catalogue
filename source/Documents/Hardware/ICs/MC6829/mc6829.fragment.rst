@@ -1,4 +1,4 @@
-.. collapse::  Memory Management Unit
+.. collapse::  MC6829 Memory Management Unit
 
    .. csv-table::
        :header: "Part Number","Packaging","Frequency","Temperature","Notes" 

@@ -31,3 +31,8 @@ MC68A29CL Memory Management Unit
    :widths: auto
 
    ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6829 DataSheet <../../../../_static/Documents/Datasheets/MC6829.pdf>`
+

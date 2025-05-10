@@ -1,9 +1,11 @@
 :orphan:
 
-.. _MC68A29S:
+.. _MC68B701U4L-1:
 
-MC68A29S Memory Management Unit
-===============================
+.. #None {'Product':'MC68B701U4L-1','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+
+MC68B701L Microprocessor Unit with 8-bit EPROM
+==============================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -16,14 +18,13 @@ MC68A29S Memory Management Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","CERDIP"
-   "Status","TBD"
+   "Packaging","Ceramic"
+   "Status","Production"
    "Location","TBD"
-   "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","1.5 Mhz"
    "Notes",""
-
-
+   "Frequency","1.25 MHz"
+   "Temperature","0-70\ :sup:`o`\ C"
+   
 .. rubric:: Collection Information
 
 .. csv-table:: 
@@ -34,4 +35,4 @@ MC68A29S Memory Management Unit
 
 .. rubric:: Links
 
-:download:`MC6829 DataSheet <../../../../_static/Documents/Datasheets/MC6829.pdf>`
+:download:`MC68701U4L 8-bit EPROM Microcomputer Unit <../../../../_static/Documents/Datasheets/MC68701U4.pdf>`
