@@ -21,3 +21,4 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00CP <MC68A00CP>`","Plastic","1.5Mhz","-40-85\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B00P <MC68B00P>`","Plastic","2Mhz","-0-70\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`HEPC4801L <HEPC4801L>`","Ceramic","",""
+      ":material-regular:`local_shipping;2em;` :ref:`M6800/M6801 GMCM <MC6800GMCM>`","Motorola 6800/6801 GMCM General Motors custom processor",""

@@ -2,8 +2,8 @@
 
 .. _MC68B50C:
 
-MC68B50C Asynchronous Communications Interface Adapter (MCM6850)
-================================================================
+MC68B50C Asynchronous Communications Interface Adapter (MC6850)
+===============================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

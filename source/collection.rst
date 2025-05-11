@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 10-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 11-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -77,7 +77,6 @@ This is the current collection (as at 10-05-2025) of the items produced by Motor
 	" :ref:`MCM6810L <MCM6810L>`","Ceramic"
 	" :ref:`MCM6810P <MCM6810P>`","Plastic"
 	" :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG"
-	" :ref:`XC6820 <XC6820>`","Peripheral Interface Adapter"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
 
 

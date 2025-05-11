@@ -1,10 +1,10 @@
 :orphan:
 
-.. _MC68B701L:
+.. _MC68A701L:
 
-.. #None {'Product':'MC68B701L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+.. #None {'Product':'MC68A701L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
 
-MC68B701L Microprocessor Unit
+MC68A701L Microprocessor Unit
 =============================
 
 .. image:: ../../../../images/NOIMAGE.png

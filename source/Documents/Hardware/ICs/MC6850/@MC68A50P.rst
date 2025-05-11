@@ -2,8 +2,8 @@
 
 .. _MC68A50P:
 
-MC68A50P Asynchronous Communications Interface Adapter (MCM6850)
-================================================================
+MC68A50P Asynchronous Communications Interface Adapter (MC6850)
+===============================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

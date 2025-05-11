@@ -1,12 +1,9 @@
 :orphan:
 
-.. _MC68A701U4L:
+.. _MCM68A30L8:
 
-.. #None {'Product':'MC68A701U4L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
-
-MC68A701U4L Microprocessor Unit with 8-bit EPROM
-================================================
-
+MCM68A30L8 1024 x 8-bit ROM 
+===========================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -23,17 +20,15 @@ MC68A701U4L Microprocessor Unit with 8-bit EPROM
    "Status","Production"
    "Location","TBD"
    "Notes",""
-   "Frequency","1 MHz"
-   "Temperature","0-70\ :sup:`o`\ C"
-   
+
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Component","DataSheet"
    :widths: auto
 
    ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
-.. rubric:: Links
 
-:download:`MC68701U4L 8-bit EPROM Microcomputer Unit <../../../../_static/Documents/Datasheets/MC68701U4.pdf>`
+

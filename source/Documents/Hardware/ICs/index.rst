@@ -10,7 +10,6 @@ Integrated Circuits
    :header: "Part Number","Name","Comments" 
    :widths: 25,50,25
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`XC6820 <XC6820>`","Peripheral Interface Adapter",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter",""
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"

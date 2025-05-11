@@ -1,8 +1,8 @@
 :orphan:
 
-.. _MC68A50CS:
+.. _MC68B50CP:
 
-MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
+MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
 ================================================================
 
 .. image:: ../../../../images/NOIMAGE.png
@@ -16,11 +16,11 @@ MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","CERDIP"
+   "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
    "Temperature","-40-85\ :sup:`o`\ C"
-   "Frequency","1.5MHz"
+   "Frequency","2 MHz"
    "Notes",""
 
 
@@ -30,4 +30,4 @@ MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"

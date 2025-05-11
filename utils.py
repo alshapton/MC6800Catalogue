@@ -38,6 +38,12 @@ def make_directory(path):
 def create_new_group_from_index():
     newgroupname=input("Enter group name: ")
     LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
+    datasheet=input("Include link to datasheet (Y/N): ")
+    ds=''
+    if datasheet == 'Y':
+        ds='\n.. rubric:: Links\n\n'
+        ds=ds+':download:`' + newgroupname + ' ' + 'XXXX  <../../../../_static/Documents/Datasheets/' + newgroupname + ".pdf>`\n"
+    print(ds)
     NEW_LOC=NEW_GROUP_TMP_LOC + newgroupname
     if not os.path.exists(LOC.lower()):
         print('Index file for ' + newgroupname + ' does not exist')
@@ -96,6 +102,9 @@ def create_new_group_from_index():
                     c.write('   :header: "Component","Datasheet"\n') 
                     c.write('   :widths: auto\n\n')
                     c.write('   "'+ CROSS_MARK + '","' + CROSS_MARK + '"\n')
+                    ds = ds.replace('XXXX', group_name)
+                    c.write(ds)
+
 
 def create_new_group_index():
     newchipbasename=input("Enter new chip base name (e.g. Asynchronous Adapter): ")

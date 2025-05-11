@@ -2,8 +2,8 @@
 
 .. _MC6850S:
 
-MC6850S Asynchronous Communications Interface Adapter (MCM6850)
-===============================================================
+MC6850S Asynchronous Communications Interface Adapter (MC6850)
+==============================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

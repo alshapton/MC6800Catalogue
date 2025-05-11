@@ -19,5 +19,5 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6850CP <MC6850CP>`","Plastic","1MHz","-40-85\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A50P <MC68A50P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A50CP <MC68A50CP>`","Plastic","1.5MHz","-40-85\ :sup:`o`\ C"
-      
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B50P <MC68B50P>`","Plastic","2MHz","0-70\ :sup:`o`\ C"
+      ":material-regular:`local_shipping;2em;` :ref:`MC68B50CP <MC68B50CP>`","Plastic","2MHz","-40-85\ :sup:`o`\ C"
