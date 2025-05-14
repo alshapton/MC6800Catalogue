@@ -18,6 +18,7 @@ extensions = [
         'sphinx.ext.autosectionlabel',
         'sphinx_collapse',
         'sphinx_design',
+        'linuxdoc.rstFlatTable'
 ]
 
 autosectionlabel_prefix_document = True
