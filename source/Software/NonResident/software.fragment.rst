@@ -20,6 +20,19 @@
 |             | Data Cartridge |             | M68EML0411F     |             | M68EML0811F  |             | M68EML1011F  |             |
 +-------------+----------------+-------------+-----------------+-------------+--------------+-------------+--------------+-------------+
 
+https://en.wikipedia.org/wiki/Xerox_Sigma_9
+
+.. rubric:: Key to symbols
+
+.. csv-table:: 
+
+    ":material-regular:`voicemail;2em;`","Magnetic Tape"
+    ":material-regular:`save;2em;`","Floppy Disk"
+    ":material-regular:`margin;2em;`","Punched Card"
+    ":material-regular:`storage;2em;`","Data Cartridge"
+
+
+
 .. rubric:: Non-Resident Software for Mainframe and Mincomputers Information
 
 .. csv-table:: 

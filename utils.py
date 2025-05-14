@@ -430,6 +430,7 @@ def do_create():
             location = "Documents/Reference"
         case "D":
             location = "Documents/Datasheets"
+            images = dotdot + 'images/DataSheets/'
         case "C":
             location = "Documents/ReferenceCards"
         case "M":
