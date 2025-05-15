@@ -2,6 +2,8 @@
 
 .. _REF-MC6845-1:
 
+.. #Metadata {'Product':'MC6845 Cathode Ray Tube Controller Programming','Folder': '1'}
+
 MC6845 Cathode Ray Tube Controller Programming Reference Card
 =============================================================
 

@@ -20,7 +20,7 @@
 
        "|iMC6850L| :ref:`MC6850L <MC6850L>`","|iMC6862L| :ref:`MC6862L <MC6862L>`","|iMCM6810EL| :ref:`MCM6810EL <MCM6810EL>`","","",""
        "|iMC68B50P| :ref:`MC68B50P <MC68B50P>`","|iMC6862P| :ref:`MC6862P <MC6862P>`","|iMCM68B10P| :ref:`MCM68B10P <MCM68B10P>`","","",""
-       "|iMC6860P| :ref:`MC6860P <MC6860P>`","|iMCM6810P| :ref:`MCM6810P <MCM6810P>`","","","",""
+       "|iMC68B50CP| :ref:`MC68B50CP <MC68B50CP>`","|iMCM6810P| :ref:`MCM6810P <MCM6810P>`","|iMC6860P| :ref:`MC6860P <MC6860P>`","","",""
 
 .. collapse:: Drawer 3
 

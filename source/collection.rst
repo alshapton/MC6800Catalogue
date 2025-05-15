@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 14-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 15-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -73,6 +73,7 @@ This is the current collection (as at 14-05-2025) of the items produced by Motor
 	" :ref:`MC68B00S <MC68B00S>`","CERDIP"
 	" :ref:`MC68B10P <MCM68B10P>`","Plastic"
 	" :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter"
+	" :ref:`MC68B50CP <MC68B50CP>`","Plastic"
 	" :ref:`MC68B50P <MC68B50P>`","Plastic"
 	" :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
 	" :ref:`MCM6810EL <MCM6810EL>`","Ceramic"
@@ -111,8 +112,8 @@ This is the current collection (as at 14-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`N/A <REF-MC6800-1>`","M6800 Microprocessor Instruction Set Summary"
-	" :ref:`N/A <REF-MC6809-MC6809E-1>`","MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model"
+	" :ref:`N/A <REF-MC6800-1>`","M6800 Instruction Set Summary"
+	" :ref:`N/A <REF-MC6809-MC6809E-1>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model"
 	" :ref:`N/A <REF-MC6840-1>`","MC6840 Programmable Timer Module Programming Summary"
 	" :ref:`N/A <REF-MC6845-1>`","MC6845 Cathode Ray Tube Controller Programming"
 	" :ref:`N/A <REF-MC68488-1>`","MC68488 GPIA for IEEE-488 Bus"

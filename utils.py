@@ -20,6 +20,7 @@ class Env:
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
+IN_TRANSIT=':material-regular:`local_shipping;2em`'
 
 OUTPUT_FILE = 'source/collection.rst'
 SUFFIX = 'rst'
@@ -242,6 +243,7 @@ def get_cols_for_drawer(st,dr,rw, info):
 
 def update_storage():
     storage=[]
+    folders=[]
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
     ICLABELS_FILE='source/Documents/Hardware/ICs/' + ICLABELSNAME
@@ -273,14 +275,47 @@ def update_storage():
                     c.write('.. |' + label + '| ' + ' image:: ' + image + '\n')                        
                     c.write('   :width: 200\n')                            
                     c.write('   :class: no-scaled-links\n\n')
-                
+            
+            if 'ReferenceCards' in file and 'fragment' not in file and 'index' not in file:
+                filename = file
+                got_image=False
+                metadata=False
+                sta=''
+                with open(file) as f:
+                    for line in f:
+                        if line.startswith('.. _'):
+                            ref = line.split('.. _')[1].strip().replace(':','').replace('>','').replace('i','')
+                        if '.. image:: ' in line and got_image == False:
+                            if 'NOIMAGE.png' not in line:
+                                image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
+                                got_image=True         
+                        if '.. #Metadata' in line:
+                            metadata=True
+                            this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
+                            loc = ast.literal_eval(this_loc)
+                            if ref != '':
+                                loc['Ref'] = ref
+                            if 'Part' not in loc:
+                                loc['Part'] = 'N/A'
+                        
+                        if CHECK_MARK in line and sta == '':
+                            sta='YES'
+                        if CROSS_MARK in line and sta == '':
+                            sta='NO'
+                        if IN_TRANSIT in line and sta == '':
+                            sta='TRANSIT'
+
+                loc['Status'] = sta                        
+                if metadata:
+                    folders.append(loc)
+
+    sorted_folders = sorted(folders, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
     storagebox=''
     drawer=0
     row=0
     column=0
     colcount=0
-
     with open(TABLES_FILE,"w") as c:
 
         c.write('.. include:: ./' + ICLABELSNAME)
@@ -338,6 +373,41 @@ def update_storage():
                 c.write(',""')                
 
     print('\nStorage updated')      
+
+    TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
+    with open(TABLES_FILE,"w") as c:
+
+        folderloc='0'
+        for item in sorted_folders:
+            match item['Status']:
+                case 'YES':
+                    stat = '"' + CHECK_MARK 
+                case 'NO':
+                    stat = '"' + CROSS_MARK
+                case 'TRANSIT':
+                    stat = '"' + IN_TRANSIT
+                case _:
+                    stat = '"N/A'
+
+            if item['Folder'] != folderloc:   
+                
+                folderloc=item['Folder']    
+                c.write('\n\n.. rubric:: Folder ' + str(item['Folder']) + '\n')
+                c.write('\n.. csv-table::\n')
+                c.write('   :header: "Part Number","Name","Comments"\n')
+                c.write('   :widths: 20,80,20 \n')
+
+            c.write('\n   ')
+            c.write(stat +' :ref:`' + item['Part'] + ' <'+item['Ref']+ '>`","')
+            c.write(item['Product']+'",""')
+        c.write('\n')
+        
+                
+    # XXXXX
+
+    print('\nFolders updated')      
+
+    print('\nLocations fully updated')      
 
 
 def do_collection():

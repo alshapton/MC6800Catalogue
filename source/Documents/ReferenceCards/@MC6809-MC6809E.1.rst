@@ -2,6 +2,8 @@
 
 .. _REF-MC6809-MC6809E-1:
 
+.. #Metadata {'Product':'MC6809/MC6809E 8-Bit Microprocessor Programming Model','Folder': '1'}
+
 MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model
 ======================================================================
 

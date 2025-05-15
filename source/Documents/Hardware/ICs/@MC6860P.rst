@@ -1,7 +1,7 @@
 :orphan:
 
 .. _MC6860P:
-.. #Metadata {'Product':'MC6860P','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC6860P','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':3}
 
 MC6860P 0-600 bps Digital Modem
 ===============================

@@ -1,11 +1,12 @@
 :orphan:
 
 .. _MC68B50CP:
+.. #Metadata {'Product':'MC68B50CP','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':1}
 
 MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
 ================================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC68B50CP.png
    :width: 400
    :align: center
 
@@ -14,15 +15,16 @@ MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","0932"
+   "Manufacture Date","03-AUG-2009 to 09-AUG-2009"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Product"
+   "Location","Drawer 2"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 MHz"
    "Notes",""
 
+This date code and manufacture dates should be scrutinised.
 
 .. rubric:: Collection Information
 
@@ -30,4 +32,4 @@ MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`verified;2em;sd-text-success` 14-MAY-2025`,:material-regular:`verified;2em;sd-text-success` 28-MAR-2025

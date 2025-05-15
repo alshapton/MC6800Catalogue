@@ -9,6 +9,8 @@ Micromodule 01B1
    :width: 400
    :align: center
 
+Document to be scanned
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
