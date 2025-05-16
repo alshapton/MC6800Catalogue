@@ -2,6 +2,8 @@
 
 .. _ALLYOUNEED:
 
+.. #Metadata {'Product':'All you need for your Microcomputer System','Folder': '1'}
+
 All you need for your Microcomputer System
 ==========================================
 

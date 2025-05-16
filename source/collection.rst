@@ -125,11 +125,9 @@ This is the current collection (as at 16-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`M6840UM(AD) <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications"
-	" :ref:`M68PRM(D) <M68PRM(D)>`","M6800 Programming Reference Manual"
-	" :ref:`N/A <ALLYOUNEED>`","All You need for your Microcomputer System"
-	" :ref:`N/A <NONE-1>`","M6800 Microcomputer System Design Data Manual"
-	" :ref:`N/A <NONE-2>`","M6800 Microprocessor Applications Manual"
+	" :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System"
+	" :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual"
+	" :ref:`N/A <NONE-2>`","Microprocessor Applications Manual"
 	" :ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets"
 
 

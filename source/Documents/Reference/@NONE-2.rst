@@ -2,6 +2,8 @@
 
 .. _NONE-2:
 
+.. #Metadata {'Product':'Microprocessor Applications Manual','Folder': '1'}
+
 Microprocessor Applications Manual
 ==================================
 
