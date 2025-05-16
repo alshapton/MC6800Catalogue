@@ -20,5 +20,5 @@ Motorola Software for Motorola Time Sharing Systems InfoSheet
 
 .. rubric:: Location:
 
-- :ref:`MC6800COURSEBNDR`
+- :ref:`MC6800CRSBNDR`
 

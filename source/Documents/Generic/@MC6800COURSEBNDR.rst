@@ -1,9 +1,12 @@
 :orphan:
 
-.. _MC6800COURSEBNDR:
+.. _MC6800CRSBNDR:
+
 
 Microprocessor Course
 =====================
+
+.. #Metadata {'Product':'Microprocessor Course','Folder': '1'}
 
 .. image:: ../../images/Reference/MicroprocessorCourseBinder.1.png
    :width: 200

@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 15-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 16-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -48,10 +48,10 @@ This is the current collection (as at 15-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`N/A <1979_Memory_Products>`","Memory Products"
-	" :ref:`N/A <1979_Microcomputer_Development_Systems>`","Microcomputer Development Systems and Subsystems"
-	" :ref:`N/A <MC6800COURSEBNDR>`","Microprocessor Course"
-	" :ref:`N/A <MPUVocabulary>`","MPU Vocabulary"
+	" :ref:`N/A <1979_MCDS>`","Microcomputer Development Systems and Subsystems"
+	" :ref:`N/A <1979_Memory_Products>`","Motorola Memory Products"
+	" :ref:`N/A <MC6800CRSBNDR>`","Microprocessor Course"
+	" :ref:`N/A <MPUVocabulary>`","Motorola MPU Vocabulary"
 
 
 .. rubric:: ICs

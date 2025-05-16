@@ -19,5 +19,5 @@ Motorola Software for DEC PDP-11 InfoSheet
 
 .. rubric:: Location:
 
-- :ref:`MC6800COURSEBNDR`
+- :ref:`MC6800CRSBNDR`
 

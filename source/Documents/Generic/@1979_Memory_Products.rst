@@ -2,6 +2,8 @@
 
 .. _1979_Memory_Products:
 
+.. #Metadata {'Product':'Motorola Memory Products','Folder': '1','Comments':'1979'}
+
 Motorola Memory Products
 ========================
 

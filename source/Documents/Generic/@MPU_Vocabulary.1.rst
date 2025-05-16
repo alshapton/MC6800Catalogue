@@ -2,6 +2,8 @@
 
 .. _MPUVocabulary:
 
+.. #Metadata {'Product':'Motorola MPU Vocabulary','Folder': '1','Comments':'First Edition 1977'}
+
 Motorola MPU Vocabulary 
 =======================
 
