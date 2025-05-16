@@ -647,7 +647,7 @@ while True:
     print('\t2. Create new entry')
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
-    print('\t5. Update storage + RefCard index')
+    print('\t5. Update storage + RefCard/Generic indexes')
     print('\t6. Update carousels')
     print('\t0. Update ALL ')
     print('\tX. Exit')
