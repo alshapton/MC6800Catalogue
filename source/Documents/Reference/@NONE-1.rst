@@ -2,6 +2,9 @@
 
 .. _NONE-1:
 
+
+.. #Metadata {'Product':'Motorola Microcomputer System Design Data Manual','Folder': '1'}
+
 Motorola Microcomputer System Design Data Manual
 ================================================
 

@@ -5,17 +5,8 @@ import glob
 import os
 import shutil
 
-from dataclasses import dataclass
-from mininterface import run
-import ast
 
-@dataclass
-class Env:
-  
-  my_flag: bool = False
-  manu_year: int = "1975"
-  manu_week: int = "15"
-  
+import ast
 
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
@@ -36,6 +27,38 @@ def make_directory(path):
     except FileExistsError:
         return True
     
+def get_loc(file):
+
+    filename = file
+    got_image=False
+    metadata=False
+    sta=''
+    with open(file) as f:
+        for line in f:
+            if line.startswith('.. _'):
+                ref = line.split('.. _')[1].strip().replace(':','').replace('>','').replace('i','')
+                if '.. image:: ' in line and got_image == False:
+                    if 'NOIMAGE.png' not in line:
+                        image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
+                        got_image=True         
+            if '.. #Metadata' in line:
+                metadata=True
+                this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
+                loc = ast.literal_eval(this_loc)
+                if ref != '':
+                    loc['Ref'] = ref
+                if 'Part' not in loc:
+                    loc['Part'] = 'N/A'
+            
+            if CHECK_MARK in line and sta == '':
+                sta='YES'
+            if CROSS_MARK in line and sta == '':
+                sta='NO'
+            if IN_TRANSIT in line and sta == '':
+                sta='TRANSIT'
+    loc['Status'] = sta                        
+    return metadata, loc
+
 def do_standard_folders(TABLES_FILE,sorted_folders):
     with open(TABLES_FILE,"w") as c:
 
@@ -276,7 +299,7 @@ def update_storage():
     storage=[]
     foldersrefcard=[]
     foldersgeneric=[]
-
+    foldersreference=[]
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
     ICLABELS_FILE='source/Documents/Hardware/ICs/' + ICLABELSNAME
@@ -310,75 +333,26 @@ def update_storage():
                     c.write('   :class: no-scaled-links\n\n')
             
             if 'ReferenceCards' in file and 'fragment' not in file and 'index' not in file:
-                filename = file
-                got_image=False
-                metadata=False
-                sta=''
-                with open(file) as f:
-                    for line in f:
-                        if line.startswith('.. _'):
-                            ref = line.split('.. _')[1].strip().replace(':','').replace('>','').replace('i','')
-                        if '.. image:: ' in line and got_image == False:
-                            if 'NOIMAGE.png' not in line:
-                                image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
-                                got_image=True         
-                        if '.. #Metadata' in line:
-                            metadata=True
-                            this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
-                            loc = ast.literal_eval(this_loc)
-                            if ref != '':
-                                loc['Ref'] = ref
-                            if 'Part' not in loc:
-                                loc['Part'] = 'N/A'
-                        
-                        if CHECK_MARK in line and sta == '':
-                            sta='YES'
-                        if CROSS_MARK in line and sta == '':
-                            sta='NO'
-                        if IN_TRANSIT in line and sta == '':
-                            sta='TRANSIT'
-
-                loc['Status'] = sta                        
+                metadata,loc = get_loc(file)                
                 if metadata:
                     foldersrefcard.append(loc)
-            
-            if 'Generic' in file and 'fragment' not in file and 'index' not in file:
-                filename = file
-                got_image=False
-                metadata=False
-                sta=''
-                with open(file) as f:
-                    for line in f:
-                        if line.startswith('.. _'):
-                            ref = line.split('.. _')[1].strip().replace(':','').replace('>','').replace('i','')
-                        if '.. image:: ' in line and got_image == False:
-                            if 'NOIMAGE.png' not in line:
-                                image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
-                                got_image=True         
-                        if '.. #Metadata' in line:
-                            metadata=True
-                            this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
-                            loc = ast.literal_eval(this_loc)
-                            if ref != '':
-                                loc['Ref'] = ref
-                            if 'Part' not in loc:
-                                loc['Part'] = 'N/A'
-                        
-                        if CHECK_MARK in line and sta == '':
-                            sta='YES'
-                        if CROSS_MARK in line and sta == '':
-                            sta='NO'
-                        if IN_TRANSIT in line and sta == '':
-                            sta='TRANSIT'
 
-                loc['Status'] = sta                        
+            if 'Generic' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
                 if metadata:
                     foldersgeneric.append(loc)
 
+            if 'Reference' in file and 'ReferenceCards' not in file and 'fragment' not in file and 'index' not in file:
+                print(file)
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    foldersreference.append(loc)
+
+
     sorted_folders_generic = sorted(foldersgeneric, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders = sorted(foldersrefcard, key=lambda x: (x['Folder'],x['Product']))   
+    sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
-    print(sorted_folders_generic)
     storagebox=''
     drawer=0
     row=0
@@ -445,13 +419,14 @@ def update_storage():
     TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders)
 
-    print(sorted_folders_generic)
     TABLES_FILE='source/Documents/Generic/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_generic)
 
+    TABLES_FILE='source/Documents/Reference/tables.fragment.rst'
+    do_standard_folders(TABLES_FILE,sorted_folders_reference)
         
                 
-    # XXXXX
+    # XXX
 
     print('\nFolders updated')      
 
@@ -647,21 +622,14 @@ while True:
     print('\t2. Create new entry')
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
-    print('\t5. Update storage + RefCard/Generic indexes')
+    print('\t5. Update storage + SOME indexes')
     print('\t6. Update carousels')
     print('\t0. Update ALL ')
     print('\tX. Exit')
     type = input('Enter choice: ')
     match type:
         case "1":
-            with run(Env) as m:
-                results = m.form({
-                "Enter Manufacture Year": m.env.manu_year,
-                "Enter Manufacture Week": m.env.manu_week
-                })    
 
-            print(results["Enter Manufacture Year"])
-            input('Press Enter to continue...')
             #Get year and week from user
             y = input('Enter year: ')
             w = input('Enter week: ')
