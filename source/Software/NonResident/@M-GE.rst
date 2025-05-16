@@ -20,6 +20,5 @@ Motorola Software for General Electric InfoSheet
 
 .. rubric:: Location:
 
-- Folder 1
-- :ref:`MC6800COURSEBNDR`
+- :ref:`MC6800CRSBNDR`
 

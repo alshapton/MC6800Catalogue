@@ -25,4 +25,4 @@ This document was acquired (and will be stored) with the M6800 Microproessor Cou
 
 :download:`M6800 Systems Reference and Data Sheets (May 1975 Edition)<../../_static/Documents/Reference/M6800SystemsReferenceDataSheets_May75.pdf>`
 
-:ref:`Microprocessor Course Binder <MC6800COURSEBNDR>`
+:ref:`Microprocessor Course Binder <MC6800CRSBNDR>`

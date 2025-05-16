@@ -28,5 +28,5 @@ This Infosheet details the following products (all of which have their own indiv
 
 .. rubric:: Location:
 
-- :ref:`MC6800COURSEBNDR`
+- :ref:`MC6800CRSBNDR`
 
