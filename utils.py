@@ -28,6 +28,7 @@ def make_directory(path):
         return True
     
 def get_loc(file):
+    loc = ast.literal_eval('{}')
 
     filename = file
     got_image=False
@@ -56,8 +57,8 @@ def get_loc(file):
                 sta='NO'
             if IN_TRANSIT in line and sta == '':
                 sta='TRANSIT'
-    loc['Status'] = sta                        
-    return metadata, loc
+            loc['Status'] = sta                        
+        return metadata, loc
 
 def do_standard_folders(TABLES_FILE,sorted_folders):
     with open(TABLES_FILE,"w") as c:
@@ -75,9 +76,14 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
                     stat = '"N/A'
 
             if item['Folder'] != folderloc:   
+                folder_name='Folder ' + str(item['Folder'])
+                if item['Folder'] == 'GITHUB':
+                    folder_name='GitHub Repository (See individual items)'
+                if item['Folder'] == 'LOCAL':
+                    folder_name='See individual items for location information'
                 
                 folderloc=item['Folder']    
-                c.write('\n\n.. rubric:: Folder ' + str(item['Folder']) + '\n')
+                c.write('\n\n.. rubric:: '+ folder_name + '\n')
                 c.write('\n.. csv-table::\n')
                 c.write('   :header: "Part Number","Name","Comments"\n')
                 c.write('   :widths: 20,80,20 \n')
@@ -98,7 +104,6 @@ def create_new_group_from_index():
     if datasheet == 'Y':
         ds='\n.. rubric:: Links\n\n'
         ds=ds+':download:`' + newgroupname + ' ' + 'XXXX  <../../../../_static/Documents/Datasheets/' + newgroupname + ".pdf>`\n"
-    print(ds)
     NEW_LOC=NEW_GROUP_TMP_LOC + newgroupname
     if not os.path.exists(LOC.lower()):
         print('Index file for ' + newgroupname + ' does not exist')
@@ -167,7 +172,6 @@ def create_new_group_index():
     chipprefix=input("Enter chip prefix (e.g. MC68): ")
     p=input("Enter packaging types (S-CERDIP,P-plastic,L-Ceramic etc)- comma-separated: ")
     packaging=p.split(',')
-    print(packaging)     
     chips=[]
     temps=['']
     f=input("Enter extra frequencies (A=1.5 MHz, B=2 MHz) - comma-separated: ")
@@ -300,6 +304,9 @@ def update_storage():
     foldersrefcard=[]
     foldersgeneric=[]
     foldersreference=[]
+    folderssoftnon=[]
+    folderssoftres=[]
+
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
     ICLABELS_FILE='source/Documents/Hardware/ICs/' + ICLABELSNAME
@@ -343,16 +350,27 @@ def update_storage():
                     foldersgeneric.append(loc)
 
             if 'Reference' in file and 'ReferenceCards' not in file and 'fragment' not in file and 'index' not in file:
-                print(file)
                 metadata,loc = get_loc(file)                
                 if metadata:
                     foldersreference.append(loc)
 
+            if 'Software/NonResident' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    folderssoftnon.append(loc)
 
+            if 'Software/Resident' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    folderssoftres.append(loc)
+
+    sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
+    sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_generic = sorted(foldersgeneric, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders = sorted(foldersrefcard, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
+    
     storagebox=''
     drawer=0
     row=0
@@ -424,11 +442,16 @@ def update_storage():
 
     TABLES_FILE='source/Documents/Reference/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_reference)
-        
-                
-    # XXX
+    
+    TABLES_FILE='source/Software/NonResident/tables.fragment.rst'
+    do_standard_folders(TABLES_FILE,sorted_folders_softnon)
+
+    TABLES_FILE='source/Software/Resident/tables.fragment.rst'
+    do_standard_folders(TABLES_FILE,sorted_folders_softres)
 
     print('\nFolders updated')      
+
+    # XXX
 
     print('\nLocations fully updated')      
 
@@ -485,15 +508,20 @@ def do_collection():
                     
                     for line in f:
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:
+                            
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
-                            description = splitline[1].strip().replace('""','"')
+                            try:
+                                description = splitline[1].strip().replace('""','"')
+                            except:
+                                description = ''
                             outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
                             thisdict = {"PN"    : part_number, 
                                         "DESC"  : description, 
                                         "DTYPE" : doc_type, 
                                         "OLINE" : outline }
-                            collection.append(thisdict)
+                            if description != '':
+                                collection.append(thisdict)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
 
         HEADING=''

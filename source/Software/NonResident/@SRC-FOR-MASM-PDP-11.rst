@@ -2,6 +2,8 @@
 
 .. _SRC-FOR-MASM-PDP-11:
 
+.. #Metadata {'Product':'Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)','Folder': 'LOCAL'}
+
 Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)
 ================================================================
 

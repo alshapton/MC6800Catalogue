@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 16-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 20-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -89,11 +89,11 @@ This is the current collection (as at 16-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`N/A <M-GE>`","Motorola Software for General Electric"
-	" :ref:`N/A <M-MTSS>`","Motorola Software for Motorola Time Sharing System"
-	" :ref:`N/A <M-PDP-11>`","Motorola Software for DEC PDP-11"
-	" :ref:`N/A <M-UCS>`","Motorola Software for United Computing Service"
-	" :ref:`N/A <SRC-FOR-MASM-PDP-11>`","FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)"
+	" :ref:`N/A <M_GE>`","Motorola Software for General Electric InfoSheet"
+	" :ref:`N/A <M_MTSS>`","Motorola Software for Motorola Time Sharing Systems InfoSheet"
+	" :ref:`N/A <M_PDP_11>`","Motorola Software for DEC PDP-11 InfoSheet"
+	" :ref:`N/A <M_UCS>`","Motorola Software for United Computing Service InfoSheet"
+	" :ref:`N/A <SRC-FOR-MASM-PDP-11>`","Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)"
 
 
 .. rubric:: Other Hardware
@@ -149,9 +149,8 @@ This is the current collection (as at 16-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`N/A <M-EXORciser>`","Motorola Software for Exorciser InfoSheet"
-	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_asm>`","EDUCATOR-II Monitor Assembly Listing"
-	" :ref:`N/A <Monitors_EDUCATOR_II_monitor_hex>`","EDUCATOR-II Monitor hex dump"
-	" :ref:`N/A <Monitors_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`","MIKBUG Monitor Assembly Listing REV 009"
-	" :ref:`N/A <Monitors_MIKBUG_MINIBUG_0.90-0.4-MINASM004>`","MINIBUG Monitor Assembly Listing REV 004"
-	" `Internet <https://github.com/Sphere-Corporation/MUG>`_","MC6800 User's Group Software Library"
+	" :ref:`N/A <M_EXORcser>`","Motorola Software for Exorciser InfoSheet"
+	" :ref:`N/A <Mon_EDUCATOR_II_mon_asm>`","EDUCATOR-II Monitor Assembly Listing"
+	" :ref:`N/A <Mon_EDUCATOR_II_mon_hex>`","EDUCATOR-II Monitor Hex Listing"
+	" :ref:`N/A <Mon_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`","MIKBUG Monitor Assembly Listing REV 009"
+	" :ref:`N/A <Mon_MIKBUG_MINIBUG_0.90-0.4-MINASM004>`","MINIBUG Monitor Assembly Listing REV 004"

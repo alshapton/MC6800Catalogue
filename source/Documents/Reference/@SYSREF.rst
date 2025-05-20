@@ -2,7 +2,7 @@
 
 .. _SYSREF:
 
-.. #Metadata {'Product':'M6800 Systems Reference and Data Sheets','Folder': '1'}
+.. #Metadata {'Product':'M6800 Systems Reference and Data Sheets','Folder': 'Microprocessor Course'}
 
 M6800 Systems Reference and Data Sheets
 =======================================

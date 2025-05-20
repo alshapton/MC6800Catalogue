@@ -1,0 +1,21 @@
+.. collapse::  Synchronous Serial Data Adapter SSDA (MC6852)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`local_shipping;2em` :ref:`MC6852L <MC6852L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852P <MC6852P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852S <MC6852S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852CL <MC6852CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852CP <MC6852CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852CS <MC6852CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""       
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852L <MCA6852L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852P <MCA6852P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852S <MCA6852S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852CL <MCA6852CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852CP <MCA6852CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCA6852CS <MCA6852CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCB6852L <MCB6852L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCB6852P <MCB6852P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCB6852S <MCB6852S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""

@@ -14,6 +14,7 @@ DataSheets
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01B1A <DS-M68MM01B1(A)>`","M68MM01B1A Monoboard Microcomputer Module",":material-regular:`lock;2em;sd-text-success`","Issue B 1979"
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":material-regular:`lock_open;2em;sd-text-danger`","Preliminary April 30 1978"
+   ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module",""
 
 .. rubric:: Integrated Circuits
 

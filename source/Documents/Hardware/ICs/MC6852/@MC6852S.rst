@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC6852S:
+
+.. #None {'Product':'MC6852S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC6852S Synchronous Serial Data Adapter (SSDA)
+==============================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","CERDIP"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6852 Synchronous Serial Data Adapter (SSDA)  <../../../../_static/Documents/Datasheets/MC6852.pdf>`

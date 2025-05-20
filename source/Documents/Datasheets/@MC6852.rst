@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6852:
+
+Synchronous Serial Data Adapter (SSDA)
+======================================
+
+.. image:: ../../images/DataSheets/MC6852.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Synchronous Serial Data Adapter (SSDA) <../../_static/Documents/Datasheets/MC6852.pdf>`

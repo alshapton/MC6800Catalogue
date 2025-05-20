@@ -39,7 +39,8 @@ Reference Manuals
    ":ref:`MEX3870OM <MEX3870OM>`","MEX3870OM 3870 Emulator User's Guide",""
    ":ref:`MEX6801EVM1 <MEX6801EVM1>`","MEX6801EVM1 Evaluation Module User's Guide",""
    ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
-   
+   ":ref:`MEX68USEC(D1) <MEX68USEC(D1)>`","MEX68USEC 2 MHz User System Evaluation Guide","Part Number indeterminable"
+
 .. rubric:: Software Manuals
 
 .. csv-table:: 
@@ -55,7 +56,7 @@ Reference Manuals
    ":ref:`M68EDITORM(D3) <M68EDITORM(D3)>`","M6800/M6809 EDITORM Resident Editor Reference Manual","Third Edition June 1980"
    ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   
    ":ref:`M6809XDOSEDT(D) <M6809XDOSEDT(D)>`","EXORset 30 XDOS Editor User's Manual",""   
-
+   ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide",""
 
 .. rubric:: Software Manuals (Assemblers)
 
@@ -81,3 +82,4 @@ Reference Manuals
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
    ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
+   ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"

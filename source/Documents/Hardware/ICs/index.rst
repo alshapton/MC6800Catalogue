@@ -18,10 +18,10 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6847","Video Display Generator (VDG)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC68488","General Purpose Interface Adapter (GPIB) IEEE488"   
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6852","Synchronous Serial Data Adapter (SDAA)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem",""
+   ":material-regular:`local_shipping;2em` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator","Ceramic"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator","Plastic"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
@@ -52,6 +52,9 @@ Integrated Circuits
 |
 
 .. include:: ./MC6850/mc6850.fragment.rst
+|
+
+.. include:: ./MC6852/mc6852.fragment.rst
 |
 
 .. include:: ./MC68701/mc68701.fragment.rst

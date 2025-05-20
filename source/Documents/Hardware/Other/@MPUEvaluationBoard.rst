@@ -12,7 +12,7 @@ MPU Evalution Card MC6800 Microprocessor Board
     The briefcase-mounted evaluation system was acquired with several other documents.
 
    - :ref:`Users Guide for the Motorola Microcomputer Evaluation System <MES6800>`
-   - :ref:`Motorola Software for General Electric <M-GE>`
+   - :ref:`Motorola Software for General Electric <M_GE>`
 
 
 .. rubric:: Collection Information
