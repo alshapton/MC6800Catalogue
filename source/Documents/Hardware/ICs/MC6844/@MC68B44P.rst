@@ -7,7 +7,7 @@
 MC68B44P Direct Memory Access Controller (DMAC)
 ===============================================
 
-.. image:: ../../../../images/Hardware/ICs/MC68B44P.png
+.. image:: ../../../../images/Hardware/ICs/MC6844/MC68B44P.png
    :width: 400
    :align: center
 

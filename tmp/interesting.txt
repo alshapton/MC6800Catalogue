@@ -177,8 +177,8 @@ A Cross- assembler : https://github.com/colinbourassa/crasm
 http://matthieu.benoit.free.fr/6801.htm
 
 
-
-
+Data sheets
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://colorcomputerarchive.com/coco/Documents/Datasheets&ved=2ahUKEwjemdCVwLaNAxXrVUEAHXCOGr04ChAWegQIDxAB&usg=AOvVaw0MHIFYkz4Y3VYgIj0Gn18e
 
 
 

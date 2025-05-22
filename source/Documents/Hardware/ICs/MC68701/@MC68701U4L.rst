@@ -8,7 +8,7 @@ MC68701U4L Microprocessor Unit with 8-bit EPROM
 ================================================
 
 
-.. image:: ../../../../images/Hardware/ICs/MC68701U4L.png
+.. image:: ../../../../images/Hardware/ICs/MC68701/MC68701U4/MC68701U4L.png
    :width: 400
    :align: center
 
