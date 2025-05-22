@@ -21,4 +21,4 @@ Peripheral Interface Adapter
 
 .. rubric:: Links
 
-:download:`MC6821 DataSheet <../../_static/Documents/Datasheets/MC6821.1.pdf>`
+:download:`MC6821 DataSheet <../../_static/Documents/Datasheets/MC6821.pdf>`

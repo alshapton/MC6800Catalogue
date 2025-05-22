@@ -1,0 +1,8 @@
+.. collapse::  M6800 Two-Phase Clock Generator/Driver (MC6875)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6875L <MC6875L>`","Ceramic","N/A","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6875AL <MC6875AL>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""

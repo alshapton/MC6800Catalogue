@@ -1,5 +1,5 @@
 
-.. collapse:: 1024 Byte ROM (MC6830)
+.. collapse:: 1024 Byte ROM (MCM6830)
 
    .. csv-table::
       :header: "Part Number","Packaging","Frequency","Temperature" 

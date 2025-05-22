@@ -2,7 +2,7 @@
 
 .. _MC68B701U4L-1:
 
-.. #None {'Product':'MC68B701U4L-1','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+.. #None {'Product':'MC68B701U4L-1','Storage': 'Storage Box 1','Drawer':1,'Row':1,'Column':1}
 
 MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM
 ==================================================

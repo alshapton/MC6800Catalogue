@@ -8,9 +8,9 @@
        :header-rows: 0
        :widths: 33, 34, 33
 
-       "|iMC6821P| :ref:`MC6821P <MC6821P>`","|iMC68B21L| :ref:`MC68B21L <MC68B21L>`","|iMC68B54P| :ref:`MC68B54P <MC68B54P>`"
-       "|iMC68B40P| :ref:`MC68B40P <MC68B40P>`","|iMC68B44P| :ref:`MC68B44P <MC68B44P>`","|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`"
-       "|iXC6845L| :ref:`XC6845L <XC6845L>`","|iMC6845P| :ref:`MC6845P <MC6845P>`","|iMC68B00S| :ref:`MC68B00S <MC68B00S>`"
+       "|iMC6821P| :ref:`MC6821P <MC6821P>`","|iMC68B40P| :ref:`MC68B40P <MC68B40P>`",""
+       "|iMC68701U4L| :ref:`MC68701U4L <MC68701U4L>`","|iMC68B44P| :ref:`MC68B44P <MC68B44P>`","|iXC6845L| :ref:`XC6845L <XC6845L>`"
+       "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`","|iMC6845P| :ref:`MC6845P <MC6845P>`","|iMC68B54P| :ref:`MC68B54P <MC68B54P>`"
 
 .. collapse:: Drawer 2
 
@@ -28,5 +28,4 @@
        :header-rows: 0
        :widths: 33, 34, 33
 
-       "|iMC68B00L| :ref:`MC68B00L <MC68B00L>`","",""
        "|iMC68B44L| :ref:`MC68B44L <MC68B44L>`","",""

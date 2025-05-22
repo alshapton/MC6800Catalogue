@@ -2,7 +2,7 @@
 
 .. _MC6844L:
 
-.. #Note {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+.. #Note {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':1}
 
 MC6844L Direct Memory Access Controller (DMAC)
 ==============================================

@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6875:
+
+M6800 Clock Generator (MC6875)
+==============================
+
+.. image:: ../../images/DataSheets/MC6875.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`M6800 Clock Generator (MC6875) <../../_static/Documents/Datasheets/MC6875.pdf>`

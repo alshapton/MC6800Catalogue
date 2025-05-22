@@ -5,7 +5,7 @@
 HEPC4801L HEP version of MC6800
 ===============================
 
-.. image:: ../../../../images/Hardware/ICs/HEPC4801L.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/HEPC4801L.png
    :width: 400
    :align: center
 

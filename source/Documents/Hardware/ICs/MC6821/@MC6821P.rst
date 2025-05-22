@@ -7,7 +7,7 @@
 MC6821P Peripheral Interface Adapter
 ====================================
 
-.. image:: ../../../images/Hardware/ICs/MC6821P.png
+.. image:: ../../../../images/Hardware/ICs/MC6821/MC6821P.png
    :width: 400
    :align: center
 

@@ -1,5 +1,5 @@
 
-.. collapse:: 128 x 8-Bit Static Random Access Memory (MC6810)
+.. collapse:: 128 x 8-Bit Static Random Access Memory (MCM6810)
 
    .. csv-table::
       :header: "Part Number","Packaging","Frequency","Temperature" 

@@ -28,7 +28,7 @@ MC6852L Synchronous Serial Adapter (1 Mhz)
    :header: "Component","Datasheet"
    :widths: auto
 
-   :material-regular:`local_shipping;2em`,":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 

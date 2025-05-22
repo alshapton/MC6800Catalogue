@@ -4,7 +4,7 @@
        :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
        :widths: auto
 
-       ":material-regular:`local_shipping;2em` :ref:`MC6852L <MC6852L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`local_shipping;2em;` :ref:`MC6852L <MC6852L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852P <MC6852P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852S <MC6852S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6852CL <MC6852CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""

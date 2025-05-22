@@ -27,6 +27,7 @@ DataSheets
    ":ref:`MC6847T1 <MC6847T1>`","MC6847T1 Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1985",""
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC68701 <MC68701>`","Microcomputer Unit",":material-regular:`lock_open;2em;sd-text-danger`","",""
+   ":ref:`MC6875 <MC6875>`","M6800 Clock Generator",":material-regular:`lock;2em;sd-text-success`","",""
 
 .. rubric:: Development Systems
 

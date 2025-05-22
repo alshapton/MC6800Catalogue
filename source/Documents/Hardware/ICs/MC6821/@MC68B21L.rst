@@ -2,12 +2,12 @@
 
 .. _MC68B21L:
 
-.. #Metadata {'Product':'MC68B21L','Storage': 'Storage Box 1', 'Drawer':1,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC68B21L','Storage': 'Storage Box 1', 'Drawer':1,'Row':1,'Column':1}
 
 MC68B21L Peripheral Interface Adapter
 =====================================
 
-.. image:: ../../../images/Hardware/ICs/MC68B21L.1.png
+.. image:: ../../../../images/Hardware/ICs/MC6821/MC68B21L.1.png
    :width: 400
    :align: center
 
@@ -36,6 +36,6 @@ This is a version of the MC6820 introduced using depletion mode technology and i
 .. rubric:: Links
 
 
-:download:`MC6821 Datasheet <../../../_static/Documents/Datasheets/MC6821.1.pdf>`
+:download:`MC6821 Datasheet <../../../../_static/Documents/Datasheets/MC6821.pdf>`
 
 

@@ -12,8 +12,10 @@ import ast
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
 IN_TRANSIT=':material-regular:`local_shipping;2em`'
+IN_TRANSIT_SHORT='local_shipping'
 
 OUTPUT_FILE = 'source/collection.rst'
+TRANSIT_FILE = 'source/transit.rst'
 SUFFIX = 'rst'
 PREFIX ='source/'
 MOVE='tmp/move'
@@ -455,6 +457,82 @@ def update_storage():
 
     print('\nLocations fully updated')      
 
+def do_in_transit():
+    # Find all .rst files in the current directory and subdirectories
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    with open(TRANSIT_FILE,"w") as c:
+
+        c.write('.. _transit page:\n\n')
+        c.write ('In-Transit\n')
+        c.write('===========')
+        c.write('\n')
+        c.write('This is the current set of items (as at ' + time.strftime("%d-%m-%Y") + ') in transit.\n')
+        
+    
+        intransit=[]
+
+
+        for file in files:
+            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
+                "transit.rst" not in file and
+                "@" not in file and "carousel" not in file):
+                with open(file) as f:
+                    type = os.path.dirname(file).replace(PREFIX,'')
+                    match type:
+                        case "Documents/ApplicationNotes":
+                            doc_type = "Application Notes"
+                        case "Documents/Hardware/ICs":    
+                            doc_type = "ICs"
+                        case "Documents/Reference":
+                            doc_type = "Reference Documents"
+                        case "Documents/Manuals":
+                            doc_type = "Reference Manuals"
+                        case "Documents/Datasheets":
+                            doc_type = "Datasheets"
+                        case "Documents/ReferenceCards":
+                            doc_type = "Reference Cards" 
+                        case "Documents/Generic":
+                            doc_type = "Generic Documents"
+                        case "Software/NonResident":
+                            doc_type = "NonResident Software"
+                        case "Software/Resident":
+                            doc_type = "Resident Software"
+                        case "Documents/Hardware/EXORciser":
+                            doc_type = "Exorciser Hardware"
+                        case "Documents/Hardware/Other":
+                            doc_type = "Other Hardware"
+                        case _:
+                            doc_type = "Other"  
+                            if "/ICs" in type:
+                                doc_type = "ICs"
+                    
+                    for line in f:
+                        if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
+                            if 'An item in transit' not in line:
+                                splitline = line.split('","')
+                                part_number = splitline[0].strip().replace(IN_TRANSIT,'').replace('""','"')
+                                try:
+                                    description = splitline[1].strip().replace('""','"')
+                                except:
+                                    description = ''
+                                outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
+                                thisdict = {"PN"    : part_number, 
+                                            "DESC"  : description, 
+                                            "DTYPE" : doc_type, 
+                                            "OLINE" : outline }
+                                if description != '' :
+                                    intransit.append( thisdict)
+                newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
+        HEADING=''
+
+        for i in newlist:
+            if HEADING != i['DTYPE']:
+                HEADING = i['DTYPE']
+                c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
+                c.write('.. csv-table:: \n')
+                c.write('\t:header: "Part Number","Description"\n')
+                c.write('\t:widths: 30, 70\n\n')  
+            c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
 
 def do_collection():
     # Find all .rst files in the current directory and subdirectories
@@ -473,7 +551,7 @@ def do_collection():
 
         for file in files:
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
-                "collection" not in file and
+                "collection" not in file and "transit.rst" not in file and
                 "@" not in file and "carousel" not in file):
                 
                 with open(file) as f:
@@ -678,6 +756,8 @@ while True:
             update_storage()
             do_collection()
             print('Collection updated')
+            do_in_transit()
+            print('In-Transit updated')
             os.system("make clean html")
         case "5":
             update_storage()

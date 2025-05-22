@@ -1,0 +1,95 @@
+.. collapse::  Peripheral Interface Adapter (MC6821)
+
+   .. rubric:: Part Numbering
+
+   In addition to the usual part numbers (depicted below) for the MC6821, there are also an additional number of variants.
+
+   .. image:: /images/Hardware/ICs/MC6821/MC6821-ordering.png
+      :width: 400
+      :align: center
+
+   To order these variants, as detailled below, customers were required to add on additional letters to the part number as required.
+
+   .. image:: /images/Hardware/ICs/MC6821/MC6821-variants.png
+      :width: 400
+      :align: center
+      
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+       
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CL <MC6821CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CP <MC6821CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CS <MC6821CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821L <MC6821L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821S <MC6821S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CL <MC68A21CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CP <MC68A21CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CS <MC68A21CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21L <MC68A21L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21P <MC68A21P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21S <MC68A21S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CL <MC68B21CL>`","Ceramic","2 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CP <MC68B21CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CS <MC68B21CS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21P <MC68B21P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21S <MC68B21S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CLS <MC6821CLS>`","Ceramic","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CPS <MC6821CPS>`","Plastic","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CSS <MC6821CSS>`","CERDIP","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821LS <MC6821LS>`","Ceramic","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821PS <MC6821PS>`","Plastic","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821SS <MC6821SS>`","CERDIP","1 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CLS <MC68A21CLS>`","Ceramic","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CPS <MC68A21CPS>`","Plastic","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CSS <MC68A21CSS>`","CERDIP","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21LS <MC68A21LS>`","Ceramic","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21PS <MC68A21PS>`","Plastic","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21SS <MC68A21SS>`","CERDIP","1.5 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CLS <MC68B21CLS>`","Ceramic","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CPS <MC68B21CPS>`","Plastic","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CSS <MC68B21CSS>`","CERDIP","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21LS <MC68B21LS>`","Ceramic","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21PS <MC68B21PS>`","Plastic","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21SS <MC68B21SS>`","CERDIP","2 Mhz","-25-150\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CLD <MC6821CLD>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CPD <MC6821CPD>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CSD <MC6821CSD>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821LD <MC6821LD>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821PD <MC6821PD>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821SD <MC6821SD>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CLD <MC68A21CLD>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CPD <MC68A21CPD>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CSD <MC68A21CSD>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21LD <MC68A21LD>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21PD <MC68A21PD>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21SD <MC68A21SD>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CLD <MC68B21CLD>`","Ceramic","2 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CPD <MC68B21CPD>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CSD <MC68B21CSD>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21LD <MC68B21LD>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21PD <MC68B21PD>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21SD <MC68B21SD>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C","168 Hour Burn-in at 125\ :sup:`o`\ C"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CLDS <MC6821CLDS>`","Ceramic","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CPDS <MC6821CPDS>`","Plastic","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CSDS <MC6821CSDS>`","CERDIP","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821LDS <MC6821LDS>`","Ceramic","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821PDS <MC6821PDS>`","Plastic","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821SDS <MC6821SDS>`","CERDIP","1 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CLDS <MC68A21CLDS>`","Ceramic","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CPDS <MC68A21CPDS>`","Plastic","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21CSDS <MC68A21CSDS>`","CERDIP","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21LDS <MC68A21LDS>`","Ceramic","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21PDS <MC68A21PDS>`","Plastic","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A21SDS <MC68A21SDS>`","CERDIP","1.5 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CLDS <MC68B21CLDS>`","Ceramic","2 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CPDS <MC68B21CPDS>`","Plastic","2 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CSDS <MC68B21CSDS>`","CERDIP","2 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21LDS <MC68B21LDS>`","Ceramic","2 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21PDS <MC68B21PDS>`","Plastic","2 Mhz","","Combination of Level 1 and Level 2"
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21SDS <MC68B21SDS>`","CERDIP","2 Mhz","","Combination of Level 1 and Level 2"
+

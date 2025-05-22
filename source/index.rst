@@ -59,7 +59,8 @@ Conventions Used
 
    Home <self>
    Collection <collection>
-
+   In Transit <transit>
+   
 .. toctree::
    :titlesonly:
    :maxdepth: 1

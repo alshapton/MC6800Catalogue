@@ -1,14 +1,14 @@
 :orphan:
 
-.. _MC68A701U4L:
+.. _MC68701U4L:
 
-.. #None {'Product':'MC68A701U4L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+.. #Metadata {'Product':'MC68701U4L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':1}
 
-MC68A701U4L Microprocessor Unit with 8-bit EPROM
+MC68701U4L Microprocessor Unit with 8-bit EPROM
 ================================================
 
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC68701U4L.png
    :width: 400
    :align: center
 
@@ -17,8 +17,8 @@ MC68A701U4L Microprocessor Unit with 8-bit EPROM
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8824"
+   "Manufacture Date","06-JUN-1988 to 12-JUN-1988"
    "Packaging","Ceramic"
    "Status","Production"
    "Location","TBD"
@@ -32,7 +32,7 @@ MC68A701U4L Microprocessor Unit with 8-bit EPROM
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 21-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 

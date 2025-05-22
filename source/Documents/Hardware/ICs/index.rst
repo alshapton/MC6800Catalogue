@@ -10,8 +10,6 @@ Integrated Circuits
    :header: "Part Number","Name","Comments" 
    :widths: 25,50,25
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Peripheral Interface Adapter",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter",""
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
@@ -21,11 +19,10 @@ Integrated Circuits
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem",""
-   ":material-regular:`local_shipping;2em` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem",""
+   ":material-regular:`local_shipping;2em;` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator","Ceramic"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator","Plastic"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6875","Clock Generator"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
 
 |
@@ -34,6 +31,9 @@ Integrated Circuits
 |
 
 .. include:: ./MCM6810/mcm6810.fragment.rst
+|
+
+.. include:: ./MC6821/mc6821.fragment.rst
 |
 
 .. include:: ./MC6829/mc6829.fragment.rst
@@ -55,6 +55,9 @@ Integrated Circuits
 |
 
 .. include:: ./MC6852/mc6852.fragment.rst
+|
+
+.. include:: ./MC6875/mc6875.fragment.rst
 |
 
 .. include:: ./MC68701/mc68701.fragment.rst

@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 20-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 22-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -69,6 +69,7 @@ This is the current collection (as at 20-05-2025) of the items produced by Motor
 	" :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator"
 	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
 	" :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic"
+	" :ref:`MC68701U4L <MC68701U4L>`","Ceramic"
 	" :ref:`MC68B00L <MC68B00L>`","Ceramic"
 	" :ref:`MC68B00S <MC68B00S>`","CERDIP"
 	" :ref:`MC68B10P <MCM68B10P>`","Plastic"
