@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6840:
+
+Programmable Timer Module (PTM)
+===============================
+
+.. image:: ../../images/DataSheets/MC6840.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Programmable Timer Module (PTM) <../../_static/Documents/Datasheets/MC6840.pdf>`

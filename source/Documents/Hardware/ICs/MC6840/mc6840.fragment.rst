@@ -1,0 +1,21 @@
+.. collapse::  Programmable Timer Module (PTM)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840L <MC6840L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840CL <MC6840CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40L <MC68A40L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40CL <MC68A40CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B40L <MC68B40L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840P <MC6840P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840CP <MC6840CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40P <MC68A40P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40CP <MC68A40CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B40P <MC68B40P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840S <MC6840S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840CS <MC6840CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40S <MC68A40S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40CS <MC68A40CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B40S <MC68B40S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""

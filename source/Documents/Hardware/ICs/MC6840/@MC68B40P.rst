@@ -7,7 +7,7 @@
 MC68B40P Programmable Timer
 ===========================
 
-.. image:: ../../../images/Hardware/ICs/MC6840/MC68B40L.png
+.. image:: ../../../../images/Hardware/ICs/MC6840/MC68B40L.png
    :width: 400
    :align: center
 
@@ -25,7 +25,6 @@ MC68B40P Programmable Timer
 
 .. rubric:: Collection Information
 
-.. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Component","Datasheet"
@@ -33,4 +32,7 @@ MC68B40P Programmable Timer
 
    :material-regular:`verified;2em;sd-text-success` 12-MAR-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
 
+.. rubric:: Links
+
+:download:`MC6840 Programmable Timer Module (PTM)  <../../../../_static/Documents/Datasheets/MC6840.pdf>`
 

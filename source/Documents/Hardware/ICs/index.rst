@@ -11,7 +11,6 @@ Integrated Circuits
    :widths: 25,50,25
 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6840P <MC68B40P>`","Programmable Timer","" 
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6847","Video Display Generator (VDG)"
@@ -40,6 +39,9 @@ Integrated Circuits
 |
 
 .. include:: ./MCM6830/mcm6830.fragment.rst
+|
+
+.. include:: ./MC6840/mc6840.fragment.rst
 |
 
 .. include:: ./MC6844/mc6844.fragment.rst
