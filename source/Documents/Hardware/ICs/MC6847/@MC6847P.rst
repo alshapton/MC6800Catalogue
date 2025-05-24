@@ -29,7 +29,7 @@ MC6847P Non-Interlaced Video Display Generator Unit
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 
 .. rubric:: Links

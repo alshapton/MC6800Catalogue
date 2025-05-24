@@ -1,7 +1,7 @@
 :orphan:
 
 .. _MC68B50CP:
-.. #Metadata {'Product':'MC68B50CP','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC68B50CP','Storage': 'Storage Box 1','Drawer':4,'Row':3,'Column':1}
 
 MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
 ================================================================

@@ -1,7 +1,7 @@
 :orphan:
 
 .. _MC6852L:
-.. #NOTE {'Product':'MC6852L','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':3}
+.. #NOTE {'Product':'MC6852L','Storage': 'Storage Box 1','Drawer':4,'Row':3,'Column':3}
 
 MC6852L Synchronous Serial Adapter (1 Mhz)
 ==========================================

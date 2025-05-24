@@ -2,7 +2,7 @@
 
 .. _MCM68B10P:
 
-.. #Metadata {'Product':'MCM68B10P','Storage': 'Storage Box 1','Drawer':2,'Row':2,'Column':3}
+.. #Metadata {'Product':'MCM68B10P','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':3}
 
 MCM68B10P 128 x 8-bit RAM
 =========================

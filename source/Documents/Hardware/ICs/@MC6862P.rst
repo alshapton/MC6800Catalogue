@@ -2,7 +2,7 @@
 
 .. _MC6862P:
 
-.. #Metadata {'Product':'MC6862P','Storage': 'Storage Box 1','Drawer':2,'Row':2,'Column':2}
+.. #Metadata {'Product':'MC6862P','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':2}
 
 MC6862P 2400 bps Digital Modulator
 ==================================

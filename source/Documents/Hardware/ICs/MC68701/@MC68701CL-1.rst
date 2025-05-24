@@ -2,7 +2,7 @@
 
 .. _MC68701CL-1:
 
-.. #Metadata {'Product':'MC68701CL-1','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC68701CL-1','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':1}
 
 MC68701CL-1 Microprocessor Unit
 ===============================

@@ -2,7 +2,7 @@
 
 .. _MC68B44L:
 
-.. #Metadata {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':2}
 
 MC68B44L Direct Memory Access Controller (DMAC)
 ===============================================

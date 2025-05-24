@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 22-05-2025) in transit.
+This is the current set of items (as at 24-05-2025) in transit.
 
 
 .. rubric:: ICs
@@ -15,3 +15,5 @@ This is the current set of items (as at 22-05-2025) in transit.
 	":material-regular:`local_shipping;2em;` :ref:`MC6852L <MC6852L>`","Ceramic"
 	":material-regular:`local_shipping;2em;` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem"
 	":material-regular:`local_shipping;2em;` :ref:`MCM68A30L8 <MCM68A30L8>`","1024 x 8-bit ROM"
+	":material-regular:`local_shipping;2em;` MC6809","Microcontroller"
+	":material-regular:`local_shipping;2em;` MC6889","Quad Bus Transceiver (Non-Inverting)"
