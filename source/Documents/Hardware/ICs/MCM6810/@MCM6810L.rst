@@ -5,6 +5,8 @@
 MCM6810L 128 x 8-bit RAM
 ========================
 
+.. #Metadata {'Product':'MCM6810L','Name':'128 x 8-bit RAM','Storage': 'Briefcase'}
+
 .. image:: ../../../../images/Hardware/ICs/MCM6810L.png
    :width: 400
    :align: center

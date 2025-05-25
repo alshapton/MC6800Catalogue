@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 24-05-2025) in transit.
+This is the current set of items (as at 25-05-2025) in transit.
 
 
 .. rubric:: ICs

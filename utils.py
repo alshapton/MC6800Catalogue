@@ -308,6 +308,10 @@ def update_storage():
     foldersreference=[]
     folderssoftnon=[]
     folderssoftres=[]
+    storage_properties = []
+    other_storage = []
+    other_products = []
+    misc_storage = []
 
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
@@ -315,9 +319,17 @@ def update_storage():
     TABLES_FILE='source/Documents/Hardware/ICs/tables.fragment.rst'
     PROPERTIES_FILE='storage.properties'
     file1 = open(PROPERTIES_FILE, 'r')
-    storage_properties = file1.readlines()
-
-        
+    properties = file1.readlines()
+    for prop in properties:
+        if 'Storage' in prop:
+            storage_properties.append(prop)
+        if 'Other' in prop:
+            other_storage.append(prop)
+    file1.close()      
+    if len(other_storage) > 0:
+        oths = ast.literal_eval(other_storage[0])
+        for i in oths["Other"]:
+            misc_storage.append(i)
     with open(ICLABELS_FILE,"w") as c:
         for file in files:
             if 'ICs' in file and 'fragment' not in file and 'index' not in file:
@@ -333,7 +345,14 @@ def update_storage():
                         if '.. #Metadata' in line:
                             this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
                             loc = ast.literal_eval(this_loc)
-                            storage.append(loc)
+                            is_misc=False
+                            for i in oths["Other"]:
+                                if loc["Storage"] == i['Name']:
+                                    is_misc=True
+                            if is_misc:
+                                other_products.append(loc)
+                            else:
+                                storage.append(loc)
 
                 if got_image == True:
                     label = 'i'+filename.split('@')[-1].replace('.rst','')
@@ -365,6 +384,10 @@ def update_storage():
                 metadata,loc = get_loc(file)                
                 if metadata:
                     folderssoftres.append(loc)
+
+    sorted_other_products = sorted(other_products, key=lambda x: (x['Storage'],x['Product']))   
+    sorted_misc_storage= sorted(misc_storage, key=lambda x: (x['Name'],x['Description']))
+
 
     sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
@@ -434,6 +457,29 @@ def update_storage():
             for i in range(colcount,cols):
                 c.write(',""')                
 
+    # Append here the Other Storage stuff
+        
+        if len(other_storage) > 0:
+            l=ast.literal_eval(other_storage[0])
+            for i in l["Other"]:
+                written_title = False
+
+                for j in other_products:
+
+                    if j["Storage"] == i['Name']:
+                        if not written_title:
+                            c.write('\n\n.. collapse:: ' + i['Description'] + '\n\n')
+
+                            c.write('    .. csv-table::\n')
+                            c.write('       :header-rows: 0\n')
+                            c.write('       :widths: 50,50\n\n')
+                                
+
+                            written_title = True
+                        c.write('         |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
+
+
+    #exit()
     print('\nStorage updated')      
 
     TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
