@@ -90,6 +90,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6800L|  image:: ../../../images/Hardware/ICs/MC6800/MC6800L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B00L|  image:: ../../../images/Hardware/ICs/MC6800/MC68B00L.png
    :width: 200
    :class: no-scaled-links

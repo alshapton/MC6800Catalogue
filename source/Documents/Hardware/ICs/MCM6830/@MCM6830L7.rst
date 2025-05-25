@@ -5,6 +5,8 @@
 MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
 ====================================================
 
+.. #Metadata {'Product':'MCM6830L7','Name':'1024 x 8-bit ROM containing MIKBUG/MINIBUG','Storage': 'Briefcase'}
+
 .. image:: ../../../../images/Hardware/ICs/MCM6830L7.png
    :width: 400
    :align: center

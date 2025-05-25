@@ -38,3 +38,14 @@
        "|iMC6850L| :ref:`MC6850L <MC6850L>`","|iMC6862L| :ref:`MC6862L <MC6862L>`","|iMCM6810EL| :ref:`MCM6810EL <MCM6810EL>`","","",""
        "|iMC68B50P| :ref:`MC68B50P <MC68B50P>`","|iMC6862P| :ref:`MC6862P <MC6862P>`","|iMCM68B10P| :ref:`MCM68B10P <MCM68B10P>`","","",""
        "|iMC68B50CP| :ref:`MC68B50CP <MC68B50CP>`","|iMCM6810P| :ref:`MCM6810P <MCM6810P>`","|iMC6860P| :ref:`MC6860P <MC6860P>`","","",""
+
+.. collapse:: Briefcase MES6800
+
+    .. csv-table::
+       :header-rows: 0
+       :widths: 50,50
+
+         |iXC6820|, :ref:`XC6820 Peripheral Interface Adapter <XC6820>`
+         |iMCM6810L|, :ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
+         |iMC6800L|, :ref:`MC6800L Microprocessor Unit <MC6800L>`
+         |iMCM6830L7|, :ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`

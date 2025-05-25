@@ -5,6 +5,8 @@
 XC6820 Peripheral Interface Adapter
 ===================================
 
+.. #Metadata {'Product':'XC6820','Name':'Peripheral Interface Adapter','Storage': 'Briefcase'}
+
 .. image:: ../../../images/Hardware/ICs/XC6820.png
    :width: 400
    :align: center
