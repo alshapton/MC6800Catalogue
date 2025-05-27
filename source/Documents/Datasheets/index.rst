@@ -29,7 +29,8 @@ DataSheets
    ":ref:`MC68701 <MC68701>`","Microcomputer Unit",":material-regular:`lock_open;2em;sd-text-danger`","",""
    ":ref:`MC6875 <MC6875>`","M6800 Clock Generator",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)",""
-
+   ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit",""
+   
 .. rubric:: Development Systems
 
 .. csv-table::
@@ -42,6 +43,7 @@ DataSheets
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68SXS <M68SXS>`","M68SXS EXORterm 200","","1979","Issue A"
    ":ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
    ":ref:`N/A <M6800-Resident-Software>`","M6800 Resident Software",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   ":ref:`MEX68XT <MEX68XT>`","Extender Module",":material-regular:`lock_open;2em;sd-text-danger`"
 
 .. rubric:: Key to symbols
 

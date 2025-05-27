@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC68B09CP:
+
+.. #None {'Product':'MC68B09CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC68B09CP MC6809 8-Bit Microprocessing Unit
+===========================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","Plastic"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","-40-85\ :sup:`o`\ C"
+   "Frequency","2 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6809 8-Bit Microprocessing Unit  <../../../../_static/Documents/Datasheets/MC6809.pdf>`

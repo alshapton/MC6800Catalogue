@@ -1,0 +1,25 @@
+.. collapse::  MC6809 8-Bit Microprocessing Unit
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809L <MC6809L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809CL <MC6809CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09L <MC68A09L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09CL <MC68A09CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09L <MC68B09L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09CL <MC68B09CL>`","Ceramic","2 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809P <MC6809P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809CP <MC6809CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09P <MC68A09P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09CP <MC68A09CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09P <MC68B09P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09CP <MC68B09CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809S <MC6809S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809CS <MC6809CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09S <MC68A09S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09CS <MC68A09CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09S <MC68B09S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B09CS <MC68B09CS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
+       

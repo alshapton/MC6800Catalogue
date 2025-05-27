@@ -10,7 +10,7 @@ Integrated Circuits
    :header: "Part Number","Name","Comments" 
    :widths: 25,50,25
 
-   ":material-regular:`local_shipping;2em;` MC6809","Microcontroller"
+   ":material-regular:`local_shipping;2em;` MC6809EP","Microcontroller"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
@@ -29,6 +29,9 @@ Integrated Circuits
 |
 
 .. include:: ./MC6800/mc6800.fragment.rst
+|
+
+.. include:: ./MC6809/mc6809.fragment.rst
 |
 
 .. include:: ./MCM6810/mcm6810.fragment.rst
