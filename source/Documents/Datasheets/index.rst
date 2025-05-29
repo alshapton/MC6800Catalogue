@@ -31,7 +31,8 @@ DataSheets
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)",""
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit",""
    ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit",""
-   
+   ":ref:`MC6839 <MC6839>`","Floating-Point ROM",":material-regular:`lock_open;2em;sd-text-danger`"
+
 .. rubric:: Development Systems
 
 .. csv-table::

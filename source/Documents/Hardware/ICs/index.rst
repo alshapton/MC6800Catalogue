@@ -13,7 +13,6 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6847","Video Display Generator (VDG)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC68488","General Purpose Interface Adapter (GPIB) IEEE488"   
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
@@ -46,6 +45,9 @@ Integrated Circuits
 |
 
 .. include:: ./MCM6830/mcm6830.fragment.rst
+|
+
+.. include:: ./MC6839/mc6839.fragment.rst
 |
 
 .. include:: ./MC6840/mc6840.fragment.rst

@@ -1,4 +1,4 @@
-.. collapse::  Programmable Timer Module (PTM)
+.. collapse::  Programmable Timer Module (PTM) (MC6840)
 
    .. csv-table::
        :header: "Part Number","Packaging","Frequency","Temperature","Notes" 

@@ -1,0 +1,10 @@
+.. collapse::  Floating Point ROM (MC6839)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A39C <MC68A39C>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B39C <MC68B39C>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A39P <MC68A39P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B39P <MC68B39P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
