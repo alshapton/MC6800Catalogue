@@ -30,6 +30,7 @@ DataSheets
    ":ref:`MC6875 <MC6875>`","M6800 Clock Generator",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)",""
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit",""
+   ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit",""
    
 .. rubric:: Development Systems
 

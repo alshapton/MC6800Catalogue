@@ -9,7 +9,7 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847YP <MC6847YP>`","Plastic","Interlaced"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847YS <MC6847YS>`","CERDIP","Interlaced"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847L <MC6847L>`","Ceramic","Non-Interlaced"
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847P <MC6847P>`","Plastic","Non-Interlaced"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6847P <MC6847P>`","Plastic","Non-Interlaced"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847S <MC6847S>`","CERDIP","Non-Interlaced"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847T1L <MC6847T1L>`","Ceramic","Enhanced"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6847T1P <MC6847T1P>`","Plastic","Enhanced"

@@ -1,4 +1,4 @@
-.. rubric:: Original Motorola Version
+.. rubric:: :octicon:`list-ordered;2em` Micro Industries (acquired)
 
 .. card-carousel:: 1
 
@@ -47,7 +47,7 @@
       .. image:: ../../../images/Hardware/Other/M68MMCC10/1.M68MMCC10.9.png
          :width: 800
 
-.. rubric:: :octicon:`list-ordered;2em` Micro Industries
+.. rubric:: Original Motorola Version (for reference)
 
 .. card-carousel:: 2
 

@@ -18,6 +18,7 @@
        :header-rows: 0
        :widths: 33, 34, 33
 
+       "|iMC6847P| :ref:`MC6847P <MC6847P>`","",""
        "|iMC68B54P| :ref:`MC68B54P <MC68B54P>`","",""
 
 .. collapse:: Drawer 3
@@ -28,6 +29,7 @@
 
        "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`","",""
        "|iMC68701U4L| :ref:`MC68701U4L <MC68701U4L>`","",""
+       "|iMC6809EP| :ref:`MC6809EP <MC6809EP>`","",""
 
 .. collapse:: Drawer 4
 

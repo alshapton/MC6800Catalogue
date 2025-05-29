@@ -119,6 +119,7 @@ def create_new_group_from_index():
         lines = d.readlines()
 
     for line in lines:
+        print(line)
         if line.startswith('.. collapse::'):
             group_name = line.split('.. collapse::')[1].strip()
             print('Group name: ' + group_name)
@@ -131,10 +132,16 @@ def create_new_group_from_index():
             endref=line.find('>')
             lengthref=endref - startref
             chip=line[startref+1:endref]
+            print(startref,endref)
+            print(chip)
             new_file_name = '@' + chip + '.rst'
             new_file = os.path.join(NEW_LOC, new_file_name)
             
-            if len(new_file) != 16:
+            print(new_file)
+            if startref == -1 and endref == -1:
+                pass
+            else:
+                print(line)
                 info=line.split(',')
                 packaging=info[1].strip()
                 frequency=info[2].strip()

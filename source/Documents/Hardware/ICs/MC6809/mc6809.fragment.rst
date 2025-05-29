@@ -1,4 +1,4 @@
-.. collapse::  MC6809 8-Bit Microprocessing Unit
+.. collapse::  8-Bit Microprocessing Unit (MC6809)
 
    .. csv-table::
        :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
