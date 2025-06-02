@@ -22,7 +22,7 @@ Integrated Circuits
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator","Plastic"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
-   ":material-regular:`local_shipping;2em;` MC6889","Quad Bus Transceiver (Non-Inverting)"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Quad Bus Transceiver (Non-Inverting)"
 
 |
 

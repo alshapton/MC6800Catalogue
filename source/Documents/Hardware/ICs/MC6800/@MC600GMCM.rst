@@ -1,12 +1,13 @@
 :orphan:
 
 .. _MC6800GMCM:
-.. #Note {'Product':'MC68GMCM','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
 
 MC6800GMCM General Motors/Delcom Microprocessor Unit
 ====================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. #Metadata {'Product':'MC6800GMCM','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':2}
+
+.. image:: ../../../../images/Hardware/ICs/MC6800/GMCM.png
    :width: 400
    :align: center
 
@@ -15,17 +16,17 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","N/A"
+   "Manufacture Date","N/A"
    "Packaging","Ceramic"
-   "Status","Production"
-   "Location","TBD"
+   "Status","Prototype"
+   "Location","Drawer 3"
    "Frequency","N/A"
    "Temperature","N/A"
       
 .. rubric:: General Information
 
-The top of these are pencil marked GMCM CPU. 
+The top of this IC is  pencil marked GMCM CPU. 
 These would be upwards compatible with the original 6800. 
 
 The GMCM was a custom microprocessor designed for General Motors by Motorola. It was used in automotive applications, specifically in engine control modules (ECMs) for vehicles. The GMCM was based on the Motorola 6800 microprocessor architecture and included enhancements to meet the specific requirements of automotive applications.
@@ -49,4 +50,4 @@ Motorola originally intended to use the 6800 for the CPU, but the GMCM CPU fit t
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   :material-regular:`verified;2em;sd-text-success` 30-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"

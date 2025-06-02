@@ -27,7 +27,7 @@
        :header-rows: 0
        :widths: 33, 34, 33
 
-       "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`","",""
+       "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`","|iMC6800GMCM| :ref:`MC6800GMCM <MC6800GMCM>`",""
        "|iMC68701U4L| :ref:`MC68701U4L <MC68701U4L>`","",""
        "|iMC6809EP| :ref:`MC6809EP <MC6809EP>`","",""
 
@@ -37,7 +37,7 @@
        :header-rows: 0
        :widths: 16, 16, 16, 16, 16, 16
 
-       "|iMC6850L| :ref:`MC6850L <MC6850L>`","|iMC6862L| :ref:`MC6862L <MC6862L>`","|iMCM6810EL| :ref:`MCM6810EL <MCM6810EL>`","","",""
+       "|iMC6850L| :ref:`MC6850L <MC6850L>`","|iMC6862L| :ref:`MC6862L <MC6862L>`","|iMCM6810EL| :ref:`MCM6810EL <MCM6810EL>`","|iMC68A50P| :ref:`MC68A50P <MC68A50P>`","|iMC6889P| :ref:`MC6889P <MC6889P>`",""
        "|iMC68B50P| :ref:`MC68B50P <MC68B50P>`","|iMC6862P| :ref:`MC6862P <MC6862P>`","|iMCM68B10P| :ref:`MCM68B10P <MCM68B10P>`","","",""
        "|iMC68B50CP| :ref:`MC68B50CP <MC68B50CP>`","|iMCM6810P| :ref:`MCM6810P <MCM6810P>`","|iMC6860P| :ref:`MC6860P <MC6860P>`","","",""
 

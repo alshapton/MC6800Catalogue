@@ -5,7 +5,9 @@
 MC68A50P Asynchronous Communications Interface Adapter (MC6850)
 ===============================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. #Metadata {'Product':'MC68A50P','Storage': 'Storage Box 1', 'Drawer':4,'Row':1,'Column':4}
+
+.. image:: ../../../../images/Hardware/ICs/MC6850/MC68A50P.png
    :width: 400
    :align: center
 
@@ -14,11 +16,11 @@ MC68A50P Asynchronous Communications Interface Adapter (MC6850)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","9416"
+   "Manufacture Date","11-APR-1994 to 17-APR-1994"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location","Drawer 4"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5MHz"
    "Notes",""
@@ -30,4 +32,4 @@ MC68A50P Asynchronous Communications Interface Adapter (MC6850)
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em;`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 30-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"

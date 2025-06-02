@@ -6,7 +6,7 @@
 MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
 ================================================================
 
-.. image:: ../../../../images/Hardware/ICs/MC68B50CP.png
+.. image:: ../../../../images/Hardware/ICs/MC6850/MC68B50CP.png
    :width: 400
    :align: center
 

@@ -22,7 +22,8 @@ DataSheets
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68x50 <MC6850>`","Asynchronous Communications Interface Adapter",":material-regular:`lock_open;2em;sd-text-danger`","1978","MC6850 (1 Mhz)/MC68A50 (1.5 Mhz)/MC68B50 (2 Mhz)"
+   ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller",":material-regular:`lock;2em;sd-text-success`"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850 <MC6850>`","Asynchronous Communications Interface Adapter",":material-regular:`lock_open;2em;sd-text-danger`","1978",""
    ":ref:`MC6847 <MC6847>`","MC6847/MC6847Y Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1984",""
    ":ref:`MC6847T1 <MC6847T1>`","MC6847T1 Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1985",""
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""

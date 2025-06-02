@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6828:
+
+Priority Interrupt Controller
+=============================
+
+.. image:: ../../images/DataSheets/MC6828.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Priority Interrupt Controller <../../_static/Documents/Datasheets/MC6828.pdf>`

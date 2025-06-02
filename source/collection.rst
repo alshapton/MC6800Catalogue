@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 29-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 31-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -29,7 +29,7 @@ This is the current collection (as at 29-05-2025) of the items produced by Motor
 	" :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module"
 	" :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule"
 	" :ref:`M68SXS <M68SXS>`","M68SXS EXORterm 200"
-	" :ref:`MC68x50 <MC6850>`","Asynchronous Communications Interface Adapter"
+	" :ref:`MC6850 <MC6850>`","Asynchronous Communications Interface Adapter"
 	" :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module"
 
 
@@ -60,6 +60,7 @@ This is the current collection (as at 29-05-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`M6800/M6801 GMCM <MC6800GMCM>`","Motorola 6800/6801 GMCM General Motors custom processor"
 	" :ref:`MC6800L <MC6800L>`","Ceramic"
 	" :ref:`MC6809EP <MC6809EP>`","Plastic"
 	" :ref:`MC6821P <MC6821P>`","Peripheral Interface Adapter"
@@ -71,6 +72,8 @@ This is the current collection (as at 29-05-2025) of the items produced by Motor
 	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
 	" :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic"
 	" :ref:`MC68701U4L <MC68701U4L>`","Ceramic"
+	" :ref:`MC6889P <MC6889P>`","Quad Bus Transceiver (Non-Inverting)"
+	" :ref:`MC68A50P <MC68A50P>`","Plastic"
 	" :ref:`MC68B00L <MC68B00L>`","Ceramic"
 	" :ref:`MC68B00S <MC68B00S>`","CERDIP"
 	" :ref:`MC68B10P <MCM68B10P>`","Plastic"
