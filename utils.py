@@ -119,7 +119,6 @@ def create_new_group_from_index():
         lines = d.readlines()
 
     for line in lines:
-        print(line)
         if line.startswith('.. collapse::'):
             group_name = line.split('.. collapse::')[1].strip()
             print('Group name: ' + group_name)
@@ -178,7 +177,10 @@ def create_new_group_from_index():
 def create_new_group_index():
     newchipbasename=input("Enter new chip base name (e.g. Asynchronous Adapter): ")
     newgroupname=input("Enter new group name: ")
-    chipprefix=input("Enter chip prefix (e.g. MC68): ")
+    chipprefixdefault='MC68'
+    chipprefix=input("Enter chip prefix (default by pressing <ENTER> is 'MC68'): ")
+    if chipprefix == '':
+        chipprefix = chipprefixdefault
     p=input("Enter packaging types (S-CERDIP,P-plastic,L-Ceramic etc)- comma-separated: ")
     packaging=p.split(',')
     chips=[]
@@ -222,6 +224,7 @@ def create_new_group_index():
                         temp = "-40-85\\ :sup:`o`\\ C"
                         chiptype=chiptype + '1'
 
+                    pt = ''
                     if packagetype.strip() == 'S':
                         pt = 'CERDIP'
                     if packagetype.strip() == 'P':

@@ -21,7 +21,8 @@ DataSheets
 .. csv-table:: 
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
-
+   
+   ":ref:`MC6803E <MC6803E>`","8-Bit Microprocessor",":material-regular:`lock_open;2em;sd-text-danger`"
    ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller",":material-regular:`lock;2em;sd-text-success`"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850 <MC6850>`","Asynchronous Communications Interface Adapter",":material-regular:`lock_open;2em;sd-text-danger`","1978",""
    ":ref:`MC6847 <MC6847>`","MC6847/MC6847Y Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1984",""

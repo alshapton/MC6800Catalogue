@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M68MM01A:
+
+Monoboard Microcomputer 1A Micromodule 1A
+=========================================
+
+.. image:: ../../images/Manuals/M68MM01A.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`local_shipping;2em`

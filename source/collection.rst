@@ -2,7 +2,11 @@
 
 Collection
 ===========
-This is the current collection (as at 31-05-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+<<<<<<< HEAD
+This is the current collection (as at 18-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+=======
+This is the current collection (as at 02-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+>>>>>>> ba3ce31 (Updates:)
 
 
 
@@ -67,6 +71,11 @@ This is the current collection (as at 31-05-2025) of the items produced by Motor
 	" :ref:`MC6845P <MC6845P>`","CRT Controller"
 	" :ref:`MC6847P <MC6847P>`","Plastic"
 	" :ref:`MC6850L <MC6850L>`","Ceramic"
+	" :ref:`MC6852L <MC6852L>`","Ceramic"
+<<<<<<< HEAD
+	" :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem"
+=======
+>>>>>>> ba3ce31 (Updates:)
 	" :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem"
 	" :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator"
 	" :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator"
@@ -85,6 +94,7 @@ This is the current collection (as at 31-05-2025) of the items produced by Motor
 	" :ref:`MCM6810L <MCM6810L>`","Ceramic"
 	" :ref:`MCM6810P <MCM6810P>`","Plastic"
 	" :ref:`MCM6830L7 <MCM6830L7>`","1024 x 8-bit ROM containing MIKBUG/MINIBUG"
+	" :ref:`MCM68A30L8 <MCM68A30L8>`","1024 x 8-bit ROM possibly containing MIKBUG"
 	" :ref:`XC6845L <XC6845L>`","CRT Controller"
 
 

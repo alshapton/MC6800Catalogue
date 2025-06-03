@@ -1,0 +1,9 @@
+
+.. collapse:: 0-600 bps Digital Modem (MC6860)
+
+   .. csv-table::
+      :header: "Part Number","Packaging","Notes" 
+      :widths: auto
+
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860P <MC6860P>`","0-600 bps Digital Modem",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem","New in box, unopened"

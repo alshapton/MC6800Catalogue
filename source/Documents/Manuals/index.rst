@@ -12,9 +12,6 @@ Reference Manuals
 
    ":ref:`N/A <MEK6800D2.1>`","MEK6800D2 Evaluation Kit II Manual","Second Edition 1977"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MES6800 <MES6800>`","MES6800 User Guide","September 1975"
-   ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
-   ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
-   ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"
    ":ref:`N/A <M6800EXORUG>`","M6800 EXORciser User's Guide","First Edition 1975"
    ":ref:`N/A <M6800EXORUG.2>`","M6800 EXORciser User's Guide","Second Edition 1975"
@@ -24,22 +21,40 @@ Reference Manuals
    ":ref:`MEX68DB2(D2) <MEX68DB2(D2)>`","MEX68DB2 DEBUG II Module User's Guide","Second Edition March 1979"
    ":ref:`M68SFDC2(D) <M68SFDC2(D)>`","EXORdisk II Floppy Disk Controller Module User's Guide","First Edition June 1978"
    ":ref:`M68FD3601-3604 <M68FD3601-3604>`","EXORdisk User's Guide","Preliminary"
-   ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
-   ":ref:`M68SFDC3(D3) <M68SFDC3(D3)>`","Floppy Disk Controller Module","Third Edition September 1979"
-   ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`M6809EXOR(D1) <M6809EXOR(D1)>`","M6809 EXORciser User's Guide","First Edition September 1979"
-   ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
-   ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
    ":ref:`M68SXD150(D2) <M68SXD150(D2)>`","EXORterm 150 EXORciser Display Console User's Guide","Second Edition April 1979"
    ":ref:`MEX68PP3(D) <MEX68PP3(D)>`","PROM Programmer III User's Guide","First Edition April 1978"
    ":ref:`M68SVS(D) <M68SVS(D)>`","Basic Display Unit User's Guide","First Edition 1977"
    ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
-   ":ref:`MEX6815-1 <MEX6815-1>`","8K Dynamic RAM Module Supplement","First Edition 1975"
-   ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
    ":ref:`MEX3870OM <MEX3870OM>`","MEX3870OM 3870 Emulator User's Guide",""
    ":ref:`MEX6801EVM1 <MEX6801EVM1>`","MEX6801EVM1 Evaluation Module User's Guide",""
-   ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
    ":ref:`MEX68USEC(D1) <MEX68USEC(D1)>`","MEX68USEC 2 MHz User System Evaluation Guide","Part Number indeterminable"
+
+.. rubric:: Expansion Card Manuals
+
+.. csv-table:: 
+   :header: "Part Number","Name","Comments" 
+   :widths: auto
+
+   ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
+   ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
+   ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
+   ":ref:`M68SFDC3(D3) <M68SFDC3(D3)>`","Floppy Disk Controller Module","Third Edition September 1979"
+   ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
+   ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
+   ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
+   ":ref:`MEX6815-1 <MEX6815-1>`","8K Dynamic RAM Module Supplement","First Edition 1975"
+
+.. rubric:: Micromodule Manuals
+
+.. csv-table:: 
+   :header: "Part Number","Name","Comments" 
+   :widths: auto
+
+   ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
+   ":material-regular:`local_shipping;2em` :ref:`M68MM01A <M68MM01A>`","Monoboard Microcomputer 1A Micromodule 1A",""
+   ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
+   ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
 
 .. rubric:: Software Manuals
 
@@ -76,6 +91,7 @@ Reference Manuals
    :widths: auto
 
    ":ref:`N/A <MPLLREF(PRELIM)>`","MPL Language Reference Manual","Prelimimary March 1976"
+   ":ref:`M68MPLC(D) <M68MPLC(D)>`","M6800 MPL Cross-Computer Language Reference Manual",""
    ":ref:`M68COB(D) <M68COB(D)>`","M6800 Resident COBOL Language Reference Manual","1978"
    ":ref:`M68PLM(D1) <M68PLM(D1)>`","Motorola PASCAL Language Manual","1979"
    ":ref:`M68BAS(D3) <M68BAS(D3)>`","M6800 BASIC Interpreter Reference Manual","3rd Edition 1980"

@@ -2,15 +2,21 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 31-05-2025) in transit.
+<<<<<<< HEAD
+This is the current set of items (as at 18-06-2025) in transit.
+=======
+This is the current set of items (as at 02-06-2025) in transit.
+>>>>>>> ba3ce31 (Updates:)
 
 
-.. rubric:: ICs
+.. rubric:: Reference Manuals
 
 .. csv-table:: 
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	":material-regular:`local_shipping;2em;` :ref:`MC6852L <MC6852L>`","Ceramic"
+<<<<<<< HEAD
+	" :ref:`M68MM01A <M68MM01A>`","Monoboard Microcomputer 1A Micromodule 1A"
+=======
 	":material-regular:`local_shipping;2em;` :ref:`MC6860L <MC6860L>`","0-600 bps Digital Modem"
-	":material-regular:`local_shipping;2em;` :ref:`MCM68A30L8 <MCM68A30L8>`","1024 x 8-bit ROM"
+>>>>>>> ba3ce31 (Updates:)

@@ -1,0 +1,10 @@
+.. collapse::  8-Bit Microprocessor (MC6803E)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6803EG <MC6803EG>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6803EG-1 <MC6803EG-1>`","Plastic","1.25 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6803EL <MC6803EL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6803EL-1 <MC6803EL-1>`","Ceramic","1.25 Mhz","0-70\ :sup:`o`\ C",""

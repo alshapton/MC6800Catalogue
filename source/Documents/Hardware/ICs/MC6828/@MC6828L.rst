@@ -1,0 +1,37 @@
+:orphan:
+
+.. _MC6828L:
+
+MC6828L Prioirity Interrupt Controller
+======================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","Ceramic"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","N/A"
+   "Frequency","N/A"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6828 DataSheet <../../../../_static/Documents/Datasheets/MC6828.pdf>`
