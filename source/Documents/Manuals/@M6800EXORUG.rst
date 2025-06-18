@@ -5,7 +5,7 @@
 M6800 EXORciser User's Guide
 ============================
 
-.. image:: ../../images/Manuals/M6800EXORUG.1.png
+.. image:: ../../images/Manuals/M6800EXORug.1.png
    :width: 400
    :align: center
 
