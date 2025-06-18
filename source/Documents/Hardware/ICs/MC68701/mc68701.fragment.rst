@@ -2,7 +2,7 @@
 .. collapse:: Enhanced MC6800 Microcomputer Unit (MC68701)
 
    .. csv-table::
-      :header: "Part Number","Packaging","Frequency","Temperature" ,"Notes"
+      :header: "Part Number","Packaging","Frequency","Temperature","Notes"
       :widths: auto
 
       ":material-regular:`thumb_down;2em;sd-text-danger` MC68701L","Ceramic","1MHz","0-70\ :sup:`o`\ C",""
