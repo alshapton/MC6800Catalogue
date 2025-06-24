@@ -2,7 +2,6 @@
 
 .. _MC6800CRSBNDR:
 
-
 Microprocessor Course
 =====================
 
@@ -25,6 +24,7 @@ Microprocessor Course
 .. rubric:: This binder contains many other documents, including:
 
 - 6800 Microprocessor Course
+- :ref:`M6800CNP`
 - :ref:`M6800 Systems Reference and Data Sheets (May 1975 Edition) <SYSREF>`
 - :ref:`M_GE`
 - :ref:`M_PDP_11`

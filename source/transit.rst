@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 18-06-2025) in transit.
+This is the current set of items (as at 24-06-2025) in transit.
 
 
 .. rubric:: Reference Manuals
