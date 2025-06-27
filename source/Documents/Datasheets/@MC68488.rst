@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC68488:
+
+General Purpose Interface Adapter
+=================================
+
+.. image:: ../../images/DataSheets/MC68488.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`General Purpose Interface Adapter <../../_static/Documents/Datasheets/MC68488.pdf>`

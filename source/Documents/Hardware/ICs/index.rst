@@ -13,12 +13,10 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC68488","General Purpose Interface Adapter (GPIB) IEEE488"   
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator","Ceramic"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator","Plastic"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6870","Two-Phase Microprocessor Clock"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Quad Bus Transceiver (Non-Inverting)"
 
@@ -66,6 +64,9 @@ Integrated Circuits
 .. include:: ./MC6847/mc6847.fragment.rst
 |
 
+.. include:: ./MC68488/mc68488.fragment.rst
+|
+
 .. include:: ./MC6850/mc6850.fragment.rst
 |
 
@@ -81,6 +82,8 @@ Integrated Circuits
 .. include:: ./MC68701/mc68701.fragment.rst
 |
 
+.. include:: ./MC6870-1/mc6870-1.fragment.rst
+|
 
 |
 

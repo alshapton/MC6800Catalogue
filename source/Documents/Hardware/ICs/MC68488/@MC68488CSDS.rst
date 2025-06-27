@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC68488CSDS:
+
+.. #None {'Product':'MC68488CSDS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC68488CSDS General Purpose Interface Adapter
+=============================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","CERDIP"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","-40-85\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component","Datasheet"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC68488 General Purpose Interface Adapter  <../../../../_static/Documents/Datasheets/MC68488.pdf>`

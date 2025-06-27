@@ -7,7 +7,6 @@ Software for MC6800 systems
 
 .. include:: ./Resident/tables.fragment.rst
 
-
 .. rubric:: Non-Resident Software
 
 .. include:: ./NonResident/software.fragment.rst

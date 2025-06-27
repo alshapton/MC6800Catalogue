@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 24-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 27-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -22,14 +22,13 @@ This is the current collection (as at 24-06-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`M68ADS-1 <M68ADS-1>`","Autonomous Development System (French)"
+	" :ref:`M68ADS1 <M68ADS-1>`","Autonomous Development System (French)"
 	" :ref:`M68ADS1 <M68ADS1>`","Autonomous Development System"
 	" :ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1"
 	" :ref:`M68MM01B1A <DS-M68MM01B1(A)>`","M68MM01B1A Monoboard Microcomputer Module"
 	" :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module"
 	" :ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule"
 	" :ref:`M68SXS <M68SXS>`","M68SXS EXORterm 200"
-	" :ref:`MC6850 <MC6850>`","Asynchronous Communications Interface Adapter"
 	" :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module"
 
 
@@ -158,8 +157,9 @@ This is the current collection (as at 24-06-2025) of the items produced by Motor
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`N/A <EXORset30ROMs>`","EXORset30 ROMs"
+	" :ref:`N/A <IC-22-Assembler>`","EXORset30 ROM - IC-22"
 	" :ref:`N/A <M_EXORcser>`","Motorola Software for Exorciser InfoSheet"
-	" :ref:`N/A <Mon_EDUCATOR_II_mon_asm>`","EDUCATOR-II Monitor Assembly Listing"
 	" :ref:`N/A <Mon_EDUCATOR_II_mon_hex>`","EDUCATOR-II Monitor Hex Listing"
 	" :ref:`N/A <Mon_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`","MIKBUG Monitor Assembly Listing REV 009"
 	" :ref:`N/A <Mon_MIKBUG_MINIBUG_0.90-0.4-MINASM004>`","MINIBUG Monitor Assembly Listing REV 004"

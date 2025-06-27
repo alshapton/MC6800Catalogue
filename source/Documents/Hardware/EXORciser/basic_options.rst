@@ -5,22 +5,9 @@
 Basic Options for EXORciser
 ===========================
 
-Exorciser I and EXORterm 200 (1 MHz frequency limit)
 
-.. csv-table:: Development System Basic Options
-   :header: "Part Number","Name"
-   :widths: 30, 70
+EXORciser I and EXORterm 200 (1 MHz frequency limit)
 
-    "M68MM06   ","2K Static RAM"
-    "MEX6812-1 ","2K Static RAM"
-    "M68MM09E2 ","2K CMOS RAM with battery  "
-    "M68MM09E4 ","4K CMOS RAM with battery  "
-    "MEX6815-3 ","8K Dynamic RAM         "
-    "MEX6816-1 HR ","16K Hidden Refresh RAM "
-    "MEX6816-1 ","16K Dynamic RAM        "
-    "MEX6832-1 HR ","32K Hidden Refresh RAM "
-    "MEX6848-1 HR ","48K Hidden Refresh RAM "
-    "MEX6864-1 HR ","64K Hidden Refresh RAM "
 
 .. csv-table:: I/O Add-Ons
    :header: "Part Number","Name"
@@ -35,13 +22,13 @@ Exorciser I and EXORterm 200 (1 MHz frequency limit)
 
     "MEX68PP3A/B/M","PROM Programmer  "
     "MEX68USM  ","Universal Support Module to support 6800 family of devices "
-    "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 <br />Microprocessor Systems  "
+    "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "
     "MEX68WW   ","Universal Wirewrap Module for prototype Development  "
-    "MEX68XT   ","Extender Module permits access to <br />any development module from outside the EXORciser chassis  "
+    "MEX68XT   ","Extender Module permits access to any development module from outside the EXORciser chassis  "
 
 For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
 
-.. csv-table:: Development System  Options
+.. csv-table:: Development System Options
    :header: "Part Number","Name"
    :widths: 30,70
 
