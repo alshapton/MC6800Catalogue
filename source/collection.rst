@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 27-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 28-06-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -158,7 +158,6 @@ This is the current collection (as at 27-06-2025) of the items produced by Motor
 	:widths: 30, 70
 
 	" :ref:`N/A <EXORset30ROMs>`","EXORset30 ROMs"
-	" :ref:`N/A <IC-22-Assembler>`","EXORset30 ROM - IC-22"
 	" :ref:`N/A <M_EXORcser>`","Motorola Software for Exorciser InfoSheet"
 	" :ref:`N/A <Mon_EDUCATOR_II_mon_hex>`","EDUCATOR-II Monitor Hex Listing"
 	" :ref:`N/A <Mon_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`","MIKBUG Monitor Assembly Listing REV 009"

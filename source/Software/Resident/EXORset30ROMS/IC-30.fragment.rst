@@ -1,0 +1,37 @@
+:orphan:
+
+.. _EXORset30_IC_30:
+
+EXORset30 ROM - IC-30
+=====================
+.. #Metadata {'Product':'EXORset30 ROM - IC-30','Folder': 'LOCAL'}
+
+.. rubric:: Download Links
+
+:download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-30/30.asm>`
+
+:download:`Hex Dump<../../../_static/Monitors/EXORset30ROMS/IC-30/30.hex>`
+
+:download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-30/2716_30.BIN>`
+
+.. tab-set::
+
+    .. tab-item:: Dissassembly Listing
+
+         **Note that a dissassembly without a proven base address assumes a base address of $0000**
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-30/30.asm
+
+         
+    .. tab-item:: Hex Dump
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-30/30.hex
+
+
+.. rubric:: Collection Information
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 26-JUN-2025
+   

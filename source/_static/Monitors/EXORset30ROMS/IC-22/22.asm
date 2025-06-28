@@ -1,7 +1,7 @@
 ; f9dasm: M6800/1/2/3/8/9 / H6309 Binary/OS9/FLEX9 Disassembler V1.83
-; Loaded binary file 2708_22.BIN
+; Original binary file 2708_22.BIN
+; Converted to 22.hex
 ; ./f9dasm -6800 22.hex > 22.asm
-
 ;****************************************************
 ;* Used Labels                                      *
 ;****************************************************

@@ -1,0 +1,39 @@
+
+
+:orphan:
+
+.. _EXORset30_IC_26:
+
+EXORset30 ROM - IC-26
+=====================
+.. #Metadata {'Product':'EXORset30 ROM - IC-26','Folder': 'LOCAL'}
+
+.. rubric:: Download Links
+
+:download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-26/26.asm>`
+
+:download:`Hex Dump<../../../_static/Monitors/EXORset30ROMS/IC-26/26.hex>`
+
+:download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-26/7641_26.BIN>`
+
+.. tab-set::
+
+    .. tab-item:: Dissassembly Listing
+
+         **Note that a dissassembly without a proven base address assumes a base address of $0000**
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-26/26.asm
+
+         
+    .. tab-item:: Hex Dump
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-26/26.hex
+
+
+.. rubric:: Collection Information
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`verified;2em;sd-text-success` 26-JUN-2025
+   
