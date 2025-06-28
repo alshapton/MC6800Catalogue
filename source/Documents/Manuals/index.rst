@@ -15,6 +15,7 @@ Reference Manuals
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"
    ":ref:`N/A <M6800EXORUG>`","M6800 EXORciser User's Guide","First Edition 1975"
    ":ref:`N/A <M6800EXORUG.2>`","M6800 EXORciser User's Guide","Second Edition 1975"
+   ":ref:`N/A <EXORCISER-II-UG>`","EXORciser II Users Guide","Number undecipherable"
    ":ref:`M68EBS(D1) <M68EBS(D1)>`","EXORbus Specification Manual","First Edition December 1981"
    ":ref:`MEK6802D5(D2) <MEK6802D5(D2)>`","MEK6802D5 Microcomputer Evaluation Board User's Manual","Second Edition 1980"
    ":ref:`MEK6800D1 <MEK6800D1>`","Assembly Instructions M6800 Design Evaluation Kit","1975"

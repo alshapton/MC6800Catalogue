@@ -509,8 +509,6 @@ def update_storage():
 
     print('\nFolders updated')      
 
-    # XXX
-
     print('\nLocations fully updated')      
 
 def do_in_transit():
