@@ -1,11 +1,11 @@
 :orphan:
 
-.. _M68MM01A:
+.. _M68MM01A(D4):
 
 Monoboard Microcomputer 1A Micromodule 1A
 =========================================
 
-.. image:: ../../images/Manuals/M68MM01A.png
+.. image:: ../../images/Manuals/M68MM01A(D4).png
    :width: 400
    :align: center
 
@@ -15,4 +15,4 @@ Monoboard Microcomputer 1A Micromodule 1A
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`local_shipping;2em`
+   :material-regular:`verified;2em;sd-text-success` 02-JUL-2025

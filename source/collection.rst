@@ -147,6 +147,7 @@ This is the current collection (as at 02-07-2025) of the items produced by Motor
 
 	" :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
 	" :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
+	" :ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A"
 	" :ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual"
 	" :ref:`MES6800 <MES6800>`","MES6800 User Guide"
 

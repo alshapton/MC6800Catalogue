@@ -53,7 +53,7 @@ Reference Manuals
    :widths: auto
 
    ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
-   ":material-regular:`local_shipping;2em` :ref:`M68MM01A <M68MM01A>`","Monoboard Microcomputer 1A Micromodule 1A",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A","First Edition July 1977"
    ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
    ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
 

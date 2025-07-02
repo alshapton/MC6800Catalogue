@@ -26,12 +26,3 @@ This is the current set of items (as at 02-07-2025) in transit.
 	:widths: 30, 70
 
 	" :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products"
-
-
-.. rubric:: Reference Manuals
-
-.. csv-table:: 
-	:header: "Part Number","Description"
-	:widths: 30, 70
-
-	" :ref:`M68MM01A <M68MM01A>`","Monoboard Microcomputer 1A Micromodule 1A"
