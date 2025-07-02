@@ -1,9 +1,9 @@
 :orphan:
 
-.. _MC6870:
+.. _MC6870-71:
 
-MC6870 Two-Phase Microprocessor Clock 
-=====================================
+MC6870-71 Two-Phase Microprocessor Clock 
+========================================
 
 .. image:: ../../images/DataSheets/MC6870-MC6871.png
    :width: 400

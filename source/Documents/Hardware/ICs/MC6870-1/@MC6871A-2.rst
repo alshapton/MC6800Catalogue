@@ -4,7 +4,7 @@
 
 .. #None {'Product':'MC6871A-20','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6871A-20 Two-Phase Microprocessor Clock 
+MC6871A-2 Two-Phase Microprocessor Clock 
 =========================================
 
 .. image:: ../../../../images/NOIMAGE.png

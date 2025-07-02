@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 01-07-2025) in transit.
+This is the current set of items (as at 02-07-2025) in transit.
 
 
 .. rubric:: ICs
@@ -11,12 +11,12 @@ This is the current set of items (as at 01-07-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`MC6844L <MC6844L>`","Ceramic"
-	" :ref:`MC6844P <MC6844P>`","Plastic"
-	" :ref:`MC68488CP <MC68488CP>`","Plastic"
-	" :ref:`MC68488L <MC68488L>`","Ceramic"
-	" :ref:`MC6871A-15 <MC6871A-IC-15>`","[1]"
-	" :ref:`MC6871A-2 <MC6871A-IC-20>`","[1]"
+	" :ref:`MC6844L <MC6844L>`"," Direct Memory Access Controller (DMAC)"
+	" :ref:`MC6844P <MC6844P>`"," Direct Memory Access Controller (DMAC)"
+	" :ref:`MC68488CP <MC68488CP>`"," General Purpose Interface Adapter"
+	" :ref:`MC68488L <MC68488L>`"," General Purpose Interface Adapter"
+	" :ref:`MC6871A-15 <MC6871A-IC-15>`"," Two-Phase Microprocessor Clock "
+	" :ref:`MC6871A-2 <MC6871A-IC-20>`"," Two-Phase Microprocessor Clock "
 
 
 .. rubric:: Reference Documents

@@ -4,7 +4,7 @@
        :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
        :widths: auto
 
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6870 <MC6870>`","[1]","1Mhz","0-120\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6870 <MC6870-71>`","[1]","1Mhz","0-120\ :sup:`o`\ C",""
        ":material-regular:`local_shipping;2em` :ref:`MC6871A-2 <MC6871A-IC-20>`","[1]","2Mhz","0-120\ :sup:`o`\ C",""
        ":material-regular:`local_shipping;2em` :ref:`MC6871A-15 <MC6871A-IC-15>`","[1]","1.5Mhz","0-120\ :sup:`o`\ C",""
 

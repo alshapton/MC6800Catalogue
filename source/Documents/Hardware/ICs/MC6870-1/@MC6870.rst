@@ -1,6 +1,6 @@
 :orphan:
 
-.. _MC6870-IC:
+.. _MC6870:
 
 .. #None {'Product':'MC6870','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 

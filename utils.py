@@ -21,6 +21,8 @@ PREFIX ='source/'
 MOVE='tmp/move'
 CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp/'
+IC_LOCATIONS = 'source/Documents/Hardware/ICs'
+
 
 def make_directory(path):
     try:
@@ -569,13 +571,26 @@ def do_in_transit():
                                     description = splitline[1].strip().replace('""','"')
                                 except:
                                     description = ''
+                                if doc_type == 'ICs':
+                                    description = 'ICSTUFF'
+                                    cfile=part_number.replace('" :ref:`','').split(' ')[0] + '.' + SUFFIX
+                                    chip_file = glob.glob(IC_LOCATIONS + '/**/*' + cfile, recursive=True)[0]
+                                    ch=cfile.replace('.' + SUFFIX,'')
+                                    this_chip_file = open(chip_file,'r')
+                                    lines = this_chip_file.readlines()
+                                    filtered = [line for line in lines if line.startswith(ch)]
+                                    
+                                    description = filtered[0].replace(ch,'').replace('\n','')
+
+
                                 outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
+                                
                                 thisdict = {"PN"    : part_number, 
                                             "DESC"  : description, 
                                             "DTYPE" : doc_type, 
                                             "OLINE" : outline }
                                 if description != '' :
-                                    intransit.append( thisdict)
+                                    intransit.append(thisdict)
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
         HEADING=''
 
