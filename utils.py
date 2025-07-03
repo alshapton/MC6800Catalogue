@@ -603,7 +603,39 @@ def do_in_transit():
                 c.write('\t:widths: 30, 70\n\n')  
             c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
 
+def collect_metadata():
+    md = []
+    # Find all .rst files in the current directory and subdirectories
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    for file in files:
+        if 'fragment' not in file:
+            with open(file) as f:
+                lines = f.readlines()
+                for line in lines:
+                    if line.find('.. #Metadata ') != -1:
+                        thisdict = {"REFERENCE"  : file.split('@')[1].replace('.' + SUFFIX,''), 
+                                    "METADATA"  : line }
+                        if line != '':
+                            md.append(thisdict)
+    print('Location metadata collected')
+
+    return md 
+
+def get_location(ref,md):
+    # Get the location of the file from the metadata
+    loc=''
+    for item in md:
+        if item['REFERENCE'] == ref:
+            line = item['METADATA']
+            loc = line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
+            loc = ast.literal_eval(loc)
+    return loc
+
 def do_collection():
+
+    # Collect location medatadta
+    md = collect_metadata()
+
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     with open(OUTPUT_FILE,"w") as c:
@@ -621,8 +653,7 @@ def do_collection():
         for file in files:
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
-                "@" not in file and "carousel" not in file):
-                
+                "@" not in file  and "carousel" not in file):
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     match type:
@@ -655,18 +686,20 @@ def do_collection():
                     
                     for line in f:
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:
-                            
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
+                            ref = part_number.split('<')[1].split('>')[0].strip()
+                            location = get_location(ref,md)
                             try:
                                 description = splitline[1].strip().replace('""','"')
                             except:
                                 description = ''
-                            outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
-                            thisdict = {"PN"    : part_number, 
-                                        "DESC"  : description, 
-                                        "DTYPE" : doc_type, 
-                                        "OLINE" : outline }
+                            outline = ('\t' + part_number + '","' + description + '"\n').replace('""','"')
+                            thisdict = {"PN"        : part_number, 
+                                        "DESC"      : description, 
+                                        "DTYPE"     : doc_type,
+                                        "LOCATION"  : location,
+                                        "OLINE"     : outline }
                             if description != '':
                                 collection.append(thisdict)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
@@ -678,10 +711,20 @@ def do_collection():
                 HEADING = i['DTYPE']
                 c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
                 c.write('.. csv-table:: \n')
-                c.write('\t:header: "Part Number","Description"\n')
-                c.write('\t:widths: 30, 70\n\n')  
-            c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
+                c.write('\t:header: "Part Number","Description","Location"\n')
+                c.write('\t:widths: 15, 70, 15\n\n')  
             
+            
+            location=",\n"
+            if str(i['LOCATION']) != '' :
+                if 'Folder' in str(i['LOCATION']):
+                    location = ',"Folder: ' + i['LOCATION']['Folder'] + '"\n'
+            OUT=i['OLINE'][:-1]  + str(location)
+            print(OUT)
+            c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
+            
+
+
 
 
 def do_create():

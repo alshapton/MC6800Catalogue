@@ -6,13 +6,15 @@ EXORset30 ROM - IC-31
 =====================
 .. #Metadata {'Product':'EXORset30 ROM - IC-31','Folder': 'LOCAL'}
 
-.. rubric:: Download Links
+.. rubric:: Links
 
 :download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-31/31.asm>`
 
 :download:`Hex Dump<../../../_static/Monitors/EXORset30ROMS/IC-31/31.hex>`
 
 :download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-31/2716_31.BIN>`
+
+:ref:`EXORset30 ROMS <EXORset30ROMs>`
 
 .. tab-set::
 

@@ -2,6 +2,8 @@
 
 .. _M68MM01A(D4):
 
+.. #Metadata {'Product':'Monoboard Microcomputer 1A Micromodule 1A','Folder': '1'}
+
 Monoboard Microcomputer 1A Micromodule 1A
 =========================================
 

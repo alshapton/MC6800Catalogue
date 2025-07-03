@@ -14,7 +14,7 @@ EXORset30 ROMs
    :align: center
 
 
-.. include:: EXORset30ROMS/EXORset30_ROMS.fragment.rst
+.. include:: EXORset30ROMS/@EXORset30_ROMS.fragment.rst
 
 .. csv-table:: 
    :header: "Acquired"

@@ -8,13 +8,15 @@ EXORset30 ROM - IC-28
 =====================
 .. #Metadata {'Product':'EXORset30 ROM - IC-28','Folder': 'LOCAL'}
 
-.. rubric:: Download Links
+.. rubric:: Links
 
 :download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-28/28.asm>`
 
 :download:`Hex Dump<../../../_static/Monitors/EXORset30ROMS/IC-28/28.hex>`
 
 :download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-28/7621_28.BIN>`
+
+:ref:`EXORset30 ROMS <EXORset30ROMs>`
 
 .. tab-set::
 

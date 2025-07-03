@@ -6,9 +6,9 @@
 
 EXORset30 ROM - IC-22
 =====================
-.. #Metadata {'Product':'EXORset30 ROM - IC-22','Folder': 'LOCAL'}
+.. #Metadata {'Product':'EXORset30 ROM - FDCEXORset 30 (IC22)','Folder': 'LOCAL'}
 
-.. rubric:: Download Links
+.. rubric:: Links
 
 :download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-22/22.asm>`
 
@@ -16,6 +16,8 @@ EXORset30 ROM - IC-22
 
 :download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-22/2708_22.BIN>`
 
+:ref:`EXORset30 ROMS <EXORset30ROMs>`
+   
 .. tab-set::
 
     .. tab-item:: Dissassembly Listing

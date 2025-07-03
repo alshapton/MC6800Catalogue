@@ -6,15 +6,17 @@
 
 EXORset30 ROM - IC-27
 =====================
-.. #Metadata {'Product':'EXORset30 ROM - IC-27','Folder': 'LOCAL'}
+.. #Metadata {'Product':'EXORset30 ROM - EXORBUG 1.2 L (IC-27)','Folder': 'LOCAL'}
 
-.. rubric:: Download Links
+.. rubric:: Links
 
 :download:`Assembly Listing<../../../_static/Monitors/EXORset30ROMS/IC-27/27.asm>`
 
 :download:`Hex Dump<../../../_static/Monitors/EXORset30ROMS/IC-27/27.hex>`
 
 :download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-27/7641_27.BIN>`
+
+:ref:`EXORset30 ROMS <EXORset30ROMs>`
 
 .. tab-set::
 
