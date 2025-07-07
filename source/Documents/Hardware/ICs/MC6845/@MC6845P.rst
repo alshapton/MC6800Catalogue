@@ -22,8 +22,8 @@ MC6845P CRT Controller
    "Status","Production"
    "Location","Drawer 1"
    "Notes",""
-   "Frequency","TBD"
-   "Temperature","TBD"
+   "Frequency","N/A"
+   "Temperature","N/A"
    
 .. rubric:: Collection Information
 

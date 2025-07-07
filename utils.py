@@ -561,8 +561,8 @@ def do_in_transit():
                             doc_type = "Other"  
                             if "/ICs" in type:
                                 doc_type = "ICs"
-                    
-                    for line in f:
+                        
+                    for line in f:  
                         if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
                             if 'An item in transit' not in line:
                                 splitline = line.split('","')
@@ -571,6 +571,8 @@ def do_in_transit():
                                     description = splitline[1].strip().replace('""','"')
                                 except:
                                     description = ''
+
+                        
                                 if doc_type == 'ICs':
                                     description = 'ICSTUFF'
                                     cfile=part_number.replace('" :ref:`','').split(' ')[0] + '.' + SUFFIX
@@ -688,12 +690,14 @@ def do_collection():
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
+                            
                             ref = part_number.split('<')[1].split('>')[0].strip()
                             location = get_location(ref,md)
                             try:
                                 description = splitline[1].strip().replace('""','"')
                             except:
                                 description = ''
+                            part_number = part_number.replace('" :ref:','":ref:')
                             outline = ('\t' + part_number + '","' + description + '"\n').replace('""','"')
                             thisdict = {"PN"        : part_number, 
                                         "DESC"      : description, 
@@ -712,15 +716,17 @@ def do_collection():
                 c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
                 c.write('.. csv-table:: \n')
                 c.write('\t:header: "Part Number","Description","Location"\n')
-                c.write('\t:widths: 15, 70, 15\n\n')  
+                c.write('\t:widths: 18, 60, 22\n\n')  
             
             
             location=",\n"
             if str(i['LOCATION']) != '' :
                 if 'Folder' in str(i['LOCATION']):
-                    location = ',"Folder: ' + i['LOCATION']['Folder'] + '"\n'
+                    location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
+                if 'Storage' in str(i['LOCATION']):
+                    location = ',"' + i['LOCATION']['Storage'] + '"\n'
+
             OUT=i['OLINE'][:-1]  + str(location)
-            print(OUT)
             c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
             
 

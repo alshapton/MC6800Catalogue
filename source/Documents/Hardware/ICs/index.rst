@@ -7,18 +7,18 @@ Integrated Circuits
 ===================
 
 .. csv-table::
-   :header: "Part Number","Name","Comments" 
-   :widths: 25,50,25
+   :header: "Part","Packaging","Name","Notes" 
+   :widths: 23,17,45,10
 
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","Priority Interrupt Controller (PIC)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","Floppy Disk Controller (FDC)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","ROM-I/O-Timer"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Advanced Data Link Controller (ADLC)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","Data Security Device (DSD)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","2400 bps Digital Modulator","Ceramic"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","2400 bps Digital Modulator","Plastic"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","Synchronous Address Multiplexer (SAM)"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Quad Bus Transceiver (Non-Inverting)"
+   ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","","Priority Interrupt Controller (PIC)"
+   ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","","Floppy Disk Controller (FDC)"
+   ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","","ROM-I/O-Timer"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Plastic","Advanced Data Link Controller (ADLC)"
+   ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","","Data Security Device (DSD)"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","Ceramic","2400 bps Digital Modulator",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","Plastic","2400 bps Digital Modulator",""
+   ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","","Synchronous Address Multiplexer (SAM)"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Plastic","Quad Bus Transceiver (Non-Inverting)"
 
 |
 
