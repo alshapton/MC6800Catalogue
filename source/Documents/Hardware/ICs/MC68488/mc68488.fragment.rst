@@ -6,10 +6,10 @@
 
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68488P <MC68488P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68488S <MC68488S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`local_shipping;2em` :ref:`MC68488CP <MC68488CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68488CP <MC68488CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68488CS <MC68488CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68488CL <MC68488CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C","Evidence of Ceramic Packaging being produced early on."
-       ":material-regular:`local_shipping;2em` :ref:`MC68488L <MC68488L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Evidence of Ceramic Packaging being produced early on."
+       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68488L <MC68488L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Evidence of Ceramic Packaging being produced early on."
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A488P <MC68A488P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A488S <MC68A488S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A488CP <MC68A488CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""

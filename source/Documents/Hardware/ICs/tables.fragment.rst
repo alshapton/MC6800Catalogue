@@ -1,6 +1,10 @@
 .. include:: ./labels.fragment.rst
 
+.. #LVL1 Storage Box 1
+
 .. rubric:: Storage Box 1
+
+.. #LVL2 1
 
 .. collapse:: Drawer 1
 
@@ -12,14 +16,18 @@
        "|iMC68B00S| :ref:`MC68B00S <MC68B00S>`","|iMC68B44P| :ref:`MC68B44P <MC68B44P>`","|iXC6845L| :ref:`XC6845L <XC6845L>`"
        "|iMC68B21L| :ref:`MC68B21L <MC68B21L>`","|iMC68B44L| :ref:`MC68B44L <MC68B44L>`","|iMC6845P| :ref:`MC6845P <MC6845P>`"
 
+.. #LVL2 2
+
 .. collapse:: Drawer 2
 
     .. csv-table::
        :header-rows: 0
        :widths: 33, 34, 33
 
-       "|iMC6847P| :ref:`MC6847P <MC6847P>`","",""
-       "|iMC68B54P| :ref:`MC68B54P <MC68B54P>`","",""
+       "|iMC6847P| :ref:`MC6847P <MC6847P>`","|iMC68488CP| :ref:`MC68488CP <MC68488CP>`",""
+       "|iMC68B54P| :ref:`MC68B54P <MC68B54P>`","|iMC6844L| :ref:`MC6844L <MC6844L>`","|iMC68488L| :ref:`MC68488L <MC68488L>`"
+
+.. #LVL2 3
 
 .. collapse:: Drawer 3
 
@@ -29,7 +37,9 @@
 
        "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`","|iMC6800GMCM| :ref:`MC6800GMCM <MC6800GMCM>`",""
        "|iMC68701U4L| :ref:`MC68701U4L <MC68701U4L>`","",""
-       "|iMC6809EP| :ref:`MC6809EP <MC6809EP>`","",""
+       "|iMC6809EP| :ref:`MC6809EP <MC6809EP>`","|iMC6871A15| :ref:`MC6871A15 <MC6871A15>`","|iMC6871A20| :ref:`MC6871A20 <MC6871A20>`"
+
+.. #LVL2 4
 
 .. collapse:: Drawer 4
 

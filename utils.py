@@ -327,7 +327,8 @@ def update_storage():
 
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
-    ICLABELS_FILE='source/Documents/Hardware/ICs/' + ICLABELSNAME
+    ICLABELS_LOC='source/Documents/Hardware/ICs/'
+    ICLABELS_FILE=ICLABELS_LOC + ICLABELSNAME
     TABLES_FILE='source/Documents/Hardware/ICs/tables.fragment.rst'
     PROPERTIES_FILE='storage.properties'
     file1 = open(PROPERTIES_FILE, 'r')
@@ -419,6 +420,8 @@ def update_storage():
 
         for item in sorted_storage:
             if item['Storage'] != storagebox:   
+                c.write('\n\n.. #LVL1 ' + item['Storage'])
+
                 c.write('\n\n.. rubric:: ' + item['Storage'])
                 storagebox=item['Storage']
                 drawer=0
@@ -427,9 +430,12 @@ def update_storage():
                 rowcnt=0
                 cols=0
             if item['Drawer'] != drawer:
+
                 if cols > colcount:
                     for i in range(colcount,cols):
                         c.write(',""')
+                c.write('\n\n.. #LVL2 ' + str(item['Drawer']))
+
                 c.write('\n\n.. collapse:: Drawer ' + str(item['Drawer']) + '\n')
                 c.write('\n    .. csv-table::\n')
                 c.write('       :header-rows: 0\n')
@@ -490,6 +496,24 @@ def update_storage():
                             written_title = True
                         c.write('         |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
+
+    print('Splitting')
+    #TABLES_FILE
+    with open(TABLES_FILE,"r") as tf:
+        data = ''
+        line=tf.readline()
+        while line:
+            data +=line
+            line=tf.readline()
+    f = data.split('#LVL2')
+    cnt=0
+    for r in f:
+        print(r)
+        FN=str(cnt)
+        print(FN)
+        with open(FN,"w") as ci:
+            ci.write(r)
+            cnt=cnt+1
 
     #exit()
     print('\nStorage updated')      
