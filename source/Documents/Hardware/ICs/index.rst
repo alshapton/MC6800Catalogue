@@ -87,6 +87,13 @@ Integrated Circuits
 
 |
 
+.. include:: ./labels.fragment.rst
+
 .. rubric:: Catalogue of ICs
 
-.. include:: ./tables.fragment.rst
+.. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_1.snippet
+.. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_2.snippet
+.. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_3.snippet
+.. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_4.snippet
+.. include:: ./snippets/tables.fragment.Briefcase_MES6800.Briefcase_MES6800.snippet
+

@@ -36,6 +36,37 @@ def make_directory(path):
     except FileExistsError:
         return True
     
+def convert_type_to_real_type(type):
+    doc_type=''
+    match type:
+        case "Documents/ApplicationNotes":
+            doc_type = "Application Notes"
+        case "Documents/Hardware/ICs":    
+            doc_type = "ICs"
+        case "Documents/Reference":
+            doc_type = "Reference Documents"
+        case "Documents/Manuals":
+            doc_type = "Reference Manuals"
+        case "Documents/Datasheets":
+            doc_type = "Datasheets"
+        case "Documents/ReferenceCards":
+            doc_type = "Reference Cards" 
+        case "Documents/Generic":
+            doc_type = "Generic Documents"
+        case "Software/NonResident":
+            doc_type = "NonResident Software"
+        case "Software/Resident":
+            doc_type = "Resident Software"
+        case "Documents/Hardware/EXORciser":
+            doc_type = "Exorciser Hardware"
+        case "Documents/Hardware/Other":
+            doc_type = "Other Hardware"
+        case _:
+            doc_type = "Other"  
+            if "/ICs" in type:
+                doc_type = "ICs"
+    return doc_type
+                
 def get_loc(file):
     loc = ast.literal_eval('{}')
 
@@ -356,6 +387,7 @@ def update_storage():
             misc_storage.append(i)
     with open(ICLABELS_FILE,"w") as c:
         for file in files:
+
             if 'ICs' in file and 'fragment' not in file and 'index' not in file:
                 filename = file
                 got_image=False
@@ -380,7 +412,7 @@ def update_storage():
 
                 if got_image == True:
                     label = 'i'+filename.split('@')[-1].replace('.rst','')
-                    c.write('.. |' + label + '| ' + ' image:: ' + image + '\n')                        
+                    c.write('.. |' + label + '|  image:: ' + image + '\n')                        
                     c.write('   :width: 200\n')                            
                     c.write('   :class: no-scaled-links\n\n')
             
@@ -564,30 +596,32 @@ def update_storage():
                 if LOCATIONINSTORAGE is  None:
                     LOCATIONINSTORAGE = 'Unknown'
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
-                print(outputfile)
                 with open(outputfile,"w") as opf:
                     opf.write(stripped)
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
-    for lvl2file in lvl2files:
+    for lvl2file in sorted(lvl2files):
         os.remove(lvl2file)
-        print(lvl2file + ' removed.')       
+        print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
 
     # Move snippets into snippets folder
     print('Moving snippets into snippets folder')
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
-    for snippetfile in snippetfiles:
+    for snippetfile in sorted(snippetfiles):
 
         # Formulate tag for start of file
-        PREAMBLE=':orphan:\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
-        print('PREAMBLE=\n',PREAMBLE) 
+        PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
         _=line_prepender(snippetfile, PREAMBLE)
         movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
-        print('Moved ' + snippetfile + ' to ' + 'snippets')
+        print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
+
+    print('Cleaning up')
+    os.remove(TABLES_FILE)
 
     print('\nStorage updated')      
+
 
     TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders)
@@ -629,33 +663,7 @@ def do_in_transit():
                 "@" not in file and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
-                    match type:
-                        case "Documents/ApplicationNotes":
-                            doc_type = "Application Notes"
-                        case "Documents/Hardware/ICs":    
-                            doc_type = "ICs"
-                        case "Documents/Reference":
-                            doc_type = "Reference Documents"
-                        case "Documents/Manuals":
-                            doc_type = "Reference Manuals"
-                        case "Documents/Datasheets":
-                            doc_type = "Datasheets"
-                        case "Documents/ReferenceCards":
-                            doc_type = "Reference Cards" 
-                        case "Documents/Generic":
-                            doc_type = "Generic Documents"
-                        case "Software/NonResident":
-                            doc_type = "NonResident Software"
-                        case "Software/Resident":
-                            doc_type = "Resident Software"
-                        case "Documents/Hardware/EXORciser":
-                            doc_type = "Exorciser Hardware"
-                        case "Documents/Hardware/Other":
-                            doc_type = "Other Hardware"
-                        case _:
-                            doc_type = "Other"  
-                            if "/ICs" in type:
-                                doc_type = "ICs"
+                    doc_type=convert_type_to_real_type(type)
                         
                     for line in f:  
                         if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
@@ -753,34 +761,8 @@ def do_collection():
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
-                    match type:
-                        case "Documents/ApplicationNotes":
-                            doc_type = "Application Notes"
-                        case "Documents/Hardware/ICs":    
-                            doc_type = "ICs"
-                        case "Documents/Reference":
-                            doc_type = "Reference Documents"
-                        case "Documents/Manuals":
-                            doc_type = "Reference Manuals"
-                        case "Documents/Datasheets":
-                            doc_type = "Datasheets"
-                        case "Documents/ReferenceCards":
-                            doc_type = "Reference Cards" 
-                        case "Documents/Generic":
-                            doc_type = "Generic Documents"
-                        case "Software/NonResident":
-                            doc_type = "NonResident Software"
-                        case "Software/Resident":
-                            doc_type = "Resident Software"
-                        case "Documents/Hardware/EXORciser":
-                            doc_type = "Exorciser Hardware"
-                        case "Documents/Hardware/Other":
-                            doc_type = "Other Hardware"
-                        case _:
-                            doc_type = "Other"  
-                            if "/ICs" in type:
-                                doc_type = "ICs"
-                    
+                    doc_type=convert_type_to_real_type(type)
+                
                     for line in f:
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:
                             splitline = line.split('","')
@@ -826,7 +808,10 @@ def do_collection():
                     location = ',"' + i['LOCATION']['Storage'] 
                     if 'Drawer' in str(i['LOCATION']):
                         dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
-                    OUT=i['OLINE'][:-1]  + str(location)  + dr + '"\n'
+                        location = (str(location) + dr).replace(' ','_')
+                        reference = ' ":ref:`Here <'+ location[2:] + '>`"'
+                    
+                    OUT=i['OLINE'][:-1] + "," + reference + '\n'
 
             c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
             
