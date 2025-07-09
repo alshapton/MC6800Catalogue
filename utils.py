@@ -23,6 +23,11 @@ CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp/'
 IC_LOCATIONS = 'source/Documents/Hardware/ICs'
 
+def line_prepender(filename, line):
+    with open(filename, 'r+') as f:
+        content = f.read()
+        f.seek(0, 0)
+        f.write(line.rstrip('\r\n') + '\n\n' + content)
 
 def make_directory(path):
     try:
@@ -314,6 +319,12 @@ def get_cols_for_drawer(st,dr,rw, info):
     return cols
 
 def update_storage():
+    print('Cleaning and prepping storage files')
+    snippetfiles = glob.glob('**/*.snippet', recursive=True)
+    for snippetfile in snippetfiles:
+        os.remove(snippetfile)
+        
+
     storage=[]
     foldersrefcard=[]
     foldersgeneric=[]
@@ -480,12 +491,16 @@ def update_storage():
         if len(other_storage) > 0:
             l=ast.literal_eval(other_storage[0])
             for i in l["Other"]:
+                c.write('\n\n.. #LVL1 ' + i['Description'])
                 written_title = False
 
                 for j in other_products:
 
                     if j["Storage"] == i['Name']:
                         if not written_title:
+                            c.write('\n\n.. #LVL2 ' + i['Description'])
+                            
+
                             c.write('\n\n.. collapse:: ' + i['Description'] + '\n\n')
 
                             c.write('    .. csv-table::\n')
@@ -498,24 +513,80 @@ def update_storage():
 
 
     print('Splitting')
-    #TABLES_FILE
+    print('LVL1 Splitting')
+
     with open(TABLES_FILE,"r") as tf:
         data = ''
         line=tf.readline()
         while line:
             data +=line
             line=tf.readline()
-    f = data.split('#LVL2')
+    f = data.split('#LVL1')
     cnt=0
     for r in f:
-        print(r)
         FN=str(cnt)
-        print(FN)
-        with open(FN,"w") as ci:
-            ci.write(r)
-            cnt=cnt+1
+        if cnt > 0:
+            # Don't bother writing the first component of the split file - irrelevant
+            with open(TABLES_FILE + '.' + FN + ".tiny","w") as ci:
+                ci.write(r)
+        cnt=cnt+1
 
-    #exit()
+    print('LVL1 Splitting done')
+
+    # Checking for LVL2 split required.
+    print('LVL2 Splitting')
+
+    lvl2files = glob.glob('**/*.tiny', recursive=True)
+    properlvl2files=[]
+    for lvl2file in lvl2files:
+        with open(lvl2file, 'r') as lvl2f:
+            file_content = lvl2f.read()
+        if file_content.count('LVL2') > 0:
+            properlvl2files.append(lvl2file)
+    # Now we have a list of files that need splitting again
+    for lvl2file in properlvl2files:
+        with open(lvl2file,"r") as tf:
+            data = ''
+            line=tf.readline()
+            storagename=line
+            while line:
+                data +=line
+                line = tf.readline()
+            f = data.split('#LVL2')
+            sname = storagename[1:].replace(' ','_').strip()
+
+            outputfile_base = lvl2file.replace('.tiny','').replace('rst.','')[:-2] + '.' + sname            
+            for i in range(1,len(f)):
+                minimum = f[i][:-3]
+                start = f[i].find('.. collapse::')
+                stripped = minimum[start:]
+                LOCATIONINSTORAGE=stripped.split('..')[1].strip().replace('collapse:: ','').replace(' ','_')
+                if LOCATIONINSTORAGE is  None:
+                    LOCATIONINSTORAGE = 'Unknown'
+                outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
+                print(outputfile)
+                with open(outputfile,"w") as opf:
+                    opf.write(stripped)
+    # Remove temporary "tiny" working files
+    print('Splitting LVL2 files complete')
+    print('Removing temporary files')
+    for lvl2file in lvl2files:
+        os.remove(lvl2file)
+        print(lvl2file + ' removed.')       
+
+
+    # Move snippets into snippets folder
+    print('Moving snippets into snippets folder')
+    snippetfiles = glob.glob('**/*.snippet', recursive=True)
+    for snippetfile in snippetfiles:
+
+        # Formulate tag for start of file
+        PREAMBLE=':orphan:\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
+        print('PREAMBLE=\n',PREAMBLE) 
+        _=line_prepender(snippetfile, PREAMBLE)
+        movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
+        print('Moved ' + snippetfile + ' to ' + 'snippets')
+
     print('\nStorage updated')      
 
     TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
@@ -555,7 +626,7 @@ def do_in_transit():
         for file in files:
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "transit.rst" not in file and
-                "@" not in file and "carousel" not in file):
+                "@" not in file and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     match type:
@@ -679,7 +750,7 @@ def do_collection():
         for file in files:
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
-                "@" not in file  and "carousel" not in file):
+                "@" not in file  and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     match type:
@@ -744,13 +815,19 @@ def do_collection():
             
             
             location=",\n"
+            dr = ''
+            OUT=i['OLINE'][:-1]+ '\n'
             if str(i['LOCATION']) != '' :
                 if 'Folder' in str(i['LOCATION']):
                     location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
-                if 'Storage' in str(i['LOCATION']):
-                    location = ',"' + i['LOCATION']['Storage'] + '"\n'
+                    OUT=i['OLINE'][:-1]  + str(location) 
 
-            OUT=i['OLINE'][:-1]  + str(location)
+                if 'Storage' in str(i['LOCATION']):
+                    location = ',"' + i['LOCATION']['Storage'] 
+                    if 'Drawer' in str(i['LOCATION']):
+                        dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
+                    OUT=i['OLINE'][:-1]  + str(location)  + dr + '"\n'
+
             c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
             
 

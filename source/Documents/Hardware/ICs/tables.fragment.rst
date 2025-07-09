@@ -25,7 +25,7 @@
        :widths: 33, 34, 33
 
        "|iMC6847P| :ref:`MC6847P <MC6847P>`","|iMC68488CP| :ref:`MC68488CP <MC68488CP>`",""
-       "|iMC68B54P| :ref:`MC68B54P <MC68B54P>`","|iMC6844L| :ref:`MC6844L <MC6844L>`","|iMC68488L| :ref:`MC68488L <MC68488L>`"
+       "|iMC68B54P| :ref:`MC68B54P <MC68B54P>`","|iMC6844L| :ref:`MC6844L <MC6844L>`","|iMC6844P| :ref:`MC6844P <MC6844P>`"
 
 .. #LVL2 3
 
@@ -51,6 +51,10 @@
        "|iMC68B50P| :ref:`MC68B50P <MC68B50P>`","|iMC6862P| :ref:`MC6862P <MC6862P>`","|iMCM68B10P| :ref:`MCM68B10P <MCM68B10P>`","","",""
        "|iMC68B50CP| :ref:`MC68B50CP <MC68B50CP>`","|iMCM6810P| :ref:`MCM6810P <MCM6810P>`","|iMC6860P| :ref:`MC6860P <MC6860P>`","","",""
 
+.. #LVL1 Briefcase MES6800
+
+.. #LVL2 Briefcase MES6800
+
 .. collapse:: Briefcase MES6800
 
     .. csv-table::
@@ -61,3 +65,6 @@
          |iMCM6810L|, :ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
          |iMC6800L|, :ref:`MC6800L Microprocessor Unit <MC6800L>`
          |iMCM6830L7|, :ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`
+
+
+.. #LVL1 Still Boxed

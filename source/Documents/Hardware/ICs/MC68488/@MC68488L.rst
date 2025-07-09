@@ -2,7 +2,8 @@
 
 .. _MC68488L:
 
-.. #Metadata {'Product':'MC68488L','Storage': 'Storage Box 1','Drawer':2,'Row':2,'Column':3}
+.. #Metadata {'Product':'MC68488L','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':3}
+
 
 MC68488L General Purpose Interface Adapter
 ==========================================
