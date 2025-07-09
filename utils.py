@@ -535,13 +535,13 @@ def update_storage():
 
                             c.write('\n\n.. collapse:: ' + i['Description'] + '\n\n')
 
-                            c.write('    .. csv-table::\n')
-                            c.write('       :header-rows: 0\n')
-                            c.write('       :widths: 50,50\n\n')
+                            c.write('.. csv-table::\n')
+                            c.write('   :header-rows: 0\n')
+                            c.write('   :widths: 50,50\n\n')
                                 
 
                             written_title = True
-                        c.write('         |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
+                        c.write('       |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
 
     print('Splitting')
@@ -605,10 +605,20 @@ def update_storage():
         os.remove(lvl2file)
         print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
-
+    snippetfiles = glob.glob('**/*.snippet', recursive=True)
+    
+    # Changing collapsing into rubrics
+    print('Changing collapsing into rubrics')
+    for snippetfile in sorted(snippetfiles):
+        with open(snippetfile, 'r') as fd:
+            content = fd.readlines()
+        with open(snippetfile, 'w') as fw:
+            for wl in range (0,len(content)):
+                fw.write(content[wl].replace('collapse','rubric').replace('    ',''))
+        print('     ' + os.path.basename(snippetfile) + ' updated.')
+    
     # Move snippets into snippets folder
     print('Moving snippets into snippets folder')
-    snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in sorted(snippetfiles):
 
         # Formulate tag for start of file
@@ -616,6 +626,8 @@ def update_storage():
         _=line_prepender(snippetfile, PREAMBLE)
         movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
         print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
+
+    
 
     print('Cleaning up')
     os.remove(TABLES_FILE)

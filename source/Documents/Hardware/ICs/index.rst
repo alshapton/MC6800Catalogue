@@ -91,6 +91,8 @@ Integrated Circuits
 
 .. rubric:: Catalogue of ICs
 
+.. # Include auto populate here
+
 .. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_1.snippet
 .. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_2.snippet
 .. include:: ./snippets/tables.fragment.Storage_Box_1.Drawer_3.snippet
