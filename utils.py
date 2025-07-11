@@ -619,13 +619,24 @@ def update_storage():
     
     # Move snippets into snippets folder
     print('Moving snippets into snippets folder')
-    for snippetfile in sorted(snippetfiles):
+    snippeticindexfile=IC_LOCATIONS + '/icindex.snippet'
+    HDR=''
+    with open(snippeticindexfile, 'w') as sicif:
 
-        # Formulate tag for start of file
-        PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
-        _=line_prepender(snippetfile, PREAMBLE)
-        movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
-        print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
+        sicif.write('.. include:: labels.fragment.rst\n\n')
+        for snippetfile in sorted(snippetfiles):
+            # Formulate tag for start of file
+            PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
+            _=line_prepender(snippetfile, PREAMBLE)
+            movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
+            SF=snippetfile.replace(IC_LOCATIONS + '/tables.fragment.','').replace('.snippet','')
+            SFHEADER='.. rubric:: '+ SF.split('.')[0].replace('_',' ')
+            if SFHEADER != HDR:
+                sicif.write(SFHEADER + '\n\n')
+                HDR = SFHEADER
+            sicif.write('.. include:: ./snippets/' + os.path.basename(snippetfile) + '\n\n')
+
+            print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
 
     
 
@@ -792,7 +803,7 @@ def do_collection():
                                         "DESC"      : description, 
                                         "DTYPE"     : doc_type,
                                         "LOCATION"  : location,
-                                        "OLINE"     : outline }
+                                        "OLINE"     : outline}
                             if description != '':
                                 collection.append(thisdict)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
