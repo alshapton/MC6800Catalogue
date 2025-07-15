@@ -2,8 +2,11 @@
 
 .. _AN-771:
 
+.. #Metadata {'Product':'MEK6800D2 Microcomputer Kit System Expansion Techniques','Folder': '1'}
+
 MEK6800D2 Microcomputer Kit System Expansion Techniques
 =======================================================
+
 
 .. image:: ../../images/ApplicationNotes/AN-771.png
    :width: 400
@@ -12,10 +15,9 @@ MEK6800D2 Microcomputer Kit System Expansion Techniques
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired"
-   :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 28-MAR-2025
+   "Acquired",:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
+   "Location",":ref:`Folder 1 <1_map_reference>`"
 
 .. rubric:: Links
 

@@ -59,6 +59,7 @@ Conventions Used
 
    Home <self>
    Collection <collection>
+   Map <map>
    In Transit <transit>
    
 .. toctree::

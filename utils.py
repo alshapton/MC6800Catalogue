@@ -362,6 +362,7 @@ def update_storage():
     foldersreference=[]
     folderssoftnon=[]
     folderssoftres=[]
+    foldersappnotes=[]
     storage_properties = []
     other_storage = []
     other_products = []
@@ -395,7 +396,7 @@ def update_storage():
                     for line in f:
                         if '.. image:: ' in line and got_image == False:
                             if 'NOIMAGE.png' not in line:
-                                image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
+                                image=line.split('.. image:: ')[1].strip().replace('../','').replace('images','/images')
                                 got_image=True
                                 
                         if '.. #Metadata' in line:
@@ -441,10 +442,17 @@ def update_storage():
                 if metadata:
                     folderssoftres.append(loc)
 
+            if 'ApplicationNotes' in file and  'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)   
+                if metadata:
+                    foldersappnotes.append(loc)
+
+
     sorted_other_products = sorted(other_products, key=lambda x: (x['Storage'],x['Product']))   
     sorted_misc_storage= sorted(misc_storage, key=lambda x: (x['Name'],x['Description']))
 
 
+    sorted_folders_appnotes = sorted(foldersappnotes, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_generic = sorted(foldersgeneric, key=lambda x: (x['Folder'],x['Product']))   
@@ -452,6 +460,50 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
     
+    all_folders_storage_sorted =  sorted(sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
+
+    FOLDER_MAP_FILE = 'source/Documents/folder.map'
+    current_folder=''
+    with open(FOLDER_MAP_FILE, "w") as fmf:
+
+        for item in all_folders_storage_sorted:
+            if item['Folder'] != current_folder:
+                write_folder=False
+                map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
+                current_folder = item['Folder']
+
+                match item['Folder']:
+                    case "GITHUB":
+                        write_folder=True
+                        fmf.write(map_reference + '\n\n.. rubric:: GitHub Repository (See individual items)\n\n')
+                    case "LOCAL":
+                        write_folder=True
+                        fmf.write(map_reference + '\n\n.. rubric:: See individual items for location information\n\n')
+                    case "None":
+                        write_folder=False
+                    case "In Transit":
+                        write_folder=False
+                    case _:
+                        write_folder=True
+                        fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
+            
+                if write_folder:
+                    fmf.write('.. csv-table::\n')
+                    fmf.write('   :header: "Name","Comments"\n')
+                    fmf.write('   :widths: 60,40\n\n')
+                        
+            if write_folder:
+                fmf.write('    :ref:`' + item['Product'] + ' <' + item['Ref'] + '>`,"')
+                if "Comments" in item:
+                    fmf.write(item['Comments'] + '"\n')
+                else:
+                    fmf.write('"\n')
+    print('Folder map created in ' + FOLDER_MAP_FILE)
+
+
+    # Write the labels file
+        
+
     storagebox=''
     drawer=0
     row=0
@@ -623,7 +675,7 @@ def update_storage():
     HDR=''
     with open(snippeticindexfile, 'w') as sicif:
 
-        sicif.write('.. include:: labels.fragment.rst\n\n')
+        sicif.write('.. include:: Documents/Hardware/ICs/labels.fragment.rst\n\n')
         for snippetfile in sorted(snippetfiles):
             # Formulate tag for start of file
             PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
@@ -634,7 +686,7 @@ def update_storage():
             if SFHEADER != HDR:
                 sicif.write(SFHEADER + '\n\n')
                 HDR = SFHEADER
-            sicif.write('.. include:: ./snippets/' + os.path.basename(snippetfile) + '\n\n')
+            sicif.write('.. include:: Documents/Hardware/ICs/snippets/' + os.path.basename(snippetfile) + '\n\n')
 
             print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
 
@@ -825,6 +877,10 @@ def do_collection():
             if str(i['LOCATION']) != '' :
                 if 'Folder' in str(i['LOCATION']):
                     location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
+                    lcn = str(location[:-1]).replace('"','')[1:]
+                    map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
+                    location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
+
                     OUT=i['OLINE'][:-1]  + str(location) 
 
                 if 'Storage' in str(i['LOCATION']):

@@ -87,7 +87,7 @@ Integrated Circuits
 
 |
 
-.. rubric:: Catalogue of ICs
+#  .. rubric:: Catalogue of ICs
 
-.. include:: ./icindex.snippet
+#  .. include:: ./icindex.snippet
 
