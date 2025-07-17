@@ -2,11 +2,11 @@
 
 :orphan:
 
-.. _EXORset30_IC_22:
+.. _IC22:
 
 EXORset30 ROM - IC-22
 =====================
-.. #Metadata {'Product':'EXORset30 ROM - FDCEXORset 30 (IC22)','Folder': 'LOCAL'}
+.. #Metadata {'Product':'EXORset30 ROM - FDCEXORset 30 (IC-22)','Folder': 'LOCAL'}
 
 .. rubric:: Links
 

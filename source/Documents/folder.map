@@ -31,15 +31,15 @@
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`EDUCATOR-II Monitor <Mon_EDUCATOR_II_mon>`,""
-    :ref:`EXORset30 ROM - EXORBUG 1.2 L (IC-26) <EXORset30_IC_26>`,""
-    :ref:`EXORset30 ROM - EXORBUG 1.2 L (IC-27) <EXORset30_IC_27>`,""
-    :ref:`EXORset30 ROM - FDCEXORset 30 (IC22) <EXORset30_IC_22>`,""
-    :ref:`EXORset30 ROM - IC-28 <EXORset30_IC_28>`,""
-    :ref:`EXORset30 ROM - IC-30 <EXORset30_IC_30>`,""
-    :ref:`EXORset30 ROM - IC-31 <EXORset30_IC_31>`,""
-    :ref:`MIKBUG Monitor Assembly Listing REV 009 <Mon_MIKBUG_MINIBUG_0.90-0.4-MIKASM009>`,""
-    :ref:`MINIBUG Monitor Assembly Listing REV 004 <Mon_MIKBUG_MINIBUG_0.90-0.4-MINASM004>`,""
+    :ref:`EDUCATOR-II Monitor <EDUCATOR_II_mon>`,""
+    :ref:`EXORset30 ROM - EXORBUG 1.2 L (IC-26) <IC26>`,""
+    :ref:`EXORset30 ROM - EXORBUG 1.2 L (IC-27) <IC27>`,""
+    :ref:`EXORset30 ROM - FDCEXORset 30 (IC-22) <IC22>`,""
+    :ref:`EXORset30 ROM - IC-28 <IC28>`,""
+    :ref:`EXORset30 ROM - IC-30 <IC30>`,""
+    :ref:`EXORset30 ROM - IC-31 <IC31>`,""
+    :ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`,""
+    :ref:`MINIBUG Monitor Assembly Listing REV 004 <@MIKBUG-MINIBUG_04_09_mn_ass>`,""
     :ref:`Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11) <SRC-FOR-MASM-PDP-11>`,""
 
 

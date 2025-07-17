@@ -1,7 +1,7 @@
 
 :orphan:
 
-.. _Mon_MIKBUG_MINIBUG_0.90-0.4-MIKASM009:
+.. _@MIKBUG-MINIBUG_04_09_mk_ass:
 
 MIKBUG Monitor Assembly Listing REV 009
 ======================================= 

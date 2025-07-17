@@ -793,9 +793,14 @@ def collect_metadata():
                 lines = f.readlines()
                 for line in lines:
                     if line.find('.. #Metadata ') != -1:
-                        thisdict = {"REFERENCE"  : file.split('@')[1].replace('.' + SUFFIX,''), 
+                        if '.mini' not in file:
+                            ref=file.split('@')[1].replace('.' + SUFFIX,'')
+                        else:
+                            ref=file.split('@')[1].replace('.mini.' + SUFFIX,'')
+                        thisdict = {"REFERENCE"  : ref, 
                                     "METADATA"  : line }
                         if line != '':
+                            print(thisdict)
                             md.append(thisdict)
     print('Location metadata collected')
 
@@ -815,7 +820,6 @@ def do_collection():
 
     # Collect location medatadta
     md = collect_metadata()
-
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     with open(OUTPUT_FILE,"w") as c:
@@ -837,14 +841,15 @@ def do_collection():
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
-                
+                    
                     for line in f:
                         if CHECK_MARK in line and 'This item is present in the collection' not in line:
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
+                            ref = part_number.split('<')[1].split('>')[0].strip().replace('@','')
                             
-                            ref = part_number.split('<')[1].split('>')[0].strip()
                             location = get_location(ref,md)
+                            
                             try:
                                 description = splitline[1].strip().replace('""','"')
                             except:
@@ -878,7 +883,10 @@ def do_collection():
                 if 'Folder' in str(i['LOCATION']):
                     location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
                     lcn = str(location[:-1]).replace('"','')[1:]
+                    if lcn == 'Folder LOCAL':
+                        lcn = 'Collection'
                     map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
+
                     location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
 
                     OUT=i['OLINE'][:-1]  + str(location) 
@@ -888,7 +896,9 @@ def do_collection():
                     if 'Drawer' in str(i['LOCATION']):
                         dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
                         location = (str(location) + dr).replace(' ','_')
-                        reference = ' ":ref:`Here <'+ location[2:] + '>`"'
+                        print('Location: ' + location)
+                        sb= i['LOCATION']['Storage'].replace('_',' ')
+                        reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
                     
                     OUT=i['OLINE'][:-1] + "," + reference + '\n'
 

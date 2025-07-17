@@ -2,7 +2,7 @@
 
 :orphan:
 
-.. _Mon_EDUCATOR_II_mon:
+.. _EDUCATOR_II_mon:
 
 EDUCATOR-II Monitor
 ===================
@@ -30,4 +30,4 @@ EDUCATOR-II Monitor
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 
+   :material-regular:`verified;2em;sd-text-success` 01-JUN-2025

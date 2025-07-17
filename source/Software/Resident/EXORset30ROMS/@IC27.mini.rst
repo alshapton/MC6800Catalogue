@@ -2,7 +2,7 @@
 
 :orphan:
 
-.. _EXORset30_IC_27:
+.. _IC27:
 
 EXORset30 ROM - IC-27
 =====================
