@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC6845-1:
+.. _REF-MC6845:
 
 .. #Metadata {'Product':'MC6845 Cathode Ray Tube Controller Programming','Folder': '1'}
 

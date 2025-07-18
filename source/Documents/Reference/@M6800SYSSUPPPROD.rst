@@ -2,7 +2,7 @@
 
 .. _M6800SYSSUPPPROD:
 
-.. #Metadata {'Product':'M6800 Microcomputer System Support Products','Folder': 'In Transit'}
+.. #Metadata {'Product':'M6800 Microcomputer System Support Products','Folder': '1'}
 
 M6800 Microcomputer System Support Products
 ===========================================
@@ -17,4 +17,4 @@ M6800 Microcomputer System Support Products
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`local_shipping;2em`
+    ":material-regular:`verified;2em;sd-text-success` 17-JUL-2025"

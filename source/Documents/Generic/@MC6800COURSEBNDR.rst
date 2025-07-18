@@ -26,11 +26,11 @@ Microprocessor Course
 - 6800 Microprocessor Course
 - :ref:`M6800CNP`
 - :ref:`M6800 Systems Reference and Data Sheets (May 1975 Edition) <SYSREF>`
-- :ref:`M_GE`
-- :ref:`M_PDP_11`
-- :ref:`M_MTSS`
-- :ref:`M_UCS`
-- :ref:`M_EXORcser`
+- :ref:`M-GE`
+- :ref:`M-PDP-11`
+- :ref:`M-MTSS`
+- :ref:`M-UCS`
+- :ref:`M-EXORcser`
 
 
 

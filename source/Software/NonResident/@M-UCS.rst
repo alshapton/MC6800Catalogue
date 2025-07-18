@@ -1,6 +1,6 @@
 :orphan:
 
-.. _M_UCS:
+.. _M-UCS:
 
 
 Motorola Software for United Computing Service InfoSheet

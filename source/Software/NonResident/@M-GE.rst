@@ -1,6 +1,6 @@
 :orphan:
 
-.. _M_GE:
+.. _M-GE:
 
 
 Motorola Software for General Electric InfoSheet

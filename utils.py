@@ -5,7 +5,6 @@ import glob
 import os
 import shutil
 
-
 import ast
 
 
@@ -800,10 +799,8 @@ def collect_metadata():
                         thisdict = {"REFERENCE"  : ref, 
                                     "METADATA"  : line }
                         if line != '':
-                            print(thisdict)
                             md.append(thisdict)
     print('Location metadata collected')
-
     return md 
 
 def get_location(ref,md):
@@ -838,6 +835,7 @@ def do_collection():
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
+
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
@@ -864,7 +862,6 @@ def do_collection():
                             if description != '':
                                 collection.append(thisdict)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
-
         HEADING=''
 
         for i in newlist:
@@ -896,7 +893,6 @@ def do_collection():
                     if 'Drawer' in str(i['LOCATION']):
                         dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
                         location = (str(location) + dr).replace(' ','_')
-                        print('Location: ' + location)
                         sb= i['LOCATION']['Storage'].replace('_',' ')
                         reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
                     

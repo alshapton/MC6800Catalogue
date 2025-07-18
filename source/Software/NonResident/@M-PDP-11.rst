@@ -1,11 +1,12 @@
 :orphan:
 
-.. _M_PDP_11:
+.. _M-PDP-11:
 
 
 Motorola Software for DEC PDP-11 InfoSheet
 ==========================================
-.. #Metadata {'Product':'Motorola Software for DEC PDP-11 InfoSheet','Folder': 'Microprocessor Course'}
+
+.. #Metadata {'Product':'Motorola Software for DEC PDP-11 InfoSheet','Folder': '1'}
 
 .. image:: ../../images/Software/Non-Resident/M6800_Support_Software_DEC.png
    :width: 400

@@ -1,9 +1,11 @@
 :orphan:
 
-.. _MEX6815-1:
+.. _MEX68151:
 
 8K Dynamic RAM Module Supplement
 ================================
+
+.. #Metadata {'Product':'MEX6815-1 8K Dynamic RAM Module Supplement','Folder': '1'}
 
 .. image:: ../../images/Manuals/MEX6815-1.png
    :width: 400
@@ -15,7 +17,7 @@
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   :material-regular:`verified;2em;sd-text-success` 16-FEB-2025
 
 .. rubric:: Links
 

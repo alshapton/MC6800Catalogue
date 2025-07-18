@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC6800-1:
+.. _REF-MC6800:
 
 .. #Metadata {'Product':'M6800 Instruction Set Summary','Folder': '1'}
 

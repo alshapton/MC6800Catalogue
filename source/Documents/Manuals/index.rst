@@ -37,6 +37,7 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
+
    ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
    ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
@@ -44,7 +45,7 @@ Reference Manuals
    ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
    ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
-   ":ref:`MEX6815-1 <MEX6815-1>`","8K Dynamic RAM Module Supplement","First Edition 1975"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
 
 .. rubric:: Micromodule Manuals
 

@@ -22,4 +22,4 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M_EXORcser>`","Motorola Software for Exorciser InfoSheet",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-EXORcser>`","Motorola Software for Exorciser InfoSheet",""

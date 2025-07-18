@@ -1,6 +1,6 @@
 :orphan:
 
-.. _M_MTSS:
+.. _M-MTSS:
 
 
 Motorola Software for Motorola Time Sharing Systems InfoSheet

@@ -1,6 +1,6 @@
 :orphan:
 
-.. _M_EXORcser:
+.. _M-EXORcser:
 
 Motorola Software for Exorciser InfoSheet
 =========================================

@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC6840-1:
+.. _REF-MC6840:
 
 .. #Metadata {'Product':'MC6840 Programmable Timer Module Programming Summary','Folder': '1'}
 

@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC6809-MC6809E-1:
+.. _REF-MC6809-MC6809E:
 
 .. #Metadata {'Product':'MC6809/MC6809E 8-Bit Microprocessor Programming Model','Folder': '1'}
 

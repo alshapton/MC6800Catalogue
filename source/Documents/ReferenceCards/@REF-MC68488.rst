@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC68488-1:
+.. _REF-MC68488:
 
 .. #Metadata {'Product':'MC68488 GPIA for IEEE-488 Bus','Folder': '1'}
 
