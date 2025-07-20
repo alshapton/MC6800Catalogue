@@ -10,7 +10,6 @@
 
     :ref:`All you need for your Microcomputer System <ALLYOUNEED>`,""
     :ref:`M6800 Instruction Set Summary <REF-MC6800>`,""
-    :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
     :ref:`MC6809/MC6809E 8-Bit Microprocessor Programming Model <REF-MC6809-MC6809E>`,""
     :ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`,""
     :ref:`MC6845 Cathode Ray Tube Controller Programming <REF-MC6845>`,""
@@ -43,6 +42,18 @@
     :ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`,""
     :ref:`MINIBUG Monitor Assembly Listing REV 004 <@MIKBUG-MINIBUG_04_09_mn_ass>`,""
     :ref:`Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11) <SRC-FOR-MASM-PDP-11>`,""
+
+
+.. _M6800_Microcomputer_System_Support_Products_map_reference:
+
+.. rubric:: Folder M6800 Microcomputer System Support Products
+
+.. csv-table::
+   :header: "Name","Comments"
+   :widths: 60,40
+
+    :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
+    :ref:`M68SDT EXORciser Emulator for M6800 Based Systems <M68SDTEXOR>`,""
 
 
 .. _Microprocessor_Course_map_reference:

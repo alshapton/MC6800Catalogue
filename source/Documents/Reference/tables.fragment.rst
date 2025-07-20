@@ -7,9 +7,17 @@
    :widths: 20,80,20 
 
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
+
+.. rubric:: Folder M6800 Microcomputer System Support Products
+
+.. csv-table::
+   :header: "Part Number","Name","Comments"
+   :widths: 20,80,20 
+
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M68SDTEXOR>`","M68SDT EXORciser Emulator for M6800 Based Systems",""
 
 .. rubric:: Folder Microprocessor Course
 

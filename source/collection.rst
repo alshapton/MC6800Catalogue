@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 18-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 19-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -141,7 +141,8 @@ This is the current collection (as at 18-07-2025) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M68SDTEXOR>`","M68SDT EXORciser Emulator for M6800 Based Systems",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <NONE-2>`","Microprocessor Applications Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"
