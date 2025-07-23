@@ -2,11 +2,12 @@ import time
 
 import glob
 import os
-import shutil
+
 
 import ast
 
-from  xbuild_support.functions import *
+from xbuild_support.functions import *
+from xbuild_support.file_utilities import *
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
@@ -31,13 +32,7 @@ def line_prepender(filename, line):
         f.seek(0, 0)
         f.write(line.rstrip('\r\n') + '\n\n' + content)
 
-def make_directory(path):
-    try:
-        os.mkdir(path)
-        return True
-    except FileExistsError:
-        return True
-    
+
 def convert_type_to_real_type(type):
     doc_type=''
     match type:
@@ -337,8 +332,7 @@ def update_carousel():
                         d.write('         :width: 800\n\n')
     print('\n\nCarousels updated')
 
-def movefile(old, new):
-    shutil.move(old, new)
+
 
 def get_cols_for_drawer(st,dr,rw, info):
     cols = []
