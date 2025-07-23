@@ -23,8 +23,9 @@ M6800 Microcomputer System Support Products
 .. rubric:: This product is a collection of many other documents, including:
 
 - Introduction to M6800 Microcomputer System Support Products
-- :ref:`M68SDTEXOR`
-
+- :ref:`M68SDTEXOR-BROCHURE`
+- :ref:`MEX6812-1-BROCHURE`
+- :ref:`MEX6815-3-BROCHURE`
 
 
 

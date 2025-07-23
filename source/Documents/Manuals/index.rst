@@ -46,7 +46,8 @@ Reference Manuals
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
    ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
-
+   ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
+   
 .. rubric:: Micromodule Manuals
 
 .. csv-table:: 

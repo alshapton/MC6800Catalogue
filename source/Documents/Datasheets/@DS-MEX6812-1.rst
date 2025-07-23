@@ -1,0 +1,24 @@
+:orphan:
+
+.. _DS-MEX6812-1:
+
+MEX6812-1 2K Static RAM Module
+==============================
+
+.. image:: ../../images/DataSheets/DS-MEX6812-1.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MEX6812-1 2K Static RAM Module <../../_static/Documents/Datasheets/DS-MEX6812-1.pdf>`
+
+:ref:`MEX6812-1 2K Static RAM Module Brochure <MEX6812-1-BROCHURE>`

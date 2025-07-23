@@ -53,7 +53,11 @@
    :widths: 60,40
 
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
-    :ref:`M68SDT EXORciser Emulator for M6800 Based Systems <M68SDTEXOR>`,""
+    :ref:`M68SDT EXORciser Emulator for M6800 Based Systems Brochure <M68SDTEXOR-BROCHURE>`,""
+    :ref:`MEX6812-1 2K Static RAM Module Brochure <MEX6812-1-BROCHURE>`,""
+    :ref:`MEX6815-3 8K Dynamic RAM Module Brochure <MEX6815-3-BROCHURE>`,""
+    :ref:`MEX6816-1 16K Dynamic RAM Module Brochure <MEX6816-1-BROCHURE>`,""
+    :ref:`MEX6820 Input/Output Module Brochure <MEX6820-BROCHURE>`,""
 
 
 .. _Microprocessor_Course_map_reference:

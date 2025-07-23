@@ -17,7 +17,11 @@
    :widths: 20,80,20 
 
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M68SDTEXOR>`","M68SDT EXORciser Emulator for M6800 Based Systems",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6820-BROCHURE>`","MEX6820 Input/Output Module Brochure",""
 
 .. rubric:: Folder Microprocessor Course
 
