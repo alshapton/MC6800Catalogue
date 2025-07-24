@@ -26,6 +26,9 @@ M6800 Microcomputer System Support Products
 - :ref:`M68SDTEXOR-BROCHURE`
 - :ref:`MEX6812-1-BROCHURE`
 - :ref:`MEX6815-3-BROCHURE`
-
+- :ref:`MEX6816-1-BROCHURE`
+- :ref:`MEX6820-BROCHURE`
+- :ref:`MEX6850-BROCHURE`
+- :ref:`MEX68CT-BROCHURE`
 
 

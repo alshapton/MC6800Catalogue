@@ -23,6 +23,7 @@
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6820-BROCHURE>`","MEX6820 Input/Output Module Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX6850-BROCHURE>`","MEX6850 ACIA Module Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEX68CT-BROCHURE>`","MEX68CT MOTEST-1 Component Tester",""
 
 .. rubric:: Folder Microprocessor Course
 
