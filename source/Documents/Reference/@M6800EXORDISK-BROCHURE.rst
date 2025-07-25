@@ -7,7 +7,7 @@ M6800 EXORdisk Brochure
 
 .. #Metadata {'Product':'M6800 EXORdisk Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
-.. image:: ../../images/DataSheets/M6800EXORDISK-BROCHURE.png
+.. image:: ../../images/Reference/M6800EXORDISK-BROCHURE.png
    :width: 400
    :align: center
 

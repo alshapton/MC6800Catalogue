@@ -52,6 +52,8 @@
    :header: "Name","Comments"
    :widths: 60,40
 
+    :ref:`M6800 EXORdisk Brochure <M6800EXORDISK-BROCHURE>`,""
+    :ref:`M6800 EXORtape Brochure <M6800EXORTAPE-BROCHURE>`,""
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
     :ref:`M6800B Evaluation Module II Brochure <M6800B-BROCHURE>`,""
     :ref:`M68SDT EXORciser Emulator for M6800 Based Systems Brochure <M68SDTEXOR-BROCHURE>`,""

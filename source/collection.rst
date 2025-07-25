@@ -142,6 +142,8 @@ This is the current collection (as at 25-07-2025) of the items produced by Motor
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
