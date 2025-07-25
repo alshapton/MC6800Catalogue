@@ -32,5 +32,12 @@ M6800 Microcomputer System Support Products
 - :ref:`MEX68CT-BROCHURE`
 - :ref:`MEX68PP1-BROCHURE`
 - :ref:`MEX68RR-BROCHURE`
+- :ref:`MEX68SA-BROCHURE`
+- :ref:`MEX68USE-BROCHURE`
+- :ref:`MEX68WW-MEX68XT-BROCHURE`
+- :ref:`M6800B-BROCHURE`
+- :ref:`M6800-EXORDISK`
+- :ref:`M6800-EXORTAPE`
+
 
 

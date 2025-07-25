@@ -5,6 +5,7 @@
        :widths: auto
 
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809L <MC6809L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`local_shipping;2em` :ref:`SC84003L <SC84003L>`","Ceramic","N/A","N/A","Engineering Sample"
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6809CL <MC6809CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09L <MC68A09L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A09CL <MC68A09CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""

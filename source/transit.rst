@@ -15,3 +15,4 @@ This is the current set of items (as at 25-07-2025) in transit.
 	" :ref:`MC6883P <MC6883P>`"," Synchronous Address Multiplexer"
 	" :ref:`MC68B09EP <MC68B09EP>`"," 8-Bit Microprocessing Unit (MC6809E)"
 	" :ref:`MC68B21P <MC68B21P>`"," MC6821 Peripheral Interface Adapter (PIA)"
+	" :ref:`SC84003L <SC84003L>`"," (MC6809) 8-Bit Microprocessing Unit"

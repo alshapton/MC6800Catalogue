@@ -913,6 +913,7 @@ def do_create():
             location = "Documents/ApplicationNotes"
         case "R":
             location = "Documents/Reference"
+            images = dotdot + 'images/DataSheets/'
         case "D":
             location = "Documents/Datasheets"
             images = dotdot + 'images/DataSheets/'

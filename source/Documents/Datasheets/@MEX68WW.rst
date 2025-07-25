@@ -20,3 +20,5 @@ Universal Wirewrap Module
 .. rubric:: Links
 
 :download:`Universal Wirewrap Module <../../_static/Documents/Datasheets/MEX68WW.pdf>`
+
+:ref:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <MEX68WW-MEX68XT-BROCHURE>`
