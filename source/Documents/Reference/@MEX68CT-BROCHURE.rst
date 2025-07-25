@@ -5,7 +5,7 @@
 MEX68CT MOTEST-1 Component Tester Brochure
 ==========================================
 
-.. #Metadata {'Product':'MEX68CT MOTEST-1 Component Tester','Folder': 'M6800 Microcomputer System Support Products'}
+.. #Metadata {'Product':'MEX68CT MOTEST-1 Component Tester Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX68CT-BROCHURE.png
    :width: 400

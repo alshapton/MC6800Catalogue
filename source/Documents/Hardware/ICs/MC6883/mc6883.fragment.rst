@@ -1,0 +1,7 @@
+.. collapse::  Synchronous Address Multiplexer (MC6883)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`local_shipping;2em` :ref:`MC6883P <MC6883P>`","Plastic","N/A","0-70\ :sup:`o`\ C",""

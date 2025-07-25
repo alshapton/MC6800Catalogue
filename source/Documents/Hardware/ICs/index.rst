@@ -17,7 +17,6 @@ Integrated Circuits
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","Ceramic","2400 bps Digital Modulator",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","Plastic","2400 bps Digital Modulator",""
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6883","","Synchronous Address Multiplexer (SAM)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Plastic","Quad Bus Transceiver (Non-Inverting)"
 
 |
@@ -79,6 +78,9 @@ Integrated Circuits
 .. include:: ./MC6875/mc6875.fragment.rst
 |
 
+.. include:: ./MC6883/mc6883.fragment.rst
+|
+
 .. include:: ./MC68701/mc68701.fragment.rst
 |
 
@@ -87,7 +89,4 @@ Integrated Circuits
 
 |
 
-#  .. rubric:: Catalogue of ICs
-
-#  .. include:: ./icindex.snippet
 

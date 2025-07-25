@@ -36,7 +36,7 @@
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CP <MC68B21CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21CS <MC68B21CS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B21L <MC68B21L>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C","Possibly defective"
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21P <MC68B21P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`local_shipping;2em` :ref:`MC68B21P <MC68B21P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B21S <MC68B21S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CLS <MC6821CLS>`","Ceramic","1 Mhz","-25-150\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6821CPS <MC6821CPS>`","Plastic","1 Mhz","-25-150\ :sup:`o`\ C",""

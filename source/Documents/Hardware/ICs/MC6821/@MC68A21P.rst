@@ -36,4 +36,4 @@ MC68A21P MC6821 Peripheral Interface Adapter (PIA)
 
 .. rubric:: Links
 
-:download:`MC6821 MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`
+:download:`MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`

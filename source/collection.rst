@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 24-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 25-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -142,13 +142,14 @@ This is the current collection (as at 24-07-2025) of the items produced by Motor
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
- 	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure"
-	":ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6820-BROCHURE>`","MEX6820 Input/Output Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6850-BROCHURE>`","MEX6850 ACIA Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
- 	":ref:`N/A <MEX68CT-BROCHURE>`","MEX68CT MOTEST-1 Component Tester",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <MEX68CT-BROCHURE>`","MEX68CT MOTEST-1 Component Tester Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <MEX68PP1-BROCHURE>`","MEX68PP1 PROM Programmer Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <NONE-2>`","Microprocessor Applications Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"

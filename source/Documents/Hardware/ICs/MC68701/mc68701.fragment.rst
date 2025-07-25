@@ -13,5 +13,6 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` MC68B701L","Ceramic","2MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701U4L <MC68701U4L>`","Ceramic","1MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
       ":material-regular:`thumb_down;2em;sd-text-danger` MC68B701U4L-1","Ceramic","1.25MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
-            
+      ":material-regular:`local_shipping;2em` :ref:`MC68701U4S-1 <MC68701U4S-1>`","CERDIP","1.25MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
+
 

@@ -32,7 +32,7 @@ MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
    :header: "Component","Datasheet"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 
