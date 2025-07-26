@@ -1,9 +1,11 @@
 :orphan:
 
-.. _DS-M68MM01B1(A):
+.. _DS-M68MM01B1A:
 
-M68MM01B1A Monoboard Microcomputer Module
-=========================================
+M68MM01B1A Monoboard Microcomputer Module Datasheet
+===================================================
+
+.. #Metadata {'Product':'M68MM01B1A Monoboard Microcomputer Module Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM01B1A(D1).png
    :width: 400

@@ -1,9 +1,11 @@
 :orphan:
 
-.. _M68SXS:
+.. _DS-M68SXS:
 
 M68SXS EXORterm 200
 ===================
+
+.. #Metadata {'Product':'M68SXS EXORterm 200 Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68SXS.jpeg
    :width: 400

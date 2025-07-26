@@ -2,8 +2,10 @@
 
 .. _DS-M68MM01D:
 
-M68MM01D Monoboard Microcomputer Module
-=======================================
+M68MM01D Monoboard Microcomputer Module Datasheet
+=================================================
+
+.. #Metadata {'Product':'M68MM01D Monoboard Microcomputer Module Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM01D.1.png
    :width: 400

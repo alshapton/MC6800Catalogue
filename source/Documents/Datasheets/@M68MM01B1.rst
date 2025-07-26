@@ -2,8 +2,10 @@
 
 .. _M68MM01B1:
 
-Micromodule 01B1
-================
+Micromodule 01B1 Datasheet
+==========================
+
+.. #Metadata {'Product':'Micromodule 01B1 Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM01B1.png
    :width: 400

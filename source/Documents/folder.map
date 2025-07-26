@@ -24,6 +24,25 @@
     :ref:`Motorola Software for DEC PDP-11 InfoSheet <M-PDP-11>`,""
 
 
+.. _2_map_reference:
+
+.. rubric:: Folder 2
+
+.. csv-table::
+   :header: "Name","Comments"
+   :widths: 60,40
+
+    :ref:`Autonomous Development System (French) Datasheet <DS-M68ADS1-FRENCH>`,""
+    :ref:`Autonomous Development System Datasheet <DS-M68ADS1>`,""
+    :ref:`M68MM01B1A Monoboard Microcomputer Module Datasheet <DS-M68MM01B1A>`,""
+    :ref:`M68MM01D Monoboard Microcomputer Module Datasheet <DS-M68MM01D>`,""
+    :ref:`M68MM07 Quad Communications Micromodule Datasheet <DS-M68MM07>`,""
+    :ref:`M68SXS EXORterm 200 Datasheet <DS-M68SXS>`,""
+    :ref:`MC6850 Datasheet <MC6850>`,""
+    :ref:`MEX78PP3 EROM/PROM Programmer Module <MEX68PP3>`,""
+    :ref:`Micromodule 01B1 Datasheet <M68MM01B1>`,""
+
+
 .. _LOCAL_map_reference:
 
 .. rubric:: See individual items for location information

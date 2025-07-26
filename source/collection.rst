@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 25-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 26-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -22,15 +22,15 @@ This is the current collection (as at 25-07-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`M68ADS1 <M68ADS-1>`","Autonomous Development System (French)"
-	":ref:`M68ADS1 <M68ADS1>`","Autonomous Development System"
-	":ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1"
-	":ref:`M68MM01B1A <DS-M68MM01B1(A)>`","M68MM01B1A Monoboard Microcomputer Module"
-	":ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module"
-	":ref:`M68MM07 <M68MM07>`","Quad Communications Micromodule"
-	":ref:`M68SXS <M68SXS>`","M68SXS EXORterm 200"
-	":ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module"
-
+	":ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68MM01B1A <DS-M68MM01B1A>`","M68MM01B1A Monoboard Microcomputer Module",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68MM07 <DS-M68MM07>`","Quad Communications Micromodule",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":ref:`Folder 2 <2_map_reference>`"
+ 
 
 .. rubric:: Exorciser Hardware
 

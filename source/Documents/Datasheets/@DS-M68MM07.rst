@@ -1,9 +1,11 @@
 :orphan:
 
-.. _M68MM07:
+.. _DS-M68MM07:
 
-M68MM07 Quad Communications Micromodule
-=======================================
+M68MM07 Quad Communications Micromodule Datasheet
+=================================================
+
+.. #Metadata {'Product':'M68MM07 Quad Communications Micromodule Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM07.1.png
    :width: 400

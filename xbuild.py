@@ -3,7 +3,6 @@ import time
 import glob
 import os
 
-
 import ast
 
 from xbuild_support.functions import *
@@ -26,44 +25,7 @@ CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp/'
 IC_LOCATIONS = 'source/Documents/Hardware/ICs'
 
-def line_prepender(filename, line):
-    with open(filename, 'r+') as f:
-        content = f.read()
-        f.seek(0, 0)
-        f.write(line.rstrip('\r\n') + '\n\n' + content)
 
-
-def convert_type_to_real_type(type):
-    doc_type=''
-    match type:
-        case "Documents/ApplicationNotes":
-            doc_type = "Application Notes"
-        case "Documents/Hardware/ICs":    
-            doc_type = "ICs"
-        case "Documents/Reference":
-            doc_type = "Reference Documents"
-        case "Documents/Manuals":
-            doc_type = "Reference Manuals"
-        case "Documents/Datasheets":
-            doc_type = "Datasheets"
-        case "Documents/ReferenceCards":
-            doc_type = "Reference Cards" 
-        case "Documents/Generic":
-            doc_type = "Generic Documents"
-        case "Software/NonResident":
-            doc_type = "NonResident Software"
-        case "Software/Resident":
-            doc_type = "Resident Software"
-        case "Documents/Hardware/EXORciser":
-            doc_type = "Exorciser Hardware"
-        case "Documents/Hardware/Other":
-            doc_type = "Other Hardware"
-        case _:
-            doc_type = "Other"  
-            if "/ICs" in type:
-                doc_type = "ICs"
-    return doc_type
-                
 def get_loc(file):
     loc = ast.literal_eval('{}')
 
@@ -97,6 +59,7 @@ def get_loc(file):
 
             loc['Status'] = sta                        
         return metadata, loc
+
 
 def do_standard_folders(TABLES_FILE,sorted_folders):
     with open(TABLES_FILE,"w") as c:
@@ -133,6 +96,7 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
                 comments = item['Comments']
             c.write(item['Product']+'","'+comments + '"')
         c.write('\n')    
+
 
 def create_new_group_from_index():
     newgroupname=input("Enter group name: ")
@@ -286,6 +250,7 @@ def create_new_group_index():
 
     print('New group index created in ' + LOC.lower())
 
+
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
     for filename in files:   
@@ -333,7 +298,6 @@ def update_carousel():
     print('\n\nCarousels updated')
 
 
-
 def get_cols_for_drawer(st,dr,rw, info):
     cols = []
 
@@ -348,16 +312,17 @@ def get_cols_for_drawer(st,dr,rw, info):
                     cols = cd['Columns']
     return cols
 
+
 def update_storage():
     print('Cleaning and prepping storage files')
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in snippetfiles:
         os.remove(snippetfile)
         
-
     storage=[]
     foldersrefcard=[]
     foldersgeneric=[]
+    foldersdatasheets=[]
     foldersreference=[]
     folderssoftnon=[]
     folderssoftres=[]
@@ -421,6 +386,11 @@ def update_storage():
                 if metadata:
                     foldersrefcard.append(loc)
 
+            if 'Datasheets' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    foldersdatasheets.append(loc)
+
             if 'Generic' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
                 if metadata:
@@ -446,7 +416,7 @@ def update_storage():
                 if metadata:
                     foldersappnotes.append(loc)
 
-
+    sorted_folders_datasheets = sorted(foldersdatasheets, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_appnotes = sorted(foldersappnotes, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
@@ -455,7 +425,7 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
     
-    all_folders_storage_sorted =  sorted(sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
+    all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
     FOLDER_MAP_FILE = 'source/Documents/folder.map'
     current_folder=''
@@ -712,6 +682,7 @@ def update_storage():
 
     print('\nLocations fully updated')      
 
+
 def do_in_transit():
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
@@ -778,6 +749,7 @@ def do_in_transit():
                 c.write('\t:widths: 30, 70\n\n')  
             c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
 
+
 def collect_metadata():
     print('Collecting location metadata')
 
@@ -801,6 +773,7 @@ def collect_metadata():
     print('Location metadata collected')
     return md 
 
+
 def get_location(ref,md):
     # Get the location of the file from the metadata
     loc=''
@@ -810,6 +783,7 @@ def get_location(ref,md):
             loc = line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
             loc = ast.literal_eval(loc)
     return loc
+
 
 def do_collection():
     # Collect location medatadta
@@ -844,7 +818,6 @@ def do_collection():
                             ref = part_number.split('<')[1].split('>')[0].strip().replace('@','')
                             
                             location = get_location(ref,md)
-                            
                             try:
                                 description = splitline[1].strip().replace('""','"')
                             except:
@@ -860,6 +833,7 @@ def do_collection():
                                 collection.append(thisdict)
                 newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
         HEADING=''
+
 
         for i in newlist:
             if HEADING != i['DTYPE']:
@@ -898,9 +872,6 @@ def do_collection():
             c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
             
 
-
-
-
 def do_create():
     print("Enter the following information:")
     product_name = input("  Product name: ")
@@ -913,7 +884,7 @@ def do_create():
             location = "Documents/ApplicationNotes"
         case "R":
             location = "Documents/Reference"
-            images = dotdot + 'images/DataSheets/'
+            images = dotdot + 'images/Reference/'
         case "D":
             location = "Documents/Datasheets"
             images = dotdot + 'images/DataSheets/'

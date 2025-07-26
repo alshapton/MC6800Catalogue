@@ -1,9 +1,11 @@
 :orphan:
 
-.. _M68ADS-1:
+.. _DS-M68ADS1-FRENCH:
 
-Autonomous Development System (French)
-======================================
+Autonomous Development System (French) Datasheet
+================================================
+
+.. #Metadata {'Product':'Autonomous Development System (French) Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68ADS-1.1.jpg
    :width: 400
