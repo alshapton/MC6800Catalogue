@@ -71,9 +71,12 @@
    :header: "Name","Comments"
    :widths: 60,40
 
+    :ref:`M6800 Co-Resident Software Datasheet <DS-M6800-Res-Software>`,""
     :ref:`M6800 EXORdisk Brochure <M6800EXORDISK-BROCHURE>`,""
     :ref:`M6800 EXORtape Brochure <M6800EXORTAPE-BROCHURE>`,""
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
+    :ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`,""
+    :ref:`M6800 Resident Software Brochure <M6800-RESIDENT-SOFTWARE-BROCHURE>`,""
     :ref:`M6800B Evaluation Module II Brochure <M6800B-BROCHURE>`,""
     :ref:`M68SDT EXORciser Emulator for M6800 Based Systems Brochure <M68SDTEXOR-BROCHURE>`,""
     :ref:`MEX6812-1 2K Static RAM Module Brochure <MEX6812-1-BROCHURE>`,""

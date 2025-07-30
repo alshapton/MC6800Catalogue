@@ -48,8 +48,9 @@ DataSheets
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":material-regular:`lock;2em;sd-text-success`","1977",""
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit",":material-regular:`lock_open;2em;sd-text-danger`","1975",""    
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200","","1979","Issue A"
-   ":ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
-   ":ref:`N/A <M6800-Resident-Software>`","M6800 Resident Software",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet","Advance Information 1975"
    ":ref:`MEX68XT <MEX68XT>`","Extender Module",":material-regular:`lock_open;2em;sd-text-danger`"
 
 .. rubric:: Key to symbols

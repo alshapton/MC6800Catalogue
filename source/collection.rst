@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 26-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 27-07-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -22,7 +22,8 @@ This is the current collection (as at 26-07-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":ref:`Folder 2 <2_map_reference>`"
+	":ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68MM01B1A <DS-M68MM01B1A>`","M68MM01B1A Monoboard Microcomputer Module",":ref:`Folder 2 <2_map_reference>`"
@@ -30,7 +31,9 @@ This is the current collection (as at 26-07-2025) of the items produced by Motor
  	":ref:`M68MM07 <DS-M68MM07>`","Quad Communications Micromodule",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":ref:`Folder 2 <2_map_reference>`"
- 
+ 	":ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets"
+
 
 .. rubric:: Exorciser Hardware
 
@@ -141,6 +144,7 @@ This is the current collection (as at 26-07-2025) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"

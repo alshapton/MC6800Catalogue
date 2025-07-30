@@ -38,6 +38,10 @@ M6800 Microcomputer System Support Products
 - :ref:`M6800B-BROCHURE`
 - :ref:`M6800EXORDISK-BROCHURE`
 - :ref:`M6800EXORTAPE-BROCHURE`
+- :ref:`M6800-RESIDENT-SOFTWARE-BROCHURE`
+- :ref:`DS-M6800-Res-Software`
+- :ref:`DS-M68ASMR020`
 
-
-
+- M68BASR010 Resident BASIC Interpreter Brochure
+- M68FTNR10D Resident FORTRAN Compiler Brochure
+- M6800 Software for In-House Computers
