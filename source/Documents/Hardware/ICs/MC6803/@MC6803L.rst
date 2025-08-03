@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC6840CP:
+.. _MC6803L:
 
-.. #None {'Product':'MC6840CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC6803L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6840CP Programmable Timer Module (PTM)
-========================================
+MC6803L 8-Bit Microprocessor +128 bytes of RAM
+==============================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -21,8 +21,8 @@ MC6840CP Programmable Timer Module (PTM)
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
-   "Temperature","-40-85\ :sup:`o`\ C"
-   "Frequency","1 Mhz"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1.25 Mhz"
    "Notes",""
 
 
@@ -34,6 +34,3 @@ MC6840CP Programmable Timer Module (PTM)
 
    ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
 
-.. rubric:: Links
-
-:download:`MC6840 Programmable Timer Module (PTM)  <../../../../_static/Documents/Datasheets/MC6840.pdf>`

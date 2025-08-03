@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 27-07-2025) in transit.
+This is the current set of items (as at 03-08-2025) in transit.
 
 
 .. rubric:: ICs
@@ -11,6 +11,8 @@ This is the current set of items (as at 27-07-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`MC6803L <MC6803L>`"," 8-Bit Microprocessor +128 bytes of RAM"
+	" :ref:`MC6840CP <MC6840CP>`"," Programmable Timer Module (PTM)"
 	" :ref:`MC68701U4S-1 <MC68701U4S-1>`"," Microprocessor Unit with 8-bit EPROM"
 	" :ref:`MC6883P <MC6883P>`"," Synchronous Address Multiplexer"
 	" :ref:`MC68B09EP <MC68B09EP>`"," 8-Bit Microprocessing Unit (MC6809E)"

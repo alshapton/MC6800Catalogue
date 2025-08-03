@@ -1,0 +1,7 @@
+.. collapse::  8-Bit Microprocessor + 128 bytes of RAM (MC6803)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`local_shipping;2em` :ref:`MC6803L <MC6803L>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
