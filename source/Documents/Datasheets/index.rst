@@ -23,6 +23,7 @@ DataSheets
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
    
+   ":ref:`MC6802/MC6808/MC6802NS <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM",":material-regular:`lock;2em;sd-text-success`","1984",""
    ":ref:`MC6803E <MC6803E>`","8-Bit Microprocessor",":material-regular:`lock_open;2em;sd-text-danger`"
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit",""
    ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit",""

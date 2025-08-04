@@ -1,0 +1,22 @@
+:orphan:
+
+.. _DS-MC6802-08-02NS:
+
+Microprocessor with Clock and Optional RAM (MC6802/MC6808/MC6802NS)
+===================================================================
+
+.. image:: ../../images/DataSheets/DS-MC6802-6808-6802NS.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Microprocessor with Clock and Optional RAM (MC6802/MC6808/MC6802NS) <../../_static/Documents/Datasheets/DS-MC6802-6808-6802NS.pdf>`

@@ -39,6 +39,9 @@ Integrated Circuits
 .. include:: ./MCM6810/mcm6810.fragment.rst
 |
 
+.. include:: ./MC6820/mc6820.fragment.rst
+|
+
 .. include:: ./MC6821/mc6821.fragment.rst
 |
 
