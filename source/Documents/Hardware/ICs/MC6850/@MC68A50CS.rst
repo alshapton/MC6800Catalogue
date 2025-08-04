@@ -27,7 +27,7 @@ MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`thumb_down;2em;sd-text-danger`

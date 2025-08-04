@@ -13,10 +13,10 @@ MEX6816-22D 16K Dynamic RAM
 
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 20-MAR-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+    ":material-regular:`verified;2em;sd-text-success` 20-MAR-2025"
 
 .. rubric:: Links
 

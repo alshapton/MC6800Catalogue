@@ -29,10 +29,10 @@ MC68A09ECP 8-Bit Microprocessing Unit (MC6809E)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 

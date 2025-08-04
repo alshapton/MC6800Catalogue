@@ -28,10 +28,10 @@ MC68B00S Microprocessor Unit
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025"
 
 
 .. rubric:: Links

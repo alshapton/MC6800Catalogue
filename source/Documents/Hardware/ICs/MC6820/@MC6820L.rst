@@ -29,7 +29,7 @@ MC6820L Peripheral Interface Adapter (PIA)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`local_shipping;2em`

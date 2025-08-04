@@ -28,10 +28,10 @@ MCM68B10P 128 x 8-bit RAM
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","DataSheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025"
 
 .. rubric:: Links
 

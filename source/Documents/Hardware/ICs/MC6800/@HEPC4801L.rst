@@ -25,8 +25,8 @@ HEPC4801L HEP version of MC6800
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+      ":material-regular:`thumb_down;2em;sd-text-danger`"
 

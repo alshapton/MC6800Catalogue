@@ -17,10 +17,10 @@ Autonomous Development System (French) Datasheet
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-    "N/A",":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+    ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
 
 
 
