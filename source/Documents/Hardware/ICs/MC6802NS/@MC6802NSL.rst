@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC6840CP:
+.. _MC6802NSL:
 
-.. #None {'Product':'MC6840CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC6802NSL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6840CP Programmable Timer Module (PTM)
-========================================
+MC6802NSL Microprocessor with Clock and Optional RAM (MC6802NS)
+===============================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -18,10 +18,10 @@ MC6840CP Programmable Timer Module (PTM)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","Plastic"
+   "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
-   "Temperature","-40-85\ :sup:`o`\ C"
+   "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
 
@@ -36,4 +36,4 @@ MC6840CP Programmable Timer Module (PTM)
 
 .. rubric:: Links
 
-:download:`MC6840 Programmable Timer Module (PTM)  <../../../../_static/Documents/Datasheets/MC6840.pdf>`
+:download:`MC6802NS Microprocessor with Clock and Optional RAM (MC6802NS)  <../../../../_static/Documents/Datasheets/DS-MC6802-6808-6802NS.pdf>`

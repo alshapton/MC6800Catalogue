@@ -10,7 +10,7 @@
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40CL <MC68A40CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B40L <MC68B40L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840P <MC6840P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`local_shipping;2em` :ref:`MC6840CP <MC6840CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6840CP <MC6840CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40P <MC68A40P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A40CP <MC68A40CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
        ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B40P <MC68B40P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""

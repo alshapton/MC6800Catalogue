@@ -24,10 +24,19 @@ Integrated Circuits
 .. include:: ./MC6800/mc6800.fragment.rst
 |
 
+.. include:: ./MC6802/mc6802.fragment.rst
+|
+
+.. include:: ./MC6802NS/mc6802ns.fragment.rst
+|
+
 .. include:: ./MC6803/mc6803.fragment.rst
 |
 
 .. include:: ./MC6803E/mc6803e.fragment.rst
+|
+
+.. include:: ./MC6808/mc6808.fragment.rst
 |
 
 .. include:: ./MC6809/mc6809.fragment.rst
