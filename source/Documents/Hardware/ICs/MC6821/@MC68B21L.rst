@@ -28,10 +28,10 @@ This is a version of the MC6820 introduced using depletion mode technology and i
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","DataSheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025"
 
 .. rubric:: Links
 

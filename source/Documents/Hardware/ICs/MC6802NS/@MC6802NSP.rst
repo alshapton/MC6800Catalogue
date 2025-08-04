@@ -29,10 +29,10 @@ MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
 
 .. rubric:: Links
 

@@ -27,9 +27,9 @@ MC6883P Synchronous Address Multiplexer
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em`"
 
 

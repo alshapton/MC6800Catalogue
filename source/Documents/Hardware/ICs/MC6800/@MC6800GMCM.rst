@@ -47,7 +47,7 @@ Motorola originally intended to use the 6800 for the CPU, but the GMCM CPU fit t
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 30-MAY-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`verified;2em;sd-text-success` 30-MAY-2025

@@ -28,7 +28,7 @@ MC6844P Direct Memory Access Controller (DMAC)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 7-JUL-2025,":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`verified;2em;sd-text-success` 7-JUL-2025

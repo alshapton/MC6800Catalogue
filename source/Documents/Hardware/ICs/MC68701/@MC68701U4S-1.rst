@@ -27,10 +27,10 @@ MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em`"
 
 .. rubric:: Links
 

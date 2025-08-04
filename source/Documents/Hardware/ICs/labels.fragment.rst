@@ -94,10 +94,6 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC68B44S|  image:: /images/Hardware/ICs/MC6844/MC68B44L.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iMC6844P|  image:: /images/Hardware/ICs/MC6844/MC6844P.png
    :width: 200
    :class: no-scaled-links

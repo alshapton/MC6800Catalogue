@@ -26,10 +26,10 @@ MC6860L 0-600 bps Digital Modem
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 2-JUN-2025",":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`verified;2em;sd-text-success` 2-JUN-2025"
 
 .. rubric:: Links
 

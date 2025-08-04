@@ -15,10 +15,10 @@ M68MM07 Quad Communications Micromodule Datasheet
 
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-    "N/A",":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+    ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
 
 
 

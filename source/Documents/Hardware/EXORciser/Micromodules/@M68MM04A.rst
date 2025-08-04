@@ -15,10 +15,10 @@ M68MM04A Micromodule 4A ROM/EPROM Module
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","DataSheet"
+   :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`thumb_down;2em;sd-text-danger` ",":material-regular:`thumb_down;2em;sd-text-danger`"
+    ":material-regular:`thumb_down;2em;sd-text-danger` "
 
 .. rubric:: Links
 

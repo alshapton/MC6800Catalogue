@@ -1033,6 +1033,44 @@ while True:
             print('Exiting')
             exit()
 
+        case "y":
+            # Temporary script to align all acquired headers
+            yfiles = glob.glob('**/*.rst', recursive=True)
+            for yfile in yfiles:
+                candidate=False
+                with open(yfile) as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        if line.upper().find(':header: "Component","Datasheet"'.upper()) >0 :
+                            candidate=True
+                if candidate:
+                    print(yfile , ' needs updating')
+                    with open(yfile + '.new', "w") as cf:
+                        c=0
+                        for line in lines:
+                            if line.upper().find(':header: "Component","Datasheet"'.upper()) >0 :
+                                cf.write('   :header: "Acquired"\n')
+                                c=1
+                            else:
+                                if c==0:
+                                    cf.write(line)
+                                else:
+                                    if c==1:
+                                        cf.write(line)
+                                        c=2
+                                    else:
+                                        if c==2:
+                                            c=3  
+                                        else:
+                                            if c==3:
+                                                splitline=line.split(',')
+                                                c=4
+                                            else:
+                                                if c==4:
+                                                    cf.write('\n'+splitline[0]+'\n\n')
+                                                    c=0
+                    movefile(yfile + '.new', yfile)            
+            print('Exiting')
         case _:
             print('Invalid choice')
             

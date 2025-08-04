@@ -29,7 +29,7 @@ This date code and manufacture dates should be scrutinised.
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-    :material-regular:`verified;2em;sd-text-success` 14-MAY-2025`,:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
+    :material-regular:`verified;2em;sd-text-success` 14-MAY-2025

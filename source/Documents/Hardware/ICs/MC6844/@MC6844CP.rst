@@ -2,9 +2,9 @@
 
 .. _MC6844CP:
 
-.. #None {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+.. #None {'Product':'MC6844CP','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
 
-MC68B44P Direct Memory Access Controller (DMAC)
+MC6844CP Direct Memory Access Controller (DMAC)
 ===============================================
 
 .. image:: ../../../../images/NOIMAGE.png
@@ -28,7 +28,7 @@ MC68B44P Direct Memory Access Controller (DMAC)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component","Datasheet"
+   :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger` ,":material-regular:`thumb_down;2em;sd-text-danger`"
+    :material-regular:`thumb_down;2em;sd-text-danger`
