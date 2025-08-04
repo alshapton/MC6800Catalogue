@@ -6,6 +6,7 @@
       :widths: auto  
 
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6800L <MC6800L>`","Ceramic","1Mhz","0-70\ :sup:`o`\ C"
+      ":material-regular:`local_shipping;2em` :ref:`MC6800L <MC6800L.2>`","Ceramic","1Mhz","0-70\ :sup:`o`\ C","Additional to Briefcase example."
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","0-70\ :sup:`o`\ C"
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00CL <MC68A00CL>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C"

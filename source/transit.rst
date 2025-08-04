@@ -11,6 +11,7 @@ This is the current set of items (as at 03-08-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
+	" :ref:`MC6800L <MC6800L.2>`"," Microprocessor Unit"
 	" :ref:`MC6803L <MC6803L>`"," 8-Bit Microprocessor +128 bytes of RAM"
 	" :ref:`MC6840CP <MC6840CP>`"," Programmable Timer Module (PTM)"
 	" :ref:`MC68701U4S-1 <MC68701U4S-1>`"," Microprocessor Unit with 8-bit EPROM"
