@@ -1071,6 +1071,13 @@ while True:
                                                     c=0
                     movefile(yfile + '.new', yfile)            
             print('Exiting')
+        case "z":
+            # Temporary script to create IC fragments for later inclusion in builds
+            yfiles = glob.glob('**/*.pre-fragment', recursive=True)
+            for yfile in yfiles:
+                print(yfile)
+            print('Exiting')
+            exit()
         case _:
             print('Invalid choice')
             
