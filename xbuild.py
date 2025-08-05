@@ -13,6 +13,8 @@ CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
 IN_TRANSIT=':material-regular:`local_shipping;2em`'
 IN_TRANSIT_SHORT='local_shipping'
 
+OSSEP=os.sep
+
 PREFIX ='source/'
 SUFFIX = 'rst'
 
@@ -250,6 +252,60 @@ def create_new_group_index():
 
     print('New group index created in ' + LOC.lower())
 
+def update_IC_pre_fragments():
+    print('Updating IC pre-fragments')
+
+    yfiles = glob.glob('**/*.pre.fragment', recursive=True)
+    for yfile in yfiles:
+        print('     Processing:' + os.path.basename(yfile))
+
+        with open(yfile) as f:
+            lines = f.readlines()
+        outputfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('pre','new')+ '.' + SUFFIX
+        with open(outputfile,'w') as op:
+            op.write('\n.. collapse:: ' + lines[0] + '\n\n')
+            op.write('   .. csv-table::\n')
+            op.write('      :header: "Part","Packaging","Freq","Temp","Notes"\n')
+            op.write('      :widths: auto\n\n')
+
+            targetfiles=os.listdir(os.path.dirname(yfile))
+            for tfile in targetfiles:
+                if 'fragment' not in tfile :
+                    fragfile = os.path.dirname(yfile) + OSSEP + tfile
+                    with open(fragfile,'r') as ff: 
+                        fflines = ff.readlines()
+                    packaging=""
+                    frequency=""
+                    temperature=""
+                    notes=""
+                    tag=""
+                    posess=""
+                    for ffline in fflines:
+                        if ffline.startswith('.. _'):
+                            tag=ffline.replace('.. _','').split(':')[0]
+                        if 'Packaging' in ffline:
+                            splitline=ffline.split(',')
+                            packaging=splitline[1].replace('"','')[:-1]
+                        if 'Frequency' in ffline:
+                            splitline=ffline.split(',')
+                            frequency=splitline[1].replace('"','')[:-1]
+                        if 'Temperature' in ffline:
+                            splitline=ffline.split(',')
+                            temperature=splitline[1].replace('"','')[:-1]
+                        if 'Notes' in ffline:
+                            splitline=ffline.split('","')
+                            notes=splitline[1].replace('"','')[:-1]
+                        if 'material-regular' in ffline:
+                            splitline=ffline.strip().split(' ')
+                            posess=splitline[0].replace('"','')
+                 
+                    tref=tfile.replace('@','').replace('.rst','').split('.')[0]
+                    fileref='"' + posess + ' :ref:`'+ tref + ' <' + tag + '>`","'+packaging+'","'+frequency+'","'+temperature+'","'+notes+'"'
+                    op.write('      '+fileref+'\n')  
+            fragmentfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('.pre','')+'.rst'
+            movefile(outputfile, fragmentfile)
+
+    print('Finished updating IC pre-fragments')
 
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
@@ -1013,6 +1069,7 @@ while True:
         
         case "0":
             update_carousel()
+            update_IC_pre_fragments()
             update_storage()
             do_collection()
             print('Collection updated')
@@ -1072,11 +1129,8 @@ while True:
                     movefile(yfile + '.new', yfile)            
             print('Exiting')
         case "z":
-            # Temporary script to create IC fragments for later inclusion in builds
-            yfiles = glob.glob('**/*.pre-fragment', recursive=True)
-            for yfile in yfiles:
-                print(yfile)
-            print('Exiting')
+            update_IC_pre_fragments()
+            print('Exiting here')
             exit()
         case _:
             print('Invalid choice')

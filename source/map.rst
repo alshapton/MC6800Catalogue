@@ -2,10 +2,6 @@
 
 Map
 ===
-This is the map
-
-
-
 
 .. rubric:: Catalogue of ICs
 

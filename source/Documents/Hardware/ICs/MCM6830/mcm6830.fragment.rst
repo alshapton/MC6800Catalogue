@@ -2,8 +2,8 @@
 .. collapse:: 1024 Byte ROM (MCM6830)
 
    .. csv-table::
-      :header: "Part","Packaging","Frequency","Temperature","Notes"
+      :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","Ceramic","","","1024 x 8-bit ROM containing MIKBUG/MINIBUG"
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic","","","1024 x 8-bit ROM possibly containing MIKBUG"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","Ceramic","","","Standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG."

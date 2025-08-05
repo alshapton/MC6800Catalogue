@@ -21,9 +21,9 @@ MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
    "Packaging","Ceramic"
    "Status","Production"
    "Location","Briefcase"
-   "Notes",""
+   "Notes","Standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG."
 
-This is a standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG.
+
 
 .. rubric:: Collection Information
 
