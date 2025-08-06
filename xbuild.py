@@ -261,9 +261,30 @@ def update_IC_pre_fragments():
 
         with open(yfile) as f:
             lines = f.readlines()
+            
+        with open(yfile) as f:
+            data = ''
+            line=f.readline()
+            while line:
+                data +=line
+                line = f.readline()
+            
+            ttop=''
+            bbottom=''
+
+            bottom = data.split('##BOTTOM')
+            if len(bottom)>1:
+                bbottom=bottom[1]
+
+            top = data.split('##TOP')
+            if len(top)>1:
+                ttop=top[1]
+            
         outputfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('pre','new')+ '.' + SUFFIX
         with open(outputfile,'w') as op:
             op.write('\n.. collapse:: ' + lines[0] + '\n\n')
+            if len(ttop)>1:
+                op.write(ttop)
             op.write('   .. csv-table::\n')
             op.write('      :header: "Part","Packaging","Freq","Temp","Notes"\n')
             op.write('      :widths: auto\n\n')
@@ -302,7 +323,10 @@ def update_IC_pre_fragments():
                     tref=tfile.replace('@','').replace('.rst','').split('.')[0]
                     fileref='"' + posess + ' :ref:`'+ tref + ' <' + tag + '>`","'+packaging+'","'+frequency+'","'+temperature+'","'+notes+'"'
                     op.write('      '+fileref+'\n')  
+            if len(bbottom)>1:
+                op.write(bbottom)
             fragmentfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('.pre','')+'.rst'
+
             movefile(outputfile, fragmentfile)
 
     print('Finished updating IC pre-fragments')

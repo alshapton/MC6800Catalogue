@@ -1,12 +1,13 @@
-.. collapse::  Two-Phase Microprocessor Clock (MC6870/MC6871)
 
-    .. csv-table::
-       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
-       :widths: auto
-
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6870 <MC6870-71>`","[1]","1Mhz","0-120\ :sup:`o`\ C",""
-       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6871A-2 <MC6871A20>`","[1]","2Mhz","0-120\ :sup:`o`\ C",""
-       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6871A-15 <MC6871A15>`","[1]","1.5Mhz","0-120\ :sup:`o`\ C",""
+.. collapse:: Two-Phase Microprocessor Clock (MC6870/MC6871)
 
 
-    [1] - The packaging is a hermetically sealed ceramic package.
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6871A15 <MC6871A15>`","Hermetically sealed ceramic DIP","1.5Mhz","0-120\ :sup:`o`\ C",""
+      ":material-regular:`local_shipping;2em` :ref:`MC6870 <MC6870>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP","2Mhz","0-120\ :sup:`o`\ C",""
+
+   [1] - The packaging is a hermetically sealed ceramic package.

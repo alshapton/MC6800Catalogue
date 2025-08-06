@@ -1,6 +1,5 @@
 
-.. collapse:: .. collapse::  8-Bit Microprocessor (MC6803E)
-
+.. collapse:: 8-Bit Microprocessor (MC6803E)
 
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"
