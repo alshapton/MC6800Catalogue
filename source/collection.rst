@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 05-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 06-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -62,7 +62,7 @@ This is the current collection (as at 05-08-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`M6800/M6801 GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6809EP <MC6809EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6821P <MC6821P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
@@ -88,6 +88,7 @@ This is the current collection (as at 05-08-2025) of the items produced by Motor
 	":ref:`MC68B00S <MC68B00S>`","CERDIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B10P <MCM68B10P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MC68B21L <MC68B21L>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
+	":ref:`MC68B40P <MC68B40P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B44L <MC68B44L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B44P <MC68B44P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B50CP <MC68B50CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
