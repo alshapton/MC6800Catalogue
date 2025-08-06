@@ -1,9 +1,9 @@
+
 .. collapse:: Priority Interrupt Controller (MC6828)
 
    .. csv-table::
-       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
-       :widths: auto
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
 
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829L <MC6829L>`","Ceramic","N/A","N/A",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6829P <MC6829P>`","Plastic","N/A","N/A",""
-       
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6828L <MC6828L>`","Ceramic","N/A","N/A",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6828P <MC6828P>`","Plastic","N/A","N/A",""

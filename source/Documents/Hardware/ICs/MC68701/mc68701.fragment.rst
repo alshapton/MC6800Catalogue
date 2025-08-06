@@ -2,17 +2,15 @@
 .. collapse:: Enhanced MC6800 Microcomputer Unit (MC68701)
 
    .. csv-table::
-      :header: "Part Number","Packaging","Frequency","Temperature","Notes"
+      :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701L","Ceramic","1MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701CL","Ceramic","1MHz","-40-85\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68701L-1","Ceramic","1.25MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic","1.25MHz","-40-85\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68A701L","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B701L","Ceramic","2MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701U4L <MC68701U4L>`","Ceramic","1MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
-      ":material-regular:`thumb_down;2em;sd-text-danger` MC68B701U4L-1","Ceramic","1.25MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
-      ":material-regular:`local_shipping;2em` :ref:`MC68701U4S-1 <MC68701U4S-1>`","CERDIP","1.25MHz","0-70\ :sup:`o`\ C","with 8-bit EPROM"
-
-
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701CL <MC68701CL>`","TBD","TBD","TBD",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B701 <MC68B701L>`","TBD","TBD","TBD",""
+      ":material-regular:`local_shipping;2em` :ref:`MC68701U4S-1 <MC68701U4S-1>`","CERDIP","1.25 MHz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701L-1 <MC68701L-1>`","TBD","TBD","TBD",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701L <MC68701L>`","TBD","TBD","TBD",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A701L <MC68A701L>`","TBD","TBD","TBD",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701U4L <MC68701U4L>`","Ceramic","1 MHz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A701U4L-1 <MC68B701U4L-1>`","Ceramic","1.25 MHz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic","1.25 Mhz","-40-85\ :sup:`o`\ C",""

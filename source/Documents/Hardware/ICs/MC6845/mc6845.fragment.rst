@@ -1,8 +1,9 @@
+
 .. collapse:: Cathode Ray Tube (CRT) Controller (MC6845)
 
    .. csv-table::
-      :header: "Part Number","Packaging","Frequency","Temperature" ,"Notes"
+      :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","Plastic","","",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","Ceramic","","","Engineering Sample"
+      ":material-regular:`verified;2em;sd-text-success` :ref:`XC6845L <XC6845L>`","Ceramic","","",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6845P <MC6845P>`","Plastic","N/A","N/A",""

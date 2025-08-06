@@ -1,0 +1,17 @@
+Peripheral Interface Adapter (MC6821)
+##TOP
+   .. rubric:: Part Numbering
+
+   In addition to the usual part numbers (depicted below) for the MC6821, there are also an additional number of variants.
+
+   .. image:: /images/Hardware/ICs/MC6821/MC6821-ordering.png
+      :width: 400
+      :align: center
+
+   To order these variants, as detailled below, customers were required to add on additional letters to the part number as required.
+
+   .. image:: /images/Hardware/ICs/MC6821/MC6821-variants.png
+      :width: 400
+      :align: center
+
+

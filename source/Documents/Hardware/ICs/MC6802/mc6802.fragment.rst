@@ -1,16 +1,18 @@
-.. collapse::  Microprocessor with Clock and Optional RAM (MC6802)
+
+.. collapse:: Microprocessor with Clock and Optional RAM (MC6802)
+
 
    .. csv-table::
-       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
-       :widths: auto
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
 
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802L <MC6802L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802CL <MC6802CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02L <MC68A02L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02CL <MC68A02CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02L <MC68B02L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802P <MC6802P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802CP <MC6802CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02P <MC68A02P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02CP <MC68B02CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
-       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02P <MC68B02P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02P <MC68A02P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802CL <MC6802CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802L <MC6802L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02CP <MC68B02CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02L <MC68B02L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802P <MC6802P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B02P <MC68B02P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02L <MC68A02L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6802CP <MC6802CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A02CL <MC68A02CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
