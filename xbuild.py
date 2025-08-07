@@ -18,7 +18,7 @@ from textual.validation import Function, Number, ValidationResult, Validator
 class XBuildApp(App[str]):
 
     BINDINGS = [
-        ("M", "manu", "M/F Date"),
+        ("^M", "manu", "M/F Date"),
     ]
     TITLE = "MC6800 Catalogue"
     SUB_TITLE = "Catalogue Maintenance - Andrew Shapton"
@@ -26,11 +26,35 @@ class XBuildApp(App[str]):
 
     def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
         yield from super().get_system_commands(screen)  
+        yield SystemCommand("-Create new product", "", self.createnew)  
         yield SystemCommand("-Get date range from week", "", self.manu)  
 
     def compose(self) -> ComposeResult:
         yield Header()
         yield Footer()
+
+    def removelist(me,removallist):
+        for n in removallist:
+            _ = me.query("#"+n).last().remove()
+
+    def createnew(self) -> ComposeResult:
+        
+        self.mount(Label("Product Name", id="label-product-name"))
+        self.mount(Input(name="product_name", id="product_name", type="text",tooltip="Product name e.g. MC6800 Microprocessor."))
+        self.mount(Label("Product Number", id="label-product-number"))
+        self.mount(Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1)."))
+        self.mount(Label("Type", id="label-product-type"))
+        #product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
+        self.mount(Label("Orphan", id="label-product-orphan"))
+        #orphan = True/False (default to false)
+        self.mount(Label("Comments", id="label-product-comments"))
+        self.mount(Input(name="product_comments", id="product_comments", type="text",tooltip="Any comments to add to the product."))
+        self.mount(Label("Acquired", id="label-product-acquired"))
+        #acquired True/False (default to False)
+        
+        
+        self.mount(Button("Add", id="button-create-new"))
+        
 
     def manu(self) -> ComposeResult:
         
@@ -44,7 +68,9 @@ class XBuildApp(App[str]):
     @on(Button.Pressed)
     def pressed(self,event: Button.Pressed):
         button_id = event.button.id
-        
+        if button_id == "button-create-new":
+            _ = self.removelist(["label-product-name","product_name"])
+
         if button_id == "button-calculate-done":
             _ = self.query("#label-output").last().remove()
             _ = self.query("#button-calculate-done").last().remove()
@@ -1023,10 +1049,31 @@ def do_collection():
             
 
 def do_create():
+    # XXX
     print("Enter the following information:")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
     product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
+    orphan = input("Orphan ? (Y/N): ")
+    comments = input("Comments: ")
+    acquired = input("Acquired ? (Y/N): ")
+    if acquired == "Y":
+        acquired = True
+        index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_date = input("Acquired date (DD-MON-YYYY): ")
+        acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
+    else:
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+    links = input("Links ? (Y/N): ")
+
+    if links == "Y":
+        linkdocument = input("Document Name : ")
+
+    
+    
     dotdot = '../../'
     images = dotdot + 'images/'
     match product_type:
@@ -1059,23 +1106,6 @@ def do_create():
         case _:
             print("Invalid product type")
             exit() 
-    orphan = input("Orphan ? (Y/N): ")
-    comments = input("Comments: ")
-    acquired = input("Acquired ? (Y/N): ")
-    if acquired == "Y":
-        acquired = True
-        index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
-        acquired_date = input("Acquired date (DD-MON-YYYY): ")
-        acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
-    else:
-        acquired = False
-        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
-        acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
-
-    links = input("Links ? (Y/N): ")
-
-    if links == "Y":
-        linkdocument = input("Document Name : ")
 
     OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
     if os.path.exists(OUTPUT_FILE):
@@ -1115,8 +1145,6 @@ def do_create():
             original_document = MOVE + '/' + linkdocument
         
         
-            
-
         target_image = images.replace(dotdot,'source/') + product_number + '.png'
         print('Ready to move.....')
         
