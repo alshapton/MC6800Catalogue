@@ -5,6 +5,102 @@ import os
 
 import ast
 
+
+# TUI imports
+from textual import on
+from textual.app import App, ComposeResult,SystemCommand
+from textual.widgets import Button, Header, Footer, Label, Input
+from textual import events, containers
+from textual.screen import Screen
+from typing import Iterable
+from textual.validation import Function, Number, ValidationResult, Validator
+
+class XBuildApp(App[str]):
+
+    BINDINGS = [
+        ("^M", "manu", "M/F Date"),
+    ]
+    TITLE = "MC6800 Catalogue"
+    SUB_TITLE = "Catalogue Maintenance - Andrew Shapton"
+    CSS_PATH= "xbuild.css"   
+
+    def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
+        yield from super().get_system_commands(screen)  
+        yield SystemCommand("-Create new product", "", self.createnew)  
+        yield SystemCommand("-Get date range from week", "", self.manu)  
+
+    def compose(self) -> ComposeResult:
+        yield Header()
+        yield Footer()
+
+    def removelist(me,removallist):
+        for n in removallist:
+            _ = me.query("#"+n).last().remove()
+
+    def createnew(self) -> ComposeResult:
+        
+        self.mount(Label("Product Name", id="label-product-name"))
+        self.mount(Input(name="product_name", id="product_name", type="text",tooltip="Product name e.g. MC6800 Microprocessor."))
+        self.mount(Label("Product Number", id="label-product-number"))
+        self.mount(Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1)."))
+        self.mount(Label("Type", id="label-product-type"))
+        #product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
+        self.mount(Label("Orphan", id="label-product-orphan"))
+        #orphan = True/False (default to false)
+        self.mount(Label("Comments", id="label-product-comments"))
+        self.mount(Input(name="product_comments", id="product_comments", type="text",tooltip="Any comments to add to the product."))
+        self.mount(Label("Acquired", id="label-product-acquired"))
+        #acquired True/False (default to False)
+        
+        
+        self.mount(Button("Add", id="button-create-new"))
+        
+
+    def manu(self) -> ComposeResult:
+        
+        self.mount(Label("Week Number", id="label-week"))
+        self.mount(Input(name="week", id="week",max_length=2, type="integer",validators=[Number(minimum=1, maximum=53)],tooltip="Week numbers are in two digit format (01->53)."))
+        self.mount(Label("Year", id="label-year"))
+        self.mount(Input(name="year", id="year",max_length=4, type="integer",validators=[Number(minimum=1974, maximum=2025)]))
+        self.mount(Button("Calculate", id="button-calculate"))
+        self.mount(Label("", id="label-output"))
+
+    @on(Button.Pressed)
+    def pressed(self,event: Button.Pressed):
+        button_id = event.button.id
+        if button_id == "button-create-new":
+            _ = self.removelist(["label-product-name","product_name"])
+
+        if button_id == "button-calculate-done":
+            _ = self.query("#label-output").last().remove()
+            _ = self.query("#button-calculate-done").last().remove()
+
+        if button_id == "button-calculate":
+            week = self.query_one("#week").value
+            year = self.query_one("#year").value
+
+            if week and year:
+                # Logic to calculate the date range based on the week number and year
+                firstdate, lastdate =  getDateRangeFromWeek(year,week)
+                output = 'Date Range for week ' + str(week) + ' in year ' + str(year) + ' is from ' + firstdate + ' to ' +  lastdate
+                _ = self.query("#label-week").last().remove()
+                _ = self.query("#week").last().remove()
+                _ = self.query("#label-year").last().remove()
+                _ = self.query("#year").last().remove()
+                _ = self.query("#button-calculate").last().remove()
+
+                label_output = self.query_one("#label-output")
+                label_output.update(output)   
+                self.mount(Button("OK", id="button-calculate-done"))
+            else:
+                self.notify("Please enter a valid week/year number.", severity="error")
+
+    def on_mount(self) -> None:
+        self.screen.styles.background = "darkblue"
+        pass;
+
+ 
+
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
 
@@ -951,10 +1047,31 @@ def do_collection():
             
 
 def do_create():
+    # XXX
     print("Enter the following information:")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
     product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
+    orphan = input("Orphan ? (Y/N): ")
+    comments = input("Comments: ")
+    acquired = input("Acquired ? (Y/N): ")
+    if acquired == "Y":
+        acquired = True
+        index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_date = input("Acquired date (DD-MON-YYYY): ")
+        acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
+    else:
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+    links = input("Links ? (Y/N): ")
+
+    if links == "Y":
+        linkdocument = input("Document Name : ")
+
+    
+    
     dotdot = '../../'
     images = dotdot + 'images/'
     match product_type:
@@ -987,23 +1104,6 @@ def do_create():
         case _:
             print("Invalid product type")
             exit() 
-    orphan = input("Orphan ? (Y/N): ")
-    comments = input("Comments: ")
-    acquired = input("Acquired ? (Y/N): ")
-    if acquired == "Y":
-        acquired = True
-        index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
-        acquired_date = input("Acquired date (DD-MON-YYYY): ")
-        acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
-    else:
-        acquired = False
-        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
-        acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
-
-    links = input("Links ? (Y/N): ")
-
-    if links == "Y":
-        linkdocument = input("Document Name : ")
 
     OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
     if os.path.exists(OUTPUT_FILE):
@@ -1043,8 +1143,6 @@ def do_create():
             original_document = MOVE + '/' + linkdocument
         
         
-            
-
         target_image = images.replace(dotdot,'source/') + product_number + '.png'
         print('Ready to move.....')
         
@@ -1055,10 +1153,16 @@ def do_create():
         movefile(original_image, target_image)
         print('Moved images and source data')
 
-
     return index_entry
     
 
+def tui():
+    # Start TUI
+    app = XBuildApp()
+    app.run()
+    exit()
+
+tui()
 
 
 while True:
@@ -1073,7 +1177,6 @@ while True:
     type = input('Enter choice: ')
     match type:
         case "1":
-
             #Get year and week from user
             y = input('Enter year: ')
             w = input('Enter week: ')
@@ -1087,8 +1190,7 @@ while True:
         case "3":
             create_new_group_index()
         case "4":
-            create_new_group_from_index()
-        
+            create_new_group_from_index()        
         case "0":
             update_carousel()
             update_IC_pre_fragments()
@@ -1100,10 +1202,8 @@ while True:
             os.system("make clean html")
         case "5":
             update_storage()
-            #os.system("make clean html")
         case "6":
             update_carousel()
-            #os.system("make clean html")
         
         case "X":
             print('Exiting')
@@ -1112,48 +1212,6 @@ while True:
             print('Exiting')
             exit()
 
-        case "y":
-            # Temporary script to align all acquired headers
-            yfiles = glob.glob('**/*.rst', recursive=True)
-            for yfile in yfiles:
-                candidate=False
-                with open(yfile) as f:
-                    lines = f.readlines()
-                    for line in lines:
-                        if line.upper().find(':header: "Component","Datasheet"'.upper()) >0 :
-                            candidate=True
-                if candidate:
-                    print(yfile , ' needs updating')
-                    with open(yfile + '.new', "w") as cf:
-                        c=0
-                        for line in lines:
-                            if line.upper().find(':header: "Component","Datasheet"'.upper()) >0 :
-                                cf.write('   :header: "Acquired"\n')
-                                c=1
-                            else:
-                                if c==0:
-                                    cf.write(line)
-                                else:
-                                    if c==1:
-                                        cf.write(line)
-                                        c=2
-                                    else:
-                                        if c==2:
-                                            c=3  
-                                        else:
-                                            if c==3:
-                                                splitline=line.split(',')
-                                                c=4
-                                            else:
-                                                if c==4:
-                                                    cf.write('\n'+splitline[0]+'\n\n')
-                                                    c=0
-                    movefile(yfile + '.new', yfile)            
-            print('Exiting')
-        case "z":
-            update_IC_pre_fragments()
-            print('Exiting here')
-            exit()
         case _:
             print('Invalid choice')
             
