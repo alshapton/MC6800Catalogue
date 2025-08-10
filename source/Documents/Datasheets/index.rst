@@ -16,6 +16,8 @@ DataSheets
    ":material-regular:`verified;2em;sd-text-success` :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":material-regular:`lock_open;2em;sd-text-danger`","Preliminary April 30 1978"
    ":ref:`MEX6812-1 <DS-MEX6812-1>`","MEX6812-1 2K Static RAM Module","Advance Information"
    ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module",""
+   ":ref:`MEX6800 <MEX6800>`","MPU Module",":material-regular:`lock_open;2em;sd-text-danger`","Advance Information"
+   
 
 .. rubric:: Integrated Circuits
 

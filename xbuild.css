@@ -18,3 +18,26 @@
 #button-calculate-done {
     margin-left: 20;
 }
+#product-acquired-date {
+    width: 20;
+}
+#product-type-select {
+    width: 30;
+}
+#product_name {
+    width: 85;
+    margin-left: 4;
+}
+#product_number {
+    width: 43;
+    margin-left: 4;
+}
+
+#product-comments {
+    width: 85;
+    margin-left: 4;
+}
+#product-link-document-name {
+    width: 50;
+}
+

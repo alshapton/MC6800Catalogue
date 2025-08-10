@@ -4,60 +4,146 @@ import glob
 import os
 
 import ast
+from xbuild_support.functions import *
+from xbuild_support.file_utilities import *
+
+CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
+CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
+IN_TRANSIT=':material-regular:`local_shipping;2em`'
+IN_TRANSIT_SHORT='local_shipping'
+
+OSSEP=os.sep
+
+PREFIX ='source/'
+SUFFIX = 'rst'
+
+OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
+TRANSIT_FILE = PREFIX + 'transit.' + SUFFIX
+
+
+MOVE='tmp/move'
+CAROUSEL='carousel'
+NEW_GROUP_TMP_LOC='tmp/'
+IC_LOCATIONS = 'source/Documents/Hardware/ICs'
 
 
 # TUI imports
 from textual import on
 from textual.app import App, ComposeResult,SystemCommand
-from textual.widgets import Button, Header, Footer, Label, Input
+from textual.binding import Binding
+from textual.widgets import Button, Header, Footer, Label, Input, Select, Switch
 from textual import events, containers
+from textual.containers import Horizontal
 from textual.screen import Screen
 from typing import Iterable
 from textual.validation import Function, Number, ValidationResult, Validator
 
+
+def convert_tui_type_to_doc_type(product_type,dotdot):
+    
+    images = dotdot + 'images/'
+    match product_type:
+        case "Application Note":
+            location = "Documents/ApplicationNotes"
+        case "Reference":
+            location = "Documents/Reference"
+            images = dotdot + 'images/Reference/'
+        case "Datasheet":
+            location = "Documents/Datasheets"
+            images = dotdot + 'images/DataSheets/'
+        case "Reference Card":
+            location = "Documents/ReferenceCards"
+        case "Monitor":
+            location = "Software/Monitors"
+        case "Manual":
+            location = "Documents/Manuals"            
+            images = dotdot + 'images/Manuals/'
+        case "Generic":
+            location = "Documents/Generic"
+        case "IC":
+            location = "Documents/Hardware/ICs"   
+            images = dotdot + 'images/Hardware/ICs/'
+        case "EXORciser hardware":
+            location = "Documents/Hardware/EXORciser"
+            images = dotdot + 'images/Hardware/EXORciser/'
+        case "Other hardware":
+            location = "Documents/Hardware/Other"
+            images = dotdot + 'images/Hardware/Other/'
+
+    return location, images
+    
+class NewScreen(Screen):
+
+    def on_mount(self) -> None:
+            self.screen.styles.background = "darkgreen"
+
+    def compose(self) -> ComposeResult:
+        PRODUCTTYPE = """Application Note
+Datasheet
+EXORciser hardware
+Generic
+IC
+Manual
+Monitor
+Reference
+Reference Card
+Other hardware
+        """.splitlines()
+                
+        yield Label("\nProduct Name", id="label-product-name")
+        yield Input(name="product_name", id="product_name", type="text",tooltip="Product name e.g. MC6800 Microprocessor.")
+        yield Label("Product Number", id="label-product-number")
+        yield Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1).")
+        yield Label(" ")
+        yield Horizontal(Label("\nType", id="label-product-type"),
+                         Select(((line, line) for line in PRODUCTTYPE),id="product-type-select",tooltip="Select the type of product from the list."),
+                         Label("\nOrphan",id="product-orphan-name"),
+                         Switch(id="product-orphan",value=True),
+                         Label("\n Acquired",name="product-acquired-name"),
+                         Switch(id="product-acquired",value=True),
+                         Input("Date",id="product-acquired-date"))
+        yield Label("Comments", id="label-product-comments")
+        yield Input(name="product-comments", id="product-comments", type="text",tooltip="Any comments to add to the product.")
+        yield Label(" ")
+        
+        yield Horizontal(Label("\nLink",id="product-links-name"),Switch(id="product-links",value=True),Input("Name",id="product-link-document-name"),Label("        "),Button("Add", id="button-create-new"))
+
+        
+    
 class XBuildApp(App[str]):
 
+    SCREENS = {
+        'newproduct': NewScreen,
+    }
+    
     BINDINGS = [
-        ("^M", "manu", "M/F Date"),
+        Binding(key="c", action="newproduct", description="Create new product"),
+        Binding(key="m", action="manu", description="M/F Date"),
     ]
+
     TITLE = "MC6800 Catalogue"
     SUB_TITLE = "Catalogue Maintenance - Andrew Shapton"
     CSS_PATH= "xbuild.css"   
 
     def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
         yield from super().get_system_commands(screen)  
-        yield SystemCommand("-Create new product", "", self.createnew)  
-        yield SystemCommand("-Get date range from week", "", self.manu)  
+        yield SystemCommand("-Create new product", "", self.action_createnew)  
+        yield SystemCommand("-Get date range from week", "", self.action_manu)  
 
     def compose(self) -> ComposeResult:
-        yield Header()
+        yield Header(show_clock=True)
         yield Footer()
 
     def removelist(me,removallist):
         for n in removallist:
             _ = me.query("#"+n).last().remove()
 
-    def createnew(self) -> ComposeResult:
-        
-        self.mount(Label("Product Name", id="label-product-name"))
-        self.mount(Input(name="product_name", id="product_name", type="text",tooltip="Product name e.g. MC6800 Microprocessor."))
-        self.mount(Label("Product Number", id="label-product-number"))
-        self.mount(Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1)."))
-        self.mount(Label("Type", id="label-product-type"))
-        #product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
-        self.mount(Label("Orphan", id="label-product-orphan"))
-        #orphan = True/False (default to false)
-        self.mount(Label("Comments", id="label-product-comments"))
-        self.mount(Input(name="product_comments", id="product_comments", type="text",tooltip="Any comments to add to the product."))
-        self.mount(Label("Acquired", id="label-product-acquired"))
-        #acquired True/False (default to False)
-        
-        
-        self.mount(Button("Add", id="button-create-new"))
-        
+            
+    def action_newproduct(self) -> ComposeResult:
+        self.push_screen("newproduct")
 
-    def manu(self) -> ComposeResult:
-        
+
+    def action_manu(self) -> ComposeResult:
         self.mount(Label("Week Number", id="label-week"))
         self.mount(Input(name="week", id="week",max_length=2, type="integer",validators=[Number(minimum=1, maximum=53)],tooltip="Week numbers are in two digit format (01->53)."))
         self.mount(Label("Year", id="label-year"))
@@ -69,8 +155,97 @@ class XBuildApp(App[str]):
     def pressed(self,event: Button.Pressed):
         button_id = event.button.id
         if button_id == "button-create-new":
-            _ = self.removelist(["label-product-name","product_name"])
+            product_name = self.query_one("#product_name").value
+            product_number = self.query_one("#product_number").value
+            product_type='N/A'
+            product_type = self.query_one("#product-type-select").value
+            
+            product_comments = self.query_one("#product-comments").value
+            product_orphan='N/A'
+            product_acquired='N/A'
+            product_orphan = self.query_one("#product-orphan").value
+            product_acquired = self.query_one("#product-acquired").value
+            
+            product_acquired_date = self.query_one("#product-acquired-date").value  
+            product_link_name = self.query_one("#product-link-document-name").value          
 
+            product_info = ""
+            product_info += 'Product Name: ' + product_name + '\n'
+            product_info += 'Product Number: ' + product_number + '\n'
+            product_info += 'Product Type: ' + product_type + '\n'
+            product_info += 'Orphan: ' + str(product_orphan) + '\n'
+            product_info += 'Acquired: ' + str(product_acquired) + '\n'
+            product_info += 'Acquired Date: ' + str(product_acquired_date) + '\n'
+            product_info += 'Comments: ' + product_comments + '\n'
+            product_info += 'Link: ' + str(self.query_one("#product-links").value) + '\n'
+            product_info += 'LinkName: ' + str(product_link_name) + '\n'
+            dotdot = '../../'
+            location, images=convert_tui_type_to_doc_type(product_type,dotdot)
+            product_info += 'Location: ' + location + '\n'
+            product_info += 'Images: ' + images + '\n'  
+
+            if str(product_acquired) == 'True':
+                index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
+                acquired_status=":material-regular:`verified;2em;sd-text-success` " + product_acquired_date + "\n\n"
+            else:
+                index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
+                acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+            product_info += 'index entry: ' + index_entry + '\n'
+            product_info += 'acquired status: ' + acquired_status + '\n'
+
+            self.notify(product_info, severity="error")
+        
+            OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
+            if os.path.exists(OUTPUT_FILE):
+                self.notify(f"File {OUTPUT_FILE} already exists", severity="error")
+                
+            else:    
+                self.notify(f"Creating file {OUTPUT_FILE}", severity="information")
+                with open(OUTPUT_FILE,"w") as c:
+                    if str(product_orphan) == "True":
+                        c.write(':orphan:\n\n')
+                    c.write('.. _' + product_number + ':\n\n')
+                    c.write(product_name + '\n')
+                    for i in product_name:
+                        c.write('=')
+                    c.write('\n\n')
+                    original_image = MOVE + '/' + product_number + '.png'
+                    if not os.path.exists(original_image):
+                        c.write('.. image:: '+ images + '/NOIMAGE.png\n')
+                    else:
+                        c.write('.. image:: '+ images + product_number + '.png\n')
+                    c.write('   :width: 400\n')
+                    c.write('   :align: center\n\n')
+                    c.write('.. rubric:: Collection Information\n\n')
+                    c.write('.. csv-table:: \n')
+                    c.write('   :header: "Acquired"\n')
+                    c.write('   :widths: auto\n\n')     
+
+                    c.write('   ' + acquired_status)
+
+                    original_document = ''
+                    if str(self.query_one("#product-links").value) == "True":
+                        c.write('\n\n.. rubric:: Links\n\n')
+                        target_document =  dotdot + '_static/' + location + "/"+ str(product_link_name)
+                        c.write(":download:`" + product_name + " <" + target_document+ ">`")
+                        original_document = MOVE + '/' + str(product_link_name)
+                    
+                    
+                    target_image = images.replace(dotdot,'source/') + product_number + '.png'
+                    self.notify("Ready to move.....", severity="information")
+                    
+                    if str(self.query_one("#product-links").value) =="True":
+                        target_document =  "source/_static/" + location + "/"+ str(product_link_name)
+                        movefile(original_document, target_document)
+                        
+                    movefile(original_image, target_image)
+                    self.notify("Moved Images and source data", severity="information")
+
+
+
+
+        
         if button_id == "button-calculate-done":
             _ = self.query("#label-output").last().remove()
             _ = self.query("#button-calculate-done").last().remove()
@@ -101,27 +276,6 @@ class XBuildApp(App[str]):
 
  
 
-from xbuild_support.functions import *
-from xbuild_support.file_utilities import *
-
-CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
-CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
-IN_TRANSIT=':material-regular:`local_shipping;2em`'
-IN_TRANSIT_SHORT='local_shipping'
-
-OSSEP=os.sep
-
-PREFIX ='source/'
-SUFFIX = 'rst'
-
-OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
-TRANSIT_FILE = PREFIX + 'transit.' + SUFFIX
-
-
-MOVE='tmp/move'
-CAROUSEL='carousel'
-NEW_GROUP_TMP_LOC='tmp/'
-IC_LOCATIONS = 'source/Documents/Hardware/ICs'
 
 
 def get_loc(file):
@@ -1072,8 +1226,6 @@ def do_create():
     if links == "Y":
         linkdocument = input("Document Name : ")
 
-    
-    
     dotdot = '../../'
     images = dotdot + 'images/'
     match product_type:
@@ -1164,7 +1316,7 @@ def tui():
     app.run()
     exit()
 
-tui()
+#tui()
 
 
 while True:
