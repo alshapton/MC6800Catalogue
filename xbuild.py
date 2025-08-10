@@ -383,16 +383,14 @@ def create_new_group_from_index():
             endref=line.find('>')
             lengthref=endref - startref
             chip=line[startref+1:endref]
-            print(startref,endref)
-            print(chip)
+            
             new_file_name = '@' + chip + '.rst'
             new_file = os.path.join(NEW_LOC, new_file_name)
             
-            print(new_file)
             if startref == -1 and endref == -1:
                 pass
             else:
-                print(line)
+                
                 info=line.split(',')
                 packaging=info[1].strip()
                 frequency=info[2].strip()
@@ -419,9 +417,9 @@ def create_new_group_from_index():
                     c.write('   "Notes",""\n\n\n')
                     c.write('.. rubric:: Collection Information\n\n')
                     c.write('.. csv-table:: \n')
-                    c.write('   :header: "Component","Datasheet"\n') 
+                    c.write('   :header: "Component"\n') 
                     c.write('   :widths: auto\n\n')
-                    c.write('   "'+ CROSS_MARK + '","' + CROSS_MARK + '"\n')
+                    c.write('   "'+ CROSS_MARK + '"\n')
                     ds = ds.replace('XXXX', group_name)
                     c.write(ds)
 
