@@ -2,9 +2,7 @@
 
 Collection
 ===========
-
-This is the current collection (as at 10-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
-
+This is the current collection (as at 11-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -25,6 +23,9 @@ This is the current collection (as at 10-08-2025) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`DS-M68EML <DS-M68EML>`","M6800 Simulator",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`DS-MPL-COMPILER <DS-MPL-COMPILER>`","MPL Compiler Datasheet",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1",":ref:`Folder 2 <2_map_reference>`"
@@ -150,6 +151,7 @@ This is the current collection (as at 10-08-2025) of the items produced by Motor
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <M6800-DOCUMENTATION-BROCHURE>`","Documentation Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`","M6800 Time Sharing Systems Software Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"

@@ -19,4 +19,4 @@ EXORciser MPU Module
 
 .. rubric:: Links
 
-:download:`EXORciser MPU Module <../../_static/Documents/Datasheets/MEX6800.pdf>`
+:download:`EXORciser MPU Module <../../_static/Documents/Datasheets/DS-MEX6800.pdf>`

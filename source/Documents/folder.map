@@ -73,12 +73,15 @@
 
     :ref:`Documentation Brochure <M6800-DOCUMENTATION-BROCHURE>`,""
     :ref:`M6800 Co-Resident Software Datasheet <DS-M6800-Res-Software>`,""
+    :ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`,""
     :ref:`M6800 EXORdisk Brochure <M6800EXORDISK-BROCHURE>`,""
     :ref:`M6800 EXORtape Brochure <M6800EXORTAPE-BROCHURE>`,""
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,""
     :ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`,""
     :ref:`M6800 Resident Software Brochure <M6800-RESIDENT-SOFTWARE-BROCHURE>`,""
+    :ref:`M6800 Simulator Datasheet <DS-M68EML>`,""
     :ref:`M6800 Software for In-House-Computers Brochure <M6800SOFTWARE-IN-HOUSE-BROCHURE>`,""
+    :ref:`M6800 Time Sharing Systems Software Brochure <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`,""
     :ref:`M6800B Evaluation Module II Brochure <M6800B-BROCHURE>`,""
     :ref:`M68BASR010 Resident BASIC Interpreter Brochure <M68BASR010-BROCHURE>`,""
     :ref:`M68FTNR10D Resident FORTRAN Compiler Brochure <M68FTNR10D-BROCHURE>`,""
@@ -94,6 +97,7 @@
     :ref:`MEX68SA Systems Analyzer Brochure <MEX68SA-BROCHURE>`,""
     :ref:`MEX68USE User System Evaluator (USE) Brochure <MEX68USE-BROCHURE>`,""
     :ref:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <MEX68WW-MEX68XT-BROCHURE>`,""
+    :ref:`MPL Compiler Datasheet <DS-MPL-COMPILER>`,""
 
 
 .. _Microprocessor_Course_map_reference:

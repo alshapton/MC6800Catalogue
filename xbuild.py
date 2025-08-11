@@ -2,7 +2,7 @@ import time
 
 import glob
 import os
-
+import sys
 import ast
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
@@ -34,7 +34,7 @@ from textual.binding import Binding
 from textual.widgets import Button, Header, Footer, Label, Input, Select, Switch
 from textual import events, containers
 from textual.containers import Horizontal
-from textual.screen import Screen
+from textual.screen import Screen, ModalScreen
 from typing import Iterable
 from textual.validation import Function, Number, ValidationResult, Validator
 
@@ -72,7 +72,20 @@ def convert_tui_type_to_doc_type(product_type,dotdot):
 
     return location, images
     
+
+class NewIndexModal(ModalScreen):
+
+    def __init__(self,IDX_ENTRY):
+        self.IDX_ENTRY = IDX_ENTRY
+        super().__init__()
+
+    def compose(self) -> ComposeResult:
+        yield Label(self.IDX_ENTRY, id="modal-index-entry-created")
+        yield Button("OK", id="modal-button-close-index")
+
+
 class NewScreen(Screen):
+
 
     def on_mount(self) -> None:
             self.screen.styles.background = "darkgreen"
@@ -108,7 +121,6 @@ Other hardware
         
         yield Horizontal(Label("\nLink",id="product-links-name"),Switch(id="product-links",value=True),Input("Name",id="product-link-document-name"),Label("        "),Button("Add", id="button-create-new"))
 
-        
     
 class XBuildApp(App[str]):
 
@@ -154,6 +166,10 @@ class XBuildApp(App[str]):
     @on(Button.Pressed)
     def pressed(self,event: Button.Pressed):
         button_id = event.button.id
+        if button_id == "modal-button-close-index":
+            self.pop_screen()
+            self.pop_screen()
+            
         if button_id == "button-create-new":
             product_name = self.query_one("#product_name").value
             product_number = self.query_one("#product_number").value
@@ -169,20 +185,9 @@ class XBuildApp(App[str]):
             product_acquired_date = self.query_one("#product-acquired-date").value  
             product_link_name = self.query_one("#product-link-document-name").value          
 
-            product_info = ""
-            product_info += 'Product Name: ' + product_name + '\n'
-            product_info += 'Product Number: ' + product_number + '\n'
-            product_info += 'Product Type: ' + product_type + '\n'
-            product_info += 'Orphan: ' + str(product_orphan) + '\n'
-            product_info += 'Acquired: ' + str(product_acquired) + '\n'
-            product_info += 'Acquired Date: ' + str(product_acquired_date) + '\n'
-            product_info += 'Comments: ' + product_comments + '\n'
-            product_info += 'Link: ' + str(self.query_one("#product-links").value) + '\n'
-            product_info += 'LinkName: ' + str(product_link_name) + '\n'
             dotdot = '../../'
             location, images=convert_tui_type_to_doc_type(product_type,dotdot)
-            product_info += 'Location: ' + location + '\n'
-            product_info += 'Images: ' + images + '\n'  
+            
 
             if str(product_acquired) == 'True':
                 index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
@@ -191,16 +196,14 @@ class XBuildApp(App[str]):
                 index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
                 acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
-            product_info += 'index entry: ' + index_entry + '\n'
-            product_info += 'acquired status: ' + acquired_status + '\n'
 
-            self.notify(product_info, severity="error")
-        
+
             OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
             if os.path.exists(OUTPUT_FILE):
                 self.notify(f"File {OUTPUT_FILE} already exists", severity="error")
                 
             else:    
+
                 self.notify(f"Creating file {OUTPUT_FILE}", severity="information")
                 with open(OUTPUT_FILE,"w") as c:
                     if str(product_orphan) == "True":
@@ -240,6 +243,14 @@ class XBuildApp(App[str]):
                         movefile(original_document, target_document)
                         
                     movefile(original_image, target_image)
+
+                    NEWIDXFILE=MOVE + OSSEP + product_number + '.new.index'
+
+                    with open(NEWIDXFILE,"w") as i_f:
+                        i_f.write(index_entry)
+
+                    self.push_screen(NewIndexModal("Your new index entry is in " + NEWIDXFILE))
+
                     self.notify("Moved Images and source data", severity="information")
 
 
@@ -1314,9 +1325,18 @@ def tui():
     app.run()
     exit()
 
-#tui()
 
 
+
+if (len(sys.argv))==3:
+    interface = sys.argv[2]
+
+    if interface == "tui":
+        tui()
+    else:
+        print("command line interface")
+else:
+        print("command line interface")
 while True:
     print('\t1. Get date range from week')
     print('\t2. Create new entry')

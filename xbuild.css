@@ -41,3 +41,8 @@
     width: 50;
 }
 
+NewIndexModal {
+    width: auto;
+    height: auto;
+    align: center middle;
+}

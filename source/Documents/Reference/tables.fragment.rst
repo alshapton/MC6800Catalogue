@@ -22,6 +22,7 @@
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SOFTWARE-IN-HOUSE-BROCHURE>`","M6800 Software for In-House-Computers Brochure",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`","M6800 Time Sharing Systems Software Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",""
