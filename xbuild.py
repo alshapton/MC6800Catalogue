@@ -73,19 +73,134 @@ def convert_tui_type_to_doc_type(product_type,dotdot):
     return location, images
     
 
-class NewIndexModal(ModalScreen):
+class FinalModal(ModalScreen):
 
-    def __init__(self,IDX_ENTRY):
-        self.IDX_ENTRY = IDX_ENTRY
+    def __init__(self,TEXT):
+        self.TEXT = TEXT
         super().__init__()
 
     def compose(self) -> ComposeResult:
-        yield Label(self.IDX_ENTRY, id="modal-index-entry-created")
-        yield Button("OK", id="modal-button-close-index")
+        yield Label(self.TEXT, id="final-created")
+        yield Button("OK", id="final-close-index")
+
+
+class ConvertStatus(Screen):
+
+    GFILENAME=''
+
+    def on_mount(self) -> None:
+        _ = self.query_one("#product-status").disabled = True
+        _ = self.query_one("#button-update-status").disabled = True
+        self.screen.styles.background = "grey"
+
+    def compose(self) -> ComposeResult:
+        PRODUCTTYPE = """Application Note
+Datasheet
+EXORciser hardware
+Generic
+IC
+Manual
+Monitor
+Reference
+Reference Card
+Other hardware
+        """.splitlines()
+
+        STATUSES = """Acquired
+In Transit
+Not Acquired
+        """.splitlines()
+        yield Label(" ")
+        yield Label("", id="label-filename")
+
+        yield Horizontal(Label("\nProduct Type      ", id="label-product-type"),
+                    Select(((line, line) for line in PRODUCTTYPE),id="product-type-select",tooltip="Select the type of product from the list."))
+       
+        yield Horizontal(Label("\nProduct Number",id="product_number_label"),  
+                         Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1)."),Label(" ",id="label-product_status"))
+                     
+        yield Horizontal(Label("Status        ", id="label-product-status"),
+                         Select(((line, line) for line in STATUSES),id="product-status",tooltip="Select the status from the list."),
+                         Input(id="product-acquired-date", type="text",tooltip="Acquisition Date"))
+
+
+        yield Horizontal(Label("        "),Button("Change", id="button-update-status"))
+
+    @on(Button.Pressed)
+    def pressed(self,event: Button.Pressed):
+        button_id = event.button.id
+
+        if button_id == "button-update-status":
+            product_filename=self.query_one("#label-filename")
+            product_target_status = self.query_one("#product-status").value
+            if product_target_status == "Acquired":
+                
+                acquired_date = self.query_one("#product-acquired-date").value
+                NEWSTATUS=CHECK_MARK  + " " + acquired_date
+            if product_target_status == "Not Acquired":
+                NEWSTATUS=CROSS_MARK
+            if product_target_status == "In Transit":
+                NEWSTATUS=IN_TRANSIT
+            product_filename=self.GFILENAME
+
+            with open(product_filename ,"r") as o:
+                lines = o.readlines()
+
+            new_filename = product_filename + ".update"
+            with open(new_filename ,"w") as n:
+                for line in lines:
+                    if line.find(":material-regular:") > 0:
+                        n.write('   '+ NEWSTATUS +'\n')
+                    else:
+                        n.write(line)
+            self.notify(f"You may wish to check the file {new_filename} to be sure.", severity="error")
+
+
+    @on(Input.Submitted)
+    def get_product_number(self):
+        product_number = self.query_one("#product_number").value
+        product_type = self.query_one("#product-type-select").value
+        dotdot = '../../'
+        location, _=convert_tui_type_to_doc_type(product_type,dotdot)
+        product_status = self.query_one("#label-product_status")
+        _ = self.query_one("#product-status").disabled = True
+        _ = self.query_one("#button-update-status").disabled = True
+        product_status.update("")
+
+        if product_type == "IC":
+            filename = PREFIX + location + OSSEP + product_number[:-1]+ OSSEP + '@' + product_number + '.rst'
+        else:
+            filename = PREFIX + location + OSSEP + '@' + product_number + '.rst'
+        self.GFILENAME=filename
+        if not os.path.exists(filename):
+                self.notify(f"The file for product {product_number} can't be found, manual intervention is required.", severity="error")
+        else:    
+            statusoutput=''
+            product_status.styles.color = "grey"
+            _ = self.query_one("#product-status").disabled = False
+            _ = self.query_one("#button-update-status").disabled = False
+
+            with open(filename) as f:
+                for line in f:
+                    if line.find(":material-regular:") > 0:
+                        statusline = line
+                        if statusline.find(CHECK_MARK) > 0:
+                            statusoutput="   Acquired   "
+                            product_status.styles.color = "black"
+                            product_status.styles.background = "green"
+                        if statusline.find(CROSS_MARK)> 0:
+                            statusoutput=" Not Acquired "
+                            product_status.styles.color = "black"    
+                            product_status.styles.background = "red"
+                        if statusline.find(IN_TRANSIT_SHORT)> 0:
+                            statusoutput="  In Transit  "
+                            product_status.styles.color = "black"
+                            product_status.styles.background = "yellow"
+            statusoutput = '\n' + statusoutput +'\n'
+            product_status.update(statusoutput)                       
 
 
 class NewScreen(Screen):
-
 
     def on_mount(self) -> None:
             self.screen.styles.background = "darkgreen"
@@ -126,11 +241,13 @@ class XBuildApp(App[str]):
 
     SCREENS = {
         'newproduct': NewScreen,
+        'convertstatus': ConvertStatus,
     }
     
     BINDINGS = [
         Binding(key="c", action="newproduct", description="Create new product"),
         Binding(key="m", action="manu", description="M/F Date"),
+        Binding(key="s", action="convertstatus",description="Change item's status")
     ]
 
     TITLE = "MC6800 Catalogue"
@@ -139,8 +256,8 @@ class XBuildApp(App[str]):
 
     def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
         yield from super().get_system_commands(screen)  
-        yield SystemCommand("-Create new product", "", self.action_createnew)  
-        yield SystemCommand("-Get date range from week", "", self.action_manu)  
+        yield SystemCommand("Create new product", "", self.action_createnew)  
+        yield SystemCommand("Get date range from week", "", self.action_manu)  
 
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
@@ -154,6 +271,8 @@ class XBuildApp(App[str]):
     def action_newproduct(self) -> ComposeResult:
         self.push_screen("newproduct")
 
+    def action_convertstatus(self) -> ComposeResult:
+        self.push_screen("convertstatus")
 
     def action_manu(self) -> ComposeResult:
         self.mount(Label("Week Number", id="label-week"))
@@ -166,10 +285,12 @@ class XBuildApp(App[str]):
     @on(Button.Pressed)
     def pressed(self,event: Button.Pressed):
         button_id = event.button.id
-        if button_id == "modal-button-close-index":
+        if button_id == "final-close-index":
             self.pop_screen()
             self.pop_screen()
             
+
+
         if button_id == "button-create-new":
             product_name = self.query_one("#product_name").value
             product_number = self.query_one("#product_number").value
@@ -249,13 +370,15 @@ class XBuildApp(App[str]):
                     with open(NEWIDXFILE,"w") as i_f:
                         i_f.write(index_entry)
 
-                    self.push_screen(NewIndexModal("Your new index entry is in " + NEWIDXFILE))
+                    self.push_screen(FinalModal("Your new index entry is in " + NEWIDXFILE))
 
                     self.notify("Moved Images and source data", severity="information")
 
 
 
-
+        if button_id == "button-create-new":
+            product_name = self.query_one("#product_name").value
+         
         
         if button_id == "button-calculate-done":
             _ = self.query("#label-output").last().remove()

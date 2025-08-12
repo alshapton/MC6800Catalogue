@@ -41,8 +41,18 @@
     width: 50;
 }
 
-NewIndexModal {
+#product-status {
+    width: 30;
+    margin-left: 4;
+}
+FinalModal {
     width: auto;
     height: auto;
     align: center middle;
 }
+
+#button-update-status {
+    margin-left: 11;
+}
+
+

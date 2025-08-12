@@ -2,8 +2,8 @@
 
 .. _MEX6800:
 
-EXORciser MPU Module
-====================
+EXORciser MPU Module Datasheet
+==============================
 
 .. image:: ../../images/DataSheets/MEX6800.png
    :width: 400
