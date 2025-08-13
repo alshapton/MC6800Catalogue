@@ -28,17 +28,33 @@ IC_LOCATIONS = 'source/Documents/Hardware/ICs'
 
 
 # TUI imports
-from textual import on
+from textual import on,events, containers
 from textual.app import App, ComposeResult,SystemCommand
 from textual.binding import Binding
-from textual.widgets import Button, Header, Footer, Label, Input, Select, Switch
-from textual import events, containers
 from textual.containers import Horizontal
 from textual.screen import Screen, ModalScreen
-from typing import Iterable
 from textual.validation import Function, Number, ValidationResult, Validator
+from textual.widgets import Button, Header, Footer, Label, Input, Select, Switch
+
+from typing import Iterable
+
+PRODUCTTYPE = """Application Note
+Datasheet
+EXORciser hardware
+Generic
+IC
+Manual
+Monitor
+Reference
+Reference Card
+Other hardware""".splitlines()
 
 
+STATUSES = """Acquired
+In Transit
+Not Acquired""".splitlines()
+
+        
 def convert_tui_type_to_doc_type(product_type,dotdot):
     
     images = dotdot + 'images/'
@@ -83,6 +99,12 @@ class FinalModal(ModalScreen):
         yield Label(self.TEXT, id="final-created")
         yield Button("OK", id="final-close-index")
 
+    @on(Button.Pressed)
+    def pressed(self,event: Button.Pressed):
+        button_id = event.button.id
+        if button_id == "final-close-index":
+            self.pop_screen()
+            self.pop_screen()
 
 class ConvertStatus(Screen):
 
@@ -94,36 +116,15 @@ class ConvertStatus(Screen):
         self.screen.styles.background = "grey"
 
     def compose(self) -> ComposeResult:
-        PRODUCTTYPE = """Application Note
-Datasheet
-EXORciser hardware
-Generic
-IC
-Manual
-Monitor
-Reference
-Reference Card
-Other hardware
-        """.splitlines()
-
-        STATUSES = """Acquired
-In Transit
-Not Acquired
-        """.splitlines()
         yield Label(" ")
         yield Label("", id="label-filename")
-
         yield Horizontal(Label("\nProduct Type      ", id="label-product-type"),
                     Select(((line, line) for line in PRODUCTTYPE),id="product-type-select",tooltip="Select the type of product from the list."))
-       
         yield Horizontal(Label("\nProduct Number",id="product_number_label"),  
                          Input(name="product_number", id="product_number", type="text",tooltip="Product number e.g. MCPRECR(D1)."),Label(" ",id="label-product_status"))
-                     
         yield Horizontal(Label("Status        ", id="label-product-status"),
                          Select(((line, line) for line in STATUSES),id="product-status",tooltip="Select the status from the list."),
                          Input(id="product-acquired-date", type="text",tooltip="Acquisition Date"))
-
-
         yield Horizontal(Label("        "),Button("Change", id="button-update-status"))
 
     @on(Button.Pressed)
@@ -134,7 +135,6 @@ Not Acquired
             product_filename=self.query_one("#label-filename")
             product_target_status = self.query_one("#product-status").value
             if product_target_status == "Acquired":
-                
                 acquired_date = self.query_one("#product-acquired-date").value
                 NEWSTATUS=CHECK_MARK  + " " + acquired_date
             if product_target_status == "Not Acquired":
@@ -142,10 +142,8 @@ Not Acquired
             if product_target_status == "In Transit":
                 NEWSTATUS=IN_TRANSIT
             product_filename=self.GFILENAME
-
             with open(product_filename ,"r") as o:
                 lines = o.readlines()
-
             new_filename = product_filename + ".update"
             with open(new_filename ,"w") as n:
                 for line in lines:
@@ -166,7 +164,6 @@ Not Acquired
         _ = self.query_one("#product-status").disabled = True
         _ = self.query_one("#button-update-status").disabled = True
         product_status.update("")
-
         if product_type == "IC":
             filename = PREFIX + location + OSSEP + product_number[:-1]+ OSSEP + '@' + product_number + '.rst'
         else:
@@ -179,7 +176,6 @@ Not Acquired
             product_status.styles.color = "grey"
             _ = self.query_one("#product-status").disabled = False
             _ = self.query_one("#button-update-status").disabled = False
-
             with open(filename) as f:
                 for line in f:
                     if line.find(":material-regular:") > 0:
@@ -206,18 +202,7 @@ class NewScreen(Screen):
             self.screen.styles.background = "darkgreen"
 
     def compose(self) -> ComposeResult:
-        PRODUCTTYPE = """Application Note
-Datasheet
-EXORciser hardware
-Generic
-IC
-Manual
-Monitor
-Reference
-Reference Card
-Other hardware
-        """.splitlines()
-                
+        
         yield Label("\nProduct Name", id="label-product-name")
         yield Input(name="product_name", id="product_name", type="text",tooltip="Product name e.g. MC6800 Microprocessor.")
         yield Label("Product Number", id="label-product-number")
@@ -236,60 +221,9 @@ Other hardware
         
         yield Horizontal(Label("\nLink",id="product-links-name"),Switch(id="product-links",value=True),Input("Name",id="product-link-document-name"),Label("        "),Button("Add", id="button-create-new"))
 
-    
-class XBuildApp(App[str]):
-
-    SCREENS = {
-        'newproduct': NewScreen,
-        'convertstatus': ConvertStatus,
-    }
-    
-    BINDINGS = [
-        Binding(key="c", action="newproduct", description="Create new product"),
-        Binding(key="m", action="manu", description="M/F Date"),
-        Binding(key="s", action="convertstatus",description="Change item's status")
-    ]
-
-    TITLE = "MC6800 Catalogue"
-    SUB_TITLE = "Catalogue Maintenance - Andrew Shapton"
-    CSS_PATH= "xbuild.css"   
-
-    def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
-        yield from super().get_system_commands(screen)  
-        yield SystemCommand("Create new product", "", self.action_createnew)  
-        yield SystemCommand("Get date range from week", "", self.action_manu)  
-
-    def compose(self) -> ComposeResult:
-        yield Header(show_clock=True)
-        yield Footer()
-
-    def removelist(me,removallist):
-        for n in removallist:
-            _ = me.query("#"+n).last().remove()
-
-            
-    def action_newproduct(self) -> ComposeResult:
-        self.push_screen("newproduct")
-
-    def action_convertstatus(self) -> ComposeResult:
-        self.push_screen("convertstatus")
-
-    def action_manu(self) -> ComposeResult:
-        self.mount(Label("Week Number", id="label-week"))
-        self.mount(Input(name="week", id="week",max_length=2, type="integer",validators=[Number(minimum=1, maximum=53)],tooltip="Week numbers are in two digit format (01->53)."))
-        self.mount(Label("Year", id="label-year"))
-        self.mount(Input(name="year", id="year",max_length=4, type="integer",validators=[Number(minimum=1974, maximum=2025)]))
-        self.mount(Button("Calculate", id="button-calculate"))
-        self.mount(Label("", id="label-output"))
-
     @on(Button.Pressed)
     def pressed(self,event: Button.Pressed):
         button_id = event.button.id
-        if button_id == "final-close-index":
-            self.pop_screen()
-            self.pop_screen()
-            
-
 
         if button_id == "button-create-new":
             product_name = self.query_one("#product_name").value
@@ -309,7 +243,6 @@ class XBuildApp(App[str]):
             dotdot = '../../'
             location, images=convert_tui_type_to_doc_type(product_type,dotdot)
             
-
             if str(product_acquired) == 'True':
                 index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
                 acquired_status=":material-regular:`verified;2em;sd-text-success` " + product_acquired_date + "\n\n"
@@ -317,13 +250,15 @@ class XBuildApp(App[str]):
                 index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + product_comments + '"' 
                 acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
 
-
-
             OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
             if os.path.exists(OUTPUT_FILE):
                 self.notify(f"File {OUTPUT_FILE} already exists", severity="error")
                 
             else:    
+                if product_type == "IC":
+                    metadata = ".. #None {'Product':'" + product_number + "','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}"
+                else:
+                    metadata = ".. #None {'Product':'" + product_name+"','Folder': 'X','Comments':''}"
 
                 self.notify(f"Creating file {OUTPUT_FILE}", severity="information")
                 with open(OUTPUT_FILE,"w") as c:
@@ -333,7 +268,11 @@ class XBuildApp(App[str]):
                     c.write(product_name + '\n')
                     for i in product_name:
                         c.write('=')
-                    c.write('\n\n')
+                    
+                    c.write('\n')
+                    c.write(metadata)
+                    c.write('\n')
+
                     original_image = MOVE + '/' + product_number + '.png'
                     if not os.path.exists(original_image):
                         c.write('.. image:: '+ images + '/NOIMAGE.png\n')
@@ -376,10 +315,71 @@ class XBuildApp(App[str]):
 
 
 
-        if button_id == "button-create-new":
-            product_name = self.query_one("#product_name").value
-         
+class NewIndexGroup(Screen):
+
+    def on_mount(self) -> None:
+        self.screen.styles.background = "green"
+
+    def compose(self) -> ComposeResult:
+        yield Label(" ")
+        yield Label("", id="label-filename")
+        yield Horizontal(Label("\nProduct Type      ", id="label-product-type"))
         
+class XBuildApp(App[str]):
+
+    SCREENS = {
+        'newproduct': NewScreen,
+        'convertstatus': ConvertStatus,
+        'newindexgroup': NewIndexGroup
+    }
+    
+    BINDINGS = [
+        Binding(key="c", action="newproduct", description="Create new"),
+        Binding(key="m", action="manu", description="M/F Date"),
+        Binding(key="s", action="convertstatus",description="Change status"),
+        Binding(key="i", action="newindexgroup",description="Create index")
+    ]
+
+    TITLE = "MC6800 Catalogue"
+    SUB_TITLE = "Catalogue Maintenance - Andrew Shapton"
+    CSS_PATH= "xbuild.css"   
+
+    def get_system_commands(self, screen: Screen) -> Iterable[SystemCommand]:
+        yield from super().get_system_commands(screen)  
+        yield SystemCommand("Create new product", "", self.action_newproduct)  
+        yield SystemCommand("Get date range from week", "", self.action_manu)  
+        yield SystemCommand("Change status of a product", "", self.action_convertstatus)
+        yield SystemCommand("Create a new index group", "", self.action_newindexgroup)
+
+    def on_mount(self) -> None:
+        self.screen.styles.background = "darkblue"
+        pass;
+
+    def compose(self) -> ComposeResult:
+        yield Header(show_clock=True)
+        yield Footer()
+  
+    def action_newproduct(self) -> ComposeResult:
+        self.push_screen("newproduct")
+
+    def action_convertstatus(self) -> ComposeResult:
+        self.push_screen("convertstatus")
+
+    def action_newindexgroup(self) -> ComposeResult:
+        self.push_screen("newindexgroup")
+
+    def action_manu(self) -> ComposeResult:
+        self.mount(Label("Week Number", id="label-week"))
+        self.mount(Input(name="week", id="week",max_length=2, type="integer",validators=[Number(minimum=1, maximum=53)],tooltip="Week numbers are in two digit format (01->53)."))
+        self.mount(Label("Year", id="label-year"))
+        self.mount(Input(name="year", id="year",max_length=4, type="integer",validators=[Number(minimum=1974, maximum=2025)]))
+        self.mount(Button("Calculate", id="button-calculate"))
+        self.mount(Label("", id="label-output"))
+
+    @on(Button.Pressed)
+    def pressed(self,event: Button.Pressed):
+        button_id = event.button.id
+     
         if button_id == "button-calculate-done":
             _ = self.query("#label-output").last().remove()
             _ = self.query("#button-calculate-done").last().remove()
@@ -404,9 +404,6 @@ class XBuildApp(App[str]):
             else:
                 self.notify("Please enter a valid week/year number.", severity="error")
 
-    def on_mount(self) -> None:
-        self.screen.styles.background = "darkblue"
-        pass;
 
  
 
@@ -1080,9 +1077,9 @@ def update_storage():
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
-    for lvl2file in sorted(lvl2files):
-        os.remove(lvl2file)
-        print('     ' + os.path.basename(lvl2file) + ' removed.')       
+    #for lvl2file in sorted(lvl2files):
+    #    os.remove(lvl2file)
+    #    print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
@@ -1093,6 +1090,7 @@ def update_storage():
             content = fd.readlines()
         with open(snippetfile, 'w') as fw:
             for wl in range (0,len(content)):
+                
                 fw.write(content[wl].replace('collapse','rubric').replace('    ',''))
         print('     ' + os.path.basename(snippetfile) + ' updated.')
     
@@ -1335,7 +1333,6 @@ def do_collection():
             
 
 def do_create():
-    # XXX
     print("Enter the following information:")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
@@ -1461,8 +1458,8 @@ if (len(sys.argv))==3:
 else:
         print("command line interface")
 while True:
-    print('\t1. Get date range from week')
-    print('\t2. Create new entry')
+    print('\t1. Get date range from week (Deprecated use TUI)')
+    print('\t2. Create new entry')  (Deprecated - use TUI)
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
     print('\t5. Update storage + SOME indexes')
@@ -1471,17 +1468,17 @@ while True:
     print('\tX. Exit')
     type = input('Enter choice: ')
     match type:
-        case "1":
-            #Get year and week from user
-            y = input('Enter year: ')
-            w = input('Enter week: ')
-            #Call function to get dates range 
-            firstdate, lastdate =  getDateRangeFromWeek(y,w)
-            output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
-            print(output)
-        case "2":
-            index_entry = do_create()
-            print(index_entry)
+        #case "1":
+        #    #Get year and week from user
+        #    y = input('Enter year: ')
+        #    w = input('Enter week: ')
+        #    #Call function to get dates range 
+        #    firstdate, lastdate =  getDateRangeFromWeek(y,w)
+        #    output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
+        #    print(output)
+        #case "2":
+        #    index_entry = do_create()
+        #    print(index_entry)
         case "3":
             create_new_group_index()
         case "4":

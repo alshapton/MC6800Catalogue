@@ -6,8 +6,8 @@
       :widths: auto
 
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701CL <MC68701CL>`","TBD","TBD","TBD",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC68701U4S1 <MC68701U4S1>`","CERDIP","1.25 MHz","-40-85\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B701 <MC68B701L>`","TBD","TBD","TBD",""
-      ":material-regular:`local_shipping;2em` :ref:`MC68701U4S-1 <MC68701U4S-1>`","CERDIP","1.25 MHz","-40-85\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701L-1 <MC68701L-1>`","TBD","TBD","TBD",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68701L <MC68701L>`","TBD","TBD","TBD",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A701L <MC68A701L>`","TBD","TBD","TBD",""

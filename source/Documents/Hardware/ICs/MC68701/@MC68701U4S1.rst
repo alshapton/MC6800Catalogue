@@ -1,12 +1,13 @@
 :orphan:
 
-.. _MC68701U4S-1:
+.. _MC68701U4S1:
 
 MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
 =================================================
 
+.. #Metadata {'Product':'MC68701U4S1','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':1}
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC68701/MC68701U4/MC68701U4S1.png
    :width: 400
    :align: center
 
@@ -15,11 +16,11 @@ MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
 .. csv-table:: 
    :widths: auto
 
-   "Date Code",""
-   "Manufacture Date",""
+   "Date Code","9627"
+   "Manufacture Date","24-JUN-1996 to 30-JUN-1996"
    "Packaging","CERDIP"
    "Status","Production"
-   "Location","TBD"
+   "Location","Drawer 2"
    "Notes",""
    "Frequency","1.25 MHz"
    "Temperature","-40-85\ :sup:`o`\ C"
@@ -30,7 +31,7 @@ MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 5-JUL-2025
 
 .. rubric:: Links
 
