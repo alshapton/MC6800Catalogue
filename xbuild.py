@@ -1077,9 +1077,9 @@ def update_storage():
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
-    #for lvl2file in sorted(lvl2files):
-    #    os.remove(lvl2file)
-    #    print('     ' + os.path.basename(lvl2file) + ' removed.')       
+    for lvl2file in sorted(lvl2files):
+        os.remove(lvl2file)
+        print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
@@ -1459,7 +1459,7 @@ else:
         print("command line interface")
 while True:
     print('\t1. Get date range from week (Deprecated use TUI)')
-    print('\t2. Create new entry')  (Deprecated - use TUI)
+    print('\t2. Create new entry  (Deprecated - use TUI)')
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
     print('\t5. Update storage + SOME indexes')
