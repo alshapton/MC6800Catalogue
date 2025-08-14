@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 13-08-2025) in transit.
+This is the current set of items (as at 14-08-2025) in transit.
 
 
 .. rubric:: ICs
@@ -17,4 +17,3 @@ This is the current set of items (as at 13-08-2025) in transit.
 	" :ref:`MC6820L <MC6820L>`"," Peripheral Interface Adapter (PIA)"
 	" :ref:`MC6870 <MC6870>`"," Two-Phase Microprocessor Clock"
 	" :ref:`MC68B21P <MC68B21P>`"," MC6821 Peripheral Interface Adapter (PIA)"
-	" :ref:`SC84003L <SC84003L>`"," (MC6809) 8-Bit Microprocessing Unit"

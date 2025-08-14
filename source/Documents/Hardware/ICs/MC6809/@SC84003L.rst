@@ -2,12 +2,12 @@
 
 .. _SC84003L:
 
-.. #None {'Product':'SC84003L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'SC84003L','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':3}
 
 SC84003L (MC6809) 8-Bit Microprocessing Unit
 ============================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/SC84003L.png
    :width: 400
    :align: center
 
@@ -20,10 +20,11 @@ SC84003L (MC6809) 8-Bit Microprocessing Unit
    "Manufacture Date","06-OCT-1980 to 12-OCT-1980"
    "Packaging","Ceramic"
    "Status","Engineering Sample"
-   "Location","TBD"
+   "Location","Drawer 3"
    "Temperature","TBD"
    "Frequency","TBD"
-   "Notes",""
+   "Mask Set","T6M"
+   "Notes","An engineering sample of a 6809"
 
 
 .. rubric:: Collection Information
@@ -32,4 +33,4 @@ SC84003L (MC6809) 8-Bit Microprocessing Unit
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`local_shipping;2em`
+   :material-regular:`verified;2em;sd-text-success` 06-AUG-2025
