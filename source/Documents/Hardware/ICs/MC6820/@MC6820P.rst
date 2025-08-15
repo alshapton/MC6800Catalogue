@@ -19,7 +19,7 @@ MC6820P Peripheral Interface Adapter (PIA)
    "Date Code","TBD"
    "Manufacture Date","TBD"
    "Packaging","Plastic"
-   "Status","TBD"
+   "Status","Production"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"

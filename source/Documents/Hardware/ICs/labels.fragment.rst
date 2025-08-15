@@ -110,6 +110,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6820L|  image:: /images/Hardware/ICs/MC6820/MC6820(L).png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iXC6845L|  image:: /images/Hardware/ICs/XC6845L.png
    :width: 200
    :class: no-scaled-links
