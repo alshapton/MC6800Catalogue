@@ -758,17 +758,20 @@ def update_carousel():
 
 
 def get_cols_for_drawer(st,dr,rw, info):
-    cols = []
 
-    for i in range(0,len(info)):
-        j=ast.literal_eval(info[i])
-        k=j['Storage']        
-        if k['Name'] == st:
-            drws=k['Drawers']
-            for d in range(0,len(drws)):
-                cd=drws[d]
-                if dr == cd['Drawer']:
-                    cols = cd['Columns']
+    l=ast.literal_eval(info[0])
+    for j in l['Storage']:
+        cols = []
+        for i in range(0,len(j)):
+
+            k=j['Name']        
+            if k == st:
+                drws=j['Drawers']
+                for d in range(0,len(drws)):
+                    cd=drws[d]
+                    if dr == cd['Drawer']:
+                        cols = cd['Columns']
+                        return cols                      
     return cols
 
 
@@ -967,7 +970,9 @@ def update_storage():
             if item['Row'] != row:
                 rowcnt += 1
                 cols = len(get_cols_for_drawer(item['Storage'],item['Drawer'],item['Row'],storage_properties))
-                    
+                if cols == []:  
+                    print('No columns found for Storage:', item['Storage'], 'Drawer:', item['Drawer'], 'Row:', item['Row'])
+                    exit()  
                 rowcnt = 0
                 if first_row == True:
                     c.write('\n       ')
