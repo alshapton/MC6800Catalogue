@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 14-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 15-08-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -66,14 +66,15 @@ This is the current collection (as at 14-08-2025) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`HD63C09EP <HD63C09EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
+	":ref:`MC6800L <MC6800L.2>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6809EP <MC6809EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`MC6809EP <MC6809EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6821P <MC6821P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC6844L <MC6844L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6844P <MC6844P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6845P <MC6845P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC6847P <MC6847P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
+	":ref:`MC6847P <MC6847P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC68488CP <MC68488CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC68488L <MC68488L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6850L <MC6850L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
@@ -82,8 +83,8 @@ This is the current collection (as at 14-08-2025) of the items produced by Motor
 	":ref:`MC6860P <MC6860P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MC6862L <MC6862L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MC6862P <MC6862P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC68701U4L <MC68701U4L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
+	":ref:`MC68701U4L <MC68701U4L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC68701U4S1 <MC68701U4S1>`","CERDIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6871A15 <MC6871A15>`","Hermetically sealed ceramic DIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
@@ -99,15 +100,15 @@ This is the current collection (as at 14-08-2025) of the items produced by Motor
 	":ref:`MC68B44P <MC68B44P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B50CP <MC68B50CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MC68B50P <MC68B50P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68B54P <MC68B54P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
+	":ref:`MC68B54P <MC68B54P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MCM6810EL <MCM6810EL>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810L <MCM6810L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810P <MCM6810P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM68B10P <MCM68B10P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`SC84003L <SC84003L>`","Ceramic"
-	":ref:`XC6820 <XC6820>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
+	":ref:`SC84003L <SC84003L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`XC6820 <XC6820>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`XC6845L <XC6845L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 
 

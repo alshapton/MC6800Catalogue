@@ -5,9 +5,9 @@
 MC6800L Microprocessor Unit
 ===========================
 
-.. #None {'Product':'MC6800L','Name':'Microprocessor Unit','Storage': 'Briefcase'}
+.. #Metadata {'Product':'MC6800L','Name':'Microprocessor Unit','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':3}
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC6800L.2.png
    :width: 400
    :align: center
 
@@ -16,12 +16,13 @@ MC6800L Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8011"
+   "Manufacture Date","10-MAR-1980 to 16-MAR-1980"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBD"
-   "Notes","Additional to Briefcase example."
+   "Location","Drawer 3"
+   "Mask","6D"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -29,7 +30,7 @@ MC6800L Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 09-AUG-2025
 
 .. rubric:: Links
 

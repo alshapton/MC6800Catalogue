@@ -2,7 +2,7 @@
 
 .. _SC84003L:
 
-.. #None {'Product':'SC84003L','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':3}
+.. #Metadata {'Product':'SC84003L','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':3}
 
 SC84003L (MC6809) 8-Bit Microprocessing Unit
 ============================================

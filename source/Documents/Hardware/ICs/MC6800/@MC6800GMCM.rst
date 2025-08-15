@@ -5,7 +5,7 @@
 MC6800GMCM General Motors/Delcom Microprocessor Unit
 ====================================================
 
-.. #Metadata {'Product':'MC6800GMCM','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6800GMCM','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
 
 .. image:: ../../../../images/Hardware/ICs/MC6800/GMCM.png
    :width: 400

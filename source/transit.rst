@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 14-08-2025) in transit.
+This is the current set of items (as at 15-08-2025) in transit.
 
 
 .. rubric:: ICs
@@ -11,7 +11,6 @@ This is the current set of items (as at 14-08-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`MC6800L <MC6800L.2>`"," Microprocessor Unit"
 	" :ref:`MC6803L <MC6803L>`"," 8-Bit Microprocessor +128 bytes of RAM"
 	" :ref:`MC6808L <MC6808L>`"," Microprocessor with Clock and Optional RAM (MC6808)"
 	" :ref:`MC6820L <MC6820L>`"," Peripheral Interface Adapter (PIA)"

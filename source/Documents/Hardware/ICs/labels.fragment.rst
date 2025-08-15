@@ -146,6 +146,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6800L.2|  image:: /images/Hardware/ICs/MC6800/MC6800L.2.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B00L|  image:: /images/Hardware/ICs/MC6800/MC68B00L.png
    :width: 200
    :class: no-scaled-links
