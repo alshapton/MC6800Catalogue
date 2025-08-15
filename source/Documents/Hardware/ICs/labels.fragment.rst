@@ -154,7 +154,7 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iSC84003L|  image:: /images/Hardware/ICs/MC6800/SC84003L.png
+.. |iSC84003L|  image:: /images/Hardware/ICs/MC6809/SC84003L.png
    :width: 200
    :class: no-scaled-links
 
