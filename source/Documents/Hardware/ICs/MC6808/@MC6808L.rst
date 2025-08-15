@@ -2,12 +2,12 @@
 
 .. _MC6808L:
 
-.. #None {'Product':'MC6808L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6808L','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':1}
 
 MC6808L Microprocessor with Clock and Optional RAM (MC6808)
 ===========================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6808/MC6808L.png
    :width: 400
    :align: center
 
@@ -16,13 +16,14 @@ MC6808L Microprocessor with Clock and Optional RAM (MC6808)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","7904"
+   "Manufacture Date","15-JAN-1979 to 21-JAN-1979"
    "Packaging","Ceramic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location","Storage Box 2, Drawer 1, Row 1, Column 1"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
+   "Mask","4H"
    "Notes",""
 
 
@@ -32,7 +33,7 @@ MC6808L Microprocessor with Clock and Optional RAM (MC6808)
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 09-AUG-2025
 
 .. rubric:: Links
 

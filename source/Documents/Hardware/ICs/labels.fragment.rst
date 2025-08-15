@@ -130,6 +130,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6808L|  image:: /images/Hardware/ICs/MC6808/MC6808L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6852L|  image:: /images/Hardware/ICs/MC6852/MC6852L.1.png
    :width: 200
    :class: no-scaled-links
