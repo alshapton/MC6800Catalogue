@@ -19,7 +19,7 @@ MC68B50CP Asynchronous Communications Interface Adapter (MC6850)
    "Manufacture Date","03-AUG-2009 to 09-AUG-2009"
    "Packaging","Plastic"
    "Status","Product"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 1 <Storage_Box_1_Drawer_4>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 MHz"
    "Notes",""

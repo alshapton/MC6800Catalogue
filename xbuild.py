@@ -1,5 +1,6 @@
 import time
-
+# Import the filecmp module for file comparison    
+import filecmp  
 import glob
 import os
 import sys
@@ -408,6 +409,64 @@ class XBuildApp(App[str]):
  
 
 
+def construct_drawer_ref(st, drawer):
+    return '\n.. _' + str(st).replace(" ","") + "Drawer" + str(drawer) + ':\n'
+
+def construct_drawer_reference(st, drawer):
+    return ':ref:`' + str(st).replace(" ","") + "Drawer" + str(drawer) + '`'
+
+def update_or_not_metadata(filename):    
+
+    if 'carousel' in filename or 'fragment' in filename or 'index' in filename or 'collection' in filename or 'map' in filename or 'transit' in filename:
+        return
+    diff_file = filename +'.new'
+    with open(diff_file, 'w') as newfile:
+        with open(filename, 'r') as file:
+            found_metadata=False
+            metadata_dict=''
+            lines = file.readlines()
+            for line in lines: 
+                output_line = line       
+                if '.. #Metadata' in line:
+                    metadataline = line.replace('.. #Metadata ', '').strip()
+                    metadata_dict = eval(metadataline)
+                    metadata_line=str(metadata_dict).split(',')
+                    if metadata_dict != '':
+
+                        if 'Drawer' in metadata_dict:
+                            found_metadata=True
+
+                            storage = metadata_dict['Storage']
+                            drawer = metadata_dict['Drawer']
+                            row = metadata_dict['Row']
+                            column = metadata_dict['Column']
+                            sb=storage.replace(' ', '_')
+                            dr=str(drawer).replace(' ', '_')
+                            reference='<' + sb + '_Drawer_' + dr + '>'
+                            metadata_line= f":ref:`{storage}, Drawer {drawer}, Row {row}, Column {column} {reference}`"
+                            location_line = '   "Location","' + metadata_line + '"'
+                if '"Location",' in line:
+                    if found_metadata:
+                        # If we found metadata, replace the location line
+                        output_line = location_line + '\n'
+                else:
+                    output_line = line
+                newfile.write(output_line)
+
+    # Always write a .new version of the file, compare it with the original file
+    # using https://docs.python.org/3/library/filecmp.html
+    # If the files are different, copy the .new to the original 
+
+    # Clear filecmp cache
+    filecmp.clear_cache()   
+
+    # Compare the binary contents of 'input_file1.txt' and 'input_file2.txt'
+    isdifferent=filecmp.cmp(filename, diff_file,shallow=False)
+    
+    if not isdifferent:  
+        copy_and_replace(diff_file, filename)
+
+    os.remove(diff_file)
 
 def get_loc(file):
     loc = ast.literal_eval('{}')
@@ -958,7 +1017,9 @@ def update_storage():
                         c.write(',""')
                 c.write('\n\n.. #LVL2 ' + str(item['Drawer']))
 
-                c.write('\n\n.. collapse:: Drawer ' + str(item['Drawer']) + '\n')
+                c.write(construct_drawer_ref(item['Storage'], item['Drawer']))
+                c.write('\n\n.. collapse:: Drawer ' + str(item['Drawer']) + '\n') # HERE <a name="chapter4"></a>
+            
                 c.write('\n    .. csv-table::\n')
                 c.write('       :header-rows: 0\n')
                 cols = get_cols_for_drawer(item['Storage'],item['Drawer'],item['Row'],storage_properties)
@@ -1489,6 +1550,13 @@ while True:
         case "4":
             create_new_group_from_index()        
         case "0":
+            print('\n\nCommencing updating storage metadata links')
+
+            rstfiles = glob.glob('**/*.rst', recursive=True)
+            for file in rstfiles:
+                update_or_not_metadata(file)
+            print('Completed updating storage metadata links')
+
             update_carousel()
             update_IC_pre_fragments()
             update_storage()

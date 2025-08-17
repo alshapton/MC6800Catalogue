@@ -20,7 +20,7 @@ MC68B40P Programmable Timer
    "Manufacture Date","02-JUL-1979 to 08-JUL-1979"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 1"
+   "Location",":ref:`Storage Box 1, Drawer 1, Row 1, Column 3 <Storage_Box_1_Drawer_1>`"
    "Notes",""
 
 .. rubric:: Collection Information

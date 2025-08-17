@@ -20,7 +20,7 @@ MCM6810P 128 x 8-bit RAM
    "Manufacture Date","11-JUL-1983 to 17-JUL-1983"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 2 <Storage_Box_1_Drawer_4>`"
    "Notes",""
 
 .. rubric:: Collection Information

@@ -20,7 +20,7 @@ MC6883P Synchronous Address Multiplexer
    "Manufacture Date","12-SEP-1983 to 18-SEP-1983"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 2, Column 2 <Storage_Box_1_Drawer_3>`"
    "Temperature","N/A"
    "Frequency","N/A"
    "Notes",""

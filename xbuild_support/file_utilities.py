@@ -1,3 +1,14 @@
+def copy_and_replace(source_path, destination_path):
+    import shutil
+    import os
+    if os.path.exists(destination_path):
+        os.remove(destination_path)
+    shutil.copy2(source_path, destination_path)
+
+def copyfile(old, new):
+    import shutil
+    shutil.copyfile(old, new)
+
 def movefile(old, new):
     import shutil
     shutil.move(old, new)

@@ -20,7 +20,7 @@ HD63C09EP 8-Bit Microprocessing Unit Hitachi (Enhanced)
    "Manufacture Date","1982+"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","3/3.5 Mhz"
    "Notes",":octicon:`list-ordered;2em`"

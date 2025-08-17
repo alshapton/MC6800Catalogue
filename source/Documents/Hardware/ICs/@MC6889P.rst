@@ -19,7 +19,7 @@ MC6889P Quad Bus Transceiver (Non-Inverting)
    "Manufacture Date","09-JUL-1990 to 15-JUL-1990"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 4"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 5 <Storage_Box_1_Drawer_4>`"
    "Notes",""
 
 .. rubric:: Collection Information

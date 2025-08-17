@@ -20,7 +20,7 @@ MCM6810EL 128 x 8-bit RAM
    "Manufacture Date","22-NOV-1982 to 28-NOV-1982"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 3 <Storage_Box_1_Drawer_4>`"
    "Frequency","TBD"
    "Temperature","TBD"
    "Notes",""

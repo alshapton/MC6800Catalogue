@@ -20,7 +20,7 @@ MCM68B10P 128 x 8-bit RAM
    "Manufacture Date","22-AUG-1983 to 28-AUG-1983"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 3 <Storage_Box_1_Drawer_4>`"
    "Notes",""
    "Frequency","1.5MHz"
    "Temperature","0-70\ :sup:`o`\ C"

@@ -20,7 +20,7 @@ MC6871A-15 Two-Phase Microprocessor Clock
    "Manufacture Date","N/A"
    "Packaging","Hermetically sealed ceramic DIP"
    "Status","Production"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 3, Column 2 <Storage_Box_1_Drawer_3>`"
    "Temperature","0-120\ :sup:`o`\ C"
    "Frequency","1.5Mhz"
    "Notes",""
