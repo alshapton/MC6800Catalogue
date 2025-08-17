@@ -20,7 +20,7 @@ MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
    "Manufacture Date","25-MAY-1987 to 31-MAY-1987"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 3, Column 1 <Storage_Box_1_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

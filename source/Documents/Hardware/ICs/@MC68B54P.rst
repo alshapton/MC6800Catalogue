@@ -20,7 +20,7 @@ MC68B54P Advanced Data Link Controller (ADLC)
    "Manufacture Date","14-JUL-1980 to 20-JUL-1980"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 1"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 2, Column 1 <Storage_Box_1_Drawer_3>`"
    "Notes",""
 
 .. rubric:: Collection Information

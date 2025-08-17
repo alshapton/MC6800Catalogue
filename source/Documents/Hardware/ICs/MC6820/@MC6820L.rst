@@ -20,7 +20,7 @@ MC6820L Peripheral Interface Adapter (PIA)
    "Manufacture Date","23-FEB-1976 to 29-FEB-1976"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Storage Box 2, Drawer 1, Row 2, Column 1"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Mask","N/A"

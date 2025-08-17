@@ -20,7 +20,7 @@ MC6862P 2400 bps Digital Modulator
    "Manufacture Date","5-OCT-1976 to 31-OCT-1976"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 2 <Storage_Box_1_Drawer_4>`"
    "Notes",""
 
 .. rubric:: Collection Information

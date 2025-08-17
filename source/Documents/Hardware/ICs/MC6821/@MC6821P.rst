@@ -20,7 +20,7 @@ MC6821P Peripheral Interface Adapter
    "Manufacture Date","28-JAN-1980 to 03-FEB-1980"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","Drawer 1"
+   "Location",":ref:`Storage Box 1, Drawer 1, Row 1, Column 2 <Storage_Box_1_Drawer_1>`"
    "Notes",""
 
 

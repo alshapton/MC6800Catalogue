@@ -20,7 +20,7 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    "Manufacture Date","N/A"
    "Packaging","Ceramic"
    "Status","Prototype"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
    "Frequency","N/A"
    "Temperature","N/A"
       

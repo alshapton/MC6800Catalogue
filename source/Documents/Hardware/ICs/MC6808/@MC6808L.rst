@@ -20,12 +20,11 @@ MC6808L Microprocessor with Clock and Optional RAM (MC6808)
    "Manufacture Date","15-JAN-1979 to 21-JAN-1979"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Storage Box 2, Drawer 1, Row 1, Column 1"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Mask","4H"
    "Notes",""
-
 
 .. rubric:: Collection Information
 

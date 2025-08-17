@@ -20,7 +20,7 @@ SC84003L (MC6809) 8-Bit Microprocessing Unit
    "Manufacture Date","06-OCT-1980 to 12-OCT-1980"
    "Packaging","Ceramic"
    "Status","Engineering Sample"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 1, Column 3 <Storage_Box_1_Drawer_3>`"
    "Temperature","TBD"
    "Frequency","TBD"
    "Mask Set","T6M"

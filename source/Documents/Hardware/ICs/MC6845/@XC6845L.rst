@@ -21,7 +21,7 @@ XC6845L CRT Controller
    "Manufacture Date","28-NOV-1977 to 04-DEC-1977"
    "Packaging","Ceramic"
    "Status","Engineering"
-   "Location","Drawer 2"
+   "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 3 <Storage_Box_1_Drawer_1>`"
    "Notes",""
 
 .. rubric:: Collection Information

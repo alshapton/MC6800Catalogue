@@ -20,7 +20,7 @@ MC6800L Microprocessor Unit
    "Manufacture Date","10-MAR-1980 to 16-MAR-1980"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Drawer 3"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
    "Mask","6D"
    "Notes",""
 
