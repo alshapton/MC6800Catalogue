@@ -945,7 +945,8 @@ def update_storage():
     sorted_folders = sorted(foldersrefcard, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
-    
+
+
     all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
     FOLDER_MAP_FILE = 'source/Documents/folder.map'
@@ -979,6 +980,7 @@ def update_storage():
                     fmf.write('   :widths: 60,40\n\n')
                         
             if write_folder:
+                
                 fmf.write('    :ref:`' + item['Product'] + ' <' + item['Ref'] + '>`,"')
                 if "Comments" in item:
                     fmf.write(item['Comments'] + '"\n')
@@ -1053,7 +1055,11 @@ def update_storage():
                     comma = ''
                 else:
                     comma = ','
-                c.write(comma + '"|i' + prod + '| :ref:`'+ prod + ' <' + prod + '>`"')
+                if '!' in prod:
+                    prodref = prod.split('!')[1].strip()
+                else:
+                    prodref=prod
+                c.write(comma + '"|i' + prod + '| :ref:`'+ prodref + ' <' + prod + '>`"')
                 column=item['Column']
                 colcount += 1
         if cols > colcount:
@@ -1085,7 +1091,6 @@ def update_storage():
                             written_title = True
                         c.write('       |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
-
     print('Splitting')
     print('LVL1 Splitting')
 
@@ -1106,7 +1111,6 @@ def update_storage():
         cnt=cnt+1
 
     print('LVL1 Splitting done')
-
     # Checking for LVL2 split required.
     print('LVL2 Splitting')
 
