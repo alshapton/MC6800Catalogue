@@ -7,6 +7,7 @@
    :widths: 20,80,20 
 
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
 

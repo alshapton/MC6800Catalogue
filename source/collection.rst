@@ -168,6 +168,7 @@ This is the current collection (as at 18-08-2025) of the items produced by Motor
  	":ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
