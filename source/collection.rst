@@ -157,6 +157,7 @@ This is the current collection (as at 20-08-2025) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <EDUCATOR-II-BROCHURE>`","EDUCATOR-II Brochure",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <M6800-DOCUMENTATION-BROCHURE>`","Documentation Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`","M6800 Time Sharing Systems Software Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"

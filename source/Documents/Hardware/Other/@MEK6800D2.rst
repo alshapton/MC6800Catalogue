@@ -61,4 +61,7 @@ Another popular monitor program for this system is called MIKBUG.
 
     ":material-regular:`local_shipping;2em`"
 
+.. rubric:: Links
+
+:ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
 
