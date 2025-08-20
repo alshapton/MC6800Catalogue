@@ -49,3 +49,8 @@ M6800 Microcomputer System Support Products
 - :ref:`DS-M68EML`
 - :ref:`M6800-TIME-SHARING-SYSTEMS-BROCHURE`
 - :ref:`M6800-DOCUMENTATION-BROCHURE`
+
+
+.. rubric:: Links
+
+:download:`M6800 Microcomputer System Support Products <../../_static/Documents/Reference/M6800-Microcomputer-Support-Products.pdf>`

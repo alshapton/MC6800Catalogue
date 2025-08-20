@@ -19,3 +19,7 @@ M6800 Evaluation Kit II Brochure
 
    :material-regular:`verified;2em;sd-text-success` 18-AUG-2025
 
+
+.. rubric:: Links
+
+:download:`M6800 Evaluation Kit II Brochure <../../_static/Documents/Reference/MEX68CT-BROCHURE.pdf>`

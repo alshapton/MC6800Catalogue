@@ -1,0 +1,64 @@
+:orphan:
+
+.. _MEK6800D2:
+
+MEK6800D2 Development board for the 6800 microprocessor
+=======================================================
+
+.. include::  MEK6800D2.carousel.rst
+
+
+.. csv-table:: Specifications
+   :header: "Specification","Description"
+   :widths: auto
+        
+    "NAME","MED6800D2"
+    "MANUFACTURER","Motorola"
+    "TYPE","Development Board"
+    "ORIGIN","USA"
+    "YEAR","1976"
+    "END OF PRODUCTION","Unknown"
+    "BUILT IN LANGUAGE","Monitor in ROM"
+    "KEYBOARD","16 digit hex + 8 function keys"
+    "CPU","Motorola M6800"
+    "SPEED","625 KHz"
+    "RAM","384 bytes"
+    "ROM","1024 bytes"
+    "TEXT MODES","None"
+    "GRAPHIC MODES","None"
+    "COLORS","None"
+    "SOUND","None"
+    "SIZE / WEIGHT","N/A"
+    "I/O PORTS","Expansion port, Tape-recorder, Prototype Area"
+    "POWER SUPPLY","External PSU 5 VDC, 1A."
+    "PERIPHERALS","None supplied"
+    "PRICE","$235"
+
+
+The MEK6800D2 is a development board for the Motorola 6800 microprocessor, produced by Motorola in 1976. 
+It features a keyboard with hexadecimal keys and an LED display, but also features an RS-232 asynchronous serial interface for a Teletype or other terminal. 
+Data and programs can be loaded from and saved to an audio cassette tape. 
+There is an on-board monitor program called JBUG (analogous to an operating system on a modern computer) fitted in a 1K byte ROM, and the maximum RAM capacity on board is 512 bytes, but this can be expanded via the Motorola EXORciser computer bus interface.
+
+The hardware consists of two circuit boards:
+
+- The keyboard-display module contains a 16 key (hexadecimal) data entry section, and eight function keys labeled M, E, R, G, V, N, L, and Pl along with a 6 hex digit LED display. 
+- The microcomputer module 
+
+Both modules are connected by a 50-pin ribbon cable.
+
+There is also a parallel bus interface for general purpose I/O.
+
+Another popular monitor program for this system is called MIKBUG.
+
+
+.. rubric:: Collection Information
+
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+    ":material-regular:`local_shipping;2em`"
+
+
