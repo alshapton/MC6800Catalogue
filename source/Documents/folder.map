@@ -60,6 +60,7 @@
     :ref:`EXORset30 ROM - IC-28 <IC28>`,""
     :ref:`EXORset30 ROM - IC-30 <IC30>`,""
     :ref:`EXORset30 ROM - IC-31 <IC31>`,""
+    :ref:`JBUG Monitor V1.8 <JBUG_1_8>`,""
     :ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`,""
     :ref:`MINIBUG Monitor Assembly Listing REV 004 <@MIKBUG-MINIBUG_04_09_mn_ass>`,""
     :ref:`Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11) <SRC-FOR-MASM-PDP-11>`,""

@@ -24,4 +24,4 @@ M6800 Evaluation Kit II Brochure
 
 .. rubric:: Links
 
-:download:`M6800 Evaluation Kit II Brochure <../../_static/Documents/Reference/MEX68CT-BROCHURE.pdf>`
+:download:`M6800 Evaluation Kit II Brochure <../../_static/Documents/Reference/MEK6800D2-EVAL-KIT-BROCHURE.pdf>`

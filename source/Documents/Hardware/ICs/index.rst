@@ -10,8 +10,6 @@ Integrated Circuits
    :header: "Part","Packaging","Name","Notes" 
    :widths: 23,17,45,10
 
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6828","","Priority Interrupt Controller (PIC)"
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6843","","Floppy Disk Controller (FDC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6846","","ROM-I/O-Timer"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B54P <MC68B54P>`","Plastic","Advanced Data Link Controller (ADLC)"
    ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","","Data Security Device (DSD)"
@@ -69,6 +67,9 @@ Integrated Circuits
 .. include:: ./MC6840/mc6840.fragment.rst
 |
 
+.. include:: ./MC6843/mc6843.fragment.rst
+|
+
 .. include:: ./MC6844/mc6844.fragment.rst
 |
 
@@ -90,6 +91,9 @@ Integrated Circuits
 .. include:: ./MC6860/mc6860.fragment.rst
 |
 
+.. include:: ./MC6870-1/mc6870-1.fragment.rst
+|
+
 .. include:: ./MC6875/mc6875.fragment.rst
 |
 
@@ -97,9 +101,6 @@ Integrated Circuits
 |
 
 .. include:: ./MC68701/mc68701.fragment.rst
-|
-
-.. include:: ./MC6870-1/mc6870-1.fragment.rst
 |
 
 |
