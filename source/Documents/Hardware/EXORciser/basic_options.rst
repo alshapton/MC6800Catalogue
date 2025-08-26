@@ -24,7 +24,7 @@ EXORciser I and EXORterm 200 (1 MHz frequency limit)
     "MEX68USM  ","Universal Support Module to support 6800 family of devices "
     "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "
     "MEX68WW   ","Universal Wirewrap Module for prototype Development  "
-    "MEX68XT   ","Extender Module permits access to any development module from outside the EXORciser chassis  "
+    ":ref:`MEX68XT <MEX68XT>`","MEX68XT Extender Module"
 
 For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
 

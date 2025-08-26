@@ -1,10 +1,34 @@
 .. _IC Index page:
 
 
-
-
 Integrated Circuits
 ===================
+
+
+Packaging and Identification
+============================
+
+Many of the ICs in the Motorola range were made available in different packaging forms, most notably:
+
+.. csv-table:: 
+   :header: "Suffix","Description"
+   :widths: auto
+   
+   "L",":ref:`Ceramic <glossary_CERAMIC>`"
+   "P",":ref:`Plastic <glossary_PLASTIC>`"
+   "S",":ref:`CERDIP <glossary_CERDIP>`"
+
+Additionally, some ICs had additional suffix components to indicate specific variants of the base IC (as per the 
+"BETTER Programme"):
+
+.. csv-table:: 
+   :header: "Suffix","Level","Summary"
+   :widths: auto
+
+   "I","S","100% temperature cycling per MIL-STD-883A."
+   "II","D","100% burn-in to MIL-STD-883A."
+   "III","DS","Combination of I and II."
+
 
 .. csv-table::
    :header: "Part","Packaging","Name","Notes" 
@@ -106,3 +130,5 @@ Integrated Circuits
 |
 
 
+
+    

@@ -6,7 +6,7 @@ EXORset 30 XDOS Assembler User's Guide
 ======================================
 .. #None {'Product':'EXORset 30 XDOS Assembler User's Guide','Folder': 'X','Comments':''}
 
-.. image:: ../../images/Manuals/M6809ASM09(D1).png
+.. image:: ../../images/Manuals/M6809ASM09(D).png
    :width: 400
    :align: center
 

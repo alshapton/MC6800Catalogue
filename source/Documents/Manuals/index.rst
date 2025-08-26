@@ -30,6 +30,7 @@ Reference Manuals
    ":ref:`MEX3870OM <MEX3870OM>`","MEX3870OM 3870 Emulator User's Guide",""
    ":ref:`MEX6801EVM1 <MEX6801EVM1>`","MEX6801EVM1 Evaluation Module User's Guide",""
    ":ref:`MEX68USEC(D1) <MEX68USEC(D1)>`","MEX68USEC 2 MHz User System Evaluation Guide","Part Number indeterminable"
+   ":ref:`M6809SET30(D) <M6809SET30(D)>`","EXORset 30 User's Guide","Targetting MC6809"
 
 .. rubric:: Expansion Card Manuals
 
@@ -102,3 +103,5 @@ Reference Manuals
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
    ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
    ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"
+   ":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
+   ":ref:`M6809ASM09(D) <M6809ASM09(D)>`","EXORset 30 XDOS Assembler User's Guide","Targetting M6809"
