@@ -14,6 +14,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |isource/Documents/Hardware/ICs/packaging|  image:: /images/General/better.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6860P|  image:: /images/Hardware/ICs/MC6860/MC6860P.1.png
    :width: 200
    :class: no-scaled-links

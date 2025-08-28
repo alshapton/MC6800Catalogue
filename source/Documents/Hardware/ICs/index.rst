@@ -5,30 +5,10 @@ Integrated Circuits
 ===================
 
 
-Packaging and Identification
-============================
+The numbering scheme of the MC6800 family was fairly straightforward, with the "MC" prefix indicating a Motorola integrated circuit. The "68" prefix was a brand identifier for the family, with the following two digits indicating the specific function of the chip. 
+This logical system allowed engineers to easily identify the role of each component within the larger system.
 
-Many of the ICs in the Motorola range were made available in different packaging forms, most notably:
-
-.. csv-table:: 
-   :header: "Suffix","Description"
-   :widths: auto
-   
-   "L",":ref:`Ceramic <glossary_CERAMIC>`"
-   "P",":ref:`Plastic <glossary_PLASTIC>`"
-   "S",":ref:`CERDIP <glossary_CERDIP>`"
-
-Additionally, some ICs had additional suffix components to indicate specific variants of the base IC (as per the 
-"BETTER Programme"):
-
-.. csv-table:: 
-   :header: "Suffix","Level","Summary"
-   :widths: auto
-
-   "I","S","100% temperature cycling per MIL-STD-883A."
-   "II","D","100% burn-in to MIL-STD-883A."
-   "III","DS","Combination of I and II."
-
+Family members were further identified by :ref:`additional components within the IC number <Packaging>`
 
 .. csv-table::
    :header: "Part","Packaging","Name","Notes" 
