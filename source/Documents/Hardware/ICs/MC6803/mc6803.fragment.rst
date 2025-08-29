@@ -5,4 +5,4 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`local_shipping;2em` :ref:`MC6803L <MC6803L>`","Plastic","1.25 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6803L <MC6803L>`","Plastic","1.25 Mhz","0-70\ :sup:`o`\ C",""

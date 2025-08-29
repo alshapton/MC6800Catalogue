@@ -32,4 +32,4 @@ MC6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   ":material-regular:`local_shipping;2em`"

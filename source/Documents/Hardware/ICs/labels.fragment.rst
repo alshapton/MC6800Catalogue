@@ -66,6 +66,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6803L|  image:: /images/Hardware/ICs/MC6803/MC6803L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68488CP|  image:: /images/Hardware/ICs/MC68488/MC68488CP.png
    :width: 200
    :class: no-scaled-links

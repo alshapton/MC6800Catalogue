@@ -993,7 +993,7 @@ def update_storage():
         
 
     storagebox=''
-    drawer=0
+    drawer=-1
     row=0
     column=0
     colcount=0
@@ -1007,11 +1007,12 @@ def update_storage():
 
                 c.write('\n\n.. rubric:: ' + item['Storage'])
                 storagebox=item['Storage']
-                drawer=0
+                drawer=-1
                 row=0
                 column=0
                 rowcnt=0
                 cols=0
+
             if item['Drawer'] != drawer:
 
                 if cols > colcount:
@@ -1132,7 +1133,6 @@ def update_storage():
                 line = tf.readline()
             f = data.split('#LVL2')
             sname = storagename[1:].replace(' ','_').strip()
-
             outputfile_base = lvl2file.replace('.tiny','').replace('rst.','')[:-2] + '.' + sname            
             for i in range(1,len(f)):
                 minimum = f[i][:-3]
@@ -1147,9 +1147,9 @@ def update_storage():
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
-    for lvl2file in sorted(lvl2files):
-        os.remove(lvl2file)
-        print('     ' + os.path.basename(lvl2file) + ' removed.')       
+    #for lvl2file in sorted(lvl2files):
+    #    os.remove(lvl2file)
+    #    print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     

@@ -8,6 +8,9 @@ Packaging and Identification
 The Motorola MC68xx family of ICs had a (mostly) mostly common, identifiable, naming convention. The base prefix was either "MC68" or "MCM68", with the latter indicating a
 multi-chip module (MCM) package.
 
+.. important::
+    Note all ICs in the family followed this convention. For example, the MC6846 did not have a suffix letter to indicate packaging, while others used different letters (all explained within their relevant data sheets).
+
 The suffix letter indicated the type of packaging used for the IC:
 
 .. csv-table:: 

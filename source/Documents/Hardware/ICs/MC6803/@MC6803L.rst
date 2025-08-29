@@ -2,12 +2,12 @@
 
 .. _MC6803L:
 
-.. #None {'Product':'MC6803L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6803L','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':1}
 
 MC6803L 8-Bit Microprocessor +128 bytes of RAM
 ==============================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6803/MC6803L.png
    :width: 400
    :align: center
 
@@ -16,11 +16,11 @@ MC6803L 8-Bit Microprocessor +128 bytes of RAM
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8603"
+   "Manufacture Date","13-JAN-1986 to 19-JAN-1986"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.25 Mhz"
    "Notes",""
@@ -32,5 +32,5 @@ MC6803L 8-Bit Microprocessor +128 bytes of RAM
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 18-AUG-2025
 

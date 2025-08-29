@@ -1,0 +1,31 @@
+ Storage Box 2
+
+.. rubric:: Storage Box 2
+
+.. #LVL2 0
+.. _StorageBox2Drawer0:
+
+
+.. collapse:: Drawer 0
+
+    .. csv-table::
+       :header-rows: 0
+       :widths: 50, 50
+
+       "|iMC6852L| :ref:`MC6852L <MC6852L>`","|iMC6860L| :ref:`MC6860L <MC6860L>`"
+
+.. #LVL2 1
+.. _StorageBox2Drawer1:
+
+
+.. collapse:: Drawer 1
+
+    .. csv-table::
+       :header-rows: 0
+       :widths: 33, 34, 33
+
+       "|iMC6808L| :ref:`MC6808L <MC6808L>`","",""
+       "|iMC6820L| :ref:`MC6820L <MC6820L>`","",""
+       "|iMC6803L| :ref:`MC6803L <MC6803L>`","",""
+
+.. 
