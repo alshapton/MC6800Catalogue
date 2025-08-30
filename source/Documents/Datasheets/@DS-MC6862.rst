@@ -1,0 +1,24 @@
+:orphan:
+
+.. _DS-MC6862:
+
+MC6862 2400 bps Digital Modem
+=============================
+
+.. #None {'Product':'MC6862 2400 bps DIGITAL MODEM','Folder': 'X','Comments':''}
+
+.. image:: ../../images/DataSheets/DS-MC6862.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6862 2400 bps DIGITAL MODEM <../../_static/Documents/Datasheets/DS-MC6862.pdf>`

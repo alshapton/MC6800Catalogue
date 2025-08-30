@@ -1147,9 +1147,9 @@ def update_storage():
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
-    #for lvl2file in sorted(lvl2files):
-    #    os.remove(lvl2file)
-    #    print('     ' + os.path.basename(lvl2file) + ' removed.')       
+    for lvl2file in sorted(lvl2files):
+        os.remove(lvl2file)
+        print('     ' + os.path.basename(lvl2file) + ' removed.')       
 
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
