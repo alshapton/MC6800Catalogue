@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC6882BL:
+
+.. #None {'Product':'MC6882BL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC6882BL Octal Three-State Buffer/Latch
+=======================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","Ceramic"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","0-75\ :sup:`o`\ C"
+   "Function","Non-Inverting"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6882 Octal Three-State Buffer/Latch  <../../../../_static/Documents/Datasheets/DS-MC6882.pdf>`

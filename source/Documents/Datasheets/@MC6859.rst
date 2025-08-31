@@ -1,0 +1,22 @@
+:orphan:
+
+.. _DS-MC6859:
+
+DS-MC6859 Data Security Device
+==============================
+.. #None {'Product':'MC6859 Data Security Device','Folder': 'X','Comments':''}
+.. image:: ../../images/DataSheets/MC6859.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`DS-MC6859 Data Security Device <../../_static/Documents/Datasheets/DS-MC6859.pdf>`

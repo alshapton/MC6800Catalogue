@@ -19,7 +19,7 @@ extensions = [
         'sphinx_collapse',
         'sphinx_design',
         'linuxdoc.rstFlatTable',
-        
+        'hoverxref.extension',
 ]
 
 autosectionlabel_prefix_document = True

@@ -1,0 +1,8 @@
+.. collapse::  Octal Three-State Buffer/Latch (MC6882)
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6882AL <MC6882AL>`","Ceramic","Inverting","0-75\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6882BL <MC6882BL>`","Ceramic","Non-Inverting","0-75\ :sup:`o`\ C",""

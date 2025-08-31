@@ -53,7 +53,7 @@ Conventions Used
    ":material-regular:`lock;2em;sd-text-success`","This is published material relating to the product as sold."
    ":octicon:`list-ordered;2em`","A second-source item."
    ":material-regular:`local_shipping;2em`","An item in transit"
-
+   ":material-regular:`remove_shopping_cart;2em`","Product never shipped or cancelled."
 
 
 .. toctree::

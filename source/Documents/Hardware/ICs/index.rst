@@ -26,6 +26,9 @@ Family members were further identified by :ref:`additional components within the
 .. include:: ./MC6800/mc6800.fragment.rst
 |
 
+.. include:: ./MC6801/mc6801.fragment.rst
+|
+
 .. include:: ./MC6802/mc6802.fragment.rst
 |
 
@@ -92,6 +95,9 @@ Family members were further identified by :ref:`additional components within the
 .. include:: ./MC6852/mc6852.fragment.rst
 |
 
+.. include:: ./MC6855/mc6855.fragment.rst
+|
+
 .. include:: ./MC6860/mc6860.fragment.rst
 |
 
@@ -99,6 +105,9 @@ Family members were further identified by :ref:`additional components within the
 |
 
 .. include:: ./MC6875/mc6875.fragment.rst
+|
+
+.. include:: ./MC6882/mc6882.fragment.rst
 |
 
 .. include:: ./MC6883/mc6883.fragment.rst

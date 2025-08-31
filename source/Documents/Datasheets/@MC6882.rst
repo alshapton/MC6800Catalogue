@@ -1,0 +1,26 @@
+:orphan:
+
+.. _DS-MC6882:
+
+MC6882 Octal Three-State Buffer/Latch
+=====================================
+
+.. #None {'Product':'MC6882 Octal Three-State Buffer/Latch','Folder': 'X','Comments':''}
+
+.. image:: ../../images/DataSheets/DS-MC6882.png
+   :width: 400
+   :align: center
+
+.. rubric:: Most likely available prior to MC6800 launch by alternate name.
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6882 Octal Three-State Buffer/Latch <../../_static/Documents/Datasheets/DS-MC6882.pdf>`
