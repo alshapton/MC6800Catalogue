@@ -33,3 +33,8 @@ MC68A10L 128 x 8-Bit Static Random Access Memory (MCM6810)
    :widths: auto
 
    ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6810 DataSheet <../../../../_static/Documents/Datasheets/MCM6810.pdf>`
+:download:`MC6810 DataSheet (1981 edition) <../../../../_static/Documents/Datasheets/MCM6810.2.pdf>`

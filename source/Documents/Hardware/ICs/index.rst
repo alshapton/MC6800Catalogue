@@ -41,6 +41,9 @@ Family members were further identified by :ref:`additional components within the
 .. include:: ./MC6803E/mc6803e.fragment.rst
 |
 
+.. include:: ./MC6803NR/mc6803nr.fragment.rst
+|
+
 .. include:: ./MC6808/mc6808.fragment.rst
 |
 

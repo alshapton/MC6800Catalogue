@@ -45,7 +45,10 @@ DataSheets
    ":ref:`MC6882 <DS-MC6882>`","Octal Three-State Buffer/Latch",":material-regular:`lock;2em;sd-text-success`",""
    ":ref:`MC68488 <MC68488>`","MC68488 General Purpose Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC68701 <MC68701>`","Microcomputer Unit",":material-regular:`lock_open;2em;sd-text-danger`","",""
-   
+   ":ref:`MCM6810 <DS-MCM6810>`","128 x 8-Bit Static Random Access Memory",":material-regular:`lock_open;2em;sd-text-danger`","",""
+   ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory",":material-regular:`lock_open;2em;sd-text-danger`","","1981"
+
+
 .. rubric:: Development Systems
 
 .. csv-table::

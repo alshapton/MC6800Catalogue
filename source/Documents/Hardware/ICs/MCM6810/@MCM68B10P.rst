@@ -33,11 +33,8 @@ MCM68B10P 128 x 8-bit RAM
 
    ":material-regular:`verified;2em;sd-text-success` 8-MAY-2025"
 
+
 .. rubric:: Links
 
 :download:`MC6810 DataSheet <../../../../_static/Documents/Datasheets/MCM6810.pdf>`
-
-
-
-
-
+:download:`MC6810 DataSheet (1981 edition) <../../../../_static/Documents/Datasheets/MCM6810.2.pdf>`

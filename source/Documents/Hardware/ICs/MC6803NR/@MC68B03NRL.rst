@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68B10L:
+.. _MC68B03NRL:
 
-.. #None {'Product':'MC68B10L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC68B03NRL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
-==========================================================
+MC68B03NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
+==============================================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -22,7 +22,7 @@ MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","1.5MHz"
+   "Frequency","2 Mhz"
    "Notes",""
 
 
@@ -36,5 +36,4 @@ MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
 
 .. rubric:: Links
 
-:download:`MC6810 DataSheet <../../../../_static/Documents/Datasheets/MCM6810.pdf>`
-:download:`MC6810 DataSheet (1981 edition) <../../../../_static/Documents/Datasheets/MCM6810.2.pdf>`
+:download:`MC6803NR Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/DS-MC6801-03-03NR.pdf>`
