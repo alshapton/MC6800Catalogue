@@ -4,8 +4,8 @@
 
 .. #Metadata {'Product':'MC6803L','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':1}
 
-MC6803L 8-Bit Microprocessor +128 bytes of RAM
-==============================================
+MC6803L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
+=========================================================================
 
 .. image:: ../../../../images/Hardware/ICs/MC6803/MC6803L.png
    :width: 400
@@ -22,7 +22,7 @@ MC6803L 8-Bit Microprocessor +128 bytes of RAM
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","1.25 Mhz"
+   "Frequency","1 Mhz"
    "Notes",""
 
 
@@ -34,3 +34,6 @@ MC6803L 8-Bit Microprocessor +128 bytes of RAM
 
    :material-regular:`verified;2em;sd-text-success` 18-AUG-2025
 
+.. rubric:: Links
+
+:download:`MC6803 Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/DS-MC6801-03-03NR.pdf>`

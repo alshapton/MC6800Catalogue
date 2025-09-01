@@ -759,6 +759,8 @@ def update_IC_pre_fragments():
                             posess=splitline[0].replace('"','')
                  
                     tref=tfile.replace('@','').replace('.rst','').split('.')[0]
+                    if '!' in tref:
+                        tref=tref.split('!')[1]
                     fileref='"' + posess + ' :ref:`'+ tref + ' <' + tag + '>`","'+packaging+'","'+frequency+'","'+temperature+'","'+notes+'"'
                     op.write('      '+fileref+'\n')  
             if len(bbottom)>1:

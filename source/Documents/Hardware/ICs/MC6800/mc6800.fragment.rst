@@ -15,7 +15,7 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B00P <MC68B00P>`","Plastic","2Mhz","-0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B00S <MC68B00S>`","CERDIP","2Mhz","-0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6800L <MC6800L>`","Ceramic","","",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`2!MC6800L <2!MC6800L>`","Ceramic","","",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6800L <2!MC6800L>`","Ceramic","","",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B00L <MC68B00L>`","Ceramic","2Mhz","-0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A00P <MC68A00P>`","Plastic","1.5Mhz","-0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC6800GMCM <MC6800GMCM>`","Ceramic","N/A","N/A",""
