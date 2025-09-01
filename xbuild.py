@@ -1540,17 +1540,17 @@ while True:
     print('\tX. Exit')
     type = input('Enter choice: ')
     match type:
-        #case "1":
-        #    #Get year and week from user
-        #    y = input('Enter year: ')
-        #    w = input('Enter week: ')
-        #    #Call function to get dates range 
-        #    firstdate, lastdate =  getDateRangeFromWeek(y,w)
-        #    output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
-        #    print(output)
-        #case "2":
-        #    index_entry = do_create()
-        #    print(index_entry)
+        case "1":
+            #Get year and week from user
+            y = input('Enter year: ')
+            w = input('Enter week: ')
+            #Call function to get dates range 
+            firstdate, lastdate =  getDateRangeFromWeek(y,w)
+            output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
+            print(output)
+        case "2":
+            index_entry = do_create()
+            print(index_entry)
         case "3":
             create_new_group_index()
         case "4":

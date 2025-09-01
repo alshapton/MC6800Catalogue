@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68B10L:
+.. _MC6810CP:
 
-.. #None {'Product':'MC68B10L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC6810CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
-==========================================================
+MCM6810CP 128 x 8-Bit Static Random Access Memory (MCM6810)
+===========================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -18,11 +18,11 @@ MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","Ceramic"
+   "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
-   "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","1.5MHz"
+   "Temperature","-40-85\ :sup:`o`\ C"
+   "Frequency","1MHz"
    "Notes",""
 
 
@@ -37,4 +37,5 @@ MC68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)
 .. rubric:: Links
 
 :download:`MC6810 DataSheet <../../../../_static/Documents/Datasheets/MCM6810.pdf>`
+
 :download:`MC6810 DataSheet (1981 edition) <../../../../_static/Documents/Datasheets/MCM6810.2.pdf>`

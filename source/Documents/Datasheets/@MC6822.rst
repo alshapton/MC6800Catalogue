@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6822:
+
+MC6822 Industrial Interface Adapter
+===================================
+
+.. image:: ../../images/DataSheets/MC6822.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6822 Industrial Interface Adapter <../../_static/Documents/Datasheets/MC6822.pdf>`

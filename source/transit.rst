@@ -11,9 +11,9 @@ This is the current set of items (as at 01-09-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	" :ref:`MC6810BJCS <MC6810BJCS>`"," 128 x 8-Bit Static Random Access Memory (MCM6810)"
 	" :ref:`MC6870 <MC6870>`"," Two-Phase Microprocessor Clock"
 	" :ref:`MC68B21P <MC68B21P>`"," MC6821 Peripheral Interface Adapter (PIA)"
+	" :ref:`MCM6810BJCS <MC6810BJCS>`"," 128 x 8-Bit Static Random Access Memory (MCM6810)"
 
 
 .. rubric:: Other Hardware

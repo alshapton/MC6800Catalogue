@@ -1,0 +1,22 @@
+:orphan:
+
+.. _DS-MC6800:
+
+8-Bit Microprocessing Unit
+==========================
+
+.. image:: ../../images/DataSheets/MC6800.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`8-Bit Microprocessing Unit <../../_static/Documents/Datasheets/MC6800.pdf>`

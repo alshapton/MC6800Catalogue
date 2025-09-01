@@ -21,6 +21,7 @@ MCM6810P 128 x 8-bit RAM
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 2 <Storage_Box_1_Drawer_4>`"
+   "Temperature","0-70\ :sup:`o`\ C"
    "Notes",""
 
 .. rubric:: Collection Information
@@ -34,4 +35,5 @@ MCM6810P 128 x 8-bit RAM
 .. rubric:: Links
 
 :download:`MC6810 DataSheet <../../../../_static/Documents/Datasheets/MCM6810.pdf>`
+
 :download:`MC6810 DataSheet (1981 edition) <../../../../_static/Documents/Datasheets/MCM6810.2.pdf>`
