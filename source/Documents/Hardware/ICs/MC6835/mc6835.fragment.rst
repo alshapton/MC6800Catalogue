@@ -1,0 +1,25 @@
+
+.. collapse:: CRT Controller (CRTC) (MC6835) 
+
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835CS <MC6835CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35P <MC68A35P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35CL <MC68A35CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835CP <MC6835CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35S <MC68A35S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35L <MC68B35L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835L <MC6835L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35CL <MC68B35CL>`","Ceramic","2 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35P <MC68B35P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35S <MC68B35S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35CS <MC68B35CS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835S <MC6835S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B35CP <MC68B35CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835P <MC6835P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6835CL <MC6835CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35CP <MC68A35CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35L <MC68A35L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A35CS <MC68A35CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""

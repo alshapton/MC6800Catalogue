@@ -71,6 +71,9 @@ Family members were further identified by :ref:`additional components within the
 .. include:: ./MCM6830/mcm6830.fragment.rst
 |
 
+.. include:: ./MC6835/mc6835.fragment.rst
+|
+
 .. include:: ./MC6839/mc6839.fragment.rst
 |
 

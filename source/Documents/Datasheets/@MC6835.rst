@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6835:
+
+MC6835 CRT Controller (CRTC)
+============================
+
+.. image:: ../../images/DataSheets/MC6835.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6835 CRT Controller (CRTC) <../../_static/Documents/Datasheets/MC6835.pdf>`

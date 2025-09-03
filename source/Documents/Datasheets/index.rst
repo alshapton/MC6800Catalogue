@@ -40,6 +40,7 @@ DataSheets
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC6822 <MC6822>`","MC6822 Industrial Interface Adapter",":material-regular:`lock_open;2em;sd-text-danger`","1981"
    ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller",":material-regular:`lock;2em;sd-text-success`"
+   ":ref:`MC6835 <MC6835>`","MC6835 CRT Controller (CRTC)",":material-regular:`lock_open;2em;sd-text-danger`","1981"
    ":ref:`MC6839 <MC6839>`","Floating-Point ROM",":material-regular:`lock_open;2em;sd-text-danger`"
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)",":material-regular:`lock;2em;sd-text-success`",""
    ":ref:`MC6847 <MC6847>`","MC6847/MC6847Y Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1984",""
