@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6844:
+
+MC6844 Direct Memory Access Controller (DMAC)
+=============================================
+
+.. image:: ../../images/DataSheets/MC6844.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6844 Direct Memory Access Controller (DMAC) <../../_static/Documents/Datasheets/MC6844.pdf>`

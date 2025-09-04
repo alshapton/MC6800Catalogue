@@ -3,7 +3,7 @@ import time
 import filecmp  
 import glob
 import os
-import sys
+
 import ast
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
@@ -31,11 +31,6 @@ IC_LOCATIONS = 'source/Documents/Hardware/ICs'
  
 
 
-def construct_drawer_ref(st, drawer):
-    return '\n.. _' + str(st).replace(" ","") + "Drawer" + str(drawer) + ':\n'
-
-def construct_drawer_reference(st, drawer):
-    return ':ref:`' + str(st).replace(" ","") + "Drawer" + str(drawer) + '`'
 
 def update_or_not_metadata(filename):    
 
@@ -836,6 +831,49 @@ def update_storage():
 
     print('\nLocations fully updated')      
 
+def update_IC_index():
+    files = glob.glob('**/MC*', recursive=True)
+    icfiles=[]
+    ic2file=[]
+    memfiles=[]
+    for file in files:
+        if 'source/Documents/Hardware/ICs/' in file:
+            fname=file.replace('source/Documents/Hardware/ICs/','')
+            if 'MCM' in fname:
+                memfiles.append(fname[3:])
+                icfiles.append(fname[3:])
+            else:
+                if len(str(fname[2:])) >4: 
+                    ic2file.append(fname[2:])    
+                else:
+                    icfiles.append(fname[2:])
+
+    nonnumics2 = []
+    for nonnumic in ic2file:
+        if nonnumic.isnumeric():
+            nonnumics2.append(nonnumic)
+        else:
+            icfiles.append(nonnumic)
+
+    ics = sorted(icfiles) + sorted(nonnumics2)
+
+    chips=[]
+    for chip in ics:
+        if chip in memfiles:       
+            chips.append('MCM' + chip)
+        else:
+            chips.append('MC' + chip)
+    print(chips)
+    
+    IC_FRAGMENTS_INDEX=IC_LOCATIONS + OSSEP + 'icindex.fragment.rst'
+    with open(IC_FRAGMENTS_INDEX,"w") as c:
+
+        for chip in chips:
+    
+            c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
+
+    #exit()
+
 
 def do_in_transit():
     # Find all .rst files in the current directory and subdirectories
@@ -1131,15 +1169,6 @@ def do_create():
         print('Moved images and source data')
 
     return index_entry
-    
-
-def tui():
-    # Start TUI
-    app = XBuildApp()
-    app.run()
-    exit()
-
-
 
 
 while True:
@@ -1178,8 +1207,10 @@ while True:
 
             update_carousel()
             update_IC_pre_fragments()
+            update_IC_index()
             update_storage()
             do_collection()
+            
             print('Collection updated')
             do_in_transit()
             print('In-Transit updated')

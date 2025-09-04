@@ -32,3 +32,7 @@ MC68A44L Direct Memory Access Controller (DMAC)
    :widths: auto
 
     :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6844 Direct Memory Access Controller (DMAC)  <../../../../_static/Documents/Datasheets/MC6844.pdf>`

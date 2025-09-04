@@ -1,6 +1,5 @@
 def getDateRangeFromWeek(p_year,p_week):
     import datetime
-
     firstdayofweek = datetime.datetime.strptime(f'{p_year}-W{int(p_week )- 1}-1', "%Y-W%W-%w").date()
     lastdayofweek = firstdayofweek + datetime.timedelta(days=6.9)
     #return firstdayofweek, lastdayofweek
@@ -36,3 +35,12 @@ def convert_type_to_real_type(type):
             if "/ICs" in type:
                 doc_type = "ICs"
     return doc_type
+
+
+# Storage-related functions
+
+def construct_drawer_ref(st, drawer):
+    return '\n.. _' + str(st).replace(" ","") + "Drawer" + str(drawer) + ':\n'
+
+def construct_drawer_reference(st, drawer):
+    return ':ref:`' + str(st).replace(" ","") + "Drawer" + str(drawer) + '`'

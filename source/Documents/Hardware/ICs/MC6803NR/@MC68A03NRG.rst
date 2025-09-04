@@ -36,4 +36,4 @@ MC68A03NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
 
 .. rubric:: Links
 
-:download:`MC6803NR Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/DS-MC6801-03-03NR.pdf>`
+:download:`MC6803NR Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`

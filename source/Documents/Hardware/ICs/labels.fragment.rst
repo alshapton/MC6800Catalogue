@@ -2,15 +2,7 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC6862L|  image:: /images/Hardware/ICs/MC6862L.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iMC68B54P|  image:: /images/Hardware/ICs/MC68B54P.png
-   :width: 200
-   :class: no-scaled-links
-
-.. |iMC6862P|  image:: /images/Hardware/ICs/MC6862P.1.png
    :width: 200
    :class: no-scaled-links
 
@@ -175,6 +167,14 @@
    :class: no-scaled-links
 
 .. |iSC84003L|  image:: /images/Hardware/ICs/MC6809/SC84003L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6862L|  image:: /images/Hardware/ICs/MC6862L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6862P|  image:: /images/Hardware/ICs/MC6862P.1.png
    :width: 200
    :class: no-scaled-links
 

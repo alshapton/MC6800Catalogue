@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC6862S:
+
+.. #None {'Product':'MC6862S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC6882S 2400 bps Digital Modulator
+==================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","CERDIP"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6862 2400 bps Digital Modulator  <../../../../_static/Documents/Datasheets/MC6862.pdf>`

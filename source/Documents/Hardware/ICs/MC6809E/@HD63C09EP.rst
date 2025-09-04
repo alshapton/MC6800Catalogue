@@ -46,4 +46,4 @@ Note that Motorola did not produce a 3MHz version of the MC6809E.
 
 .. rubric:: Links
 
-:download:`Hitachi HD63x09E Datasheet  <../../../../_static/Documents/Datasheets/DS-Hitachi-HD63x09E.pdf>`
+:download:`Hitachi HD63x09E Datasheet  <../../../../_static/Documents/Datasheets/Hitachi-HD63x09E.pdf>`

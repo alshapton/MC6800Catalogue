@@ -7,7 +7,7 @@ Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)
 
 .. #None {'Product':'Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)','Folder': 'X','Comments':''}
 
-.. image:: ../../images/DataSheets/DS-MC6801-03-03NR.png
+.. image:: ../../images/DataSheets/MC6801-03-03NR.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)
 
 .. rubric:: Links
 
-:download:`MC6801/MC6803/MC6803NR Datasheet <../../_static/Documents/Datasheets/DS-MC6801-03-03NR.pdf>`
+:download:`MC6801/MC6803/MC6803NR Datasheet <../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`

@@ -36,4 +36,4 @@ MC68A01-1G Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 
 .. rubric:: Links
 
-:download:`MC6801 Microcomputer/Microprocessor (MCU/MPU) (MC6801)  <../../../../_static/Documents/Datasheets/DS-MC6801-03-03NR.pdf>`
+:download:`MC6801 Microcomputer/Microprocessor (MCU/MPU) (MC6801)  <../../../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`
