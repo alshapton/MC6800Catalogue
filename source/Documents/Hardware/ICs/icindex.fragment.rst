@@ -98,6 +98,9 @@
 .. include:: ./MC6875/mc6875.fragment.rst
 |
 
+.. include:: ./MC6880A/mc6880a.fragment.rst
+|
+
 .. include:: ./MC6882/mc6882.fragment.rst
 |
 

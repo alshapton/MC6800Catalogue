@@ -16,7 +16,6 @@ Note that the IC part numbers within the following sections are as exhaustive as
    :header: "Part","Packaging","Name","Notes" 
    :widths: 23,17,45,10
 
-   ":material-regular:`thumb_down;2em;sd-text-danger` MC6859","","Data Security Device (DSD)"
    ":material-regular:`verified;2em;sd-text-success` :ref:`MC6889P <MC6889P>`","Plastic","Quad Bus Transceiver (Non-Inverting)"
 
 |

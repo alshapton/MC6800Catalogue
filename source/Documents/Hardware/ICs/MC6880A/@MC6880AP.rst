@@ -1,10 +1,11 @@
 :orphan:
 
-.. _MC68692L:
-.. #None {'Product':'MC6859L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. _MC6880AP:
 
-MC6859L Data Security Device
-============================
+.. #None {'Product':'MC6880AP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC6880AP Quad Three-State Bus Transceiver
+=========================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -17,11 +18,11 @@ MC6859L Data Security Device
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","Ceramic"
+   "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
-   "Temperature","-40-85\ :sup:`o`\ C"
-   "Frequency","1.5 Mhz"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
    "Notes",""
 
 
@@ -35,4 +36,4 @@ MC6859L Data Security Device
 
 .. rubric:: Links
 
-:download:`MC6859 Data Security Device  <../../../../_static/Documents/Datasheets/MC6859.pdf>`
+:download:`MC6880A Quad Three-State Bus Transceiver  <../../../../_static/Documents/Datasheets/MC6880A.pdf>`

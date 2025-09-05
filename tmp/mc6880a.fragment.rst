@@ -1,0 +1,8 @@
+.. collapse::  Quad Three-State Bus Transceiver
+
+   .. csv-table::
+       :header: "Part Number","Packaging","Frequency","Temperature","Notes" 
+       :widths: auto
+
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6880AL <MC6880AL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6880AP <MC6880AP>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""

@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6880A:
+
+Quad Three-State Bus Transceiver
+================================
+
+.. image:: ../../images/DataSheets/MC6880A.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`Quad Three-State Bus Transceiver <../../_static/Documents/Datasheets/MC6880A.pdf>`
