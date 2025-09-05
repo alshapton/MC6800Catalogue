@@ -65,6 +65,9 @@
 .. include:: ./MC6845/mc6845.fragment.rst
 |
 
+.. include:: ./MC6846/mc6846.fragment.rst
+|
+
 .. include:: ./MC6847/mc6847.fragment.rst
 |
 
@@ -74,7 +77,13 @@
 .. include:: ./MC6852/mc6852.fragment.rst
 |
 
+.. include:: ./MC6854/mc6854.fragment.rst
+|
+
 .. include:: ./MC6855/mc6855.fragment.rst
+|
+
+.. include:: ./MC6859/mc6859.fragment.rst
 |
 
 .. include:: ./MC6860/mc6860.fragment.rst

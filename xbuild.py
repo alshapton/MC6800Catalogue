@@ -15,17 +15,17 @@ IN_TRANSIT_SHORT='local_shipping'
 
 OSSEP=os.sep
 
-PREFIX ='source/'
+PREFIX ='source' + OSSEP
 SUFFIX = 'rst'
 
 OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
 TRANSIT_FILE = PREFIX + 'transit.' + SUFFIX
 
 
-MOVE='tmp/move'
+MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
-NEW_GROUP_TMP_LOC='tmp/'
-IC_LOCATIONS = 'source/Documents/Hardware/ICs'
+NEW_GROUP_TMP_LOC='tmp' + OSSEP
+IC_LOCATIONS = 'source'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'ICs'
 
 
  
@@ -98,7 +98,7 @@ def get_loc(file):
                 ref = line.split('.. _')[1].strip().replace(':','').replace('>','').replace('i','')
                 if '.. image:: ' in line and got_image == False:
                     if 'NOIMAGE.png' not in line:
-                        image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i')
+                        image=line.split('.. image::')[1].strip().replace('../../../../i','../../../i').replace('/',OSSEP)
                         got_image=True         
             if '.. #Metadata' in line:
                 metadata=True
@@ -208,7 +208,7 @@ def create_new_group_from_index():
                     c.write(".. #None {'Product':'" + chip + "','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}\n\n")
                     c.write(chip + ' ' + group_name + '\n')
                     c.write('=' * (len(chip) + len(group_name) + 1) + '\n\n')
-                    c.write('.. image:: ../../../../images/NOIMAGE.png\n')
+                    c.write('.. image:: ..!..!..!..!images!NOIMAGE.png\n'.replace('!',OSSEP))
                     c.write('   :width: 400\n')
                     c.write('   :align: center\n\n')
                     c.write('.. rubric:: Specific Information\n\n')
@@ -832,6 +832,7 @@ def update_storage():
     print('\nLocations fully updated')      
 
 def update_IC_index():
+    print('\nUpdating IC index')
     files = glob.glob('**/MC*', recursive=True)
     icfiles=[]
     ic2file=[]
@@ -863,7 +864,6 @@ def update_IC_index():
             chips.append('MCM' + chip)
         else:
             chips.append('MC' + chip)
-    print(chips)
     
     IC_FRAGMENTS_INDEX=IC_LOCATIONS + OSSEP + 'icindex.fragment.rst'
     with open(IC_FRAGMENTS_INDEX,"w") as c:
@@ -872,7 +872,7 @@ def update_IC_index():
     
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
-    #exit()
+    print('\nCompleted updating IC index\n')
 
 
 def do_in_transit():

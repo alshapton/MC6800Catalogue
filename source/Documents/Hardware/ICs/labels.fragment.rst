@@ -2,10 +2,6 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC68B54P|  image:: /images/Hardware/ICs/MC68B54P.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |isource/Documents/Hardware/ICs/packaging|  image:: /images/General/better.png
    :width: 200
    :class: no-scaled-links
@@ -175,6 +171,10 @@
    :class: no-scaled-links
 
 .. |iMC6862P|  image:: /images/Hardware/ICs/MC6862P.1.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC68B54P|  image:: /images/Hardware/ICs/MC68B54P.png
    :width: 200
    :class: no-scaled-links
 
