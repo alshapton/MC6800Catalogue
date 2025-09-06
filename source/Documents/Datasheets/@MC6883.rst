@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6883:
+
+MC6883 Synchronous Address Multiplexer
+======================================
+
+.. image:: ../../images/DataSheets/MC6883.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`lock_open;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6883 Synchronous Address Multiplexer <../../_static/Documents/Datasheets/MC6883.pdf>`

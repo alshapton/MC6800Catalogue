@@ -568,7 +568,7 @@ def update_storage():
 
     all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
-    FOLDER_MAP_FILE = 'source/Documents/folder.map'
+    FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
     with open(FOLDER_MAP_FILE, "w") as fmf:
 
@@ -618,7 +618,7 @@ def update_storage():
     colcount=0
     with open(TABLES_FILE,"w") as c:
 
-        c.write('.. include:: ./' + ICLABELSNAME)
+        c.write('.. include:: .' + OSSEP + ICLABELSNAME)
 
         for item in sorted_storage:
             if item['Storage'] != storagebox:   
@@ -785,17 +785,17 @@ def update_storage():
     
     # Move snippets into snippets folder
     print('Moving snippets into snippets folder')
-    snippeticindexfile=IC_LOCATIONS + '/icindex.snippet'
+    snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
     HDR=''
     with open(snippeticindexfile, 'w') as sicif:
 
-        sicif.write('.. include:: Documents/Hardware/ICs/labels.fragment.rst\n\n')
+        sicif.write('.. include:: Documents!Hardware!ICs!labels.fragment.rst\n\n'.replace('!',OSSEP))
         for snippetfile in sorted(snippetfiles):
             # Formulate tag for start of file
             PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
             _=line_prepender(snippetfile, PREAMBLE)
-            movefile(snippetfile,  os.path.dirname(snippetfile) + '/snippets/' + os.path.basename(snippetfile))
-            SF=snippetfile.replace(IC_LOCATIONS + '/tables.fragment.','').replace('.snippet','')
+            movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
+            SF=snippetfile.replace(IC_LOCATIONS + OSSEP + 'tables.fragment.','').replace('.snippet','')
             SFHEADER='.. rubric:: '+ SF.split('.')[0].replace('_',' ')
             if SFHEADER != HDR:
                 sicif.write(SFHEADER + '\n\n')

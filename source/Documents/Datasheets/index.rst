@@ -57,6 +57,7 @@ DataSheets
    ":ref:`MC6875 <MC6875>`","M6800 Clock Generator",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC6880A <MC6880A>`","MC6880A Quad Three-State Bus Transceiver",":material-regular:`lock;2em;sd-text-success`","1983",""
    ":ref:`MC6882 <DS-MC6882>`","Octal Three-State Buffer/Latch",":material-regular:`lock;2em;sd-text-success`",""
+   ":ref:`MC6883 <MC6883>`","Synchronous Address Multiplexer",":material-regular:`lock_open;2em;sd-text-danger`","1983"
    ":ref:`MC68488 <MC68488>`","MC68488 General Purpose Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC68701 <MC68701>`","Microcomputer Unit",":material-regular:`lock_open;2em;sd-text-danger`","",""
 
