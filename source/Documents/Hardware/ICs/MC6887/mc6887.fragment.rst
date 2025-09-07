@@ -1,0 +1,10 @@
+
+.. collapse:: Hex Three-State Buffer/Inverter (MC6887)
+
+
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6887L <MC6887L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6887P <MC6887P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"

@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6885-88:
+
+MC6885/6/7/8 Hex Three-State Buffer Inverters
+=============================================
+
+.. image:: ../../images/DataSheets/MC6885-88.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6885/6/7/8 Hex Three-State Buffer Inverters <../../_static/Documents/Datasheets/MC6885-88.pdf>`

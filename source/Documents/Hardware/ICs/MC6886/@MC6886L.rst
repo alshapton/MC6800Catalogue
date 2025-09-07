@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC6886L:
+
+.. #None {'Product':'MC6886L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC6886L Hex Three-State Buffer/Inverter
+=======================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","Ceramic"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
+   "Notes","Inverting, 2-input enable controlling all 6 buffers"
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6886 Hex Three-State Buffer/Inverter  <../../../../_static/Documents/Datasheets/MC6885-88.pdf>`

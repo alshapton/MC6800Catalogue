@@ -107,6 +107,21 @@
 .. include:: ./MC6883/mc6883.fragment.rst
 |
 
+.. include:: ./MC6885/mc6885.fragment.rst
+|
+
+.. include:: ./MC6886/mc6886.fragment.rst
+|
+
+.. include:: ./MC6887/mc6887.fragment.rst
+|
+
+.. include:: ./MC6888/mc6888.fragment.rst
+|
+
+.. include:: ./MC6889/mc6889.fragment.rst
+|
+
 .. include:: ./MC68488/mc68488.fragment.rst
 |
 

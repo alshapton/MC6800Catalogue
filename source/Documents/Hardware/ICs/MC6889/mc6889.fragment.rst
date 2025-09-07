@@ -1,0 +1,9 @@
+
+.. collapse:: NonInverting Quad Three-State Bus Transceiver (MC6889)
+
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6889P <MC6889P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6889L <MC6889L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
