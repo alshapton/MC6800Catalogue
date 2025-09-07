@@ -1,0 +1,10 @@
+
+.. collapse:: MPU Bus-Compatible 8-Bit D-to-A Converter (MC6890)
+
+
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6890L <MC6890L>`","Ceramic","N/A","0-70\ :sup:`o`\ C",""
+      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6890AL <MC6890AL>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""

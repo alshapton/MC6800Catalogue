@@ -122,6 +122,9 @@
 .. include:: ./MC6889/mc6889.fragment.rst
 |
 
+.. include:: ./MC6890/mc6890.fragment.rst
+|
+
 .. include:: ./MC68488/mc68488.fragment.rst
 |
 

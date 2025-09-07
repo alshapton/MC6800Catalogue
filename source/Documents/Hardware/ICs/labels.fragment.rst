@@ -1,7 +1,3 @@
-.. |iMC6889P|  image:: /images/Hardware/ICs/MC6889P.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |isource/Documents/Hardware/ICs/packaging|  image:: /images/General/better.png
    :width: 200
    :class: no-scaled-links
@@ -107,6 +103,10 @@
    :class: no-scaled-links
 
 .. |iMC6820L|  image:: /images/Hardware/ICs/MC6820/MC6820(L).png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6889P|  image:: /images/Hardware/ICs/MC6889P.png
    :width: 200
    :class: no-scaled-links
 

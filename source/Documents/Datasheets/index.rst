@@ -60,6 +60,7 @@ DataSheets
    ":ref:`MC6883 <MC6883>`","Synchronous Address Multiplexer",":material-regular:`lock_open;2em;sd-text-danger`","1983"
    ":ref:`MC6885-88 <MC6885-88>`","MC6885/6/7/8 Hex Three-State Buffer Inverters",":material-regular:`lock;2em;sd-text-success`","1983"
    ":ref:`MC6889 <MC6889>`","NonInverting Quad Three-State Bus Transceiever",":material-regular:`lock;2em;sd-text-success`","1983"
+   ":ref:`MC6890 <MC6890>`","MC6890 MPU Bus-Compatible 8-Bit D-to-A Converter",":material-regular:`lock_open;2em;sd-text-danger`","1983"
    ":ref:`MC68488 <MC68488>`","MC68488 General Purpose Interface Adapter",":material-regular:`lock;2em;sd-text-success`","",""
    ":ref:`MC68701 <MC68701>`","Microcomputer Unit",":material-regular:`lock_open;2em;sd-text-danger`","",""
 

@@ -800,7 +800,7 @@ def update_storage():
             if SFHEADER != HDR:
                 sicif.write(SFHEADER + '\n\n')
                 HDR = SFHEADER
-            sicif.write('.. include:: Documents/Hardware/ICs/snippets/' + os.path.basename(snippetfile) + '\n\n')
+            sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ + os.path.basename(snippetfile) + '\n\n')
 
             print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
 

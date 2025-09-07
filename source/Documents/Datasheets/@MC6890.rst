@@ -1,0 +1,22 @@
+:orphan:
+
+.. _MC6890:
+
+MC6890 MPU Bus-Compatible 8-Bit D-to-A Converter
+================================================
+
+.. image:: ../../images/DataSheets/MC6890.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   :material-regular:`thumb_down;2em;sd-text-danger`
+
+.. rubric:: Links
+
+:download:`MC6890 MPU Bus-Compatible 8-Bit D-to-A Converter <../../_static/Documents/Datasheets/MC6890.pdf>`
