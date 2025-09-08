@@ -8,11 +8,11 @@ MEK6800D2 Development board for the 6800 microprocessor
 .. include::  MEK6800D2.carousel.rst
 
 
-.. csv-table:: Specifications
+.. csv-table:: 
    :header: "Specification","Description"
    :widths: auto
         
-    "NAME","MED6800D2"
+    "NAME","MEK6800D2"
     "MANUFACTURER","Motorola"
     "TYPE","Development Board"
     "ORIGIN","USA"
@@ -59,7 +59,7 @@ Another popular monitor program for this system is called MIKBUG.
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 8-SEP-2025
 
 .. rubric:: Links
 
