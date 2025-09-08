@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 07-09-2025) in transit.
+This is the current set of items (as at 08-09-2025) in transit.
 
 
 .. rubric:: ICs
@@ -13,7 +13,6 @@ This is the current set of items (as at 07-09-2025) in transit.
 
 	" :ref:`MC6870 <MC6870>`"," Two-Phase Microprocessor Clock"
 	" :ref:`MC68B21P <MC68B21P>`"," MC6821 Peripheral Interface Adapter (PIA)"
-	" :ref:`MCM6810BJCS <MC6810BJCS>`"," 128 x 8-Bit Static Random Access Memory (MCM6810)"
 
 
 .. rubric:: Other Hardware

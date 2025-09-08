@@ -10,7 +10,7 @@
       ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6810P <MCM6810P>`","Plastic","","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCM68A10L <MC68A10L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MCM68B10P <MCM68B10P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`local_shipping;2em` :ref:`MCM6810BJCS <MC6810BJCS>`","MIL-STD-883B","1MHz","-55-125\ :sup:`o`\ C",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B","1MHz","-55-125\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6810EL <MCM6810EL>`","Ceramic","TBD","TBD",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MCM68B10L <MC68B10L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6810L <MCM6810L>`","Ceramic","","0-70\ :sup:`o`\ C",""

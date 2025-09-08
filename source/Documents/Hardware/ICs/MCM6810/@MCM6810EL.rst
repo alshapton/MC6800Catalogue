@@ -7,7 +7,7 @@
 MCM6810EL 128 x 8-bit RAM
 =========================
 
-.. image:: ../../../../images/Hardware/ICs/MCM6810EL.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810EL.png
    :width: 400
    :align: center
 

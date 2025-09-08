@@ -10,19 +10,23 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMCM6810P|  image:: /images/Hardware/ICs/MCM6810P.png
+.. |iMCM6810P|  image:: /images/Hardware/ICs/MCM6810/MCM6810P.png
    :width: 200
    :class: no-scaled-links
 
-.. |iMCM68B10P|  image:: /images/Hardware/ICs/MCM68B10P.png
+.. |iMCM68B10P|  image:: /images/Hardware/ICs/MCM6810/MCM68B10P.png
    :width: 200
    :class: no-scaled-links
 
-.. |iMCM6810EL|  image:: /images/Hardware/ICs/MCM6810EL.png
+.. |iMCM6810BJCS|  image:: /images/Hardware/ICs/MCM6810/MCM6810BJCS.png
    :width: 200
    :class: no-scaled-links
 
-.. |iMCM6810L|  image:: /images/Hardware/ICs/MCM6810L.png
+.. |iMCM6810EL|  image:: /images/Hardware/ICs/MCM6810/MCM6810EL.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMCM6810L|  image:: /images/Hardware/ICs/MCM6810/MCM6810L.png
    :width: 200
    :class: no-scaled-links
 

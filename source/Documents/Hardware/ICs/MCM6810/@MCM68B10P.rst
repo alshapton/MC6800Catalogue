@@ -7,7 +7,7 @@
 MCM68B10P 128 x 8-bit RAM
 =========================
 
-.. image:: ../../../../images/Hardware/ICs/MCM68B10P.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM68B10P.png
    :width: 400
    :align: center
 

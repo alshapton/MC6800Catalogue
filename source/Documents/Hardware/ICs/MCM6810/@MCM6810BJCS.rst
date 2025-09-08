@@ -1,13 +1,13 @@
 :orphan:
 
-.. _MC6810BJCS:
+.. _MCM6810BJCS:
 
-.. #None {'Product':'MC6810BJCS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MCM6810BJCS','Storage': 'Storage Box 1','Drawer':4,'Row':3,'Column':4}
 
 MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
 =============================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810BJCS.png
    :width: 400
    :align: center
 
@@ -16,11 +16,11 @@ MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8012"
+   "Manufacture Date","17-MAR-1980 to 23-MAR-1980"
    "Packaging","MIL-STD-883B"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 4 <Storage_Box_1_Drawer_4>`"
    "Temperature","-55-125\ :sup:`o`\ C"
    "Frequency","1MHz"
    "Notes",""
@@ -32,7 +32,7 @@ MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
+   :material-regular:`verified;2em;sd-text-success` 4-SEP-2025
 
 .. rubric:: Links
 
