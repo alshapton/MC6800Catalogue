@@ -11,7 +11,7 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B50S <MC68B50S>`","CERDIP","2MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6850CS <MC6850CS>`","CERDIP","1MHz","-40-85\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6850S <MC6850S>`","CERDIP","1MHz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6850P <MC6850P>`","Plastic","1MHz","0-70\ :sup:`o`\ C",""
+      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6850P <MC6850P>`","Plastic","1MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B50C <MC68B50C>`","Ceramic","2MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A50L <MC68A50L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
       ":material-regular:`verified;2em;sd-text-success` :ref:`MC68B50CP <MC68B50CP>`","Plastic","2 MHz","-40-85\ :sup:`o`\ C",""

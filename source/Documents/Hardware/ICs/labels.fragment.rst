@@ -34,6 +34,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6850P|  image:: /images/Hardware/ICs/MC6850/MC6850P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B50CP|  image:: /images/Hardware/ICs/MC6850/MC68B50CP.png
    :width: 200
    :class: no-scaled-links
@@ -147,6 +151,10 @@
    :class: no-scaled-links
 
 .. |iMC68B00S|  image:: /images/Hardware/ICs/MC6800/MC68B00S.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iSC44204P|  image:: /images/Hardware/ICs/MC6800/SC44204P.png
    :width: 200
    :class: no-scaled-links
 

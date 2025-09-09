@@ -505,6 +505,7 @@ def update_storage():
                             this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
                             loc = ast.literal_eval(this_loc)
                             is_misc=False
+                            
                             for i in oths["Other"]:
                                 if loc["Storage"] == i['Name']:
                                     is_misc=True
@@ -760,7 +761,10 @@ def update_storage():
                     LOCATIONINSTORAGE = 'Unknown'
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
+                    if not stripped.endswith('`>\n'):
+                        stripped = stripped + '>`\n'
                     opf.write(stripped)
+                    
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
