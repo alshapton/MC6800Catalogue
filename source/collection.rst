@@ -109,6 +109,7 @@ This is the current collection (as at 09-09-2025) of the items produced by Motor
 	":ref:`MCM6810EL <MCM6810EL>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810L <MCM6810L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810P <MCM6810P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
+	":ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
 	":ref:`MCM68B10P <MCM68B10P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"

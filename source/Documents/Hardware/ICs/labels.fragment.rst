@@ -202,6 +202,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMCM6830AP-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AP-2.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMCM6830L7|  image:: /images/Hardware/ICs/MCM6830/MCM6830L7.png
    :width: 200
    :class: no-scaled-links
