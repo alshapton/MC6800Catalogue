@@ -1,0 +1,25 @@
+# This is a TOML document containing xbuild setup information
+
+title = "XBUILD setup"
+
+[[icons]]
+name = "cancelled"
+icon = ":material-regular:`remove_shopping_cart;2em`"
+[[icons]]
+name = "intransit"
+icon = ":material-regular:`local_shipping;2em;`"
+[[icons]]
+name = "present"
+icon = ":material-regular:`verified;2em;sd-text-success`"
+[[icons]]
+name = "notpresent"
+icon = ":material-regular:`thumb_down;2em;sd-text-danger`"
+[[icons]]
+name = "advanceinfo"
+icon = ":material-regular:`lock_open;2em;sd-text-danger`"
+[[icons]]
+name = "confirminfo"
+icon = ":material-regular:`lock;2em;sd-text-success`"
+[[icons]]
+name = "2ndsource"
+icon = ":octicon:`list-ordered;2em`"

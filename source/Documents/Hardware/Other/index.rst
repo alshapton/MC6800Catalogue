@@ -9,5 +9,5 @@ Other Related Hardware
 
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board","In original briefcase"
    ":ref:`N/A <HEPEducatorKitII>`","Motorola HEP Kit Educator II",""
-   ":material-regular:`local_shipping;2em;`:ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",""
+   ":material-regular:`verified;2em;sd-text-success` :ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)",":octicon:`list-ordered;2em` Micro Industries"

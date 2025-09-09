@@ -34,6 +34,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6850P|  image:: /images/Hardware/ICs/MC6850/MC6850P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B50CP|  image:: /images/Hardware/ICs/MC6850/MC68B50CP.png
    :width: 200
    :class: no-scaled-links
@@ -150,6 +154,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iSC44204P|  image:: /images/Hardware/ICs/MC6800/SC44204P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6800L|  image:: /images/Hardware/ICs/MC6800/MC6800L.png
    :width: 200
    :class: no-scaled-links
@@ -191,6 +199,10 @@
    :class: no-scaled-links
 
 .. |iMCM68A30L8|  image:: /images/Hardware/ICs/MCM6830/MCM68A30L8.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMCM6830AP-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AP-2.png
    :width: 200
    :class: no-scaled-links
 

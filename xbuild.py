@@ -5,6 +5,8 @@ import glob
 import os
 
 import ast
+import tomllib
+
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
 
@@ -26,10 +28,6 @@ MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp' + OSSEP
 IC_LOCATIONS = 'source'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'ICs'
-
-
- 
-
 
 
 def update_or_not_metadata(filename):    
@@ -507,6 +505,7 @@ def update_storage():
                             this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
                             loc = ast.literal_eval(this_loc)
                             is_misc=False
+                            
                             for i in oths["Other"]:
                                 if loc["Storage"] == i['Name']:
                                     is_misc=True
@@ -762,7 +761,10 @@ def update_storage():
                     LOCATIONINSTORAGE = 'Unknown'
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
+                    if not stripped.endswith('`>\n'):
+                        stripped = stripped + '>`\n'
                     opf.write(stripped)
+                    
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')
@@ -786,6 +788,7 @@ def update_storage():
     # Move snippets into snippets folder
     print('Moving snippets into snippets folder')
     snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
+    print('Snippet index file: ' + snippeticindexfile)
     HDR=''
     with open(snippeticindexfile, 'w') as sicif:
 
@@ -800,7 +803,8 @@ def update_storage():
             if SFHEADER != HDR:
                 sicif.write(SFHEADER + '\n\n')
                 HDR = SFHEADER
-            sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ + os.path.basename(snippetfile) + '\n\n')
+    
+            sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
 
@@ -1170,6 +1174,21 @@ def do_create():
 
     return index_entry
 
+
+# DO SETUP
+
+with open("./xbuild_support/setup.toml", "rb") as f:
+    data = tomllib.load(f)
+
+# Prepare new conf.py file
+copy_and_replace('./xbuild_support/conf.master','./xbuild_support/setup.pre')
+
+with open('./xbuild_support/setup.pre', 'a') as newfile:
+    newfile.write("# This component is auto-generated - do not edit \n")
+    newfile.write('rst_prolog = """\n')
+    for icon in data["icons"]:
+        newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
+    newfile.write('"""\n')
 
 while True:
     print('\t1. Get date range from week ')

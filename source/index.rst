@@ -47,14 +47,13 @@ Conventions Used
    :widths: 14, 86
    :width: 100
 
-   ":material-regular:`verified;2em;sd-text-success`","This item is present in the collection."
-   ":material-regular:`thumb_down;2em;sd-text-danger`","This item has not yet been acquired for the collection."
-   ":material-regular:`lock_open;2em;sd-text-danger`","Usually datasheets, this is preliminary or advance information and will be subject to change."
-   ":material-regular:`lock;2em;sd-text-success`","This is published material relating to the product as sold."
-   ":octicon:`list-ordered;2em`","A second-source item."
-   ":material-regular:`local_shipping;2em`","An item in transit"
-   ":material-regular:`remove_shopping_cart;2em`","Product never shipped or cancelled."
-
+   |present|,"This item is present in the collection."
+   |notpresent|,"This item has not yet been acquired for the collection."
+   |advanceinfo|,"Usually datasheets, this is preliminary or advance information and will be subject to change."
+   |confirminfo|,"This is published material relating to the product as sold."
+   |2ndsource|,"A second-source item."
+   |intransit|,"An item in transit"
+   |cancelled|,"Product never shipped or cancelled."
 
 .. toctree::
    :hidden:
