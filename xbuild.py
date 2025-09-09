@@ -781,8 +781,20 @@ def update_storage():
             content = fd.readlines()
         with open(snippetfile, 'w') as fw:
             for wl in range (0,len(content)):
-                
                 fw.write(content[wl].replace('collapse','rubric').replace('    ',''))
+
+        with open(snippetfile) as file_in:
+            lines = []
+            for line in file_in:
+                lines.append(line)
+        
+        with open(snippetfile, 'w') as fw:
+            for pl in lines:
+                if not pl.startswith('>'):
+                    fw.write(pl)                    
+                    
+
+
         print('     ' + os.path.basename(snippetfile) + ' updated.')
     
     # Move snippets into snippets folder
@@ -796,19 +808,30 @@ def update_storage():
         for snippetfile in sorted(snippetfiles):
             # Formulate tag for start of file
             PREAMBLE='\n\n.. _' + os.path.basename(snippetfile.replace('tables.fragment.','').replace('.snippet','')).replace('.','_') + ':'+'\n\n'
+            
+
+            ISOPREAMBLE=PREAMBLE.replace('.. _','').replace(':','').strip()
+            POSS_ISOPREAMBLE = ISOPREAMBLE[:int(len(ISOPREAMBLE)/2)] + '_' + ISOPREAMBLE[:int(len(ISOPREAMBLE)/2)]
+                
+
             _=line_prepender(snippetfile, PREAMBLE)
             movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
             SF=snippetfile.replace(IC_LOCATIONS + OSSEP + 'tables.fragment.','').replace('.snippet','')
-            SFHEADER='.. rubric:: '+ SF.split('.')[0].replace('_',' ')
+            if POSS_ISOPREAMBLE == ISOPREAMBLE:
+                print('     Duplicate tag detected: ' + ISOPREAMBLE)
+                SFHEADER=''
+            else:
+                SFHEADER='.. rubric:: '+ SF.split('.')[0].replace('_',' ')
             if SFHEADER != HDR:
                 sicif.write(SFHEADER + '\n\n')
                 HDR = SFHEADER
     
+
+
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
 
-    
 
     print('Cleaning up')
     os.remove(TABLES_FILE)
