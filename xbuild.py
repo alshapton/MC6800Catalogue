@@ -1295,6 +1295,17 @@ def setup_icons():
 
     copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')
 
+    with open('./xbuild_support/conventions.rst', 'w') as newfile:
+        newfile.write(':orphan:\n\n')
+        newfile.write("# This component is auto-generated - do not edit \n")
+        newfile.write('.. csv-table::')
+        newfile.write('   :header: "Symbol","Description"\n')
+        newfile.write('   :widths: 14, 86\n')
+        newfile.write('   :width: 100\n\n')
+
+   
+        for icon in data["icons"]:
+            newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
 
 def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     print('Updating index pages')

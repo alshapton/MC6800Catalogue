@@ -5,24 +5,32 @@ title = "XBUILD setup"
 [[icons]]
 name = "cancelled"
 icon = ":material-regular:`remove_shopping_cart;2em`"
+desc = "Product never shipped or cancelled."
 [[icons]]
 name = "intransit"
 icon = ":material-regular:`local_shipping;2em;`"
+desc = "An item in transit."
 [[icons]]
 name = "present"
 icon = ":material-regular:`verified;2em;sd-text-success`"
+desc = "This item is present in the collection."
 [[icons]]
 name = "notpresent"
 icon = ":material-regular:`thumb_down;2em;sd-text-danger`"
+desc = "This item has not yet been acquired for the collection."
 [[icons]]
 name = "advanceinfo"
 icon = ":material-regular:`lock_open;2em;sd-text-danger`"
+desc = "Usually datasheets, this is preliminary or advance information and will be subject to change."
 [[icons]]
 name = "confirminfo"
 icon = ":material-regular:`lock;2em;sd-text-success`"
+desc = "This is published material relating to the product as sold."
 [[icons]]
 name = "2ndsource"
 icon = ":octicon:`list-ordered;2em`"
+desc = "A second-source item."
 [[icons]]
 name = "underoffer"
 icon = ":material-regular:`gavel;2em;sd-text-danger`"
+desc = "Under Offer."
