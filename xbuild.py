@@ -14,6 +14,9 @@ CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
 IN_TRANSIT=':material-regular:`local_shipping;2em`'
 IN_TRANSIT_SHORT='local_shipping'
+UNDER_OFFER='|underoffer|'
+ANYUNDEROFFER=False
+ANYINTRANSIT=False
 
 OSSEP=os.sep
 
@@ -22,7 +25,7 @@ SUFFIX = 'rst'
 
 OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
 TRANSIT_FILE = PREFIX + 'transit.' + SUFFIX
-
+UNDEROFFER_FILE = PREFIX + 'underoffer.' + SUFFIX
 
 MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
@@ -113,7 +116,9 @@ def get_loc(file):
                 sta='NO'
             if IN_TRANSIT in line and sta == '':
                 sta='TRANSIT'
-
+            if UNDER_OFFER in line and sta == '':
+                print(file)
+                sta='UNDEROFFER'
             loc['Status'] = sta                        
         return metadata, loc
 
@@ -130,6 +135,8 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
                     stat = '"' + CROSS_MARK
                 case 'TRANSIT':
                     stat = '"' + IN_TRANSIT
+                case 'UNDEROFFER':
+                    stat = '"' + UNDER_OFFER
                 case _:
                     stat = '"N/A'
 
@@ -372,7 +379,9 @@ def update_IC_pre_fragments():
                         if 'material-regular' in ffline:
                             splitline=ffline.strip().split(' ')
                             posess=splitline[0].replace('"','')
-                 
+                        if '|underoffer|' in ffline:
+                            posess='|underoffer|'
+                    
                     tref=tfile.replace('@','').replace('.rst','').split('.')[0]
                     if '!' in tref:
                         tref=tref.split('!')[1]
@@ -771,7 +780,7 @@ def update_storage():
     for lvl2file in sorted(lvl2files):
         os.remove(lvl2file)
         print('     ' + os.path.basename(lvl2file) + ' removed.')       
-
+    
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
     # Changing collapsing into rubrics
@@ -902,7 +911,77 @@ def update_IC_index():
     print('\nCompleted updating IC index\n')
 
 
+def do_underoffer():
+    ANYUNDEROFFER=False
+    # Find all .rst files in the current directory and subdirectories
+    files = glob.glob('source/**/*.fragment.'+SUFFIX, recursive=True)
+    with open(UNDEROFFER_FILE,"w") as c:
+        c.write(':orphan:\n\n')
+        c.write('.. _underoffer:\n\n')
+        c.write ('Under Offer\n')
+        c.write('===========')
+        c.write('\n')
+        c.write('This is the current set of items (as at ' + time.strftime("%d-%m-%Y") + ') under offer.\n')
+        
+    
+        underoffer=[]
+
+
+        for file in files:
+            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
+                "underoffer.rst" not in file and
+                "@" not in file and "carousel" not in file and "snippets" not in file):
+                with open(file) as f:
+                    type = os.path.dirname(file).replace(PREFIX,'')
+                    doc_type=convert_type_to_real_type(type)
+                    for line in f:  
+
+                        if UNDER_OFFER in line :
+                            ANYUNDEROFFER=True
+                            print(file + ' contains under offer item')
+                            if 'An item in underoffer' not in line:
+                                splitline = line.split('","')
+                                part_number = splitline[0].strip().replace(UNDER_OFFER,'').replace('""','"')
+                                try:
+                                    description = splitline[1].strip().replace('""','"')
+                                except:
+                                    description = ''
+
+                        
+                                if doc_type == 'ICs':
+                                    description = 'ICSTUFF'
+                                    cfile=part_number.replace('" :ref:`','').split(' ')[0] + '.' + SUFFIX
+                                    chip_file = glob.glob(IC_LOCATIONS + '/**/*' + cfile, recursive=True)[0]
+                                    ch=cfile.replace('.' + SUFFIX,'')
+                                    this_chip_file = open(chip_file,'r')
+                                    lines = this_chip_file.readlines()
+                                    filtered = [line for line in lines if line.startswith(ch)]
+                                    
+                                    description = filtered[0].replace(ch,'').replace('\n','')
+
+
+                                outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
+                                
+                                thisdict = {"PN"    : part_number, 
+                                            "DESC"  : description, 
+                                            "DTYPE" : doc_type, 
+                                            "OLINE" : outline }
+                                if description != '' :
+                                    underoffer.append(thisdict)
+                newlist = sorted(underoffer, key=lambda d: (d['DTYPE'],d['PN']))  
+        HEADING=''
+        for i in newlist:
+            if HEADING != i['DTYPE']:
+                HEADING = i['DTYPE']
+                c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
+                c.write('.. csv-table:: \n')
+                c.write('\t:header: "Part Number","Description"\n')
+                c.write('\t:widths: 30, 70\n\n')  
+            c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
+    return ANYUNDEROFFER
+
 def do_in_transit():
+    ANYINTRANSIT=False
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     with open(TRANSIT_FILE,"w") as c:
@@ -958,7 +1037,8 @@ def do_in_transit():
                                     intransit.append(thisdict)
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
         HEADING=''
-
+        if len(newlist) > 0:
+            ANYINTRANSIT=True
         for i in newlist:
             if HEADING != i['DTYPE']:
                 HEADING = i['DTYPE']
@@ -967,7 +1047,7 @@ def do_in_transit():
                 c.write('\t:header: "Part Number","Description"\n')
                 c.write('\t:widths: 30, 70\n\n')  
             c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
-
+    return ANYINTRANSIT
 
 def collect_metadata():
     print('Collecting location metadata')
@@ -1199,19 +1279,45 @@ def do_create():
 
 
 # DO SETUP
+def setup_icons():
+    with open("./xbuild_support/setup.toml", "rb") as f:
+        data = tomllib.load(f)
 
-with open("./xbuild_support/setup.toml", "rb") as f:
-    data = tomllib.load(f)
+    # Prepare new conf.py file
+    copy_and_replace('./xbuild_support/conf.master','./xbuild_support/setup.pre')
+    with open('./xbuild_support/setup.pre', 'a') as newfile:
+        newfile.write("# This component is auto-generated - do not edit \n")
+        newfile.write('rst_prolog = """\n')
+        for icon in data["icons"]:
+            newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
+            print(icon["name"].strip() + ' icon added')
+        newfile.write('"""\n')
 
-# Prepare new conf.py file
-copy_and_replace('./xbuild_support/conf.master','./xbuild_support/setup.pre')
+    copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')
 
-with open('./xbuild_support/setup.pre', 'a') as newfile:
-    newfile.write("# This component is auto-generated - do not edit \n")
-    newfile.write('rst_prolog = """\n')
-    for icon in data["icons"]:
-        newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
-    newfile.write('"""\n')
+
+def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
+    print('Updating index pages')
+    if ANYUNDEROFFER == False:
+        print('   No items under offer\n')
+    if ANYINTRANSIT == False:
+        print('   No items in transit\n')
+    print('\n')
+    with open("./xbuild_support/index.pre", "r") as f:
+        lines=f.readlines()
+    with open("./xbuild_support/index.master", "w") as f:
+        for line in lines:
+            if "##UNDEROFFER##" in line or "##INTRANSIT##" in line:
+                if "##UNDEROFFER##" in line:
+                    if ANYUNDEROFFER:
+                        f.write('   Under Offer <underoffer>\n')
+                if "##INTRANSIT##" in line:
+                    if ANYINTRANSIT:
+                        f.write('   In Transit <transit>\n')
+            else:             
+                f.write(line)
+    copy_and_replace('./xbuild_support/index.master','./source/index.rst')
+
 
 while True:
     print('\t1. Get date range from week ')
@@ -1240,6 +1346,8 @@ while True:
         case "4":
             create_new_group_from_index()        
         case "0":
+            print("\nSetting Up icons")
+            setup_icons()
             print('\n\nCommencing updating storage metadata links')
 
             rstfiles = glob.glob('**/*.rst', recursive=True)
@@ -1254,7 +1362,9 @@ while True:
             do_collection()
             
             print('Collection updated')
-            do_in_transit()
+            ANYUNDEROFFER=do_underoffer()
+            ANYINTRANSIT=do_in_transit()
+            do_index_contents(ANYUNDEROFFER,ANYINTRANSIT)
             print('In-Transit updated')
             os.system("make clean html")
         case "5":

@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC68A45S:
+
+.. #None {'Product':'MC68A45S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+
+MC68A45S CRT Controller (CRTC)
+==============================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Packaging","CERDIP"
+   "Status","TBD"
+   "Location","TBD"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1.5 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component"
+   :widths: auto
+
+   ":material-regular:`thumb_down;2em;sd-text-danger`"
+
+.. rubric:: Links
+
+:download:`MC6845 CRT Controller (CRTC)  <../../../../_static/Documents/Datasheets/MC6845.pdf>`

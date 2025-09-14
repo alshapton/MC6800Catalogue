@@ -23,3 +23,6 @@ icon = ":material-regular:`lock;2em;sd-text-success`"
 [[icons]]
 name = "2ndsource"
 icon = ":octicon:`list-ordered;2em`"
+[[icons]]
+name = "underoffer"
+icon = ":material-regular:`gavel;2em;sd-text-danger`"

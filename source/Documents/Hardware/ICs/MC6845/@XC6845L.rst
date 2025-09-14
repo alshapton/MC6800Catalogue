@@ -32,3 +32,6 @@ XC6845L CRT Controller
 
    :material-regular:`verified;2em;sd-text-success` 20-MAR-2025
 
+.. rubric:: Links
+
+:download:`MC6845 CRT Controller  <../../../../_static/Documents/Datasheets/MC6845.pdf>`

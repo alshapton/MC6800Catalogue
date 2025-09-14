@@ -1,0 +1,38 @@
+:orphan:
+
+.. _MC6845CP:
+
+.. #None {'Product':'MC6845CP','Storage': 'Storage Box X','Drawer':X,'Row':X,'Column':X}
+
+MC6845CP CRT Controller
+=======================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code",""
+   "Manufacture Date",""
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","TBD"
+   "Notes",""
+   "Frequency","N/A"
+   "Temperature","N/A"
+   
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   ":material-regular:`local_shipping;2em`"
+
+.. rubric:: Links
+
+:download:`MC6845 CRT Controller  <../../../../_static/Documents/Datasheets/MC6845.pdf>`
