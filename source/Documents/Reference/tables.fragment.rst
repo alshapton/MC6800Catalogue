@@ -9,8 +9,16 @@
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <EDUCATOR-II-BROCHURE>`","EDUCATOR-II Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
+
+.. rubric:: Folder 4
+
+.. csv-table::
+   :header: "Part Number","Name","Comments"
+   :widths: 20,80,20 
+
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Collection <M6800_Microcomputer_System_Support_Products_map_reference>`"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
 
 .. rubric:: Folder M6800 Microcomputer System Support Products
 
@@ -21,7 +29,6 @@
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800-DOCUMENTATION-BROCHURE>`","Documentation Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SOFTWARE-IN-HOUSE-BROCHURE>`","M6800 Software for In-House-Computers Brochure",""
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`","M6800 Time Sharing Systems Software Brochure",""

@@ -171,7 +171,7 @@ This is the current collection (as at 15-09-2025) of the items produced by Motor
  	":ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M6800SOFTWARE-IN-HOUSE-BROCHURE>`","M6800 Software for In-House-Computers Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
- 	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
@@ -188,7 +188,7 @@ This is the current collection (as at 15-09-2025) of the items produced by Motor
  	":ref:`N/A <MEX68USE-BROCHURE>`","MEX68USE User System Evaluator (USE) Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX68WW-MEX68XT-BROCHURE>`","MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <NONE-2>`","Microprocessor Applications Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <NONE-2>`","Microprocessor Applications Manual",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"
  
 
