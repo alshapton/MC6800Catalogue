@@ -30,7 +30,7 @@ JBUG Monitor V1.8
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 22-AUG-2025
+   |present| 22-AUG-2025
    
 .. rubric:: Links
 

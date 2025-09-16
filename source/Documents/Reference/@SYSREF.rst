@@ -17,7 +17,7 @@ M6800 Systems Reference and Data Sheets
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 31-MAR-2025
+   |present| 31-MAR-2025
 
 .. rubric:: Notes
 

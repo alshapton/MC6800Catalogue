@@ -1,4 +1,4 @@
-.. rubric:: :octicon:`list-ordered;2em` Micro Industries (acquired)
+.. rubric:: |2ndsource| Micro Industries (acquired)
 
 .. card-carousel:: 1
 

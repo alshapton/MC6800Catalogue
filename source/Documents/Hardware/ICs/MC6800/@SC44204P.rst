@@ -30,7 +30,7 @@ SC44204P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 09-SEP-2025
+   |present| 09-SEP-2025
 
 .. rubric:: Links
 

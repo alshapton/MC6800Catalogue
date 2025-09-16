@@ -17,7 +17,7 @@ M6800 Microcomputer System Support Products
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 17-JUL-2025"
+    "|present| 17-JUL-2025"
 
 
 .. rubric:: This product is a collection of many other documents, including:

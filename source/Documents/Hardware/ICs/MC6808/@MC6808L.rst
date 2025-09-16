@@ -32,7 +32,7 @@ MC6808L Microprocessor with Clock and Optional RAM (MC6808)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 09-AUG-2025
+   |present| 09-AUG-2025
 
 .. rubric:: Links
 

@@ -17,7 +17,7 @@ MEX68PP1 PROM Programmer Module Brochure
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 17-JUL-2025
+   |present| 17-JUL-2025
 
 
 

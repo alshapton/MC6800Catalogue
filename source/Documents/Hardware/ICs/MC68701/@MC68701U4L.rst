@@ -32,7 +32,7 @@ MC68701U4L Microprocessor Unit with 8-bit EPROM
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 21-MAY-2025"
+   "|present| 21-MAY-2025"
 
 .. rubric:: Links
 

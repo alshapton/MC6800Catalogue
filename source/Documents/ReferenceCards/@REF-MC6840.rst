@@ -17,7 +17,7 @@ MC6840 Programmable Timer Module Programming Summary
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 19-MAR-2025"
+    "|present| 19-MAR-2025"
 
 
 

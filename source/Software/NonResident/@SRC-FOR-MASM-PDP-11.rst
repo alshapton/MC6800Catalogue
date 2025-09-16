@@ -44,6 +44,6 @@ Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 21-APR-2025
+   |present| 21-APR-2025
 
 

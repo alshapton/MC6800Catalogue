@@ -31,7 +31,7 @@ MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 30-JAN-2025"
+   "|present| 30-JAN-2025"
 
 .. rubric:: Links
 

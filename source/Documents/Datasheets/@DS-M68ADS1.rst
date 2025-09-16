@@ -19,7 +19,7 @@ Autonomous Development System Datasheet
    :header: "Datasheet"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+   "|present| 28-MAR-2025"
 
 
 

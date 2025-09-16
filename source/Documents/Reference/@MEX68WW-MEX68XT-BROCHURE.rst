@@ -17,7 +17,7 @@ MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 17-JUL-2025
+   |present| 17-JUL-2025
 
 
 .. rubric:: Links

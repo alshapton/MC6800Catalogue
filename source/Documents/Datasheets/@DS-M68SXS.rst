@@ -17,7 +17,7 @@ M68SXS EXORterm 200
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+    |present| 28-MAR-2025"
 
 
 :download:`M68SXS EXORterm 200 <../../_static/Documents/Datasheets/M68SXS.pdf>`

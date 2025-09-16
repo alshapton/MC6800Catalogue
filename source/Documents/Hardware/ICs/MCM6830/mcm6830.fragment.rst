@@ -5,6 +5,6 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic","1.0-70Mhz","-0-70\ :sup:`o`\ C","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MCM6830L7 <MCM6830L7>`","Ceramic","","","Standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG."
+      "|present| :ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
+      "|present| :ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic","1.0-70Mhz","-0-70\ :sup:`o`\ C","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
+      "|present| :ref:`MCM6830L7 <MCM6830L7>`","Ceramic","","","Standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG."

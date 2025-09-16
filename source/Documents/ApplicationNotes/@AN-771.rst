@@ -16,7 +16,7 @@ MEK6800D2 Microcomputer Kit System Expansion Techniques
 
 .. csv-table:: 
 
-   "Acquired",:material-regular:`verified;2em;sd-text-success` 28-MAR-2025
+   "Acquired",|present| 28-MAR-2025
    "Location",":ref:`Folder 1 <1_map_reference>`"
 
 .. rubric:: Links

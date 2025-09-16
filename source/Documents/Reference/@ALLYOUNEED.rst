@@ -15,5 +15,5 @@ All you need for your Microcomputer System
 
 .. csv-table:: 
 
-   "Acquired",:material-regular:`verified;2em;sd-text-success` 21-FEB-2025
+   "Acquired",|present| 21-FEB-2025
    "Location",":ref:`Folder 1 <1_map_reference>`"

@@ -32,4 +32,4 @@ MC68A50P Asynchronous Communications Interface Adapter (MC6850)
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`verified;2em;sd-text-success` 30-MAY-2025
+    |present| 30-MAY-2025

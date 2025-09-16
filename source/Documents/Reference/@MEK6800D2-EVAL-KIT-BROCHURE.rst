@@ -19,7 +19,7 @@ M6800 Evaluation Kit II Brochure
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 18-AUG-2025
+   |present| 18-AUG-2025
 
 
 .. rubric:: Links

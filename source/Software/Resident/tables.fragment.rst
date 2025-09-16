@@ -6,16 +6,16 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <EDUCATOR_II_mon>`","EDUCATOR-II Monitor",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC26>`","EXORset30 ROM - EXORBUG 1.2 L (IC-26)",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC27>`","EXORset30 ROM - EXORBUG 1.2 L (IC-27)",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC22>`","EXORset30 ROM - FDCEXORset 30 (IC-22)",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC28>`","EXORset30 ROM - IC-28",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC30>`","EXORset30 ROM - IC-30",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <IC31>`","EXORset30 ROM - IC-31",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <JBUG_1_8>`","JBUG Monitor V1.8",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <@MIKBUG-MINIBUG_04_09_mk_ass>`","MIKBUG Monitor Assembly Listing REV 009",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <@MIKBUG-MINIBUG_04_09_mn_ass>`","MINIBUG Monitor Assembly Listing REV 004",""
+   "|present| :ref:`N/A <EDUCATOR_II_mon>`","EDUCATOR-II Monitor",""
+   "N/A :ref:`N/A <IC26>`","EXORset30 ROM - EXORBUG 1.2 L (IC-26)",""
+   "N/A :ref:`N/A <IC27>`","EXORset30 ROM - EXORBUG 1.2 L (IC-27)",""
+   "N/A :ref:`N/A <IC22>`","EXORset30 ROM - FDCEXORset 30 (IC-22)",""
+   "N/A :ref:`N/A <IC28>`","EXORset30 ROM - IC-28",""
+   "N/A :ref:`N/A <IC30>`","EXORset30 ROM - IC-30",""
+   "N/A :ref:`N/A <IC31>`","EXORset30 ROM - IC-31",""
+   "|present| :ref:`N/A <JBUG_1_8>`","JBUG Monitor V1.8",""
+   "|present| :ref:`N/A <@MIKBUG-MINIBUG_04_09_mk_ass>`","MIKBUG Monitor Assembly Listing REV 009",""
+   "|present| :ref:`N/A <@MIKBUG-MINIBUG_04_09_mn_ass>`","MINIBUG Monitor Assembly Listing REV 004",""
 
 .. rubric:: Folder Microprocessor Course
 
@@ -23,4 +23,4 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M-EXORcser>`","Motorola Software for Exorciser InfoSheet",""
+   "|present| :ref:`N/A <M-EXORcser>`","Motorola Software for Exorciser InfoSheet",""

@@ -17,7 +17,7 @@ M6800 Programming Reference Manual
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 05-DEC-2024"
+    "|present| 05-DEC-2024"
 
 
 .. rubric:: Links

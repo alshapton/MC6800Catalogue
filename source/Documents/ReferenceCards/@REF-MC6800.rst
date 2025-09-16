@@ -18,7 +18,7 @@ M6800 Microprocessor Instruction Set Summary
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 18-FEB-2025"
+    "|present| 18-FEB-2025"
 
 
 

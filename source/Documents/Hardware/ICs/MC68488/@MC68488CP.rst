@@ -32,7 +32,7 @@ MC68488CP General Purpose Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 7-JUL-2025
+   |present| 7-JUL-2025
 
 .. rubric:: Links
 

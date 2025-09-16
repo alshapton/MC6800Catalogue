@@ -50,4 +50,4 @@ Motorola originally intended to use the 6800 for the CPU, but the GMCM CPU fit t
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`verified;2em;sd-text-success` 30-MAY-2025
+    |present| 30-MAY-2025

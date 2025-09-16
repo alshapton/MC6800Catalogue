@@ -10,7 +10,9 @@ import tomllib
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
 
-CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
+#CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
+CHECK_MARK='|present|'
+
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
 IN_TRANSIT='|intransit|'
 IN_TRANSIT_SHORT='|intransit|'
@@ -43,6 +45,7 @@ def update_or_not_metadata(filename):
             found_metadata=False
             metadata_dict=''
             lines = file.readlines()
+            
             for line in lines: 
                 output_line = line       
                 if '.. #Metadata' in line:
@@ -110,7 +113,7 @@ def get_loc(file):
                 if 'Part' not in loc:
                     loc['Part'] = 'N/A'
             
-            if CHECK_MARK in line and sta == '':
+            if CHECK_MARK in line  and sta == '':
                 sta='YES'
             if CROSS_MARK in line and sta == '':
                 sta='NO'
@@ -376,13 +379,15 @@ def update_IC_pre_fragments():
                         if 'Notes' in ffline:
                             splitline=ffline.split('","')
                             notes=splitline[1].replace('"','')[:-1]
-                        if 'material-regular' in ffline:
-                            splitline=ffline.strip().split(' ')
-                            posess=splitline[0].replace('"','')
+                        if 'thumb_down' in ffline:
+                            posess='|notpresent|'
                         if '|underoffer|' in ffline:
                             posess='|underoffer|'
                         if '|intransit|' in ffline:
                             posess='|intransit|'                    
+                        if '|present|' in ffline:
+                            posess='|present|'
+
 
                     tref=tfile.replace('@','').replace('.rst','').split('.')[0]
                     if '!' in tref:
@@ -1109,6 +1114,7 @@ def do_collection():
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
 
                 with open(file) as f:
+                    print('Checking ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
                     
@@ -1183,13 +1189,13 @@ def do_create():
     acquired = input("Acquired ? (Y/N): ")
     if acquired == "Y":
         acquired = True
-        index_entry = '":material-regular:`verified;2em;sd-text-success` :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        index_entry = '"|present| :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
         acquired_date = input("Acquired date (DD-MON-YYYY): ")
-        acquired_status=":material-regular:`verified;2em;sd-text-success` " + acquired_date + "\n\n"
+        acquired_status="|present| " + acquired_date + "\n\n"
     else:
         acquired = False
         index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
-        acquired_status = ":material-regular:`thumb_down;2em;sd-text-danger`"
+        acquired_status = "|notpresent|"
 
     links = input("Links ? (Y/N): ")
 

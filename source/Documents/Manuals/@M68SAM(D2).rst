@@ -22,4 +22,4 @@ M6800 Cross Assembler Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 30-APR-2025"
+   "|present| 30-APR-2025"

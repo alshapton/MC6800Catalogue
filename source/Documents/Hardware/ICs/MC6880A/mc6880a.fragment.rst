@@ -5,5 +5,5 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6880AP <MC6880AP>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6880AL <MC6880AL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MC6880AP <MC6880AP>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MC6880AL <MC6880AL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""

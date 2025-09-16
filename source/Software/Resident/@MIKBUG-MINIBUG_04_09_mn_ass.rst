@@ -14,7 +14,7 @@ MINIBUG Monitor Assembly Listing REV 004
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success`
+   |present|
    
 .. rubric:: Links
 

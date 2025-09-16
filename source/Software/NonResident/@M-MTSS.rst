@@ -19,7 +19,7 @@ Motorola Software for Motorola Time Sharing Systems InfoSheet
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 31-MAR-2025
+   |present| 31-MAR-2025
 
 .. rubric:: Location:
 

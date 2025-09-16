@@ -32,4 +32,4 @@ This date code and manufacture dates should be scrutinised.
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`verified;2em;sd-text-success` 14-MAY-2025
+    |present| 14-MAY-2025

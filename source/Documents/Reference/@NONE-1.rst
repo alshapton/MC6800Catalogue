@@ -20,7 +20,7 @@ Motorola Microcomputer System Design Data Manual
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 27-JAN-2025"
+    "|present| 27-JAN-2025"
 
 .. rubric:: Links
 

@@ -5,6 +5,6 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6882S <MC6862S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862L <MC6862L>`","Ceramic","","",""
-      ":material-regular:`verified;2em;sd-text-success` :ref:`MC6862P <MC6862P>`","Plastic","","",""
+      "|notpresent| :ref:`MC6882S <MC6862S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC6862L <MC6862L>`","Ceramic","","",""
+      "|present| :ref:`MC6862P <MC6862P>`","Plastic","","",""

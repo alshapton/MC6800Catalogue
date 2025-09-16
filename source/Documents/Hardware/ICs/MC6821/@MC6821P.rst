@@ -30,5 +30,5 @@ MC6821P Peripheral Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 12-MAR-2025"
+   "|present| 12-MAR-2025"
 

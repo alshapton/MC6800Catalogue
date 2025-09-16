@@ -29,7 +29,7 @@ MC68B54P Advanced Data Link Controller (ADLC)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025
+   |present| 12-MAR-2025
 
 
 .. rubric:: Links

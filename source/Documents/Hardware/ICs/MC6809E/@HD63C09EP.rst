@@ -23,7 +23,7 @@ HD63C09EP 8-Bit Microprocessing Unit Hitachi (Enhanced)
    "Location",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","3/3.5 Mhz"
-   "Notes",":octicon:`list-ordered;2em`"
+   "Notes","|2ndsource|"
    
 
 This is a Hitachi HD63C09EP, which is an enhanced version of the MC6809E. It has 3.0 or 3.5 MHz clock speed and is compatible with the MC6809E.
@@ -42,7 +42,7 @@ Note that Motorola did not produce a 3MHz version of the MC6809E.
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 5-JUL-2025"
+   "|present| 5-JUL-2025"
 
 .. rubric:: Links
 

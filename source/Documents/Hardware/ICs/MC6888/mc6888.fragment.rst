@@ -6,5 +6,5 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6888P <MC6888P>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2 enable inputs, controlling 2 and 4 buffers"
-      ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6888L <MC6888L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2 enable inputs, controlling 2 and 4 buffers"
+      "|notpresent| :ref:`MC6888P <MC6888P>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2 enable inputs, controlling 2 and 4 buffers"
+      "|notpresent| :ref:`MC6888L <MC6888L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2 enable inputs, controlling 2 and 4 buffers"

@@ -18,7 +18,7 @@ MES6800 User Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 30-JAN-2025
+   |present| 30-JAN-2025
 
 .. rubric:: Links
 

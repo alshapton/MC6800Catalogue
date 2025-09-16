@@ -32,7 +32,7 @@ MC6850P Asynchronous Communications Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`verified;2em;sd-text-success` 9-SEP-2025
+    |present| 9-SEP-2025
 
 
 .. rubric:: Links

@@ -20,7 +20,7 @@ EXORset30 ROMs
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 26-JUN-2025
+   |present| 26-JUN-2025
    
 .. rubric:: Links
 

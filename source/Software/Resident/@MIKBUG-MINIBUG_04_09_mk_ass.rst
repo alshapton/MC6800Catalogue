@@ -14,7 +14,7 @@ MIKBUG Monitor Assembly Listing REV 009
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 
+   |present| 
    
 .. rubric:: Links
 

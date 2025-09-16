@@ -29,5 +29,5 @@ MC6862P 2400 bps Digital Modulator
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 12-MAR-2025
+   |present| 12-MAR-2025
 

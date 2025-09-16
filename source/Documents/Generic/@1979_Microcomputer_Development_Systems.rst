@@ -17,7 +17,7 @@ Microcomputer Development Systems and Subsystems
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 25-MAR-2025
+   |present| 25-MAR-2025
 
 .. rubric:: Links
 

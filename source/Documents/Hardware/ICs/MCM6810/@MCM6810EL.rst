@@ -31,7 +31,7 @@ MCM6810EL 128 x 8-bit RAM
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 29-APR-2025"
+   "|present| 29-APR-2025"
 
 .. rubric:: Links
 

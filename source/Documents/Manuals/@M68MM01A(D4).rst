@@ -17,4 +17,4 @@ Monoboard Microcomputer 1A Micromodule 1A
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 02-JUL-2025
+   |present| 02-JUL-2025

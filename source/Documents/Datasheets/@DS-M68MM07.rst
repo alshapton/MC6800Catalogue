@@ -18,7 +18,7 @@ M68MM07 Quad Communications Micromodule Datasheet
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`verified;2em;sd-text-success` 28-MAR-2025"
+    "|present| 28-MAR-2025"
 
 
 

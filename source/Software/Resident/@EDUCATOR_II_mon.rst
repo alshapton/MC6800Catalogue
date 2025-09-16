@@ -30,4 +30,4 @@ EDUCATOR-II Monitor
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 01-JUN-2025
+   |present| 01-JUN-2025

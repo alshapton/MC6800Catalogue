@@ -34,7 +34,7 @@ MCM6830AP-2 1024 x 8-bit ROM
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` 09-SEP-2025"
+   "|present| 09-SEP-2025"
 
 .. rubric:: Links
 

@@ -9,11 +9,11 @@ DataSheets
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
    
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1",":material-regular:`lock_open;2em;sd-text-danger`","April 20 1978"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01B1A <DS-M68MM01B1A>`","M68MM01B1A Monoboard Microcomputer Module",":material-regular:`lock;2em;sd-text-success`","Issue B 1979"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM07 <DS-M68MM07>`","Quad Communications Micromodule",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":material-regular:`lock_open;2em;sd-text-danger`","April 30 1978"
+   "|present| :ref:`M68MM01D <DS-M68MM01D>`","M68MM01D Monoboard Microcomputer Module",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979"
+   "|present| :ref:`M68MM01B1 <M68MM01B1>`","Micromodule 01B1",":material-regular:`lock_open;2em;sd-text-danger`","April 20 1978"
+   "|present| :ref:`M68MM01B1A <DS-M68MM01B1A>`","M68MM01B1A Monoboard Microcomputer Module",":material-regular:`lock;2em;sd-text-success`","Issue B 1979"
+   "|present| :ref:`M68MM07 <DS-M68MM07>`","Quad Communications Micromodule",":material-regular:`lock_open;2em;sd-text-danger`","Issue A 1979",""
+   "|present| :ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":material-regular:`lock_open;2em;sd-text-danger`","April 30 1978"
    ":ref:`MEX6812-1 <DS-MEX6812-1>`","MEX6812-1 2K Static RAM Module",":material-regular:`lock_open;2em;sd-text-danger`"
    ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module",":material-regular:`lock_open;2em;sd-text-danger`",""
    ":ref:`MEX6800 <MEX6800>`","MPU Module",":material-regular:`lock_open;2em;sd-text-danger`",""
@@ -71,16 +71,16 @@ DataSheets
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":material-regular:`lock_open;2em;sd-text-danger`","1976",""    
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":material-regular:`lock;2em;sd-text-success`","1977",""
+   "|present| :ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)",":material-regular:`lock_open;2em;sd-text-danger`","1976",""    
+   "|present| :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System",":material-regular:`lock;2em;sd-text-success`","1977",""
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit",":material-regular:`lock_open;2em;sd-text-danger`","1975",""    
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":material-regular:`lock;2em;sd-text-success`","Issue A 1978",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":material-regular:`lock_open;2em;sd-text-danger`","1975"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet",":material-regular:`lock_open;2em;sd-text-danger`","1975"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler",":material-regular:`lock_open;2em;sd-text-danger`","1975"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`DS-MPL-COMPILER <DS-MPL-COMPILER>`","MPL Compiler Datasheet",":material-regular:`lock_open;2em;sd-text-danger`","1976"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`DS-M68EML <DS-M68EML>`","M6800 Simulator",":material-regular:`lock_open;2em;sd-text-danger`","1976"
+   "|present| :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":material-regular:`lock;2em;sd-text-success`","Issue A 1978",""
+   "|present| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
+   "|present| :ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   "|present| :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   "|present| :ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler",":material-regular:`lock_open;2em;sd-text-danger`","1975"
+   "|present| :ref:`DS-MPL-COMPILER <DS-MPL-COMPILER>`","MPL Compiler Datasheet",":material-regular:`lock_open;2em;sd-text-danger`","1976"
+   "|present| :ref:`DS-M68EML <DS-M68EML>`","M6800 Simulator",":material-regular:`lock_open;2em;sd-text-danger`","1976"
    ":ref:`MEX68XT <MEX68XT>`","Extender Module",":material-regular:`lock_open;2em;sd-text-danger`"
 
 .. rubric:: Key to symbols

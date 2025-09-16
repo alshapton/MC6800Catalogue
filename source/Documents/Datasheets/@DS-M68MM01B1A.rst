@@ -17,7 +17,7 @@ M68MM01B1A Monoboard Microcomputer Module Datasheet
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 20-MAR-2025
+   |present| 20-MAR-2025
 
 
 
