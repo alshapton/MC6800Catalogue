@@ -12,8 +12,8 @@ from xbuild_support.file_utilities import *
 
 CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
-IN_TRANSIT=':material-regular:`local_shipping;2em`'
-IN_TRANSIT_SHORT='local_shipping'
+IN_TRANSIT='|intransit|'
+IN_TRANSIT_SHORT='|intransit|'
 UNDER_OFFER='|underoffer|'
 ANYUNDEROFFER=False
 ANYINTRANSIT=False
@@ -381,7 +381,9 @@ def update_IC_pre_fragments():
                             posess=splitline[0].replace('"','')
                         if '|underoffer|' in ffline:
                             posess='|underoffer|'
-                    
+                        if '|intransit|' in ffline:
+                            posess='|intransit|'                    
+
                     tref=tfile.replace('@','').replace('.rst','').split('.')[0]
                     if '!' in tref:
                         tref=tref.split('!')[1]
@@ -1003,7 +1005,6 @@ def do_in_transit():
                 with open(file) as f:
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
-                        
                     for line in f:  
                         if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
                             if 'An item in transit' not in line:
@@ -1047,6 +1048,7 @@ def do_in_transit():
                 c.write('\t:header: "Part Number","Description"\n')
                 c.write('\t:widths: 30, 70\n\n')  
             c.write(i['OLINE'].replace(',"'+i['DTYPE']+'"\n','\n'))
+
     return ANYINTRANSIT
 
 def collect_metadata():

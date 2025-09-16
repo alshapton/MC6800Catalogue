@@ -17,6 +17,8 @@ MC6855 Serial Direct Memory Access Processor
 
    :material-regular:`thumb_down;2em;sd-text-danger`
 
+.. rubric:: This product was cancelled |cancelled|
+
 .. rubric:: Links
 
 :download:`MC6855 Serial Direct Memory Access Processor <../../_static/Documents/Datasheets/DS-MC6855.pdf>`

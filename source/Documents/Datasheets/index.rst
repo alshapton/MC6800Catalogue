@@ -49,7 +49,7 @@ DataSheets
    ":ref:`MC6847 <MC6847>`","MC6847/MC6847Y Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1984",""
    ":ref:`MC6847T1 <MC6847T1>`","MC6847T1 Video Display Generator (VDG)",":material-regular:`lock;2em;sd-text-success`","1985",""
    ":ref:`MC6854 <MC6854>`","Advanced Data Link Controller (ADLC)",":material-regular:`lock;2em;sd-text-success`","1985",""
-   ":ref:`MC6855 <DS-MC6855>`","MC6855 Serial Direct Memory Access Processor",":material-regular:`lock_open;2em;sd-text-danger` :material-regular:`remove_shopping_cart;2em`","1981","This product was cancelled"
+   ":ref:`MC6855 <DS-MC6855>`","MC6855 Serial Direct Memory Access Processor",":material-regular:`lock_open;2em;sd-text-danger` |cancelled|","1981","This product was cancelled"
    ":ref:`MC6859 <DS-MC6859>`","MC6859 Data Security Device",":material-regular:`lock_open;2em;sd-text-danger`","1981",""
    ":ref:`MC6862 <DS-MC6862>`","2400 bps Digital Modem",":material-regular:`lock;2em;sd-text-success`","1981",""
    ":ref:`MC6870 <MC6870-71>`","Two-Phase Microprocessor Clock",":material-regular:`lock;2em;sd-text-success`","",""
@@ -91,4 +91,4 @@ DataSheets
    
    ":material-regular:`lock_open;2em;sd-text-danger`","Advance/Preliminary Information (subject to change)"
    ":material-regular:`lock;2em;sd-text-success`","Datasheet represents manufactured specification"
-   ":material-regular:`remove_shopping_cart;2em`","Product never shipped or cancelled."
+   "|cancelled|","Product never shipped or cancelled."

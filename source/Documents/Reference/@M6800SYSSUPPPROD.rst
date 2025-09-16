@@ -2,7 +2,7 @@
 
 .. _M6800SYSSUPPPROD:
 
-.. #Metadata {'Product':'M6800 Microcomputer System Support Products','Folder': '4','Comments':':ref:`Collection <M6800_Microcomputer_System_Support_Products_map_reference>`'} 
+.. #Metadata {'Product':'M6800 Microcomputer System Support Products','Folder': '4','Comments':':ref:`Collection of Documents <M6800_Microcomputer_System_Support_Products_map_reference>`'} 
 
 M6800 Microcomputer System Support Products
 ===========================================
