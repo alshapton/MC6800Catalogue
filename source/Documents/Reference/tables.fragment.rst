@@ -17,7 +17,7 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Collection <M6800_Microcomputer_System_Support_Products_map_reference>`"
+   ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Collection of Documents <M6800_Microcomputer_System_Support_Products_map_reference>`"
    ":material-regular:`verified;2em;sd-text-success` :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
 
 .. rubric:: Folder M6800 Microcomputer System Support Products

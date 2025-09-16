@@ -32,8 +32,8 @@ MC68B21P MC6821 Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
-
+   |intransit|
+   
 .. rubric:: Links
 
 :download:`MC6821 MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`

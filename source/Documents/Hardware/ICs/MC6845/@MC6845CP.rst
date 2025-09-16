@@ -31,8 +31,8 @@ MC6845CP CRT Controller
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`local_shipping;2em`"
-
+   |intransit|
+   
 .. rubric:: Links
 
 :download:`MC6845 CRT Controller  <../../../../_static/Documents/Datasheets/MC6845.pdf>`

@@ -11,5 +11,6 @@
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6801G <MC6801G>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68B01L <MC68B01L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC6801L <MC6801L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|intransit| :ref:`MC6801L-1 <MC6801-1L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A01-1L <MC68A01-1L>`","Ceramic","1.25 Mhz","0-70\ :sup:`o`\ C",""
       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`MC68A01G <MC68A01G>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
