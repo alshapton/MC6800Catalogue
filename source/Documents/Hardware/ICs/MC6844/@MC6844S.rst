@@ -31,4 +31,4 @@ MC6844S Direct Memory Access Controller (DMAC)
    :header: "Acquired"
    :widths: auto
     
-    :material-regular:`thumb_down;2em;sd-text-danger`
+    |notpresent|

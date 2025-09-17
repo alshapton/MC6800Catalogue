@@ -15,8 +15,8 @@ Basic Display Unit User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`Basic Display Unit User's Guide <../../_static/Documents/Manuals/M68SVS_Basic_Display_Unit_Users_Guide_1977.pdf>`

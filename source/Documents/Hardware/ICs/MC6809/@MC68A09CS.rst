@@ -32,7 +32,7 @@ MC68A09CS MC6809 8-Bit Microprocessing Unit
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

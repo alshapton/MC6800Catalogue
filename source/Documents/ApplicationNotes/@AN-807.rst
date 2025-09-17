@@ -15,7 +15,7 @@ Special Considerations Using the MC6801 Interrupt Capabilities
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

@@ -32,7 +32,7 @@ MC68A488SDS General Purpose Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

@@ -15,8 +15,8 @@ M6800 Resident COBOL Language Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 
 .. rubric:: Links
 

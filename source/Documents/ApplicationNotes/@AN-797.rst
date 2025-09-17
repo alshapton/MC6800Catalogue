@@ -15,7 +15,7 @@ MC6801/03 Port Expansion
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

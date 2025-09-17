@@ -13,7 +13,7 @@ from xbuild_support.file_utilities import *
 #CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
 CHECK_MARK='|present|'
 
-CROSS_MARK=':material-regular:`thumb_down;2em;sd-text-danger`'
+CROSS_MARK='|notpresent|'
 IN_TRANSIT='|intransit|'
 IN_TRANSIT_SHORT='|intransit|'
 UNDER_OFFER='|underoffer|'
@@ -299,7 +299,7 @@ def create_new_group_index():
                     if packagetype.strip() == 'L':
                         pt = 'Ceramic'
                     chiptype=chiptype + '|'
-                    d.write('       ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`' + chip + ' <' + chip + '>`","'+ pt +'","'+ freq +'","'+temp+'",""\n')
+                    d.write('       "|notpresent| :ref:`' + chip + ' <' + chip + '>`","'+ pt +'","'+ freq +'","'+temp+'",""\n')
 
     with open(LOC.lower(), "r") as cf:
         lines = cf.readlines()
@@ -381,6 +381,8 @@ def update_IC_pre_fragments():
                             notes=splitline[1].replace('"','')[:-1]
                         if 'thumb_down' in ffline:
                             posess='|notpresent|'
+                        if '|notpresent|' in ffline:
+                            posess ='|notpresent|'
                         if '|underoffer|' in ffline:
                             posess='|underoffer|'
                         if '|intransit|' in ffline:

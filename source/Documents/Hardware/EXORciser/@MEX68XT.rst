@@ -18,4 +18,4 @@ MEX68XT Extender Module
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|

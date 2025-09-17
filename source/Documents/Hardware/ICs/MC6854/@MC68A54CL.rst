@@ -32,7 +32,7 @@ MC68A54CL Advanced Data-Link Controller (ADLC)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

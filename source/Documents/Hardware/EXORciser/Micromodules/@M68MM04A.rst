@@ -18,7 +18,7 @@ M68MM04A Micromodule 4A ROM/EPROM Module
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`thumb_down;2em;sd-text-danger` "
+    "|notpresent| "
 
 .. rubric:: Links
 

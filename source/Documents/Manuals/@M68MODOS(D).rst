@@ -15,8 +15,8 @@ M68MODOS010 Disk Operating System User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`M68MODOS010 Disk Operating System User's Guide <../../_static/Documents/Manuals/M68MODOS_D_Disk_Operating_System_Users_Guide_Version_3.0_197811.pdf>`

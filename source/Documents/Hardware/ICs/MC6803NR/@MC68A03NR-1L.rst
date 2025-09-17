@@ -32,7 +32,7 @@ MC68A03NR-1L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

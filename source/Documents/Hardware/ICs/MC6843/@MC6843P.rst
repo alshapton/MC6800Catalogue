@@ -32,4 +32,4 @@ MC6843P Floppy Disk Controller (FDC) (MC6843)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"

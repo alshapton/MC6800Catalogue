@@ -15,4 +15,5 @@ MEX68USEC 2 MHz User System Evaluation Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
+   

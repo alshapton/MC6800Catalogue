@@ -15,8 +15,8 @@ ROM/EPROM Module Micromodule 4A
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`ROM/EPROM Module Micromodule 4A <../../_static/Documents/Manuals/M68MM04A_(D2)_ROM-EPROM_User_Guide.pdf>`

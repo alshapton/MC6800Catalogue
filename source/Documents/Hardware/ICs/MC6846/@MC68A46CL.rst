@@ -32,7 +32,7 @@ MC68A46CL ROM I/O Timer
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

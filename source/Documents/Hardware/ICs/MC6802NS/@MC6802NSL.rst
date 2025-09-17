@@ -32,7 +32,7 @@ MC6802NSL Microprocessor with Clock and Optional RAM (MC6802NS)
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

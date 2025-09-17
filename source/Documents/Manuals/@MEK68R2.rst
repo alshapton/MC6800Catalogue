@@ -15,4 +15,4 @@ MEK68R2 Programmable CRT Video Interface
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|

@@ -16,7 +16,7 @@ MEX6864 64K Hidden Refresh RAM
    :header: "Acquired"
    :widths: auto
 
-    ":material-regular:`thumb_down;2em;sd-text-danger`"
+    "|notpresent|"
 
 .. rubric:: Links
 

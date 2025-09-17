@@ -15,7 +15,7 @@ Assembly Instructions M6800 Design Evaluation Kit
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

@@ -15,7 +15,7 @@ MEX6812-1 2K Static RAM Module
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

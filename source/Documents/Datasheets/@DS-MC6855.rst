@@ -15,7 +15,7 @@ MC6855 Serial Direct Memory Access Processor
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: This product was cancelled |cancelled|
 

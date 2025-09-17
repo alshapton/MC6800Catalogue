@@ -15,8 +15,8 @@ Floppy Disk Controller Module
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`Floppy Disk Controller Module <../../_static/Documents/Manuals/M68SFDC3_Floppy_Disk_Controller_197909.pdf>`

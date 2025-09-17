@@ -15,8 +15,8 @@ Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
    
 :ref:`M68FTN(D3) - M6800/M6809 MDOS FORTRAN Reference Manual <M68FTN(D3)>`

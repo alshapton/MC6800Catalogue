@@ -32,4 +32,4 @@ MC6820P Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-    :material-regular:`thumb_down;2em;sd-text-danger`
+    |notpresent|

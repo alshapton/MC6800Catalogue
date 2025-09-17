@@ -32,7 +32,7 @@ MC6801G Microcomputer/Microprocessor (MCU/MPU) (MC6801)
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

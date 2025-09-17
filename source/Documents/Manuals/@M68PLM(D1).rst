@@ -15,8 +15,8 @@ Motorola PASCAL Language Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-   
+   |notpresent|
+      
 .. rubric:: Links
 
 :download:`Motorola PASCAL Language Manual <../../_static/Documents/Manuals/Motorola_PASCAL_Language_Manual_1979.pdf>`

@@ -15,8 +15,8 @@ Monoboard Microcomputer 1 Micromodule 1
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`Monoboard Microcomputer 1 Micromodule 1 <../../_static/Documents/Manuals/M68MM01_Monoboard_Microcomputer_1_Apr79.pdf>`

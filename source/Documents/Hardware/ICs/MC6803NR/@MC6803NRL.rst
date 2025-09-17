@@ -32,7 +32,7 @@ MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

@@ -17,7 +17,7 @@ MCM6810 128 x 8-Bit Static Random Access Memory
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

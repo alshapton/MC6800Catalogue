@@ -15,4 +15,4 @@ M6800 M6809 Resident MPL Compiler Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|

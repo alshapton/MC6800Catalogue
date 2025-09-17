@@ -15,8 +15,8 @@ ACIA/SSDA Module User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`ACIA/SSDA Module User's Guide <../../_static/Documents/Manuals/MEX6850-2_ACIA_SSDA_Module_197806.pdf>`

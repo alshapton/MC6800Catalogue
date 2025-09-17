@@ -15,7 +15,7 @@ A Floppy Disk Controller using the MC6582 and other MC6800 Microprocessor Family
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

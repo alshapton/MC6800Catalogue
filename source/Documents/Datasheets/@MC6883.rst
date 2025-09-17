@@ -15,8 +15,8 @@ MC6883 Synchronous Address Multiplexer
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`lock_open;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`MC6883 Synchronous Address Multiplexer <../../_static/Documents/Datasheets/MC6883.pdf>`

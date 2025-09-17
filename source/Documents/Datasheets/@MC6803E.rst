@@ -15,7 +15,7 @@ MC6803E 8-Bit Microprocessor
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

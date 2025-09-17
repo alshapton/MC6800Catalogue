@@ -17,7 +17,7 @@ Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

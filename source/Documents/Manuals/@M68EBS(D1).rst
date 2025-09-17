@@ -15,8 +15,8 @@ EXORbus Specification Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`EXORbus Specification Manual <../../_static/Documents/Manuals/M68EBS_D1_EXORbus_Specifcation_Manual_198112.pdf>`

@@ -15,7 +15,7 @@ Self-Programming the MC68701 and the MC68701U4
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

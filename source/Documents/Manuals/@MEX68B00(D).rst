@@ -16,8 +16,8 @@ MEX6800-2 MPU II MODULE Users Guide
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`MEX6800-2 MPU II MODULE Users Guide <../../_static/Documents/Manuals/MEX68B00_MEX6800-2_MPU_II_MODULE_197806.pdf>`

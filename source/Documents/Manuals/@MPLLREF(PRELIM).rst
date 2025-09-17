@@ -15,8 +15,8 @@ MPL Language Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`MPL Language Reference Manual <../../_static/Documents/Manuals/MPL_Language_Reference_Manual_1976.pdf>`

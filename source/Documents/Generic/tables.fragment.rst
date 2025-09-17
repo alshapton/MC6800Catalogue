@@ -24,4 +24,4 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   ":material-regular:`thumb_down;2em;sd-text-danger` :ref:`N/A <FTCTTM>`","From the Computer... to the Microprocessor",""
+   "|notpresent| :ref:`N/A <FTCTTM>`","From the Computer... to the Microprocessor",""

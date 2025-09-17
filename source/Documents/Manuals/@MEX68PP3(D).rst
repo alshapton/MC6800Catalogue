@@ -15,8 +15,8 @@ PROM Programmer III User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`PROM Programmer III User's Guide <../../_static/Documents/Manuals/MEX68PP3_Prom_Programmer_III_.pdf>`

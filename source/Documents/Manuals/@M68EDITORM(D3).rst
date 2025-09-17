@@ -15,8 +15,8 @@ M6800/M6809 EDITORM Resident Editor Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`M6800/M6809 EDITORM Resident Editor Reference Manual <../../_static/Documents/Manuals/M68EDITORM_D3_EDITORM_Resident_Editor_Reference_Manual_198006.pdf>`

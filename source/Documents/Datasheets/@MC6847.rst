@@ -25,7 +25,7 @@ MC6847/MC6847Y Video Display Generator (VDG)
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 
 .. rubric:: Links

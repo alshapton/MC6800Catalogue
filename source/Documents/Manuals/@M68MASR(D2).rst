@@ -15,8 +15,8 @@ Macro Assemblers Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`Macro Assemblers Reference Manual <../../_static/Documents/Manuals/M68MASR_Macro_Assemblers_Reference_6800_6801_6805_6809_Sep1979.pdf>`

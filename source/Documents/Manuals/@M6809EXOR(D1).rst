@@ -15,8 +15,8 @@ M6809 EXORciser User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`M6809 EXORciser User's Guide <../../_static/Documents/Manuals/M6809EXOR_M6809_EXORciser_Users_Guide_Sep1979.pdf>`

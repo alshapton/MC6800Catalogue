@@ -15,4 +15,4 @@ MEX6801EVM1 Evaluation Module User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|

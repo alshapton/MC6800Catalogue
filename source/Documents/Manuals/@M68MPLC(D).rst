@@ -15,4 +15,5 @@ M6800 MPL Cross-Computer Language Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
+   

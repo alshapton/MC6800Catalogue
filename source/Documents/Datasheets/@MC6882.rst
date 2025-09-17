@@ -19,7 +19,7 @@ MC6882 Octal Three-State Buffer/Latch
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

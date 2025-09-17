@@ -32,7 +32,7 @@ MC68B21CPDS MC6821 Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

@@ -15,8 +15,8 @@ M6800/M6809 MDOS Fortran Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`M6800/M6809 MDOS Fortran Reference Manual <../../_static/Documents/Manuals/M68FTN_D3_MDOS_Fortran_Reference_Manual_198009.pdf>`

@@ -15,8 +15,8 @@ EXORterm 150 EXORciser Display Console User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`EXORterm 150 EXORciser Display Console User's Guide <../../_static/Documents/Manuals/M68SXD150D2_EXORterm_150_Display_Console_Users_Guide_2ed_197904.pdf>`

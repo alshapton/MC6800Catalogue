@@ -15,8 +15,8 @@ MEX68DB2 DEBUG II Module User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
-
+   |notpresent|
+   
 .. rubric:: Links
 
 :download:`MEX68DB2 DEBUG II Module User's Guide <../../_static/Documents/Manuals/MEX68DB2_DEBUG_II_MOTOROLA_197903.pdf>`

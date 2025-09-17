@@ -15,4 +15,4 @@ MEX3870OM 3870 Emulator User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|

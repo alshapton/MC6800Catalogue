@@ -32,7 +32,7 @@ MC6882S 2400 bps Digital Modulator
    :header: "Component"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 .. rubric:: Links
 

@@ -15,7 +15,7 @@ MC6890 MPU Bus-Compatible 8-Bit D-to-A Converter
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
 
 .. rubric:: Links
 

@@ -15,4 +15,5 @@ EXORset 30 PLOT 1 User's Guide
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`
+   |notpresent|
+   

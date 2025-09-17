@@ -28,5 +28,5 @@ HEPC4801L HEP version of MC6800
    :header: "Acquired"
    :widths: auto
 
-      ":material-regular:`thumb_down;2em;sd-text-danger`"
+      "|notpresent|"
 

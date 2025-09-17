@@ -29,7 +29,7 @@ MC6847T1S Video Display Generator Unit
    :header: "Acquired"
    :widths: auto
 
-   ":material-regular:`thumb_down;2em;sd-text-danger`"
+   "|notpresent|"
 
 
 .. rubric:: Links

@@ -15,7 +15,7 @@ MEK6800D2 Evaluation Kit II Manual
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`thumb_down;2em;sd-text-danger`.. 
+   |notpresent|.. 
    
 .. rubric:: Links
 
