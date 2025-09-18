@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 17-09-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 18-09-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -190,6 +190,12 @@ This is the current collection (as at 17-09-2025) of the items produced by Motor
 	":ref:`N/A <@MIKBUG-MINIBUG_04_09_mk_ass>`","MIKBUG Monitor Assembly Listing REV 009",":ref:`Collection <LOCAL_map_reference>`"
  	":ref:`N/A <@MIKBUG-MINIBUG_04_09_mn_ass>`","MINIBUG Monitor Assembly Listing REV 004",":ref:`Collection <LOCAL_map_reference>`"
  	":ref:`N/A <EDUCATOR_II_mon>`","EDUCATOR-II Monitor",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC22>`","EXORset30 ROM - FDCEXORset 30 (IC-22)",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC26>`","EXORset30 ROM - EXORBUG 1.2 L (IC-26)",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC27>`","EXORset30 ROM - EXORBUG 1.2 L (IC-27)",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC28>`","EXORset30 ROM - IC-28",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC30>`","EXORset30 ROM - IC-30",":ref:`Collection <LOCAL_map_reference>`"
+ 	":ref:`N/A <IC31>`","EXORset30 ROM - IC-31",":ref:`Collection <LOCAL_map_reference>`"
  	":ref:`N/A <JBUG_1_8>`","JBUG Monitor V1.8",":ref:`Collection <LOCAL_map_reference>`"
  	":ref:`N/A <M-EXORcser>`","Motorola Software for Exorciser InfoSheet",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"
  

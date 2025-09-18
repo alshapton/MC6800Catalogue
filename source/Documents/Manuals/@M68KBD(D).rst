@@ -5,7 +5,7 @@
 KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide) 
 ==================================================================
 
-This document is marked as PRELIMINARY :material-regular:`lock_open;2em;sd-text-danger`
+This document is marked as PRELIMINARY |advanceinfo|
 
 .. image:: ../../images/Manuals/M68KBD(D).png
    :width: 400
