@@ -49,7 +49,7 @@ MC68701CL-1 Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|present| 8-MAY-2025"
+   "|present| 08-MAY-2025"
 
 .. rubric:: Links
 

@@ -37,7 +37,7 @@ Rear of packaging
    :header: "Acquired"
    :widths: auto
 
-   |present| 2-JUN-2025
+   |present| 02-JUN-2025
 
 .. rubric:: Links
 

@@ -14,7 +14,7 @@ MINIBUG Monitor Assembly Listing REV 004
    :header: "Acquired"
    :widths: auto
 
-   |present|
+   |present| 01-JUL-2025
    
 .. rubric:: Links
 

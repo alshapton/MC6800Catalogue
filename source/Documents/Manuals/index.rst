@@ -11,7 +11,7 @@ Reference Manuals
    :widths: auto
 
    ":ref:`N/A <MEK6800D2.1>`","MEK6800D2 Evaluation Kit II Manual","Second Edition 1977"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MES6800 <MES6800>`","MES6800 User Guide","September 1975"
+   "|present| :ref:`MES6800 <MES6800>`","MES6800 User Guide","September 1975"
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"
    ":ref:`N/A <M6800EXORUG>`","M6800 EXORciser User's Guide","First Edition 1975"
    ":ref:`N/A <M6800EXORUG.2>`","M6800 EXORciser User's Guide","Second Edition 1975"
@@ -46,7 +46,7 @@ Reference Manuals
    ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
    ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
+   "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
    
 .. rubric:: Micromodule Manuals
@@ -56,7 +56,7 @@ Reference Manuals
    :widths: auto
 
    ":ref:`M68MM01(D4) <M68MM01(D4)>`","Monoboard Microcomputer 1 Micromodule 1","4th Edition April 1979"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A","First Edition July 1977"
+   "|present| :ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A","First Edition July 1977"
    ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
    ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
 
@@ -66,7 +66,7 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","1977"
+   "|present| :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","1977"
    ":ref:`M68MDOS3(D) <M68MDOS3(D)>`","EXORdisk II/III OS User's Guide","1978 1st Edition"
    ":ref:`M68MDOS3(D2) <M68MDOS3(D2)>`","EXORdisk II/III OS User's Guide","1979 2nd Edition"
    ":ref:`M68DOWNLD(D1) <M68DOWNLD(D1)>`","M6800/M6801/M6809 Download Program User's Guide","August 1979 1st Edition"
@@ -83,9 +83,9 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
+   "|present| :ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual","Second Edition 1976"
    ":ref:`M68MASR(D2) <M68MASR(D2)>`","Macro Assemblers Reference Manual","Second Edition September 1979"
-   ":material-regular:`verified;2em;sd-text-success` :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual","First Edition Nov. 1976"
+   "|present| :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual","First Edition Nov. 1976"
 
 
 .. rubric:: Software Manuals (Language Interpreters/Compilers)

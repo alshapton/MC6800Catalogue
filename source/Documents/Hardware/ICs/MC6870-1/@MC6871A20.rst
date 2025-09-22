@@ -32,7 +32,7 @@ MC6871A-20 Two-Phase Microprocessor Clock
    :header: "Acquired"
    :widths: auto
 
-   |present| 7-JUL-2025
+   |present| 07-JUL-2025
 
 .. rubric:: Links
 

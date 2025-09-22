@@ -35,5 +35,6 @@ EXORset30 ROM - IC-30
    :header: "Acquired"
    :widths: auto
 
-   :material-regular:`verified;2em;sd-text-success` 26-JUN-2025
+
+   |present| 26-JUN-2025
    

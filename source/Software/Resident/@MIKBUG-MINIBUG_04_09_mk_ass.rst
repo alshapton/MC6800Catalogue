@@ -14,7 +14,7 @@ MIKBUG Monitor Assembly Listing REV 009
    :header: "Acquired"
    :widths: auto
 
-   |present| 
+   |present| 01-JUN-2025
    
 .. rubric:: Links
 

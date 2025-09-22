@@ -32,8 +32,8 @@ MC6802P Microprocessor with Clock and Optional RAM (MC6802)
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-
+   |intransit|
+   
 .. rubric:: Links
 
 :download:`MC6802 Microprocessor with Clock and Optional RAM (MC6802)  <../../../../_static/Documents/Datasheets/DS-MC6802-6808-6802NS.pdf>`

@@ -26,7 +26,7 @@ This Infosheet details the following products (all of which have their own indiv
    :header: "Acquired"
    :widths: auto
 
-   |present| 31-MAR-2025,
+   |present| 31-MAR-2025
 
 
 

@@ -22,4 +22,4 @@ MPU Evalution Card MC6800 Microprocessor Board
    :header: "Acquired"
    :widths: auto
 
-    |present| 30-JAN-2025,"|notpresent|"
+    |present| 30-JAN-2025

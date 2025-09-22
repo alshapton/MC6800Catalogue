@@ -31,7 +31,7 @@ MC6844L Direct Memory Access Controller (DMAC)
    :header: "Acquired"
    :widths: auto
 
-    |present| 7-JUL-2025
+    |present| 07-JUL-2025
 
 .. rubric:: Links
 

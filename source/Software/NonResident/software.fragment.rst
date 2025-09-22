@@ -14,7 +14,7 @@
      - `Control Data CDC6000 <https://en.wikipedia.org/wiki/CDC_6000_series>`_    
      - `DEC PDP-11 <https://en.wikipedia.org/wiki/PDP-11>`_
    * - :cspan:`10` Cross Assembler
-   * - :cspan:`1` :material-regular:`margin;2em;`
+   * - :cspan:`1` |punchedcard|
      - M68SAM0213E
      - M68SAM0413E
      - M68SAM0713E
@@ -22,7 +22,7 @@
      - M68SAM0912E
      - M68SAM1013E
      - M68SAM1113E
-   * - :cspan:`1` :material-regular:`voicemail;2em;`
+   * - :cspan:`1` |magnetictape|
      - M68SAM0213F
      - M68SAM0413F
      - M68SAM0713F
@@ -30,11 +30,11 @@
      - M68SAM0912F
      - M68SAM1013F
      - M68SAM1113F
-   * - :cspan:`1` :material-regular:`storage;2em;`
+   * - :cspan:`1` |datacartridge|
      - :cspan:`5` Customer Supplies their own cartridge
      - M68SAM111G
    * - :cspan:`10` Compiler
-   * - :cspan:`1` :material-regular:`voicemail;2em;`
+   * - :cspan:`1` |magnetictape|
      - 
      - 
      - 
@@ -51,7 +51,7 @@
      - 
      - 
    * - :cspan:`10` Simulator
-   * - :cspan:`1` :material-regular:`voicemail;2em;`
+   * - :cspan:`1` |magnetictape|
      -
      - M68EML0411E
      - 
@@ -59,7 +59,7 @@
      -
      - M68EML1011E
      -
-   * - :cspan:`1` :material-regular:`storage;2em;`
+   * - :cspan:`1` |datacartridge|
      -
      - M68EML0411F
      - 
@@ -68,15 +68,6 @@
      - M68EML1011E
      -
 
-
-.. rubric:: Key to Symbols
-
-.. csv-table:: 
-
-    ":material-regular:`voicemail;2em;`","Magnetic Tape"
-    ":material-regular:`save;2em;`","Floppy Disk"
-    ":material-regular:`margin;2em;`","Punched Card"
-    ":material-regular:`storage;2em;`","Data Cartridge"
-
+.. include:: /Software/NonResident/media.inc
 
 

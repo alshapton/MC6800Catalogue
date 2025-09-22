@@ -61,6 +61,7 @@ Conventions Used
 
    Home <self>
    Collection <collection>
+   Timeline <timeline>
    Map <map>
    In Transit <transit>
 

@@ -32,7 +32,7 @@ MC68B09CP MC6809 8-Bit Microprocessing Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |intransit|
 
 .. rubric:: Links
 

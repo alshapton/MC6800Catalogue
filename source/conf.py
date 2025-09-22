@@ -42,7 +42,7 @@ html_css_files = [
     'css/custom.css',
     'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round'
       
-]# This component is auto-generated - do not edit 
+]
 rst_prolog = """
 .. |cancelled| 	replace:: :material-regular:`remove_shopping_cart;2em`
 .. |intransit| 	replace:: :material-regular:`local_shipping;2em;`
@@ -52,4 +52,8 @@ rst_prolog = """
 .. |confirminfo| 	replace:: :material-regular:`lock;2em;sd-text-success`
 .. |2ndsource| 	replace:: :octicon:`list-ordered;2em`
 .. |underoffer| 	replace:: :material-regular:`gavel;2em;sd-text-danger`
+.. |magnetictape| 	replace:: :material-regular:`voicemail;2em;`
+.. |floppydisc| 	replace:: :material-regular:`save;2em;`
+.. |punchedcard| 	replace:: :material-regular:`margin;2em;`
+.. |datacartridge| 	replace:: :material-regular:`storage;2em;`
 """

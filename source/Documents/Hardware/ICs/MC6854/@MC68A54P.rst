@@ -32,8 +32,8 @@ MC68A54P Advanced Data-Link Controller (ADLC)
    :header: "Component"
    :widths: auto
 
-   "|notpresent|"
-
+   |intransit|
+   
 .. rubric:: Links
 
 :download:`MC6854 Advanced Data-Link Controller (ADLC)  <../../../../_static/Documents/Datasheets/MC6854.pdf>`

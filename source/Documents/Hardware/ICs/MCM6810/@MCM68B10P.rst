@@ -31,7 +31,7 @@ MCM68B10P 128 x 8-bit RAM
    :header: "Acquired"
    :widths: auto
 
-   "|present| 8-MAY-2025"
+   "|present| 08-MAY-2025"
 
 
 .. rubric:: Links

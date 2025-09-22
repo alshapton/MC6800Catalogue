@@ -21,6 +21,6 @@
       "|notpresent| :ref:`MC68B09S <MC68B09S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B09P <MC68B09P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809P <MC6809P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-      "|notpresent| :ref:`MC68B09CP <MC68B09CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
+      "|intransit| :ref:`MC68B09CP <MC68B09CP>`","Plastic","2 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809S <MC6809S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B09CS <MC68B09CS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
