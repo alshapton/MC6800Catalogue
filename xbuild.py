@@ -582,7 +582,6 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
-
     all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
@@ -1296,7 +1295,7 @@ def setup_icons():
     # Prepare new conf.py file
     copy_and_replace('./xbuild_support/conf.master','./xbuild_support/setup.pre')
     with open('./xbuild_support/setup.pre', 'a') as newfile:
-        newfile.write("# This component is auto-generated - do not edit \n")
+        newfile.write("\n")
         newfile.write('rst_prolog = """\n')
         for icon in data["icons"]:
             newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
@@ -1307,7 +1306,6 @@ def setup_icons():
 
     with open('./xbuild_support/conventions.rst', 'w') as newfile:
         newfile.write(':orphan:\n\n')
-        newfile.write("# This component is auto-generated - do not edit \n")
         newfile.write('.. csv-table::')
         newfile.write('   :header: "Symbol","Description"\n')
         newfile.write('   :widths: 14, 86\n')
@@ -1315,7 +1313,101 @@ def setup_icons():
 
    
         for icon in data["icons"]:
-            newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
+            if (icon["tag"] == "conventions"):
+                newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
+
+
+    with open('source/Software/NonResident/media.inc', 'w') as newfile:
+        newfile.write('.. rubric:: Key to Symbols\n\n')
+        newfile.write('.. csv-table::\n\n')
+        
+        for icon in data["icons"]:
+            if (icon["tag"] == "media"):
+                newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
+
+def do_timeline():
+    print('Updating timeline')
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    timeline=[]
+    invalid_months=False
+    for file in files:
+        if 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file:
+            with open(file, 'r') as f:
+                prevproductname=''                
+                lines = f.readlines()
+                for line in lines:
+                    if line.startswith("====="):
+                        productname=prevproductname
+                    else:
+                        prevproductname=line.strip()
+                    if line.startswith('.. _'):
+                        tag=line.replace('.. _','').replace(':','').strip()
+                    if line.find('|present') != -1:
+                        acquired_date = line.replace("|present|",'').replace('"','').strip()
+                        m=acquired_date[3:6].upper()
+                        match m:
+                            case "JAN":
+                                month='01'
+                            case "FEB":
+                                month='02'
+                            case "MAR":
+                                month='03'
+                            case "APR":
+                                month='04'
+                            case "MAY":
+                                month='05'
+                            case "JUN":
+                                month='06'
+                            case "JUL":
+                                month='07'
+                            case "AUG":
+                                month='08'
+                            case "SEP":
+                                month='09'
+                            case "OCT":
+                                month='10'
+                            case "NOV":
+                                month='11'
+                            case "DEC":
+                                month='12'
+                            case _:
+                                print('Invalid month in ' + file)
+                                invalid_months=True
+                        converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+                        dline='{"Date":"' + converted_date + '"' + \
+                                ',"File":"' + file + \
+                                '","RDate":"' + acquired_date + \
+                                '","Tag":"' + tag + \
+                                '","Name":"' + productname + \
+                                    '"}'
+                        timeline.append(dline)
+    if invalid_months:
+        print('Invalid months detected - timeline not updated')
+        return
+    else:
+
+        with open('./xbuild_support/timeline.rst', 'w') as f:
+            #f.write(':orphan:\n\n')
+            f.write('.. _timeline:\n\n')
+            f.write ('Timeline\n')
+            f.write('========\n\n')
+            f.write('This is the timeline of acquisitions (as at ' + time.strftime("%d-%m-%Y") + ').\n\n')
+
+            f.write('.. csv-table::\n')
+            f.write('   :header: "Date","Product" \n\n')
+            
+            for t in sorted(timeline):
+                print(t)
+                thisone = ast.literal_eval(t)
+                acq_date=thisone['Date']
+                f.write('   ' + thisone['RDate'] + ',:ref:`'+ thisone['Name']+ ' <' + thisone['Tag']+'>`\n')
+
+
+            
+        copy_and_replace('./xbuild_support/timeline.rst','./source/timeline.rst')
+
+            
+        print('Timeline updated')
 
 def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     print('Updating index pages')
@@ -1387,6 +1479,7 @@ while True:
             ANYINTRANSIT=do_in_transit()
             do_index_contents(ANYUNDEROFFER,ANYINTRANSIT)
             print('In-Transit updated')
+            do_timeline()
             os.system("make clean html")
         case "5":
             update_storage()

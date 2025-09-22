@@ -14,6 +14,7 @@ All you need for your Microcomputer System
 .. rubric:: Collection Information
 
 .. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
 
-   "Acquired",|present| 21-FEB-2025
-   "Location",":ref:`Folder 1 <1_map_reference>`"
+   |present| 21-FEB-2025

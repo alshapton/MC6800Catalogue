@@ -59,7 +59,7 @@ Another popular monitor program for this system is called MIKBUG.
    :header: "Acquired"
    :widths: auto
 
-   |present| 8-SEP-2025
+   |present| 08-SEP-2025
 
 .. rubric:: Links
 

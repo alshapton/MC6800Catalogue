@@ -10,7 +10,7 @@ Card Cage (10 Card)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired","DataSheet"
+   :header: "Acquired"
    :widths: auto
 
-   |present| 28-APR-2025,"|notpresent|"
+   |present| 28-APR-2025

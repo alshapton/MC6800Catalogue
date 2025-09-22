@@ -32,7 +32,7 @@ MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
    :header: "Component"
    :widths: auto
 
-   |present| 4-SEP-2025
+   |present| 04-SEP-2025
 
 .. rubric:: Links
 

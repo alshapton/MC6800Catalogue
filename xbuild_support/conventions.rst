@@ -1,6 +1,5 @@
 :orphan:
 
-# This component is auto-generated - do not edit 
 .. csv-table::   :header: "Symbol","Description"
    :widths: 14, 86
    :width: 100

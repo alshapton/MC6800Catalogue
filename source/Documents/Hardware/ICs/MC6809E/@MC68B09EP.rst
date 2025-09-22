@@ -32,7 +32,7 @@ MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
    :header: "Acquired"
    :widths: auto
 
-   "|present| 5-JUL-2025"
+   "|present| 05-JUL-2025"
 
 .. rubric:: Links
 

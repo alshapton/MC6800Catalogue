@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68B02P:
+.. _MC6803P:
 
-.. #None {'Product':'MC68B02P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC6803P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
-============================================================
+MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
+=========================================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -22,18 +22,18 @@ MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","2 Mhz"
+   "Frequency","1 Mhz"
    "Notes",""
 
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired"
+   :header: "Component"
    :widths: auto
 
    |intransit|
 
 .. rubric:: Links
 
-:download:`MC6802 Microprocessor with Clock and Optional RAM (MC6802)  <../../../../_static/Documents/Datasheets/DS-MC6802-6808-6802NS.pdf>`
+:download:`MC6803 Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`

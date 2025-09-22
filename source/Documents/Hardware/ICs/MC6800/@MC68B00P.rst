@@ -29,8 +29,7 @@ MC68B00P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-
+   |intransit|
 
 .. rubric:: Links
 

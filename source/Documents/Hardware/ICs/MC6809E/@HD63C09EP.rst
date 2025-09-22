@@ -42,7 +42,7 @@ Note that Motorola did not produce a 3MHz version of the MC6809E.
    :header: "Acquired"
    :widths: auto
 
-   "|present| 5-JUL-2025"
+   "|present| 05-JUL-2025"
 
 .. rubric:: Links
 
