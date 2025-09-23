@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 22-09-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 23-09-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -69,6 +69,7 @@ This is the current collection (as at 22-09-2025) of the items produced by Motor
 	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6800L <2!MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
+	":ref:`MC6801L1 <MC6801L1>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
 	":ref:`MC6803L <MC6803L>`","Plastic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
 	":ref:`MC6808L <MC6808L>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
 	":ref:`MC6809EP <MC6809EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
@@ -76,6 +77,7 @@ This is the current collection (as at 22-09-2025) of the items produced by Motor
 	":ref:`MC6821P <MC6821P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC6844L <MC6844L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
 	":ref:`MC6844P <MC6844P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
+	":ref:`MC6845CP <MC6845CP>`","Plastic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
 	":ref:`MC6845P <MC6845P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
 	":ref:`MC6847P <MC6847P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
 	":ref:`MC68488CP <MC68488CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"

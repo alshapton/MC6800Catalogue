@@ -7,7 +7,7 @@
 MC6809EP 8-Bit Microprocessing Unit (MC6809E)
 =============================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6809EP.png
+.. image:: ../../../../images/Hardware/ICs/MC6809E/MC6809EP.png
    :width: 400
    :align: center
 

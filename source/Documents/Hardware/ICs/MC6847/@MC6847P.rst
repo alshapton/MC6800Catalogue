@@ -7,7 +7,7 @@
 MC6847P Non-Interlaced Video Display Generator Unit
 ===================================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6847P.png
+.. image:: ../../../../images/Hardware/ICs/MC6847/MC6847P.png
    :width: 400
    :align: center
 

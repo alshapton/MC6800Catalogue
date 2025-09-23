@@ -32,8 +32,8 @@ MC6870 Two-Phase Microprocessor Clock
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
-   
+   "|notpresent|"
+      
 .. rubric:: Links
 
 :download:`Two-Phase Microprocessor Clock (MC6870)  <../../../../_static/Documents/Datasheets/MC6870-MC6871.pdf>`

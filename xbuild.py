@@ -1387,7 +1387,6 @@ def do_timeline():
     else:
 
         with open('./xbuild_support/timeline.rst', 'w') as f:
-            #f.write(':orphan:\n\n')
             f.write('.. _timeline:\n\n')
             f.write ('Timeline\n')
             f.write('========\n\n')
@@ -1397,9 +1396,7 @@ def do_timeline():
             f.write('   :header: "Date","Product" \n\n')
             
             for t in sorted(timeline):
-                print(t)
                 thisone = ast.literal_eval(t)
-                acq_date=thisone['Date']
                 f.write('   ' + thisone['RDate'] + ',:ref:`'+ thisone['Name']+ ' <' + thisone['Tag']+'>`\n')
 
 

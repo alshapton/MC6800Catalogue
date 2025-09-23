@@ -7,7 +7,7 @@
 MC68B54P Advanced Data Link Controller (ADLC)
 ============================================= 
 
-.. image:: ../../../../images/Hardware/ICs/MC68B54P.png
+.. image:: ../../../../images/Hardware/ICs/MC6854/MC68B54P.png
    :width: 400
    :align: center
 

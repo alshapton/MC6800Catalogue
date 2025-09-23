@@ -20,4 +20,4 @@
       "|notpresent| :ref:`MC6845CS <MC6845CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B45P <MC68B45P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A45CL <MC68A45CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6845CP <MC6845CP>`","Plastic","N/A","N/A",""
+      "|present| :ref:`MC6845CP <MC6845CP>`","Plastic","N/A","N/A",""

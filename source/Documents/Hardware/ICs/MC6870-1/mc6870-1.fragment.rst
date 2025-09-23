@@ -7,7 +7,7 @@
       :widths: auto
 
       "|present| :ref:`MC6871A15 <MC6871A15>`","Hermetically sealed ceramic DIP","1.5Mhz","0-120\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6870 <MC6870>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MC6870 <MC6870>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""
       "|present| :ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP","2Mhz","0-120\ :sup:`o`\ C",""
 
    [1] - The packaging is a hermetically sealed ceramic package.

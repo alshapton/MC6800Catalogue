@@ -7,7 +7,7 @@
 MC6862P 2400 bps Digital Modulator
 ==================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6862P.1.png
+.. image:: ../../../../images/Hardware/ICs/MC6862/MC6862P.1.png
    :width: 400
    :align: center
 
