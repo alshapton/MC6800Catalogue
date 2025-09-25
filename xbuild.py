@@ -992,48 +992,48 @@ def do_in_transit():
 
 
         for file in files:
-            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
-                "transit.rst" not in file and
-                "@" not in file and "carousel" not in file and "snippets" not in file):
+            if "@" in file:
                 with open(file) as f:
+                    
                     type = os.path.dirname(file).replace(PREFIX,'')
-                    doc_type=convert_type_to_real_type(type)
+                    #doc_type=convert_type_to_real_type(type)
+                    doc_type=type.replace('Documents' + OSSEP,'')
+                    if  'Hardware' + OSSEP + 'ICs' in doc_type:
+                        doc_type = 'ICs'
+                    if  'Hardware' + OSSEP + 'Other' in doc_type:
+                        doc_type = 'Other'
+                    if  'Hardware' + OSSEP + 'EXORciser' in doc_type:
+                        doc_type = 'EXORciser'
+                    
+                    prevproductname=''                  
+                    
                     for line in f:  
-                        if IN_TRANSIT in line and 'This item is present in the collection' not in line and "Meta" not in line:
-                            if 'An item in transit' not in line:
-                                splitline = line.split('","')
-                                part_number = splitline[0].strip().replace(IN_TRANSIT,'').replace('""','"')
-                                try:
-                                    description = splitline[1].strip().replace('""','"')
-                                except:
-                                    description = ''
-
+                        if line.startswith("====="):
+                            productname=prevproductname
+                        else:
+                            prevproductname=line.strip()
+    
+                        if line.startswith('.. _'):
+                            tag=line.replace('.. _','').replace(':','').strip()
                         
-                                if doc_type == 'ICs':
-                                    description = 'ICSTUFF'
-                                    cfile=part_number.replace('" :ref:`','').split(' ')[0] + '.' + SUFFIX
-                                    chip_file = glob.glob(IC_LOCATIONS + '/**/*' + cfile, recursive=True)[0]
-                                    ch=cfile.replace('.' + SUFFIX,'')
-                                    this_chip_file = open(chip_file,'r')
-                                    lines = this_chip_file.readlines()
-                                    filtered = [line for line in lines if line.startswith(ch)]
-                                    
-                                    description = filtered[0].replace(ch,'').replace('\n','')
+                        if IN_TRANSIT in line:
+                            print(doc_type + ' ' + file + ' contains in transit item')
+                            link  = ':ref:`' + productname + ' <'+ tag + '>` '
 
-
-                                outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
-                                
-                                thisdict = {"PN"    : part_number, 
-                                            "DESC"  : description, 
-                                            "DTYPE" : doc_type, 
-                                            "OLINE" : outline }
-                                if description != '' :
-                                    intransit.append(thisdict)
+                            outline = ('\t' + tag + ',"' + link + '"\n').replace('""','"')
+                            thisdict = {"PN"    : tag, 
+                                        "DESC"  : productname, 
+                                        "DTYPE" : doc_type, 
+                                        "OLINE" : outline }
+                            if productname != '' :
+                                intransit.append(thisdict)
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
+
         HEADING=''
         if len(newlist) > 0:
             ANYINTRANSIT=True
         for i in newlist:
+            print(i['DTYPE'] + ' ' + i['PN'])
             if HEADING != i['DTYPE']:
                 HEADING = i['DTYPE']
                 c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 

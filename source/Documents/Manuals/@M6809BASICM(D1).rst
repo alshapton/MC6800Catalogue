@@ -15,5 +15,5 @@ EXORset 30 BASIC-M User's Guide
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
    
