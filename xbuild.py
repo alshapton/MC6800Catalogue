@@ -9,20 +9,20 @@ import tomllib
 
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
+
 import sqlite3
 
 
+CHECK_MARK    = '|present|'
+CROSS_MARK    = '|notpresent|'
+IN_TRANSIT    = '|intransit|'
+UNDER_OFFER   = '|underoffer|'
 
+OSSEP         = os.sep
 
-CHECK_MARK='|present|'
-CROSS_MARK='|notpresent|'
-IN_TRANSIT='|intransit|'
-UNDER_OFFER='|underoffer|'
+ANYUNDEROFFER = False
+ANYINTRANSIT  = False
 
-ANYUNDEROFFER=False
-ANYINTRANSIT=False
-
-OSSEP=os.sep
 
 PREFIX ='source' + OSSEP
 SUFFIX = 'rst'
@@ -159,10 +159,10 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
 
             c.write('\n   ')
             c.write(stat +' :ref:`' + item['Part'] + ' <'+item['Ref']+ '>`","')
-            comments=""
+            comments = ""
             if "Comments" in item:
                 comments = item['Comments']
-            c.write(item['Product']+'","'+comments + '"')
+            c.write(item['Product'] + '","' + comments + '"')
         c.write('\n')    
 
 
@@ -174,13 +174,13 @@ def create_new_group_from_index():
     if datasheet == 'Y':
         ds='\n.. rubric:: Links\n\n'
         ds=ds+':download:`' + newgroupname + ' ' + 'XXXX  <../../../../_static/Documents/Datasheets/' + newgroupname + ".pdf>`\n"
-    NEW_LOC=NEW_GROUP_TMP_LOC + newgroupname
+    NEW_LOC = NEW_GROUP_TMP_LOC + newgroupname
     if not os.path.exists(LOC.lower()):
         print('Index file for ' + newgroupname + ' does not exist')
         exit()
     print('Creating new group from index file for IC: ' + newgroupname)
 
-    direc=make_directory(NEW_LOC)
+    _ = make_directory(NEW_LOC)
 
     
     with open(LOC.lower() ,"r") as d:
@@ -261,7 +261,7 @@ def create_new_group_index():
     if len(frequencies) > 0:
         frequencies.append("")
     
-    LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
+    LOC = NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
     with open(LOC.lower() ,"w") as d:
         for packagetype in packaging:
 
@@ -410,7 +410,7 @@ def update_carousel():
     for filename in files:   
         i=str(filename)
         images_loc = i.replace('Documents','images').replace('.'+ CAROUSEL + '.' + SUFFIX,'')
-        base=os.path.basename(i).replace('.'+CAROUSEL+'.'+SUFFIX,'')
+        base = os.path.basename(i).replace('.' + CAROUSEL + '.' + SUFFIX,'')
         fullbase = i.replace(os.path.basename(i),'') +  base + os.sep + base + '.'  + CAROUSEL + '.' + SUFFIX
         f=i.count(os.sep)
         dotdot = ''
@@ -452,22 +452,7 @@ def update_carousel():
     print('\n\nCarousels updated')
 
 
-def get_cols_for_drawer(st,dr,rw, info):
 
-    l=ast.literal_eval(info[0])
-    for j in l['Storage']:
-        cols = []
-        for i in range(0,len(j)):
-
-            k=j['Name']        
-            if k == st:
-                drws=j['Drawers']
-                for d in range(0,len(drws)):
-                    cd=drws[d]
-                    if dr == cd['Drawer']:
-                        cols = cd['Columns']
-                        return cols                      
-    return cols
 
 
 def update_storage():
@@ -883,9 +868,7 @@ def update_IC_index():
     ic2file=[]
     memfiles=[]
     for file in files:
-        if 'carousel' not in file:
             if 'source/Documents/Hardware/ICs/' in file:
-                print(file)
 
                 fname=file.replace('source/Documents/Hardware/ICs/','')
                 if 'MCM' in fname:
@@ -1085,15 +1068,7 @@ def collect_metadata():
     return md 
 
 
-def get_location(ref,md):
-    # Get the location of the file from the metadata
-    loc=''
-    for item in md:
-        if item['REFERENCE'] == ref:
-            line = item['METADATA']
-            loc = line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
-            loc = ast.literal_eval(loc)
-    return loc
+
 
 
 def do_collection():
