@@ -31,7 +31,7 @@ MC6845CP CRT Controller
    :header: "Acquired"
    :widths: auto
 
-   |present|
+   |present| 23-SEP-2025
    
 .. rubric:: Links
 

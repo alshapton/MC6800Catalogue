@@ -9,14 +9,16 @@ import tomllib
 
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
+import sqlite3
 
-#CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
+
+
+
 CHECK_MARK='|present|'
-
 CROSS_MARK='|notpresent|'
 IN_TRANSIT='|intransit|'
-IN_TRANSIT_SHORT='|intransit|'
 UNDER_OFFER='|underoffer|'
+
 ANYUNDEROFFER=False
 ANYINTRANSIT=False
 
@@ -92,7 +94,6 @@ def update_or_not_metadata(filename):
 def get_loc(file):
     loc = ast.literal_eval('{}')
 
-    filename = file
     got_image=False
     metadata=False
     sta=''
@@ -882,16 +883,19 @@ def update_IC_index():
     ic2file=[]
     memfiles=[]
     for file in files:
-        if 'source/Documents/Hardware/ICs/' in file:
-            fname=file.replace('source/Documents/Hardware/ICs/','')
-            if 'MCM' in fname:
-                memfiles.append(fname[3:])
-                icfiles.append(fname[3:])
-            else:
-                if len(str(fname[2:])) >4: 
-                    ic2file.append(fname[2:])    
+        if 'carousel' not in file:
+            if 'source/Documents/Hardware/ICs/' in file:
+                print(file)
+
+                fname=file.replace('source/Documents/Hardware/ICs/','')
+                if 'MCM' in fname:
+                    memfiles.append(fname[3:])
+                    icfiles.append(fname[3:])
                 else:
-                    icfiles.append(fname[2:])
+                    if len(str(fname[2:])) >4: 
+                        ic2file.append(fname[2:])    
+                    else:
+                        icfiles.append(fname[2:])
 
     nonnumics2 = []
     for nonnumic in ic2file:
@@ -913,7 +917,7 @@ def update_IC_index():
     with open(IC_FRAGMENTS_INDEX,"w") as c:
 
         for chip in chips:
-    
+            print((chip))   
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
     print('\nCompleted updating IC index\n')
@@ -1012,7 +1016,7 @@ def do_in_transit():
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
                     for line in f:  
-                        if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
+                        if IN_TRANSIT in line and 'This item is present in the collection' not in line and "Meta" not in line:
                             if 'An item in transit' not in line:
                                 splitline = line.split('","')
                                 part_number = splitline[0].strip().replace(IN_TRANSIT,'').replace('""','"')
@@ -1429,6 +1433,178 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     copy_and_replace('./xbuild_support/index.master','./source/index.rst')
 
 
+
+def rebuild_db():
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    cursor_obj = conn.cursor()
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS ics     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            ic                  TEXT,      \
+                            name                TEXT,      \
+                            parent              TEXT,      \
+                            tag                 TEXT,      \
+                            temperature         TEXT,      \
+                            packaging           TEXT,      \
+                            frequency           TEXT,      \
+                            notes               TEXT,      \
+                            mask                TEXT,      \
+                            status              TEXT,      \
+                            date_code           TEXT,      \
+                            manufacture_date    TEXT,      \
+                            acquired_date       TEXT,      \
+                            real_date           TEXT,      \
+                            metadata            TEXT       \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclinks     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            link                TEXT       \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS icimages     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            image               TEXT       \
+                       );")
+    conn.commit()
+
+    # Clean tables if needed
+    cursor_obj.execute("DELETE FROM icimages;")
+    cursor_obj.execute("DELETE FROM iclinks;")
+    cursor_obj.execute("DELETE FROM ics;")
+    conn.commit()
+
+    for file in files:
+        if 'ICs'+OSSEP+'MC' in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'packaging' not in file:
+            filename = file.split(OSSEP)
+            parent = filename[4]
+            icid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
+            if icid.find('!') == -1:
+                ic = icid
+            else:
+                ic = icid.split('!')[1].strip()
+
+            date_code = ''
+            manufacture_date = ''
+            acquired_date = ''
+            converted_date = ''
+            packaging = ''
+            temperature = ''
+            frequency = ''
+            notes = ''
+            mask = ''
+            metadata = ''
+            image = ''
+            with open(file, 'r') as f:
+                prevproductname=''                
+                lines = f.readlines()
+                for line in lines:
+                    if line.startswith('.. image::'):
+                        image=line.replace('.. image::','').strip()
+                        conn.execute("INSERT INTO icimages (icid, image) VALUES (?,?);", (icid, image.strip()))
+                        conn.commit()
+                    if '.. #Metadata ' in line:
+                        metadata=line.replace('.. #Metadata','').strip()
+
+                    if  ':ref:`' in line and 'Location' not in line:
+                        conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
+                        conn.commit()
+                    if ':download:`' in line :
+                        conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
+                        conn.commit()
+                    if '"Date Code"' in line:
+                        splitline=line.split(',')
+                        date_code=splitline[1].replace('"','')[:-1].strip()
+                    if '"Manufacture Date"' in line:
+                        splitline=line.split(',')
+                        manufacture_date=splitline[1].replace('"','')[:-1].strip()
+                    if '"Mask"' in line:
+                        splitline=line.split(',')
+                        mask=splitline[1].replace('"','')[:-1].strip()
+                    if line.startswith('.. _'):
+                        tag=line.replace('.. _','').split(':')[0]
+                    if '"Packaging"' in line:
+                        splitline=line.split(',')
+                        packaging=splitline[1].replace('"','')[:-1]
+                    if '"Frequency"' in line:
+                        splitline=line.split(',')
+                        frequency=splitline[1].replace('"','')[:-1]
+                    if '"Temperature"' in line:
+                        splitline=line.split(',')
+                        itemperature=splitline[1].replace('"','')[:-1].replace('\\ :sup:`o`\\ ','°')
+                        if itemperature.startswith('-'):
+                            ttemp = itemperature.split('-')
+                            temperature = '-' + ttemp[1] + '°C to ' + ttemp[2]
+                        else:
+                            temperature = itemperature.replace('-','°C to ')
+                    if '"Notes"' in line:
+                        splitline=line.split('","')
+                        notes=splitline[1].replace('"','')[:-1]
+                    
+                    if line.startswith("====="):
+                        productname=prevproductname
+                    else:
+                        prevproductname=line.strip()
+                    if  CHECK_MARK in line or \
+                        UNDER_OFFER in line or \
+                        IN_TRANSIT in line or \
+                        CROSS_MARK in line:
+                            status = line.split('|')[1].strip()
+                    if CHECK_MARK in line:
+                            acquired_date = line.split('|')[2].strip().replace('"','')
+                            m=acquired_date[3:6].upper()
+                            match m:
+                                case "JAN":
+                                    month='01'
+                                case "FEB":
+                                    month='02'
+                                case "MAR":
+                                    month='03'
+                                case "APR":
+                                    month='04'
+                                case "MAY":
+                                    month='05'
+                                case "JUN":
+                                    month='06'
+                                case "JUL":
+                                    month='07'
+                                case "AUG":
+                                    month='08'
+                                case "SEP":
+                                    month='09'
+                                case "OCT":
+                                    month='10'
+                                case "NOV":
+                                    month='11'
+                                case "DEC":
+                                    month='12'
+                                case _:
+                                    print('Invalid month in ' + file)
+                            converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+            conn.execute("INSERT INTO ics (icid, ic,  parent, name, status, acquired_date, real_date, tag, packaging,\
+                                           temperature,frequency,mask,notes,date_code,manufacture_date,metadata) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                         (icid, ic, parent,productname,status,acquired_date,converted_date,tag,packaging,\
+                          temperature,frequency,mask,notes,date_code,manufacture_date,metadata))
+        
+            conn.commit()
+    conn.close()
+
+def read_db():
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    cursor_obj = conn.cursor()
+    cursor_obj.execute('SELECT * FROM ics')
+    output = cursor_obj.fetchall()
+    for row in output:
+        print(row)
+    conn.close()
+
+
 while True:
     print('\t1. Get date range from week ')
     print('\t2. Create new entry  ')
@@ -1436,6 +1612,7 @@ while True:
     print('\t4. Create new IC group from index')    
     print('\t5. Update storage + SOME indexes')
     print('\t6. Update carousels')
+    print('\t7. Rebuild DB')
     print('\t0. Update ALL ')
     print('\tX. Exit')
     type = input('Enter choice: ')
@@ -1482,7 +1659,11 @@ while True:
             update_storage()
         case "6":
             update_carousel()
-        
+        case "7":
+            print('Commencing rebuild of database') 
+            rebuild_db()
+            print('Completed rebuild of database') 
+            
         case "X":
             print('Exiting')
             exit()

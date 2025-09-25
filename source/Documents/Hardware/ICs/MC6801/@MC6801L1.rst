@@ -32,7 +32,7 @@ MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
    :header: "Component"
    :widths: auto
 
-   |present|
+   |present| 23-SEP-2025
 
 .. rubric:: Links
 

@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 23-09-2025).
+This is the timeline of acquisitions (as at 25-09-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -141,3 +141,5 @@ This is the timeline of acquisitions (as at 23-09-2025).
    09-SEP-2025,:ref:`SC44204P Microprocessor Unit <SC44204P>`
    09-SEP-2025,:ref:`MC6850P Asynchronous Communications Interface Adapter <MC6850P>`
    09-SEP-2025,:ref:`MCM6830AP-2 1024 x 8-bit ROM <MCM6830AP-2>`
+   23-SEP-2025,:ref:`MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801) <MC6801L1>`
+   23-SEP-2025,:ref:`MC6845CP CRT Controller <MC6845CP>`
