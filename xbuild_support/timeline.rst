@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 25-09-2025).
+This is the timeline of acquisitions (as at 28-09-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -77,7 +77,7 @@ This is the timeline of acquisitions (as at 25-09-2025).
    28-MAY-2025,:ref:`MC6847P Non-Interlaced Video Display Generator Unit <MC6847P>`
    30-MAY-2025,:ref:`MC6800GMCM General Motors/Delcom Microprocessor Unit <MC6800GMCM>`
    30-MAY-2025,:ref:`MC68A50P Asynchronous Communications Interface Adapter (MC6850) <MC68A50P>`
-   30-MAY-2025,:ref:`MC6889P Quad Bus Transceiver (Non-Inverting) <MC6889P>`
+   30-MAY-2025,:ref:`MC6889P NonInverting Quad Three-State Bus Transceiver <MC6889P>`
    31-MAY-2025,:ref:`MCM68A30L8 1024 x 8-bit ROM <MCM68A30L8>`
    01-JUN-2025,:ref:`EDUCATOR-II Monitor <EDUCATOR_II_mon>`
    01-JUN-2025,:ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`

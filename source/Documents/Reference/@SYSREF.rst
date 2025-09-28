@@ -23,6 +23,10 @@ M6800 Systems Reference and Data Sheets
 
 This document was acquired (and will be stored) with the M6800 Microproessor Course Binder
 
+The datasheets contained within this document are:
+
+- :download:`Microprocessing Unit (MPU) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6800-Advance-Info-May75.pdf>`
+
 .. rubric:: Links
 
 :download:`M6800 Systems Reference and Data Sheets (May 1975 Edition)<../../_static/Documents/Reference/M6800SystemsReferenceDataSheets_May75.pdf>`

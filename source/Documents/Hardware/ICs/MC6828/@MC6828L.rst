@@ -2,7 +2,7 @@
 
 .. _MC6828L:
 
-MC6828L Prioirity Interrupt Controller
+MC6828L Priority Interrupt Controller
 ======================================
 
 .. image:: ../../../../images/NOIMAGE.png

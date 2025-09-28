@@ -4,8 +4,8 @@
 
 .. #None {'Product':'MC68B09CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC68B09CP MC6809 8-Bit Microprocessing Unit
-===========================================
+MC68B09CP 8-Bit Microprocessing Unit
+====================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

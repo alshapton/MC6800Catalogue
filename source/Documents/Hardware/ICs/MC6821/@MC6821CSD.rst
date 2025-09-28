@@ -4,7 +4,7 @@
 
 .. #None {'Product':'MC6821CSD','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6821CSD MC6821 Peripheral Interface Adapter (PIA)
+MC6821CSD Peripheral Interface Adapter (PIA)
 ===================================================
 
 .. image:: ../../../../images/NOIMAGE.png

@@ -4,8 +4,8 @@
 
 .. #None {'Product':'MC68A09CS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC68A09CS MC6809 8-Bit Microprocessing Unit
-===========================================
+MC68A09CS 8-Bit Microprocessing Unit
+====================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
