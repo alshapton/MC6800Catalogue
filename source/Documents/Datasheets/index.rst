@@ -25,7 +25,8 @@ DataSheets
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
    
-   ":ref:`MC6800 <DS-MC6800>`","8-Bit Microprocessing Unit","|confirminfo|",""
+   ":ref:`MC6800 <DS-MC6800>`","8-Bit Microprocessing Unit","|confirminfo|","1984"
+   ":ref:`MC6800 <DS-MC6800-MAY75>`","8-Bit Microprocessing Unit","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6801 <DS-MC6801-03-03NR>`","Microcomputer/Microprocessor (MCU/MPU)","|confirminfo|","1981"
    ":ref:`MC6802 <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
    ":ref:`MC6802NS <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
@@ -36,7 +37,8 @@ DataSheets
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit","|confirminfo|",""
    ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit","|confirminfo|",""
    ":ref:`MCM6810 <DS-MCM6810>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","",""
-   ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","","1981"
+   ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","1981",""
+   ":ref:`MC6820 <DS-MC6820-MAY75>`","Peripheral Interface Adapter (PIA)","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter","|confirminfo|","",""
    ":ref:`MC6822 <MC6822>`","Industrial Interface Adapter","|advanceinfo|","1981"
    ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller","|confirminfo|"
@@ -92,3 +94,4 @@ DataSheets
    "|advanceinfo|","Advance/Preliminary Information (subject to change)"
    "|confirminfo|","Datasheet represents manufactured specification"
    "|cancelled|","Product never shipped or cancelled."
+   "|document|","Part of a larger single document."

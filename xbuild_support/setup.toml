@@ -62,3 +62,11 @@ tag  = "media"
 name = "datacartridge"
 icon = ":material-regular:`storage;2em;`"
 desc = "Data Cartridge"
+[[icons]]
+tag  = "conventions"
+name = "document"
+icon = ":material-regular:`document_scanner;2em;`"
+desc = "Part of a larger single document."
+
+
+

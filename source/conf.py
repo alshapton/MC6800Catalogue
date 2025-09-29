@@ -56,4 +56,5 @@ rst_prolog = """
 .. |floppydisc| 	replace:: :material-regular:`save;2em;`
 .. |punchedcard| 	replace:: :material-regular:`margin;2em;`
 .. |datacartridge| 	replace:: :material-regular:`storage;2em;`
+.. |document| 	replace:: :material-regular:`document_scanner;2em;`
 """
