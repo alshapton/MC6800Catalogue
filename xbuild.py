@@ -17,6 +17,7 @@ CHECK_MARK    = '|present|'
 CROSS_MARK    = '|notpresent|'
 IN_TRANSIT    = '|intransit|'
 UNDER_OFFER   = '|underoffer|'
+BIGGER_DOC    = '|document|'
 
 OSSEP         = os.sep
 
@@ -1092,14 +1093,14 @@ def do_collection():
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
-
                 with open(file) as f:
-                    print('Checking ' + file)
+                    print('Checking for acquired ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
                     
                     for line in f:
-                        if CHECK_MARK in line and 'This item is present in the collection' not in line:
+
+                        if CHECK_MARK in line  and 'This item is present in the collection' not in line:
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
                             ref = part_number.split('<')[1].split('>')[0].strip().replace('@','')
@@ -1118,7 +1119,30 @@ def do_collection():
                                         "OLINE"     : outline}
                             if description != '':
                                 collection.append(thisdict)
-                newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
+
+                        if BIGGER_DOC in line and "Part of a larger single document" not in line:
+                            print(line)
+                            location = 'TBD'
+                            splitline= line.split('","')
+                            try:
+                                description = splitline[1].strip().replace('""','"')
+                            except:
+                                description = ''
+                            location = splitline[4]
+                            part_number = splitline[0]
+                            print(splitline[4])
+                            outline = ('\t' + part_number.strip() + '","' + description + '"\n').replace('""','"')
+                            thisdict = {"PN"        : part_number, 
+                                        "DESC"      : description, 
+                                        "DTYPE"     : doc_type,
+                                        "LOCATION"  : location,
+                                        "OLINE"     : outline}
+                            if description != '':
+                                collection.append(thisdict)
+
+        
+        newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
+
         HEADING=''
 
 
@@ -1156,6 +1180,10 @@ def do_collection():
                     
                     OUT=i['OLINE'][:-1] + "," + reference + '\n'
 
+                if 'Storage' not in str(i['LOCATION']) and \
+                   'Folder' not in str(i['LOCATION']): 
+                    OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
+                
             c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
             
 

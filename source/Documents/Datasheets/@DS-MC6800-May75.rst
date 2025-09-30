@@ -2,6 +2,8 @@
 
 .. _DS-MC6800-MAY75:
 
+.. #Metadata  {'Product':'8-Bit Microprocessing Unit (PIA) (Advance Information May 1975)','Folder': '<SYSREF>'}
+
 8-Bit Microprocessing Unit (Advance Information May 1975)
 ==========================================================
 
@@ -15,7 +17,7 @@
    :header: "Acquired"
    :widths: auto
 
-   |document| :ref:`M6800 Systems Reference and Data Sheets <SYSREF>`
+   |document| :ref:`M6800 Systems Reference and Data Sheets <SYSREF>` 31-MAR-2025
 
 .. rubric:: Links
 

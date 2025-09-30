@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 29-09-2025).
+This is the timeline of acquisitions (as at 30-09-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -41,8 +41,8 @@ This is the timeline of acquisitions (as at 29-09-2025).
    20-MAR-2025,:ref:`M68MM01B1A Monoboard Microcomputer Module Datasheet <DS-M68MM01B1A>`
    20-MAR-2025,:ref:`MEX6816-22D 16K Dynamic RAM <MEX6816-22D>`
    20-MAR-2025,:ref:`XC6845L CRT Controller <XC6845L>`
-   25-MAR-2025,:ref:`Motorola Memory Products <1979_Memory_Products>`
    25-MAR-2025,:ref:`Microcomputer Development Systems and Subsystems <1979_MCDS>`
+   25-MAR-2025,:ref:`Motorola Memory Products <1979_Memory_Products>`
    28-MAR-2025,:ref:`MEK6800D2 Microcomputer Kit System Expansion Techniques <AN-771>`
    28-MAR-2025,:ref:`Autonomous Development System (French) Datasheet <DS-M68ADS1-FRENCH>`
    28-MAR-2025,:ref:`Autonomous Development System Datasheet <DS-M68ADS1>`
