@@ -21,6 +21,6 @@ Peripheral Interface Adapter (PIA) (Advance Information May 1975)
 
 .. rubric:: Links
 
-:download:`Peripheral Interface Adapter (PIA) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6860-Advance-Info-May75.pdf>`
+:download:`Peripheral Interface Adapter (PIA) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6860-May75.pdf>`
 
 

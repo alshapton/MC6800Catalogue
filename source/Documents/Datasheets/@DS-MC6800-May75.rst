@@ -21,7 +21,7 @@
 
 .. rubric:: Links
 
-:download:`Microprocessing Unit (MPU) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6800-Advance-Info-May75.pdf>`
+:download:`Microprocessing Unit (MPU) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6800-May75.pdf>`
 
 See also:
 

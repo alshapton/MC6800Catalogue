@@ -103,5 +103,5 @@ Reference Manuals
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
    ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
    ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"
-   ":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
+   "|present| :ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
    ":ref:`M6809ASM09(D) <M6809ASM09(D)>`","EXORset 30 XDOS Assembler User's Guide","Targetting M6809"

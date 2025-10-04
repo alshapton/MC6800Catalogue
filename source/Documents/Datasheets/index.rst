@@ -3,7 +3,9 @@
 DataSheets
 ==========
 
-.. rubric:: Modules
+
+Modules
+-------
 
 .. csv-table:: 
    :header: "Part","Name","","Date","Comments" 
@@ -18,7 +20,6 @@ DataSheets
    ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module","|advanceinfo|",""
    ":ref:`MEX6800 <MEX6800>`","MPU Module","|advanceinfo|",""
    
-
 .. rubric:: Integrated Circuits
 
 .. csv-table:: 
@@ -43,6 +44,7 @@ DataSheets
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter","|confirminfo|","",""
    ":ref:`MC6822 <MC6822>`","Industrial Interface Adapter","|advanceinfo|","1981"
    ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller","|confirminfo|"
+   ":ref:`MCM6830 <DS-MCM6830-MAY75>`","MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)","|advanceinfo| |document|","1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6835 <MC6835>`","MC6835 CRT Controller (CRTC)","|advanceinfo|","1981"
    ":ref:`MC6839 <MC6839>`","Floating-Point ROM","|advanceinfo|"
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)","|confirminfo|",""

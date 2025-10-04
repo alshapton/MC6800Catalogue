@@ -322,7 +322,7 @@ def update_IC_pre_fragments():
 
     yfiles = glob.glob('**/*.pre.fragment', recursive=True)
     for yfile in yfiles:
-        print('     Processing:' + os.path.basename(yfile))
+        #print('     Processing:' + os.path.basename(yfile))
 
         with open(yfile) as f:
             lines = f.readlines()
@@ -901,7 +901,6 @@ def update_IC_index():
     with open(IC_FRAGMENTS_INDEX,"w") as c:
 
         for chip in chips:
-            print((chip))   
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
     print('\nCompleted updating IC index\n')
@@ -934,7 +933,6 @@ def do_underoffer():
 
                         if UNDER_OFFER in line :
                             ANYUNDEROFFER=True
-                            print(file + ' contains under offer item')
                             if 'An item in underoffer' not in line:
                                 splitline = line.split('","')
                                 part_number = splitline[0].strip().replace(UNDER_OFFER,'').replace('""','"')
@@ -997,7 +995,6 @@ def do_in_transit():
                 with open(file) as f:
                     
                     type = os.path.dirname(file).replace(PREFIX,'')
-                    #doc_type=convert_type_to_real_type(type)
                     doc_type=type.replace('Documents' + OSSEP,'')
                     if  'Hardware' + OSSEP + 'ICs' in doc_type:
                         doc_type = 'ICs'
@@ -1034,7 +1031,6 @@ def do_in_transit():
         if len(newlist) > 0:
             ANYINTRANSIT=True
         for i in newlist:
-            print(i['DTYPE'] + ' ' + i['PN'])
             if HEADING != i['DTYPE']:
                 HEADING = i['DTYPE']
                 c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
@@ -1094,7 +1090,7 @@ def do_collection():
                 "collection" not in file and "transit.rst" not in file and
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
-                    print('Checking for acquired ' + file)
+                    #print('Checking for acquired ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
                     
@@ -1121,7 +1117,6 @@ def do_collection():
                                 collection.append(thisdict)
 
                         if BIGGER_DOC in line and "Part of a larger single document" not in line:
-                            print(line)
                             location = 'TBD'
                             splitline= line.split('","')
                             try:
@@ -1130,7 +1125,6 @@ def do_collection():
                                 description = ''
                             location = splitline[4]
                             part_number = splitline[0]
-                            print(splitline[4])
                             outline = ('\t' + part_number.strip() + '","' + description + '"\n').replace('""','"')
                             thisdict = {"PN"        : part_number, 
                                         "DESC"      : description, 
@@ -1306,7 +1300,7 @@ def setup_icons():
         newfile.write('rst_prolog = """\n')
         for icon in data["icons"]:
             newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
-            print(icon["name"].strip() + ' icon added')
+            #print(icon["name"].strip() + ' icon added')
         newfile.write('"""\n')
 
     copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')

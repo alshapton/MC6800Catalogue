@@ -3,11 +3,12 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 30-09-2025).
+This is the timeline of acquisitions (as at 04-10-2025).
 
 .. csv-table::
    :header: "Date","Product" 
 
+   03-OCT-2024,:ref:`EXORset 30 BASIC-M User's Guide <M6809BASICM(D1)>`
    05-DEC-2024,:ref:`M6800 Programming Reference Manual <M68PRM(D)>`
    27-JAN-2025,:ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`
    30-JAN-2025,:ref:`MC6800L Microprocessor Unit <MC6800L>`
