@@ -2,6 +2,8 @@
 
 .. _M68CRE(D):
 
+.. #Metadata {'Product':'M6800 Co-Resident Editor Reference Manual','Folder': '1'}
+
 M6800 Co-Resident Editor Reference Manual
 =========================================
 

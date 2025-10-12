@@ -2,6 +2,8 @@
 
 .. _M68SAM(D2):
 
+.. #Metadata {'Product':'M6800 Cross Assembler Reference Manual','Folder': '1'}
+
 M6800 Cross Assembler Reference Manual
 ======================================
 

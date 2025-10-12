@@ -5,7 +5,7 @@
 MC6850 Asynchronous Communications Interface Adapter (ACIA)
 ===========================================================
 
-.. #None {'Product':'MC6850 Asynchronous Communications Interface Adapter (ACIA)','Folder': '<SYSREF>','Comments':''}
+.. #Metadata {'Product':'MC6850 Asynchronous Communications Interface Adapter (ACIA)','Folder': '<SYSREF>','Comments':''}
 
 .. image:: ../../images/DataSheets/MC6850-May75.png
    :width: 400

@@ -2,7 +2,7 @@
 
 .. _DS-MC6800-MAY75:
 
-.. #Metadata  {'Product':'8-Bit Microprocessing Unit (PIA) (Advance Information May 1975)','Folder': '<SYSREF>'}
+.. #Metadata  {'Product':'8-Bit Microprocessing Unit (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
 
 8-Bit Microprocessing Unit (Advance Information May 1975)
 ==========================================================

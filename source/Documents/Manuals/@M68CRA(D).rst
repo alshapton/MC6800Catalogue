@@ -2,6 +2,8 @@
 
 .. _M68CRA(D):
 
+.. #Metadata {'Product':'M6800 Co-Resident Assembler Reference Manual','Folder': '1'}
+
 M6800 Co-Resident Assembler Reference Manual
 ============================================
 

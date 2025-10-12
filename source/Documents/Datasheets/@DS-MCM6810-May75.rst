@@ -5,7 +5,7 @@
 MCM6810 128 x 8-Bit Static Random Access Memory  (Advance Information May 1975)
 ===============================================================================
 
-.. #None {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory  (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
+.. #Metadata {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory  (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
 
 .. image:: ../../images/DataSheets/MCM6810-May75.png
    :width: 400

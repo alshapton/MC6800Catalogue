@@ -10,14 +10,21 @@
 
     :ref:`All you need for your Microcomputer System <ALLYOUNEED>`,""
     :ref:`EDUCATOR-II Brochure <EDUCATOR-II-BROCHURE>`,""
+    :ref:`M6800 Co-Resident Assembler Reference Manual <M68CRA(D)>`,""
+    :ref:`M6800 Co-Resident Editor Reference Manual <M68CRE(D)>`,""
+    :ref:`M6800 Cross Assembler Reference Manual <M68SAM(D2)>`,""
     :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`,""
     :ref:`M6800 Instruction Set Summary <REF-MC6800>`,""
     :ref:`MC6809/MC6809E 8-Bit Microprocessor Programming Model <REF-MC6809-MC6809E>`,""
+    :ref:`MC6840 Programmable Timer Fundamentals and Applications <MC6840UM-AD>`,""
     :ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`,""
     :ref:`MC6845 Cathode Ray Tube Controller Programming <REF-MC6845>`,""
     :ref:`MC68488 GPIA for IEEE-488 Bus <REF-MC68488>`,""
     :ref:`MEK6800D2 Microcomputer Kit System Expansion Techniques <AN-771>`,""
+    :ref:`MES6800 User Guide <MES6800>`,""
+    :ref:`MEX6815-1 8K Dynamic RAM Module Supplement <MEX68151>`,""
     :ref:`Microprocessor Course Notes Page <M6800CNP>`,""
+    :ref:`Monoboard Microcomputer 1A Micromodule 1A <M68MM01A(D4)>`,""
     :ref:`Motorola MPU Vocabulary <MPUVocabulary>`,"First Edition 1977"
     :ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`,""
     :ref:`Motorola Software for DEC PDP-11 InfoSheet <M-PDP-11>`,""
@@ -50,22 +57,11 @@
    :header: "Name","Comments"
    :widths: 60,40
 
+    :ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`,"A5-format paperback"
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,":ref:`Collection of Documents <M6800_Microcomputer_System_Support_Products_map_reference>`"
     :ref:`Microcomputer Development Systems and Subsystems <1979_MCDS>`,"1979"
     :ref:`Microprocessor Applications Manual <NONE-2>`,""
     :ref:`Motorola Memory Products <1979_Memory_Products>`,"1979"
-
-
-.. _<SYSREF>_map_reference:
-
-.. rubric:: Folder <SYSREF>
-
-.. csv-table::
-   :header: "Name","Comments"
-   :widths: 60,40
-
-    :ref:`8-Bit Microprocessing Unit (PIA) (Advance Information May 1975) <DS-MC6800-MAY75>`,""
-    :ref:`Peripheral Interface Adapter (PIA) (Advance Information May 1975) <DS-MC6820-MAY75>`,""
 
 
 .. _LOCAL_map_reference:

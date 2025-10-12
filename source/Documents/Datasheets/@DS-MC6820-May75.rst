@@ -5,7 +5,7 @@
 Peripheral Interface Adapter (PIA) (Advance Information May 1975)
 =================================================================
 
-.. #Metadata  {'Product':'Peripheral Interface Adapter (PIA) (Advance Information May 1975)','Folder': '<SYSREF>'}
+.. #Metadata {'Product':'Peripheral Interface Adapter (PIA) (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
 
 .. image:: ../../images/DataSheets/DS-MC6820-May75.png
    :width: 400

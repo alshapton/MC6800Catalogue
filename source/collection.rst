@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 04-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 12-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -41,8 +41,7 @@ This is the current collection (as at 04-10-2025) of the items produced by Motor
  	":ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
- 	":ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets"
-
+ 
 
 .. rubric:: Exorciser Hardware
 
@@ -67,64 +66,65 @@ This is the current collection (as at 04-10-2025) of the items produced by Motor
 
 .. rubric:: ICs
 
-.. csv-table:: 
-	:header: "Part Number","Description","Location"
-	:widths: 18, 60, 22
+.. csv-table::
+	:header: "Part Number","Packaging","Location" 
+	:widths: 25, 20, 55
 
-	":ref:`HD63C09EP <HD63C09EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6800L <2!MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6800L <MC6800L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6801L1 <MC6801L1>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
-	":ref:`MC6803L <MC6803L>`","Plastic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
-	":ref:`MC6808L <MC6808L>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
-	":ref:`MC6809EP <MC6809EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6820L <MC6820L>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
-	":ref:`MC6821P <MC6821P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC6844L <MC6844L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6844P <MC6844P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6845CP <MC6845CP>`","Plastic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_1>`"
-	":ref:`MC6845P <MC6845P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC6847P <MC6847P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC68488CP <MC68488CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC68488L <MC68488L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6850L <MC6850L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC6850P <MC6850P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC6852L <MC6852L>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_0>`"
-	":ref:`MC6860L <MC6860L>`","Ceramic", ":ref:`Storage Box 2<Storage_Box_2_Drawer_0>`"
-	":ref:`MC6860P <MC6860P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC6862L <MC6862L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC6862P <MC6862P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC68701U4L <MC68701U4L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC68701U4S1 <MC68701U4S1>`","CERDIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_2>`"
-	":ref:`MC6871A15 <MC6871A15>`","Hermetically sealed ceramic DIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6883P <MC6883P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC6889P <MC6889P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68A50P <MC68A50P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68B00L <MC68B00L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B00S <MC68B00S>`","CERDIP", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B09EP <MC68B09EP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MC68B21L <MC68B21L>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B40P <MC68B40P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B44L <MC68B44L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B44P <MC68B44P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
-	":ref:`MC68B50CP <MC68B50CP>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68B50P <MC68B50P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MC68B54P <MC68B54P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM6810EL <MCM6810EL>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM6810L <MCM6810L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM6810P <MCM6810P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`MCM68B10P <MCM68B10P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`SC44204P <SC44204P>`","Plastic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_4>`"
-	":ref:`SC84003L <SC84003L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`XC6820 <XC6820>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_3>`"
-	":ref:`XC6845L <XC6845L>`","Ceramic", ":ref:`Storage Box 1<Storage_Box_1_Drawer_1>`"
+	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6800L <MC6800L>`","Ceramic","Briefcase"
+	":ref:`MC6800L <2!MC6800L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC68B00L <MC68B00L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 1 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC68B00S <MC68B00S>`","CERDIP",":ref:`Storage Box 1, Drawer 1, Row 2, Column 1 <Storage_Box_1_Drawer_1>`"
+	":ref:`SC44204P <SC44204P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6801L1 <MC6801L1>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 1, Column 2 <Storage_Box_2_Drawer_1>`"
+	":ref:`MC6803L <MC6803L>`","Plastic",":ref:`Storage Box 2, Drawer 1, Row 3, Column 1 <Storage_Box_2_Drawer_1>`"
+	":ref:`MC6808L <MC6808L>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 1, Column 1 <Storage_Box_2_Drawer_1>`"
+	":ref:`SC84003L <SC84003L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 3 <Storage_Box_1_Drawer_3>`"
+	":ref:`HD63C09EP <HD63C09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6809EP <MC6809EP>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC68B09EP <MC68B09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 3, Column 1 <Storage_Box_1_Drawer_3>`"
+	":ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B",":ref:`Storage Box 1, Drawer 4, Row 3, Column 4 <Storage_Box_1_Drawer_4>`"
+	":ref:`MCM6810EL <MCM6810EL>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 3 <Storage_Box_1_Drawer_4>`"
+	":ref:`MCM6810L <MCM6810L>`","Ceramic","Briefcase"
+	":ref:`MCM6810P <MCM6810P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 3, Column 2 <Storage_Box_1_Drawer_4>`"
+	":ref:`MCM68B10P <MCM68B10P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 3 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6820L <MC6820L>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
+	":ref:`XC6820 <XC6820>`","Ceramic","Briefcase"
+	":ref:`MC6821P <MC6821P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 2 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC68B21L <MC68B21L>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 3, Column 1 <Storage_Box_1_Drawer_1>`"
+	":ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 4 <Storage_Box_1_Drawer_4>`"
+	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic","Briefcase"
+	":ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 4 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC68B40P <MC68B40P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 3 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC6844L <MC6844L>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 2, Column 2 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6844P <MC6844P>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 3, Column 2 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC68B44L <MC68B44L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 3, Column 2 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC68B44P <MC68B44P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 2, Column 2 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC6845CP <MC6845CP>`","Plastic",":ref:`Storage Box 2, Drawer 1, Row 2, Column 2 <Storage_Box_2_Drawer_1>`"
+	":ref:`MC6845P <MC6845P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 3, Column 3 <Storage_Box_1_Drawer_1>`"
+	":ref:`XC6845L <XC6845L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 2, Column 3 <Storage_Box_1_Drawer_1>`"
+	":ref:`MC6847P <MC6847P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 1 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC68488CP <MC68488CP>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 2, Column 3 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC68488L <MC68488L>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 3 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6850L <MC6850L>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 1 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6850P <MC6850P>`","Plastic","TBD"
+	":ref:`MC68A50P <MC68A50P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 4 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC68B50CP <MC68B50CP>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 3, Column 1 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC68B50P <MC68B50P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 1 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6852L <MC6852L>`","Ceramic",":ref:`Storage Box 2, Drawer 0, Row 1, Column 1 <Storage_Box_2_Drawer_0>`"
+	":ref:`MC68B54P <MC68B54P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 1 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6860L <MC6860L>`","Ceramic",":ref:`Storage Box 2, Drawer 0, Row 1, Column 2 <Storage_Box_2_Drawer_0>`"
+	":ref:`MC6860P <MC6860P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 3, Column 3 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6862L <MC6862L>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 2 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6862P <MC6862P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 2 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6871A15 <MC6871A15>`","Hermetically sealed ceramic DIP",":ref:`Storage Box 1, Drawer 3, Row 3, Column 2 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP",":ref:`Storage Box 1, Drawer 3, Row 3, Column 3 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 1 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC68701U4L <MC68701U4L>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 2, Column 1 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC68701U4S1 <MC68701U4S1>`","CERDIP",":ref:`Storage Box 1, Drawer 2, Row 3, Column 1 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6883P <MC6883P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 2 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6889P <MC6889P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 5 <Storage_Box_1_Drawer_4>`"
+
 
 
 .. rubric:: NonResident Software
@@ -206,13 +206,14 @@ This is the current collection (as at 04-10-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide"
-	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual"
-	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual"
-	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual"
-	":ref:`MES6800 <MES6800>`","MES6800 User Guide"
-	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
+	":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide",":ref:`Folder 4 <4_map_reference>`"
+ 	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`MES6800 <MES6800>`","MES6800 User Guide",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
  
 
 .. rubric:: Resident Software
@@ -233,3 +234,4 @@ This is the current collection (as at 04-10-2025) of the items produced by Motor
  	":ref:`N/A <JBUG_1_8>`","JBUG Monitor V1.8",":ref:`Collection <LOCAL_map_reference>`"
  	":ref:`N/A <M-EXORcser>`","Motorola Software for Exorciser InfoSheet",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"
  
+

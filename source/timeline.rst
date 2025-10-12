@@ -3,12 +3,11 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 04-10-2025).
+This is the timeline of acquisitions (as at 12-10-2025).
 
 .. csv-table::
    :header: "Date","Product" 
 
-   03-OCT-2024,:ref:`EXORset 30 BASIC-M User's Guide <M6809BASICM(D1)>`
    05-DEC-2024,:ref:`M6800 Programming Reference Manual <M68PRM(D)>`
    27-JAN-2025,:ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`
    30-JAN-2025,:ref:`MC6800L Microprocessor Unit <MC6800L>`
@@ -144,3 +143,4 @@ This is the timeline of acquisitions (as at 04-10-2025).
    09-SEP-2025,:ref:`MCM6830AP-2 1024 x 8-bit ROM <MCM6830AP-2>`
    23-SEP-2025,:ref:`MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801) <MC6801L1>`
    23-SEP-2025,:ref:`MC6845CP CRT Controller <MC6845CP>`
+   03-OCT-2025,:ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`

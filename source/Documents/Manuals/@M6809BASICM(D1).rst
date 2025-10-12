@@ -2,9 +2,10 @@
 
 .. _M6809BASICM(D1):
 
-EXORset 30 BASIC-M User's Guide
-===============================
-.. #None {'Product':'EXORset 30 BASIC-M User's Guide','Folder': '4','Comments':'A5-format paperback'}
+.. #Metadata {'Product':'EXORset 30 BASIC-M Users Guide','Folder': '4','Comments':'A5-format paperback'}
+
+EXORset 30 BASIC-M Users Guide
+==============================
 
 .. image:: ../../images/Manuals/M6809BASICM(D1).png
    :width: 400
@@ -16,5 +17,5 @@ EXORset 30 BASIC-M User's Guide
    :header: "Acquired"
    :widths: auto
 
-   |present| 03-OCT-2024
+   |present| 03-OCT-2025
    

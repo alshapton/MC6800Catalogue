@@ -1,8 +1,33 @@
 
+Datasheets need to get from System Design Data Manual (1976):
+
+MC6800
+MC6820
+MC6850
+XC6852 (Product Preview)
+MC6860
+MC6862 (Advance Information)
+MC6870/MC6871
+MC6880 (Product Preview)
+MCM6810A
+MCM6830A
+MCM6832
+MCM68308
+MCM68317
+MC68708L
+MCM6694* ?
+MC6605A* ?
+MPQ6842
+
+
+TO DO
+=====
 MC6850  [ ]
 MC6852  [ ]
 MC6854  [ ]
 
+DONE
+====
 
 MC6800  [X]
 MC6801  [X]

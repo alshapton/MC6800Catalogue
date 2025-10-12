@@ -145,6 +145,7 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
                 case _:
                     stat = '"N/A'
 
+
             if item['Folder'] != folderloc:   
                 folder_name='Folder ' + str(item['Folder'])
                 if item['Folder'] == 'GITHUB':
@@ -466,6 +467,7 @@ def update_storage():
     foldersrefcard=[]
     foldersgeneric=[]
     foldersdatasheets=[]
+    foldersmanuals=[]
     foldersreference=[]
     folderssoftnon=[]
     folderssoftres=[]
@@ -529,6 +531,11 @@ def update_storage():
                 metadata,loc = get_loc(file)                
                 if metadata:
                     foldersrefcard.append(loc)
+            
+            if 'Manuals' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    foldersmanuals.append(loc)
 
             if 'Datasheets' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
@@ -561,6 +568,7 @@ def update_storage():
                     foldersappnotes.append(loc)
 
     sorted_folders_datasheets = sorted(foldersdatasheets, key=lambda x: (x['Folder'],x['Product']))   
+    sorted_folders_manuals = sorted(foldersmanuals, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_appnotes = sorted(foldersappnotes, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
@@ -569,7 +577,7 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
-    all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
+    all_folders_storage_sorted =  sorted(sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
@@ -580,6 +588,7 @@ def update_storage():
                 write_folder=False
                 map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
                 current_folder = item['Folder']
+
 
                 match item['Folder']:
                     case "GITHUB":
@@ -594,13 +603,18 @@ def update_storage():
                         write_folder=False
                     case _:
                         write_folder=True
-                        fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
+                        if '<' not in item['Folder']:
+                            fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
             
                 if write_folder:
-                    fmf.write('.. csv-table::\n')
-                    fmf.write('   :header: "Name","Comments"\n')
-                    fmf.write('   :widths: 60,40\n\n')
-                        
+                    if '<' in item['Folder']:
+                        write_folder=False
+                        pass
+                    else:
+                        fmf.write('.. csv-table::\n')
+                        fmf.write('   :header: "Name","Comments"\n')
+                        fmf.write('   :widths: 60,40\n\n')
+                            
             if write_folder:
                 
                 fmf.write('    :ref:`' + item['Product'] + ' <' + item['Ref'] + '>`,"')
@@ -1139,47 +1153,56 @@ def do_collection():
 
         HEADING=''
 
-
+        doneICs=False
         for i in newlist:
-            if HEADING != i['DTYPE']:
-                HEADING = i['DTYPE']
-                c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
-                c.write('.. csv-table:: \n')
-                c.write('\t:header: "Part Number","Description","Location"\n')
-                c.write('\t:widths: 18, 60, 22\n\n')  
             
-            
-            location=",\n"
-            dr = ''
-            OUT=i['OLINE'][:-1]+ '\n'
-            if str(i['LOCATION']) != '' :
-                if 'Folder' in str(i['LOCATION']):
-                    location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
-                    lcn = str(location[:-1]).replace('"','')[1:]
-                    if lcn == 'Folder LOCAL':
-                        lcn = 'Collection'
-                    map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
-
-                    location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
-
-                    OUT=i['OLINE'][:-1]  + str(location) 
-
-                if 'Storage' in str(i['LOCATION']):
-                    location = ',"' + i['LOCATION']['Storage'] 
-                    if 'Drawer' in str(i['LOCATION']):
-                        dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
-                        location = (str(location) + dr).replace(' ','_')
-                        sb= i['LOCATION']['Storage'].replace('_',' ')
-                        reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
+            ##
+            if i['DTYPE'] == 'ICs' and not doneICs:
+                doneICs=True
+                update_chip_info(c)
+            else:
+                if i['DTYPE'] != 'ICs':
+                    if HEADING != i['DTYPE']:
+                        HEADING = i['DTYPE']
+                        c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
+                        c.write('.. csv-table:: \n')
+                        c.write('\t:header: "Part Number","Description","Location"\n')
+                        c.write('\t:widths: 18, 60, 22\n\n')  
                     
-                    OUT=i['OLINE'][:-1] + "," + reference + '\n'
+                    
+                    location=",\n"
+                    dr = ''
+                    OUT=i['OLINE'][:-1]+ '\n'
+                    if str(i['LOCATION']) != '' :
+                        if 'Folder' in str(i['LOCATION']):
+                            location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
+                            lcn = str(location[:-1]).replace('"','')[1:]
+                            if lcn == 'Folder LOCAL':
+                                lcn = 'Collection'
+                            map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
 
-                if 'Storage' not in str(i['LOCATION']) and \
-                   'Folder' not in str(i['LOCATION']): 
-                    OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
+                            location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
+
+                            OUT=i['OLINE'][:-1]  + str(location) 
+
+                        if 'Storage' in str(i['LOCATION']):
+                            location = ',"' + i['LOCATION']['Storage'] 
+                            if 'Drawer' in str(i['LOCATION']):
+                                dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
+                                location = (str(location) + dr).replace(' ','_')
+                                sb= i['LOCATION']['Storage'].replace('_',' ')
+                                reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
+                            
+                            OUT=i['OLINE'][:-1] + "," + reference + '\n'
+
+                        if 'Storage' not in str(i['LOCATION']) and \
+                        'Folder' not in str(i['LOCATION']): 
+                            OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
+                        
+                    c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
                 
-            c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
-            
+        c.write('\n\n')
+
 
 def do_create():
     print("Enter the following information:")
@@ -1441,6 +1464,7 @@ def rebuild_db():
                             ic                  TEXT,      \
                             name                TEXT,      \
                             parent              TEXT,      \
+                            parent_number       TEXT,      \
                             tag                 TEXT,      \
                             temperature         TEXT,      \
                             packaging           TEXT,      \
@@ -1452,6 +1476,7 @@ def rebuild_db():
                             manufacture_date    TEXT,      \
                             acquired_date       TEXT,      \
                             real_date           TEXT,      \
+                            location            TEXT,      \
                             metadata            TEXT       \
                        );")
     conn.commit()
@@ -1480,6 +1505,7 @@ def rebuild_db():
         if 'ICs'+OSSEP+'MC' in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'packaging' not in file:
             filename = file.split(OSSEP)
             parent = filename[4]
+            parent_number = ''
             icid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
             if icid.find('!') == -1:
                 ic = icid
@@ -1497,6 +1523,7 @@ def rebuild_db():
             mask = ''
             metadata = ''
             image = ''
+            location = ''
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
@@ -1543,6 +1570,10 @@ def rebuild_db():
                         splitline=line.split('","')
                         notes=splitline[1].replace('"','')[:-1]
                     
+                    if '"Location"' in line:
+                        splitline=line.split('","')
+                        location=splitline[1].replace('"','')[:-1]
+                    
                     if line.startswith("====="):
                         productname=prevproductname
                     else:
@@ -1583,25 +1614,46 @@ def rebuild_db():
                                 case _:
                                     print('Invalid month in ' + file)
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
-            conn.execute("INSERT INTO ics (icid, ic,  parent, name, status, acquired_date, real_date, tag, packaging,\
-                                           temperature,frequency,mask,notes,date_code,manufacture_date,metadata) \
-                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
-                         (icid, ic, parent,productname,status,acquired_date,converted_date,tag,packaging,\
-                          temperature,frequency,mask,notes,date_code,manufacture_date,metadata))
+                            parent_number = parent.replace('MCM','').replace('MC','').strip()
+            conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
+                                           tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
+                                           location, metadata) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                         (icid, ic, parent,parent_number,productname,status,acquired_date,converted_date,tag,packaging,\
+                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata))
         
             conn.commit()
     conn.close()
 
-def read_db():
+def read_db(statement):
     conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
     cursor_obj = conn.cursor()
-    cursor_obj.execute('SELECT * FROM ics')
+    cursor_obj.execute(statement)
     output = cursor_obj.fetchall()
-    for row in output:
-        print(row)
     conn.close()
+    return output
 
 
+def update_chip_info(f):
+    
+    output = read_db("SELECT * FROM ics WHERE status = 'present' order by  parent_number,ic;")
+
+    f.write('\n\n.. rubric:: ICs\n\n')
+    f.write('.. csv-table::\n')
+    f.write('\t:header: "Part Number","Packaging","Location" \n')
+    f.write('\t:widths: 25, 20, 55\n\n')
+
+
+    for row in output:
+
+        f.write('\t":ref:`' + row["ic"] + ' <' +  row["tag"] + '>`",')
+        f.write('"' + row["packaging"] + '",')
+        f.write('"' + row["location"] + '"\n')
+
+    f.write('\n')
+
+    
 while True:
     print('\t1. Get date range from week ')
     print('\t2. Create new entry  ')
@@ -1638,7 +1690,7 @@ while True:
             for file in rstfiles:
                 update_or_not_metadata(file)
             print('Completed updating storage metadata links')
-
+        
             update_carousel()
             update_IC_pre_fragments()
             update_IC_index()
