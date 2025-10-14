@@ -34,6 +34,7 @@ Reference Manuals
    "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
    ":ref:`M68UCANA(D1) <M68UCANA(D1)>`","M68UCANA Microcomputer Analyzer",""
    ":ref:`M6809UI(D2) <M6809UI(D2)>`","M6809 Upgrade Instructions Guide",""
+   ":ref:`M6809DB(D1) <M6809DB(D1)>`","M6809DB DEbug Module Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
