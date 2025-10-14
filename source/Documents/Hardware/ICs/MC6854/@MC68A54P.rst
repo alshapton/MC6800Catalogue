@@ -2,12 +2,12 @@
 
 .. _MC68A54P:
 
-.. #None {'Product':'MC68A54P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A54P','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':3}
 
 MC68A54P Advanced Data-Link Controller (ADLC)
 =============================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6854/MC68A54P.png
    :width: 400
    :align: center
 
@@ -16,11 +16,11 @@ MC68A54P Advanced Data-Link Controller (ADLC)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8446"
+   "Manufacture Date","05-NOV-1984 to 11-NOV-1984"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 3 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""
@@ -29,10 +29,10 @@ MC68A54P Advanced Data-Link Controller (ADLC)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 05-OCT-2025
    
 .. rubric:: Links
 

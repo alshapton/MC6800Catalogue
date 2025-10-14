@@ -144,3 +144,6 @@ This is the timeline of acquisitions (as at 14-10-2025).
    23-SEP-2025,:ref:`MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801) <MC6801L1>`
    23-SEP-2025,:ref:`MC6845CP CRT Controller <MC6845CP>`
    03-OCT-2025,:ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`
+   05-OCT-2025,:ref:`MC68B00P Microprocessor Unit <MC68B00P>`
+   05-OCT-2025,:ref:`MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC68B03P>`
+   05-OCT-2025,:ref:`MC68A54P Advanced Data-Link Controller (ADLC) <MC68A54P>`

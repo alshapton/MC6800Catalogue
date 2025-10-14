@@ -24,6 +24,7 @@ Reference Manuals
    ":ref:`M68FD3601-3604 <M68FD3601-3604>`","EXORdisk User's Guide","Preliminary"
    ":ref:`M6809EXOR(D1) <M6809EXOR(D1)>`","M6809 EXORciser User's Guide","First Edition September 1979"
    ":ref:`M68SXD150(D2) <M68SXD150(D2)>`","EXORterm 150 EXORciser Display Console User's Guide","Second Edition April 1979"
+   ":ref:`M68SXS(D) <M68SXS(D)>`","M6800 EXORterm 200 Development System Users Guide",""
    ":ref:`MEX68PP3(D) <MEX68PP3(D)>`","PROM Programmer III User's Guide","First Edition April 1978"
    ":ref:`M68SVS(D) <M68SVS(D)>`","Basic Display Unit User's Guide","First Edition 1977"
    ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
@@ -35,6 +36,7 @@ Reference Manuals
    ":ref:`M68UCANA(D1) <M68UCANA(D1)>`","M68UCANA Microcomputer Analyzer",""
    ":ref:`M6809UI(D2) <M6809UI(D2)>`","M6809 Upgrade Instructions Guide",""
    ":ref:`M6809DB(D1) <M6809DB(D1)>`","M6809DB DEbug Module Users Guide",""
+   ":ref:`M6809MPU(D2) <M6809MPU(D2)>`","M6809MPU MPU Module Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
@@ -52,6 +54,7 @@ Reference Manuals
    ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
    "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
+   ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
    
 .. rubric:: Micromodule Manuals
 

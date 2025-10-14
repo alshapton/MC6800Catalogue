@@ -1,0 +1,40 @@
+:orphan:
+
+.. _MC68B03P:
+
+.. #Metadata {'Product':'MC68B03P','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':2}
+
+MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
+==========================================================================
+
+.. image:: ../../../../images/Hardware/ICs/MC6803/MC68B03P.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","9713"
+   "Manufacture Date","24-MAR-1997 to 30-MAR-1997"
+   "Packaging","Plastic"
+   "Status","Production"
+   "Mask","A95E"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 2 <Storage_Box_2_Drawer_1>`"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","2 Mhz"
+   "Notes",""
+
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Component"
+   :widths: auto
+
+   |present| 05-OCT-2025
+
+.. rubric:: Links
+
+:download:`MC6803 Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`

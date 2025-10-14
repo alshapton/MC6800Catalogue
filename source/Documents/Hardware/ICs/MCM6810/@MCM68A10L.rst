@@ -32,7 +32,7 @@ MCM68A10L 128 x 8-Bit Static Random Access Memory (MCM6810)
    :header: "Component"
    :widths: auto
 
-   "|notpresent|"
+   "|intransit|"
 
 .. rubric:: Links
 

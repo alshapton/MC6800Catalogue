@@ -32,7 +32,7 @@ MC6854L Advanced Data-Link Controller (ADLC)
    :header: "Component"
    :widths: auto
 
-   "|notpresent|"
+   "|intransit|"
 
 .. rubric:: Links
 

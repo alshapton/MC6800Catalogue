@@ -1477,7 +1477,8 @@ def rebuild_db():
                             acquired_date       TEXT,      \
                             real_date           TEXT,      \
                             location            TEXT,      \
-                            metadata            TEXT       \
+                            metadata            TEXT,      \
+                            filename            TEXT       \
                        );")
     conn.commit()
 
@@ -1617,10 +1618,10 @@ def rebuild_db():
                             parent_number = parent.replace('MCM','').replace('MC','').strip()
             conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
                                            tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
-                                           location, metadata) \
-                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                                           location, metadata,filename) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
                          (icid, ic, parent,parent_number,productname,status,acquired_date,converted_date,tag,packaging,\
-                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata))
+                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file))
         
             conn.commit()
     conn.close()
@@ -1659,7 +1660,7 @@ while True:
     print('\t2. Create new entry  ')
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
-    print('\t5. Update storage + SOME indexes')
+    print('\t5. Update IC status (WIP)')
     print('\t6. Update carousels')
     print('\t7. Rebuild DB')
     print('\t0. Update ALL ')
@@ -1705,7 +1706,69 @@ while True:
             do_timeline()
             os.system("make clean html")
         case "5":
-            update_storage()
+            ic = input("Enter IC to change status: ")
+            statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
+            output = read_db(statement)
+            c=0
+            for row in output:
+               c=c+1 
+            if c == 0:
+                print('IC ' + ic + ' not found')
+                continue
+            if c > 1:
+                print('IC ' + ic + ' found multiple times - manual update required')
+                continue
+        
+            if c == 1:
+                for row in output:    
+                    filename = row["filename"]
+                    print('Current status of ' + row["icid"] + ' is ' + row["status"])
+                    newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
+                    if newstatus== "present":
+                        acquired_date = input("Enter acquired date (DD-MON-YYYY): ")
+                        newline = '   |' + newstatus + '| ' + acquired_date + '\n'                    
+                        y = input('Enter year: ')
+                        w = input('Enter week: ')
+                        firstdate, lastdate =  getDateRangeFromWeek(y,w)
+                        manudate=y[-2:]+w
+                        realmanudate=firstdate + ' to ' + lastdate
+
+                        with open(filename, 'r') as f:
+                            lines = f.readlines()
+                        with open(filename+'.new', 'w') as f:                        
+                            for line in lines:
+                                writeln=False
+                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
+                                    newline = '   |' + newstatus + '| ' + acquired_date + '\n'
+                                    f.write(newline)
+                                    print(newline)
+                                    writeln=True
+                                
+                                
+                                if line.startswith('.. image::'):
+                                    newimage = '.. image:: ../../../../images/Hardware/ICs/' + row["parent"] + '/' + row["icid"] +'.png\n'
+                                    f.write(newimage)
+                                    print(newimage)
+
+                                    writeln=True
+                                
+                                if "Date Code" in line:
+                                    newline = '   "Date Code","' + manudate + '"\n'
+                                    f.write(newline)
+                                    print(newline)
+                                    writeln=True
+
+                                if "Manufacture Date" in line:
+                                    newline = '   "Manufacture Date","' + realmanudate + '"\n'
+                                    f.write(newline)
+                                    print(newline)
+                                    writeln=True
+
+                                if not writeln:
+                                    f.write(line)
+
+                        print('Updated status : Now assess storage metadata')    
+
         case "6":
             update_carousel()
         case "7":
