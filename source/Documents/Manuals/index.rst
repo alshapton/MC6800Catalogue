@@ -32,6 +32,8 @@ Reference Manuals
    ":ref:`MEX68USEC(D1) <MEX68USEC(D1)>`","MEX68USEC 2 MHz User System Evaluation Guide","Part Number indeterminable"
    ":ref:`M6809SET30(D) <M6809SET30(D)>`","EXORset 30 User's Guide","Targetting MC6809"
    "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
+   ":ref:`M68UCANA(D1) <M68UCANA(D1)>`","M68UCANA Microcomputer Analyzer",""
+   ":ref:`M6809UI(D2) <M6809UI(D2)>`","M6809 Upgrade Instructions Guide",""
 
 .. rubric:: Expansion Card Manuals
 
