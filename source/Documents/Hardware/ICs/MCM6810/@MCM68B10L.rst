@@ -1,6 +1,6 @@
 :orphan:
 
-.. _MC68B10L:
+.. _MCM68B10L:
 
 .. #None {'Product':'MC68B10L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 

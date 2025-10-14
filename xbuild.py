@@ -1724,6 +1724,18 @@ while True:
                     filename = row["filename"]
                     print('Current status of ' + row["icid"] + ' is ' + row["status"])
                     newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
+                    if newstatus == 'notpresent':
+                        with open(filename, 'r') as f:
+                            lines = f.readlines()
+                        
+                        with open(filename+'.new', 'w') as f:                        
+                            for line in lines:
+                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
+                                    newline = '   |' + newstatus + '| '  + '\n'
+                                    f.write(newline)
+                                else:
+                                    f.write(line)
+
                     if newstatus== "present":
                         acquired_date = input("Enter acquired date (DD-MON-YYYY): ")
                         newline = '   |' + newstatus + '| ' + acquired_date + '\n'                    
@@ -1732,36 +1744,68 @@ while True:
                         firstdate, lastdate =  getDateRangeFromWeek(y,w)
                         manudate=y[-2:]+w
                         realmanudate=firstdate + ' to ' + lastdate
-
+                        mask=input('Enter mask (if known): ')
+                        storagebox=input('Enter Storage Box: ')
+                        drawer=input('Enter Drawer: ')
+                        rownum=input('Enter Row: ')
+                        column=input('Enter Column: ')
+                        
                         with open(filename, 'r') as f:
                             lines = f.readlines()
+                        for line in lines:
+                            maskfound=False
+                            metadatafound=False
+                            if "Mask" in line:
+                                maskfound=True
+                            if ".. #Metadata " in line:
+                                metadatafound=True
+                            
+                        metadataskeleton=".. #Metadata {'Product':'XXXXX','Storage': 'Storage Box !','Drawer':@,'Row':$,'Column':%}"
+                        metadataline = metadataskeleton.replace('XXXXX',row["icid"]).replace('!',storagebox).replace('@',drawer).replace('$',rownum).replace('%',column )                        
+
                         with open(filename+'.new', 'w') as f:                        
                             for line in lines:
                                 writeln=False
                                 if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
                                     newline = '   |' + newstatus + '| ' + acquired_date + '\n'
                                     f.write(newline)
-                                    print(newline)
                                     writeln=True
-                                
-                                
-                                if line.startswith('.. image::'):
-                                    newimage = '.. image:: ../../../../images/Hardware/ICs/' + row["parent"] + '/' + row["icid"] +'.png\n'
-                                    f.write(newimage)
-                                    print(newimage)
 
+                                if (line.startswith('.. #Metadata '.upper())) or (line.startswith('..#None '.upper())) :
+                                    f.write(metadataline)
+                                    writeln=True     
+
+                                if line.startswith('.. #None '):
+                                    pass
+
+                                if line.startswith('.. _') and not metadatafound:
+                                    f.write(line+'\n')
+                                    f.write(metadataline + '\n')
+                                    print('Added Metadata to IC information')
+                                    writeln=True
+
+                                if "Temperature" in line and not maskfound:
+                                    f.write(line)
+                                    f.write('   "Mask","' + mask + '"\n')
+                                    print('Added Mask to IC information')
+                                    writeln=True
+
+                                if line.startswith('.. image::'):
+                                    ifile='../../../../images/Hardware/ICs/' + row["parent"] + '/' + row["icid"] +'.png'
+                                    newimage = '.. image:: ' + ifile + '\n'
+                                    f.write(newimage)
+                                    if not os.path.exists(newimage):
+                                        print('Warning: Image ' + ifile + ' not found')
                                     writeln=True
                                 
                                 if "Date Code" in line:
                                     newline = '   "Date Code","' + manudate + '"\n'
                                     f.write(newline)
-                                    print(newline)
                                     writeln=True
 
                                 if "Manufacture Date" in line:
                                     newline = '   "Manufacture Date","' + realmanudate + '"\n'
                                     f.write(newline)
-                                    print(newline)
                                     writeln=True
 
                                 if not writeln:
