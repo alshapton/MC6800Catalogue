@@ -82,7 +82,7 @@ Reference Manuals
    ":ref:`M68EDITORM(D3) <M68EDITORM(D3)>`","M6800/M6809 EDITORM Resident Editor Reference Manual","Third Edition June 1980"
    ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   
    ":ref:`M6809XDOSEDT(D) <M6809XDOSEDT(D)>`","EXORset 30 XDOS Editor User's Manual",""   
-   ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide",""
+   ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide","First Edition March 1978"
 
 .. rubric:: Software Manuals (Assemblers)
 

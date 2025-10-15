@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 15-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 16-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -26,8 +26,8 @@ This is the current collection (as at 15-10-2025) of the items produced by Motor
 	":ref:`MC6820 <DS-MC6820-MAY75>`","Peripheral Interface Adapter (PIA)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
 	":ref:`MC6850 <DS-MC6850-MAY75>`","Asynchronous Communications Interface Adapter (ACIA)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
 	":ref:`MC6860 <DS-MC6860-MAY75>`","MC6860 Slow Speed Modem","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
-	":ref:`MCM6810 <DS-MCM6810-MAY75>`","128 x 8-Bit Static Random Access Memory (Advance Information May 1975)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
-	":ref:`MCM6830 <DS-MCM6830-MAY75>`","MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
+	":ref:`MCM6810 <DS-MCM6810-MAY75>`","128 x 8-Bit Static Random Access Memory","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
+	":ref:`MCM6830 <DS-MCM6830-MAY75>`","MCM6830 1024 x 8-Bit Read Only Memory","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
 	":ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`DS-M68EML <DS-M68EML>`","M6800 Simulator",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"

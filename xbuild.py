@@ -1685,6 +1685,9 @@ while True:
         case "0":
             print("\nSetting Up icons")
             setup_icons()
+            print('Commencing rebuild of database') 
+            rebuild_db()
+            print('Completed rebuild of database')     
             print('\n\nCommencing updating storage metadata links')
 
             rstfiles = glob.glob('**/*.rst', recursive=True)
@@ -1692,6 +1695,7 @@ while True:
                 update_or_not_metadata(file)
             print('Completed updating storage metadata links')
         
+
             update_carousel()
             update_IC_pre_fragments()
             update_IC_index()
@@ -1724,6 +1728,21 @@ while True:
                     filename = row["filename"]
                     print('Current status of ' + row["icid"] + ' is ' + row["status"])
                     newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
+                    
+
+                    if newstatus == 'intransit':
+                        with open(filename, 'r') as f:
+                            lines = f.readlines()
+                        
+                        with open(filename+'.new', 'w') as f:                        
+                            for line in lines:
+                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
+                                    newline = '   |' + newstatus + '| '  + '\n'
+                                    f.write(newline)
+                                else:
+                                    f.write(line)
+
+
                     if newstatus == 'notpresent':
                         with open(filename, 'r') as f:
                             lines = f.readlines()

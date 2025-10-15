@@ -1,0 +1,9 @@
+
+.. collapse:: 2048 x 8-bit Read Only Memory (MCM6832)
+
+   .. csv-table::
+      :header: "Part","Packaging","Freq","Temp","Notes"
+      :widths: auto
+
+      "|notpresent| :ref:`MCM6832L <MCM6832L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|intransit| :ref:`MCM6832P <MCM6832P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""

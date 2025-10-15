@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC6875L:
+.. _MCM6832P:
 
-.. #None {'Product':'MC6875L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #None {'Product':'MC6832P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)
-=======================================================
+MCM6832P 2048 x 8-bit Read Only Memory
+======================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -18,22 +18,22 @@ MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Packaging","Ceramic"
+   "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","N/A"
+   "Frequency","1 Mhz"
    "Notes",""
 
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Acquired"
+   :header: "Component"
    :widths: auto
 
    "|intransit|"
 
 .. rubric:: Links
 
-:download:`M6800 Two-Phase Clock Generator/Driver (MC6875)  <../../../../_static/Documents/Datasheets/MC6875.pdf>`
+:download:`MCM6832 2048 x 8-bit Read Only Memory  <../../../../_static/Documents/Datasheets/DS-MCM6832.pdf>`

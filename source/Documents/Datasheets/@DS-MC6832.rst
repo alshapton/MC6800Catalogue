@@ -1,0 +1,22 @@
+:orphan:
+
+.. _DS-MC6832:
+
+MC6832 2048 x 8-bit Read Only Memory
+====================================
+
+.. image:: ../../images/DataSheets/DS-MC6832.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+
+.. rubric:: Links
+
+:download:`MCM6832 2048 x 8-bit Read Only Memory <../../_static/Documents/Datasheets/DS-MCM6832.pdf>`

@@ -47,6 +47,9 @@
 .. include:: ./MCM6830/mcm6830.fragment.rst
 |
 
+.. include:: ./MCM6832/mcm6832.fragment.rst
+|
+
 .. include:: ./MC6835/mc6835.fragment.rst
 |
 
