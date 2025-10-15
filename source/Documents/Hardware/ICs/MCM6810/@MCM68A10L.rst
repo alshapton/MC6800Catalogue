@@ -1,6 +1,6 @@
 :orphan:
 
-.. _MC68A10L:
+.. _MCM68A10L:
 
 .. #None {'Product':'MC68A10L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
@@ -29,7 +29,7 @@ MCM68A10L 128 x 8-Bit Static Random Access Memory (MCM6810)
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
    "|notpresent|"

@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M6809MPU(D2):
+
+M6809MPU MPU Module Users Guide
+===============================
+
+.. image:: ../../images/Manuals/M6809MPU(D2).png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

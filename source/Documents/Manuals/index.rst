@@ -24,6 +24,7 @@ Reference Manuals
    ":ref:`M68FD3601-3604 <M68FD3601-3604>`","EXORdisk User's Guide","Preliminary"
    ":ref:`M6809EXOR(D1) <M6809EXOR(D1)>`","M6809 EXORciser User's Guide","First Edition September 1979"
    ":ref:`M68SXD150(D2) <M68SXD150(D2)>`","EXORterm 150 EXORciser Display Console User's Guide","Second Edition April 1979"
+   ":ref:`M68SXS(D) <M68SXS(D)>`","M6800 EXORterm 200 Development System Users Guide",""
    ":ref:`MEX68PP3(D) <MEX68PP3(D)>`","PROM Programmer III User's Guide","First Edition April 1978"
    ":ref:`M68SVS(D) <M68SVS(D)>`","Basic Display Unit User's Guide","First Edition 1977"
    ":ref:`M68FDIC/D1 <M68FDIC-D1>`","Floppy Disk Interconnect Adapter User's Manual","First Edition August 1983"
@@ -31,6 +32,11 @@ Reference Manuals
    ":ref:`MEX6801EVM1 <MEX6801EVM1>`","MEX6801EVM1 Evaluation Module User's Guide",""
    ":ref:`MEX68USEC(D1) <MEX68USEC(D1)>`","MEX68USEC 2 MHz User System Evaluation Guide","Part Number indeterminable"
    ":ref:`M6809SET30(D) <M6809SET30(D)>`","EXORset 30 User's Guide","Targetting MC6809"
+   "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
+   ":ref:`M68UCANA(D1) <M68UCANA(D1)>`","M68UCANA Microcomputer Analyzer",""
+   ":ref:`M6809UI(D2) <M6809UI(D2)>`","M6809 Upgrade Instructions Guide",""
+   ":ref:`M6809DB(D1) <M6809DB(D1)>`","M6809DB DEbug Module Users Guide",""
+   ":ref:`M6809MPU(D2) <M6809MPU(D2)>`","M6809MPU MPU Module Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
@@ -48,6 +54,7 @@ Reference Manuals
    ":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module User's Guide","Second Edition December 1978"
    "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
+   ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
    
 .. rubric:: Micromodule Manuals
 
@@ -103,5 +110,5 @@ Reference Manuals
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
    ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
    ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"
-   ":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
+   "|present| :ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
    ":ref:`M6809ASM09(D) <M6809ASM09(D)>`","EXORset 30 XDOS Assembler User's Guide","Targetting M6809"

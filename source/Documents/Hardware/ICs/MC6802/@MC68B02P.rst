@@ -2,12 +2,13 @@
 
 .. _MC68B02P:
 
-.. #None {'Product':'MC68B02P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B02P','Storage': 'Storage Box 2','Drawer':2,'Row':1,'Column':1}
+
 
 MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
 ============================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6802/MC68B02P.png
    :width: 400
    :align: center
 
@@ -16,12 +17,13 @@ MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","9410"
+   "Manufacture Date","28-FEB-1994 to 06-MAR-1994"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 1, Column 1 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
+   "Mask","1R1H"
    "Frequency","2 Mhz"
    "Notes",""
 
@@ -32,7 +34,7 @@ MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 05-OCT-2025
 
 .. rubric:: Links
 

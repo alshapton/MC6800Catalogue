@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 23-09-2025).
+This is the timeline of acquisitions (as at 15-10-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -41,8 +41,8 @@ This is the timeline of acquisitions (as at 23-09-2025).
    20-MAR-2025,:ref:`M68MM01B1A Monoboard Microcomputer Module Datasheet <DS-M68MM01B1A>`
    20-MAR-2025,:ref:`MEX6816-22D 16K Dynamic RAM <MEX6816-22D>`
    20-MAR-2025,:ref:`XC6845L CRT Controller <XC6845L>`
-   25-MAR-2025,:ref:`Motorola Memory Products <1979_Memory_Products>`
    25-MAR-2025,:ref:`Microcomputer Development Systems and Subsystems <1979_MCDS>`
+   25-MAR-2025,:ref:`Motorola Memory Products <1979_Memory_Products>`
    28-MAR-2025,:ref:`MEK6800D2 Microcomputer Kit System Expansion Techniques <AN-771>`
    28-MAR-2025,:ref:`Autonomous Development System (French) Datasheet <DS-M68ADS1-FRENCH>`
    28-MAR-2025,:ref:`Autonomous Development System Datasheet <DS-M68ADS1>`
@@ -77,7 +77,7 @@ This is the timeline of acquisitions (as at 23-09-2025).
    28-MAY-2025,:ref:`MC6847P Non-Interlaced Video Display Generator Unit <MC6847P>`
    30-MAY-2025,:ref:`MC6800GMCM General Motors/Delcom Microprocessor Unit <MC6800GMCM>`
    30-MAY-2025,:ref:`MC68A50P Asynchronous Communications Interface Adapter (MC6850) <MC68A50P>`
-   30-MAY-2025,:ref:`MC6889P Quad Bus Transceiver (Non-Inverting) <MC6889P>`
+   30-MAY-2025,:ref:`MC6889P NonInverting Quad Three-State Bus Transceiver <MC6889P>`
    31-MAY-2025,:ref:`MCM68A30L8 1024 x 8-bit ROM <MCM68A30L8>`
    01-JUN-2025,:ref:`EDUCATOR-II Monitor <EDUCATOR_II_mon>`
    01-JUN-2025,:ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`
@@ -141,3 +141,12 @@ This is the timeline of acquisitions (as at 23-09-2025).
    09-SEP-2025,:ref:`SC44204P Microprocessor Unit <SC44204P>`
    09-SEP-2025,:ref:`MC6850P Asynchronous Communications Interface Adapter <MC6850P>`
    09-SEP-2025,:ref:`MCM6830AP-2 1024 x 8-bit ROM <MCM6830AP-2>`
+   23-SEP-2025,:ref:`MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801) <MC6801L1>`
+   23-SEP-2025,:ref:`MC6845CP CRT Controller <MC6845CP>`
+   03-OCT-2025,:ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`
+   05-OCT-2025,:ref:`MC68B00P Microprocessor Unit <MC68B00P>`
+   05-OCT-2025,:ref:`MC6802P Microprocessor with Clock and Optional RAM (MC6802) <MC6802P>`
+   05-OCT-2025,:ref:`MC68B02P Microprocessor with Clock and Optional RAM (MC6802) <MC68B02P>`
+   05-OCT-2025,:ref:`MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC68B03P>`
+   05-OCT-2025,:ref:`MC68B09CP 8-Bit Microprocessing Unit <MC68B09CP>`
+   05-OCT-2025,:ref:`MC68A54P Advanced Data-Link Controller (ADLC) <MC68A54P>`

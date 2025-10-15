@@ -2,10 +2,12 @@
 
 .. _MC68B00P:
 
+.. #Metadata {'Product':'MC68B00P','Name':'MC68B00P Microprocessor Unit','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':3}
+
 MC68B00P Microprocessor Unit
 ============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC68B00P.png
    :width: 400
    :align: center
 
@@ -14,11 +16,12 @@ MC68B00P Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8851"
+   "Manufacture Date","12-DEC-1988 to 18-DEC-1988"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","TBD"
+   "Mask","QR7E"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 3 <Storage_Box_2_Drawer_1>`"
    "Frequency","2Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
       
@@ -29,7 +32,7 @@ MC68B00P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 05-OCT-2025
 
 .. rubric:: Links
 

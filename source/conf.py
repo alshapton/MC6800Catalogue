@@ -40,8 +40,8 @@ html_static_path = ['_static']
 
 html_css_files = [
     'css/custom.css',
-    'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round'
-      
+    'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
 ]
 rst_prolog = """
 .. |cancelled| 	replace:: :material-regular:`remove_shopping_cart;2em`
@@ -56,4 +56,5 @@ rst_prolog = """
 .. |floppydisc| 	replace:: :material-regular:`save;2em;`
 .. |punchedcard| 	replace:: :material-regular:`margin;2em;`
 .. |datacartridge| 	replace:: :material-regular:`storage;2em;`
+.. |document| 	replace:: :material-regular:`document_scanner;2em;`
 """

@@ -3,7 +3,9 @@
 DataSheets
 ==========
 
-.. rubric:: Modules
+
+Modules
+-------
 
 .. csv-table:: 
    :header: "Part","Name","","Date","Comments" 
@@ -18,14 +20,14 @@ DataSheets
    ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module","|advanceinfo|",""
    ":ref:`MEX6800 <MEX6800>`","MPU Module","|advanceinfo|",""
    
-
 .. rubric:: Integrated Circuits
 
 .. csv-table:: 
    :header: "Part","Name","","Date","Comments" 
    :widths: 27,34,7,15,22
    
-   ":ref:`MC6800 <DS-MC6800>`","8-Bit Microprocessing Unit","|confirminfo|",""
+   ":ref:`MC6800 <DS-MC6800>`","8-Bit Microprocessing Unit","|confirminfo|","1984"
+   ":ref:`MC6800 <DS-MC6800-MAY75>`","8-Bit Microprocessing Unit","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6801 <DS-MC6801-03-03NR>`","Microcomputer/Microprocessor (MCU/MPU)","|confirminfo|","1981"
    ":ref:`MC6802 <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
    ":ref:`MC6802NS <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
@@ -35,11 +37,14 @@ DataSheets
    ":ref:`MC6808 <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit","|confirminfo|",""
    ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit","|confirminfo|",""
+   ":ref:`MCM6810 <DS-MCM6810-MAY75>`","128 x 8-Bit Static Random Access Memory (Advance Information May 1975)","|advanceinfo| |document|","1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MCM6810 <DS-MCM6810>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","",""
-   ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","","1981"
+   ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","1981",""
+   ":ref:`MC6820 <DS-MC6820-MAY75>`","Peripheral Interface Adapter (PIA)","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6821 <MC6821>`","Peripheral Interface Adapter","|confirminfo|","",""
    ":ref:`MC6822 <MC6822>`","Industrial Interface Adapter","|advanceinfo|","1981"
    ":ref:`MC6828 <MC6828>`","Priority Interrupt Controller","|confirminfo|"
+   ":ref:`MCM6830 <DS-MCM6830-MAY75>`","MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)","|advanceinfo| |document|","1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6835 <MC6835>`","MC6835 CRT Controller (CRTC)","|advanceinfo|","1981"
    ":ref:`MC6839 <MC6839>`","Floating-Point ROM","|advanceinfo|"
    ":ref:`MC6840 <MC6840>`","Programmable Timer Module (PTM)","|confirminfo|",""
@@ -48,9 +53,11 @@ DataSheets
    ":ref:`MC6846 <MC6846>`","ROM I/O Timer","|confirminfo|",""
    ":ref:`MC6847 <MC6847>`","MC6847/MC6847Y Video Display Generator (VDG)","|confirminfo|","1984",""
    ":ref:`MC6847T1 <MC6847T1>`","MC6847T1 Video Display Generator (VDG)","|confirminfo|","1985",""
+   ":ref:`MC6850 <DS-MC6850-MAY75>`","Asynchronous Communications Interface Adapter (ACIA)","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6854 <MC6854>`","Advanced Data Link Controller (ADLC)","|confirminfo|","1985",""
    ":ref:`MC6855 <DS-MC6855>`","MC6855 Serial Direct Memory Access Processor","|advanceinfo| |cancelled|","1981","This product was cancelled"
    ":ref:`MC6859 <DS-MC6859>`","MC6859 Data Security Device","|advanceinfo|","1981",""
+   ":ref:`MC6860 <DS-MC6860-MAY75>`","MC6860 Slow Speed Modem","|advanceinfo| |document|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MC6862 <DS-MC6862>`","2400 bps Digital Modem","|confirminfo|","1981",""
    ":ref:`MC6870 <MC6870-71>`","Two-Phase Microprocessor Clock","|confirminfo|","",""
    ":ref:`MC6871 <MC6870-71>`","Two-Phase Microprocessor Clock","|confirminfo|","",""
@@ -75,7 +82,7 @@ DataSheets
    "|present| :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System","|confirminfo|","1977",""
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit","|advanceinfo|","1975",""    
    "|present| :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200","|confirminfo|","Issue A 1978",""
-   "|present| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
+   "|notpresent| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
    "|present| :ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software","|advanceinfo|","1975"
    "|present| :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet","|advanceinfo|","1975"
    "|present| :ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler","|advanceinfo|","1975"
@@ -92,3 +99,4 @@ DataSheets
    "|advanceinfo|","Advance/Preliminary Information (subject to change)"
    "|confirminfo|","Datasheet represents manufactured specification"
    "|cancelled|","Product never shipped or cancelled."
+   "|document|","Part of a larger single document."

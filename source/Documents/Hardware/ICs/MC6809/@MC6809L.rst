@@ -4,8 +4,8 @@
 
 .. #None {'Product':'MC6809L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
-MC6809L MC6809 8-Bit Microprocessing Unit
-=========================================
+MC6809L 8-Bit Microprocessing Unit
+====================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400

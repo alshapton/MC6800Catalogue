@@ -10,8 +10,13 @@ MC68701CL-1 Microprocessor Unit
 .. card-carousel:: 2
 
     .. card::
-      
+
       .. image:: ../../../../images/Hardware/ICs/MC68701/MC68701CL-1/1.MC68701CL-1.png
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../../images/Hardware/ICs/MC68701/MC68701CL-1/2.EPROM-window2.jpeg
          :width: 800
 
     .. card::
@@ -20,15 +25,10 @@ MC68701CL-1 Microprocessor Unit
          :width: 800
 
     .. card::
-      
+
       .. image:: ../../../../images/Hardware/ICs/MC68701/MC68701CL-1/4.EPROM-window.jpeg
          :width: 800
-
-    .. card::
-
-      .. image:: ../../../../images/Hardware/ICs/MC68701/MC68701CL-1/2.EPROM-window2.jpeg
-         :width: 800
-
+         
 .. rubric:: Specific Information
 
 .. csv-table:: 

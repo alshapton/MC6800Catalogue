@@ -55,6 +55,9 @@ Conventions Used
    |intransit|,"An item in transit"
    |cancelled|,"Product never shipped or cancelled."
    |underoffer|,"Under Offer."
+   |document|, "Part of a larger single document."
+
+
 
 .. toctree::
    :hidden:

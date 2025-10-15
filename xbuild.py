@@ -10,17 +10,20 @@ import tomllib
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
 
-#CHECK_MARK=':material-regular:`verified;2em;sd-text-success`'
-CHECK_MARK='|present|'
+import sqlite3
 
-CROSS_MARK='|notpresent|'
-IN_TRANSIT='|intransit|'
-IN_TRANSIT_SHORT='|intransit|'
-UNDER_OFFER='|underoffer|'
-ANYUNDEROFFER=False
-ANYINTRANSIT=False
 
-OSSEP=os.sep
+CHECK_MARK    = '|present|'
+CROSS_MARK    = '|notpresent|'
+IN_TRANSIT    = '|intransit|'
+UNDER_OFFER   = '|underoffer|'
+BIGGER_DOC    = '|document|'
+
+OSSEP         = os.sep
+
+ANYUNDEROFFER = False
+ANYINTRANSIT  = False
+
 
 PREFIX ='source' + OSSEP
 SUFFIX = 'rst'
@@ -92,7 +95,6 @@ def update_or_not_metadata(filename):
 def get_loc(file):
     loc = ast.literal_eval('{}')
 
-    filename = file
     got_image=False
     metadata=False
     sta=''
@@ -143,6 +145,7 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
                 case _:
                     stat = '"N/A'
 
+
             if item['Folder'] != folderloc:   
                 folder_name='Folder ' + str(item['Folder'])
                 if item['Folder'] == 'GITHUB':
@@ -158,10 +161,10 @@ def do_standard_folders(TABLES_FILE,sorted_folders):
 
             c.write('\n   ')
             c.write(stat +' :ref:`' + item['Part'] + ' <'+item['Ref']+ '>`","')
-            comments=""
+            comments = ""
             if "Comments" in item:
                 comments = item['Comments']
-            c.write(item['Product']+'","'+comments + '"')
+            c.write(item['Product'] + '","' + comments + '"')
         c.write('\n')    
 
 
@@ -173,13 +176,13 @@ def create_new_group_from_index():
     if datasheet == 'Y':
         ds='\n.. rubric:: Links\n\n'
         ds=ds+':download:`' + newgroupname + ' ' + 'XXXX  <../../../../_static/Documents/Datasheets/' + newgroupname + ".pdf>`\n"
-    NEW_LOC=NEW_GROUP_TMP_LOC + newgroupname
+    NEW_LOC = NEW_GROUP_TMP_LOC + newgroupname
     if not os.path.exists(LOC.lower()):
         print('Index file for ' + newgroupname + ' does not exist')
         exit()
     print('Creating new group from index file for IC: ' + newgroupname)
 
-    direc=make_directory(NEW_LOC)
+    _ = make_directory(NEW_LOC)
 
     
     with open(LOC.lower() ,"r") as d:
@@ -260,7 +263,7 @@ def create_new_group_index():
     if len(frequencies) > 0:
         frequencies.append("")
     
-    LOC=NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
+    LOC = NEW_GROUP_TMP_LOC + newgroupname + '.fragment.rst'
     with open(LOC.lower() ,"w") as d:
         for packagetype in packaging:
 
@@ -320,7 +323,7 @@ def update_IC_pre_fragments():
 
     yfiles = glob.glob('**/*.pre.fragment', recursive=True)
     for yfile in yfiles:
-        print('     Processing:' + os.path.basename(yfile))
+        #print('     Processing:' + os.path.basename(yfile))
 
         with open(yfile) as f:
             lines = f.readlines()
@@ -409,7 +412,7 @@ def update_carousel():
     for filename in files:   
         i=str(filename)
         images_loc = i.replace('Documents','images').replace('.'+ CAROUSEL + '.' + SUFFIX,'')
-        base=os.path.basename(i).replace('.'+CAROUSEL+'.'+SUFFIX,'')
+        base = os.path.basename(i).replace('.' + CAROUSEL + '.' + SUFFIX,'')
         fullbase = i.replace(os.path.basename(i),'') +  base + os.sep + base + '.'  + CAROUSEL + '.' + SUFFIX
         f=i.count(os.sep)
         dotdot = ''
@@ -451,22 +454,7 @@ def update_carousel():
     print('\n\nCarousels updated')
 
 
-def get_cols_for_drawer(st,dr,rw, info):
 
-    l=ast.literal_eval(info[0])
-    for j in l['Storage']:
-        cols = []
-        for i in range(0,len(j)):
-
-            k=j['Name']        
-            if k == st:
-                drws=j['Drawers']
-                for d in range(0,len(drws)):
-                    cd=drws[d]
-                    if dr == cd['Drawer']:
-                        cols = cd['Columns']
-                        return cols                      
-    return cols
 
 
 def update_storage():
@@ -479,6 +467,7 @@ def update_storage():
     foldersrefcard=[]
     foldersgeneric=[]
     foldersdatasheets=[]
+    foldersmanuals=[]
     foldersreference=[]
     folderssoftnon=[]
     folderssoftres=[]
@@ -542,6 +531,11 @@ def update_storage():
                 metadata,loc = get_loc(file)                
                 if metadata:
                     foldersrefcard.append(loc)
+            
+            if 'Manuals' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    foldersmanuals.append(loc)
 
             if 'Datasheets' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
@@ -574,6 +568,7 @@ def update_storage():
                     foldersappnotes.append(loc)
 
     sorted_folders_datasheets = sorted(foldersdatasheets, key=lambda x: (x['Folder'],x['Product']))   
+    sorted_folders_manuals = sorted(foldersmanuals, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_appnotes = sorted(foldersappnotes, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softres = sorted(folderssoftres, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
@@ -582,7 +577,7 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
-    all_folders_storage_sorted =  sorted(sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
+    all_folders_storage_sorted =  sorted(sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
 
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
@@ -593,6 +588,7 @@ def update_storage():
                 write_folder=False
                 map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
                 current_folder = item['Folder']
+
 
                 match item['Folder']:
                     case "GITHUB":
@@ -607,13 +603,18 @@ def update_storage():
                         write_folder=False
                     case _:
                         write_folder=True
-                        fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
+                        if '<' not in item['Folder']:
+                            fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
             
                 if write_folder:
-                    fmf.write('.. csv-table::\n')
-                    fmf.write('   :header: "Name","Comments"\n')
-                    fmf.write('   :widths: 60,40\n\n')
-                        
+                    if '<' in item['Folder']:
+                        write_folder=False
+                        pass
+                    else:
+                        fmf.write('.. csv-table::\n')
+                        fmf.write('   :header: "Name","Comments"\n')
+                        fmf.write('   :widths: 60,40\n\n')
+                            
             if write_folder:
                 
                 fmf.write('    :ref:`' + item['Product'] + ' <' + item['Ref'] + '>`,"')
@@ -882,16 +883,17 @@ def update_IC_index():
     ic2file=[]
     memfiles=[]
     for file in files:
-        if 'source/Documents/Hardware/ICs/' in file:
-            fname=file.replace('source/Documents/Hardware/ICs/','')
-            if 'MCM' in fname:
-                memfiles.append(fname[3:])
-                icfiles.append(fname[3:])
-            else:
-                if len(str(fname[2:])) >4: 
-                    ic2file.append(fname[2:])    
+            if 'source/Documents/Hardware/ICs/' in file:
+
+                fname=file.replace('source/Documents/Hardware/ICs/','')
+                if 'MCM' in fname:
+                    memfiles.append(fname[3:])
+                    icfiles.append(fname[3:])
                 else:
-                    icfiles.append(fname[2:])
+                    if len(str(fname[2:])) >4: 
+                        ic2file.append(fname[2:])    
+                    else:
+                        icfiles.append(fname[2:])
 
     nonnumics2 = []
     for nonnumic in ic2file:
@@ -913,7 +915,6 @@ def update_IC_index():
     with open(IC_FRAGMENTS_INDEX,"w") as c:
 
         for chip in chips:
-    
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
     print('\nCompleted updating IC index\n')
@@ -946,7 +947,6 @@ def do_underoffer():
 
                         if UNDER_OFFER in line :
                             ANYUNDEROFFER=True
-                            print(file + ' contains under offer item')
                             if 'An item in underoffer' not in line:
                                 splitline = line.split('","')
                                 part_number = splitline[0].strip().replace(UNDER_OFFER,'').replace('""','"')
@@ -1005,44 +1005,42 @@ def do_in_transit():
 
 
         for file in files:
-            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
-                "transit.rst" not in file and
-                "@" not in file and "carousel" not in file and "snippets" not in file):
+            if "@" in file:
                 with open(file) as f:
+                    
                     type = os.path.dirname(file).replace(PREFIX,'')
-                    doc_type=convert_type_to_real_type(type)
+                    doc_type=type.replace('Documents' + OSSEP,'')
+                    if  'Hardware' + OSSEP + 'ICs' in doc_type:
+                        doc_type = 'ICs'
+                    if  'Hardware' + OSSEP + 'Other' in doc_type:
+                        doc_type = 'Other'
+                    if  'Hardware' + OSSEP + 'EXORciser' in doc_type:
+                        doc_type = 'EXORciser'
+                    
+                    prevproductname=''                  
+                    
                     for line in f:  
-                        if IN_TRANSIT_SHORT in line and 'This item is present in the collection' not in line and "Meta" not in line:
-                            if 'An item in transit' not in line:
-                                splitline = line.split('","')
-                                part_number = splitline[0].strip().replace(IN_TRANSIT,'').replace('""','"')
-                                try:
-                                    description = splitline[1].strip().replace('""','"')
-                                except:
-                                    description = ''
-
+                        if line.startswith("====="):
+                            productname=prevproductname
+                        else:
+                            prevproductname=line.strip()
+    
+                        if line.startswith('.. _'):
+                            tag=line.replace('.. _','').replace(':','').strip()
                         
-                                if doc_type == 'ICs':
-                                    description = 'ICSTUFF'
-                                    cfile=part_number.replace('" :ref:`','').split(' ')[0] + '.' + SUFFIX
-                                    chip_file = glob.glob(IC_LOCATIONS + '/**/*' + cfile, recursive=True)[0]
-                                    ch=cfile.replace('.' + SUFFIX,'')
-                                    this_chip_file = open(chip_file,'r')
-                                    lines = this_chip_file.readlines()
-                                    filtered = [line for line in lines if line.startswith(ch)]
-                                    
-                                    description = filtered[0].replace(ch,'').replace('\n','')
+                        if IN_TRANSIT in line:
+                            print(doc_type + ' ' + file + ' contains in transit item')
+                            link  = ':ref:`' + productname + ' <'+ tag + '>` '
 
-
-                                outline = ('\t' + part_number + '","' + description + '","' + doc_type + '"\n').replace('""','"')
-                                
-                                thisdict = {"PN"    : part_number, 
-                                            "DESC"  : description, 
-                                            "DTYPE" : doc_type, 
-                                            "OLINE" : outline }
-                                if description != '' :
-                                    intransit.append(thisdict)
+                            outline = ('\t' + tag + ',"' + link + '"\n').replace('""','"')
+                            thisdict = {"PN"    : tag, 
+                                        "DESC"  : productname, 
+                                        "DTYPE" : doc_type, 
+                                        "OLINE" : outline }
+                            if productname != '' :
+                                intransit.append(thisdict)
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
+
         HEADING=''
         if len(newlist) > 0:
             ANYINTRANSIT=True
@@ -1081,15 +1079,7 @@ def collect_metadata():
     return md 
 
 
-def get_location(ref,md):
-    # Get the location of the file from the metadata
-    loc=''
-    for item in md:
-        if item['REFERENCE'] == ref:
-            line = item['METADATA']
-            loc = line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
-            loc = ast.literal_eval(loc)
-    return loc
+
 
 
 def do_collection():
@@ -1113,14 +1103,14 @@ def do_collection():
             if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
-
                 with open(file) as f:
-                    print('Checking ' + file)
+                    #print('Checking for acquired ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
                     
                     for line in f:
-                        if CHECK_MARK in line and 'This item is present in the collection' not in line:
+
+                        if CHECK_MARK in line  and 'This item is present in the collection' not in line:
                             splitline = line.split('","')
                             part_number = splitline[0].strip().replace(CHECK_MARK,'').replace('""','"')
                             ref = part_number.split('<')[1].split('>')[0].strip().replace('@','')
@@ -1139,46 +1129,80 @@ def do_collection():
                                         "OLINE"     : outline}
                             if description != '':
                                 collection.append(thisdict)
-                newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
+
+                        if BIGGER_DOC in line and "Part of a larger single document" not in line:
+                            location = 'TBD'
+                            splitline= line.split('","')
+                            try:
+                                description = splitline[1].strip().replace('""','"')
+                            except:
+                                description = ''
+                            location = splitline[4]
+                            part_number = splitline[0]
+                            outline = ('\t' + part_number.strip() + '","' + description + '"\n').replace('""','"')
+                            thisdict = {"PN"        : part_number, 
+                                        "DESC"      : description, 
+                                        "DTYPE"     : doc_type,
+                                        "LOCATION"  : location,
+                                        "OLINE"     : outline}
+                            if description != '':
+                                collection.append(thisdict)
+
+        
+        newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
+
         HEADING=''
 
-
+        doneICs=False
         for i in newlist:
-            if HEADING != i['DTYPE']:
-                HEADING = i['DTYPE']
-                c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
-                c.write('.. csv-table:: \n')
-                c.write('\t:header: "Part Number","Description","Location"\n')
-                c.write('\t:widths: 18, 60, 22\n\n')  
             
-            
-            location=",\n"
-            dr = ''
-            OUT=i['OLINE'][:-1]+ '\n'
-            if str(i['LOCATION']) != '' :
-                if 'Folder' in str(i['LOCATION']):
-                    location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
-                    lcn = str(location[:-1]).replace('"','')[1:]
-                    if lcn == 'Folder LOCAL':
-                        lcn = 'Collection'
-                    map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
-
-                    location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
-
-                    OUT=i['OLINE'][:-1]  + str(location) 
-
-                if 'Storage' in str(i['LOCATION']):
-                    location = ',"' + i['LOCATION']['Storage'] 
-                    if 'Drawer' in str(i['LOCATION']):
-                        dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
-                        location = (str(location) + dr).replace(' ','_')
-                        sb= i['LOCATION']['Storage'].replace('_',' ')
-                        reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
+            ##
+            if i['DTYPE'] == 'ICs' and not doneICs:
+                doneICs=True
+                update_chip_info(c)
+            else:
+                if i['DTYPE'] != 'ICs':
+                    if HEADING != i['DTYPE']:
+                        HEADING = i['DTYPE']
+                        c.write('\n\n.. rubric:: ' + HEADING + '\n\n') 
+                        c.write('.. csv-table:: \n')
+                        c.write('\t:header: "Part Number","Description","Location"\n')
+                        c.write('\t:widths: 18, 60, 22\n\n')  
                     
-                    OUT=i['OLINE'][:-1] + "," + reference + '\n'
+                    
+                    location=",\n"
+                    dr = ''
+                    OUT=i['OLINE'][:-1]+ '\n'
+                    if str(i['LOCATION']) != '' :
+                        if 'Folder' in str(i['LOCATION']):
+                            location = ',"Folder ' + i['LOCATION']['Folder'] + '"\n'
+                            lcn = str(location[:-1]).replace('"','')[1:]
+                            if lcn == 'Folder LOCAL':
+                                lcn = 'Collection'
+                            map_reference = i['LOCATION']['Folder'].replace(' ','_') + '_map_reference'
 
-            c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
-            
+                            location = ',":ref:`' + lcn + ' <'+ map_reference + '>`"\n '
+
+                            OUT=i['OLINE'][:-1]  + str(location) 
+
+                        if 'Storage' in str(i['LOCATION']):
+                            location = ',"' + i['LOCATION']['Storage'] 
+                            if 'Drawer' in str(i['LOCATION']):
+                                dr = ' Drawer ' + str(i['LOCATION']['Drawer'])
+                                location = (str(location) + dr).replace(' ','_')
+                                sb= i['LOCATION']['Storage'].replace('_',' ')
+                                reference = ' ":ref:`' + sb +  '<'+ location[2:] + '>`"'
+                            
+                            OUT=i['OLINE'][:-1] + "," + reference + '\n'
+
+                        if 'Storage' not in str(i['LOCATION']) and \
+                        'Folder' not in str(i['LOCATION']): 
+                            OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
+                        
+                    c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
+                
+        c.write('\n\n')
+
 
 def do_create():
     print("Enter the following information:")
@@ -1299,7 +1323,7 @@ def setup_icons():
         newfile.write('rst_prolog = """\n')
         for icon in data["icons"]:
             newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
-            print(icon["name"].strip() + ' icon added')
+            #print(icon["name"].strip() + ' icon added')
         newfile.write('"""\n')
 
     copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')
@@ -1429,13 +1453,216 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     copy_and_replace('./xbuild_support/index.master','./source/index.rst')
 
 
+
+def rebuild_db():
+    files = glob.glob('**/*.'+SUFFIX, recursive=True)
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    cursor_obj = conn.cursor()
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS ics     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            ic                  TEXT,      \
+                            name                TEXT,      \
+                            parent              TEXT,      \
+                            parent_number       TEXT,      \
+                            tag                 TEXT,      \
+                            temperature         TEXT,      \
+                            packaging           TEXT,      \
+                            frequency           TEXT,      \
+                            notes               TEXT,      \
+                            mask                TEXT,      \
+                            status              TEXT,      \
+                            date_code           TEXT,      \
+                            manufacture_date    TEXT,      \
+                            acquired_date       TEXT,      \
+                            real_date           TEXT,      \
+                            location            TEXT,      \
+                            metadata            TEXT,      \
+                            filename            TEXT       \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclinks     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            link                TEXT       \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS icimages     \
+                       (    id INTEGER PRIMARY KEY,        \
+                            icid                TEXT,      \
+                            image               TEXT       \
+                       );")
+    conn.commit()
+
+    # Clean tables if needed
+    cursor_obj.execute("DELETE FROM icimages;")
+    cursor_obj.execute("DELETE FROM iclinks;")
+    cursor_obj.execute("DELETE FROM ics;")
+    conn.commit()
+
+    for file in files:
+        if 'ICs'+OSSEP+'MC' in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'packaging' not in file:
+            filename = file.split(OSSEP)
+            parent = filename[4]
+            parent_number = ''
+            icid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
+            if icid.find('!') == -1:
+                ic = icid
+            else:
+                ic = icid.split('!')[1].strip()
+
+            date_code = ''
+            manufacture_date = ''
+            acquired_date = ''
+            converted_date = ''
+            packaging = ''
+            temperature = ''
+            frequency = ''
+            notes = ''
+            mask = ''
+            metadata = ''
+            image = ''
+            location = ''
+            with open(file, 'r') as f:
+                prevproductname=''                
+                lines = f.readlines()
+                for line in lines:
+                    if line.startswith('.. image::'):
+                        image=line.replace('.. image::','').strip()
+                        conn.execute("INSERT INTO icimages (icid, image) VALUES (?,?);", (icid, image.strip()))
+                        conn.commit()
+                    if '.. #Metadata ' in line:
+                        metadata=line.replace('.. #Metadata','').strip()
+
+                    if  ':ref:`' in line and 'Location' not in line:
+                        conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
+                        conn.commit()
+                    if ':download:`' in line :
+                        conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
+                        conn.commit()
+                    if '"Date Code"' in line:
+                        splitline=line.split(',')
+                        date_code=splitline[1].replace('"','')[:-1].strip()
+                    if '"Manufacture Date"' in line:
+                        splitline=line.split(',')
+                        manufacture_date=splitline[1].replace('"','')[:-1].strip()
+                    if '"Mask"' in line:
+                        splitline=line.split(',')
+                        mask=splitline[1].replace('"','')[:-1].strip()
+                    if line.startswith('.. _'):
+                        tag=line.replace('.. _','').split(':')[0]
+                    if '"Packaging"' in line:
+                        splitline=line.split(',')
+                        packaging=splitline[1].replace('"','')[:-1]
+                    if '"Frequency"' in line:
+                        splitline=line.split(',')
+                        frequency=splitline[1].replace('"','')[:-1]
+                    if '"Temperature"' in line:
+                        splitline=line.split(',')
+                        itemperature=splitline[1].replace('"','')[:-1].replace('\\ :sup:`o`\\ ','°')
+                        if itemperature.startswith('-'):
+                            ttemp = itemperature.split('-')
+                            temperature = '-' + ttemp[1] + '°C to ' + ttemp[2]
+                        else:
+                            temperature = itemperature.replace('-','°C to ')
+                    if '"Notes"' in line:
+                        splitline=line.split('","')
+                        notes=splitline[1].replace('"','')[:-1]
+                    
+                    if '"Location"' in line:
+                        splitline=line.split('","')
+                        location=splitline[1].replace('"','')[:-1]
+                    
+                    if line.startswith("====="):
+                        productname=prevproductname
+                    else:
+                        prevproductname=line.strip()
+                    if  CHECK_MARK in line or \
+                        UNDER_OFFER in line or \
+                        IN_TRANSIT in line or \
+                        CROSS_MARK in line:
+                            status = line.split('|')[1].strip()
+                    if CHECK_MARK in line:
+                            acquired_date = line.split('|')[2].strip().replace('"','')
+                            m=acquired_date[3:6].upper()
+                            match m:
+                                case "JAN":
+                                    month='01'
+                                case "FEB":
+                                    month='02'
+                                case "MAR":
+                                    month='03'
+                                case "APR":
+                                    month='04'
+                                case "MAY":
+                                    month='05'
+                                case "JUN":
+                                    month='06'
+                                case "JUL":
+                                    month='07'
+                                case "AUG":
+                                    month='08'
+                                case "SEP":
+                                    month='09'
+                                case "OCT":
+                                    month='10'
+                                case "NOV":
+                                    month='11'
+                                case "DEC":
+                                    month='12'
+                                case _:
+                                    print('Invalid month in ' + file)
+                            converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+                            parent_number = parent.replace('MCM','').replace('MC','').strip()
+            conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
+                                           tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
+                                           location, metadata,filename) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                         (icid, ic, parent,parent_number,productname,status,acquired_date,converted_date,tag,packaging,\
+                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file))
+        
+            conn.commit()
+    conn.close()
+
+def read_db(statement):
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
+    cursor_obj = conn.cursor()
+    cursor_obj.execute(statement)
+    output = cursor_obj.fetchall()
+    conn.close()
+    return output
+
+
+def update_chip_info(f):
+    
+    output = read_db("SELECT * FROM ics WHERE status = 'present' order by  parent_number,ic;")
+
+    f.write('\n\n.. rubric:: ICs\n\n')
+    f.write('.. csv-table::\n')
+    f.write('\t:header: "Part Number","Packaging","Location" \n')
+    f.write('\t:widths: 25, 20, 55\n\n')
+
+
+    for row in output:
+
+        f.write('\t":ref:`' + row["ic"] + ' <' +  row["tag"] + '>`",')
+        f.write('"' + row["packaging"] + '",')
+        f.write('"' + row["location"] + '"\n')
+
+    f.write('\n')
+
+    
 while True:
     print('\t1. Get date range from week ')
     print('\t2. Create new entry  ')
     print('\t3. Create new IC group index')    
     print('\t4. Create new IC group from index')    
-    print('\t5. Update storage + SOME indexes')
+    print('\t5. Update IC status (WIP)')
     print('\t6. Update carousels')
+    print('\t7. Rebuild DB')
     print('\t0. Update ALL ')
     print('\tX. Exit')
     type = input('Enter choice: ')
@@ -1464,7 +1691,7 @@ while True:
             for file in rstfiles:
                 update_or_not_metadata(file)
             print('Completed updating storage metadata links')
-
+        
             update_carousel()
             update_IC_pre_fragments()
             update_IC_index()
@@ -1479,10 +1706,120 @@ while True:
             do_timeline()
             os.system("make clean html")
         case "5":
-            update_storage()
+            ic = input("Enter IC to change status: ")
+            statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
+            output = read_db(statement)
+            c=0
+            for row in output:
+               c=c+1 
+            if c == 0:
+                print('IC ' + ic + ' not found')
+                continue
+            if c > 1:
+                print('IC ' + ic + ' found multiple times - manual update required')
+                continue
+        
+            if c == 1:
+                for row in output:    
+                    filename = row["filename"]
+                    print('Current status of ' + row["icid"] + ' is ' + row["status"])
+                    newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
+                    if newstatus == 'notpresent':
+                        with open(filename, 'r') as f:
+                            lines = f.readlines()
+                        
+                        with open(filename+'.new', 'w') as f:                        
+                            for line in lines:
+                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
+                                    newline = '   |' + newstatus + '| '  + '\n'
+                                    f.write(newline)
+                                else:
+                                    f.write(line)
+
+                    if newstatus== "present":
+                        acquired_date = input("Enter acquired date (DD-MON-YYYY): ")
+                        newline = '   |' + newstatus + '| ' + acquired_date + '\n'                    
+                        y = input('Enter year: ')
+                        w = input('Enter week: ')
+                        firstdate, lastdate =  getDateRangeFromWeek(y,w)
+                        manudate=y[-2:]+w
+                        realmanudate=firstdate + ' to ' + lastdate
+                        mask=input('Enter mask (if known): ')
+                        storagebox=input('Enter Storage Box: ')
+                        drawer=input('Enter Drawer: ')
+                        rownum=input('Enter Row: ')
+                        column=input('Enter Column: ')
+                        
+                        with open(filename, 'r') as f:
+                            lines = f.readlines()
+                        for line in lines:
+                            maskfound=False
+                            metadatafound=False
+                            if "Mask" in line:
+                                maskfound=True
+                            if ".. #Metadata " in line:
+                                metadatafound=True
+                            
+                        metadataskeleton=".. #Metadata {'Product':'XXXXX','Storage': 'Storage Box !','Drawer':@,'Row':$,'Column':%}"
+                        metadataline = metadataskeleton.replace('XXXXX',row["icid"]).replace('!',storagebox).replace('@',drawer).replace('$',rownum).replace('%',column )                        
+
+                        with open(filename+'.new', 'w') as f:                        
+                            for line in lines:
+                                writeln=False
+                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
+                                    newline = '   |' + newstatus + '| ' + acquired_date + '\n'
+                                    f.write(newline)
+                                    writeln=True
+
+                                if (line.startswith('.. #Metadata '.upper())) or (line.startswith('..#None '.upper())) :
+                                    f.write(metadataline)
+                                    writeln=True     
+
+                                if line.startswith('.. #None '):
+                                    pass
+
+                                if line.startswith('.. _') and not metadatafound:
+                                    f.write(line+'\n')
+                                    f.write(metadataline + '\n')
+                                    print('Added Metadata to IC information')
+                                    writeln=True
+
+                                if "Temperature" in line and not maskfound:
+                                    f.write(line)
+                                    f.write('   "Mask","' + mask + '"\n')
+                                    print('Added Mask to IC information')
+                                    writeln=True
+
+                                if line.startswith('.. image::'):
+                                    ifile='../../../../images/Hardware/ICs/' + row["parent"] + '/' + row["icid"] +'.png'
+                                    newimage = '.. image:: ' + ifile + '\n'
+                                    f.write(newimage)
+                                    if not os.path.exists(newimage):
+                                        print('Warning: Image ' + ifile + ' not found')
+                                    writeln=True
+                                
+                                if "Date Code" in line:
+                                    newline = '   "Date Code","' + manudate + '"\n'
+                                    f.write(newline)
+                                    writeln=True
+
+                                if "Manufacture Date" in line:
+                                    newline = '   "Manufacture Date","' + realmanudate + '"\n'
+                                    f.write(newline)
+                                    writeln=True
+
+                                if not writeln:
+                                    f.write(line)
+
+                        print('Updated status : Now assess storage metadata')    
+
         case "6":
             update_carousel()
-        
+        case "7":
+            print('Commencing rebuild of database') 
+            rebuild_db()
+            print('Completed rebuild of database') 
+            
         case "X":
             print('Exiting')
             exit()

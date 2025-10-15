@@ -17,7 +17,7 @@ MC6840 Programmable Timer Fundamentals and Applications
    :header: "Acquired"
    :widths: auto
 
-    "|present| 28-MAR-2025"
+    |present| 28-MAR-2025
 
 .. rubric:: Links
 
