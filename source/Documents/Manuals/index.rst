@@ -37,6 +37,8 @@ Reference Manuals
    ":ref:`M6809UI(D2) <M6809UI(D2)>`","M6809 Upgrade Instructions Guide",""
    ":ref:`M6809DB(D1) <M6809DB(D1)>`","M6809DB DEbug Module Users Guide",""
    ":ref:`M6809MPU(D2) <M6809MPU(D2)>`","M6809MPU MPU Module Users Guide",""
+   ":ref:`MSET30(D1) <MSET30(D1)>`","MSET30(D1) EXORset 30 User's Guide",""
+   ":ref:`MC6801RM(AD2) <MC6801RM(AD2)>`","MC6801 8-Bit Single-Chip Microcomputer (Including MC6803 & MC68701","May 1984"
 
 .. rubric:: Expansion Card Manuals
 
@@ -82,7 +84,7 @@ Reference Manuals
    ":ref:`M68EDITORM(D3) <M68EDITORM(D3)>`","M6800/M6809 EDITORM Resident Editor Reference Manual","Third Edition June 1980"
    ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   
    ":ref:`M6809XDOSEDT(D) <M6809XDOSEDT(D)>`","EXORset 30 XDOS Editor User's Manual",""   
-   ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide","First Edition March 1978"
+   ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide","First Edition March 1980"
 
 .. rubric:: Software Manuals (Assemblers)
 
