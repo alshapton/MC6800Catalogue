@@ -1211,16 +1211,24 @@ def do_create():
     product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
     orphan = input("Orphan ? (Y/N): ")
     comments = input("Comments: ")
-    acquired = input("Acquired ? (Y/N): ")
-    if acquired == "Y":
+    acquired = input("Status ? (present/notpresent/intransit/underoffer): ")
+    if acquired == "present":
         acquired = True
         index_entry = '"|present| :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
         acquired_date = input("Acquired date (DD-MON-YYYY): ")
         acquired_status="|present| " + acquired_date + "\n\n"
-    else:
+    if acquired == "notpresent":
         acquired = False
         index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
         acquired_status = "|notpresent|"
+    if acquired == "intransit":
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = "|intransit|"
+    if acquired == "underoffer":
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = "|underoffer|"
 
     links = input("Links ? (Y/N): ")
 
@@ -1275,10 +1283,11 @@ def do_create():
             c.write('=')
         c.write('\n\n')
         original_image = MOVE + '/' + product_number + '.png'
+        image_present = True
         if not os.path.exists(original_image):
             c.write('.. image:: '+ images + '/NOIMAGE.png\n')
+            image_present = False
         else:
-
             c.write('.. image:: '+ images + product_number + '.png\n')
         c.write('   :width: 400\n')
         c.write('   :align: center\n\n')
@@ -1305,8 +1314,11 @@ def do_create():
             target_document =  "source/_static/" + location + "/"+ linkdocument
             movefile(original_document, target_document)
             
-        movefile(original_image, target_image)
-        print('Moved images and source data')
+        if image_present:
+            movefile(original_image, target_image)
+            print('Moved images and source data')
+        else:
+            print('No image to move')            
 
     return index_entry
 
