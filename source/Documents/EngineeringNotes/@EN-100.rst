@@ -2,6 +2,8 @@
 
 .. _EN-100:
 
+.. #Metadata {'Product':'Engineering Note EN-100 - MIKBUG/MINIBUG ROM','Folder': 'None'}
+
 Engineering Note EN-100 - MIKBUG/MINIBUG ROM
 ============================================
 

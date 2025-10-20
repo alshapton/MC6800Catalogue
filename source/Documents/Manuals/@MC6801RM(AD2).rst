@@ -5,7 +5,7 @@
 MC6801 8-Bit Single-Chip Microcomputer
 ======================================
 
-.. image:: ../../images/Reference/MC6801RM(AD2).png
+.. image:: ../../images/Manuals/MC6801RM(AD2).png
    :width: 400
    :align: center
 

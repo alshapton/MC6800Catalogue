@@ -39,6 +39,7 @@ Reference Manuals
    ":ref:`M6809MPU(D2) <M6809MPU(D2)>`","M6809MPU MPU Module Users Guide",""
    ":ref:`MSET30(D1) <MSET30(D1)>`","MSET30(D1) EXORset 30 User's Guide",""
    ":ref:`MC6801RM(AD2) <MC6801RM(AD2)>`","MC6801 8-Bit Single-Chip Microcomputer (Including MC6803 & MC68701","May 1984"
+   ":ref:`M68EXORSET(D1) <M68EXORSET(D1)>`","EXORset User's Guide (Binder set 1 & 2)",""
 
 .. rubric:: Expansion Card Manuals
 

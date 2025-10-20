@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 17-10-2025) in transit.
+This is the current set of items (as at 20-10-2025) in transit.
 
 
 .. rubric:: Datasheets
@@ -24,3 +24,12 @@ This is the current set of items (as at 17-10-2025) in transit.
 	MC68701U4L-1,":ref:`MC68701U4L-1 Microprocessor Unit with 8-bit EPROM <MC68701U4L-1>` "
 	MC6875L,":ref:`MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875) <MC6875L>` "
 	MCM6832P,":ref:`MCM6832P 2048 x 8-bit Read Only Memory <MCM6832P>` "
+
+
+.. rubric:: ReferenceCards
+
+.. csv-table:: 
+	:header: "Part Number","Description"
+	:widths: 30, 70
+
+	M68SETPRC-D1,":ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>` "
