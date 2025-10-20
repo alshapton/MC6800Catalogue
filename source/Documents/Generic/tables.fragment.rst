@@ -24,5 +24,5 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   "|notpresent| :ref:`N/A <BASCNEWS(D2)>`","BASICNEWS for BASIC-M","Not sure what this documentaaludes to."
+   "|notpresent| :ref:`N/A <BASCNEWS(D2)>`","BASICNEWS for BASIC-M","Not sure what this document alludes to."
    "|notpresent| :ref:`N/A <FTCTTM>`","From the Computer... to the Microprocessor",""

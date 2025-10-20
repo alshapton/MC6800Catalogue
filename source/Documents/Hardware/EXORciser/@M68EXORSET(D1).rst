@@ -17,26 +17,26 @@ M68EXORSET(D1) EXORset User's Guide
 - :ref:`MSETBAS(S1) M6809 BASIC-M Interactive Compiler Supplement <MSETBAS(S1)>`
 - :ref:`M68MASR(D2) 6800/6801/6805/6809 Macro Assemblers Reference Manual <MSETBAS(S1)>`
 - :ref:`BASCNEWS(D2) BASICNEWS for BASIC-M <BASCNEWS(D2)>`
-  :ref:`MSET30BAS(D1) M6809 BASIC-M Interactive Compiler User's Guide <MSET30BAS(D1)>`
-- ! MSET30BAS(D1) M6809 BASIC-M INTERACTIVE COMPILER USER’S GUIDE
-- ! M68SETEDITORM(D1) EXORSET CRT EDITOR REFERENCE MANUAL
-- ! MSETLLD(D1) XDOS LINKING LOADER REFERENCE MANUAL
-- ! MSETPLOT1(D1) EXORSET 30 PLOT 1 USERS GUIDE
+- :ref:`MSET30BAS(D1) M6809 BASIC-M Interactive Compiler User's Guide <MSET30BAS(D1)>`
+- ! M68SETEDITORM(D1) EXORSET CRT EDITOR REFERENCE MANUAL(Have image - include next)
+- ! MSETLLD(D1) XDOS LINKING LOADER REFERENCE MANUAL (Have image - include next)
+- :ref:`MSETPLOT1(D1) EXORset 30 PLOT 1 User's Guide <MSETPLOT1(D1)>`
 
 .. rubric:: Binder 2 contains the following documents:
 
-- X M68XDOS4(S1) SUPPLEMENT TO EXORset XDOS OPERATING SYSTEM USER’S GUIDE
+- ! M68XDOS4(S1) SUPPLEMENT TO EXORset XDOS OPERATING SYSTEM USER’S GUIDE
 - ! M68SETDS35/D1 EXORSET DS35 DEVELOPMENT SYSTEM USER’S Manual
   
 This document itself includes :
 
-- disassembly diagrams
-- program jumper settings
-- pinouts
-- schematics
-- parts lists
+- Disassembly diagrams
+- Program jumper settings
+- Pinouts
+- :download:`Schematics <../../../_static/Documents/Generic/EXORset_schematics.pdf>`
+- Parts lists
 - CRT data and service manual
-- floppy drive diagrams and servicing information
+- Floppy drive diagrams and servicing information
+
 
 
 .. rubric:: Collection Information
