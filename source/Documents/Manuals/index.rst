@@ -115,3 +115,4 @@ Reference Manuals
    ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"
    "|present| :ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide","Targetting M6809"
    ":ref:`M6809ASM09(D) <M6809ASM09(D)>`","EXORset 30 XDOS Assembler User's Guide","Targetting M6809"
+   ":ref:`MSETBAS(S1) <MSETBAS(S1)>`","M6809 BASIC-M Interactive Compiler Supplement",""

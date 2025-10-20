@@ -1285,7 +1285,7 @@ def do_create():
         original_image = MOVE + '/' + product_number + '.png'
         image_present = True
         if not os.path.exists(original_image):
-            c.write('.. image:: '+ images + '/NOIMAGE.png\n')
+            c.write('.. image:: '+ dotdot + 'images' + '/NOIMAGE.png\n')
             image_present = False
         else:
             c.write('.. image:: '+ images + product_number + '.png\n')
