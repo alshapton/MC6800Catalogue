@@ -6,4 +6,4 @@
       :widths: auto
 
       "|notpresent| :ref:`MC6875AL <MC6875AL>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6875L <MC6875L>`","Ceramic","N/A","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC6875L <MC6875L>`","Ceramic","N/A","0-70\ :sup:`o`\ C",""

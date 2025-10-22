@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 20-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 22-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -128,6 +128,7 @@ This is the current collection (as at 20-10-2025) of the items produced by Motor
 	":ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 1 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC68701U4L <MC68701U4L>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 2, Column 1 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC68701U4S1 <MC68701U4S1>`","CERDIP",":ref:`Storage Box 1, Drawer 2, Row 3, Column 1 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6875L <MC6875L>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 6 <Storage_Box_1_Drawer_4>`"
 	":ref:`MC6883P <MC6883P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 2 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC6889P <MC6889P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 5 <Storage_Box_1_Drawer_4>`"
 

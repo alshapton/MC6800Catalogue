@@ -86,6 +86,9 @@ Reference Manuals
    ":ref:`M68MODOS(D) <M68MODOS(D)>`","M68MODOS010 Disk Operating System User's Guide","First Edition 1978"   
    ":ref:`M6809XDOSEDT(D) <M6809XDOSEDT(D)>`","EXORset 30 XDOS Editor User's Manual",""   
    ":ref:`MSET30DOS(D1) <MSET30DOS(D1)>`","Exorset 30 XDOS OS User’s Guide","First Edition March 1980"
+   ":ref:`M68XDOS4(S1) <M68XDOS4(S1)>`","Supplement to EXORset XDOS Operating System User's Guide",""
+   ":ref:`M68SETEDITORM(D1) <M68SETEDITORM(D1)>`","EXORset EDITOR Reference Manual",""
+   ":ref:`M68SETDS35(D1) <M68SETDS35(D1)>`","EXORset DS35 Development System User's Manual",""
 
 .. rubric:: Software Manuals (Assemblers)
 
@@ -111,6 +114,7 @@ Reference Manuals
    ":ref:`M68PLM(D1) <M68PLM(D1)>`","Motorola PASCAL Language Manual","1979"
    ":ref:`M68BAS(D3) <M68BAS(D3)>`","M6800 BASIC Interpreter Reference Manual","3rd Edition 1980"
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
+   ":ref:`MSETLLD(D1) <MSETLLD(D1)>`","XDOS Linking Loader Reference Manual",""
    ":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual","Fourth Edition September 1979"
    ":ref:`M68FTN(A1) <M68FTN(A1)>`","Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)","May 1981"
    ":ref:`N/A <RMPLCOMP>`","M6800 M6809 Resident MPL Compiler Reference Manual","Part Number Indecipherable"

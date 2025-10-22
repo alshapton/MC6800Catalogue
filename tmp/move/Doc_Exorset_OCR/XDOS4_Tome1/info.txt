@@ -14,7 +14,7 @@ Moto original discs:
 1984 M6809 SOFTWARE DISC8 2X0UBASME A* 6800/01/(701) CROSS ASSEMBLER 1.0 OBJECT ON EXORSET
 
 Moto original documents:
-!M68SETD35/D1 EXORSET DS35M DEVELOPMENT SYSTEM USERS MANUAL
+! M68SETD35/D1 EXORSET DS35M DEVELOPMENT SYSTEM USERS MANUAL
 ! M68SETEDITORM(D1) EXORSET CRT EDITOR REFERENCE MANUAL
 ! M68XDOS4/S2 SUPPLEMENT TO EXORSET XDOS OPERATING SYSTEM USERS MANUAL
 ! MSETPLOT1(D1) EXORSET 30 PLOT 1 USERS GUIDE
@@ -34,7 +34,7 @@ The breakdown on these two binders is as follows:
 
 Original Binder 1 - Moto original documents:
 (cover labeled MSET30COMP1 / but is in fact for the ’35 – Mot had not yet updated all their released docs)
-! MSETBAS(S1) M6809 BASIC-M INTERACTIVE COMPILER SUPPLEMENT MANUAL
+* MSETBAS(S1) M6809 BASIC-M INTERACTIVE COMPILER SUPPLEMENT MANUAL
 ! BASCNEWS(D2) BASICNEWS FOR BASIC-M
 ! MSET30BAS(D1) M6809 BASIC-M INTERACTIVE COMPILER USER’S GUIDE
 * M68MASR(D2) 6800/6801/6805/6809 MACRO ASSEMBLERS REFERENCE MANUAL
@@ -44,8 +44,8 @@ Original Binder 1 - Moto original documents:
 
 Original Binder 2 - Moto original documents:
 (cover labeled MSET30COMP1 / but is in fact for the ’35 – Mot had not yet updated all their released docs)
-M68XDOS4(S1) SUPPLEMENT TO EXORset XDOS OPERATING SYSTEM USER’S GUIDE
-M68SETDS35/D1 EXORSET DS35 DEVELOPMENT SYSTEM USER’S MANUAL… (hundreds of pages) which includes disassembly diagram, program jumpers, pinouts, schematics, parts lists, CRT data and service manual, floppy drive diagrams and servicing information, as well as the following Chapters:
+! M68XDOS4(S1) SUPPLEMENT TO EXORset XDOS OPERATING SYSTEM USER’S GUIDE
+! M68SETDS35/D1 EXORSET DS35 DEVELOPMENT SYSTEM USER’S MANUAL… (hundreds of pages) which includes disassembly diagram, program jumpers, pinouts, schematics, parts lists, CRT data and service manual, floppy drive diagrams and servicing information, as well as the following Chapters:
 Chapter 1 - Introduction
 Chapter 2 – General System Operation
 Chapter 3 - Backup Command

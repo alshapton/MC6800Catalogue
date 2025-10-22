@@ -102,6 +102,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6875L|  image:: /images/Hardware/ICs/MC6875/MC6875L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B44L|  image:: /images/Hardware/ICs/MC6844/MC68B44L.png
    :width: 200
    :class: no-scaled-links
