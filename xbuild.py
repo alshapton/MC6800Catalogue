@@ -1850,6 +1850,45 @@ while True:
             print('Commencing rebuild of database') 
             rebuild_db()
             print('Completed rebuild of database') 
+        
+        case "8":
+            print('Commencing finding artefacts with no metadata') 
+            rstfiles = glob.glob('**/*.rst', recursive=True)
+            metadatacount = 0
+            none_metadatacount=0
+            TBD_metadatacount=0
+            for filename in rstfiles:
+                if "@" in filename:
+                    with open(filename, 'r') as f:
+                        lines = f.readlines()                        
+                    found_metadata = False
+                    for line in lines:
+                        if "Metadata" in line:
+                            found_metadata=1
+                            metadatacount+=1
+                        if "#None" in line:
+                            print("#None metadata : " + filename)
+                            found_metadata=1
+                            none_metadatacount+=1
+                        if "#TBD" in line:
+                            print("#TBD metadata : " + filename)
+                            found_metadata=1
+                            TBD_metadatacount+=1
+                    if not found_metadata:
+                        if metadatacount == 1:
+                            print(" Artefacts with no metadata:")
+                        
+                        print(filename)        
+            
+            if metadatacount == 0:
+                print("All artefact files have metadata tags.")
+            else:
+                if none_metadatacount>0:
+                            print(str(none_metadatacount) + " Artefacts with #None metadata:")
+                if TBD_metadatacount > 0:
+                            print(str(TBD_metadatacount) + " Artefacts with #TBD metadata:")                            
+                print(str(metadatacount) + " with no metadata.")
+            print('Done') 
             
         case "X":
             print('Exiting')
