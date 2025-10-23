@@ -2,6 +2,8 @@
 
 .. _AN-797:
 
+.. #Metadata {'Product':'MC6801/03 Port Expansion','Folder': 'None'}
+
 MC6801/03 Port Expansion
 ========================
 

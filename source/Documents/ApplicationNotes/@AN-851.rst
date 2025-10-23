@@ -2,6 +2,8 @@
 
 .. _AN-851:
 
+.. #Metadata {'Product':'Motorola MC6845 CRTC Simplifies Video Display Control','Folder': 'None'}
+
 Motorola MC6845 CRTC Simplifies Video Display Control
 =====================================================
 

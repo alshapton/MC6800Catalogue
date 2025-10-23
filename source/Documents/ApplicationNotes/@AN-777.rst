@@ -2,6 +2,8 @@
 
 .. _AN-777:
 
+.. #Metadata {'Product':'A Dual Processor System For Use In The EXORcisor','Folder': 'None'}
+
 A Dual Processor System For Use In The EXORcisor
 ================================================
 

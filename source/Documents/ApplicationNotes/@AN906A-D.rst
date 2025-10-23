@@ -2,6 +2,8 @@
 
 .. _AN906A-D:
 
+.. #Metadata {'Product':'Self-Programming the MC68701 and the MC68701U4','Folder': 'None'}
+
 Self-Programming the MC68701 and the MC68701U4
 ==============================================
 

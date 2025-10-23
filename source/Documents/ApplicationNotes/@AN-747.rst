@@ -2,6 +2,8 @@
 
 .. _AN-747:
 
+.. #Metadata {'Product':'Low Speed Modem Design using the MC6860','Folder': 'None'}
+
 Low Speed Modem Design using the MC6860
 =======================================
 

@@ -1508,13 +1508,132 @@ def rebuild_db():
                        );")
     conn.commit()
 
+    # Create Application Note tables
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnotes \
+                       (    id INTEGER PRIMARY KEY,         \
+                            appnoteid           TEXT,       \
+                            appnote             TEXT,       \
+                            name                TEXT,       \
+                            tag                 TEXT,       \
+                            notes               TEXT,       \
+                            acquired_date       TEXT,       \
+                            real_date           TEXT,       \
+                            location            TEXT,       \
+                            metadata            TEXT,       \
+                            filename            TEXT,       \
+                            status              TEXT        \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnotelinks \
+                       (    id INTEGER PRIMARY KEY,             \
+                            appnoteid           TEXT,           \
+                            link                TEXT            \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnoteimages \
+                       (    id INTEGER PRIMARY KEY,              \
+                            appnoteid           TEXT,            \
+                            image               TEXT             \
+                       );")
+    conn.commit()
+
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
     cursor_obj.execute("DELETE FROM ics;")
     conn.commit()
 
+    cursor_obj.execute("DELETE FROM appnotes;")
+    cursor_obj.execute("DELETE FROM appnoteimages;")
+    cursor_obj.execute("DELETE FROM appnotelinks;")
+
+    conn.commit()
+
     for file in files:
+        if 'ApplicationNotes' in file and 'fragment' not in file and 'index' not in file:
+            metadata=''
+            tag=''
+            acquired_date=''
+            converted_date=''
+            location=''
+            filename = file.split(OSSEP)
+            appnoteid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
+            
+            with open(file, 'r') as f:
+                prevproductname=''                
+                lines = f.readlines()
+                for line in lines:
+                    if line.startswith('.. image::'):
+                        image=line.replace('.. image::','').strip()
+                        conn.execute("INSERT INTO appnoteimages (appnoteid, image) VALUES (?,?);", (appnoteid, image.strip()))
+                        conn.commit()
+                    if  ':ref:`' in line and 'Location' not in line:
+                        conn.execute("INSERT INTO appnotelinks (appnoteid, link) VALUES (?,?);", (appnoteid, line.strip()))
+                        conn.commit()
+                    if ':download:`' in line :
+                        conn.execute("INSERT INTO appnotelinks (appnoteid, link) VALUES (?,?);", (appnoteid, line.strip()))
+                        conn.commit()
+                    if '.. #Metadata ' in line:
+                        metadata=line.replace('.. #Metadata','').strip()
+
+                        metadataline = line.replace('.. #Metadata ', '').strip()
+                        metadata_dict = eval(metadataline)
+                        
+                        location = metadata_dict["Folder"]
+                        location = location.replace("None",'')
+
+                    if line.startswith('.. _'):
+                        tag=line.replace('.. _','').split(':')[0]
+                    if line.startswith("====="):
+                        productname=prevproductname
+                    else:
+                        prevproductname=line.strip()
+                    if  CHECK_MARK in line or \
+                        UNDER_OFFER in line or \
+                        IN_TRANSIT in line or \
+                        CROSS_MARK in line:
+                            status = line.split('|')[1].strip()
+                    if CHECK_MARK in line:
+                            acquired_date = line.split('|')[2].strip().replace('"','')
+                            m=acquired_date[3:6].upper()
+                            match m:
+                                case "JAN":
+                                    month='01'
+                                case "FEB":
+                                    month='02'
+                                case "MAR":
+                                    month='03'
+                                case "APR":
+                                    month='04'
+                                case "MAY":
+                                    month='05'
+                                case "JUN":
+                                    month='06'
+                                case "JUL":
+                                    month='07'
+                                case "AUG":
+                                    month='08'
+                                case "SEP":
+                                    month='09'
+                                case "OCT":
+                                    month='10'
+                                case "NOV":
+                                    month='11'
+                                case "DEC":
+                                    month='12'
+                                case _:
+                                    print('Invalid month in ' + file)
+                            converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+            conn.execute("INSERT INTO appnotes (appnoteid, appnote, name, acquired_date, \
+                            real_date, tag,notes, location, metadata,filename, status) \
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?);",
+                    (appnoteid, appnoteid, productname, acquired_date,converted_date,tag,\
+                    notes,location,metadata,file,status))
+            conn.commit()
+
+
         if 'ICs'+OSSEP+'MC' in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'packaging' not in file:
             filename = file.split(OSSEP)
             parent = filename[4]
@@ -1864,21 +1983,21 @@ while True:
                     found_metadata = False
                     for line in lines:
                         if "Metadata" in line:
-                            found_metadata=1
-                            metadatacount+=1
+                            found_metadata=True
                         if "#None" in line:
                             print("#None metadata : " + filename)
-                            found_metadata=1
+                            found_metadata=True
                             none_metadatacount+=1
                         if "#TBD" in line:
                             print("#TBD metadata : " + filename)
-                            found_metadata=1
+                            found_metadata=True
                             TBD_metadatacount+=1
                     if not found_metadata:
+                        metadatacount+=1
                         if metadatacount == 1:
                             print(" Artefacts with no metadata:")
                         
-                        print(filename)        
+                        print("No metadata : " + filename)
             
             if metadatacount == 0:
                 print("All artefact files have metadata tags.")
@@ -1888,6 +2007,18 @@ while True:
                 if TBD_metadatacount > 0:
                             print(str(TBD_metadatacount) + " Artefacts with #TBD metadata:")                            
                 print(str(metadatacount) + " with no metadata.")
+
+            output = read_db("SELECT * FROM appnotes WHERE metadata='' order by appnoteid;")
+
+            for row in output:
+                metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
+
+                metadataline = metadataskeleton.replace('XXXXX',row["name"])
+                if row["location"].strip() == '':
+                    metadataline = metadataline.replace('@@','None')
+                else:
+                    metadataline = metadataline.replace('@@',row["location"])    
+                print(metadataline)
             print('Done') 
             
         case "X":
