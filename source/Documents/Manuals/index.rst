@@ -40,6 +40,7 @@ Reference Manuals
    ":ref:`MSET30(D1) <MSET30(D1)>`","MSET30(D1) EXORset 30 User's Guide",""
    ":ref:`MC6801RM(AD2) <MC6801RM(AD2)>`","MC6801 8-Bit Single-Chip Microcomputer (Including MC6803 & MC68701","May 1984"
    ":ref:`M68EXORSET(D1) <M68EXORSET(D1)>`","EXORset User's Guide (Binder set 1 & 2)",""
+   ":ref:`N/A <MESH>`","Micromodule Enclosure and System Hardware (etc)","Various hardware"
 
 .. rubric:: Expansion Card Manuals
 
@@ -58,6 +59,7 @@ Reference Manuals
    "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
    ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
+   ":ref:`MEX68USMUG(D1) <MEX68USMUG(D1)>`","MEX68USMUG(D1) MEX68USM Universal Support Module User's Guide",""
    
 .. rubric:: Micromodule Manuals
 
@@ -69,7 +71,8 @@ Reference Manuals
    "|present| :ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A","First Edition July 1977"
    ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
    ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
-
+   ":ref:`M68ADS2ASDRM <M68ADS2ASDRM>`","Micromodule/M68ADS2A Software Development Reference Manual","NO discernable product number"
+   
 .. rubric:: Software Manuals
 
 .. csv-table:: 

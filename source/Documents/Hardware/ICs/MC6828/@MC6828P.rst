@@ -30,7 +30,7 @@ MC6828P Priority Interrupt Controller
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   "|intransit|"
 
 .. rubric:: Links
 

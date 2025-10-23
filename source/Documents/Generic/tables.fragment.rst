@@ -26,3 +26,4 @@
 
    "|notpresent| :ref:`N/A <BASCNEWS(D2)>`","BASICNEWS for BASIC-M","Not sure what this document alludes to."
    "|notpresent| :ref:`N/A <FTCTTM>`","From the Computer... to the Microprocessor",""
+   "|notpresent| :ref:`N/A <HB211>`","Programming the 6800 Microprocessor","Authored by B.SOuthern, distributed by Motorola"
