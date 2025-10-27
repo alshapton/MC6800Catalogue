@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68488PD','Name':'MC68488PD General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68488PD','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68488PD General Purpose Interface Adapter
 ===========================================

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68701CL','Name':'MC68701CL Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68701CL','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
 
 MC68701CL Microprocessor Unit
 =============================

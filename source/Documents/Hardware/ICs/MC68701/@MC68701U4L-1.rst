@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68701U4L-1','Name':'MC68701U4L-1 Microprocessor Unit with 8-bit EPROM','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68701U4L-1','Storage': 'Storage Box X','Drawer':Y,'Row':X,'Column':S}
 
 MC68701U4L-1 Microprocessor Unit with 8-bit EPROM
 =================================================

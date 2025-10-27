@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCA6852CS','Name':'MCA6852CS Synchronous Serial Data Adapter (SSDA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MCA6852CS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MCA6852CS Synchronous Serial Data Adapter (SSDA)
 ================================================

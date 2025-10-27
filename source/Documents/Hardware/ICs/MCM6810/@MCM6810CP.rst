@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCM6810CP','Name':'MCM6810CP 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6810CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MCM6810CP 128 x 8-Bit Static Random Access Memory (MCM6810)
 ===========================================================

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A44CL','Name':'MC68A44CL Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
 
 MC68A44CL Direct Memory Access Controller (DMAC)
 ================================================

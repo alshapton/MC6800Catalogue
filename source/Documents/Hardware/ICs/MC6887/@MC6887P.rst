@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6887P','Name':'MC6887P Hex Three-State Buffer/Inverter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6887P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6887P Hex Three-State Buffer/Inverter
 =======================================

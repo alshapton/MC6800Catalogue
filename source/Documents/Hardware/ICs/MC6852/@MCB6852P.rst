@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCB6852P','Name':'MCB6852P Synchronous Serial Data Adapter (SSDA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MCB6852P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MCB6852P Synchronous Serial Data Adapter (SSDA)
 ===============================================

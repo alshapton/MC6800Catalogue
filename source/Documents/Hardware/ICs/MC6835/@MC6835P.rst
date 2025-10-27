@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6835P','Name':'MC6835P CRT Controller (CRTC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6835P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6835P CRT Controller (CRTC)
 =============================

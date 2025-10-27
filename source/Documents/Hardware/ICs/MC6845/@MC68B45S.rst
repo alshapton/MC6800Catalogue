@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68B45S','Name':'MC68B45S CRT Controller (CRTC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68B45S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B45S CRT Controller (CRTC)
 ==============================

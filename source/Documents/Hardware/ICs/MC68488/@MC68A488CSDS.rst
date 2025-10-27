@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A488CSDS','Name':'MC68A488CSDS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68A488CSDS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A488CSDS General Purpose Interface Adapter
 ==============================================

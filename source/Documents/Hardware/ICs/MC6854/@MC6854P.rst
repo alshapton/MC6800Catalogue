@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6854P','Name':'MC6854P Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6854P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6854P Advanced Data-Link Controller (ADLC)
 ============================================

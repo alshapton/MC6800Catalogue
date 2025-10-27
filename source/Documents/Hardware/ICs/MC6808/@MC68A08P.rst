@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A08P','Name':'MC68A08P Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68A08P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A08P Microprocessor with Clock and Optional RAM (MC6808)
 ============================================================

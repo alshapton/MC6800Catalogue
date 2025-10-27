@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6882BL','Name':'MC6882BL Octal Three-State Buffer/Latch','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6882BL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6882BL Octal Three-State Buffer/Latch
 =======================================

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6821CLS','Name':'MC6821CLS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6821CLS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6821CLS Peripheral Interface Adapter (PIA)
 ===================================================

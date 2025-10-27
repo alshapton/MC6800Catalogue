@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6890L','Name':'MC6890L MPU Bus-Compatible 8-Bit D-to-A Converter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6890L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6890L MPU Bus-Compatible 8-Bit D-to-A Converter
 ========================================================

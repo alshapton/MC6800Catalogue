@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6809CP','Name':'MC6809CP 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6809CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6809CP 8-Bit Microprocessing Unit
 ====================================

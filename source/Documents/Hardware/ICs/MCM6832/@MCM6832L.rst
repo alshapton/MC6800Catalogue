@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCM6832L','Name':'MCM6832L 2048 x 8-bit Read Only Memory','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MCM6832L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MCM6832L 2048 x 8-bit Read Only Memory
 ======================================

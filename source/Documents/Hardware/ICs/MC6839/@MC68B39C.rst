@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68B39C','Name':'MC68B39C Floating Point ROM','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68B39C','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B39C Floating Point ROM
 ==================================

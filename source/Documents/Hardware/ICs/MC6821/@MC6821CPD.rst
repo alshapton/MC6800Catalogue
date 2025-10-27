@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6821CPD','Name':'MC6821CPD Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC6821CPD','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6821CPD Peripheral Interface Adapter (PIA)
 ===================================================

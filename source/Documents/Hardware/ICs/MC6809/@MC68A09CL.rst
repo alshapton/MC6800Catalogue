@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A09CL','Name':'MC68A09CL 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
-.. #None {'Product':'MC68A09CL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A09CL 8-Bit Microprocessing Unit
 ====================================
