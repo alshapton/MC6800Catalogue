@@ -53,6 +53,7 @@ def update_or_not_metadata(filename):
                 output_line = line       
                 if '.. #Metadata' in line:
                     metadataline = line.replace('.. #Metadata ', '').strip()
+                    print(filename)
                     print(metadataline)
                     metadata_dict = eval(metadataline)
                     metadata_line=str(metadata_dict).split(',')
@@ -778,12 +779,16 @@ def update_storage():
                 LOCATIONINSTORAGE=stripped.split('..')[1].strip().replace('collapse:: ','').replace(' ','_')
                 if LOCATIONINSTORAGE is  None:
                     LOCATIONINSTORAGE = 'Unknown'
+                print('     Processing location: ' + LOCATIONINSTORAGE)
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
                     if not stripped.endswith('`>\n'):
                         stripped = stripped + '>`\n'
                     opf.write(stripped)
-                    
+
+    # Remove specific known problematic file               
+    os.remove('source/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
+    
     # Remove temporary "tiny" working files
     print('Splitting LVL2 files complete')
     print('Removing temporary files')

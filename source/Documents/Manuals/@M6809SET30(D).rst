@@ -5,7 +5,7 @@
 EXORset 30 User's Guide
 =======================
 
-.. #Metadata {'Product':'EXORset 30 User's Guide','Folder': 'X','Comments':''}
+.. #Metadata {'Product':'EXORset 30 Users Guide','Folder': 'X','Comments':''}
 
 .. image:: ../../images/Manuals/M6809SET30(D).png
    :width: 400
