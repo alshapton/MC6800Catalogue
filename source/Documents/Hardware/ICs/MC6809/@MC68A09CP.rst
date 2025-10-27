@@ -2,6 +2,8 @@
 
 .. _MC68A09CP:
 
+.. #Metadata {'Product':'MC68A09CP','Name':'MC68A09CP 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A09CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A09CP 8-Bit Microprocessing Unit

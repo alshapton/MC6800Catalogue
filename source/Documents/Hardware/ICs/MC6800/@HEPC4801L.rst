@@ -2,6 +2,8 @@
 
 .. _HEPC4801L:
 
+.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 HEPC4801L HEP version of MC6800
 ===============================
 
@@ -29,4 +31,3 @@ HEPC4801L HEP version of MC6800
    :widths: auto
 
       "|notpresent|"
-

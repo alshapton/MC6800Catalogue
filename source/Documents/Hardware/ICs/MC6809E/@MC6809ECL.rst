@@ -2,6 +2,8 @@
 
 .. _MC6809ECL:
 
+.. #Metadata {'Product':'MC6809ECL','Name':'MC6809ECL 8-Bit Microprocessing Unit (MC6809E)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6809ECL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6809ECL 8-Bit Microprocessing Unit (MC6809E)

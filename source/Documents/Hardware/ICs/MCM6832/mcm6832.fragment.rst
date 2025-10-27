@@ -6,4 +6,4 @@
       :widths: auto
 
       "|notpresent| :ref:`MCM6832L <MCM6832L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MCM6832P <MCM6832P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MCM6832P <MCM6832P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""

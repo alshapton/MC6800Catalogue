@@ -2,6 +2,8 @@
 
 .. _MC68A40CL:
 
+.. #Metadata {'Product':'MC68A40CL','Name':'MC68A40CL Programmable Timer Module (PTM)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A40CL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A40CL Programmable Timer Module (PTM)

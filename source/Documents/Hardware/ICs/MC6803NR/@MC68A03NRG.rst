@@ -2,7 +2,7 @@
 
 .. _MC68A03NRG:
 
-.. #None {'Product':'MC68A03NRG','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A03NRG','Name':'MC68A03NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A03NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
 ==============================================================================

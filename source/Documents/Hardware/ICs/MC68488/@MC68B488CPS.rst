@@ -2,6 +2,8 @@
 
 .. _MC68B488CPS:
 
+.. #Metadata {'Product':'MC68B488CPS','Name':'MC68B488CPS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B488CPS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B488CPS General Purpose Interface Adapter

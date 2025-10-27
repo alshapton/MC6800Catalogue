@@ -2,6 +2,8 @@
 
 .. _MC68B09EL:
 
+.. #Metadata {'Product':'MC68B09EL','Name':'MC68B09EL 8-Bit Microprocessing Unit (MC6809E)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B09EL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B09EL 8-Bit Microprocessing Unit (MC6809E)

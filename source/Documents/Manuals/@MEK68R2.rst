@@ -4,7 +4,9 @@
 
 MEK68R2 Programmable CRT Video Interface
 ========================================
+
 .. #None {'Product':'MEK68R2 Programmable CRT Video Interface','Folder': 'X','Comments':''}
+
 .. image:: ../../images/Manuals/MEK68R2.png
    :width: 400
    :align: center

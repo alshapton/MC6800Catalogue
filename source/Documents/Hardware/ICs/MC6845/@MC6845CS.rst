@@ -2,6 +2,8 @@
 
 .. _MC6845CS:
 
+.. #Metadata {'Product':'MC6845CS','Name':'MC6845CS CRT Controller (CRTC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6845CS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6845CS CRT Controller (CRTC)

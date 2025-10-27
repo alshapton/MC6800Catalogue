@@ -2,6 +2,8 @@
 
 .. _MC68A00CS:
 
+.. #Metadata {'Product':'MC68A00CS','Name':'MC68A00CS Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC68A00CS Microprocessor Unit
 =============================
 

@@ -2,6 +2,8 @@
 
 .. _MC68B701U4L-1:
 
+.. #Metadata {'Product':'MC68A701U4L-1','Name':'MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B701U4L-1','Storage': 'Storage Box 1','Drawer':1,'Row':1,'Column':1}
 
 MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM

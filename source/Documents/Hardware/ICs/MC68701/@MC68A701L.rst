@@ -2,6 +2,8 @@
 
 .. _MC68A701L:
 
+.. #Metadata {'Product':'MC68A701L','Name':'MC68A701L Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A701L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
 
 MC68A701L Microprocessor Unit

@@ -2,6 +2,8 @@
 
 .. _MC68B09CL:
 
+.. #Metadata {'Product':'MC68B09CL','Name':'MC68B09CL 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B09CL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B09CL 8-Bit Microprocessing Unit

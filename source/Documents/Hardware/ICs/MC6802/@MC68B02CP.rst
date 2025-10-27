@@ -2,7 +2,7 @@
 
 .. _MC68B02CP:
 
-.. #None {'Product':'MC68B02CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B02CP','Name':'MC68B02CP Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B02CP Microprocessor with Clock and Optional RAM (MC6802)
 =============================================================

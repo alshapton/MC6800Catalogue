@@ -2,6 +2,8 @@
 
 .. _MC6828P:
 
+.. #Metadata {'Product':'MC6828P','Name':'MC6828P Priority Interrupt Controller','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC6828P Priority Interrupt Controller
 =====================================
 

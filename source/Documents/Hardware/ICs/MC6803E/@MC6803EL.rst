@@ -2,7 +2,7 @@
 
 .. _MC6803EL:
 
-.. #None {'Product':'MC6803EL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6803EL','Name':'MC6803EL 8-Bit Microprocessor (MC6803E)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6803EL 8-Bit Microprocessor (MC6803E)
 =======================================

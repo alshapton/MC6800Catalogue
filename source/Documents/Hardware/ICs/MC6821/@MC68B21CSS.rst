@@ -2,6 +2,8 @@
 
 .. _MC68B21CSS:
 
+.. #Metadata {'Product':'MC68B21CSS','Name':'MC68B21CSS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B21CSS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B21CSS Peripheral Interface Adapter (PIA)

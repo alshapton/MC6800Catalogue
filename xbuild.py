@@ -578,7 +578,7 @@ def update_storage():
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
     all_folders_storage_sorted =  sorted(sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
-
+    print(sorted_folders_softnon)
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
     with open(FOLDER_MAP_FILE, "w") as fmf:
@@ -589,7 +589,7 @@ def update_storage():
                 map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
                 current_folder = item['Folder']
 
-
+                print('Processing folder: ' + current_folder)
                 match item['Folder']:
                     case "GITHUB":
                         write_folder=True
@@ -1107,7 +1107,6 @@ def do_collection():
                     #print('Checking for acquired ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
                     doc_type=convert_type_to_real_type(type)
-                    
                     for line in f:
 
                         if CHECK_MARK in line  and 'This item is present in the collection' not in line:
@@ -1148,7 +1147,7 @@ def do_collection():
                             if description != '':
                                 collection.append(thisdict)
 
-        
+
         newlist = sorted(collection, key=lambda d: (d['DTYPE'],d['PN']))  
 
         HEADING=''
@@ -1971,11 +1970,12 @@ while True:
             print('Completed rebuild of database') 
         
         case "8":
-            print('Commencing finding artefacts with no metadata') 
+            print('Commencing finding artefacts with invalid metadata') 
             rstfiles = glob.glob('**/*.rst', recursive=True)
             metadatacount = 0
             none_metadatacount=0
             TBD_metadatacount=0
+            illegal_metadata=[]
             for filename in rstfiles:
                 if "@" in filename:
                     with open(filename, 'r') as f:
@@ -1984,6 +1984,8 @@ while True:
                     for line in lines:
                         if "Metadata" in line:
                             found_metadata=True
+                        if "#None" in line and found_metadata==True:
+                            illegal_metadata.append(filename)
                         if "#None" in line:
                             print("#None metadata : " + filename)
                             found_metadata=True
@@ -2008,17 +2010,37 @@ while True:
                             print(str(TBD_metadatacount) + " Artefacts with #TBD metadata:")                            
                 print(str(metadatacount) + " with no metadata.")
 
-            output = read_db("SELECT * FROM appnotes WHERE metadata='' order by appnoteid;")
+            for fullfilename in illegal_metadata:
+                print("Illegal metadata : " + fullfilename)
+            #output = read_db("SELECT * FROM ics WHERE metadata IS NULL or metadata = '' order by icid;")
 
-            for row in output:
-                metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
+            #for row in output:
+            #    metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
+            #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}"
 
-                metadataline = metadataskeleton.replace('XXXXX',row["name"])
-                if row["location"].strip() == '':
-                    metadataline = metadataline.replace('@@','None')
-                else:
-                    metadataline = metadataline.replace('@@',row["location"])    
-                print(metadataline)
+            #    metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["icid"])    
+            #    if row["location"].strip() == '':
+            #        metadataline = metadataline.replace('@@','None')
+            #    else:
+            #        metadataline = metadataline.replace('@@',row["location"])    
+            #    print(metadataline)
+                #fullfilename = row["filename"]
+                #print('In file: ' + fullfilename)
+                with open(fullfilename, 'r') as f:
+                        lines = f.readlines()     
+                with open(fullfilename, 'w') as f:
+                    for line in lines:
+                #        
+                #        if line.startswith('.. _'):
+                #            f.write(line)
+                #            f.write('\n' + metadataline + '\n')
+                #        else:
+                #            f.write(line)
+                #        
+                        if '#None' not in line:
+                            f.write(line)
+                
+                
             print('Done') 
             
         case "X":

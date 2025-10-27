@@ -2,6 +2,8 @@
 
 .. _MC6800S:
 
+.. #Metadata {'Product':'MC6800S','Name':'MC6800S Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC6800S Microprocessor Unit
 ===========================
 

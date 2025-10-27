@@ -2,6 +2,8 @@
 
 .. _MC6821PDS:
 
+.. #Metadata {'Product':'MC6821PDS','Name':'MC6821PDS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6821PDS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6821PDS Peripheral Interface Adapter (PIA)

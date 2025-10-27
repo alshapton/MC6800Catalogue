@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 23-10-2025).
+This is the timeline of acquisitions (as at 25-10-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -151,3 +151,4 @@ This is the timeline of acquisitions (as at 23-10-2025).
    05-OCT-2025,:ref:`MC68B09CP 8-Bit Microprocessing Unit <MC68B09CP>`
    05-OCT-2025,:ref:`MC68A54P Advanced Data-Link Controller (ADLC) <MC68A54P>`
    21-OCT-2025,:ref:`MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875) <MC6875L>`
+   25-OCT-2025,:ref:`MCM6832P 2048 x 8-bit Read Only Memory <MCM6832P>`

@@ -2,7 +2,7 @@
 
 .. _MC6802NSP:
 
-.. #None {'Product':'MC6802NSP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6802NSP','Name':'MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)
 ===============================================================

@@ -2,7 +2,7 @@
 
 .. _MC68A02CL:
 
-.. #None {'Product':'MC68A02CL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A02CL','Name':'MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)
 =============================================================

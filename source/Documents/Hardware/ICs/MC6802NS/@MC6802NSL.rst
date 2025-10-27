@@ -2,7 +2,7 @@
 
 .. _MC6802NSL:
 
-.. #None {'Product':'MC6802NSL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6802NSL','Name':'MC6802NSL Microprocessor with Clock and Optional RAM (MC6802NS)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6802NSL Microprocessor with Clock and Optional RAM (MC6802NS)
 ===============================================================

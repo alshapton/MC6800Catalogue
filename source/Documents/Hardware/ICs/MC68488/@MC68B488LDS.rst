@@ -2,6 +2,8 @@
 
 .. _MC68B488LDS:
 
+.. #Metadata {'Product':'MC68B488LDS','Name':'MC68B488LDS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B488LDS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B488LDS General Purpose Interface Adapter

@@ -2,6 +2,8 @@
 
 .. _MC68A29CL:
 
+.. #Metadata {'Product':'MC68A29CL','Name':'MC68A29CL Memory Management Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC68A29CL Memory Management Unit
 ================================
 

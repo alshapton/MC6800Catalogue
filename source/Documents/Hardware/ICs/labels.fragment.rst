@@ -122,6 +122,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMCM6832P|  image:: /images/Hardware/ICs/MCM6832/MCM6832P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iXC6820|  image:: /images/Hardware/ICs/MC6820/XC6820.png
    :width: 200
    :class: no-scaled-links

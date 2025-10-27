@@ -5,7 +5,7 @@
 Microprocessor Course
 =====================
 
-.. #None {'Product':'Microprocessor Course','Folder': 'Microprocessor Course'}
+.. #Metadata {'Product':'Microprocessor Course','Folder': 'Microprocessor Course'}
 
 .. image:: ../../images/Reference/MicroprocessorCourseBinder.1.png
    :width: 200

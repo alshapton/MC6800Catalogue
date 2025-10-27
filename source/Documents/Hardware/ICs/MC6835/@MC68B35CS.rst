@@ -2,6 +2,8 @@
 
 .. _MC68B35CS:
 
+.. #Metadata {'Product':'MC68B35CS','Name':'MC68B35CS CRT Controller (CRTC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B35CS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B35CS CRT Controller (CRTC)

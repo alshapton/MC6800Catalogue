@@ -2,6 +2,8 @@
 
 .. _MC68A50CL:
 
+.. #Metadata {'Product':'MC68A50CL','Name':'MC68A50CL Asynchronous Communications Interface Adapter (MC6850)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC68A50CL Asynchronous Communications Interface Adapter (MC6850)
 ================================================================
 

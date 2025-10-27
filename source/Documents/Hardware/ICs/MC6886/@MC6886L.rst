@@ -2,6 +2,8 @@
 
 .. _MC6886L:
 
+.. #Metadata {'Product':'MC6886L','Name':'MC6886L Hex Three-State Buffer/Inverter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6886L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6886L Hex Three-State Buffer/Inverter

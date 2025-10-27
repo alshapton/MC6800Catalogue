@@ -2,12 +2,12 @@
 
 .. _MCM6832P:
 
-.. #None {'Product':'MC6832P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MCM6832P','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':5}
 
 MCM6832P 2048 x 8-bit Read Only Memory
 ======================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MCM6832/MCM6832P.png
    :width: 400
    :align: center
 
@@ -16,13 +16,14 @@ MCM6832P 2048 x 8-bit Read Only Memory
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8009"
+   "Manufacture Date","25-FEB-1980 to 02-MAR-1980"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 5 <Storage_Box_1_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
+   "Mask","156-0672-02"
    "Notes",""
 
 
@@ -32,7 +33,7 @@ MCM6832P 2048 x 8-bit Read Only Memory
    :header: "Component"
    :widths: auto
 
-   "|intransit|"
+   |present| 25-OCT-2025
 
 .. rubric:: Links
 

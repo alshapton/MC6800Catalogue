@@ -2,7 +2,8 @@
 
 .. _MC68A46CP:
 
-.. #None {'Product':'MC68A46CP','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A46CP','Name':'MC68A46CP ROM I/O Timer','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 
 MC68A46CP ROM I/O Timer
 =======================

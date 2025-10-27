@@ -2,7 +2,8 @@
 
 .. _MC6846S:
 
-.. #None {'Product':'MC6846S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6846S','Name':'MC6846S ROM I/O Timer','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 
 MC6846S ROM I/O Timer
 =====================

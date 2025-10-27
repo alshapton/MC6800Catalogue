@@ -2,6 +2,8 @@
 
 .. _MC6875AL:
 
+.. #Metadata {'Product':'MC6875AL','Name':'MC6875AL M6800 Two-Phase Clock Generator/Driver (MC6875)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6875AL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6875AL M6800 Two-Phase Clock Generator/Driver (MC6875)

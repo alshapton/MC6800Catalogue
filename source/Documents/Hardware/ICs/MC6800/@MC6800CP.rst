@@ -2,6 +2,8 @@
 
 .. _MC6800CP:
 
+.. #Metadata {'Product':'MC6800CP','Name':'MC6800CP Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC6800CP Microprocessor Unit
 ============================
 

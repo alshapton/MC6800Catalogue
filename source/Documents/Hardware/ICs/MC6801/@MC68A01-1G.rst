@@ -2,7 +2,7 @@
 
 .. _MC68A01-1G:
 
-.. #None {'Product':'MC68A01-1G','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A01-1G','Name':'MC68A01-1G Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A01-1G Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 ==========================================================

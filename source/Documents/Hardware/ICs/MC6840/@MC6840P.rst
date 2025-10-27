@@ -2,6 +2,8 @@
 
 .. _MC6840P:
 
+.. #Metadata {'Product':'MC6840P','Name':'MC6840P Programmable Timer Module (PTM)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6840P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6840P Programmable Timer Module (PTM)

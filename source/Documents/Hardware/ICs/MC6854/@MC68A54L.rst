@@ -2,6 +2,8 @@
 
 .. _MC68A54L:
 
+.. #Metadata {'Product':'MC68A54L','Name':'MC68A54L Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A54L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A54L Advanced Data-Link Controller (ADLC)

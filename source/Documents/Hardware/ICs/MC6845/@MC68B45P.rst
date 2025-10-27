@@ -2,6 +2,8 @@
 
 .. _MC68B45P:
 
+.. #Metadata {'Product':'MC68B45P','Name':'MC68B45P CRT Controller (CRTC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B45P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B45P CRT Controller (CRTC)

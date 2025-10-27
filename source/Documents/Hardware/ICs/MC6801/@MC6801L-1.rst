@@ -2,7 +2,7 @@
 
 .. _MC6801-1L:
 
-.. #None {'Product':'MC6801L-1','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6801L-1','Name':'MC6801L-1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6801L-1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 =========================================================

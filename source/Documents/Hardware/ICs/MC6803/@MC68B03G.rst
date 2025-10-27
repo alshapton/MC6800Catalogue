@@ -2,7 +2,7 @@
 
 .. _MC68B03G:
 
-.. #None {'Product':'MC68B03G','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B03G','Name':'MC68B03G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B03G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 ==========================================================================

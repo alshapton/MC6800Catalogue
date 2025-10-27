@@ -2,6 +2,8 @@
 
 .. _MC68A488CLS:
 
+.. #Metadata {'Product':'MC68A488CLS','Name':'MC68A488CLS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A488CLS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A488CLS General Purpose Interface Adapter

@@ -2,6 +2,8 @@
 
 .. _MC6850CS:
 
+.. #Metadata {'Product':'MC6850CS','Name':'MC6850CS Asynchronous Communications Interface Adapter (MC6850)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 MC6850CS Asynchronous Communications Interface Adapter (MC6850)
 ===============================================================
 

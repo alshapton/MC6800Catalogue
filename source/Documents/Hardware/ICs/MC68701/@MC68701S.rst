@@ -2,6 +2,8 @@
 
 .. _MC68701S:
 
+.. #Metadata {'Product':'MC68701S','Name':'MC68701S Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68701S','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
 
 MC68701S Microprocessor Unit

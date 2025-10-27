@@ -2,6 +2,8 @@
 
 .. _MC68488LS:
 
+.. #Metadata {'Product':'MC68488LS','Name':'MC68488LS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68488LS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68488LS General Purpose Interface Adapter

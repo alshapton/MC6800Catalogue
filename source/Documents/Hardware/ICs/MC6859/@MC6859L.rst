@@ -1,6 +1,8 @@
 :orphan:
 
 .. _MC68692L:
+
+.. #Metadata {'Product':'MC6859L','Name':'MC6859L Data Security Device','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 .. #None {'Product':'MC6859L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6859L Data Security Device

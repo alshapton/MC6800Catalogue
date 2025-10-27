@@ -2,7 +2,7 @@
 
 .. _MC6847L:
 
-.. #None {'Product':'MC68B21L','Storage': 'Storage Box 1', 'Drawer':1,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6847L','Name':'MC6847L Non-Interlaced Video Display Generator Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6847L Non-Interlaced Video Display Generator Unit
 ===================================================

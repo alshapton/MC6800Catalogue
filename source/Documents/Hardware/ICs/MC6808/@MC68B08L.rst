@@ -2,6 +2,8 @@
 
 .. _MC68B08L:
 
+.. #Metadata {'Product':'MC68B08L','Name':'MC68B08L Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68B08L','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68B08L Microprocessor with Clock and Optional RAM (MC6808)

@@ -2,6 +2,8 @@
 
 .. _MC6880AL:
 
+.. #Metadata {'Product':'MC6880AL','Name':'MC6880AL Quad Three-State Bus Transceiver','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6880AL','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6880AL Quad Three-State Bus Transceiver

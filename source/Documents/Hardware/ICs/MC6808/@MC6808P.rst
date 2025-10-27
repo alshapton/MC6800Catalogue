@@ -2,6 +2,8 @@
 
 .. _MC6808P:
 
+.. #Metadata {'Product':'MC6808P','Name':'MC6808P Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC6808P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC6808P Microprocessor with Clock and Optional RAM (MC6808)

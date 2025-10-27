@@ -2,7 +2,7 @@
 
 .. _MC6803P:
 
-.. #None {'Product':'MC6803P','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6803P','Name':'MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
 
 MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 =========================================================================

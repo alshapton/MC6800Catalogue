@@ -2,6 +2,8 @@
 
 .. _MC68A21CPS:
 
+.. #Metadata {'Product':'MC68A21CPS','Name':'MC68A21CPS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A21CPS','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A21CPS Peripheral Interface Adapter (PIA)

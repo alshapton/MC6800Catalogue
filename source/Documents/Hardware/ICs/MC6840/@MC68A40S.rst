@@ -2,6 +2,8 @@
 
 .. _MC68A40S:
 
+.. #Metadata {'Product':'MC68A40S','Name':'MC68A40S Programmable Timer Module (PTM)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+
 .. #None {'Product':'MC68A40S','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}
 
 MC68A40S Programmable Timer Module (PTM)
