@@ -2,6 +2,8 @@
 
 .. _MC6889:
 
+.. #Metadata {'Product':'NonInverting Quad Three-State Bus Transceiever','Folder': 'None'}
+
 NonInverting Quad Three-State Bus Transceiever
 ==============================================
 

@@ -2,6 +2,8 @@
 
 .. _MC6883:
 
+.. #Metadata {'Product':'MC6883 Synchronous Address Multiplexer','Folder': 'None'}
+
 MC6883 Synchronous Address Multiplexer
 ======================================
 

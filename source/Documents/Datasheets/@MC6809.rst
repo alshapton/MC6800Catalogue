@@ -2,6 +2,8 @@
 
 .. _MC6809:
 
+.. #Metadata {'Product':'8-Bit Microprocessing Unit','Folder': 'None'}
+
 8-Bit Microprocessing Unit
 ==========================
 

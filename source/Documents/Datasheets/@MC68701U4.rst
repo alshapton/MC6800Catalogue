@@ -2,6 +2,8 @@
 
 .. _MC68701U4:
 
+.. #Metadata {'Product':'MC68701 Microcomputer Unit with 8-bit-EPROM','Folder': 'None'}
+
 MC68701 Microcomputer Unit with 8-bit-EPROM
 ===========================================
 

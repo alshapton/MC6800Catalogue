@@ -2,6 +2,8 @@
 
 .. _DS-MEX68XT:
 
+.. #Metadata {'Product':'Extender Module','Folder': 'None'}
+
 Extender Module
 ===============
 

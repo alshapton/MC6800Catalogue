@@ -2,6 +2,8 @@
 
 .. _DS-MEX6812-1:
 
+.. #Metadata {'Product':'MEX6812-1 2K Static RAM Module','Folder': 'None'}
+
 MEX6812-1 2K Static RAM Module
 ==============================
 

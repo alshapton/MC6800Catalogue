@@ -2,6 +2,8 @@
 
 .. _MC6844:
 
+.. #Metadata {'Product':'MC6844 Direct Memory Access Controller (DMAC)','Folder': 'None'}
+
 MC6844 Direct Memory Access Controller (DMAC)
 =============================================
 

@@ -2,6 +2,8 @@
 
 .. _MEX6800:
 
+.. #Metadata {'Product':'EXORciser MPU Module Datasheet','Folder': 'None'}
+
 EXORciser MPU Module Datasheet
 ==============================
 

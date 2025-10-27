@@ -2,6 +2,8 @@
 
 .. _MC6880A:
 
+.. #Metadata {'Product':'Quad Three-State Bus Transceiver','Folder': 'None'}
+
 Quad Three-State Bus Transceiver
 ================================
 

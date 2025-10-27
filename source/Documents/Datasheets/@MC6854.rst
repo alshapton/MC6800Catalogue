@@ -2,6 +2,8 @@
 
 .. _MC6854:
 
+.. #Metadata {'Product':'Advanced Data Link Controller (ADLC)','Folder': 'None'}
+
 Advanced Data Link Controller (ADLC)
 ====================================
 

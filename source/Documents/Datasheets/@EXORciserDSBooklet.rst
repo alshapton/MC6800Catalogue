@@ -2,6 +2,8 @@
 
 .. _EXORciser DS booklet:
 
+.. #Metadata {'Product':'EXORciser Data Sheets','Folder': 'None'}
+
 EXORciser Data Sheets
 =====================
 

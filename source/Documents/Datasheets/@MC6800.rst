@@ -2,6 +2,8 @@
 
 .. _DS-MC6800:
 
+.. #Metadata {'Product':'8-Bit Microprocessing Unit','Folder': 'None'}
+
 8-Bit Microprocessing Unit
 ==========================
 

@@ -2,6 +2,8 @@
 
 .. _MC6821:
 
+.. #Metadata {'Product':'Peripheral Interface Adapter','Folder': 'None'}
+
 Peripheral Interface Adapter
 ============================
 

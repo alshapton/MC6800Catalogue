@@ -2,6 +2,8 @@
 
 .. _MC6852:
 
+.. #Metadata {'Product':'Synchronous Serial Data Adapter (SSDA)','Folder': 'None'}
+
 Synchronous Serial Data Adapter (SSDA)
 ======================================
 

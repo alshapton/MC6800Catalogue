@@ -2,6 +2,8 @@
 
 .. _MC6828:
 
+.. #Metadata {'Product':'Priority Interrupt Controller','Folder': 'None'}
+
 Priority Interrupt Controller
 =============================
 

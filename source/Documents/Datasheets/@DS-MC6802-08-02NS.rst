@@ -2,6 +2,8 @@
 
 .. _DS-MC6802-08-02NS:
 
+.. #Metadata {'Product':'Microprocessor with Clock and Optional RAM (MC6802/MC6808/MC6802NS)','Folder': 'None'}
+
 Microprocessor with Clock and Optional RAM (MC6802/MC6808/MC6802NS)
 ===================================================================
 

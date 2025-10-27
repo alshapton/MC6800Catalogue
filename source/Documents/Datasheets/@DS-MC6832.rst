@@ -2,6 +2,8 @@
 
 .. _DS-MC6832:
 
+.. #Metadata {'Product':'MC6832 2048 x 8-bit Read Only Memory','Folder': 'None'}
+
 MC6832 2048 x 8-bit Read Only Memory
 ====================================
 

@@ -2,6 +2,8 @@
 
 .. _MC6847:
 
+.. #Metadata {'Product':'MC6847/MC6847Y Video Display Generator (VDG)','Folder': 'None'}
+
 MC6847/MC6847Y Video Display Generator (VDG)
 ============================================
 

@@ -2,6 +2,8 @@
 
 .. _MEX68WW:
 
+.. #Metadata {'Product':'Universal Wirewrap Module','Folder': 'None'}
+
 Universal Wirewrap Module
 =========================
 

@@ -2,6 +2,8 @@
 
 .. _M68SDT:
 
+.. #Metadata {'Product':'Basic Exorciser','Folder': 'None'}
+
 Basic Exorciser
 ===============
 

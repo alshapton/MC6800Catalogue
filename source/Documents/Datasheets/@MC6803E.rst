@@ -2,6 +2,8 @@
 
 .. _MC6803E:
 
+.. #Metadata {'Product':'MC6803E 8-Bit Microprocessor','Folder': 'None'}
+
 MC6803E 8-Bit Microprocessor
 ============================
 

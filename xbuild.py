@@ -1751,7 +1751,7 @@ def rebuild_db():
                                 case _:
                                     print('Invalid month in ' + file)
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
-            conn.execute("INSERT INTO documents (documenttype,documentid, documentid, name, acquired_date, \
+            conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
                             real_date, tag,notes, location, metadata,filename, status) \
                     VALUES (?,?,?,?,?,?,?,?,?,?,?,?);",
                     ('Datasheets',documentid, documentid, productname, acquired_date,converted_date,tag,\
@@ -2137,33 +2137,35 @@ while True:
                             print(str(TBD_metadatacount) + " Artefacts with #TBD metadata:")                            
                 print(str(metadatacount) + " with no metadata.")
 
-            for fullfilename in illegal_metadata:
-                print("#None metadata : " + fullfilename)
-            #output = read_db("SELECT * FROM ics WHERE metadata IS NULL or metadata = '' order by icid;")
+            #for fullfilename in illegal_metadata:
+            #    print("#None metadata : " + fullfilename)
+            #output = read_db("SELECT * FROM documents WHERE (metadata IS NULL or metadata = '') and documenttype='Datasheets';")
 
             #for row in output:
+            #    print('Datasheet ' + row["name"] + ' has no metadata')
+                
             #    metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
             #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':0,'Row':0,'Column':0}"
 
-            #    metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["icid"])    
+            #    metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["location"])    
             #    if row["location"].strip() == '':
             #        metadataline = metadataline.replace('@@','None')
             #    else:
             #        metadataline = metadataline.replace('@@',row["location"])    
             #    print(metadataline)
-                #fullfilename = row["filename"]
-                #print('In file: ' + fullfilename)
-                #with open(fullfilename, 'r') as f:
-                #        lines = f.readlines()     
-                #with open(fullfilename, 'w') as f:
-                #    for line in lines:
-                #        
-                #        if line.startswith('.. _'):
-                #            f.write(line)
-                #            f.write('\n' + metadataline + '\n')
-                #        else:
-                #            f.write(line)
-                #        
+            #    fullfilename = row["filename"]
+            #    print('In file: ' + fullfilename)
+            #   with open(fullfilename, 'r') as f:
+            #            lines = f.readlines()     
+            #    with open(fullfilename, 'w') as f:
+            #        for line in lines:
+            #            
+            #            if line.startswith('.. _'):
+            #                f.write(line)
+            #                f.write('\n' + metadataline + '\n')
+            #            else:
+            #                f.write(line)
+                        
                 #       if '#Metadata' in line:
                 #            newline=line.replace(':X',':0').replace(':Y',':0').replace(':Z',':0')
                 #            f.write(newline)
