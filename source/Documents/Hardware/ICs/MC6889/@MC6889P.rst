@@ -6,7 +6,7 @@
 MC6889P NonInverting Quad Three-State Bus Transceiver
 =====================================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6889P.png
+.. image:: ../../../../images/Hardware/ICs/MC6889/MC6889P.png
    :width: 400
    :align: center
 
