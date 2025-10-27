@@ -1512,37 +1512,6 @@ def rebuild_db():
                        );")
     conn.commit()
 
-    # Create Application Note tables
-    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnotes \
-                       (    id INTEGER PRIMARY KEY,         \
-                            appnoteid           TEXT,       \
-                            appnote             TEXT,       \
-                            name                TEXT,       \
-                            tag                 TEXT,       \
-                            notes               TEXT,       \
-                            acquired_date       TEXT,       \
-                            real_date           TEXT,       \
-                            location            TEXT,       \
-                            metadata            TEXT,       \
-                            filename            TEXT,       \
-                            status              TEXT        \
-                       );")
-    conn.commit()
-    
-    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnotelinks \
-                       (    id INTEGER PRIMARY KEY,             \
-                            appnoteid           TEXT,           \
-                            link                TEXT            \
-                       );")
-    conn.commit()
-
-    cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnoteimages \
-                       (    id INTEGER PRIMARY KEY,              \
-                            appnoteid           TEXT,            \
-                            image               TEXT             \
-                       );")
-    conn.commit()
-
     # Create Document tables
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS documents \
                        (    id INTEGER PRIMARY KEY,          \
@@ -1585,99 +1554,14 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM ics;")
     conn.commit()
 
-    cursor_obj.execute("DELETE FROM appnotes;")
-    cursor_obj.execute("DELETE FROM appnoteimages;")
-    cursor_obj.execute("DELETE FROM appnotelinks;")
-    conn.commit()
-
     cursor_obj.execute("DELETE FROM documents;")
     cursor_obj.execute("DELETE FROM documentimages;")
     cursor_obj.execute("DELETE FROM documentlinks;")
     conn.commit()
 
     for file in files:
-        if 'ApplicationNotes' in file and 'fragment' not in file and 'index' not in file:
-            metadata=''
-            tag=''
-            acquired_date=''
-            converted_date=''
-            location=''
-            filename = file.split(OSSEP)
-            appnoteid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
-            
-            with open(file, 'r') as f:
-                prevproductname=''                
-                lines = f.readlines()
-                for line in lines:
-                    if line.startswith('.. image::'):
-                        image=line.replace('.. image::','').strip()
-                        conn.execute("INSERT INTO appnoteimages (appnoteid, image) VALUES (?,?);", (appnoteid, image.strip()))
-                        conn.commit()
-                    if  ':ref:`' in line and 'Location' not in line:
-                        conn.execute("INSERT INTO appnotelinks (appnoteid, link) VALUES (?,?);", (appnoteid, line.strip()))
-                        conn.commit()
-                    if ':download:`' in line :
-                        conn.execute("INSERT INTO appnotelinks (appnoteid, link) VALUES (?,?);", (appnoteid, line.strip()))
-                        conn.commit()
-                    if '.. #Metadata ' in line:
-                        metadata=line.replace('.. #Metadata','').strip()
 
-                        metadataline = line.replace('.. #Metadata ', '').strip()
-                        metadata_dict = eval(metadataline)
-                        
-                        location = metadata_dict["Folder"]
-                        location = location.replace("None",'')
-
-                    if line.startswith('.. _'):
-                        tag=line.replace('.. _','').split(':')[0]
-                    if line.startswith("====="):
-                        productname=prevproductname
-                    else:
-                        prevproductname=line.strip()
-                    if  CHECK_MARK in line or \
-                        UNDER_OFFER in line or \
-                        IN_TRANSIT in line or \
-                        CROSS_MARK in line:
-                            status = line.split('|')[1].strip()
-                    if CHECK_MARK in line:
-                            acquired_date = line.split('|')[2].strip().replace('"','')
-                            m=acquired_date[3:6].upper()
-                            match m:
-                                case "JAN":
-                                    month='01'
-                                case "FEB":
-                                    month='02'
-                                case "MAR":
-                                    month='03'
-                                case "APR":
-                                    month='04'
-                                case "MAY":
-                                    month='05'
-                                case "JUN":
-                                    month='06'
-                                case "JUL":
-                                    month='07'
-                                case "AUG":
-                                    month='08'
-                                case "SEP":
-                                    month='09'
-                                case "OCT":
-                                    month='10'
-                                case "NOV":
-                                    month='11'
-                                case "DEC":
-                                    month='12'
-                                case _:
-                                    print('Invalid month in ' + file)
-                            converted_date=acquired_date[7:11]+month+acquired_date[0:2]
-            conn.execute("INSERT INTO appnotes (appnoteid, appnote, name, acquired_date, \
-                            real_date, tag,notes, location, metadata,filename, status) \
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?);",
-                    (appnoteid, appnoteid, productname, acquired_date,converted_date,tag,\
-                    notes,location,metadata,file,status))
-            conn.commit()
-
-        if 'Datasheets' in file and 'fragment' not in file and 'index' not in file:
+        if ('EngineeringNotes' in file or 'Datasheets' in file or 'ApplicationNotes' in file)and 'fragment' not in file and 'index' not in file:
             metadata=''
             tag=''
             acquired_date=''
@@ -1685,20 +1569,27 @@ def rebuild_db():
             location=''
             filename = file.split(OSSEP)
             documentid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
-            
+            documenttype= ''
+            notes=''
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
+                if 'Datasheets' in file:
+                    documenttype='Datasheets'
+                if 'ApplicationNotes' in file:
+                    documenttype='ApplicationNotes'
+                if 'EngineeringNotes' in file:
+                    documenttype='EngineeringNotes'
                 for line in lines:
                     if line.startswith('.. image::'):
                         image=line.replace('.. image::','').strip()
-                        conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", ('Datasheets',documentid, image.strip()))
+                        conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", (documenttype,documentid, image.strip()))
                         conn.commit()
                     if  ':ref:`' in line and 'Location' not in line:
-                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", ('Datasheets',documentid, line.strip()))
+                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
                     if ':download:`' in line :
-                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", ('Datasheets',documentid, line.strip()))
+                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
                     if '.. #Metadata ' in line:
                         metadata=line.replace('.. #Metadata','').strip()
@@ -1754,7 +1645,7 @@ def rebuild_db():
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
                             real_date, tag,notes, location, metadata,filename, status) \
                     VALUES (?,?,?,?,?,?,?,?,?,?,?,?);",
-                    ('Datasheets',documentid, documentid, productname, acquired_date,converted_date,tag,\
+                    (documenttype,documentid, documentid, productname, acquired_date,converted_date,tag,\
                     notes,location,metadata,file,status))
             conn.commit()
 
