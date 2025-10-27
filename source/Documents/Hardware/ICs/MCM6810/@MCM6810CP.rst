@@ -21,7 +21,7 @@ MCM6810CP 128 x 8-Bit Static Random Access Memory (MCM6810)
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1MHz"
    "Notes",""

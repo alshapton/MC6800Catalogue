@@ -20,7 +20,7 @@ MC68A00CS Microprocessor Unit
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","Production"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Frequency","1.5Mhz"
    "Temperature","-40-85\ :sup:`o`\ C"
       

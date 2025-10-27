@@ -21,7 +21,7 @@ MC68A09CS 8-Bit Microprocessing Unit
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

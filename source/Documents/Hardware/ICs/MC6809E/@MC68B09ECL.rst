@@ -21,7 +21,7 @@ MC68B09ECL 8-Bit Microprocessing Unit (MC6809E)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

@@ -21,7 +21,7 @@ MC6847T1P Video Display Generator Unit
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","Advance"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Notes",""   
 
 .. rubric:: Collection Information

@@ -21,7 +21,7 @@ MC6821PDS Peripheral Interface Adapter (PIA)
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature",""
    "Frequency","1 Mhz"
    "Notes",""

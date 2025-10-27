@@ -21,7 +21,7 @@ MC68A21SS Peripheral Interface Adapter (PIA)
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","-25-150\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

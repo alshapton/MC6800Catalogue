@@ -71,10 +71,9 @@ def update_or_not_metadata(filename):
                             reference='<' + sb + '_Drawer_' + dr + '>'
                             metadata_line= f":ref:`{storage}, Drawer {drawer}, Row {row}, Column {column} {reference}`"
                             location_line = '   "Location","' + metadata_line + '"'
-                if '"Location",' in line:
-                    if found_metadata:
-                        # If we found metadata, replace the location line
-                        output_line = location_line + '\n'
+
+                if '"Location",' in line and 'Drawer' in metadata_dict and location_line == '   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"':
+                    output_line = '   "Location","TBD"\n' 
                 else:
                     output_line = line
                 newfile.write(output_line)
@@ -218,7 +217,7 @@ def create_new_group_from_index():
                 with open(new_file, "w") as c:
                     c.write(':orphan:\n\n')
                     c.write('.. _' + chip + ':\n\n')
-                    c.write(".. #None {'Product':'" + chip + "','Storage': 'Storage Box X','Drawer':X,'Row':Y,'Column':Z}\n\n")
+                    c.write(".. #Metadata {'Product':'" + chip + "','Storage': 'Storage Box X','Drawer':0,'Row':0,'Column':0}\n\n")
                     c.write(chip + ' ' + group_name + '\n')
                     c.write('=' * (len(chip) + len(group_name) + 1) + '\n\n')
                     c.write('.. image:: ..!..!..!..!images!NOIMAGE.png\n'.replace('!',OSSEP))
@@ -1529,7 +1528,7 @@ def rebuild_db():
                             status              TEXT        \
                        );")
     conn.commit()
-
+    
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS appnotelinks \
                        (    id INTEGER PRIMARY KEY,             \
                             appnoteid           TEXT,           \
@@ -1544,6 +1543,42 @@ def rebuild_db():
                        );")
     conn.commit()
 
+    # Create Document tables
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS documents \
+                       (    id INTEGER PRIMARY KEY,          \
+                            documenttype        TEXT,        \
+                            documentid          TEXT,        \
+                            document            TEXT,        \
+                            name                TEXT,        \
+                            tag                 TEXT,        \
+                            notes               TEXT,        \
+                            acquired_date       TEXT,        \
+                            real_date           TEXT,        \
+                            location            TEXT,        \
+                            metadata            TEXT,        \
+                            filename            TEXT,        \
+                            status              TEXT         \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS documentlinks \
+                       (    id INTEGER PRIMARY KEY,              \
+                            documenttype        TEXT,            \
+                            documentid          TEXT,            \
+                            link                TEXT             \
+                       );")
+    conn.commit()
+
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS documentimages \
+                       (    id INTEGER PRIMARY KEY,               \
+                            documenttype        TEXT,             \
+                            documentid          TEXT,             \
+                            image               TEXT              \
+                       );")
+    conn.commit()
+
+
+
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
@@ -1553,7 +1588,11 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM appnotes;")
     cursor_obj.execute("DELETE FROM appnoteimages;")
     cursor_obj.execute("DELETE FROM appnotelinks;")
+    conn.commit()
 
+    cursor_obj.execute("DELETE FROM documents;")
+    cursor_obj.execute("DELETE FROM documentimages;")
+    cursor_obj.execute("DELETE FROM documentlinks;")
     conn.commit()
 
     for file in files:
@@ -1635,6 +1674,87 @@ def rebuild_db():
                             real_date, tag,notes, location, metadata,filename, status) \
                     VALUES (?,?,?,?,?,?,?,?,?,?,?);",
                     (appnoteid, appnoteid, productname, acquired_date,converted_date,tag,\
+                    notes,location,metadata,file,status))
+            conn.commit()
+
+        if 'Datasheets' in file and 'fragment' not in file and 'index' not in file:
+            metadata=''
+            tag=''
+            acquired_date=''
+            converted_date=''
+            location=''
+            filename = file.split(OSSEP)
+            documentid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
+            
+            with open(file, 'r') as f:
+                prevproductname=''                
+                lines = f.readlines()
+                for line in lines:
+                    if line.startswith('.. image::'):
+                        image=line.replace('.. image::','').strip()
+                        conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", ('Datasheets',documentid, image.strip()))
+                        conn.commit()
+                    if  ':ref:`' in line and 'Location' not in line:
+                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", ('Datasheets',documentid, line.strip()))
+                        conn.commit()
+                    if ':download:`' in line :
+                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", ('Datasheets',documentid, line.strip()))
+                        conn.commit()
+                    if '.. #Metadata ' in line:
+                        metadata=line.replace('.. #Metadata','').strip()
+
+                        metadataline = line.replace('.. #Metadata ', '').strip()
+                        metadata_dict = eval(metadataline)
+                        
+                        location = metadata_dict["Folder"]
+                        location = location.replace("None",'')
+
+                    if line.startswith('.. _'):
+                        tag=line.replace('.. _','').split(':')[0]
+                    if line.startswith("====="):
+                        productname=prevproductname
+                    else:
+                        prevproductname=line.strip()
+                    if  CHECK_MARK in line or \
+                        UNDER_OFFER in line or \
+                        IN_TRANSIT in line or \
+                        CROSS_MARK in line:
+                            status = line.split('|')[1].strip()
+                    if CHECK_MARK in line:
+                            acquired_date = line.split('|')[2].strip().replace('"','')
+                            m=acquired_date[3:6].upper()
+                            match m:
+                                case "JAN":
+                                    month='01'
+                                case "FEB":
+                                    month='02'
+                                case "MAR":
+                                    month='03'
+                                case "APR":
+                                    month='04'
+                                case "MAY":
+                                    month='05'
+                                case "JUN":
+                                    month='06'
+                                case "JUL":
+                                    month='07'
+                                case "AUG":
+                                    month='08'
+                                case "SEP":
+                                    month='09'
+                                case "OCT":
+                                    month='10'
+                                case "NOV":
+                                    month='11'
+                                case "DEC":
+                                    month='12'
+                                case _:
+                                    print('Invalid month in ' + file)
+                            converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+            conn.execute("INSERT INTO documents (documenttype,documentid, documentid, name, acquired_date, \
+                            real_date, tag,notes, location, metadata,filename, status) \
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?);",
+                    ('Datasheets',documentid, documentid, productname, acquired_date,converted_date,tag,\
                     notes,location,metadata,file,status))
             conn.commit()
 
@@ -2023,7 +2143,7 @@ while True:
 
             #for row in output:
             #    metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
-            #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}"
+            #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':0,'Row':0,'Column':0}"
 
             #    metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["icid"])    
             #    if row["location"].strip() == '':

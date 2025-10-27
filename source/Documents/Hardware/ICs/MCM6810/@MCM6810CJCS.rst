@@ -21,7 +21,7 @@ MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
    "Manufacture Date","TBD"
    "Packaging","MIL-STD-883C"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature",""
    "Frequency",""
    "Notes",""

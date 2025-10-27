@@ -21,7 +21,7 @@ HEPC4801L HEP version of MC6800
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","HEP"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Notes",""
 
 .. rubric:: Collection Information

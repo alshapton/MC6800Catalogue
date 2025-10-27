@@ -21,7 +21,7 @@ MC6875AL M6800 Two-Phase Clock Generator/Driver (MC6875)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","-55-125\ :sup:`o`\ C"
    "Frequency","N/A"
    "Notes",""

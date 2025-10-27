@@ -20,7 +20,7 @@ MC68A03-1G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.25 Mhz"
    "Notes",""

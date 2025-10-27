@@ -21,7 +21,7 @@ MC68A44CP Direct Memory Access Controller (DMAC)
    "Manufacture Date","TBD"
    "Packaging","TBD"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Notes",""
    "Frequency","TBD"
    "Temperature","TBD"

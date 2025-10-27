@@ -21,7 +21,7 @@ MC6882AL Octal Three-State Buffer/Latch
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
+   "Location","TBD"
    "Temperature","0-75\ :sup:`o`\ C"
    "Function","Inverting"
    "Notes",""
