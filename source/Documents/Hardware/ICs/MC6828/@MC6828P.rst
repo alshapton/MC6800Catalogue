@@ -2,7 +2,7 @@
 
 .. _MC6828P:
 
-.. #Metadata {'Product':'MC6828P','Name':'MC6828P Priority Interrupt Controller','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6828P','Name':'MC6828P Priority Interrupt Controller','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6828P Priority Interrupt Controller
 =====================================
@@ -20,7 +20,7 @@ MC6828P Priority Interrupt Controller
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","N/A"
    "Frequency","N/A"
    "Notes",""

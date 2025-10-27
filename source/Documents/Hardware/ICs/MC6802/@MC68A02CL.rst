@@ -2,7 +2,7 @@
 
 .. _MC68A02CL:
 
-.. #Metadata {'Product':'MC68A02CL','Name':'MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A02CL','Name':'MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)
 =============================================================
@@ -20,7 +20,7 @@ MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

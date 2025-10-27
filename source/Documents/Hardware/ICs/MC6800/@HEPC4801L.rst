@@ -2,7 +2,7 @@
 
 .. _HEPC4801L:
 
-.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 HEPC4801L HEP version of MC6800
 ===============================
@@ -21,7 +21,7 @@ HEPC4801L HEP version of MC6800
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","HEP"
-   "Location",""
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Notes",""
 
 .. rubric:: Collection Information

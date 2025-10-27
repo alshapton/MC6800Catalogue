@@ -2,7 +2,7 @@
 
 .. _MC6882BL:
 
-.. #Metadata {'Product':'MC6882BL','Name':'MC6882BL Octal Three-State Buffer/Latch','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6882BL','Name':'MC6882BL Octal Three-State Buffer/Latch','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6882BL Octal Three-State Buffer/Latch
@@ -21,7 +21,7 @@ MC6882BL Octal Three-State Buffer/Latch
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-75\ :sup:`o`\ C"
    "Function","Non-Inverting"
    "Notes",""

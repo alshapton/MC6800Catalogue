@@ -2,7 +2,7 @@
 
 .. _MC68A00CL:
 
-.. #Metadata {'Product':'MC68A00CL','Name':'MC68A00CL Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A00CL','Name':'MC68A00CL Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68A00CL Microprocessor Unit
 =============================
@@ -20,7 +20,7 @@ MC68A00CL Microprocessor Unit
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Frequency","1.5Mhz"
    "Temperature","-40-85\ :sup:`o`\ C"
       

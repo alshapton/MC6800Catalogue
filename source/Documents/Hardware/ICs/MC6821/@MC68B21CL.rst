@@ -2,7 +2,7 @@
 
 .. _MC68B21CL:
 
-.. #Metadata {'Product':'MC68B21CL','Name':'MC68B21CL Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B21CL','Name':'MC68B21CL Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68B21CL Peripheral Interface Adapter (PIA)
@@ -21,7 +21,7 @@ MC68B21CL Peripheral Interface Adapter (PIA)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

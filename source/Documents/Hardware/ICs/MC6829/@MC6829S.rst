@@ -2,7 +2,7 @@
 
 .. _MC6829S:
 
-.. #Metadata {'Product':'MC6829S','Name':'MC6829S Memory Management Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6829S','Name':'MC6829S Memory Management Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6829S Memory Management Unit
 ==============================
@@ -20,7 +20,7 @@ MC6829S Memory Management Unit
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

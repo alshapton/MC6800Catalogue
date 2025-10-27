@@ -2,7 +2,7 @@
 
 .. _MC68A29CL:
 
-.. #Metadata {'Product':'MC68A29CL','Name':'MC68A29CL Memory Management Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A29CL','Name':'MC68A29CL Memory Management Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68A29CL Memory Management Unit
 ================================
@@ -20,7 +20,7 @@ MC68A29CL Memory Management Unit
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

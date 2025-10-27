@@ -2,7 +2,7 @@
 
 .. _MC68A21CSS:
 
-.. #Metadata {'Product':'MC68A21CSS','Name':'MC68A21CSS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A21CSS','Name':'MC68A21CSS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68A21CSS Peripheral Interface Adapter (PIA)
@@ -21,7 +21,7 @@ MC68A21CSS Peripheral Interface Adapter (PIA)
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-25-150\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

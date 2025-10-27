@@ -2,7 +2,7 @@
 
 .. _MC6870:
 
-.. #Metadata {'Product':'MC6870','Name':'MC6870 Two-Phase Microprocessor Clock','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6870','Name':'MC6870 Two-Phase Microprocessor Clock','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6870 Two-Phase Microprocessor Clock
@@ -21,7 +21,7 @@ MC6870 Two-Phase Microprocessor Clock
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-55-125\ :sup:`o`\ C"
    "Frequency","N/A"
    "Notes",""

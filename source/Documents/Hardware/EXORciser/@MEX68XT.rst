@@ -4,7 +4,7 @@
 
 MEX68XT Extender Module
 =======================
-.. #None {'Product':'MEX68XT Extender Module','Folder': 'X','Comments':''}
+.. #Metadata {'Product':'MEX68XT Extender Module','Folder': 'X','Comments':''}
 
 .. image:: ../../../images/Hardware/EXORciser/MEX68XT.png
    :width: 400

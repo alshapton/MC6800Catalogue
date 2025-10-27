@@ -2,7 +2,7 @@
 
 .. _MC68B29P:
 
-.. #Metadata {'Product':'MC68B29P','Name':'MC68B29P Memory Management Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B29P','Name':'MC68B29P Memory Management Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68B29P Memory Management Unit
 ===============================
@@ -20,7 +20,7 @@ MC68B29P Memory Management Unit
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

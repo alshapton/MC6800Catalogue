@@ -2,7 +2,7 @@
 
 .. _MC6852P:
 
-.. #Metadata {'Product':'MC6852P','Name':'MC6852P Synchronous Serial Data Adapter (SSDA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6852P','Name':'MC6852P Synchronous Serial Data Adapter (SSDA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6852P Synchronous Serial Data Adapter (SSDA)
@@ -21,7 +21,7 @@ MC6852P Synchronous Serial Data Adapter (SSDA)
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

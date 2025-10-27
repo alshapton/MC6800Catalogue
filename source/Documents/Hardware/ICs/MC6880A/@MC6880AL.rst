@@ -2,7 +2,7 @@
 
 .. _MC6880AL:
 
-.. #Metadata {'Product':'MC6880AL','Name':'MC6880AL Quad Three-State Bus Transceiver','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6880AL','Name':'MC6880AL Quad Three-State Bus Transceiver','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6880AL Quad Three-State Bus Transceiver
@@ -21,7 +21,7 @@ MC6880AL Quad Three-State Bus Transceiver
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

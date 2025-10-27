@@ -2,7 +2,7 @@
 
 .. _MCM68A10P:
 
-.. #Metadata {'Product':'MCM68A10P','Name':'MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MCM68A10P','Name':'MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810)
@@ -21,7 +21,7 @@ MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5MHz"
    "Notes",""

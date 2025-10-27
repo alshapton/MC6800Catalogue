@@ -2,7 +2,7 @@
 
 .. _MC6829CP:
 
-.. #Metadata {'Product':'MC6829CP','Name':'MC6829CP Memory Management Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6829CP','Name':'MC6829CP Memory Management Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6829CP Memory Management Unit
 ===============================
@@ -20,7 +20,7 @@ MC6829CP Memory Management Unit
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

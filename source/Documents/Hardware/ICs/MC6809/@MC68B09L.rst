@@ -2,7 +2,7 @@
 
 .. _MC68B09L:
 
-.. #Metadata {'Product':'MC68B09L','Name':'MC68B09L 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B09L','Name':'MC68B09L 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68B09L 8-Bit Microprocessing Unit
@@ -21,7 +21,7 @@ MC68B09L 8-Bit Microprocessing Unit
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

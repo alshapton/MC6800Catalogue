@@ -2,7 +2,7 @@
 
 .. _MC6809P:
 
-.. #Metadata {'Product':'MC6809P','Name':'MC6809P 8-Bit Microprocessing Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6809P','Name':'MC6809P 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6809P 8-Bit Microprocessing Unit
@@ -21,7 +21,7 @@ MC6809P 8-Bit Microprocessing Unit
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

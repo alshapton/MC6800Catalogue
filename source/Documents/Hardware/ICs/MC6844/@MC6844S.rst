@@ -2,7 +2,7 @@
 
 .. _MC6844S:
 
-.. #Metadata {'Product':'MC6844S','Name':'MC6844S Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6844S','Name':'MC6844S Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 .. #Note {'Product':'MC68B44L','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
 
@@ -22,7 +22,7 @@ MC6844S Direct Memory Access Controller (DMAC)
    "Manufacture Date","TBD"
    "Packaging","TBD"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Notes",""
    "Frequency","TBD"
    "Temperature","TBD"

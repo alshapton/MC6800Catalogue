@@ -2,7 +2,7 @@
 
 .. _MC68B488PDS:
 
-.. #Metadata {'Product':'MC68B488PDS','Name':'MC68B488PDS General Purpose Interface Adapter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B488PDS','Name':'MC68B488PDS General Purpose Interface Adapter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68B488PDS General Purpose Interface Adapter
@@ -21,7 +21,7 @@ MC68B488PDS General Purpose Interface Adapter
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

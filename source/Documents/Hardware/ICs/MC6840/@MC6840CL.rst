@@ -2,7 +2,7 @@
 
 .. _MC6840CL:
 
-.. #Metadata {'Product':'MC6840CL','Name':'MC6840CL Programmable Timer Module (PTM)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6840CL','Name':'MC6840CL Programmable Timer Module (PTM)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6840CL Programmable Timer Module (PTM)
@@ -21,7 +21,7 @@ MC6840CL Programmable Timer Module (PTM)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

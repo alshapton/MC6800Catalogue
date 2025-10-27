@@ -2,7 +2,7 @@
 
 .. _MCM6832L:
 
-.. #Metadata {'Product':'MCM6832L','Name':'MCM6832L 2048 x 8-bit Read Only Memory','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MCM6832L','Name':'MCM6832L 2048 x 8-bit Read Only Memory','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MCM6832L 2048 x 8-bit Read Only Memory
@@ -21,7 +21,7 @@ MCM6832L 2048 x 8-bit Read Only Memory
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

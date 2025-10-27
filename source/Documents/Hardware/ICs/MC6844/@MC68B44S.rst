@@ -2,7 +2,7 @@
 
 .. _MC68B44S:
 
-.. #Metadata {'Product':'MC68B44S','Name':'MC68B44S Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68B44S','Name':'MC68B44S Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68B44S Direct Memory Access Controller (DMAC)
@@ -21,7 +21,7 @@ MC68B44S Direct Memory Access Controller (DMAC)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Notes",""
    "Frequency","2 MHz"
    "Temperature","0-70\ :sup:`o`\ C"

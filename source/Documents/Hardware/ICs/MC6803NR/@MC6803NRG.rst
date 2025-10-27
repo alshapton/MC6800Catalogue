@@ -2,7 +2,7 @@
 
 .. _MC6803NRG:
 
-.. #Metadata {'Product':'MC6803NRG','Name':'MC6803NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6803NRG','Name':'MC6803NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6803NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
 =============================================================================
@@ -20,7 +20,7 @@ MC6803NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
    "Manufacture Date","TBD"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

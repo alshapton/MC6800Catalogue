@@ -5,7 +5,7 @@
 MC6882 Octal Three-State Buffer/Latch
 =====================================
 
-.. #None {'Product':'MC6882 Octal Three-State Buffer/Latch','Folder': 'X','Comments':''}
+.. #Metadata {'Product':'MC6882 Octal Three-State Buffer/Latch','Folder': 'X','Comments':''}
 
 .. image:: ../../images/DataSheets/DS-MC6882.png
    :width: 400

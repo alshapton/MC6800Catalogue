@@ -2,7 +2,7 @@
 
 .. _MC6821LDS:
 
-.. #Metadata {'Product':'MC6821LDS','Name':'MC6821LDS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6821LDS','Name':'MC6821LDS Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6821LDS Peripheral Interface Adapter (PIA)
@@ -21,7 +21,7 @@ MC6821LDS Peripheral Interface Adapter (PIA)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature",""
    "Frequency","1 Mhz"
    "Notes",""

@@ -2,7 +2,7 @@
 
 .. _MC6809ECS:
 
-.. #Metadata {'Product':'MC6809ECS','Name':'MC6809ECS 8-Bit Microprocessing Unit (MC6809E)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6809ECS','Name':'MC6809ECS 8-Bit Microprocessing Unit (MC6809E)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6809ECS 8-Bit Microprocessing Unit (MC6809E)
@@ -21,7 +21,7 @@ MC6809ECS 8-Bit Microprocessing Unit (MC6809E)
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

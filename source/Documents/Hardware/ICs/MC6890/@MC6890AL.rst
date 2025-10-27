@@ -2,7 +2,7 @@
 
 .. _MC6890AL:
 
-.. #Metadata {'Product':'MC6890AL','Name':'MC6890AL MPU Bus-Compatible 8-Bit D-to-A Converter','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6890AL','Name':'MC6890AL MPU Bus-Compatible 8-Bit D-to-A Converter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC6890AL MPU Bus-Compatible 8-Bit D-to-A Converter
@@ -21,7 +21,7 @@ MC6890AL MPU Bus-Compatible 8-Bit D-to-A Converter
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-55-125\ :sup:`o`\ C"
    "Frequency","N/A"
    "Notes",""

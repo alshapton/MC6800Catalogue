@@ -2,7 +2,7 @@
 
 .. _MC6800S:
 
-.. #Metadata {'Product':'MC6800S','Name':'MC6800S Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC6800S','Name':'MC6800S Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6800S Microprocessor Unit
 ===========================
@@ -20,7 +20,7 @@ MC6800S Microprocessor Unit
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Frequency","1Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
 

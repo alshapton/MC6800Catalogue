@@ -4,7 +4,9 @@
 
 DS-MC6859 Data Security Device
 ==============================
-.. #None {'Product':'MC6859 Data Security Device','Folder': 'X','Comments':''}
+
+.. #Metadata {'Product':'MC6859 Data Security Device','Folder': 'X','Comments':''}
+
 .. image:: ../../images/DataSheets/MC6859.png
    :width: 400
    :align: center

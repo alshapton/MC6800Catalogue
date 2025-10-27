@@ -53,10 +53,11 @@ def update_or_not_metadata(filename):
                 output_line = line       
                 if '.. #Metadata' in line:
                     metadataline = line.replace('.. #Metadata ', '').strip()
+                    print(metadataline)
                     metadata_dict = eval(metadataline)
                     metadata_line=str(metadata_dict).split(',')
                     if metadata_dict != '':
-
+                    
                         if 'Drawer' in metadata_dict:
                             found_metadata=True
 
@@ -1984,11 +1985,12 @@ while True:
                     for line in lines:
                         if "Metadata" in line:
                             found_metadata=True
-                        if "#None" in line and found_metadata==True:
+                        if "#Metadata" in line and "'Drawer':X" in line:
                             illegal_metadata.append(filename)
                         if "#None" in line:
-                            print("#None metadata : " + filename)
+                            #print("#None metadata : " + filename)
                             found_metadata=True
+                            illegal_metadata.append(filename)
                             none_metadatacount+=1
                         if "#TBD" in line:
                             print("#TBD metadata : " + filename)
@@ -2011,7 +2013,7 @@ while True:
                 print(str(metadatacount) + " with no metadata.")
 
             for fullfilename in illegal_metadata:
-                print("Illegal metadata : " + fullfilename)
+                print("#None metadata : " + fullfilename)
             #output = read_db("SELECT * FROM ics WHERE metadata IS NULL or metadata = '' order by icid;")
 
             #for row in output:
@@ -2026,10 +2028,10 @@ while True:
             #    print(metadataline)
                 #fullfilename = row["filename"]
                 #print('In file: ' + fullfilename)
-                with open(fullfilename, 'r') as f:
-                        lines = f.readlines()     
-                with open(fullfilename, 'w') as f:
-                    for line in lines:
+                #with open(fullfilename, 'r') as f:
+                #        lines = f.readlines()     
+                #with open(fullfilename, 'w') as f:
+                #    for line in lines:
                 #        
                 #        if line.startswith('.. _'):
                 #            f.write(line)
@@ -2037,8 +2039,12 @@ while True:
                 #        else:
                 #            f.write(line)
                 #        
-                        if '#None' not in line:
-                            f.write(line)
+                #       if '#Metadata' in line:
+                #            newline=line.replace(':X',':0').replace(':Y',':0').replace(':Z',':0')
+                #            f.write(newline)
+                #        else:
+                #           f.write(line)
+
                 
                 
             print('Done') 

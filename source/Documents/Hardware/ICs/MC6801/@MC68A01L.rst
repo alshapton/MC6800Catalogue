@@ -2,7 +2,7 @@
 
 .. _MC68A01L:
 
-.. #Metadata {'Product':'MC68A01L','Name':'MC68A01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A01L','Name':'MC68A01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68A01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 ========================================================
@@ -20,7 +20,7 @@ MC68A01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)
    "Manufacture Date","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""

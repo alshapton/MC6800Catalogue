@@ -2,7 +2,7 @@
 
 .. _MC68A50CS:
 
-.. #Metadata {'Product':'MC68A50CS','Name':'MC68A50CS Asynchronous Communications Interface Adapter (MC6850)','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68A50CS','Name':'MC68A50CS Asynchronous Communications Interface Adapter (MC6850)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
 ================================================================
@@ -20,7 +20,7 @@ MC68A50CS Asynchronous Communications Interface Adapter (MC6850)
    "Manufacture Date","TBD"
    "Packaging","CERDIP"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.5MHz"
    "Notes",""

@@ -2,7 +2,7 @@
 
 .. _MC68701L-1:
 
-.. #Metadata {'Product':'MC68701L-1','Name':'MC68701L-1 Microprocessor Unit','Storage': 'S','Drawer':X,'Row':Y,'Column':Z}
+.. #Metadata {'Product':'MC68701L-1','Name':'MC68701L-1 Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 
 MC68701L-1 Microprocessor Unit
@@ -21,7 +21,7 @@ MC68701L-1 Microprocessor Unit
    "Manufacture Date","TBD"
    "Packaging","TBD"
    "Status","TBD"
-   "Location","TBD"
+   "Location",":ref:`S, Drawer 0, Row 0, Column 0 <S_Drawer_0>`"
    "Notes",""
    "Frequency","TBD"
    "Temperature","TBD"
