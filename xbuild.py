@@ -602,11 +602,13 @@ def update_storage():
                         write_folder=False
                     case "In Transit":
                         write_folder=False
+                    case ' ':
+                        write_folder=False
                     case _:
                         write_folder=True
                         if '<' not in item['Folder']:
                             fmf.write(map_reference + '\n\n.. rubric:: Folder ' + current_folder + '\n\n')
-            
+                
                 if write_folder:
                     if '<' in item['Folder']:
                         write_folder=False
@@ -615,7 +617,7 @@ def update_storage():
                         fmf.write('.. csv-table::\n')
                         fmf.write('   :header: "Name","Comments"\n')
                         fmf.write('   :widths: 60,40\n\n')
-                            
+
             if write_folder:
                 
                 fmf.write('    :ref:`' + item['Product'] + ' <' + item['Ref'] + '>`,"')
@@ -1547,6 +1549,14 @@ def rebuild_db():
     conn.commit()
 
 
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS carousels     \
+                       (    id INTEGER PRIMARY KEY,              \
+                            documenttype        TEXT,            \
+                            documentid          TEXT,            \
+                            carouselid          TEXT,            \
+                            carouselfile        TEXT             \
+                       );")
+    conn.commit()
 
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
@@ -1557,17 +1567,24 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM documents;")
     cursor_obj.execute("DELETE FROM documentimages;")
     cursor_obj.execute("DELETE FROM documentlinks;")
+    cursor_obj.execute("DELETE FROM carousels;")
+
     conn.commit()
 
     for file in files:
 
-        if ('Generic' in file or 'EngineeringNotes' in file or 'Datasheets' in file or 'ApplicationNotes' in file)and 'fragment' not in file and 'index' not in file:
+        if ('Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file or 'Generic' in file or 
+            'EngineeringNotes' in file or 'Datasheets' in file or 
+            'ApplicationNotes' in file) \
+            and 'fragment' not in file and 'index' not in file:
             metadata=''
             tag=''
             acquired_date=''
             converted_date=''
             location=''
             filename = file.split(OSSEP)
+            carouselfile=''
+            carouselid=1
             documentid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
             documenttype= ''
             notes=''
@@ -1582,7 +1599,16 @@ def rebuild_db():
                     documenttype='EngineeringNotes'
                 if 'Generic' in file:
                     documenttype='Generic'
+                if 'Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file:
+                    documenttype='Hardware/EXORciser'
+                    documentid = filename[4].replace('@' ,'').replace('.' + SUFFIX,'')  
+
                 for line in lines:
+                    if '.. include::' in line and 'carousel in line':
+                        carouselfile=line.replace('.. include::','').strip()
+                        conn.execute("INSERT INTO carousels (documenttype,documentid, carouselid, carouselfile) VALUES (?,?,?,?);", (documenttype,documentid, carouselid, carouselfile.strip()))
+                        conn.commit()
+                        carouselid+=1
                     if line.startswith('.. image::'):
                         image=line.replace('.. image::','').strip()
                         conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", (documenttype,documentid, image.strip()))
@@ -1654,6 +1680,7 @@ def rebuild_db():
 
         if 'ICs'+OSSEP+'MC' in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'packaging' not in file:
             filename = file.split(OSSEP)
+            carouselid=1
             parent = filename[4]
             parent_number = ''
             icid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
@@ -1684,7 +1711,11 @@ def rebuild_db():
                         conn.commit()
                     if '.. #Metadata ' in line:
                         metadata=line.replace('.. #Metadata','').strip()
-
+                    if '.. include::' in line and 'carousel in line':
+                        carouselfile=line.replace('.. include::','').strip()
+                        conn.execute("INSERT INTO carousels (documenttype,documentid, carouselid, carouselfile) VALUES (?,?,?,?);", (documenttype,documentid, carouselid, carouselfile.strip()))
+                        conn.commit()
+                        carouselid+=1
                     if  ':ref:`' in line and 'Location' not in line:
                         conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
                         conn.commit()

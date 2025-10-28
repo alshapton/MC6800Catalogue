@@ -135,23 +135,3 @@
     :ref:`Motorola Software for General Electric InfoSheet <M-GE>`,""
     :ref:`Motorola Software for Motorola Time Sharing Systems InfoSheet <M-MTSS>`,""
     :ref:`Motorola Software for United Computing Service InfoSheet <M-UCS>`,""
-
-
-.. _X_map_reference:
-
-.. rubric:: Folder X
-
-.. csv-table::
-   :header: "Name","Comments"
-   :widths: 60,40
-
-    :ref:`EXORset 30 Users Guide <M6809SET30(D)>`,""
-    :ref:`EXORset 30 XDOS Assembler Users Guide <M6809ASM09(D)>`," "
-    :ref:`MC6855 Serial Direct Memory Access Processor <DS-MC6855>`,""
-    :ref:`MC6859 Data Security Device <DS-MC6859>`,""
-    :ref:`MC6862 2400 bps DIGITAL MODEM <DS-MC6862>`,""
-    :ref:`MC6882 Octal Three-State Buffer/Latch <DS-MC6882>`,""
-    :ref:`MCM6810 128 x 8-Bit Static Random Access Memory <DS-MCM6810>`,""
-    :ref:`MCM6810 128 x 8-Bit Static Random Access Memory <DS-MCM6810-2>`,"1981"
-    :ref:`MEK68R2 Programmable CRT Video Interface <MEK68R2>`,""
-    :ref:`Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR) <DS-MC6801-03-03NR>`,""

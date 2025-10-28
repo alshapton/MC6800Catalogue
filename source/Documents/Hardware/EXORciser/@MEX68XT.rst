@@ -4,13 +4,14 @@
 
 MEX68XT Extender Module
 =======================
-.. #Metadata {'Product':'MEX68XT Extender Module','Folder': 'X','Comments':''}
+.. #Metadata {'Product':'MEX68XT Extender Module','Folder': ' ','Comments':''}
 
 .. image:: ../../../images/Hardware/EXORciser/MEX68XT.png
    :width: 400
    :align: center
 
-.. rubric::  Rare - possibly $1675 or more in 2025
+.. note::
+   Rare - possibly $1675 or more in 2025
 
 .. rubric:: Collection Information
 

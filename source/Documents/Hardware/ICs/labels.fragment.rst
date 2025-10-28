@@ -134,7 +134,7 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMC6889P|  image:: /images/Hardware/ICs/MC6889P.png
+.. |iMC6889P|  image:: /images/Hardware/ICs/MC6889/MC6889P.png
    :width: 200
    :class: no-scaled-links
 
