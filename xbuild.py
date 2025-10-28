@@ -1561,7 +1561,7 @@ def rebuild_db():
 
     for file in files:
 
-        if ('EngineeringNotes' in file or 'Datasheets' in file or 'ApplicationNotes' in file)and 'fragment' not in file and 'index' not in file:
+        if ('Generic' in file or 'EngineeringNotes' in file or 'Datasheets' in file or 'ApplicationNotes' in file)and 'fragment' not in file and 'index' not in file:
             metadata=''
             tag=''
             acquired_date=''
@@ -1580,6 +1580,8 @@ def rebuild_db():
                     documenttype='ApplicationNotes'
                 if 'EngineeringNotes' in file:
                     documenttype='EngineeringNotes'
+                if 'Generic' in file:
+                    documenttype='Generic'
                 for line in lines:
                     if line.startswith('.. image::'):
                         image=line.replace('.. image::','').strip()

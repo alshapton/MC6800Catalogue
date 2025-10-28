@@ -5,7 +5,7 @@
 MCM6810 128 x 8-Bit Static Random Access Memory (1981 Edition)
 ==============================================================
 
-.. #Metadata {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory','Folder': 'X','Comments':'1981'}
+.. #Metadata {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory','Folder': '','Comments':'1981'}
 
 .. image:: ../../images/DataSheets/MCM6810.2.png
    :width: 400
