@@ -12,6 +12,18 @@ from xbuild_support.file_utilities import *
 
 import sqlite3
 
+# Set up rich environment
+import rich
+from rich.console import Console
+from rich.prompt import Prompt
+from rich.theme import Theme
+custom_theme = Theme({
+    "info": "dim cyan",
+    "warning": "magenta",
+    "danger": "bold red"
+})
+console = Console(theme=custom_theme)
+
 
 CHECK_MARK    = '|present|'
 CROSS_MARK    = '|notpresent|'
@@ -20,6 +32,8 @@ UNDER_OFFER   = '|underoffer|'
 BIGGER_DOC    = '|document|'
 
 OSSEP         = os.sep
+
+DB = 'xbuild_support' + OSSEP + 'xbuild.db'
 
 ANYUNDEROFFER = False
 ANYINTRANSIT  = False
@@ -1474,7 +1488,7 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
 
 def rebuild_db():
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn = sqlite3.connect(DB)
     cursor_obj = conn.cursor()
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS ics     \
                        (    id INTEGER PRIMARY KEY,        \
@@ -1573,7 +1587,10 @@ def rebuild_db():
 
     for file in files:
 
-        if ('Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file or 'Generic' in file or 
+        if ('Hardware'+OSSEP+'Other'+OSSEP+'@' in file or
+            'Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file or 
+            'Hardware'+OSSEP+'EXORciser'+OSSEP+'Micromodules' + OSSEP + '@' in file or
+            'Generic' in file or 
             'EngineeringNotes' in file or 'Datasheets' in file or 
             'ApplicationNotes' in file) \
             and 'fragment' not in file and 'index' not in file:
@@ -1602,7 +1619,13 @@ def rebuild_db():
                 if 'Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file:
                     documenttype='Hardware/EXORciser'
                     documentid = filename[4].replace('@' ,'').replace('.' + SUFFIX,'')  
-
+                if 'Hardware'+OSSEP+'Other'+OSSEP+'@' in file:
+                    documenttype='Hardware/Other'
+                    documentid = filename[4].replace('@' ,'').replace('.' + SUFFIX,'')  
+                if 'Hardware'+OSSEP+'EXORciser'+OSSEP+'Micromodules' + OSSEP + '@' in file:
+                    documenttype='Hardware/EXORciser/Micromodules'
+                    documentid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
+    
                 for line in lines:
                     if '.. include::' in line and 'carousel in line':
                         carouselfile=line.replace('.. include::','').strip()
@@ -1795,7 +1818,7 @@ def rebuild_db():
                                 case _:
                                     print('Invalid month in ' + file)
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
-                            parent_number = parent.replace('MCM','').replace('MC','').strip()
+                    parent_number = parent.replace('MCM','').replace('MC','').strip()
             conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
                                            tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
                                            location, metadata,filename) \
@@ -2100,6 +2123,12 @@ while True:
                 
             print('Done') 
             
+        case "-":
+                console.print("This is destructive", style="danger")
+                choice = Prompt.ask("Do you really want to delete the database?", choices=["Y", "N"], default="N", case_sensitive=True)
+                print(choice)
+                if choice == 'Y':
+                    os.remove(DB)
         case "X":
             print('Exiting')
             exit()
