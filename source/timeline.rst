@@ -152,3 +152,7 @@ This is the timeline of acquisitions (as at 28-10-2025).
    05-OCT-2025,:ref:`MC68A54P Advanced Data-Link Controller (ADLC) <MC68A54P>`
    21-OCT-2025,:ref:`MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875) <MC6875L>`
    25-OCT-2025,:ref:`MCM6832P 2048 x 8-bit Read Only Memory <MCM6832P>`
+   28-OCT-2025,:ref:`MC6829 Memory Management Unit <MC6829>`
+   28-OCT-2025,:ref:`MC6854L Advanced Data-Link Controller (ADLC) <MC6854L>`
+   28-OCT-2025,:ref:`MC68701S Microprocessor Unit <MC68701S>`
+   28-OCT-2025,:ref:`MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10CL>`

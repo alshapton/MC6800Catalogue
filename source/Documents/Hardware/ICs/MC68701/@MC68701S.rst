@@ -2,13 +2,12 @@
 
 .. _MC68701S:
 
-.. #Metadata {'Product':'MC68701S','Name':'MC68701S Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
-
+.. #Metadata {'Product':'MC68701S','Name':'MC68701S Microprocessor Unit','Storage': 'Storage Box 2','Drawer':2,'Row':3,'Column':1}
 
 MC68701S Microprocessor Unit
 ============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC68701/MC68701S.png
    :width: 400
    :align: center
 
@@ -17,14 +16,15 @@ MC68701S Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Packaging","TBD"
-   "Status","TBD"
-   "Location","TBD"
+   "Date Code","8933"
+   "Manufacture Date","07-AUG-1989 to 13-AUG-1989"
+   "Packaging","Ceramic"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 3, Column 1 <Storage_Box_2_Drawer_2>`"
    "Notes",""
    "Frequency","TBD"
    "Temperature","TBD"
+   "Mask","32D"
    
 .. rubric:: Collection Information
 
@@ -32,7 +32,7 @@ MC68701S Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|intransit|"
+   |present| 28-OCT-2025
 
 .. rubric:: Links
 

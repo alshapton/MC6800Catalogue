@@ -667,7 +667,6 @@ def update_storage():
                 cols=0
 
             if item['Drawer'] != drawer:
-
                 if cols > colcount:
                     for i in range(colcount,cols):
                         c.write(',""')
@@ -1921,7 +1920,7 @@ while True:
                c=c+1 
             if c == 0:
                 print('IC ' + ic + ' not found')
-                continue
+                break
             if c > 1:
                 print('IC ' + ic + ' found multiple times - manual update required')
                 continue
@@ -1972,6 +1971,8 @@ while True:
                         rownum=input('Enter Row: ')
                         column=input('Enter Column: ')
                         
+                        loc ='"Location",":ref:`Storage Box @, Drawer !, Row #, Column + <Storage_Box_@_Drawer_!>`"'.replace('@',storagebox).replace('!',drawer).replace('#',rownum).replace('+',column)
+
                         with open(filename, 'r') as f:
                             lines = f.readlines()
                         for line in lines:
@@ -2030,6 +2031,12 @@ while True:
                                     f.write(newline)
                                     writeln=True
 
+                                if "Location" in line:
+                                    if drawer != '':
+                                        f.write('   ' + loc + '\n')
+                                    else:
+                                        f.write('   "Location","TBD"\n')   
+                                    writeln=True
                                 if not writeln:
                                     f.write(line)
 

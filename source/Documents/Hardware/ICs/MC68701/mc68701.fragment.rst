@@ -13,6 +13,6 @@
       "|notpresent| :ref:`MC68701L <MC68701L>`","TBD","TBD","TBD",""
       "|notpresent| :ref:`MC68A701L <MC68A701L>`","TBD","TBD","TBD",""
       "|present| :ref:`MC68701U4L <MC68701U4L>`","Ceramic","1 MHz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC68701S <MC68701S>`","TBD","TBD","TBD",""
+      "|present| :ref:`MC68701S <MC68701S>`","Ceramic","TBD","TBD",""
       "|notpresent| :ref:`MC68A701U4L-1 <MC68B701U4L-1>`","Ceramic","1.25 MHz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC68701CL-1 <MC68701CL-1>`","Ceramic","1.25 Mhz","-40-85\ :sup:`o`\ C",""

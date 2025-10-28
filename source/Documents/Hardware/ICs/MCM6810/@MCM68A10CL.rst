@@ -2,13 +2,13 @@
 
 .. _MCM68A10CL:
 
-.. #Metadata {'Product':'MCM68A10CL','Name':'MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MCM68A10CL','Name':'MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':6}
 
 
 MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810)
 ============================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM68A10CL.png
    :width: 400
    :align: center
 
@@ -17,11 +17,12 @@ MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","7733"
+   "Manufacture Date","08-AUG-1977 to 14-AUG-1977"
    "Packaging","Ceramic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 6 <Storage_Box_1_Drawer_4>`"
+   "Mask","A"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.5MHz"
    "Notes",""
@@ -33,7 +34,7 @@ MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810)
    :header: "Component"
    :widths: auto
 
-   "|notpresent|"
+   |present| 28-OCT-2025
 
 .. rubric:: Links
 
