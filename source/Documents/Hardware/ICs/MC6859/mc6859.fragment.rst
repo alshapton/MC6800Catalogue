@@ -5,4 +5,4 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      "|intransit| :ref:`MC6859L <MC68692L>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
+      "|intransit| :ref:`MC6859L <MC6859L>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""

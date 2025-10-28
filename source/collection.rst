@@ -85,6 +85,7 @@ This is the current collection (as at 28-10-2025) of the items produced by Motor
 	":ref:`MC68B03P <MC68B03P>`","Plastic",":ref:`Storage Box 2, Drawer 1, Row 3, Column 2 <Storage_Box_2_Drawer_1>`"
 	":ref:`MC6808L <MC6808L>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 1, Column 1 <Storage_Box_2_Drawer_1>`"
 	":ref:`MC68B09CP <MC68B09CP>`","Plastic",":ref:`Storage Box 2, Drawer 1, Row 3, Column 3 <Storage_Box_2_Drawer_1>`"
+	":ref:`MC68B09P <MC68B09P>`","Plastic",":ref:`Storage Box 2, Drawer 2, Row 2, Column 2 <Storage_Box_2_Drawer_2>`"
 	":ref:`SC84003L <SC84003L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`HD63C09EP <HD63C09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC6809EP <MC6809EP>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"

@@ -222,6 +222,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68B09P|  image:: /images/Hardware/ICs/MC6809/MC68B09P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B09CP|  image:: /images/Hardware/ICs/MC6809/MC68B09CP.png
    :width: 200
    :class: no-scaled-links

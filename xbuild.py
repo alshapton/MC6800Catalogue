@@ -18,8 +18,8 @@ from rich.console import Console
 from rich.prompt import Prompt
 from rich.theme import Theme
 custom_theme = Theme({
-    "info": "dim cyan",
-    "warning": "magenta",
+    "info": "bold green",
+    "warning": "bold Blue",
     "danger": "bold red"
 })
 console = Console(theme=custom_theme)
@@ -1871,12 +1871,12 @@ while True:
     match type:
         case "1":
             #Get year and week from user
-            y = input('Enter year: ')
-            w = input('Enter week: ')
+            y = Prompt.ask("Enter Year e.g. 1977")
+            w = Prompt.ask("Enter week e.g. 1-53")
             #Call function to get dates range 
             firstdate, lastdate =  getDateRangeFromWeek(y,w)
             output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
-            print(output)
+            console.print(output, style="info")
         case "2":
             index_entry = do_create()
             print(index_entry)
@@ -2133,18 +2133,19 @@ while True:
         case "-":
                 console.print("This is destructive", style="danger")
                 choice = Prompt.ask("Do you really want to delete the database?", choices=["Y", "N"], default="N", case_sensitive=True)
-                print(choice)
                 if choice == 'Y':
                     os.remove(DB)
+                    console.print("Database deleted", style="danger")
+
         case "X":
-            print('Exiting')
+            console.print("Exiting", style="info")
             exit()
         case "x":
-            print('Exiting')
+            console.print("Exiting", style="info")
             exit()
 
         case _:
-            print('Invalid choice')
+            console.print("Invalid Choice", style="warning")
             
         
 

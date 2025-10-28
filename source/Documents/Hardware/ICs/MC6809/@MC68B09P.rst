@@ -2,13 +2,12 @@
 
 .. _MC68B09P:
 
-.. #Metadata {'Product':'MC68B09P','Name':'MC68B09P 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
-
+.. #Metadata {'Product':'MC68B09P','Name':'MC68B09P 8-Bit Microprocessing Unit','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':2}
 
 MC68B09P 8-Bit Microprocessing Unit
 ====================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6809/MC68B09P.png
    :width: 400
    :align: center
 
@@ -17,12 +16,13 @@ MC68B09P 8-Bit Microprocessing Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8212"
+   "Manufacture Date","15-MAR-1982 to 21-MAR-1982"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 2, Column 2 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
+   "Mask","CW3"
    "Frequency","2 Mhz"
    "Notes",""
 
@@ -33,7 +33,7 @@ MC68B09P 8-Bit Microprocessing Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |present| 27-OCT-2025
 
 .. rubric:: Links
 
