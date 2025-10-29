@@ -6,4 +6,4 @@
       :widths: auto
 
       "|notpresent| :ref:`MC6828L <MC6828L>`","Ceramic","N/A","N/A",""
-      "|intransit| :ref:`MC6828P <MC6828P>`","Plastic","N/A","N/A",""
+      "|present| :ref:`MC6828P <MC6828P>`","Plastic","N/A","N/A",""

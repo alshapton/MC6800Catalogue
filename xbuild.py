@@ -1873,7 +1873,7 @@ while True:
             #Get year and week from user
             y = Prompt.ask("Enter Year e.g. 1977")
             w = Prompt.ask("Enter week e.g. 1-53")
-            #Call function to get dates range 
+            # Call function to get dates range 
             firstdate, lastdate =  getDateRangeFromWeek(y,w)
             output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
             console.print(output, style="info")
@@ -1885,9 +1885,11 @@ while True:
         case "4":
             create_new_group_from_index()        
         case "0":
-            print("\nSetting Up icons")
+            output='\nSetting Up icons'
+            console.print(output, style="info")
             setup_icons()
-            print('Commencing rebuild of database') 
+            output='Commencing rebuild of database'
+            console.print(output, style="info")
             rebuild_db()
             print('Completed rebuild of database')     
             print('\n\nCommencing updating storage metadata links')
@@ -2045,10 +2047,12 @@ while True:
         case "6":
             update_carousel()
         case "7":
-            print('Commencing rebuild of database') 
+            output='Commencing rebuild of database'
+            console.print(output, style="info") 
             rebuild_db()
-            print('Completed rebuild of database') 
-        
+            output='Completed rebuild of database'
+            console.print(output, style="info") 
+            
         case "8":
             print('Commencing finding artefacts with invalid metadata') 
             rstfiles = glob.glob('**/*.rst', recursive=True)

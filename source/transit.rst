@@ -11,8 +11,6 @@ This is the current set of items (as at 28-10-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	MC6828P,":ref:`MC6828P Priority Interrupt Controller <MC6828P>` "
-	MC6859L,":ref:`MC6859L Data Security Device <MC6859L>` "
 	MC68701U4L-1,":ref:`MC68701U4L-1 Microprocessor Unit with 8-bit EPROM <MC68701U4L-1>` "
 	MC68B21P,":ref:`MC68B21P Peripheral Interface Adapter (PIA) <MC68B21P>` "
 
