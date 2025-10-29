@@ -2,8 +2,10 @@
 
 .. _MSET30BAS(D1):
 
-M6809 BASIC-M Interactive Compiler User's Guide
-===============================================
+.. #Metadata {'Product':'MSET30BAS(D1)','Name':'M6809 BASIC-M Interactive Compiler Users Guide','Folder': 'None'}
+
+M6809 BASIC-M Interactive Compiler Users Guide
+==============================================
 
 .. image:: ../../images/NOIMAGE.png
    :width: 400

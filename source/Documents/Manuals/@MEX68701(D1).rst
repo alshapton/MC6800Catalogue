@@ -2,8 +2,10 @@
 
 .. _MEX68701(D1):
 
-MEX6801EVM1 Evaluation Module User's Guide
-==========================================
+.. #Metadata {'Product':'MEX68701(D1)','Name':'MEX6801EVM1 Evaluation Module Users Guide','Folder': 'None'}
+
+MEX6801EVM1 Evaluation Module Users Guide
+=========================================
 
 .. image:: ../../images/Manuals/MEX68701(D1).png
    :width: 400

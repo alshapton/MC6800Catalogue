@@ -2,8 +2,8 @@
 
 .. _M68EXORSET(D1):
 
-M68EXORSET(D1) EXORset User's Guide
-===================================
+M68EXORSET(D1) EXORset Users Guide
+==================================
 
 .. include::  M68EXORSET(D1).carousel.rst
 

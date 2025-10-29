@@ -2,6 +2,8 @@
 
 .. _M68UCANA(D1):
 
+.. #Metadata {'Product':'M68UCANA(D1)','Name':'M68UCANA Microcomputer Analyzer','Folder': 'None'}
+
 M68UCANA Microcomputer Analyzer
 ===============================
 

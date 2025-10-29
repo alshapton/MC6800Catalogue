@@ -4,8 +4,8 @@
 
 .. #Metadata {'Product':'MPUEvaluationBoard','Name':'MPU Evalution Card MC6800 Microprocessor Board','Folder': 'None'}
 
-MPU Evalution Card MC6800 Microprocessor Board     
-==============================================
+MPU Evaluation Card MC6800 Microprocessor Board     
+===============================================
 
 .. include::  MPUEvaluationBoard.carousel.rst
 

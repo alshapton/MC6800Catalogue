@@ -2,6 +2,8 @@
 
 .. _MSETLLD(D1):
 
+.. #Metadata {'Product':'MSETLLD(D1)','Name':'XDOS Linking Loader Reference Manual','Folder': 'None'}
+
 XDOS Linking Loader Reference Manual
 ====================================
 

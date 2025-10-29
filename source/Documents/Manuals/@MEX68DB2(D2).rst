@@ -2,8 +2,10 @@
 
 .. _MEX68DB2(D2):
 
-MEX68DB2 DEBUG II Module User's Guide
-=====================================
+.. #Metadata {'Product':'MEX68DB2(D2)','Name':'MEX68DB2 DEBUG II Module Users Guide','Folder': 'None'}
+
+MEX68DB2 DEBUG II Module Users Guide
+====================================
 
 .. image:: ../../images/Manuals/MEX68DB2(D2).png
    :width: 400
@@ -19,4 +21,4 @@ MEX68DB2 DEBUG II Module User's Guide
    
 .. rubric:: Links
 
-:download:`MEX68DB2 DEBUG II Module User's Guide <../../_static/Documents/Manuals/MEX68DB2_DEBUG_II_MOTOROLA_197903.pdf>`
+:download:`MEX68DB2 DEBUG II Module Users Guide <../../_static/Documents/Manuals/MEX68DB2_DEBUG_II_MOTOROLA_197903.pdf>`

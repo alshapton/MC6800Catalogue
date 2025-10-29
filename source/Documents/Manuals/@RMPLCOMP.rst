@@ -2,6 +2,8 @@
 
 .. _RMPLCOMP:
 
+.. #Metadata {'Product':'RMPLCOMP','Name':'M6800 M6809 Resident MPL Compiler Reference Manual','Folder': 'None'}
+
 M6800 M6809 Resident MPL Compiler Reference Manual
 ==================================================
 

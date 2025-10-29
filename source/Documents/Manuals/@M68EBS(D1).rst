@@ -2,6 +2,8 @@
 
 .. _M68EBS(D1):
 
+.. #Metadata {'Product':'M68EBS(D1)','Name':'EXORbus Specification Manual','Folder': 'None'}
+
 EXORbus Specification Manual
 ============================
 

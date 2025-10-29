@@ -2,6 +2,8 @@
 
 .. _M68EDITORM(D3):
 
+.. #Metadata {'Product':'M68EDITORM(D3)','Name':'M6800/M6809 EDITORM Resident Editor Reference Manual','Folder': 'None'}
+
 M6800/M6809 EDITORM Resident Editor Reference Manual
 ====================================================
 

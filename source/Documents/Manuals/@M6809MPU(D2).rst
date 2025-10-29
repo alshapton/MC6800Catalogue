@@ -2,6 +2,8 @@
 
 .. _M6809MPU(D2):
 
+.. #Metadata {'Product':'M6809MPU(D2)','Name':'M6809MPU MPU Module Users Guide','Folder': 'None'}
+
 M6809MPU MPU Module Users Guide
 ===============================
 

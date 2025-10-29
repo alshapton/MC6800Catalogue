@@ -2,6 +2,8 @@
 
 .. _MC6801RM(AD2):
 
+.. #Metadata {'Product':'MC6801RM(AD2)','Name':'MC6801 8-Bit Single-Chip Microcomputer','Folder': 'None'}
+
 MC6801 8-Bit Single-Chip Microcomputer
 ======================================
 

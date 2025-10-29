@@ -2,6 +2,8 @@
 
 .. _M68FTN(D3):
 
+.. #Metadata {'Product':'M68FTN(D3)','Name':'M6800/M6809 MDOS Fortran Reference Manual','Folder': 'None'}
+
 M6800/M6809 MDOS Fortran Reference Manual
 =========================================
 

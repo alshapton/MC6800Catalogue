@@ -2,6 +2,8 @@
 
 .. _MEX68B00(D):
 
+.. #Metadata {'Product':'MEX68B00(D)','Name':'MEX6800-2 MPU II MODULE Users Guide','Folder': 'None'}
+
 MEX6800-2 MPU II MODULE Users Guide
 ===================================
 

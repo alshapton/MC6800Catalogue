@@ -2,6 +2,8 @@
 
 .. _M68ADS2ASDRM:
 
+.. #Metadata {'Product':'M68ADS2ASDRM','Name':'Micromodule/M68ADS2A Software Development Reference Manual','Folder': 'None'}
+
 Micromodule/M68ADS2A Software Development Reference Manual
 ==========================================================
 

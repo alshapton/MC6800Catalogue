@@ -2,6 +2,8 @@
 
 .. _M68PRM(D):
 
+.. #Metadata {'Product':'M68PRM-D.1','Name':'M6800 Programming Reference Manual','Folder': 'None'}
+
 M6800 Programming Reference Manual
 ==================================
 

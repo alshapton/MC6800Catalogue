@@ -2,8 +2,10 @@
 
 .. _MEX68PP3(D):
 
-PROM Programmer III User's Guide
-================================
+.. #Metadata {'Product':'MEX68PP3(D)','Name':'PROM Programmer III Users Guide','Folder': 'None'}
+
+PROM Programmer III Users Guide
+===============================
 
 .. image:: ../../images/Manuals/MEX68PP3(D).png
    :width: 400
@@ -19,4 +21,4 @@ PROM Programmer III User's Guide
    
 .. rubric:: Links
 
-:download:`PROM Programmer III User's Guide <../../_static/Documents/Manuals/MEX68PP3_Prom_Programmer_III_.pdf>`
+:download:`PROM Programmer III Users Guide <../../_static/Documents/Manuals/MEX68PP3_Prom_Programmer_III_.pdf>`

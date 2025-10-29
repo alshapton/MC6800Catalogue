@@ -2,7 +2,9 @@
 
 .. _M68MODOS(D):
 
-M68MODOS010 Disk Operating System User's Guide
+.. #Metadata {'Product':'M68MODOS(D)','Name':'M68MODOS010 Disk Operating System Users Guide','Folder': 'None'}
+
+M68MODOS010 Disk Operating System Users Guide
 ==============================================
 
 .. image:: ../../images/Manuals/M68MODOS(D).png
@@ -19,4 +21,4 @@ M68MODOS010 Disk Operating System User's Guide
    
 .. rubric:: Links
 
-:download:`M68MODOS010 Disk Operating System User's Guide <../../_static/Documents/Manuals/M68MODOS_D_Disk_Operating_System_Users_Guide_Version_3.0_197811.pdf>`
+:download:`M68MODOS010 Disk Operating System Users Guide <../../_static/Documents/Manuals/M68MODOS_D_Disk_Operating_System_Users_Guide_Version_3.0_197811.pdf>`

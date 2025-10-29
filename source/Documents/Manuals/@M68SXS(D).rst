@@ -2,6 +2,8 @@
 
 .. _M68SXS(D):
 
+.. #Metadata {'Product':'M68SXS(D)','Name':'M6800 EXORterm 200 Development System Users Guide','Folder': 'None'}
+
 M6800 EXORterm 200 Development System Users Guide
 =================================================
 

@@ -2,8 +2,10 @@
 
 .. _M68KBD(D):
 
-KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide) 
-==================================================================
+.. #Metadata {'Product':'M68KBD(D)','Name':'KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide)','Folder': 'None'}
+
+KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide) 
+=================================================================
 
 This document is marked as PRELIMINARY |advanceinfo|
 
@@ -21,4 +23,4 @@ This document is marked as PRELIMINARY |advanceinfo|
    
 .. rubric:: Links
 
-:download:`KEYBOARD ASSEMBLY (Supplement to Basic Display Unit User's Guide) <../../_static/Documents/Manuals/M68KBD_Basic_Display_Unit_Keyboard_Assembly_1977.pdf>`
+:download:`KEYBOARD ASSEMBLY (Supplement to Basic Display Unit Users Guide) <../../_static/Documents/Manuals/M68KBD_Basic_Display_Unit_Keyboard_Assembly_1977.pdf>`

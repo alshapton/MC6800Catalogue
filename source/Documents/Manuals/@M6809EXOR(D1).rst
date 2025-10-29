@@ -2,8 +2,10 @@
 
 .. _M6809EXOR(D1):
 
-M6809 EXORciser User's Guide
-============================
+.. #Metadata {'Product':'M6809EXOR(D1)','Name':'M6809 EXORciser Users Guide','Folder': 'None'}
+
+M6809 EXORciser Users Guide
+===========================
 
 .. image:: ../../images/Manuals/M6809EXOR(D1).png
    :width: 400
@@ -19,4 +21,4 @@ M6809 EXORciser User's Guide
    
 .. rubric:: Links
 
-:download:`M6809 EXORciser User's Guide <../../_static/Documents/Manuals/M6809EXOR_M6809_EXORciser_Users_Guide_Sep1979.pdf>`
+:download:`M6809 EXORciser Users Guide <../../_static/Documents/Manuals/M6809EXOR_M6809_EXORciser_Users_Guide_Sep1979.pdf>`

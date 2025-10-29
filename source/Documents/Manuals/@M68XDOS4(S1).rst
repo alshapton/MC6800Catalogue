@@ -2,8 +2,10 @@
 
 .. _M68XDOS4(S1):
 
-Supplement to EXORset XDOS Operating System User's Guide
-========================================================
+.. #Metadata {'Product':'M68XDOS4(S1)','Name':'Supplement to EXORset XDOS Operating System Users Guide','Folder': 'None'}
+
+Supplement to EXORset XDOS Operating System Users Guide
+=======================================================
 
 .. image:: ../../images/Manuals/M68XDOS4(S1).png
    :width: 400

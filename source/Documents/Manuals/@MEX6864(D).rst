@@ -2,6 +2,8 @@
 
 .. _MEX6864(D):
 
+.. #Metadata {'Product':'MEX6864(D)','Name':'16K/64K Dynamic RAM Module Users Guide','Folder': 'None'}
+
 16K/64K Dynamic RAM Module Users Guide
 ======================================
 

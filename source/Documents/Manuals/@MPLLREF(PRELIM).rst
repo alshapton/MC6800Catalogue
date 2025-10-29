@@ -2,6 +2,8 @@
 
 .. _MPLLREF(PRELIM):
 
+.. #Metadata {'Product':'MPLLREF(PRELIM)','Name':'MPL Language Reference Manual','Folder': 'None'}
+
 MPL Language Reference Manual
 =============================
 

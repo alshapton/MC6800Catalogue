@@ -2,6 +2,8 @@
 
 .. _M68BAS(D3):
 
+.. #Metadata {'Product':'M68BAS(D3)','Name':'M6800 BASIC Interpreter Reference Manual','Folder': 'None'}
+
 M6800 BASIC Interpreter Reference Manual
 ========================================
 

@@ -2,6 +2,8 @@
 
 .. _MEX6820:
 
+.. #Metadata {'Product':'MEX6820','Name':'MEX6820 I/O Module Supplment M6800 EXORciser User Guide','Folder': 'None'}
+
 MEX6820 I/O Module Supplment M6800 EXORciser User Guide
 =======================================================
 

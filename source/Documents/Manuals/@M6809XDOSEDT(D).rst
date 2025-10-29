@@ -2,8 +2,10 @@
 
 .. _M6809XDOSEDT(D):
 
-EXORset 30 XDOS Editor User's Manual
-====================================
+.. #Metadata {'Product':'M6809XDOSEDT(D)','Name':'EXORset 30 XDOS Editor Users Manual','Folder': 'None'}
+
+EXORset 30 XDOS Editor Users Manual
+===================================
 
 .. image:: ../../images/Manuals/M6809XDOSEDT(D).png
    :width: 400

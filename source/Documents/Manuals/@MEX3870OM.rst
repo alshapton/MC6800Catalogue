@@ -2,8 +2,10 @@
 
 .. _MEX3870OM:
 
-MEX3870OM 3870 Emulator User's Guide
-====================================
+.. #Metadata {'Product':'MEX3870OM','Name':'MEX3870OM 3870 Emulator Users Guide','Folder': 'None'}
+
+MEX3870OM 3870 Emulator Users Guide
+===================================
 
 .. image:: ../../images/NOIMAGE.png
    :width: 400

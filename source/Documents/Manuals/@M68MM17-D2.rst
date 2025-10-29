@@ -2,8 +2,10 @@
 
 .. _M68MM17-D2:
 
-Monoboard Microcomputer Micromodule 17 User's Manual
-====================================================
+.. #Metadata {'Product':'M68MM17-D2','Name':'Monoboard Microcomputer Micromodule 17 Users Manual','Folder': 'None'}
+
+Monoboard Microcomputer Micromodule 17 Users Manual
+===================================================
 
 .. image:: ../../images/Manuals/M68MM17-D2.png
    :width: 400
@@ -19,4 +21,4 @@ Monoboard Microcomputer Micromodule 17 User's Manual
 
 .. rubric:: Links
 
-:download:`Monoboard Microcomputer Micromodule 17 User's Manual <../../_static/Documents/Manuals/Motorola_MM17.pdf>`
+:download:`Monoboard Microcomputer Micromodule 17 Users Manual <../../_static/Documents/Manuals/Motorola_MM17.pdf>`

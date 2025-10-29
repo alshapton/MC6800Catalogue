@@ -2,8 +2,10 @@
 
 .. _M68MDOS3(D):
 
-M68MDOS3 EXORdisk II/III OS User's Guide
-========================================
+.. #Metadata {'Product':'M68MDOS3(D)','Name':'M68MDOS3 EXORdisk II/III OS Users Guide','Folder': 'None'}
+
+M68MDOS3 EXORdisk II/III OS Users Guide
+=======================================
 
 .. image:: ../../images/Manuals/M68MDOS3(D).png
    :width: 400
@@ -19,4 +21,4 @@ M68MDOS3 EXORdisk II/III OS User's Guide
    
 .. rubric:: Links
 
-:download:`M68MDOS3 EXORdisk II/III OS User's Guide <../../_static/Documents/Manuals/M68MDOS3_EXORdisk_II_III_Operating_System_Users_Guide_Dec78.pdf>`
+:download:`M68MDOS3 EXORdisk II/III OS Users Guide <../../_static/Documents/Manuals/M68MDOS3_EXORdisk_II_III_Operating_System_Users_Guide_Dec78.pdf>`

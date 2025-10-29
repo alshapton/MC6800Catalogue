@@ -2,6 +2,8 @@
 
 .. _MEX68USEC(D1):
 
+.. #Metadata {'Product':'MEX68USEC(D1)','Name':'MEX68USEC 2 MHz User System Evaluation Guide','Folder': 'None'}
+
 MEX68USEC 2 MHz User System Evaluation Guide
 ============================================
 

@@ -2,8 +2,10 @@
 
 .. _M68FD3601-3604:
 
-EXORdisk User's Guide
-=====================
+.. #Metadata {'Product':'M68FD3601-3604','Name':'EXORdisk Users Guide','Folder': 'None'}
+
+EXORdisk Users Guide
+====================
 
 .. image:: ../../images/Manuals/M68FD3601-3604.png
    :width: 400
@@ -19,4 +21,4 @@ EXORdisk User's Guide
 
 .. rubric:: Links
 
-:download:`EXORdisk User's Guide <../../_static/Documents/Manuals/M68FD3601-3604_EXORdisk_Floppy_Disk_System_Users_Guide_1975.pdf>`
+:download:`EXORdisk Users Guide <../../_static/Documents/Manuals/M68FD3601-3604_EXORdisk_Floppy_Disk_System_Users_Guide_1975.pdf>`

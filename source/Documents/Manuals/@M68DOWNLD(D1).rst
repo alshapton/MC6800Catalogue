@@ -2,8 +2,10 @@
 
 .. _M68DOWNLD(D1):
 
-M6800/M6801/M6809 Download Program User's Guide
-===============================================
+.. #Metadata {'Product':'M68DOWNLD(D1)','Name':'M6800/M6801/M6809 Download Program Users Guide','Folder': 'None'}
+
+M6800/M6801/M6809 Download Program Users Guide
+==============================================
 
 .. image:: ../../images/Manuals/M68DOWNLD(D1).png
    :width: 400
@@ -19,4 +21,4 @@ M6800/M6801/M6809 Download Program User's Guide
    
 .. rubric:: Links
 
-:download:`M6800/M6801/M6809 Download Program User's Guide <../../_static/Documents/Manuals/M68DOWNLD_D1_Download_Program_Users_Guide_197908.pdf>`
+:download:`M6800/M6801/M6809 Download Program Users Guide <../../_static/Documents/Manuals/M68DOWNLD_D1_Download_Program_Users_Guide_197908.pdf>`

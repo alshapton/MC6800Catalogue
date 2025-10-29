@@ -2,8 +2,10 @@
 
 .. _MSET30(D1):
 
-MSET30(D1) EXORset 30 User's Guide
-==================================
+.. #Metadata {'Product':'MSET30(D1)','Name':'MSET30(D1) EXORset 30 Users Guide','Folder': 'None'}
+
+MSET30(D1) EXORset 30 Users Guide
+=================================
 
 .. image:: ../../images/Manuals/MSET30(D1).png
    :width: 400
@@ -19,4 +21,4 @@ MSET30(D1) EXORset 30 User's Guide
 
 .. rubric:: Links
 
-:download:`MSET30(D1) EXORset 30 User's Guide <../../_static/Documents/Manuals/MSET30(D1).pdf>`
+:download:`MSET30(D1) EXORset 30 Users Guide <../../_static/Documents/Manuals/MSET30(D1).pdf>`

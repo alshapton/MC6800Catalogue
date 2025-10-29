@@ -2,8 +2,10 @@
 
 .. _M68DSP(D):
 
-Extended Display Supplement Basic Display Unit User's Guide
-===========================================================
+.. #Metadata {'Product':'M68DSP(D)','Name':'Extended Display Supplement Basic Display Unit Users Guide','Folder': 'None'}
+
+Extended Display Supplement Basic Display Unit Users Guide
+==========================================================
 
 .. image:: ../../images/Manuals/M68DSP(D).png
    :width: 400
@@ -19,4 +21,4 @@ Extended Display Supplement Basic Display Unit User's Guide
    
 .. rubric:: Links
 
-:download:`Extended Display Supplement Basic Display Unit User's Guide <../../_static/Documents/Manuals/M68DSP_Extended_Display_Supplement_Basic_Display_Unit_Users_Guide_197801.pdf>`
+:download:`Extended Display Supplement Basic Display Unit Users Guide <../../_static/Documents/Manuals/M68DSP_Extended_Display_Supplement_Basic_Display_Unit_Users_Guide_197801.pdf>`

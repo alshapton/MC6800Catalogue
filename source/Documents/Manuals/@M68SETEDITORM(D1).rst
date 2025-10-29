@@ -2,6 +2,8 @@
 
 .. _M68SETEDITORM(D1):
 
+.. #Metadata {'Product':'M68SETEDITORM(D1)','Name':'EXORset EDITOR Reference Manual','Folder': 'None'}
+
 EXORset EDITOR Reference Manual
 ===============================
 

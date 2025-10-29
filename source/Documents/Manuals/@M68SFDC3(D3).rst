@@ -2,6 +2,8 @@
 
 .. _M68SFDC3(D3):
 
+.. #Metadata {'Product':'M68SFDC3(D3)','Name':'Floppy Disk Controller Module','Folder': 'None'}
+
 Floppy Disk Controller Module
 =============================
 

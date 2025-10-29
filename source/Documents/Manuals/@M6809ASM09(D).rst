@@ -2,9 +2,10 @@
 
 .. _M6809ASM09(D):
 
-EXORset 30 XDOS Assembler User's Guide
-======================================
 .. #Metadata {'Product':'EXORset 30 XDOS Assembler Users Guide','Folder': ' ','Comments':' '}
+
+EXORset 30 XDOS Assembler Users Guide
+=====================================
 
 .. image:: ../../images/Manuals/M6809ASM09(D).png
    :width: 400

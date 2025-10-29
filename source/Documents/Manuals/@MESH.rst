@@ -2,6 +2,8 @@
 
 .. _MESH:
 
+.. #Metadata {'Product':'MESH','Name':'Micromodule Enclosure and System Hardware (etc)','Folder': 'None'}
+
 Micromodule Enclosure and System Hardware (etc)
 ===============================================
 

@@ -2,6 +2,8 @@
 
 .. _M68LLD(D4):
 
+.. #Metadata {'Product':'M68LLD(D4)','Name':'MDOS Linking Loader Reference Manual','Folder': 'None'}
+
 MDOS Linking Loader Reference Manual
 ====================================
 

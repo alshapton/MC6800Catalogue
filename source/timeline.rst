@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 28-10-2025).
+This is the timeline of acquisitions (as at 29-10-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -14,7 +14,7 @@ This is the timeline of acquisitions (as at 28-10-2025).
    30-JAN-2025,:ref:`XC6820 Peripheral Interface Adapter <XC6820>`
    30-JAN-2025,:ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
    30-JAN-2025,:ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`
-   30-JAN-2025,:ref:`MPU Evalution Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
+   30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
    30-JAN-2025,:ref:`MES6800 User Guide <MES6800>`
    16-FEB-2025,:ref:`8K Dynamic RAM Module Supplement <MEX68151>`
    18-FEB-2025,:ref:`M6800 Microprocessor Instruction Set Summary <REF-MC6800>`

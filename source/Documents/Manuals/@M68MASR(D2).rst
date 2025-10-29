@@ -2,6 +2,8 @@
 
 .. _M68MASR(D2):
 
+.. #Metadata {'Product':'M68MASR(D2)','Name':'Macro Assemblers Reference Manual','Folder': 'None'}
+
 Macro Assemblers Reference Manual
 =================================
 

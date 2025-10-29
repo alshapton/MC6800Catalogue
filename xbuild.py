@@ -1217,7 +1217,10 @@ def do_collection():
                         if 'Storage' not in str(i['LOCATION']) and \
                         'Folder' not in str(i['LOCATION']): 
                             OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
-                        
+                        if 'Folder' in str(i['LOCATION']) :
+                            if 'None' in str(i['LOCATION']):
+                                print(str(i['LOCATION']))
+
                     c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
                 
         c.write('\n\n')

@@ -2,6 +2,8 @@
 
 .. _M68COB(D):
 
+.. #Metadata {'Product':'M68COB(D)','Name':'M6800 Resident COBOL Language Reference Manual','Folder': 'None'}
+
 M6800 Resident COBOL Language Reference Manual
 ==============================================
 

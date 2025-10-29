@@ -2,6 +2,8 @@
 
 .. _MSET30DOS(D1):
 
+.. #Metadata {'Product':'MSET30DOS(D1)','Name':'Exorset 30 XDOS OS User’s Guide','Folder': 'None'}
+
 Exorset 30 XDOS OS User’s Guide
 ===============================
 

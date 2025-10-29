@@ -2,8 +2,10 @@
 
 .. _MEX68502(D):
 
-ACIA/SSDA Module User's Guide
-=============================
+.. #Metadata {'Product':'MEX68502(D)','Name':'ACIA/SSDA Module Users Guide','Folder': 'None'}
+
+ACIA/SSDA Module Users Guide
+============================
 
 .. image:: ../../images/Manuals/MEX68502(D).png
    :width: 400
@@ -19,4 +21,4 @@ ACIA/SSDA Module User's Guide
    
 .. rubric:: Links
 
-:download:`ACIA/SSDA Module User's Guide <../../_static/Documents/Manuals/MEX6850-2_ACIA_SSDA_Module_197806.pdf>`
+:download:`ACIA/SSDA Module Users Guide <../../_static/Documents/Manuals/MEX6850-2_ACIA_SSDA_Module_197806.pdf>`

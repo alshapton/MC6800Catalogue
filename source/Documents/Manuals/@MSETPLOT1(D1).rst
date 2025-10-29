@@ -2,8 +2,10 @@
 
 .. _MSETPLOT1(D1):
 
-EXORset 30 PLOT 1 User's Guide
-==============================
+.. #Metadata {'Product':'MSETPLOT1(D1)','Name':'EXORset 30 PLOT 1 Users Guide','Folder': 'None'}
+
+EXORset 30 PLOT 1 Users Guide
+=============================
 
 .. image:: ../../images/Manuals/MSETPLOT1(D1).jpg
    :width: 400

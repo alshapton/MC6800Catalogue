@@ -2,8 +2,10 @@
 
 .. _M68SFDC2(D):
 
-EXORdisk II Floppy Disk Controller Module User's Guide
-======================================================
+.. #Metadata {'Product':'M68SFDC2(D)','Name':'EXORdisk II Floppy Disk Controller Module Users Guide','Folder': 'None'}
+
+EXORdisk II Floppy Disk Controller Module Users Guide
+=====================================================
 
 .. image:: ../../images/Manuals/M68SFDC2(D).png
    :width: 400
@@ -19,4 +21,4 @@ EXORdisk II Floppy Disk Controller Module User's Guide
    
 .. rubric:: Links
 
-:download:`EXORdisk II Floppy Disk Controller Module User's Guide <../../_static/Documents/Manuals/M68SFDC2_EXORdisk_II_Floppy_Disk_Controller_Module_Users_Guide_Jun78.pdf>`
+:download:`EXORdisk II Floppy Disk Controller Module Users Guide <../../_static/Documents/Manuals/M68SFDC2_EXORdisk_II_Floppy_Disk_Controller_Module_Users_Guide_Jun78.pdf>`

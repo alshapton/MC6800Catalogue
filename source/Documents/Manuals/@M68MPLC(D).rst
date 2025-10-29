@@ -2,6 +2,8 @@
 
 .. _M68MPLC(D):
 
+.. #Metadata {'Product':'M68MPLC(D)','Name':'M6800 MPL Cross-Computer Language Reference Manual','Folder': 'None'}
+
 M6800 MPL Cross-Computer Language Reference Manual
 ==================================================
 

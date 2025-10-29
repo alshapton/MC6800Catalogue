@@ -2,6 +2,8 @@
 
 .. _MEX68PI2(D):
 
+.. #Metadata {'Product':'MEX68PI2(D)','Name':'Printer Interface Module','Folder': 'None'}
+
 Printer Interface Module
 ========================
 

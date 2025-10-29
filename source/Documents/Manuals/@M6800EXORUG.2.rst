@@ -2,8 +2,10 @@
 
 .. _M6800EXORUG.2:
 
-M6800 EXORciser User's Guide
-============================
+.. #Metadata {'Product':'M6800EXORUG.2','Name':'M6800 EXORciser Users Guide','Folder': 'None'}
+
+M6800 EXORciser Users Guide
+===========================
 
 .. image:: ../../images/Manuals/M6800EXORug.1.png
    :width: 400
@@ -19,4 +21,4 @@ M6800 EXORciser User's Guide
 
 .. rubric:: Links
 
-:download:`M6800 EXORciser User's Guide <../../_static/Documents/Manuals/MC6800_EXORciser_Users_Guide_Second_Edition_1975.pdf>`
+:download:`M6800 EXORciser Users Guide <../../_static/Documents/Manuals/MC6800_EXORciser_Users_Guide_Second_Edition_1975.pdf>`

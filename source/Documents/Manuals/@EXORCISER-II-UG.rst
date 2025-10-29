@@ -2,6 +2,8 @@
 
 .. _EXORCISER-II-UG:
 
+.. #Metadata {'Product':'EXORCISER-II-UG','Name':'EXORciser II Users Guide','Folder': 'None'}
+
 EXORciser II Users Guide
 ========================
 

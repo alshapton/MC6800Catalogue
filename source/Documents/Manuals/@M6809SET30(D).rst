@@ -2,10 +2,11 @@
 
 .. _M6809SET30(D):
 
-EXORset 30 User's Guide
+.. #Metadata {'Product':'EXORset 30 Users Guide','Folder': ' ','Comments':''}
+
+EXORset 30 Users Guide
 =======================
 
-.. #Metadata {'Product':'EXORset 30 Users Guide','Folder': ' ','Comments':''}
 
 .. image:: ../../images/Manuals/M6809SET30(D).png
    :width: 400
