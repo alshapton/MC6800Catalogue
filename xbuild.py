@@ -1589,7 +1589,9 @@ def rebuild_db():
         if ('Hardware'+OSSEP+'Other'+OSSEP+'@' in file or
             'Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file or 
             'Hardware'+OSSEP+'EXORciser'+OSSEP+'Micromodules' + OSSEP + '@' in file or
-            'Generic' in file or 
+            'Generic' in file or
+            'Manuals' in file or 
+            'Reference' in file or 
             'EngineeringNotes' in file or 'Datasheets' in file or 
             'ApplicationNotes' in file) \
             and 'fragment' not in file and 'index' not in file:
@@ -1607,6 +1609,8 @@ def rebuild_db():
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
+                if 'Manuals' in file:
+                    documenttype='Manuals'
                 if 'Datasheets' in file:
                     documenttype='Datasheets'
                 if 'ApplicationNotes' in file:
@@ -1624,7 +1628,11 @@ def rebuild_db():
                 if 'Hardware'+OSSEP+'EXORciser'+OSSEP+'Micromodules' + OSSEP + '@' in file:
                     documenttype='Hardware/EXORciser/Micromodules'
                     documentid = filename[5].replace('@' ,'').replace('.' + SUFFIX,'')  
-    
+                if 'Reference' in file:
+                        documenttype='Reference'
+                if 'ReferenceCards' in file:
+                        documenttype='ReferenceCards'
+
                 for line in lines:
                     if '.. include::' in line and 'carousel in line':
                         carouselfile=line.replace('.. include::','').strip()
@@ -2097,32 +2105,33 @@ while True:
 
             #for fullfilename in illegal_metadata:
             #    print("#None metadata : " + fullfilename)
-            #output = read_db("SELECT * FROM documents WHERE (metadata IS NULL or metadata = '') and documenttype='Datasheets';")
+            output = read_db("SELECT * FROM documents WHERE (metadata IS NULL or metadata = '') and documenttype='Manuals';")
+            
+            for row in output:
+                print(row["name"] + ' has no metadata')
+            
+                metadataskeleton=".. #Metadata {'Product':'QQQQ','Name':'XXXXX','Folder': '@@'}"
+                #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':0,'Row':0,'Column':0}"
 
-            #for row in output:
-            #    print('Datasheet ' + row["name"] + ' has no metadata')
-                
-            #    metadataskeleton=".. #Metadata {'Product':'XXXXX','Folder': '@@'}"
-            #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':0,'Row':0,'Column':0}"
+                metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["location"]).replace('QQQQ',row["documentid"])    
+                if row["location"].strip() == '':
 
-            #    metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["location"])    
-            #    if row["location"].strip() == '':
-            #        metadataline = metadataline.replace('@@','None')
-            #    else:
-            #        metadataline = metadataline.replace('@@',row["location"])    
-            #    print(metadataline)
-            #    fullfilename = row["filename"]
-            #    print('In file: ' + fullfilename)
-            #   with open(fullfilename, 'r') as f:
-            #            lines = f.readlines()     
-            #    with open(fullfilename, 'w') as f:
-            #        for line in lines:
-            #            
-            #            if line.startswith('.. _'):
-            #                f.write(line)
-            #                f.write('\n' + metadataline + '\n')
-            #            else:
-            #                f.write(line)
+                    metadataline = metadataline.replace('@@','None')
+                else:
+                    metadataline = metadataline.replace('@@',row["location"])    
+                print(metadataline)
+                fullfilename = row["filename"]
+                print('In file: ' + fullfilename)
+                with open(fullfilename, 'r') as f:
+                    lines = f.readlines()     
+                with open(fullfilename, 'w') as f:
+                    for line in lines:
+                        
+                        if line.startswith('.. _'):
+                            f.write(line)
+                            f.write('\n' + metadataline + '\n')
+                        else:
+                            f.write(line)
                         
                 #       if '#Metadata' in line:
                 #            newline=line.replace(':X',':0').replace(':Y',':0').replace(':Z',':0')

@@ -2,6 +2,8 @@
 
 .. _M68MMCC10:
 
+.. #Metadata {'Product':'M68MMCC10','Name':'Card Cage (10 Card)','Folder': 'None'}
+
 Card Cage (10 Card)
 ===================
 

@@ -2,6 +2,8 @@
 
 .. _MEK6800D2:
 
+.. #Metadata {'Product':'MEK6800D2','Name':'MEK6800D2 Development board for the 6800 microprocessor','Folder': 'None'}
+
 MEK6800D2 Development board for the 6800 microprocessor
 =======================================================
 

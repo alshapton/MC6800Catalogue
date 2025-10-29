@@ -2,6 +2,8 @@
 
 .. _HEPEducatorKitII:
 
+.. #Metadata {'Product':'HEPEducatorKit-II','Name':'Motorola HEP Kit Educator II','Folder': 'None'}
+
 Motorola HEP Kit Educator II
 ============================
 
