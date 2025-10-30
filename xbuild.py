@@ -480,6 +480,7 @@ def update_storage():
         
     storage=[]
     foldersrefcard=[]
+    foldershardware=[]
     foldersgeneric=[]
     foldersdatasheets=[]
     foldersmanuals=[]
@@ -556,6 +557,11 @@ def update_storage():
                 metadata,loc = get_loc(file)                
                 if metadata:
                     foldersdatasheets.append(loc)
+            
+            if 'Hardware/Other' in file and 'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)                
+                if metadata:
+                    foldershardware.append(loc)
 
             if 'Generic' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
@@ -592,7 +598,8 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
-    all_folders_storage_sorted =  sorted(sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
+    print(foldershardware)
+    all_folders_storage_sorted =  sorted(foldershardware + sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
     print(sorted_folders_softnon)
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''

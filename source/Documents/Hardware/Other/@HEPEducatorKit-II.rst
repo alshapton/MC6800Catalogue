@@ -1,8 +1,8 @@
 :orphan:
 
-.. _HEPEducatorKitII:
+.. _HEPEducatorKt2:
 
-.. #Metadata {'Product':'HEPEducatorKit-II','Name':'Motorola HEP Kit Educator II','Folder': 'None'}
+.. #Metadata {'Product':'HEPEducatorKit-II','Name':'Motorola HEP Kit Educator II','Folder': 'Hardware'}
 
 Motorola HEP Kit Educator II
 ============================
