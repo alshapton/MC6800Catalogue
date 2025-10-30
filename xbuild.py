@@ -67,8 +67,6 @@ def update_or_not_metadata(filename):
                 output_line = line       
                 if '.. #Metadata' in line:
                     metadataline = line.replace('.. #Metadata ', '').strip()
-                    print(filename)
-                    print(metadataline)
                     metadata_dict = eval(metadataline)
                     metadata_line=str(metadata_dict).split(',')
                     if metadata_dict != '':
@@ -137,7 +135,6 @@ def get_loc(file):
             if IN_TRANSIT in line and sta == '':
                 sta='TRANSIT'
             if UNDER_OFFER in line and sta == '':
-                print(file)
                 sta='UNDEROFFER'
             loc['Status'] = sta                        
         return metadata, loc
@@ -193,9 +190,9 @@ def create_new_group_from_index():
         ds=ds+':download:`' + newgroupname + ' ' + 'XXXX  <../../../../_static/Documents/Datasheets/' + newgroupname + ".pdf>`\n"
     NEW_LOC = NEW_GROUP_TMP_LOC + newgroupname
     if not os.path.exists(LOC.lower()):
-        print('Index file for ' + newgroupname + ' does not exist')
+        console.print('Index file for ' + newgroupname + ' does not exist', style="danger")
         exit()
-    print('Creating new group from index file for IC: ' + newgroupname)
+    console.print('Creating new group from index file for IC: ' + newgroupname, style="info")
 
     _ = make_directory(NEW_LOC)
 
@@ -206,7 +203,7 @@ def create_new_group_from_index():
     for line in lines:
         if line.startswith('.. collapse::'):
             group_name = line.split('.. collapse::')[1].strip()
-            print('Group name: ' + group_name)
+            console.print('Group name: ' + group_name, style="info")
         if not line.startswith('.. collapse::') \
             and line.find('widths') == -1 \
             and line.find('csv-table') == -1 \
@@ -331,10 +328,10 @@ def create_new_group_index():
         for line in sorted(lines):
             d.write(line)
 
-    print('New group index created in ' + LOC.lower())
+    console.print('New group index created in ' + LOC.lower(),style="info")
 
 def update_IC_pre_fragments():
-    print('Updating IC pre-fragments')
+    console.print('Updating IC pre-fragments',style="info")
 
     yfiles = glob.glob('**/*.pre.fragment', recursive=True)
     for yfile in yfiles:
@@ -420,7 +417,7 @@ def update_IC_pre_fragments():
 
             movefile(outputfile, fragmentfile)
 
-    print('Finished updating IC pre-fragments')
+    console.print('Finished updating IC pre-fragments',style="info")
 
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
@@ -466,7 +463,7 @@ def update_carousel():
                         d.write('    .. card::\n\n')
                         d.write('      .. image:: ' + fullfile + '\n')
                         d.write('         :width: 800\n\n')
-    print('\n\nCarousels updated')
+    console.print('\n\nCarousels updated',style="info")
 
 
 
@@ -598,9 +595,7 @@ def update_storage():
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
-    print(foldershardware)
     all_folders_storage_sorted =  sorted(foldershardware + sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
-    print(sorted_folders_softnon)
     FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
     with open(FOLDER_MAP_FILE, "w") as fmf:
@@ -611,8 +606,11 @@ def update_storage():
                 map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
                 current_folder = item['Folder']
 
-                print('Processing folder: ' + current_folder)
+                console.print('Processing folder: ' + current_folder,style="info")
                 match item['Folder']:
+                    case "Hardware":
+                        write_folder=True
+                        fmf.write(map_reference + '\n\n.. rubric:: Hardware\n\n')
                     case "GITHUB":
                         write_folder=True
                         fmf.write(map_reference + '\n\n.. rubric:: GitHub Repository (See individual items)\n\n')
@@ -646,7 +644,7 @@ def update_storage():
                     fmf.write(item['Comments'] + '"\n')
                 else:
                     fmf.write('"\n')
-    print('Folder map created in ' + FOLDER_MAP_FILE)
+    console.print('Folder map created in ' + FOLDER_MAP_FILE,style="info")
 
 
     # Write the labels file
@@ -694,7 +692,7 @@ def update_storage():
                 rowcnt += 1
                 cols = len(get_cols_for_drawer(item['Storage'],item['Drawer'],item['Row'],storage_properties))
                 if cols == []:  
-                    print('No columns found for Storage:', item['Storage'], 'Drawer:', item['Drawer'], 'Row:', item['Row'])
+                    console.print('No columns found for Storage:', item['Storage'], 'Drawer:', item['Drawer'], 'Row:', item['Row'],style="danger")
                     exit()  
                 rowcnt = 0
                 if first_row == True:
@@ -751,8 +749,8 @@ def update_storage():
                             written_title = True
                         c.write('       |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
-    print('Splitting')
-    print('LVL1 Splitting')
+    console.print('Splitting',style="info")
+    console.print('LVL1 Splitting',style="info")
 
     with open(TABLES_FILE,"r") as tf:
         data = ''
@@ -770,9 +768,9 @@ def update_storage():
                 ci.write(r)
         cnt=cnt+1
 
-    print('LVL1 Splitting done')
+    console.print('LVL1 Splitting done',style="info")
     # Checking for LVL2 split required.
-    print('LVL2 Splitting')
+    console.print('LVL2 Splitting',style="info")
 
     lvl2files = glob.glob('**/*.tiny', recursive=True)
     properlvl2files=[]
@@ -800,7 +798,7 @@ def update_storage():
                 LOCATIONINSTORAGE=stripped.split('..')[1].strip().replace('collapse:: ','').replace(' ','_')
                 if LOCATIONINSTORAGE is  None:
                     LOCATIONINSTORAGE = 'Unknown'
-                print('     Processing location: ' + LOCATIONINSTORAGE)
+                console.print('     Processing location: ' + LOCATIONINSTORAGE,style="info")
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
                     if not stripped.endswith('`>\n'):
@@ -899,12 +897,12 @@ def update_storage():
     TABLES_FILE='source/Software/Resident/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_softres)
 
-    print('\nFolders updated')      
+    console.print('\nFolders updated',style="info")      
 
-    print('\nLocations fully updated')      
+    console.print('\nLocations fully updated',style="info")      
 
 def update_IC_index():
-    print('\nUpdating IC index')
+    console.print('\nUpdating IC index',style="info")
     files = glob.glob('**/MC*', recursive=True)
     icfiles=[]
     ic2file=[]
@@ -944,7 +942,7 @@ def update_IC_index():
         for chip in chips:
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
-    print('\nCompleted updating IC index\n')
+    console.print('\nCompleted updating IC index\n',style="info")
 
 
 def do_underoffer():
@@ -1056,7 +1054,7 @@ def do_in_transit():
                             tag=line.replace('.. _','').replace(':','').strip()
                         
                         if IN_TRANSIT in line:
-                            print(doc_type + ' ' + file + ' contains in transit item')
+                            console.print(doc_type + ' ' + file + ' contains in transit item',style="info")
                             link  = ':ref:`' + productname + ' <'+ tag + '>` '
 
                             outline = ('\t' + tag + ',"' + link + '"\n').replace('""','"')
@@ -1083,7 +1081,7 @@ def do_in_transit():
     return ANYINTRANSIT
 
 def collect_metadata():
-    print('Collecting location metadata')
+    console.print('Collecting location metadata',style="info")
 
     md = []
     # Find all .rst files in the current directory and subdirectories
@@ -1102,7 +1100,7 @@ def collect_metadata():
                                     "METADATA"  : line }
                         if line != '':
                             md.append(thisdict)
-    print('Location metadata collected')
+    console.print('Location metadata collected',style="info")
     return md 
 
 
@@ -1234,7 +1232,7 @@ def do_collection():
 
 
 def do_create():
-    print("Enter the following information:")
+    console.print("Enter the following information:",style="info")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
     product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
@@ -1294,15 +1292,15 @@ def do_create():
             location = "Documents/Hardware/Other"
             images = dotdot + 'images/Hardware/Other/'
         case _:
-            print("Invalid product type")
+            console.print("Invalid product type",style="danger")
             exit() 
 
     OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
     if os.path.exists(OUTPUT_FILE):
-        print(f"File {OUTPUT_FILE} already exists")
+        console.print(f"File {OUTPUT_FILE} already exists",style="danger")
         exit()
 
-    print(f"Creating file {OUTPUT_FILE}")
+    console.print(f"Creating file {OUTPUT_FILE}",style="info")
     with open(OUTPUT_FILE,"w") as c:
         if orphan == "Y":
             c.write(':orphan:\n\n')
@@ -1337,7 +1335,7 @@ def do_create():
         
         
         target_image = images.replace(dotdot,'source/') + product_number + '.png'
-        print('Ready to move.....')
+        console.print('Ready to move.....',style="info")
         
         if links =="Y":
             target_document =  "source/_static/" + location + "/"+ linkdocument
@@ -1345,9 +1343,9 @@ def do_create():
             
         if image_present:
             movefile(original_image, target_image)
-            print('Moved images and source data')
+            console.print('Moved images and source data',style="info")
         else:
-            print('No image to move')            
+            console.print('No image to move',style="info")            
 
     return index_entry
 
@@ -1364,7 +1362,7 @@ def setup_icons():
         newfile.write('rst_prolog = """\n')
         for icon in data["icons"]:
             newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
-            #print(icon["name"].strip() + ' icon added')
+            
         newfile.write('"""\n')
 
     copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')
@@ -1391,7 +1389,7 @@ def setup_icons():
                 newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
 
 def do_timeline():
-    print('Updating timeline')
+    console.print('Updating timeline',style="info")
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     timeline=[]
     invalid_months=False
@@ -1436,7 +1434,7 @@ def do_timeline():
                             case "DEC":
                                 month='12'
                             case _:
-                                print('Invalid month in ' + file)
+                                console.print('Invalid month in ' + file,style="warn")
                                 invalid_months=True
                         converted_date=acquired_date[7:11]+month+acquired_date[0:2]
                         dline='{"Date":"' + converted_date + '"' + \
@@ -1447,7 +1445,7 @@ def do_timeline():
                                     '"}'
                         timeline.append(dline)
     if invalid_months:
-        print('Invalid months detected - timeline not updated')
+        console.print('Invalid months detected - timeline not updated',style="warn")
         return
     else:
 
@@ -1469,15 +1467,15 @@ def do_timeline():
         copy_and_replace('./xbuild_support/timeline.rst','./source/timeline.rst')
 
             
-        print('Timeline updated')
+        console.print('Timeline updated',style="info")
 
 def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
-    print('Updating index pages')
+    console.print('Updating index pages',style="info")
     if ANYUNDEROFFER == False:
-        print('   No items under offer\n')
+        console.print('   No items under offer\n',style="info")
     if ANYINTRANSIT == False:
-        print('   No items in transit\n')
-    print('\n')
+        console.print('   No items in transit\n',style="info")
+    console.print('\n')
     with open("./xbuild_support/index.pre", "r") as f:
         lines=f.readlines()
     with open("./xbuild_support/index.master", "w") as f:
@@ -1708,7 +1706,7 @@ def rebuild_db():
                                 case "DEC":
                                     month='12'
                                 case _:
-                                    print('Invalid month in ' + file)
+                                    console.print('Invalid month in ' + file,style="warn")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
                             real_date, tag,notes, location, metadata,filename, status) \
@@ -1897,7 +1895,7 @@ while True:
             console.print(output, style="info")
         case "2":
             index_entry = do_create()
-            print(index_entry)
+            console.print(index_entry,style="info")
         case "3":
             create_new_group_index()
         case "4":
@@ -1924,11 +1922,11 @@ while True:
             update_storage()
             do_collection()
             
-            print('Collection updated')
+            console.print('Collection updated',style="info")
             ANYUNDEROFFER=do_underoffer()
             ANYINTRANSIT=do_in_transit()
             do_index_contents(ANYUNDEROFFER,ANYINTRANSIT)
-            print('In-Transit updated')
+            console.print('In-Transit updated',style="info")
             do_timeline()
             os.system("make clean html")
         case "5":
@@ -1939,16 +1937,16 @@ while True:
             for row in output:
                c=c+1 
             if c == 0:
-                print('IC ' + ic + ' not found')
+                console.print('IC ' + ic + ' not found',style="danger")
                 break
             if c > 1:
-                print('IC ' + ic + ' found multiple times - manual update required')
+                console.print('IC ' + ic + ' found multiple times - manual update required',style="danger")
                 continue
         
             if c == 1:
                 for row in output:    
                     filename = row["filename"]
-                    print('Current status of ' + row["icid"] + ' is ' + row["status"])
+                    console.print('Current status of ' + row["icid"] + ' is ' + row["status"],style="info")
                     newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
                     
 
@@ -2024,13 +2022,13 @@ while True:
                                 if line.startswith('.. _') and not metadatafound:
                                     f.write(line+'\n')
                                     f.write(metadataline + '\n')
-                                    print('Added Metadata to IC information')
+                                    console.print('Added Metadata to IC information',style="info")
                                     writeln=True
 
                                 if "Temperature" in line and not maskfound:
                                     f.write(line)
                                     f.write('   "Mask","' + mask + '"\n')
-                                    print('Added Mask to IC information')
+                                    console.print('Added Mask to IC information',style="info")
                                     writeln=True
 
                                 if line.startswith('.. image::'):
@@ -2038,7 +2036,7 @@ while True:
                                     newimage = '.. image:: ' + ifile + '\n'
                                     f.write(newimage)
                                     if not os.path.exists(newimage):
-                                        print('Warning: Image ' + ifile + ' not found')
+                                        console.print('Warning: Image ' + ifile + ' not found',style="warn")
                                     writeln=True
                                 
                                 if "Date Code" in line:
@@ -2060,7 +2058,7 @@ while True:
                                 if not writeln:
                                     f.write(line)
 
-                        print('Updated status : Now assess storage metadata')    
+                        console.print('Updated status : Now assess storage metadata',style="info")    
 
         case "6":
             update_carousel()
