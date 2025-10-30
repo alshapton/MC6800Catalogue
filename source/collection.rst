@@ -49,8 +49,8 @@ This is the current collection (as at 30-10-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM "
-
+	":ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM ",":ref:`Folder Hardware <Hardware_map_reference>`"
+ 
 
 .. rubric:: Generic Documents
 

@@ -2,6 +2,8 @@
 
 .. _MEX6816-22D:
 
+.. #Metadata {'Product':'MEX6816-22D 16K Dynamic RAM','Folder': 'Hardware','Comments':''}
+
 MEX6816-22D 16K Dynamic RAM           
 ===========================
 

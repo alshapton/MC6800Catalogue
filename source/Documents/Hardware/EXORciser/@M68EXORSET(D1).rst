@@ -2,6 +2,8 @@
 
 .. _M68EXORSET(D1):
 
+.. #Metadata {'Product':'M68EXORSET(D1) EXORset Users Guide','Folder': ' ','Comments':''}
+
 M68EXORSET(D1) EXORset Users Guide
 ==================================
 

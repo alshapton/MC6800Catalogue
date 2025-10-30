@@ -2,6 +2,8 @@
 
 .. _M68MM04A:
 
+.. #Metadata {'Product':'M68MM04A Micromodule 4A ROM/EPROM Module','Folder': ' '}
+
 M68MM04A Micromodule 4A ROM/EPROM Module
 ========================================
 

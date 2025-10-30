@@ -2,6 +2,8 @@
 
 .. _MEX68CT:
 
+.. #Metadata {'Product':'MEX68CT MOTEST (Component Tester)','Folder': ' ','Comments':''}
+
 MOTEST (Component Tester)
 =========================
 

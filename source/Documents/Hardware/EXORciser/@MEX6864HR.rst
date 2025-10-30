@@ -2,6 +2,8 @@
 
 .. _MEX6864HR:
 
+.. #Metadata {'Product':'MEX6864 64K Hidden Refresh RAM','Folder': ' ','Comments':''}
+
 MEX6864 64K Hidden Refresh RAM           
 ==============================
 

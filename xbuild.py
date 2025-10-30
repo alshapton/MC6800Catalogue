@@ -17,6 +17,8 @@ import rich
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.theme import Theme
+from rich import print
+from rich.panel import Panel
 custom_theme = Theme({
     "info": "bold green",
     "warning": "bold Blue",
@@ -331,7 +333,7 @@ def create_new_group_index():
     console.print('New group index created in ' + LOC.lower(),style="info")
 
 def update_IC_pre_fragments():
-    console.print('Updating IC pre-fragments',style="info")
+    console.print('\tCommencing Updating IC pre-fragments',style="info")
 
     yfiles = glob.glob('**/*.pre.fragment', recursive=True)
     for yfile in yfiles:
@@ -417,7 +419,7 @@ def update_IC_pre_fragments():
 
             movefile(outputfile, fragmentfile)
 
-    console.print('Finished updating IC pre-fragments',style="info")
+    console.print('\n\tFinished updating IC pre-fragments',style="info")
 
 def update_carousel():
     files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
@@ -463,7 +465,7 @@ def update_carousel():
                         d.write('    .. card::\n\n')
                         d.write('      .. image:: ' + fullfile + '\n')
                         d.write('         :width: 800\n\n')
-    console.print('\n\nCarousels updated',style="info")
+    console.print('\n\n\tCarousels updated',style="info")
 
 
 
@@ -556,9 +558,12 @@ def update_storage():
                     foldersdatasheets.append(loc)
             
             if 'Hardware/Other' in file and 'fragment' not in file and 'index' not in file:
-                metadata,loc = get_loc(file)                
-                if metadata:
-                    foldershardware.append(loc)
+                if "@" in file:
+                    metadata,loc = get_loc(file) 
+                    
+                    if loc != "{'Status': ''}":
+                        if metadata and loc["Status"] == "YES":
+                            foldershardware.append(loc)
 
             if 'Generic' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
@@ -610,7 +615,7 @@ def update_storage():
                 match item['Folder']:
                     case "Hardware":
                         write_folder=True
-                        fmf.write(map_reference + '\n\n.. rubric:: Hardware\n\n')
+                        fmf.write(map_reference + '\n\n.. rubric:: Hardware \n\n')
                     case "GITHUB":
                         write_folder=True
                         fmf.write(map_reference + '\n\n.. rubric:: GitHub Repository (See individual items)\n\n')
@@ -861,7 +866,7 @@ def update_storage():
             movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
             SF=snippetfile.replace(IC_LOCATIONS + OSSEP + 'tables.fragment.','').replace('.snippet','')
             if POSS_ISOPREAMBLE == ISOPREAMBLE:
-                print('     Duplicate tag detected: ' + ISOPREAMBLE)
+                console.print('     Duplicate tag detected: ' + ISOPREAMBLE,style="warning")
                 SFHEADER=''
             else:
                 SFHEADER='.. rubric:: '+ SF.split('.')[0].replace('_',' ')
@@ -873,7 +878,7 @@ def update_storage():
 
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
-            print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets')
+            console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
 
 
     print('Cleaning up')
@@ -947,6 +952,8 @@ def update_IC_index():
 
 def do_underoffer():
     ANYUNDEROFFER=False
+    underofferinfo=''
+
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('source/**/*.fragment.'+SUFFIX, recursive=True)
     with open(UNDEROFFER_FILE,"w") as c:
@@ -1001,7 +1008,12 @@ def do_underoffer():
                                             "OLINE" : outline }
                                 if description != '' :
                                     underoffer.append(thisdict)
+                                    t=doc_type + '\t\t\t' + file + '\n'
+                                    underofferinfo = underofferinfo + t
                 newlist = sorted(underoffer, key=lambda d: (d['DTYPE'],d['PN']))  
+        if underofferinfo != '':            
+            print(Panel(underofferinfo, title="Under Offer items"))
+
         HEADING=''
         for i in newlist:
             if HEADING != i['DTYPE']:
@@ -1015,6 +1027,8 @@ def do_underoffer():
 
 def do_in_transit():
     ANYINTRANSIT=False
+    intransitinfo=''
+
     # Find all .rst files in the current directory and subdirectories
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     with open(TRANSIT_FILE,"w") as c:
@@ -1054,7 +1068,7 @@ def do_in_transit():
                             tag=line.replace('.. _','').replace(':','').strip()
                         
                         if IN_TRANSIT in line:
-                            console.print(doc_type + ' ' + file + ' contains in transit item',style="info")
+                            
                             link  = ':ref:`' + productname + ' <'+ tag + '>` '
 
                             outline = ('\t' + tag + ',"' + link + '"\n').replace('""','"')
@@ -1064,7 +1078,12 @@ def do_in_transit():
                                         "OLINE" : outline }
                             if productname != '' :
                                 intransit.append(thisdict)
+                                t=doc_type + '\t\t\t' + file + '\n'
+                                intransitinfo = intransitinfo + t
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
+
+        if intransitinfo != '':            
+            print(Panel(intransitinfo, title="In Transit items"))
 
         HEADING=''
         if len(newlist) > 0:
@@ -1434,7 +1453,7 @@ def do_timeline():
                             case "DEC":
                                 month='12'
                             case _:
-                                console.print('Invalid month in ' + file,style="warn")
+                                console.print('Invalid month in ' + file,style="warning")
                                 invalid_months=True
                         converted_date=acquired_date[7:11]+month+acquired_date[0:2]
                         dline='{"Date":"' + converted_date + '"' + \
@@ -1445,7 +1464,7 @@ def do_timeline():
                                     '"}'
                         timeline.append(dline)
     if invalid_months:
-        console.print('Invalid months detected - timeline not updated',style="warn")
+        console.print('Invalid months detected - timeline not updated',style="warning")
         return
     else:
 
@@ -1471,11 +1490,7 @@ def do_timeline():
 
 def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     console.print('Updating index pages',style="info")
-    if ANYUNDEROFFER == False:
-        console.print('   No items under offer\n',style="info")
-    if ANYINTRANSIT == False:
-        console.print('   No items in transit\n',style="info")
-    console.print('\n')
+
     with open("./xbuild_support/index.pre", "r") as f:
         lines=f.readlines()
     with open("./xbuild_support/index.master", "w") as f:
@@ -1594,15 +1609,16 @@ def rebuild_db():
 
     for file in files:
 
-        if ('Hardware'+OSSEP+'Other'+OSSEP+'@' in file or
-            'Hardware'+OSSEP+'EXORciser'+OSSEP+'@' in file or 
-            'Hardware'+OSSEP+'EXORciser'+OSSEP+'Micromodules' + OSSEP + '@' in file or
+        if ('Hardware' + OSSEP + 'Other' + OSSEP + '@' in file or
+            'Hardware' + OSSEP + 'EXORciser' + OSSEP + '@' in file or 
+            'Hardware' + OSSEP + 'EXORciser' + OSSEP + 'Micromodules' + OSSEP + '@' in file or
             'Generic' in file or
             'Manuals' in file or 
             'Reference' in file or 
             'EngineeringNotes' in file or 'Datasheets' in file or 
             'ApplicationNotes' in file) \
-            and 'fragment' not in file and 'index' not in file:
+            and 'fragment' not in file and 'index' not in file \
+            and 'carousel' not in file :
             metadata=''
             tag=''
             acquired_date=''
@@ -1706,7 +1722,7 @@ def rebuild_db():
                                 case "DEC":
                                     month='12'
                                 case _:
-                                    console.print('Invalid month in ' + file,style="warn")
+                                    console.print('Invalid month in ' + file,style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
                             real_date, tag,notes, location, metadata,filename, status) \
@@ -1874,16 +1890,20 @@ def update_chip_info(f):
 
     
 while True:
-    print('\t1. Get date range from week ')
-    print('\t2. Create new entry  ')
-    print('\t3. Create new IC group index')    
-    print('\t4. Create new IC group from index')    
-    print('\t5. Update IC status (WIP)')
-    print('\t6. Update carousels')
-    print('\t7. Rebuild DB')
-    print('\t0. Update ALL ')
-    print('\tX. Exit')
-    type = input('Enter choice: ')
+    console.print("\t  Main Menu\n",style="bold black")
+    console.print('\t1 Get date range from week ',style="info")
+    console.print('\t2 Create new entry  ',style="info")
+    console.print('\t3 Create new IC group index',style="info")    
+    console.print('\t4 Create new IC group from index',style="info")    
+    console.print('\t5 Update IC status (WIP)',style="warning")
+    console.print('\t6 Update carousels',style="info")
+    console.print('\t7 Rebuild DB',style="info")
+    console.print('\t- Delete DB',style="danger")
+    console.print('\t0 Update ALL ',style="info")
+    console.print('\t8 Special',style="danger")
+    console.print('\tX Exit',style="info")
+    choicesList=["1", "2","3","4","5","6","7","-","0","-","A","X","?"]
+    type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
             #Get year and week from user
@@ -1901,19 +1921,18 @@ while True:
         case "4":
             create_new_group_from_index()        
         case "0":
-            output='\nSetting Up icons'
+            output='\nSetting Up icons\n\n'
             console.print(output, style="info")
             setup_icons()
             output='Commencing rebuild of database'
             console.print(output, style="info")
             rebuild_db()
-            print('Completed rebuild of database')     
-            print('\n\nCommencing updating storage metadata links')
+            console.print('Completed rebuild of database',style="info")     
+            console.print('\n\nCommencing updating storage metadata links',style="info")
 
             rstfiles = glob.glob('**/*.rst', recursive=True)
             for file in rstfiles:
                 update_or_not_metadata(file)
-            print('Completed updating storage metadata links')
         
 
             update_carousel()
@@ -1928,6 +1947,7 @@ while True:
             do_index_contents(ANYUNDEROFFER,ANYINTRANSIT)
             console.print('In-Transit updated',style="info")
             do_timeline()
+            console.print('\n\n      Handing control to Sphinx\n\n\n',style="info")
             os.system("make clean html")
         case "5":
             ic = input("Enter IC to change status: ")
@@ -2036,7 +2056,7 @@ while True:
                                     newimage = '.. image:: ' + ifile + '\n'
                                     f.write(newimage)
                                     if not os.path.exists(newimage):
-                                        console.print('Warning: Image ' + ifile + ' not found',style="warn")
+                                        console.print('Warning: Image ' + ifile + ' not found',style="warning")
                                     writeln=True
                                 
                                 if "Date Code" in line:
@@ -2150,7 +2170,8 @@ while True:
                 
                 
             print('Done') 
-            
+        case "?":
+            pass
         case "-":
                 console.print("This is destructive", style="danger")
                 choice = Prompt.ask("Do you really want to delete the database?", choices=["Y", "N"], default="N", case_sensitive=True)
@@ -2158,13 +2179,10 @@ while True:
                     os.remove(DB)
                     console.print("Database deleted", style="danger")
 
-        case "X":
+        case "X"|"x":
             console.print("Exiting", style="info")
             exit()
-        case "x":
-            console.print("Exiting", style="info")
-            exit()
-
+        
         case _:
             console.print("Invalid Choice", style="warning")
             

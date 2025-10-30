@@ -2,7 +2,7 @@
 
 .. _HEPEducatorKt2:
 
-.. #Metadata {'Product':'HEPEducatorKit-II','Name':'Motorola HEP Kit Educator II','Folder': 'Hardware'}
+.. #Metadata {'Product':'HEPEducatorKt2','Name':'Motorola HEP Kit Educator II','Folder': 'Hardware'}
 
 Motorola HEP Kit Educator II
 ============================
@@ -51,6 +51,6 @@ References
    :header: "Acquired","DataSheet"
    :widths: auto
 
-    "|notpresent|","|notpresent|"
+   |notpresent|
 
 

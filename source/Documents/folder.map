@@ -66,13 +66,12 @@
 
 .. _Hardware_map_reference:
 
-.. rubric:: Hardware
+.. rubric:: Hardware 
 
 .. csv-table::
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`HEPEducatorKit-II <HEPEducatorKt2>`,""
     :ref:`M68MMCC10 <M68MMCC10>`,""
     :ref:`MEK6800D2 <MEK6800D2>`,""
     :ref:`MPUEvaluationBoard <MPU_EVALUATION_BOARD>`,""
