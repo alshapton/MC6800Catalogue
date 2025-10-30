@@ -1532,7 +1532,11 @@ def rebuild_db():
                             real_date           TEXT,      \
                             location            TEXT,      \
                             metadata            TEXT,      \
-                            filename            TEXT       \
+                            filename            TEXT,      \
+                            storage             TEXT,      \
+                            drawer              TEXT,      \
+                            row                 TEXT,      \
+                            col                 TEXT       \
                        );")
     conn.commit()
 
@@ -1755,6 +1759,10 @@ def rebuild_db():
             metadata = ''
             image = ''
             location = ''
+            storage = ''
+            drawer = ''     
+            row = ''    
+            col = ''
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
@@ -1765,6 +1773,17 @@ def rebuild_db():
                         conn.commit()
                     if '.. #Metadata ' in line:
                         metadata=line.replace('.. #Metadata','').strip()
+                        metadata_dict = eval(metadata)
+                        if 'Drawer' in metadata_dict:
+                            storage = metadata_dict['Storage']
+                            if storage != 'S':
+                                drawer = metadata_dict['Drawer']
+                                row = metadata_dict['Row']
+                                col = metadata_dict['Column']
+                            else:
+                                storage = ''
+                        else:
+                            storage = metadata_dict['Storage']                                                            
                     if '.. include::' in line and 'carousel in line':
                         carouselfile=line.replace('.. include::','').strip()
                         conn.execute("INSERT INTO carousels (documenttype,documentid, carouselid, carouselfile) VALUES (?,?,?,?);", (documenttype,documentid, carouselid, carouselfile.strip()))
@@ -1808,7 +1827,9 @@ def rebuild_db():
                     if '"Location"' in line:
                         splitline=line.split('","')
                         location=splitline[1].replace('"','')[:-1]
-                    
+                        if ':ref:' not in location and location != 'TBD':
+                            storage = location 
+
                     if line.startswith("====="):
                         productname=prevproductname
                     else:
@@ -1852,10 +1873,10 @@ def rebuild_db():
                     parent_number = parent.replace('MCM','').replace('MC','').strip()
             conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
                                            tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
-                                           location, metadata,filename) \
-                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                                           location, metadata,filename,storage,drawer,row,col) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
                          (icid, ic, parent,parent_number,productname,status,acquired_date,converted_date,tag,packaging,\
-                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file))
+                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file,storage,drawer,row,col))
         
             conn.commit()
     conn.close()
