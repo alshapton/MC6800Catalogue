@@ -472,7 +472,7 @@ def update_carousel():
 
 
 def update_storage():
-    print('Cleaning and prepping storage files')
+    console.print('Cleaning and prepping storage files',style="info")
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in snippetfiles:
         os.remove(snippetfile)
@@ -907,12 +907,15 @@ def update_storage():
     console.print('\nLocations fully updated',style="info")      
 
 def update_IC_index():
-    console.print('\nUpdating IC index',style="info")
+
+    console.print('\n\tUpdating IC index',style="info")
+
     files = glob.glob('**/MC*', recursive=True)
     icfiles=[]
     ic2file=[]
     memfiles=[]
     for file in files:
+            
             if 'source/Documents/Hardware/ICs/' in file:
 
                 fname=file.replace('source/Documents/Hardware/ICs/','')
@@ -947,7 +950,7 @@ def update_IC_index():
         for chip in chips:
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
-    console.print('\nCompleted updating IC index\n',style="info")
+    console.print('\n\tCompleted updating IC index\n',style="info")
 
 
 def do_underoffer():
@@ -1041,7 +1044,7 @@ def do_in_transit():
         
     
         intransit=[]
-
+        
 
         for file in files:
             if "@" in file:
@@ -1075,15 +1078,25 @@ def do_in_transit():
                             thisdict = {"PN"    : tag, 
                                         "DESC"  : productname, 
                                         "DTYPE" : doc_type, 
-                                        "OLINE" : outline }
+                                        "OLINE" : outline,
+                                        "FILE"  : file }
                             if productname != '' :
                                 intransit.append(thisdict)
-                                t=doc_type + '\t\t\t' + file + '\n'
-                                intransitinfo = intransitinfo + t
+                                
                 newlist = sorted(intransit, key=lambda d: (d['DTYPE'],d['PN']))  
 
-        if intransitinfo != '':            
-            print(Panel(intransitinfo, title="In Transit items"))
+        if intransit != []:            
+            
+            from rich.table import Table
+            table = Table(title="In Transit items")
+
+            table.add_column("Type", justify="left", style="cyan", no_wrap=True)
+            table.add_column("File", style="bold green")
+
+            for item in intransit:            
+                table.add_row(item["DTYPE"], item["FILE"])
+            
+            console.print(table)
 
         HEADING=''
         if len(newlist) > 0:
@@ -1569,7 +1582,7 @@ def rebuild_db():
                             metadata            TEXT,        \
                             filename            TEXT,        \
                             status              TEXT         \
-                       );")
+                            );")
     conn.commit()
 
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS documentlinks \
@@ -1598,6 +1611,22 @@ def rebuild_db():
                        );")
     conn.commit()
 
+    cursor_obj.execute("CREATE VIEW IF NOT EXISTS summary       \
+                        (                                       \
+                        documenttype,                           \
+                        total                                   \
+                        )                                       \
+                        AS                                      \
+                        SELECT documenttype,COUNT(documentid)   \
+                        FROM documents                          \
+                        GROUP BY documenttype                   \
+                        UNION                                   \
+                        SELECT 'ICs', COUNT(icid)               \
+                        FROM ics                                \
+                        ORDER by 1 ASC;")
+    conn.commit()
+    
+                       
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
@@ -1609,11 +1638,14 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM documentlinks;")
     cursor_obj.execute("DELETE FROM carousels;")
 
+
+
     conn.commit()
 
     for file in files:
 
-        if ('Hardware' + OSSEP + 'Other' + OSSEP + '@' in file or
+        if ('Software' + OSSEP + 'NonResident' + OSSEP + '@' in file or
+            'Hardware' + OSSEP + 'Other' + OSSEP + '@' in file or
             'Hardware' + OSSEP + 'EXORciser' + OSSEP + '@' in file or 
             'Hardware' + OSSEP + 'EXORciser' + OSSEP + 'Micromodules' + OSSEP + '@' in file or
             'Generic' in file or
@@ -1660,6 +1692,8 @@ def rebuild_db():
                         documenttype='Reference'
                 if 'ReferenceCards' in file:
                         documenttype='ReferenceCards'
+                if 'Software' + OSSEP + 'NonResident' + OSSEP + '@' in file:
+                        documenttype='Software/NonResident'
 
                 for line in lines:
                     if '.. include::' in line and 'carousel in line':
@@ -1910,6 +1944,7 @@ def update_chip_info(f):
     f.write('\n')
 
     
+    
 while True:
     console.print("\t  Main Menu\n",style="bold black")
     console.print('\t1 Get date range from week ',style="info")
@@ -1942,6 +1977,9 @@ while True:
         case "4":
             create_new_group_from_index()        
         case "0":
+            import os
+            clear = lambda: os.system('clear')
+            clear()
             output='\nSetting Up icons\n\n'
             console.print(output, style="info")
             setup_icons()
@@ -1970,6 +2008,7 @@ while True:
             do_timeline()
             console.print('\n\n      Handing control to Sphinx\n\n\n',style="info")
             os.system("make clean html")
+
         case "5":
             ic = input("Enter IC to change status: ")
             statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
