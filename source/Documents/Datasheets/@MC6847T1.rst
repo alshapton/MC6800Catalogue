@@ -5,25 +5,25 @@
 .. #Metadata {'Product':'MC6847T1 Video Display Generator (VDG)','Folder': 'None'}
 
 MC6847T1 Video Display Generator (VDG)
-============================================
+======================================
 
 .. image:: ../../images/DataSheets/MC6847T1.png
    :width: 400
    :align: center
 
-.. rubric:: This is an enhanced version of the MC6847/MC6847Y
+.. note:: 
+   
+   This is an enhanced version of the `MC6847/MC6847Y Video Display Generator (VDG) <MC6847>`
    
 
 .. rubric:: Collection Information
-   
+
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
    |notpresent|
 
-
 .. rubric:: Links
 
 :download:`MC6847T1 Video Display Generator (VDG) <../../_static/Documents/Datasheets/MC6847T1.pdf>`
-:ref: `MC6847/MC6847Y Video Display Generator (VDG) <MC6847>`

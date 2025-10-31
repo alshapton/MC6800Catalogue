@@ -12,6 +12,7 @@ MES6800 User Guide
    :align: center
 
 .. Note:: 
+    
     This is the User Manual acquired with the Briefcase edition of the MPU 6800 Evaluation Card. See link below.
 
 .. rubric:: Collection Information

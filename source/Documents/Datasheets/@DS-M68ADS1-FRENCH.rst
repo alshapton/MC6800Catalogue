@@ -2,10 +2,10 @@
 
 .. _DS-M68ADS1-FRENCH:
 
+.. #Metadata {'Product':'Autonomous Development System (French) Datasheet','Folder': '2'}
+
 Autonomous Development System (French) Datasheet
 ================================================
-
-.. #Metadata {'Product':'Autonomous Development System (French) Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68ADS-1.1.jpg
    :width: 400
@@ -20,12 +20,5 @@ Autonomous Development System (French) Datasheet
    :header: "Acquired"
    :widths: auto
 
-    "|present| 28-MAR-2025"
-
-
-
-
-
-
-
+   |present| 28-MAR-2025
 

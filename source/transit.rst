@@ -2,7 +2,16 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 31-10-2025) in transit.
+This is the current set of items (as at 03-11-2025) in transit.
+
+
+.. rubric:: EXORciser
+
+.. csv-table:: 
+	:header: "Part Number","Description"
+	:widths: 30, 70
+
+	M68MM12,":ref:`M68MM12 Micromodule 12 GPIB Interface Module <M68MM12>` "
 
 
 .. rubric:: ICs

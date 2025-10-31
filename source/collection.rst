@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 31-10-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 03-11-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -40,7 +40,7 @@ This is the current collection (as at 31-10-2025) of the items produced by Motor
  	":ref:`M68MM07 <DS-M68MM07>`","Quad Communications Micromodule",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`MEX68PP3 <MEX68PP3>`","EROM/PROM Programmer Module",":ref:`Folder 2 <2_map_reference>`"
- 	":ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <DS-M6800ResSoftware>`","M6800 Resident Software",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  
 
 .. rubric:: Exorciser Hardware

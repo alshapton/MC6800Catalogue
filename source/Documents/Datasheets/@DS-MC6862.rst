@@ -2,10 +2,10 @@
 
 .. _DS-MC6862:
 
+.. #Metadata {'Product':'MC6862 2400 bps DIGITAL MODEM','Folder': ' ','Comments':''}
+
 MC6862 2400 bps Digital Modem
 =============================
-
-.. #Metadata {'Product':'MC6862 2400 bps DIGITAL MODEM','Folder': ' ','Comments':''}
 
 .. image:: ../../images/DataSheets/MC6862.png
    :width: 400

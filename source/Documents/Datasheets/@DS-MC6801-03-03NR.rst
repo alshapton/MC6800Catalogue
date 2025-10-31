@@ -2,10 +2,10 @@
 
 .. _DS-MC6801-03-03NR:
 
+.. #Metadata {'Product':'Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)','Folder': ' ','Comments':''}
+
 Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)
 ===============================================================
-
-.. #Metadata {'Product':'Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)','Folder': ' ','Comments':''}
 
 .. image:: ../../images/DataSheets/MC6801-03-03NR.png
    :width: 400

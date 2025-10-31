@@ -2,28 +2,23 @@
 
 .. _MC6850:
 
+.. #Metadata {'Product':'MC6850 Datasheet','Folder': '2'}
+
 MC6850 (1 Mhz)/MC68A50 (1.5 Mhz)/MC68B50 (2 Mhz) Asynchronous Communications Interface Adapter Datasheet
 ========================================================================================================
-
-.. #Metadata {'Product':'MC6850 Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/MC6850.1.png
    :width: 400
    :align: center
 
-
 .. rubric:: Collection Information
-
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |present| 12-MAR-2025
+   |present| 12-MAR-2025
 
 .. rubric:: Links
 
 :download:`MC6850 DataSheet <../../_static/Documents/Datasheets/MC6850.pdf>`
-
-
-

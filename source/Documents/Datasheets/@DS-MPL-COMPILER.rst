@@ -2,9 +2,10 @@
 
 .. _DS-MPL-COMPILER:
 
+.. #Metadata {'Product':'MPL Compiler Datasheet','Folder': 'M6800 Microcomputer System Support Products'}
+
 MPL Compiler Datasheet
 ======================
-.. #Metadata {'Product':'MPL Compiler Datasheet','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/DataSheets/DS-MPL-COMPILER.png
    :width: 400
@@ -17,8 +18,6 @@ MPL Compiler Datasheet
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

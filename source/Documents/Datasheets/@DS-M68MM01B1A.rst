@@ -2,10 +2,10 @@
 
 .. _DS-M68MM01B1A:
 
+.. #Metadata {'Product':'M68MM01B1A Monoboard Microcomputer Module Datasheet','Folder': '2'}
+
 M68MM01B1A Monoboard Microcomputer Module Datasheet
 ===================================================
-
-.. #Metadata {'Product':'M68MM01B1A Monoboard Microcomputer Module Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM01B1A(D1).png
    :width: 400
@@ -18,8 +18,6 @@ M68MM01B1A Monoboard Microcomputer Module Datasheet
    :widths: auto
 
    |present| 20-MAR-2025
-
-
 
 .. rubric:: Links
 

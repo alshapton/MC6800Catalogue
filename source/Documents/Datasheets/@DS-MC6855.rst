@@ -2,14 +2,18 @@
 
 .. _DS-MC6855:
 
+.. #Metadata {'Product':'MC6855 Serial Direct Memory Access Processor','Folder': ' ','Comments':''}
+
 MC6855 Serial Direct Memory Access Processor
 ============================================
-
-.. #Metadata {'Product':'MC6855 Serial Direct Memory Access Processor','Folder': ' ','Comments':''}
 
 .. image:: ../../images/DataSheets/DS-MC6855.png
    :width: 400
    :align: center
+
+.. note::
+   
+   This product was cancelled |cancelled|
 
 .. rubric:: Collection Information
 
@@ -18,8 +22,6 @@ MC6855 Serial Direct Memory Access Processor
    :widths: auto
 
    |notpresent|
-
-.. rubric:: This product was cancelled |cancelled|
 
 .. rubric:: Links
 

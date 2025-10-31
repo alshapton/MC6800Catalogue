@@ -12,6 +12,7 @@ MEX68XT Extender Module
    :align: center
 
 .. note::
+   
    Rare - possibly $1675 or more in 2025
 
 .. rubric:: Collection Information

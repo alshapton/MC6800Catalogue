@@ -2,10 +2,10 @@
 
 .. _DS-MCM6810:
 
+.. #Metadata {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory','Folder': ' ','Comments':''}
+
 MCM6810 128 x 8-Bit Static Random Access Memory
 ===============================================
-
-.. #Metadata {'Product':'MCM6810 128 x 8-Bit Static Random Access Memory','Folder': ' ','Comments':''}
 
 .. image:: ../../images/DataSheets/MCM6810.png
    :width: 400

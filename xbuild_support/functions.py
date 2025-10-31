@@ -76,3 +76,15 @@ def get_location(ref,md):
             loc  = line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
             loc  = ast.literal_eval(loc)
     return loc
+
+
+
+def multiline_input(prompt):
+    print(prompt + '(Ctrl-D to end):')
+    contents = []
+    while True:
+        try:
+            line = input()
+        except EOFError:
+            break
+        contents.append(line)

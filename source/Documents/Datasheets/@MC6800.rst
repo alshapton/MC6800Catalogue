@@ -23,7 +23,4 @@
 
 :download:`8-Bit Microprocessing Unit <../../_static/Documents/Datasheets/MC6800.pdf>`
 
-See also:
-
 :download:`Microprocessing Unit (MPU) May 1975 Advance Information <../../_static/Documents/Datasheets/MC6800-May75.pdf>`
-

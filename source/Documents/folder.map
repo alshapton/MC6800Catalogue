@@ -107,7 +107,7 @@
    :widths: 60,40
 
     :ref:`Documentation Brochure <M6800-DOCUMENTATION-BROCHURE>`,""
-    :ref:`M6800 Co-Resident Software Datasheet <DS-M6800-Res-Software>`,""
+    :ref:`M6800 Co-Resident Software Datasheet <DS-M6800ResSoftware>`,""
     :ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`,""
     :ref:`M6800 EXORdisk Brochure <M6800EXORDISK-BROCHURE>`,""
     :ref:`M6800 EXORtape Brochure <M6800EXORTAPE-BROCHURE>`,""

@@ -12,6 +12,7 @@ MEX6864 16K-64K Hidden Refresh Memory Module Users Guide
    :align: center
 
 .. Note:: 
+    
     This is the User Guide for the following products:
       * MEX6816-1HR  - 16K Hidden Refresh RAM Module
       * MEX6832-1HR  - 32K Hidden Refresh RAM Module

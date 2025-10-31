@@ -4,7 +4,7 @@
 
 .. #Metadata {'Product':'MC6870-71 Two-Phase Microprocessor Clock','Folder': 'None'}
 
-MC6870-71 Two-Phase Microprocessor Clock 
+MC6870-71 Two-Phase Microprocessor Clock
 ========================================
 
 .. image:: ../../images/DataSheets/MC6870-MC6871.png

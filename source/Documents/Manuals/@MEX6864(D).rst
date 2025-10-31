@@ -12,6 +12,7 @@
    :align: center
 
 .. Note:: 
+    
     This is the User Guide for the following products:
       * MEX6816-22D - 16K Dynamic RAM
       * MEX6832-22  - 32K Dynamic RAM

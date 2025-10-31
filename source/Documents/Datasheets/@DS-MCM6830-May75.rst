@@ -2,10 +2,10 @@
 
 .. _DS-MCM6830-MAY75:
 
+.. #Metadata {'Product':'MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
+
 MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)
 ====================================================================
-
-.. #Metadata {'Product':'MCM6830 1024 x 8-Bit Read Only Memory (Advance Information May 1975)','Folder': '<SYSREF>','Comments':''}
 
 .. image:: ../../images/DataSheets/MCM6830-May75.png
    :width: 400

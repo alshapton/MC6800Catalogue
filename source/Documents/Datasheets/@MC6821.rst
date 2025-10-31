@@ -11,15 +11,13 @@ Peripheral Interface Adapter
    :width: 400
    :align: center
 
-
 .. rubric:: Collection Information
-   
+
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
    |notpresent|
-
 
 .. rubric:: Links
 

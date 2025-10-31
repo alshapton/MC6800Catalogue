@@ -11,15 +11,13 @@ MC6829 Memory Management Unit
    :width: 400
    :align: center
 
-
 .. rubric:: Collection Information
-   
+
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
    |present| 28-OCT-2025
-
 
 .. rubric:: Links
 

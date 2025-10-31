@@ -85,7 +85,7 @@ Modules
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit","|advanceinfo|","1975",""    
    "|present| :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200","|confirminfo|","Issue A 1978",""
    "|notpresent| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
-   "|present| :ref:`N/A <DS-M6800-Res-Software>`","M6800 Resident Software","|advanceinfo|","1975"
+   "|present| :ref:`N/A <DS-M6800ResSoftware>`","M6800 Resident Software","|advanceinfo|","1975"
    "|present| :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet","|advanceinfo|","1975"
    "|present| :ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler","|advanceinfo|","1975"
    "|present| :ref:`DS-MPL-COMPILER <DS-MPL-COMPILER>`","MPL Compiler Datasheet","|advanceinfo|","1976"

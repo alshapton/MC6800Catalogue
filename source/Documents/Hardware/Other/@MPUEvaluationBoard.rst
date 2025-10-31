@@ -9,8 +9,8 @@ MPU Evaluation Card MC6800 Microprocessor Board
 
 .. include::  MPUEvaluationBoard.carousel.rst
 
+.. Note::
 
-.. Note:: 
     The briefcase-mounted evaluation system was acquired with several other documents.
 
    - :ref:`Users Guide for the Motorola Microcomputer Evaluation System <MES6800>`

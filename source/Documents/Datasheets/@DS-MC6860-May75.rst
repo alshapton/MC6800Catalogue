@@ -2,10 +2,10 @@
 
 .. _DS-MC6860-MAY75:
 
+.. #Metadata {'Product':'MC6860 Slow Speed Modem','Folder': '<SYSREF>','Comments':''}
+
 MC6860 Slow Speed Modem
 =======================
-
-.. #Metadata {'Product':'MC6860 Slow Speed Modem','Folder': '<SYSREF>','Comments':''}
 
 .. image:: ../../images/DataSheets/MC6860-Advance-Info-May75.png
    :width: 400

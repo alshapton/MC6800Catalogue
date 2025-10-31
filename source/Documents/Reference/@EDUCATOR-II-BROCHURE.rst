@@ -12,7 +12,9 @@ EDUCATOR-II Brochure
    :align: center
 
 
-.. rubric:: Note that this document was obtained with, and will be stored with: :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
+.. Note::
+   
+   Note that this document was obtained with, and will be stored with: :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
 
 .. rubric:: Collection Information
 

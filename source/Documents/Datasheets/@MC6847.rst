@@ -11,7 +11,9 @@ MC6847/MC6847Y Video Display Generator (VDG)
    :width: 400
    :align: center
 
-.. rubric:: This IC comes in 2 forms:
+.. note:: 
+   
+   This IC comes in 2 forms:
    
 +-----------+-----------------+
 | IC Name   | Description     |   
@@ -22,13 +24,12 @@ MC6847/MC6847Y Video Display Generator (VDG)
 +-----------+-----------------+
 
 .. rubric:: Collection Information
-   
+
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
    |notpresent|
-
 
 .. rubric:: Links
 

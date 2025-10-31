@@ -12,6 +12,7 @@ MEK6800D2 Microcomputer Kit System Expansion Techniques
    :align: center
 
 .. rubric:: Collection Information
+
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto

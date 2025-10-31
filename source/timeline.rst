@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 31-10-2025).
+This is the timeline of acquisitions (as at 03-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -101,7 +101,7 @@ This is the timeline of acquisitions (as at 31-10-2025).
    07-JUL-2025,:ref:`MC68488L General Purpose Interface Adapter <MC68488L>`
    07-JUL-2025,:ref:`MC6871A-15 Two-Phase Microprocessor Clock <MC6871A15>`
    07-JUL-2025,:ref:`MC6871A-20 Two-Phase Microprocessor Clock <MC6871A20>`
-   17-JUL-2025,:ref:`M6800 Co-Resident Software Datasheet <DS-M6800-Res-Software>`
+   17-JUL-2025,:ref:`M6800 Co-Resident Software Datasheet <DS-M6800ResSoftware>`
    17-JUL-2025,:ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`
    17-JUL-2025,:ref:`M6800 Simulator Datasheet <DS-M68EML>`
    17-JUL-2025,:ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`

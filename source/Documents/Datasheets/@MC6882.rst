@@ -2,16 +2,18 @@
 
 .. _DS-MC6882:
 
+.. #Metadata {'Product':'MC6882 Octal Three-State Buffer/Latch','Folder': ' ','Comments':''}
+
 MC6882 Octal Three-State Buffer/Latch
 =====================================
-
-.. #Metadata {'Product':'MC6882 Octal Three-State Buffer/Latch','Folder': ' ','Comments':''}
 
 .. image:: ../../images/DataSheets/DS-MC6882.png
    :width: 400
    :align: center
 
-.. rubric:: Most likely available prior to MC6800 launch by alternate name.
+.. note:: 
+
+   Most likely available prior to MC6800 launch by alternate name.
 
 .. rubric:: Collection Information
 

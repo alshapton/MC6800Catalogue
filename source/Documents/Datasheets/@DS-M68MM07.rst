@@ -2,10 +2,10 @@
 
 .. _DS-M68MM07:
 
+.. #Metadata {'Product':'M68MM07 Quad Communications Micromodule Datasheet','Folder': '2'}
+
 M68MM07 Quad Communications Micromodule Datasheet
 =================================================
-
-.. #Metadata {'Product':'M68MM07 Quad Communications Micromodule Datasheet','Folder': '2'}
 
 .. image:: ../../images/DataSheets/M68MM07.1.png
    :width: 400
@@ -13,13 +13,9 @@ M68MM07 Quad Communications Micromodule Datasheet
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|present| 28-MAR-2025"
-
-
-
+   |present| 28-MAR-2025
 

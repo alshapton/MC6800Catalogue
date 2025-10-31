@@ -25,4 +25,4 @@ M6800 Resident Software Brochure
 
 :download:`M6800 Resident Software Brochure <../../_static/Documents/Reference/M6800-RESIDENT-SOFTWARE-BROCHURE.pdf>`
 
-:ref:`M6800-Resident-Software Datasheet <DS-M6800-Res-Software>`
+:ref:`M6800-Resident-Software Datasheet <DS-M6800ResSoftware>`

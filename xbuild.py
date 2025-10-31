@@ -1581,7 +1581,8 @@ def rebuild_db():
                             location            TEXT,        \
                             metadata            TEXT,        \
                             filename            TEXT,        \
-                            status              TEXT         \
+                            status              TEXT,        \
+                            bigger              TEXT         \
                             );")
     conn.commit()
 
@@ -1644,7 +1645,9 @@ def rebuild_db():
 
     for file in files:
 
-        if ('Software' + OSSEP + 'NonResident' + OSSEP + '@' in file or
+        if ('Software' + OSSEP + 'Resident' + OSSEP + 'EXORset30ROMS' + OSSEP + '@' in file or
+            'Software' + OSSEP + 'Resident' + OSSEP + '@' in file or
+            'Software' + OSSEP + 'NonResident' + OSSEP + '@' in file or
             'Hardware' + OSSEP + 'Other' + OSSEP + '@' in file or
             'Hardware' + OSSEP + 'EXORciser' + OSSEP + '@' in file or 
             'Hardware' + OSSEP + 'EXORciser' + OSSEP + 'Micromodules' + OSSEP + '@' in file or
@@ -1666,7 +1669,10 @@ def rebuild_db():
             documentid = filename[3].replace('@' ,'').replace('.' + SUFFIX,'')  
             documenttype= ''
             notes=''
+            status=''
+            bigger=''
             with open(file, 'r') as f:
+
                 prevproductname=''                
                 lines = f.readlines()
                 if 'Manuals' in file:
@@ -1694,8 +1700,22 @@ def rebuild_db():
                         documenttype='ReferenceCards'
                 if 'Software' + OSSEP + 'NonResident' + OSSEP + '@' in file:
                         documenttype='Software/NonResident'
+                if 'Software' + OSSEP + 'Resident' + OSSEP + '@' in file:
+                        documenttype='Software/Resident'
+                if 'Software' + OSSEP + 'Resident' + OSSEP + 'EXORset30ROMS' + OSSEP + '@' in file:
+                        documenttype='Software/Resident/EXORset30ROMS'
 
+                in_notes=False
+                notes=''
                 for line in lines:
+                    if in_notes and line.startswith('.. '):
+                        in_notes=False
+                    if line.strip().upper().startswith('.. NOTE::'):
+                        in_notes=True
+                    if in_notes:    
+                        notes+=line 
+
+
                     if '.. include::' in line and 'carousel in line':
                         carouselfile=line.replace('.. include::','').strip()
                         conn.execute("INSERT INTO carousels (documenttype,documentid, carouselid, carouselfile) VALUES (?,?,?,?);", (documenttype,documentid, carouselid, carouselfile.strip()))
@@ -1705,7 +1725,7 @@ def rebuild_db():
                         image=line.replace('.. image::','').strip()
                         conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", (documenttype,documentid, image.strip()))
                         conn.commit()
-                    if  ':ref:`' in line and 'Location' not in line:
+                    if  ':ref:`' in line and 'Location' not in line and BIGGER_DOC not in line:
                         conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
                     if ':download:`' in line :
@@ -1726,13 +1746,19 @@ def rebuild_db():
                         productname=prevproductname
                     else:
                         prevproductname=line.strip()
+
                     if  CHECK_MARK in line or \
                         UNDER_OFFER in line or \
                         IN_TRANSIT in line or \
                         CROSS_MARK in line:
                             status = line.split('|')[1].strip()
-                    if CHECK_MARK in line:
-                            acquired_date = line.split('|')[2].strip().replace('"','')
+                    if BIGGER_DOC in line:
+                            status = BIGGER_DOC        
+                            acquired_date=line.strip()[len(line.strip())-11:len(line.strip())].strip()
+                            bigger = line.replace(BIGGER_DOC,'').replace(acquired_date,'').strip(   )
+                    if CHECK_MARK in line or BIGGER_DOC in line:
+                            if status != BIGGER_DOC:
+                                acquired_date = line.split('|')[2].strip().replace('"','')
                             m=acquired_date[3:6].upper()
                             match m:
                                 case "JAN":
@@ -1760,13 +1786,13 @@ def rebuild_db():
                                 case "DEC":
                                     month='12'
                                 case _:
-                                    console.print('Invalid month in ' + file,style="warning")
+                                    console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
-                            real_date, tag,notes, location, metadata,filename, status) \
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?);",
+                            real_date, tag,notes, location, metadata,filename, status,bigger) \
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);",
                     (documenttype,documentid, documentid, productname, acquired_date,converted_date,tag,\
-                    notes,location,metadata,file,status))
+                    notes,location,metadata,file,status,bigger))
             conn.commit()
 
 
@@ -1800,7 +1826,17 @@ def rebuild_db():
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
+                in_notes=False
+                notes = ''
+
                 for line in lines:
+                    if in_notes and line.startswith('.. '):
+                        in_notes=False
+                    if line.strip().upper().startswith('.. NOTE::'):
+                        in_notes=True
+                    if in_notes:    
+                        notes+=line 
+
                     if line.startswith('.. image::'):
                         image=line.replace('.. image::','').strip()
                         conn.execute("INSERT INTO icimages (icid, image) VALUES (?,?);", (icid, image.strip()))
@@ -1854,10 +1890,7 @@ def rebuild_db():
                             temperature = '-' + ttemp[1] + '°C to ' + ttemp[2]
                         else:
                             temperature = itemperature.replace('-','°C to ')
-                    if '"Notes"' in line:
-                        splitline=line.split('","')
-                        notes=splitline[1].replace('"','')[:-1]
-                    
+
                     if '"Location"' in line:
                         splitline=line.split('","')
                         location=splitline[1].replace('"','')[:-1]
@@ -1924,6 +1957,41 @@ def read_db(statement):
     conn.close()
     return output
 
+def get_links_from_db(documentid,documenttype):
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
+    cursor_obj = conn.cursor()
+    if documenttype == 'ICs':
+        cursor_obj.execute("SELECT * FROM iclinks WHERE icid = ?;", (documentid,))
+    else:
+        cursor_obj.execute("SELECT * FROM documentlinks WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
+    output = cursor_obj.fetchall()
+    conn.close()
+    return output   
+
+def get_images_from_db(documentid,documenttype):
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
+    cursor_obj = conn.cursor()
+    if documenttype == 'ICs':
+        cursor_obj.execute("SELECT * FROM icimages WHERE icid = ?;", (documentid,))
+    else:
+        cursor_obj.execute("SELECT * FROM documentimages WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
+    output = cursor_obj.fetchall()
+    conn.close()
+    return output 
+
+def get_notes_from_db(documentid,documenttype):
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
+    cursor_obj = conn.cursor()
+    if documenttype == 'ICs':
+        cursor_obj.execute("SELECT * FROM ics WHERE icid = ?;", (documentid,))
+    else:
+        cursor_obj.execute("SELECT * FROM documents WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
+    output = cursor_obj.fetchall()
+    conn.close()
+    return output 
 
 def update_chip_info(f):
     
@@ -1958,7 +2026,7 @@ while True:
     console.print('\t0 Update ALL ',style="info")
     console.print('\t8 Special',style="danger")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","-","A","X","?"]
+    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2149,6 +2217,66 @@ while True:
             output='Completed rebuild of database'
             console.print(output, style="info") 
             
+            
+
+        case "9":
+            output = read_db("SELECT * FROM documents WHERE documenttype='EngineeringNotes' order by filename asc;")
+            for row in output:
+                documenttype=row["documenttype"]
+                documentid=row["documentid"]
+
+                newfilename=row["filename"]+'.new.rst'
+                filename=row["filename"]
+
+                with open(newfilename, 'w') as f:
+                    f.write(':orphan:\n\n')
+                    f.write('.. _' + row["tag"] + ':\n\n')        
+                    f.write('.. #Metadata '+ row["metadata"] + '\n\n')
+                    f.write(row["name"] + '\n')
+                    for i in range(0,len(row["name"])):
+                        f.write('=')
+                    f.write('\n\n')
+                    imgs=get_images_from_db(documentid,documenttype)
+                    for img in imgs:
+                        f.write('.. image:: ' + img["image"] + '\n')
+                        f.write('   :width: 400\n')
+                        f.write('   :align: center\n\n')
+                    notes=get_notes_from_db(documentid,documenttype)
+                    if len(notes) > 0:
+                        f.write(row["notes"] )
+
+                    f.write('.. rubric:: Collection Information\n\n')
+                    f.write('.. csv-table:: \n')
+                    f.write('   :header: "Acquired"\n')
+                    f.write('   :widths: auto\n\n')
+
+                    if row["status"] == BIGGER_DOC:
+                        f.write('   ' + row["status"] + ' ' + row["bigger"] + ' ' + row["acquired_date"])
+                    else:
+                        f.write('   |' + row["status"] + '|')
+                        if row["status"] == 'present':
+                            f.write(' '+ row["acquired_date"])
+                        
+                    f.write('\n\n')
+                    lnks=get_links_from_db(documentid,documenttype)
+                    if len(lnks) > 1:
+                        endline='\n'
+                    else:
+                        endline=''
+                    if len(lnks) > 0:
+                        f.write('.. rubric:: Links\n')
+                        for lnk in lnks:
+                            f.write('\n' + lnk["link"] + endline)
+
+                issame=compare_files(filename,newfilename)
+                if issame:
+                    #console.print(os.path.basename(filename) + ' is identical to ' + os.path.basename(newfilename),style="info")
+                    os.remove(newfilename)
+                    pass;
+                else:
+                    console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
+
+
         case "8":
             print('Commencing finding artefacts with invalid metadata') 
             rstfiles = glob.glob('**/*.rst', recursive=True)

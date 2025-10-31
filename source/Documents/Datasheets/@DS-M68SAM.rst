@@ -2,10 +2,10 @@
 
 .. _DS-M68SAM:
 
-M6800 Cross Assembler DataSheet
-================================
-
 .. #Metadata {'Product':'M6800 Cross Assembler DataSheet','Folder': 'M6800 Microcomputer System Support Products'}
+
+M6800 Cross Assembler DataSheet
+===============================
 
 .. image:: ../../images/DataSheets/DS-M68SAM.png
    :width: 400
@@ -18,8 +18,6 @@ M6800 Cross Assembler DataSheet
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 
