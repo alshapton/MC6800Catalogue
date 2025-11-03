@@ -2217,8 +2217,6 @@ while True:
             output='Completed rebuild of database'
             console.print(output, style="info") 
             
-            
-
         case "9":
             output = read_db("SELECT * FROM documents WHERE documenttype='EngineeringNotes' order by filename asc;")
             for row in output:
