@@ -7,7 +7,7 @@
 Card Cage (10 Card)
 ===================
 
-.. include::  M68MMCC10.carousel.rst
+.. include:: M68MMCC10.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -16,3 +16,4 @@ Card Cage (10 Card)
    :widths: auto
 
    |present| 28-APR-2025
+

@@ -2246,7 +2246,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output = read_db("SELECT * FROM documents WHERE documenttype='Hardware/EXORciser/Micromodules' order by filename asc;")
+            output = read_db("SELECT * FROM documents WHERE documenttype='Hardware/Other' order by filename asc;")
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]
