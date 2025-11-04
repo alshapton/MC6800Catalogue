@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 03-11-2025) in transit.
+This is the current set of items (as at 04-11-2025) in transit.
 
 
 .. rubric:: EXORciser

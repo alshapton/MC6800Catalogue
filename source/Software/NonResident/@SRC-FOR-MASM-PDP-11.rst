@@ -7,7 +7,9 @@
 Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)
 ================================================================
 
-.. rubric:: The source presented here is believed to be incomplete. There are references to files which did not come with this source, and appear not to be part of the PDP-11 FORTRAN support files. It is doubtful that this would compile.
+.. note:: 
+      
+      The source presented here is believed to be incomplete. There are references to files which did not come with this source, and appear not to be part of the PDP-11 FORTRAN support files. It is doubtful that this would compile.
                         
 .. code-block:: 
 

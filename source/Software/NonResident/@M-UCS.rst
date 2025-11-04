@@ -21,7 +21,4 @@ Motorola Software for United Computing Service InfoSheet
 
    |present| 31-MAR-2025
 
-.. rubric:: Location:
-
-- :ref:`MC6800CRSBNDR`
 

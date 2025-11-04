@@ -21,7 +21,4 @@ Motorola Software for General Electric InfoSheet
 
    |present| 31-MAR-2025
 
-.. rubric:: Location:
-
-- :ref:`MC6800CRSBNDR`
 

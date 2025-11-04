@@ -21,4 +21,4 @@ Course Notes Page
 
 .. rubric:: Links
 
-This is an image of a sample course notes page which is contained within the :ref:`MC6800CRSBNDR`
+This is an image of a sample course notes page which is contained within the `MC6800CRSBNDR`

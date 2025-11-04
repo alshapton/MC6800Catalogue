@@ -20,7 +20,4 @@ Motorola Software for DEC PDP-11 InfoSheet
 
    |present| 31-MAR-2025
 
-.. rubric:: Location:
-
-- :ref:`MC6800CRSBNDR`
 
