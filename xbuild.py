@@ -1627,7 +1627,26 @@ def rebuild_db():
                         ORDER by 1 ASC;")
     conn.commit()
     
-                       
+    cursor_obj.execute("CREATE VIEW IF NOT EXISTS collection                  \
+                        (                                                     \
+                        artfacttype,                                          \
+                        status,                                               \
+                        total                                                 \
+                        )                                                     \
+                        AS                                                    \
+                        SELECT documenttype as artefacttype,status,           \
+                                COUNT(documentid) as total                    \
+                        FROM documents                                        \
+                        GROUP BY status,documenttype                          \
+                        UNION                                                 \
+                        SELECT 'ICs' as artefacttype, status,                 \
+                                COUNT(icid) as total                          \
+                        FROM ics                                              \
+                        GROUP BY status,artefacttype;")
+                        
+    conn.commit()
+    
+
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
