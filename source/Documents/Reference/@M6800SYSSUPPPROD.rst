@@ -20,35 +20,37 @@ M6800 Microcomputer System Support Products
     "|present| 17-JUL-2025"
 
 
-.. rubric:: This product is a collection of many other documents, including:
+.. Note:: 
+   
+   This product is a collection of many other documents, including:
 
-- Introduction to M6800 Microcomputer System Support Products
-- :ref:`M68SDTEXOR-BROCHURE`
-- :ref:`MEX6812-1-BROCHURE`
-- :ref:`MEX6815-3-BROCHURE`
-- :ref:`MEX6816-1-BROCHURE`
-- :ref:`MEX6820-BROCHURE`
-- :ref:`MEX6850-BROCHURE`
-- :ref:`MEX68CT-BROCHURE`
-- :ref:`MEX68PP1-BROCHURE`
-- :ref:`MEX68RR-BROCHURE`
-- :ref:`MEX68SA-BROCHURE`
-- :ref:`MEX68USE-BROCHURE`
-- :ref:`MEX68WW-MEX68XT-BROCHURE`
-- :ref:`M6800B-BROCHURE`
-- :ref:`M6800EXORDISK-BROCHURE`  
-- :ref:`M6800EXORTAPE-BROCHURE`
-- :ref:`M6800-RESIDENT-SOFTWARE-BROCHURE`
-- `DS-M6800ResSoftware`
-- `DS-M68ASMR020`
-- :ref:`M68BASR010-BROCHURE`
-- :ref:`M68FTNR10D-BROCHURE`
-- :ref:`M6800SOFTWARE-IN-HOUSE-BROCHURE`
-- `DS-M68SAM`
-- `DS-MPL-COMPILER`
-- `DS-M68EML`
-- :ref:`M6800-TIME-SHARING-SYSTEMS-BROCHURE`
-- :ref:`M6800-DOCUMENTATION-BROCHURE`
+   - Introduction to M6800 Microcomputer System Support Products
+   - :ref:`M68SDTEXOR-BROCHURE`
+   - :ref:`MEX6812-1-BROCHURE`
+   - :ref:`MEX6815-3-BROCHURE`
+   - :ref:`MEX6816-1-BROCHURE`
+   - :ref:`MEX6820-BROCHURE`
+   - :ref:`MEX6850-BROCHURE`
+   - :ref:`MEX68CT-BROCHURE`
+   - :ref:`MEX68PP1-BROCHURE`
+   - :ref:`MEX68RR-BROCHURE`
+   - :ref:`MEX68SA-BROCHURE`
+   - :ref:`MEX68USE-BROCHURE`
+   - :ref:`MEX68WW-MEX68XT-BROCHURE`
+   - :ref:`M6800B-BROCHURE`
+   - :ref:`M6800EXORDISK-BROCHURE`  
+   - :ref:`M6800EXORTAPE-BROCHURE`
+   - :ref:`M6800-RESIDENT-SOFTWARE-BROCHURE`
+   - :ref:`M6800 Co-Resident Software Datasheet <DS-M6800ResSoftware>`
+   - :ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`
+   - :ref:`M68BASR010-BROCHURE`
+   - :ref:`M68FTNR10D-BROCHURE`
+   - :ref:`M6800SOFTWARE-IN-HOUSE-BROCHURE`
+   - :ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`
+   - :ref:`MPL Compiler Datasheet <DS-MPL-COMPILER>`
+   - :ref:`M6800 Simulator Datasheet <DS-M68EML>`
+   - :ref:`M6800-TIME-SHARING-SYSTEMS-BROCHURE`
+   - :ref:`M6800-DOCUMENTATION-BROCHURE`
 
 
 .. rubric:: Links

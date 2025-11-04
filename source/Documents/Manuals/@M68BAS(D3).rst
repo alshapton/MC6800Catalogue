@@ -18,7 +18,7 @@ M6800 BASIC Interpreter Reference Manual
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`M6800 BASIC Interpreter Reference Manual <../../_static/Documents/Manuals/M68BAS_D3_M6800_BASIC_Interpreter_Reference_Manual_198001.pdf>`
