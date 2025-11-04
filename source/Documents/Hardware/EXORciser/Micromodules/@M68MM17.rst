@@ -7,9 +7,7 @@
 M68MM17 Micromodule 17 6809 Monoboard Microcomputer
 ===================================================
 
-.. include::  M68MM17.carousel.rst
-   
-Need to move to new micromodules section
+.. include:: M68MM17.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -17,7 +15,7 @@ Need to move to new micromodules section
    :header: "Acquired"
    :widths: auto
 
-    "|notpresent| "
+   |notpresent|
 
 .. rubric:: Links
 

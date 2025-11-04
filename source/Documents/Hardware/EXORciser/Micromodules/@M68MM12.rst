@@ -7,7 +7,7 @@
 M68MM12 Micromodule 12 GPIB Interface Module
 ============================================
 
-.. include::  M68MM12.carousel.rst
+.. include:: M68MM12.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -15,4 +15,5 @@ M68MM12 Micromodule 12 GPIB Interface Module
    :header: "Acquired"
    :widths: auto
 
-    "|intransit|"
+   |intransit|
+

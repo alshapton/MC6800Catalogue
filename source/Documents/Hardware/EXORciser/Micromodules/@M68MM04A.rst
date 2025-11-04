@@ -7,12 +7,15 @@
 M68MM04A Micromodule 4A ROM/EPROM Module
 ========================================
 
-.. include::  M68MM04A.carousel.rst
-
 .. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM04A/_M68MM04A.1.jpg
-   :width: 800
+   :width: 400
+   :align: center
 
-|2ndsource| Micro Industries
+.. include:: M68MM04A.carousel.rst
+
+.. Note:: 
+
+   |2ndsource| Micro Industries
 
 .. rubric:: Collection Information
 
@@ -20,9 +23,8 @@ M68MM04A Micromodule 4A ROM/EPROM Module
    :header: "Acquired"
    :widths: auto
 
-    "|notpresent| "
+   |notpresent|
 
 .. rubric:: Links
 
 :ref:`M68MM04A(D2) - ROM/EPROM Module Micromodule 4A <M68MM04A(D2)>`
-

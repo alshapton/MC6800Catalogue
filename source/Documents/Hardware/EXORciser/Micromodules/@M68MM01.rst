@@ -7,7 +7,7 @@
 M68MM01 Micromodule 1 M6800 CPU Module
 ======================================
 
-.. include::  M68MM01.carousel.rst
+.. include:: M68MM01.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -15,4 +15,5 @@ M68MM01 Micromodule 1 M6800 CPU Module
    :header: "Acquired"
    :widths: auto
 
-    "|notpresent| "
+   |notpresent|
+
