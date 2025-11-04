@@ -2,16 +2,14 @@
 
 .. _M6800CNP:
 
+.. #Metadata {'Product':'Microprocessor Course Notes Page','Folder': '1'}
+
 Course Notes Page
 =================
-
-.. #Metadata {'Product':'Microprocessor Course Notes Page','Folder': '1'}
 
 .. image:: ../../images/Generic/M6800CNP.png
    :width: 400
    :align: center
-
-This is an image of a sample course notes page which is contained within the :ref:`MC6800CRSBNDR`
 
 .. rubric:: Collection Information
 
@@ -21,3 +19,6 @@ This is an image of a sample course notes page which is contained within the :re
 
    |present| 31-MAR-2025
 
+.. rubric:: Links
+
+This is an image of a sample course notes page which is contained within the :ref:`MC6800CRSBNDR`

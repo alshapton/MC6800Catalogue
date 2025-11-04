@@ -2,11 +2,10 @@
 
 .. _HB211:
 
-Programming the 6800 Microprocessor
-===================================
-
 .. #Metadata {'Product':'Programming the 6800 Microprocessor','Folder': 'None','Comments':'Authored by B.SOuthern, distributed by Motorola'}
 
+Programming the 6800 Microprocessor
+===================================
 
 .. image:: ../../images/Generic/HB211.png
    :width: 400

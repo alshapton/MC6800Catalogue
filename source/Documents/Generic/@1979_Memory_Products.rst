@@ -8,11 +8,13 @@ Motorola Memory Products
 ========================
 
 .. image:: ../../images/Generic/1979_Memory_Products_Front.jpg
-   :width: 200
-   
+   :width: 400
+   :align: center
+
 .. image:: ../../images/Generic/1979_Memory_Products_Back.jpg
-   :width: 200
-      
+   :width: 400
+   :align: center
+
 .. rubric:: Collection Information
 
 .. csv-table:: 

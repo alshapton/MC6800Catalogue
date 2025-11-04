@@ -2,11 +2,10 @@
 
 .. _FTCTTM:
 
+.. #Metadata {'Product':'From the Computer... to the Microprocessor','Folder': 'None'}
+
 From the Computer... to the Microprocessor
 ==========================================
-
-
-.. #Metadata {'Product':'From the Computer... to the Microprocessor','Folder': 'None'}
 
 .. image:: ../../images/Generic/FTCTTM.png
    :width: 400
@@ -19,3 +18,4 @@ From the Computer... to the Microprocessor
    :widths: auto
 
    |notpresent|
+
