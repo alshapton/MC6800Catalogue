@@ -4,7 +4,7 @@
 
 .. #Metadata {'Product':'MEX6864 64K Hidden Refresh RAM','Folder': ' ','Comments':''}
 
-MEX6864 64K Hidden Refresh RAM           
+MEX6864 64K Hidden Refresh RAM
 ==============================
 
 .. image:: ../../../images/NOIMAGE.png
@@ -13,12 +13,11 @@ MEX6864 64K Hidden Refresh RAM
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

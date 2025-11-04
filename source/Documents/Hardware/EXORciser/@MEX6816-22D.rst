@@ -4,7 +4,7 @@
 
 .. #Metadata {'Product':'MEX6816-22D 16K Dynamic RAM','Folder': 'Hardware','Comments':''}
 
-MEX6816-22D 16K Dynamic RAM           
+MEX6816-22D 16K Dynamic RAM
 ===========================
 
 .. image:: ../../../images/Hardware/EXORciser/MEX6816-22D.1.png
@@ -13,12 +13,11 @@ MEX6816-22D 16K Dynamic RAM
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|present| 20-MAR-2025"
+   |present| 20-MAR-2025
 
 .. rubric:: Links
 

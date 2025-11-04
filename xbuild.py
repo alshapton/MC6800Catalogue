@@ -2012,6 +2012,15 @@ def get_notes_from_db(documentid,documenttype):
     conn.close()
     return output 
 
+def get_carousels_from_db(documentid,documenttype):
+    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn.row_factory = sqlite3.Row
+    cursor_obj = conn.cursor()
+    cursor_obj.execute("SELECT * FROM carousels WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
+    output = cursor_obj.fetchall()
+    conn.close()
+    return output 
+
 def update_chip_info(f):
     
     output = read_db("SELECT * FROM ics WHERE status = 'present' order by  parent_number,ic;")
@@ -2237,7 +2246,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output = read_db("SELECT * FROM documents WHERE documenttype='Generic' order by filename asc;")
+            output = read_db("SELECT * FROM documents WHERE documenttype='Hardware/EXORciser' order by filename asc;")
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]
@@ -2253,11 +2262,17 @@ while True:
                     for i in range(0,len(row["name"])):
                         f.write('=')
                     f.write('\n\n')
+
                     imgs=get_images_from_db(documentid,documenttype)
                     for img in imgs:
                         f.write('.. image:: ' + img["image"] + '\n')
                         f.write('   :width: 400\n')
                         f.write('   :align: center\n\n')
+
+                    carousels=get_carousels_from_db(documentid,documenttype)
+                    for carousel in carousels:
+                        f.write('.. include:: ' + carousel["carouselfile"] + '\n\n')
+                        
                     notes=get_notes_from_db(documentid,documenttype)
                     if len(notes) > 0:
                         f.write(row["notes"] )
