@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 04-11-2025).
+This is the timeline of acquisitions (as at 05-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -14,6 +14,7 @@ This is the timeline of acquisitions (as at 04-11-2025).
    30-JAN-2025,:ref:`XC6820 Peripheral Interface Adapter <XC6820>`
    30-JAN-2025,:ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
    30-JAN-2025,:ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`
+   30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
    30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
    30-JAN-2025,:ref:`MES6800 User Guide <MES6800>`
    16-FEB-2025,:ref:`8K Dynamic RAM Module Supplement <MEX68151>`
@@ -138,6 +139,7 @@ This is the timeline of acquisitions (as at 04-11-2025).
    22-AUG-2025,:ref:`JBUG Monitor V1.8 <JBUG_1_8>`
    04-SEP-2025,:ref:`MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM6810BJCS>`
    08-SEP-2025,:ref:`MEK6800D2 Development board for the 6800 microprocessor <MEK6800D2>`
+   08-SEP-2025,:ref:`MEK6800D2 Development board for the 6800 microprocessor <MEK6800D2>`
    09-SEP-2025,:ref:`SC44204P Microprocessor Unit <SC44204P>`
    09-SEP-2025,:ref:`MC6850P Asynchronous Communications Interface Adapter <MC6850P>`
    09-SEP-2025,:ref:`MCM6830AP-2 1024 x 8-bit ROM <MCM6830AP-2>`
@@ -159,3 +161,4 @@ This is the timeline of acquisitions (as at 04-11-2025).
    28-OCT-2025,:ref:`MC6854L Advanced Data-Link Controller (ADLC) <MC6854L>`
    28-OCT-2025,:ref:`MC68701S Microprocessor Unit <MC68701S>`
    28-OCT-2025,:ref:`MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10CL>`
+   05-NOV-2025,:ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>`

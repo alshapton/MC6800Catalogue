@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 04-11-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 05-11-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -172,7 +172,8 @@ This is the current collection (as at 04-11-2025) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 1 <1_map_reference>`"
+	":ref:`N/A <M68SETPRC-D1>`","M68SETPRC/D1 EXORset Programmer Card",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6809-MC6809E>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6840>`","MC6840 Programmable Timer Module Programming Summary",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",":ref:`Folder 1 <1_map_reference>`"

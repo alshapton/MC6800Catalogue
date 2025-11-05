@@ -2,7 +2,7 @@
 
 .. _M68SETPRC-D1:
 
-.. #Metadata {'Product':'M68SETPRC/D1 EXORset Programmer Card','Folder': 'None'}
+.. #Metadata {'Product':'M68SETPRC/D1 EXORset Programmer Card','Folder': '1'}
 
 M68SETPRC/D1 EXORset Programmer Card
 ====================================
@@ -17,4 +17,4 @@ M68SETPRC/D1 EXORset Programmer Card
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 05-NOV-2025
