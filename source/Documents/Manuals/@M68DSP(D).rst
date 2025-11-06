@@ -18,7 +18,7 @@ Extended Display Supplement Basic Display Unit Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`Extended Display Supplement Basic Display Unit Users Guide <../../_static/Documents/Manuals/M68DSP_Extended_Display_Supplement_Basic_Display_Unit_Users_Guide_197801.pdf>`

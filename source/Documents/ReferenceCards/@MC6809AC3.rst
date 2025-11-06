@@ -1,6 +1,6 @@
 :orphan:
 
-.. _REF-MC6809-MC6809E:
+.. _MC6809AC3:
 
 .. #Metadata {'Product':'MC6809/MC6809E 8-Bit Microprocessor Programming Model','Folder': '1'}
 
@@ -22,5 +22,5 @@ MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model - M6809
 
 .. rubric:: Links
 
-:download:`MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model <../../_static/Documents/ReferenceCards/M6809(AC3).pdf>`
+:download:`MC6809(AC3) MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model <../../_static/Documents/ReferenceCards/M6809(AC3).pdf>`
 

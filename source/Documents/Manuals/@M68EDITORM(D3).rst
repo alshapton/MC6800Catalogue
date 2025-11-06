@@ -18,7 +18,7 @@ M6800/M6809 EDITORM Resident Editor Reference Manual
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`M6800/M6809 EDITORM Resident Editor Reference Manual <../../_static/Documents/Manuals/M68EDITORM_D3_EDITORM_Resident_Editor_Reference_Manual_198006.pdf>`

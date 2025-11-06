@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 05-11-2025).
+This is the timeline of acquisitions (as at 06-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -35,7 +35,7 @@ This is the timeline of acquisitions (as at 05-11-2025).
    12-MAR-2025,:ref:`MC6860P 0-600 bps Digital Modem <MC6860P>`
    12-MAR-2025,:ref:`MC6862P 2400 bps Digital Modulator <MC6862P>`
    12-MAR-2025,:ref:`MCM6810P 128 x 8-bit RAM <MCM6810P>`
-   19-MAR-2025,:ref:`MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model - M6809(AC3) <REF-MC6809-MC6809E>`
+   19-MAR-2025,:ref:`MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model - M6809(AC3) <MC6809AC3>`
    19-MAR-2025,:ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`
    19-MAR-2025,:ref:`MC6845 Cathode Ray Tube Controller Programming Reference Card <REF-MC6845>`
    19-MAR-2025,:ref:`MC68488 GPIA for IEEE-488 Bus Reference Card <REF-MC68488>`

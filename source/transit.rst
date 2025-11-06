@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 05-11-2025) in transit.
+This is the current set of items (as at 06-11-2025) in transit.
 
 
 .. rubric:: EXORciser
@@ -20,7 +20,6 @@ This is the current set of items (as at 05-11-2025) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	MC68701U4L-1,":ref:`MC68701U4L-1 Microprocessor Unit with 8-bit EPROM <MC68701U4L-1>` "
 	MC68B21P,":ref:`MC68B21P Peripheral Interface Adapter (PIA) <MC68B21P>` "
 
 

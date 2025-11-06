@@ -18,7 +18,7 @@ M6800/M6801/M6809 Download Program Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`M6800/M6801/M6809 Download Program Users Guide <../../_static/Documents/Manuals/M68DOWNLD_D1_Download_Program_Users_Guide_197908.pdf>`
