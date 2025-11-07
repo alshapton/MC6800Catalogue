@@ -18,7 +18,7 @@ Exorset 30 XDOS OS User’s Guide
    :widths: auto
 
    |notpresent|
-   
+
+.. rubric:: Links
 
 :download:`Exorset 30 XDOS OS User’s Guide <../../_static/Documents/Manuals/MSET30DOS(D1).pdf>`
-   

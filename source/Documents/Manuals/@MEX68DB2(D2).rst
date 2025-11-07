@@ -18,7 +18,7 @@ MEX68DB2 DEBUG II Module Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`MEX68DB2 DEBUG II Module Users Guide <../../_static/Documents/Manuals/MEX68DB2_DEBUG_II_MOTOROLA_197903.pdf>`

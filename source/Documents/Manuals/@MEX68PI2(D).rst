@@ -18,7 +18,7 @@ Printer Interface Module
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`Printer Interface Module <../../_static/Documents/Manuals/MEX68PI2_Printer_Interface_Module_197803.pdf>`

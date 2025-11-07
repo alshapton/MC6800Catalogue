@@ -18,7 +18,7 @@ Monoboard Microcomputer 1 Micromodule 1
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`Monoboard Microcomputer 1 Micromodule 1 <../../_static/Documents/Manuals/M68MM01_Monoboard_Microcomputer_1_Apr79.pdf>`

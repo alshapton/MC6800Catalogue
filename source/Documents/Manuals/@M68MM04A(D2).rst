@@ -18,7 +18,7 @@ ROM/EPROM Module Micromodule 4A
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`ROM/EPROM Module Micromodule 4A <../../_static/Documents/Manuals/M68MM04A_(D2)_ROM-EPROM_User_Guide.pdf>`

@@ -18,7 +18,7 @@ MPL Language Reference Manual
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`MPL Language Reference Manual <../../_static/Documents/Manuals/MPL_Language_Reference_Manual_1976.pdf>`

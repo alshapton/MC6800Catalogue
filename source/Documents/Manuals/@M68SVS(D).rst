@@ -18,7 +18,7 @@ Basic Display Unit Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`Basic Display Unit Users Guide <../../_static/Documents/Manuals/M68SVS_Basic_Display_Unit_Users_Guide_1977.pdf>`

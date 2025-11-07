@@ -11,7 +11,6 @@ MEX6800-2 MPU II MODULE Users Guide
    :width: 400
    :align: center
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
@@ -19,8 +18,7 @@ MEX6800-2 MPU II MODULE Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`MEX6800-2 MPU II MODULE Users Guide <../../_static/Documents/Manuals/MEX68B00_MEX6800-2_MPU_II_MODULE_197806.pdf>`
-

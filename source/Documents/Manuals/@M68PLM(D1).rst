@@ -18,7 +18,7 @@ Motorola PASCAL Language Manual
    :widths: auto
 
    |notpresent|
-      
+
 .. rubric:: Links
 
 :download:`Motorola PASCAL Language Manual <../../_static/Documents/Manuals/Motorola_PASCAL_Language_Manual_1979.pdf>`

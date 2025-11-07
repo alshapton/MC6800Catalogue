@@ -18,7 +18,7 @@ Floppy Disk Controller Module
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`Floppy Disk Controller Module <../../_static/Documents/Manuals/M68SFDC3_Floppy_Disk_Controller_197909.pdf>`

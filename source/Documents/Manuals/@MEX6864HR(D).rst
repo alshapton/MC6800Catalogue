@@ -26,7 +26,7 @@ MEX6864 16K-64K Hidden Refresh Memory Module Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`16K/64K Dynamic RAM Module Users Guide <../../_static/Documents/Manuals/MEX6864HR_16K_64K_Hidden_Refresh_Module_Oct78.pdf>`

@@ -17,8 +17,8 @@ MEK6800D2 Evaluation Kit II Manual
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|.. 
-   
+   |notpresent|
+
 .. rubric:: Links
 
 :download:`MEK6800D2 Evaluation Kit II Manual <../../_static/Documents/Manuals/MEK6800D2_Evaluation_Kit_II.pdf>`

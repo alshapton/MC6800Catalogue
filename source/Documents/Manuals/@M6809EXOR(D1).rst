@@ -18,7 +18,7 @@ M6809 EXORciser Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`M6809 EXORciser Users Guide <../../_static/Documents/Manuals/M6809EXOR_M6809_EXORciser_Users_Guide_Sep1979.pdf>`

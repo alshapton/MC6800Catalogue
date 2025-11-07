@@ -18,7 +18,7 @@ ACIA/SSDA Module Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`ACIA/SSDA Module Users Guide <../../_static/Documents/Manuals/MEX6850-2_ACIA_SSDA_Module_197806.pdf>`

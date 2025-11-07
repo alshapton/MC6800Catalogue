@@ -5,7 +5,7 @@
 .. #Metadata {'Product':'M68SXD150(D2)','Name':'EXORterm 150 EXORciser Display Console Users Guide','Folder': 'None'}
 
 EXORterm 150 EXORciser Display Console Users Guide
-===================================================
+==================================================
 
 .. image:: ../../images/Manuals/M68SXD150(D2).png
    :width: 400
@@ -18,7 +18,7 @@ EXORterm 150 EXORciser Display Console Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`EXORterm 150 EXORciser Display Console Users Guide <../../_static/Documents/Manuals/M68SXD150D2_EXORterm_150_Display_Console_Users_Guide_2ed_197904.pdf>`

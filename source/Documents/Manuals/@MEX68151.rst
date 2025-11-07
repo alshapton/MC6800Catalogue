@@ -2,10 +2,10 @@
 
 .. _MEX68151:
 
+.. #Metadata {'Product':'MEX6815-1 8K Dynamic RAM Module Supplement','Folder': '1'}
+
 8K Dynamic RAM Module Supplement
 ================================
-
-.. #Metadata {'Product':'MEX6815-1 8K Dynamic RAM Module Supplement','Folder': '1'}
 
 .. image:: ../../images/Manuals/MEX6815-1.png
    :width: 400

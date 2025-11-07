@@ -18,7 +18,7 @@ M68MDOS3 EXORdisk II/III OS Users Guide
    :widths: auto
 
    |notpresent|
-   
+
 .. rubric:: Links
 
 :download:`M68MDOS3 EXORdisk II/III OS Users Guide <../../_static/Documents/Manuals/M68MDOS3_EXORdisk_II_III_Operating_System_Users_Guide_Jun79.pdf>`
