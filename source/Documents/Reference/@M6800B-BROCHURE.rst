@@ -2,10 +2,10 @@
 
 .. _M6800B-BROCHURE:
 
+.. #Metadata {'Product':'M6800B Evaluation Module II Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 M6800B Evaluation Module II Brochure
 ====================================
-
-.. #Metadata {'Product':'M6800B Evaluation Module II Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/DataSheets/M6800B-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ M6800B Evaluation Module II Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

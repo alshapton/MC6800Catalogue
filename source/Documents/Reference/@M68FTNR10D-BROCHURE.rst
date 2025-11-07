@@ -2,10 +2,10 @@
 
 .. _M68FTNR10D-BROCHURE:
 
+.. #Metadata {'Product':'M68FTNR10D Resident FORTRAN Compiler Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 M68FTNR10D Resident FORTRAN Compiler Brochure
 =============================================
-
-.. #Metadata {'Product':'M68FTNR10D Resident FORTRAN Compiler Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/M68FTNR010D-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ M68FTNR10D Resident FORTRAN Compiler Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

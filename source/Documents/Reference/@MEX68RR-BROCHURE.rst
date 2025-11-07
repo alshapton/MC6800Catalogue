@@ -2,10 +2,10 @@
 
 .. _MEX68RR-BROCHURE:
 
+.. #Metadata {'Product':'MEX68RR EROM/RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX68RR EROM/RAM Module Brochure
 ================================
-
-.. #Metadata {'Product':'MEX68RR EROM/RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX68RR-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX68RR EROM/RAM Module Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

@@ -2,11 +2,10 @@
 
 .. _M6800SOFTWARE-IN-HOUSE-BROCHURE:
 
-M6800 Software for In-House-Computers Brochure
-==============================================
-
 .. #Metadata {'Product':'M6800 Software for In-House-Computers Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
+M6800 Software for In-House-Computers Brochure
+==============================================
 
 .. image:: ../../images/Reference/M6800SOFTWARE-IN-HOUSE-BROCHURE.png
    :width: 400
@@ -19,8 +18,6 @@ M6800 Software for In-House-Computers Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

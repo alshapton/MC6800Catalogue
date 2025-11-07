@@ -1744,10 +1744,10 @@ def rebuild_db():
                         image=line.replace('.. image::','').strip()
                         conn.execute("INSERT INTO documentimages (documenttype,documentid, image) VALUES (?,?,?);", (documenttype,documentid, image.strip()))
                         conn.commit()
-                    if  ':ref:`' in line and 'Location' not in line and BIGGER_DOC not in line:
+                    if  line.startswith(':ref:`') and 'Location' not in line and BIGGER_DOC not in line:
                         conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
-                    if ':download:`' in line :
+                    if line.startswith(':download:`'):
                         conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
                     if '.. #Metadata ' in line:
@@ -2246,7 +2246,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output = read_db("SELECT * FROM documents WHERE documenttype='Manuals' order by filename asc;")
+            output = read_db("SELECT * FROM documents WHERE documenttype='Reference' order by filename asc;")
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]

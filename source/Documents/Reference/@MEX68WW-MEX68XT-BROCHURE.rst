@@ -2,10 +2,10 @@
 
 .. _MEX68WW-MEX68XT-BROCHURE:
 
+.. #Metadata {'Product':'MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure
 =========================================================
-
-.. #Metadata {'Product':'MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX68WW-MEX68XT-BROCHURE.png
    :width: 400
@@ -19,9 +19,8 @@ MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure
 
    |present| 17-JUL-2025
 
-
 .. rubric:: Links
 
 :download:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <../../_static/Documents/Reference/MEX68WW-MEX68XT-BROCHURE.pdf>`
 
-:ref:`MEX68WW Wirewrap Module Datasheet <MEX68WW>` 
+:ref:`MEX68WW Wirewrap Module Datasheet <MEX68WW>`

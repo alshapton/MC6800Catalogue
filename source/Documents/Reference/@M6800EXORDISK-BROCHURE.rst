@@ -2,10 +2,10 @@
 
 .. _M6800EXORDISK-BROCHURE:
 
+.. #Metadata {'Product':'M6800 EXORdisk Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 M6800 EXORdisk Brochure
 =======================
-
-.. #Metadata {'Product':'M6800 EXORdisk Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/M6800EXORDISK-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ M6800 EXORdisk Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

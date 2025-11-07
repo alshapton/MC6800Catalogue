@@ -2,10 +2,10 @@
 
 .. _MEX6815-3-BROCHURE:
 
+.. #Metadata {'Product':'MEX6815-3 8K Dynamic RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX6815-3 8K Dynamic RAM Module Brochure
 ========================================
-
-.. #Metadata {'Product':'MEX6815-3 8K Dynamic RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX6815-3-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX6815-3 8K Dynamic RAM Module Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

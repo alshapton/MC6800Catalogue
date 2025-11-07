@@ -2,10 +2,10 @@
 
 .. _MEX6850-BROCHURE:
 
+.. #Metadata {'Product':'MEX6850 ACIA Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX6850 ACIA Module Brochure
 ============================
-
-.. #Metadata {'Product':'MEX6850 ACIA Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX6850-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX6850 ACIA Module Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

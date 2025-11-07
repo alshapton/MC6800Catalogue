@@ -11,10 +11,9 @@ EDUCATOR-II Brochure
    :width: 400
    :align: center
 
-
 .. Note::
    
-   Note that this document was obtained with, and will be stored with: :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
+   Note that this document was obtained with, and will be stored with M6800 Evaluation Kit II Brochure: 
 
 .. rubric:: Collection Information
 
@@ -24,8 +23,8 @@ EDUCATOR-II Brochure
 
    |present| 18-AUG-2025
 
-
-
 .. rubric:: Links
 
 :download:`EDUCATOR-II Brochure <../../_static/Documents/Reference/EDUCATOR-II-BROCHURE.pdf>`
+
+:ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`

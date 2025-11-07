@@ -2,10 +2,10 @@
 
 .. _MEX6812-1-BROCHURE:
 
+.. #Metadata {'Product':'MEX6812-1 2K Static RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX6812-1 2K Static RAM Module Brochure
 =======================================
-
-.. #Metadata {'Product':'MEX6812-1 2K Static RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX6812-1-BROCHURE.png
    :width: 400

@@ -2,10 +2,10 @@
 
 .. _MEX68USE-BROCHURE:
 
+.. #Metadata {'Product':'MEX68USE User System Evaluator (USE) Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX68USE User System Evaluator (USE) Brochure
 =============================================
-
-.. #Metadata {'Product':'MEX68USE User System Evaluator (USE) Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX68USE-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX68USE User System Evaluator (USE) Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

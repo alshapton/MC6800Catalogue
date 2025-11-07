@@ -2,10 +2,10 @@
 
 .. _MEX6816-1-BROCHURE:
 
+.. #Metadata {'Product':'MEX6816-1 16K Dynamic RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX6816-1 16K Dynamic RAM Module Brochure
 =========================================
-
-.. #Metadata {'Product':'MEX6816-1 16K Dynamic RAM Module Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX6816-1-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX6816-1 16K Dynamic RAM Module Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

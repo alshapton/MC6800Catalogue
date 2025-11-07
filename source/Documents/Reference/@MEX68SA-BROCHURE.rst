@@ -2,10 +2,10 @@
 
 .. _MEX68SA-BROCHURE:
 
+.. #Metadata {'Product':'MEX68SA Systems Analyzer Brochure','Folder': 'M6800 Microcomputer System Support Products'}
+
 MEX68SA Systems Analyzer Brochure
 =================================
-
-.. #Metadata {'Product':'MEX68SA Systems Analyzer Brochure','Folder': 'M6800 Microcomputer System Support Products'}
 
 .. image:: ../../images/Reference/MEX68SA-BROCHURE.png
    :width: 400
@@ -18,8 +18,6 @@ MEX68SA Systems Analyzer Brochure
    :widths: auto
 
    |present| 17-JUL-2025
-
-
 
 .. rubric:: Links
 

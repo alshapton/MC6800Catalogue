@@ -2,7 +2,6 @@
 
 .. _NONE-1:
 
-
 .. #Metadata {'Product':'Motorola Microcomputer System Design Data Manual','Folder': '1'}
 
 Motorola Microcomputer System Design Data Manual
@@ -10,9 +9,11 @@ Motorola Microcomputer System Design Data Manual
 
 .. image:: ../../images/Reference/MicroComputerSystemDesignDataManual.1.png
    :width: 400
+   :align: center
 
 .. image:: ../../images/Reference/MicroComputerSystemDesignDataManual.2.png
    :width: 400
+   :align: center
 
 .. rubric:: Collection Information
 
@@ -20,14 +21,8 @@ Motorola Microcomputer System Design Data Manual
    :header: "Acquired"
    :widths: auto
 
-    "|present| 27-JAN-2025"
+   |present| 27-JAN-2025
 
 .. rubric:: Links
 
 :download:`Motorola Microcomputer System Design Data Manual <../../_static/Documents/Reference/MC6800_Microcomputer_System_Design_Data_1976.pdf>`
-
-
-
-
-
-
