@@ -13,21 +13,9 @@ MC6845 Cathode Ray Tube Controller Programming Reference Card
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|present| 19-MAR-2025"
-
-
-
-
-
-
-
-
-
-
-
+   |present| 19-MAR-2025
 

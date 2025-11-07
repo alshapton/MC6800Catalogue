@@ -13,13 +13,9 @@ M6800 Microprocessor Instruction Set Summary
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|present| 18-FEB-2025"
-
-
-
+   |present| 18-FEB-2025
 

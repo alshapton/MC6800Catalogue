@@ -13,23 +13,9 @@ MC68488 GPIA for IEEE-488 Bus Reference Card
 
 .. rubric:: Collection Information
 
-
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    "|present| 19-MAR-2025"
-
-
-
-
-
-
-
-
-
-
-
-
-
+   |present| 19-MAR-2025
 

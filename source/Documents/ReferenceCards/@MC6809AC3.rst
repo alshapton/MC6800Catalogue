@@ -17,10 +17,8 @@ MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model - M6809
    :header: "Acquired"
    :widths: auto
 
-    "|present| 19-MAR-2025"
-
+   |present| 19-MAR-2025
 
 .. rubric:: Links
 
 :download:`MC6809(AC3) MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model <../../_static/Documents/ReferenceCards/M6809(AC3).pdf>`
-
