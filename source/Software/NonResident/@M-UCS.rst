@@ -2,16 +2,14 @@
 
 .. _M-UCS:
 
+.. #Metadata {'Product':'Motorola Software for United Computing Service InfoSheet','Folder': 'Microprocessor Course'}
 
 Motorola Software for United Computing Service InfoSheet
 ========================================================
 
-.. #Metadata {'Product':'Motorola Software for United Computing Service InfoSheet','Folder': 'Microprocessor Course'}
-
 .. image:: ../../images/Software/Non-Resident/M6800_Support_Software_UCS.png
    :width: 400
    :align: center
-
 
 .. rubric:: Collection Information
 
@@ -20,5 +18,4 @@ Motorola Software for United Computing Service InfoSheet
    :widths: auto
 
    |present| 31-MAR-2025
-
 

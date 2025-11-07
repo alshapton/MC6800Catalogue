@@ -2,16 +2,14 @@
 
 .. _M-MTSS:
 
+.. #Metadata {'Product':'Motorola Software for Motorola Time Sharing Systems InfoSheet','Folder': 'Microprocessor Course'}
 
 Motorola Software for Motorola Time Sharing Systems InfoSheet
 =============================================================
 
-.. #Metadata {'Product':'Motorola Software for Motorola Time Sharing Systems InfoSheet','Folder': 'Microprocessor Course'}
-
 .. image:: ../../images/Software/Non-Resident/M6800_Support_Software_MTSS.png
    :width: 400
    :align: center
-
 
 .. rubric:: Collection Information
 
@@ -20,5 +18,4 @@ Motorola Software for Motorola Time Sharing Systems InfoSheet
    :widths: auto
 
    |present| 31-MAR-2025
-
 
