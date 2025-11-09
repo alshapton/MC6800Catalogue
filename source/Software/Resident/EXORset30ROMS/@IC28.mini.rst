@@ -1,12 +1,21 @@
-
-
 :orphan:
 
 .. _IC28:
 
+.. #Metadata {'Product':'EXORset30 ROM - IC-28','Folder': 'LOCAL'}
+
 EXORset30 ROM - IC-28
 =====================
-.. #Metadata {'Product':'EXORset30 ROM - IC-28','Folder': 'LOCAL'}
+
+.. include:: IC28.mini.tabs.rst
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |present| 26-JUN-2025
 
 .. rubric:: Links
 
@@ -17,25 +26,3 @@ EXORset30 ROM - IC-28
 :download:`Binary<../../../_static/Monitors/EXORset30ROMS/IC-28/7621_28.BIN>`
 
 :ref:`EXORset30 ROMS <EXORset30ROMs>`
-
-.. tab-set::
-
-    .. tab-item:: Dissassembly Listing
-
-         **Note that a dissassembly without a proven base address assumes a base address of $0000**
-
-         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-28/28.asm
-
-         
-    .. tab-item:: Hex Dump
-
-         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-28/28.hex
-
-
-.. rubric:: Collection Information
-.. csv-table:: 
-   :header: "Acquired"
-   :widths: auto
-
-   |present| 26-JUN-2025
-   

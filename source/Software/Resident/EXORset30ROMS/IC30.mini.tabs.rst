@@ -1,0 +1,13 @@
+.. tab-set::
+
+    .. tab-item:: Dissassembly Listing
+
+         **Note that a dissassembly without a proven base address assumes a base address of $0000**
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-30/30.asm
+
+         
+    .. tab-item:: Hex Dump
+
+         .. literalinclude:: ../../../_static/Monitors/EXORset30ROMS/IC-30/30.hex
+

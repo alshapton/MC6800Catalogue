@@ -1723,6 +1723,8 @@ def rebuild_db():
                         documenttype='Software/Resident'
                 if 'Software' + OSSEP + 'Resident' + OSSEP + 'EXORset30ROMS' + OSSEP + '@' in file:
                         documenttype='Software/Resident/EXORset30ROMS'
+                        documentid = filename[4].replace('@' ,'').replace('.' + SUFFIX,'')  
+
 
                 in_notes=False
                 notes=''
@@ -2246,7 +2248,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident' order by filename asc;")
+            output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;")
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]
