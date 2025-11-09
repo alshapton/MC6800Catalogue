@@ -7,7 +7,7 @@
 EDUCATOR-II Monitor
 ===================
 
-.. include:: EDUCATOR_II_mon.inc.rst
+.. include:: EDUCATOR_II_mon.tabs.rst
 
 .. rubric:: Collection Information
 

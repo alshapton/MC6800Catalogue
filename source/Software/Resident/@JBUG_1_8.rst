@@ -7,7 +7,7 @@
 JBUG Monitor V1.8
 =================
 
-.. include:: JBUG_1_8.inc.rst
+.. include:: JBUG_1_8.tabs.rst
 
 .. rubric:: Collection Information
 
