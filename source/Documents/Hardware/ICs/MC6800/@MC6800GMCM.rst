@@ -2,28 +2,15 @@
 
 .. _MC6800GMCM:
 
+.. #Metadata {'Product':'MC6800GMCM','Name':'MC6800GMCM General Motors/Delcom Microprocessor Unit','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
+
 MC6800GMCM General Motors/Delcom Microprocessor Unit
 ====================================================
-
-.. #Metadata {'Product':'MC6800GMCM','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
 
 .. image:: ../../../../images/Hardware/ICs/MC6800/GMCM.png
    :width: 400
    :align: center
 
-.. rubric:: Specific Information
-
-.. csv-table:: 
-   :widths: auto
-
-   "Date Code","N/A"
-   "Manufacture Date","N/A"
-   "Packaging","Ceramic"
-   "Status","Prototype"
-   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
-   "Frequency","N/A"
-   "Temperature","N/A"
-      
 .. note::
    
    General Information
@@ -46,6 +33,21 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    128-byte RAM, 2-Kbyte ROM, sophisticated 16-bit timer (a la automotive), 4-MHz on-chip clock oscillator, programmable digital I/O, serial port and, of course, the CPU.
    Motorola originally intended to use the 6800 for the CPU, but the GMCM CPU fit the IC layout better and offered enhanced features. Motorola explained to Delco engineers that since they would likely use the 6801, it would be in Delco’s best interest to grant their request to use the GMCM CPU. Delco agreed."
 
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","N/A"
+   "Manufacture Date","N/A"
+   "Mask",""
+   "Packaging","Ceramic"
+   "Status","Prototype"
+   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
+   "Temperature","N/A"
+   "Frequency","N/A"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
@@ -53,3 +55,4 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    :widths: auto
 
    |present| 30-MAY-2025
+

@@ -2088,6 +2088,10 @@ def write_IC(filename,chipinfo):
             c.write('.. image:: ' + img["image"] + '\n')
             c.write('   :width: 400\n')
             c.write('   :align: center\n\n')
+
+        if chipinfo["notes"] != '':
+            c.write(chipinfo["notes"])
+
         c.write('.. rubric:: Specific Information\n\n')
         c.write('.. csv-table:: \n')
         c.write('   :widths: auto\n\n')

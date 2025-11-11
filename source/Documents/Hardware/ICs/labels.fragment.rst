@@ -222,6 +222,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |i2!MC6800L.new|  image:: /images/Hardware/ICs/MC6800/2!MC6800L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6800GMCM|  image:: /images/Hardware/ICs/MC6800/GMCM.png
    :width: 200
    :class: no-scaled-links

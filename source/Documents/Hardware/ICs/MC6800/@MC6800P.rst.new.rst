@@ -1,0 +1,39 @@
+:orphan:
+
+.. _MC6800P:
+
+.. #Metadata {'Product':'MC6800P','Name':'MC6800P Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+
+MC6800P Microprocessor Unit
+===========================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Mask",""
+   "Packaging","Plastic"
+   "Status","Production"
+   "Location","TBD"
+   "Temperature","-0-70\ :sup:`o`\ C"
+   "Frequency","1Mhz"
+   "Notes",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+
+.. rubric:: Links
+
+:download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
