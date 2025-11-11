@@ -2063,14 +2063,24 @@ def write_IC(filename,chipinfo):
     with open(newfilename, "w") as c:
         c.write(':orphan:\n\n')
         c.write('.. _' + chipinfo["tag"] + ':\n\n')
+        if chipinfo["Storage"] == "Briefcase":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
+            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+
         if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
-            c.write(".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n")
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
             locationfull = "TBD"
         else:
-            c.write(".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n")
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n"
             locationtext=chipinfo["Storage"] + ', Drawer ' + str(chipinfo["Drawer"]) + ', Row ' + str(chipinfo["Row"]) + ', Column ' + str(chipinfo["Col"])
             locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
             locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
+        if chipinfo["Storage"] == "Briefcase":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
+            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+
+        c.write(MD)
+        
         c.write(chipinfo["name"] + '\n')
         c.write('=' * len(chipinfo["name"]) + '\n\n')
         imgs=get_images_from_db(chipinfo["icid"],"ICs")

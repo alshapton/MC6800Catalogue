@@ -18,13 +18,13 @@ MC68B00P Microprocessor Unit
 
    "Date Code","8851"
    "Manufacture Date","12-DEC-1988 to 18-DEC-1988"
+   "Mask","QR7E"
    "Packaging","Plastic"
    "Status","Production"
-   "Mask","QR7E"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 3 <Storage_Box_2_Drawer_1>`"
-   "Frequency","2Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
-      
+   "Frequency","2Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -37,4 +37,3 @@ MC68B00P Microprocessor Unit
 .. rubric:: Links
 
 :download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
-

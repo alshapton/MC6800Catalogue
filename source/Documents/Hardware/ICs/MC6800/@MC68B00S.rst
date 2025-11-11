@@ -2,7 +2,7 @@
 
 .. _MC68B00S:
 
-.. #Metadata {'Product':'MC68B00S','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC68B00S','Name':'MC68B00S Microprocessor Unit','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':1}
 
 MC68B00S Microprocessor Unit
 ============================
@@ -18,12 +18,13 @@ MC68B00S Microprocessor Unit
 
    "Date Code","8241"
    "Manufacture Date","04-OCT-1982 to 10-OCT-1982"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 1 <Storage_Box_1_Drawer_1>`"
-   "Frequency","2Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
-      
+   "Frequency","2Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -31,10 +32,8 @@ MC68B00S Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|present| 08-MAY-2025"
-
+   |present| 08-MAY-2025
 
 .. rubric:: Links
 
 :download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
-
