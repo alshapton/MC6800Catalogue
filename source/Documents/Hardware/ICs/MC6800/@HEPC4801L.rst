@@ -7,7 +7,6 @@
 HEPC4801L HEP version of MC6800
 ===============================
 
-
 .. image:: ../../../../images/Hardware/ICs/MC6800/HEPC4801L.png
    :width: 400
    :align: center
@@ -19,9 +18,12 @@ HEPC4801L HEP version of MC6800
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","HEP"
    "Location","TBD"
+   "Temperature",""
+   "Frequency",""
    "Notes",""
 
 .. rubric:: Collection Information
@@ -30,4 +32,5 @@ HEPC4801L HEP version of MC6800
    :header: "Acquired"
    :widths: auto
 
-      "|notpresent|"
+   |notpresent|
+

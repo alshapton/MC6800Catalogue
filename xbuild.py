@@ -1549,8 +1549,10 @@ def rebuild_db():
                             storage             TEXT,      \
                             drawer              TEXT,      \
                             row                 TEXT,      \
-                            col                 TEXT       \
-                       );")
+                            col                 TEXT,      \
+                            manufacture_status  TEXT,      \
+                            temperature_raw     TEXT       \
+                        );")
     conn.commit()
 
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclinks     \
@@ -1834,9 +1836,11 @@ def rebuild_db():
             converted_date = ''
             packaging = ''
             temperature = ''
+            temperature_raw = ''
             frequency = ''
             notes = ''
             mask = ''
+            manufacture_status = ''
             metadata = ''
             image = ''
             location = ''
@@ -1886,6 +1890,10 @@ def rebuild_db():
                     if ':download:`' in line :
                         conn.execute("INSERT INTO iclinks (icid, link) VALUES (?,?);", (icid, line.strip()))
                         conn.commit()
+                    
+                    if '"Status"' in line:
+                        splitline=line.split(',')
+                        manufacture_status=splitline[1].replace('"','')[:-1].strip()
                     if '"Date Code"' in line:
                         splitline=line.split(',')
                         date_code=splitline[1].replace('"','')[:-1].strip()
@@ -1905,7 +1913,9 @@ def rebuild_db():
                         frequency=splitline[1].replace('"','')[:-1]
                     if '"Temperature"' in line:
                         splitline=line.split(',')
+                        temperature_raw = splitline[1].replace('"','')[:-1]
                         itemperature=splitline[1].replace('"','')[:-1].replace('\\ :sup:`o`\\ ','°')
+                        
                         if itemperature.startswith('-'):
                             ttemp = itemperature.split('-')
                             temperature = '-' + ttemp[1] + '°C to ' + ttemp[2]
@@ -1961,10 +1971,12 @@ def rebuild_db():
                     parent_number = parent.replace('MCM','').replace('MC','').strip()
             conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
                                            tag, packaging, temperature,frequency,mask,notes,date_code,manufacture_date, \
-                                           location, metadata,filename,storage,drawer,row,col) \
-                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                                           location, metadata,filename,storage,drawer,row,col,manufacture_status, \
+                                           temperature_raw) \
+                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
                          (icid, ic, parent,parent_number,productname,status,acquired_date,converted_date,tag,packaging,\
-                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file,storage,drawer,row,col))
+                          temperature,frequency,mask,notes,date_code,manufacture_date,location,metadata,file,storage,\
+                          drawer,row,col,manufacture_status,temperature_raw))
         
             conn.commit()
     conn.close()
@@ -2042,7 +2054,63 @@ def update_chip_info(f):
     f.write('\n')
 
     
-    
+def write_IC(filename,chipinfo):
+
+    chip=chipinfo["ic"] 
+    newgroupname=chipinfo["parent"]
+
+    newfilename=filename + ".new.rst"
+    with open(newfilename, "w") as c:
+        c.write(':orphan:\n\n')
+        c.write('.. _' + chipinfo["tag"] + ':\n\n')
+        if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
+            c.write(".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n")
+            locationfull = "TBD"
+        else:
+            c.write(".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n")
+            locationtext=chipinfo["Storage"] + ', Drawer ' + str(chipinfo["Drawer"]) + ', Row ' + str(chipinfo["Row"]) + ', Column ' + str(chipinfo["Col"])
+            locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
+            locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
+        c.write(chipinfo["name"] + '\n')
+        c.write('=' * len(chipinfo["name"]) + '\n\n')
+        imgs=get_images_from_db(chipinfo["icid"],"ICs")
+        for img in imgs:
+            c.write('.. image:: ' + img["image"] + '\n')
+            c.write('   :width: 400\n')
+            c.write('   :align: center\n\n')
+        c.write('.. rubric:: Specific Information\n\n')
+        c.write('.. csv-table:: \n')
+        c.write('   :widths: auto\n\n')
+        c.write('   "Date Code","'+chipinfo["date_code"]+'"\n')
+        c.write('   "Manufacture Date","'+chipinfo["manufacture_date"]+'"\n')        
+        c.write('   "Mask","'+chipinfo["mask"]+'"\n')
+        c.write('   "Packaging","'+chipinfo["packaging"]+'"\n')
+        c.write('   "Status","'+chipinfo["manufacture_status"]+'"\n')
+        c.write('   "Location","' + locationfull + '"\n')
+        c.write('   "Temperature","'+chipinfo["temperature_raw"]+'"\n')
+        c.write('   "Frequency","'+chipinfo["frequency"]+'"\n')
+        c.write('   "Notes",""\n\n')
+        c.write('.. rubric:: Collection Information\n\n')
+        c.write('.. csv-table:: \n')
+        c.write('   :header: "Acquired"\n') 
+        c.write('   :widths: auto\n\n')
+        if chipinfo["status"] == 'present':
+            c.write('   '+ CHECK_MARK + ' ' + chipinfo["acquired_date"]+'\n')     
+        else:
+            c.write('   |'+ chipinfo["status"] + '|\n')
+
+        c.write('\n')
+        lnks=get_links_from_db(chipinfo["icid"],"ICs")
+        if len(lnks) > 1:
+            endline='\n'
+        else:
+            endline=''
+        if len(lnks) > 0:
+            c.write('.. rubric:: Links\n')
+            for lnk in lnks:
+                c.write('\n' + lnk["link"] + endline)
+    return 
+
 while True:
     console.print("\t  Main Menu\n",style="bold black")
     console.print('\t1 Get date range from week ',style="info")
@@ -2248,7 +2316,23 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;")
+            output=read_db("SELECT * FROM ics WHERE parent = 'MC6800' order by icid asc;")
+            for chipinfo in output:
+                filename=chipinfo["filename"]
+                write_IC(filename,chipinfo)
+                newfilename = filename + ".new.rst"
+                issame=compare_files(filename,newfilename)
+                if issame:
+                    #console.print(os.path.basename(filename) + ' is identical to ' + os.path.basename(newfilename),style="info")
+                    os.remove(newfilename)
+                    pass;
+                else:
+                    console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
+
+            
+            
+            #output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;")
+            output = read_db("SELECT * FROM documents WHERE documenttype='FRED' order by filename asc;")
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]

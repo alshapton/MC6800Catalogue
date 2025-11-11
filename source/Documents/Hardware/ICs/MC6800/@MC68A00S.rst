@@ -18,12 +18,13 @@ MC68A00S Microprocessor Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","Production"
    "Location","TBD"
-   "Frequency","1.5Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
-      
+   "Frequency","1.5Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -31,10 +32,8 @@ MC68A00S Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
-
