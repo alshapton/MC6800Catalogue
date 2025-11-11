@@ -2,18 +2,14 @@
 
 .. _MC6801L1:
 
-.. #Metadata {'Product':'MC6801L1','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6801L1','Name':'MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':2}
 
 MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 ========================================================
 
-.. #Imageinfo
-
 .. image:: ../../../../images/Hardware/ICs/MC6801/MC6801L1.png
    :width: 400
    :align: center
-
-.. #Chipinfo
 
 .. rubric:: Specific Information
 
@@ -22,6 +18,7 @@ MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 
    "Date Code","8503"
    "Manufacture Date","14-JAN-1985 to 20-JAN-1985"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 2 <Storage_Box_2_Drawer_1>`"
@@ -29,17 +26,13 @@ MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
    "Frequency","1 Mhz"
    "Notes",""
 
-.. #Collectioninfo
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
    |present| 23-SEP-2025
-
-.. #Linksinfo
 
 .. rubric:: Links
 

@@ -2332,7 +2332,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output=read_db("SELECT * FROM ics WHERE parent = 'MC6800' order by icid asc;")
+            output=read_db("SELECT * FROM ics WHERE parent = 'MC6801' order by icid asc;")
             for chipinfo in output:
                 filename=chipinfo["filename"]
                 write_IC(filename,chipinfo)
