@@ -18,11 +18,13 @@ MC6800S Microprocessor Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","Production"
    "Location","TBD"
-   "Frequency","1Mhz"
    "Temperature","-0-70\ :sup:`o`\ C"
+   "Frequency","1Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -30,9 +32,8 @@ MC6800S Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6800 DataSheet <../../../../_static/Documents/Datasheets/MC6800.pdf>`
-

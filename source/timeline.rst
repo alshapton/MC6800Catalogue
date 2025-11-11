@@ -76,7 +76,6 @@ This is the timeline of acquisitions (as at 11-11-2025).
    21-MAY-2025,:ref:`MC68701U4L Microprocessor Unit with 8-bit EPROM <MC68701U4L>`
    28-MAY-2025,:ref:`MC6809EP 8-Bit Microprocessing Unit (MC6809E) <MC6809EP>`
    28-MAY-2025,:ref:`MC6847P Non-Interlaced Video Display Generator Unit <MC6847P>`
-   30-MAY-2025,:ref:`MC6800GMCM General Motors/Delcom Microprocessor Unit <MC6800GMCM>`
    30-MAY-2025,:ref:`MC68A50P Asynchronous Communications Interface Adapter (MC6850) <MC68A50P>`
    30-MAY-2025,:ref:`MC6889P NonInverting Quad Three-State Bus Transceiver <MC6889P>`
    31-MAY-2025,:ref:`MCM68A30L8 1024 x 8-bit ROM <MCM68A30L8>`

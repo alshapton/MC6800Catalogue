@@ -2063,9 +2063,7 @@ def write_IC(filename,chipinfo):
     with open(newfilename, "w") as c:
         c.write(':orphan:\n\n')
         c.write('.. _' + chipinfo["tag"] + ':\n\n')
-        if chipinfo["Storage"] == "Briefcase":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
-            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+        
 
         if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
@@ -2078,6 +2076,10 @@ def write_IC(filename,chipinfo):
         if chipinfo["Storage"] == "Briefcase":
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
             locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+        if chipinfo["Storage"] == "MEK6800D2":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
+            locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
+
 
         c.write(MD)
         
