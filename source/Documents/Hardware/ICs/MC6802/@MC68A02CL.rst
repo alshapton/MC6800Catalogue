@@ -18,6 +18,7 @@ MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -25,14 +26,13 @@ MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
