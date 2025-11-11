@@ -1,0 +1,19 @@
+:orphan:
+
+.. _M68MM15A:
+
+.. #Metadata {'Product':'M68MM15A Micromodule 15A High Level A/D module','Folder': ' '}
+
+M68MM15A Micromodule 15A High Level A/D module
+==============================================
+
+.. include:: M68MM15A.carousel.rst
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |intransit|
+

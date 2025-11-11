@@ -12,6 +12,7 @@ This is the current set of items (as at 11-11-2025) in transit.
 	:widths: 30, 70
 
 	M68MM12,":ref:`M68MM12 Micromodule 12 GPIB Interface Module <M68MM12>` "
+	M68MM15A,":ref:`M68MM15A Micromodule 15A High Level A/D module <M68MM15A>` "
 
 
 .. rubric:: ICs
