@@ -18,6 +18,7 @@ MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
@@ -25,14 +26,13 @@ MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)
    "Frequency","1 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
