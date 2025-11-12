@@ -17,7 +17,7 @@
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 12-NOV-2025
 
 .. rubric:: Links
 
