@@ -1,0 +1,30 @@
+:orphan:
+
+.. _M68MM16:
+
+.. #Metadata {'Product':'M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module','Folder': 'Hardware'}
+
+M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module
+========================================================
+
+.. include:: M68MM16.carousel.rst
+
+.. note:: 
+
+   There are three versions of the M68MM16 Micromodule:
+
+   M68MM16-1, 2, 3 
+
+   This module provides functional expansion of Monoboard MM01 (version 16-1), or MM19 (version 16-2), 
+   and can be used as MM19 Emulator in an EXORset Development System (version 16-3). 
+   Includes asynchronous serial data port with strap-selectable RS-232C, RS-422, or RS-423 
+   interface, parallel control lines, three 16-bit programmable counter/timers, and four 
+   sockets for user installed, single 5-volt-supply MOS or bipolar memories.
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |present| 17-NOV-2025

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6820P','Name':'MC6820P Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6820P Peripheral Interface Adapter (PIA)
 ==========================================
 
@@ -19,6 +18,7 @@ MC6820P Peripheral Interface Adapter (PIA)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location","TBD"
@@ -26,11 +26,11 @@ MC6820P Peripheral Interface Adapter (PIA)
    "Frequency","1 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |notpresent|
+   |notpresent|
+

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A09CS','Name':'MC68A09CS 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A09CS 8-Bit Microprocessing Unit
 ====================================
 
@@ -19,6 +18,7 @@ MC68A09CS 8-Bit Microprocessing Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68A09CS 8-Bit Microprocessing Unit
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

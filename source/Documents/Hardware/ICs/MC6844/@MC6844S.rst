@@ -5,7 +5,7 @@
 .. #Metadata {'Product':'MC6844S','Name':'MC6844S Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6844S Direct Memory Access Controller (DMAC)
-===============================================
+==============================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -18,17 +18,19 @@ MC6844S Direct Memory Access Controller (DMAC)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","TBD"
    "Status","TBD"
    "Location","TBD"
-   "Notes",""
-   "Frequency","TBD"
    "Temperature","TBD"
-   
+   "Frequency","TBD"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
-    
-    |notpresent|
+
+   |notpresent|
+

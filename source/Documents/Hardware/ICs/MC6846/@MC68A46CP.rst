@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A46CP','Name':'MC68A46CP ROM I/O Timer','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A46CP ROM I/O Timer
 =======================
 
@@ -19,6 +18,7 @@ MC68A46CP ROM I/O Timer
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68A46CP ROM I/O Timer
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

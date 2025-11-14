@@ -2,7 +2,7 @@
 
 .. _SC84003L:
 
-.. #Metadata {'Product':'SC84003L','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':3}
+.. #Metadata {'Product':'SC84003L','Name':'SC84003L (MC6809) 8-Bit Microprocessing Unit','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':3}
 
 SC84003L (MC6809) 8-Bit Microprocessing Unit
 ============================================
@@ -18,14 +18,13 @@ SC84003L (MC6809) 8-Bit Microprocessing Unit
 
    "Date Code","8041"
    "Manufacture Date","06-OCT-1980 to 12-OCT-1980"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering Sample"
    "Location",":ref:`Storage Box 1, Drawer 3, Row 1, Column 3 <Storage_Box_1_Drawer_3>`"
    "Temperature","TBD"
    "Frequency","TBD"
-   "Mask Set","T6M"
-   "Notes","An engineering sample of a 6809"
-
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -34,3 +33,4 @@ SC84003L (MC6809) 8-Bit Microprocessing Unit
    :widths: auto
 
    |present| 06-AUG-2025
+

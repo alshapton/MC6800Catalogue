@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6844CP','Name':'MC6844CP Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6844CP Direct Memory Access Controller (DMAC)
 ===============================================
 
@@ -19,22 +18,22 @@ MC6844CP Direct Memory Access Controller (DMAC)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","TBD"
    "Status","TBD"
    "Location","TBD"
-   "Notes",""
-   "Frequency","TBD"
    "Temperature","TBD"
-   
+   "Frequency","TBD"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |notpresent|
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6844 Direct Memory Access Controller (DMAC)  <../../../../_static/Documents/Datasheets/MC6844.pdf>`
-

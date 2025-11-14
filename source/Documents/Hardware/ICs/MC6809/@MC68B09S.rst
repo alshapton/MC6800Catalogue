@@ -4,9 +4,8 @@
 
 .. #Metadata {'Product':'MC68B09S','Name':'MC68B09S 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68B09S 8-Bit Microprocessing Unit
-====================================
+===================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -19,6 +18,7 @@ MC68B09S 8-Bit Microprocessing Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68B09S 8-Bit Microprocessing Unit
    "Frequency","2 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

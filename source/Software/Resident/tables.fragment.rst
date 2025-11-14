@@ -14,6 +14,7 @@
    "|present| :ref:`N/A <IC30>`","EXORset30 ROM - IC-30",""
    "|present| :ref:`N/A <IC31>`","EXORset30 ROM - IC-31",""
    "|present| :ref:`N/A <JBUG_1_8>`","JBUG Monitor V1.8",""
+   "|present| :ref:`N/A <LILBUG_1_0>`","LILbug Monitor V1.0",""
    "|present| :ref:`N/A <@MIKBUG-MINIBUG_04_09_mk_ass>`","MIKBUG Monitor Assembly Listing REV 009",""
    "|present| :ref:`N/A <@MIKBUG-MINIBUG_04_09_mn_ass>`","MINIBUG Monitor Assembly Listing REV 004",""
 

@@ -2,7 +2,7 @@
 
 .. _XC6845L:
 
-.. #Metadata {'Product':'XC6845L','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+.. #Metadata {'Product':'XC6845L','Name':'XC6845L CRT Controller','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
 
 XC6845L CRT Controller
 ======================
@@ -13,15 +13,17 @@ XC6845L CRT Controller
 
 .. rubric:: Specific Information
 
-
 .. csv-table:: 
    :widths: auto
 
    "Date Code","7749"
    "Manufacture Date","28-NOV-1977 to 04-DEC-1977"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering"
    "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 3 <Storage_Box_1_Drawer_1>`"
+   "Temperature",""
+   "Frequency",""
    "Notes",""
 
 .. rubric:: Collection Information

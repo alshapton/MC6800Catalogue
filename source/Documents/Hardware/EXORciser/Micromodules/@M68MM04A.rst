@@ -2,20 +2,12 @@
 
 .. _M68MM04A:
 
-.. #Metadata {'Product':'M68MM04A Micromodule 4A ROM/EPROM Module','Folder': ' '}
+.. #Metadata {'Product':'M68MM04A Micromodule 4A ROM/EPROM Module','Folder': 'Hardware'}
 
 M68MM04A Micromodule 4A ROM/EPROM Module
 ========================================
 
-.. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM04A/_M68MM04A.1.jpg
-   :width: 400
-   :align: center
-
 .. include:: M68MM04A.carousel.rst
-
-.. Note:: 
-
-   |2ndsource| Micro Industries
 
 .. rubric:: Collection Information
 
@@ -23,7 +15,7 @@ M68MM04A Micromodule 4A ROM/EPROM Module
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |present| 17-NOV-2025
 
 .. rubric:: Links
 

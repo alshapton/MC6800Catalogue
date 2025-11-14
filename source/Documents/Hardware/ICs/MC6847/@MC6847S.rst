@@ -18,10 +18,13 @@ MC6847S Non-Interlaced Video Display Generator Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","Advance"
    "Location","TBD"
-   "Notes",""   
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -29,10 +32,8 @@ MC6847S Non-Interlaced Video Display Generator Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6847 DataSheet <../../../../_static/Documents/Datasheets/MC6847.pdf>`
-

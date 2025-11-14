@@ -7,4 +7,4 @@
       :widths: auto
 
       "|notpresent| :ref:`MC6887L <MC6887L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"
-      "|notpresent| :ref:`MC6887P <MC6887P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"
+      "|present| :ref:`MC6887P <MC6887P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""

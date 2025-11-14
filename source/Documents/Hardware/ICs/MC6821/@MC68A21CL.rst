@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A21CL','Name':'MC68A21CL Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A21CL Peripheral Interface Adapter (PIA)
 ============================================
 
@@ -19,6 +18,7 @@ MC68A21CL Peripheral Interface Adapter (PIA)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68A21CL Peripheral Interface Adapter (PIA)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

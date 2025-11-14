@@ -22,6 +22,7 @@ extensions = [
         'sphinx_design',
         'linuxdoc.rstFlatTable',
         'hoverxref.extension',
+        'sphinx.ext.extlinks',
 ]
 
 autosectionlabel_prefix_document = True
@@ -30,6 +31,10 @@ exclude_patterns = []
 root_prefix = '/Users/andrew/MyProjects/Motorola-6800/MC6800Catalogue'
 source_suffix = ['.rst']
 
+
+# ExtLinks configuration:
+extlinks = {'extlink-bitsavers': ('https://bitsavers.org/bits/Motorola/Exorcisor/%s',
+                      'extlink-bitsavers %s')}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

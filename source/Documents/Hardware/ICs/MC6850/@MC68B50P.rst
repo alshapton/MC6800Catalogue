@@ -2,7 +2,7 @@
 
 .. _MC68B50P:
 
-.. #Metadata {'Product':'MC68B50P','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC68B50P','Name':'MC68B50P Asynchronous Communications Interface Adapter (MC5850)','Storage': 'Storage Box 1','Drawer':4,'Row':2,'Column':1}
 
 MC68B50P Asynchronous Communications Interface Adapter (MC5850)
 ===============================================================
@@ -18,9 +18,12 @@ MC68B50P Asynchronous Communications Interface Adapter (MC5850)
 
    "Date Code","8251"
    "Manufacture Date","13-DEC-1982 to 19-DEC-1982"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 1 <Storage_Box_1_Drawer_4>`"
+   "Temperature",""
+   "Frequency",""
    "Notes",""
 
 .. rubric:: Collection Information

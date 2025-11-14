@@ -2,7 +2,7 @@
 
 .. _MC6852L:
 
-.. #Metadata {'Product':'MC6852L','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':1}
+.. #Metadata {'Product':'MC6852L','Name':'MC6852L Synchronous Serial Adapter (1 Mhz)','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':1}
 
 MC6852L Synchronous Serial Adapter (1 Mhz)
 ==========================================
@@ -11,13 +11,13 @@ MC6852L Synchronous Serial Adapter (1 Mhz)
    :width: 400
    :align: center
 
-Blister pack
-
 .. image:: ../../../../images/Hardware/ICs/MC6852/MC6852L.2.png
    :width: 400
    :align: center
 
-Rear of packaging
+.. note::
+
+   New in box, unopened. Pictures illustrate front and rear of packaging
 
 .. rubric:: Specific Information
 
@@ -26,10 +26,13 @@ Rear of packaging
 
    "Date Code","7643"
    "Manufacture Date","18-OCT-1976 to 24-OCT-1976"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 0, Row 1, Column 1 <Storage_Box_2_Drawer_0>`"
-   "Notes","New in box, unopened"
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -40,6 +43,5 @@ Rear of packaging
    |present| 02-JUN-2025
 
 .. rubric:: Links
-
 
 :download:`MC6852 Datasheet <../../../../_static/Documents/Datasheets/MC6852.pdf>`

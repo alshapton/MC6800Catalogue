@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68B35P','Name':'MC68B35P CRT Controller (CRTC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68B35P CRT Controller (CRTC)
 ==============================
 
@@ -19,6 +18,7 @@ MC68B35P CRT Controller (CRTC)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68B35P CRT Controller (CRTC)
    "Frequency","2 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

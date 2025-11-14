@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A44CP','Name':'MC68A44CP Direct Memory Access Controller (DMAC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A44CP Direct Memory Access Controller (DMAC)
 ================================================
 
@@ -19,20 +18,21 @@ MC68A44CP Direct Memory Access Controller (DMAC)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","TBD"
    "Status","TBD"
    "Location","TBD"
-   "Notes",""
-   "Frequency","TBD"
    "Temperature","TBD"
-   
+   "Frequency","TBD"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |notpresent|
+   |notpresent|
 
 .. rubric:: Links
 

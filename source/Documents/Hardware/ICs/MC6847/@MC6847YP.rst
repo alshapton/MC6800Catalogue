@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6847YP','Name':'MC6847YP Interlaced Video Display Generator Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6847YP Interlaced Video Display Generator Unit
 ================================================
 
@@ -19,10 +18,13 @@ MC6847YP Interlaced Video Display Generator Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Advance"
    "Location","TBD"
-   "Notes",""   
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -30,10 +32,8 @@ MC6847YP Interlaced Video Display Generator Unit
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6847 DataSheet <../../../../_static/Documents/Datasheets/MC6847.pdf>`
-

@@ -1,0 +1,19 @@
+:orphan:
+
+.. _M68MM15C:
+
+.. #Metadata {'Product':'M68MM15C Micromodule 15C High Level D/A module','Folder': 'Hardware'}
+
+M68MM15C Micromodule 15C High Level D/A module
+==============================================
+
+.. include:: M68MM15C.carousel.rst
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |present| 17-NOV-2025
+

@@ -2,7 +2,7 @@
 
 .. _MC6845P:
 
-.. #Metadata {'Product':'MC6845P','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':3}
+.. #Metadata {'Product':'MC6845P','Name':'MC6845P CRT Controller','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':3}
 
 MC6845P CRT Controller
 ======================
@@ -18,20 +18,21 @@ MC6845P CRT Controller
 
    "Date Code","8331"
    "Manufacture Date","25-JUL-1983 to 31-JUL-1983"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 1, Row 3, Column 3 <Storage_Box_1_Drawer_1>`"
-   "Notes",""
-   "Frequency","N/A"
    "Temperature","N/A"
-   
+   "Frequency","N/A"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |present| 12-MAR-2025
+   |present| 12-MAR-2025
 
 .. rubric:: Links
 

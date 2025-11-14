@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A40CL','Name':'MC68A40CL Programmable Timer Module (PTM)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A40CL Programmable Timer Module (PTM)
 =========================================
 
@@ -19,6 +18,7 @@ MC68A40CL Programmable Timer Module (PTM)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68A40CL Programmable Timer Module (PTM)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

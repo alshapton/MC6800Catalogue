@@ -2,13 +2,13 @@
 
 .. _MC6880AP:
 
-.. #Metadata {'Product':'MC6880AP','Name':'MC6880AP Quad Three-State Bus Transceiver','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6880AP','Name':'MC6880AP Quad Three-State Bus Transceiver','Storage': 'M68MM04A'}
 
 
 MC6880AP Quad Three-State Bus Transceiver
 =========================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6880A/MC6880AP.png
    :width: 400
    :align: center
 
@@ -17,15 +17,15 @@ MC6880AP Quad Three-State Bus Transceiver
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8147"
+   "Manufacture Date","16-NOV-1981 to 22-NOV-1981"
    "Packaging","Plastic"
-   "Status","TBD"
+   "Mask","K"
+   "Status","Production"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 
@@ -33,7 +33,7 @@ MC6880AP Quad Three-State Bus Transceiver
    :header: "Component"
    :widths: auto
 
-   "|notpresent|"
+   |present| 17-NOV-2025
 
 .. rubric:: Links
 

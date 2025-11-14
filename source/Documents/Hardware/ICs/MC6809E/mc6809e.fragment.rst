@@ -19,7 +19,7 @@
       "|present| :ref:`MC68B09EP <MC68B09EP>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B09ECS <MC68B09ECS>`","CERDIP","2 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09ECL <MC68A09ECL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
-      "|present| :ref:`HD63C09EP <HD63C09EP>`","Plastic","3/3.5 Mhz","0-70\ :sup:`o`\ C","|2ndsource|"
+      "|present| :ref:`HD63C09EP <HD63C09EP>`","Plastic","3/3.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809EL <MC6809EL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809ECL <MC6809ECL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09EP <MC68A09EP>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""

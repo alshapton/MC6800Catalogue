@@ -2,7 +2,7 @@
 
 .. _MC68B09EP:
 
-.. #Metadata {'Product':'MC68B09EP','Storage': 'Storage Box 1','Drawer':3,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC68B09EP','Name':'MC68B09EP 8-Bit Microprocessing Unit (MC6809E)','Storage': 'Storage Box 1','Drawer':3,'Row':3,'Column':1}
 
 MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
 ==============================================
@@ -18,6 +18,7 @@ MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
 
    "Date Code","8722"
    "Manufacture Date","25-MAY-1987 to 31-MAY-1987"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 3, Row 3, Column 1 <Storage_Box_1_Drawer_3>`"
@@ -25,14 +26,13 @@ MC68B09EP 8-Bit Microprocessing Unit (MC6809E)
    "Frequency","2 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|present| 05-JUL-2025"
+   |present| 05-JUL-2025
 
 .. rubric:: Links
 

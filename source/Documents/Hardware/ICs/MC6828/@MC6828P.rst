@@ -18,14 +18,13 @@ MC6828P Priority Interrupt Controller
 
    "Date Code","8152"
    "Manufacture Date","21-DEC-1981 to 27-DEC-1981"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 2 <Storage_Box_2_Drawer_4>`"
    "Temperature","N/A"
-   "Mask",""
    "Frequency","N/A"
    "Notes",""
-
 
 .. rubric:: Collection Information
 

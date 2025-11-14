@@ -2,18 +2,22 @@
 
 .. _M68MM12:
 
-.. #Metadata {'Product':'M68MM12 Micromodule 12 GPIB Interface Module','Folder': ' '}
+.. #Metadata {'Product':'M68MM12 Micromodule 12 GPIB Interface Module','Folder': 'Hardware'}
 
 M68MM12 Micromodule 12 GPIB Interface Module
 ============================================
 
 .. include:: M68MM12.carousel.rst
 
+.. note::
+
+   There is a slightly damaged DIP switch on this unit. Funcationality would appear to be unimpaired.
+   
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 17-NOV-2025
 

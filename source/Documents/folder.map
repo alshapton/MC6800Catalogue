@@ -76,8 +76,6 @@
 
     :ref:`M68MMCC10 <M68MMCC10>`,""
     :ref:`MEK6800D2 <MEK6800D2>`,""
-    :ref:`MEK6800D2 <MEK6800D2>`,""
-    :ref:`MPUEvaluationBoard <MPU_EVALUATION_BOARD>`,""
     :ref:`MPUEvaluationBoard <MPU_EVALUATION_BOARD>`,""
 
 
@@ -97,6 +95,8 @@
     :ref:`EXORset30 ROM - IC-30 <IC30>`,""
     :ref:`EXORset30 ROM - IC-31 <IC31>`,""
     :ref:`JBUG Monitor V1.8 <JBUG_1_8>`,""
+    :ref:`LILbug Monitor V1.0 <LILBUG_1_0>`,""
+    :ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`,""
     :ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`,""
     :ref:`MINIBUG Monitor Assembly Listing REV 004 <@MIKBUG-MINIBUG_04_09_mn_ass>`,""
     :ref:`Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11) <SRC-FOR-MASM-PDP-11>`,""

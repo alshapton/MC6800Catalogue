@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCA6852CL','Name':'MCA6852CL Synchronous Serial Data Adapter (SSDA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MCA6852CL Synchronous Serial Data Adapter (SSDA)
 ================================================
 
@@ -19,6 +18,7 @@ MCA6852CL Synchronous Serial Data Adapter (SSDA)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MCA6852CL Synchronous Serial Data Adapter (SSDA)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

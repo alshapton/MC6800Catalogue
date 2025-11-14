@@ -2,10 +2,10 @@
 
 .. _XC6820:
 
+.. #Metadata {'Product':'XC6820','Name':'XC6820 Peripheral Interface Adapter','Storage': 'Briefcase'}
+
 XC6820 Peripheral Interface Adapter
 ===================================
-
-.. #Metadata {'Product':'XC6820','Name':'Peripheral Interface Adapter','Storage': 'Briefcase'}
 
 .. image:: ../../../../images/Hardware/ICs/MC6820/XC6820.png
    :width: 400
@@ -18,10 +18,13 @@ XC6820 Peripheral Interface Adapter
 
    "Date Code","7517"
    "Manufacture Date","21-APR-1975 to 27-APR-1975"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering"
-   "Location","Briefcase"
-   "Notes","This IC is an engineering sample of the MC6820."
+   "Location",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -29,5 +32,5 @@ XC6820 Peripheral Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-   "|present| 30-JAN-2025"
+   |present| 30-JAN-2025
 

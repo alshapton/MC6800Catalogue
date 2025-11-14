@@ -2,7 +2,7 @@
 
 .. _MC68B09CP:
 
-.. #Metadata {'Product':'MC68B09CP','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':3}
+.. #Metadata {'Product':'MC68B09CP','Name':'MC68B09CP 8-Bit Microprocessing Unit','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':3}
 
 MC68B09CP 8-Bit Microprocessing Unit
 ====================================
@@ -18,14 +18,13 @@ MC68B09CP 8-Bit Microprocessing Unit
 
    "Date Code","9331"
    "Manufacture Date","26-JUL-1993 to 01-AUG-1993"
+   "Mask","C65P"
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 3 <Storage_Box_2_Drawer_1>`"
    "Temperature","-40-85\ :sup:`o`\ C"
-   "Mask","C65P"
    "Frequency","2 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 

@@ -18,6 +18,7 @@ MC68A29CL Memory Management Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -25,16 +26,14 @@ MC68A29CL Memory Management Unit
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6829 DataSheet <../../../../_static/Documents/Datasheets/MC6829.pdf>`
-

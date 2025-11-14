@@ -103,7 +103,7 @@ Reference Manuals
    ":ref:`M68MASR(D2) <M68MASR(D2)>`","Macro Assemblers Reference Manual","Second Edition September 1979"
    "|present| :ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual","First Edition Nov. 1976"
    ":ref:`M6809ASM09(D) <M6809ASM09(D)>`","EXORset 30 XDOS Assembler User's Guide","Targetting M6809"
-
+   ":ref:`MC6801L1UM(AD) <MC6801L1UM(AD)>`","LILbug Monitor for the MC6801L1",""
 
 .. rubric:: Software Manuals (Language Interpreters/Compilers)
 

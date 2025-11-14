@@ -5,7 +5,7 @@
 .. #Metadata {'Product':'MC68B09P','Name':'MC68B09P 8-Bit Microprocessing Unit','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':2}
 
 MC68B09P 8-Bit Microprocessing Unit
-====================================
+===================================
 
 .. image:: ../../../../images/Hardware/ICs/MC6809/MC68B09P.png
    :width: 400
@@ -18,14 +18,13 @@ MC68B09P 8-Bit Microprocessing Unit
 
    "Date Code","8212"
    "Manufacture Date","15-MAR-1982 to 21-MAR-1982"
+   "Mask","CW3"
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 2, Row 2, Column 2 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Mask","CW3"
    "Frequency","2 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 

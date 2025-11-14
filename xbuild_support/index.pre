@@ -68,7 +68,7 @@ Conventions Used
    Map <map>
    ##INTRANSIT##
    ##UNDEROFFER##
-
+   Statistics <statistics>
 
 .. toctree::
    :titlesonly:

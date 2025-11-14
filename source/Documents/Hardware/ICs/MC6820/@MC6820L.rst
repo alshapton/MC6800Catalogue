@@ -2,7 +2,7 @@
 
 .. _MC6820L:
 
-.. #Metadata {'Product':'MC6820L','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC6820L','Name':'MC6820L Peripheral Interface Adapter (PIA)','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':1}
 
 MC6820L Peripheral Interface Adapter (PIA)
 ==========================================
@@ -11,6 +11,10 @@ MC6820L Peripheral Interface Adapter (PIA)
    :width: 400
    :align: center
 
+.. note::
+
+   There is a mark 'F' on the IC. This may refer to a Mask Version. The IC is marked as MC6820. No packaging suffix is included.
+
 .. rubric:: Specific Information
 
 .. csv-table:: 
@@ -18,14 +22,13 @@ MC6820L Peripheral Interface Adapter (PIA)
 
    "Date Code","7609"
    "Manufacture Date","23-FEB-1976 to 29-FEB-1976"
+   "Mask","N/A"
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
-   "Mask","N/A"
-   "Notes","There is a mark 'F' on the IC. This may refer to a Mask Version. The IC is marked as MC6820. No packaging suffix is included."
-
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -33,4 +36,5 @@ MC6820L Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   "|present| 09-AUG-2025"
+   |present| 09-AUG-2025
+

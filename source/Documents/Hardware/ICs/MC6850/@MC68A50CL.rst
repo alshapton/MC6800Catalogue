@@ -18,6 +18,7 @@ MC68A50CL Asynchronous Communications Interface Adapter (MC6850)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -25,11 +26,11 @@ MC68A50CL Asynchronous Communications Interface Adapter (MC6850)
    "Frequency","1.5MHz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |notpresent|
+   |notpresent|
+

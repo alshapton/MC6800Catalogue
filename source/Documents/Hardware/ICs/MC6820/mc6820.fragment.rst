@@ -5,6 +5,6 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      "|present| :ref:`XC6820 <XC6820>`","Ceramic","","","This IC is an engineering sample of the MC6820."
+      "|present| :ref:`XC6820 <XC6820>`","Ceramic","","",""
       "|notpresent| :ref:`MC6820P <MC6820P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-      "|present| :ref:`MC6820L <MC6820L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","There is a mark 'F' on the IC. This may refer to a Mask Version. The IC is marked as MC6820. No packaging suffix is included."
+      "|present| :ref:`MC6820L <MC6820L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""

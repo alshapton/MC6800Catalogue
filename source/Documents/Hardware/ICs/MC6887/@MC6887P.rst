@@ -2,13 +2,12 @@
 
 .. _MC6887P:
 
-.. #Metadata {'Product':'MC6887P','Name':'MC6887P Hex Three-State Buffer/Inverter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
-
+.. #Metadata {'Product':'MC6887P','Name':'MC6887P Hex Three-State Buffer/Inverter','Storage': 'M68MM12'}
 
 MC6887P Hex Three-State Buffer/Inverter
 =======================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6887/MC6887P.png
    :width: 400
    :align: center
 
@@ -17,22 +16,23 @@ MC6887P Hex Three-State Buffer/Inverter
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8136"
+   "Manufacture Date","31-AUG-1981 to 06-SEP-1981"
+   "Mask","K"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`M68MM12 Micromodule <Components_attached_to_the_M68MM12_Micromodule_Components_attached_to_the_M68MM12_Micromodule>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
-   "Notes","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"
+   "Notes",""
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |present| 17-NOV-2025
 
 .. rubric:: Links
 

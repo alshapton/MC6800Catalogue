@@ -66,8 +66,7 @@ Conventions Used
    Collection <collection>
    Timeline <timeline>
    Map <map>
-   In Transit <transit>
-
+   Statistics <statistics>
 
 .. toctree::
    :titlesonly:

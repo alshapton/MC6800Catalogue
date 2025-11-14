@@ -37,6 +37,41 @@ def convert_type_to_real_type(type):
                 doc_type = "ICs"
     return doc_type
 
+def insert_spaces_into_document_type(type):
+    doc_type=''
+    match type:
+        case "ApplicationNotes":
+            doc_type = "Application Notes"
+        case "ICs":    
+            doc_type = "ICs"
+        case "Reference":
+            doc_type = "Reference Documents"
+        case "Manuals":
+            doc_type = "Reference Manuals"
+        case "Hardware/EXORciser/Micromodules":
+            doc_type = "Exorciser Micromodules"
+        case "Datasheets":
+            doc_type = "Datasheets"
+        case "ReferenceCards":
+            doc_type = "Reference Cards" 
+        case "Generic":
+            doc_type = "Generic Documents"
+        case "Software/NonResident":
+            doc_type = "NonResident Software"
+        case "Software/Resident":
+            doc_type = "Resident Software"
+        case "Hardware/EXORciser":
+            doc_type = "Exorciser Hardware"
+        case "Hardware/Other":
+            doc_type = "Other Hardware"
+        case "Hardware/Other":
+            doc_type = "Other Hardware"
+        case _:
+            doc_type = "Other"  
+            if "/ICs" in type:
+                doc_type = "ICs"
+            doc_type=type
+    return doc_type
 
 # Storage-related functions
 

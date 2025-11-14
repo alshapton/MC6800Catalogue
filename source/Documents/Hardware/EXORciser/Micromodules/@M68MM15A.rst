@@ -2,7 +2,7 @@
 
 .. _M68MM15A:
 
-.. #Metadata {'Product':'M68MM15A Micromodule 15A High Level A/D module','Folder': ' '}
+.. #Metadata {'Product':'M68MM15A Micromodule 15A High Level A/D module','Folder': 'Hardware'}
 
 M68MM15A Micromodule 15A High Level A/D module
 ==============================================
@@ -15,5 +15,5 @@ M68MM15A Micromodule 15A High Level A/D module
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 17-NOV-2025
 

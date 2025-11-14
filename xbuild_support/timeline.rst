@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 14-11-2025).
+This is the timeline of acquisitions (as at 24-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -14,7 +14,6 @@ This is the timeline of acquisitions (as at 14-11-2025).
    30-JAN-2025,:ref:`XC6820 Peripheral Interface Adapter <XC6820>`
    30-JAN-2025,:ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
    30-JAN-2025,:ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`
-   30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
    30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
    30-JAN-2025,:ref:`MES6800 User Guide <MES6800>`
    16-FEB-2025,:ref:`8K Dynamic RAM Module Supplement <MEX68151>`
@@ -138,7 +137,6 @@ This is the timeline of acquisitions (as at 14-11-2025).
    22-AUG-2025,:ref:`JBUG Monitor V1.8 <JBUG_1_8>`
    04-SEP-2025,:ref:`MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM6810BJCS>`
    08-SEP-2025,:ref:`MEK6800D2 Development board for the 6800 microprocessor <MEK6800D2>`
-   08-SEP-2025,:ref:`MEK6800D2 Development board for the 6800 microprocessor <MEK6800D2>`
    09-SEP-2025,:ref:`SC44204P Microprocessor Unit <SC44204P>`
    09-SEP-2025,:ref:`MC6850P Asynchronous Communications Interface Adapter <MC6850P>`
    09-SEP-2025,:ref:`MCM6830AP-2 1024 x 8-bit ROM <MCM6830AP-2>`
@@ -162,3 +160,16 @@ This is the timeline of acquisitions (as at 14-11-2025).
    28-OCT-2025,:ref:`MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10CL>`
    05-NOV-2025,:ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>`
    12-NOV-2025,:ref:`8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide <MEX68162(D2)>`
+   17-NOV-2025,:ref:`M68MM04A Micromodule 4A ROM/EPROM Module <M68MM04A>`
+   17-NOV-2025,:ref:`M68MM12 Micromodule 12 GPIB Interface Module <M68MM12>`
+   17-NOV-2025,:ref:`M68MM15A Micromodule 15A High Level A/D module <M68MM15A>`
+   17-NOV-2025,:ref:`M68MM15B Micromodule 15B Low Level A/D module <M68MM15B>`
+   17-NOV-2025,:ref:`M68MM15BEX Micromodule 15BEX Low Level Expander module <M68MM15BEX>`
+   17-NOV-2025,:ref:`M68MM15C Micromodule 15C High Level D/A module <M68MM15C>`
+   17-NOV-2025,:ref:`M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module <M68MM16>`
+   17-NOV-2025,:ref:`MC68B21P Peripheral Interface Adapter (PIA) <MC68B21P>`
+   17-NOV-2025,:ref:`MC6880AP Quad Three-State Bus Transceiver <MC6880AP>`
+   17-NOV-2025,:ref:`MC6887P Hex Three-State Buffer/Inverter <MC6887P>`
+   17-NOV-2025,:ref:`MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10P>`
+   17-NOV-2025,:ref:`LILbug Monitor V1.0 <LILBUG_1_0>`
+   21-NOV-2025,:ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`

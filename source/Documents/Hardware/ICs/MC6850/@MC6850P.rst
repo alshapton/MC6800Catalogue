@@ -2,7 +2,7 @@
 
 .. _MC6850P:
 
-.. #Metadata {'Product':'MC6850P','Name':'Asynchronous Communications Interface Adapter','Storage': 'MEK6800D2'}
+.. #Metadata {'Product':'MC6850P','Name':'MC6850P Asynchronous Communications Interface Adapter','Storage': 'MEK6800D2'}
 
 MC6850P Asynchronous Communications Interface Adapter
 =====================================================
@@ -18,13 +18,13 @@ MC6850P Asynchronous Communications Interface Adapter
 
    "Date Code","7908"
    "Manufacture Date","12-FEB-1979 to 18-FEB-1979"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1MHz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 
@@ -32,8 +32,7 @@ MC6850P Asynchronous Communications Interface Adapter
    :header: "Acquired"
    :widths: auto
 
-    |present| 09-SEP-2025
-
+   |present| 09-SEP-2025
 
 .. rubric:: Links
 

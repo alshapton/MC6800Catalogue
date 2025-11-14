@@ -12,7 +12,7 @@
       "|notpresent| :ref:`MC68A09S <MC68A09S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809CP <MC6809CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09P <MC68A09P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
-      "|present| :ref:`SC84003L <SC84003L>`","Ceramic","TBD","TBD","An engineering sample of a 6809"
+      "|present| :ref:`SC84003L <SC84003L>`","Ceramic","TBD","TBD",""
       "|notpresent| :ref:`MC6809CS <MC6809CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09L <MC68A09L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09CS <MC68A09CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""

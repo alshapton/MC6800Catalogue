@@ -7,7 +7,7 @@
 
       "|notpresent| :ref:`MC6852CS <MC6852CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6852CP <MC6852CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
-      "|present| :ref:`MC6852L <MC6852L>`","Ceramic","","","New in box, unopened"
+      "|present| :ref:`MC6852L <MC6852L>`","Ceramic","","",""
       "|notpresent| :ref:`MCB6852S <MCB6852S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCA6852CP <MCA6852CP>`","Plastic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCB6852P <MCB6852P>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""

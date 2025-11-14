@@ -2,7 +2,7 @@
 
 .. _MC6845CP:
 
-.. #Metadata {'Product':'MC6845CP','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':2}
+.. #Metadata {'Product':'MC6845CP','Name':'MC6845CP CRT Controller','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':2}
 
 MC6845CP CRT Controller
 =======================
@@ -18,13 +18,14 @@ MC6845CP CRT Controller
 
    "Date Code","9825"
    "Manufacture Date","15-JUN-1998 to 21-JUN-1998"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 2 <Storage_Box_2_Drawer_1>`"
-   "Notes",""
-   "Frequency","N/A"
    "Temperature","N/A"
-   
+   "Frequency","N/A"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
@@ -32,7 +33,7 @@ MC6845CP CRT Controller
    :widths: auto
 
    |present| 23-SEP-2025
-   
+
 .. rubric:: Links
 
 :download:`MC6845 CRT Controller  <../../../../_static/Documents/Datasheets/MC6845.pdf>`

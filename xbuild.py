@@ -433,7 +433,6 @@ def update_carousel():
         for f in range(0,f-1):
             dotdot += '../'
         images_loc_full=dotdot + images_loc.replace('source/','')
-
         picfiles = os.listdir(images_loc)
         picfiles.sort()
 
@@ -472,7 +471,7 @@ def update_carousel():
 
 
 def update_storage():
-    console.print('Cleaning and prepping storage files',style="info")
+    console.print('\tCleaning and prepping storage files\n',style="info")
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in snippetfiles:
         os.remove(snippetfile)
@@ -611,7 +610,7 @@ def update_storage():
                 map_reference = '\n\n.. _' + item['Folder'].replace(' ','_') + '_map_reference:'
                 current_folder = item['Folder']
 
-                console.print('Processing folder: ' + current_folder,style="info")
+                console.print('\t\tProcessing folder: ' + current_folder,style="info")
                 match item['Folder']:
                     case "Hardware":
                         write_folder=True
@@ -649,7 +648,7 @@ def update_storage():
                     fmf.write(item['Comments'] + '"\n')
                 else:
                     fmf.write('"\n')
-    console.print('Folder map created in ' + FOLDER_MAP_FILE,style="info")
+    console.print('\n\t\tFolder map created in ' + FOLDER_MAP_FILE,style="info")
 
 
     # Write the labels file
@@ -754,8 +753,8 @@ def update_storage():
                             written_title = True
                         c.write('       |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
-    console.print('Splitting',style="info")
-    console.print('LVL1 Splitting',style="info")
+    console.print('\tSplitting',style="info")
+    console.print('\t\tLVL1 Splitting',style="info")
 
     with open(TABLES_FILE,"r") as tf:
         data = ''
@@ -773,9 +772,8 @@ def update_storage():
                 ci.write(r)
         cnt=cnt+1
 
-    console.print('LVL1 Splitting done',style="info")
-    # Checking for LVL2 split required.
-    console.print('LVL2 Splitting',style="info")
+    console.print('\t\tLVL1 Splitting done\n',style="info")
+    console.print('\t\tLVL2 Splitting',style="info")
 
     lvl2files = glob.glob('**/*.tiny', recursive=True)
     properlvl2files=[]
@@ -803,22 +801,24 @@ def update_storage():
                 LOCATIONINSTORAGE=stripped.split('..')[1].strip().replace('collapse:: ','').replace(' ','_')
                 if LOCATIONINSTORAGE is  None:
                     LOCATIONINSTORAGE = 'Unknown'
-                console.print('     Processing location: ' + LOCATIONINSTORAGE,style="info")
+                console.print('\t\t\tProcessing location: ' + LOCATIONINSTORAGE,style="info")
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
                     if not stripped.endswith('`>\n'):
                         stripped = stripped + '>`\n'
                     opf.write(stripped)
 
-    # Remove specific known problematic file               
+    # Remove specific known problematic file 
+    console.print("\n\t\t\tRemove specific known problematic file",style="warning")              
     os.remove('source/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
     
     # Remove temporary "tiny" working files
-    print('Splitting LVL2 files complete')
-    print('Removing temporary files')
+    console.print("\n\t\tSplitting LVL2 files complete",style="info")
+
+    console.print("\n\t\tRemoving temporary files",style="info")
     for lvl2file in sorted(lvl2files):
         os.remove(lvl2file)
-        print('     ' + os.path.basename(lvl2file) + ' removed.')       
+        console.print('\t\t\t' + os.path.basename(lvl2file) + ' removed.',style="info")       
     
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
@@ -1501,6 +1501,72 @@ def do_timeline():
             
         console.print('Timeline updated',style="info")
 
+def do_statistics():
+        ot=0
+        op=0
+        opnp=0
+        opit=0
+        output = read_db("SELECT * FROM summary where documenttype != 'Software/Resident/EXORset30ROMS' order by  documenttype;")
+        e30roms = read_db("SELECT * FROM collection where artfacttype = 'Software/Resident/EXORset30ROMS' order by  artfacttype;")
+        e30present=0
+        e30notpresent=0
+        e30intransit=0
+        for r in e30roms:
+            if r["status"] == 'present' or r["status"] == '|document|':
+                e30present=r["total"]
+            if r["status"] == 'notpresent':
+                    e30notpresent=r["total"]
+            if r["status"] == 'intransit':
+                    e30intransit=r["total"]
+
+        with open('./xbuild_support/statistics.rst', 'w') as f:
+            f.write('.. _statistics:\n\n')
+            f.write('Statistics\n')
+            f.write('==========\n\n')
+            f.write('A set of statistics of known MC6800 artefacts (as at ' + time.strftime("%d-%m-%Y") + ').\n\n')
+
+            f.write('.. csv-table::\n')
+            f.write('   :header: "Document Type","Total","Present","Not Present","In Transit" \n\n')
+            
+            for row in output:
+                
+                present = 0
+                notpresent = 0
+                intransit =0
+                items = read_db("SELECT * FROM collection where artfacttype = '" + row["documenttype"] +"';")
+                
+                for r in items:
+                    if r["status"] == 'present' or r["status"] == '|document|':
+                        present=r["total"]
+                    if r["status"] == 'notpresent':
+                            notpresent=r["total"]
+                    if r["status"] == 'intransit':
+                            intransit=r["total"]
+
+
+                dtype=insert_spaces_into_document_type(row["documenttype"])
+                if dtype == "Resident Software":
+                    t=row["total"] + e30present + e30notpresent + e30intransit
+                    f.write('   ' + dtype + ',' + str(t) + ',' + str(e30present+present) + ',' + str(e30notpresent + notpresent) + ',' + str(e30intransit + intransit) + '\n')
+                    ot=ot+t
+                    op=op+e30present+present
+                    opnp=opnp+e30notpresent+notpresent
+                    opit=opit+e30intransit+intransit
+                else:
+                    t = row["total"]
+                    f.write('   ' + dtype + ',' + str(t) + ',' + str(present) + ',' + str(notpresent) + ',' + str(intransit) + '\n')
+                    ot=ot+t
+                    op=op+present
+                    opnp=opnp+notpresent
+                    opit=opit+intransit
+
+            f.write('   ' + 'TOTAL' + ',' + str(ot) + ',' + str(op) + ',' + str(opnp) + ',' + str(opit) + '\n')
+        
+        copy_and_replace('./xbuild_support/statistics.rst','./source/statistics.rst')
+
+        
+        console.print('Statistics updated',style="info")
+
 def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     console.print('Updating index pages',style="info")
 
@@ -1515,6 +1581,12 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
                 if "##INTRANSIT##" in line:
                     if ANYINTRANSIT:
                         f.write('   In Transit <transit>\n')
+                    else:
+                        if os.path.exists(TRANSIT_FILE):
+                            console.print('Removing redundant TRANSIT_FILE',style="info")
+                            os.remove(TRANSIT_FILE) 
+            
+
             else:             
                 f.write(line)
     copy_and_replace('./xbuild_support/index.master','./source/index.rst')
@@ -1754,6 +1826,9 @@ def rebuild_db():
                     if line.startswith(':download:`'):
                         conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
                         conn.commit()
+                    if line.startswith(':extlink-'):
+                        conn.execute("INSERT INTO documentlinks (documenttype,documentid, link) VALUES (?,?,?);", (documenttype,documentid, line.strip()))
+                        conn.commit()
                     if '.. #Metadata ' in line:
                         metadata=line.replace('.. #Metadata','').strip()
 
@@ -1991,7 +2066,7 @@ def read_db(statement):
     return output
 
 def get_links_from_db(documentid,documenttype):
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     cursor_obj = conn.cursor()
     if documenttype == 'ICs':
@@ -2003,7 +2078,7 @@ def get_links_from_db(documentid,documenttype):
     return output   
 
 def get_images_from_db(documentid,documenttype):
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     cursor_obj = conn.cursor()
     if documenttype == 'ICs':
@@ -2015,7 +2090,7 @@ def get_images_from_db(documentid,documenttype):
     return output 
 
 def get_notes_from_db(documentid,documenttype):
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     cursor_obj = conn.cursor()
     if documenttype == 'ICs':
@@ -2027,7 +2102,7 @@ def get_notes_from_db(documentid,documenttype):
     return output 
 
 def get_carousels_from_db(documentid,documenttype):
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
+    conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     cursor_obj = conn.cursor()
     cursor_obj.execute("SELECT * FROM carousels WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
@@ -2064,6 +2139,7 @@ def write_IC(filename,chipinfo):
         c.write(':orphan:\n\n')
         c.write('.. _' + chipinfo["tag"] + ':\n\n')
         
+        locationfull = "TBD"
 
         if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
@@ -2079,6 +2155,10 @@ def write_IC(filename,chipinfo):
         if chipinfo["Storage"] == "MEK6800D2":
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
             locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
+        if 'M68MM' in chipinfo["Storage"]:
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '"+ chipinfo["Storage"] +"'}\n\n"
+            locationfull=':ref:`' + chipinfo["Storage"] +' Micromodule <Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule_Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule>`'    
+            print(locationfull)
 
 
         c.write(MD)
@@ -2134,13 +2214,12 @@ while True:
     console.print('\t3 Create new IC group index',style="info")    
     console.print('\t4 Create new IC group from index',style="info")    
     console.print('\t5 Update IC status (WIP)',style="warning")
-    console.print('\t6 Update carousels',style="info")
+    console.print('\t6 Unused',style="danger")
     console.print('\t7 Rebuild DB',style="info")
     console.print('\t- Delete DB',style="danger")
     console.print('\t0 Update ALL ',style="info")
-    console.print('\t8 Special',style="danger")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9"]
+    choicesList=["1", "2","3","4","5","7","-","0","A","X","?","9"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2181,7 +2260,8 @@ while True:
             update_IC_index()
             update_storage()
             do_collection()
-            
+            do_statistics()
+
             console.print('Collection updated',style="info")
             ANYUNDEROFFER=do_underoffer()
             ANYINTRANSIT=do_in_transit()
@@ -2322,8 +2402,7 @@ while True:
 
                         console.print('Updated status : Now assess storage metadata',style="info")    
 
-        case "6":
-            update_carousel()
+
         case "7":
             output='Commencing rebuild of database'
             console.print(output, style="info") 
@@ -2332,7 +2411,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output=read_db("SELECT * FROM ics WHERE parent = 'MC6808' order by icid asc;")
+            output=read_db("SELECT * FROM ics WHERE parent = 'MC6852' order by icid asc;")
             for chipinfo in output:
                 filename=chipinfo["filename"]
                 write_IC(filename,chipinfo)
@@ -2410,88 +2489,6 @@ while True:
                 else:
                     console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
 
-
-        case "8":
-            print('Commencing finding artefacts with invalid metadata') 
-            rstfiles = glob.glob('**/*.rst', recursive=True)
-            metadatacount = 0
-            none_metadatacount=0
-            TBD_metadatacount=0
-            illegal_metadata=[]
-            for filename in rstfiles:
-                if "@" in filename:
-                    with open(filename, 'r') as f:
-                        lines = f.readlines()                        
-                    found_metadata = False
-                    for line in lines:
-                        if "Metadata" in line:
-                            found_metadata=True
-                        if "#Metadata" in line and "'Drawer':X" in line:
-                            illegal_metadata.append(filename)
-                        if "#None" in line:
-                            #print("#None metadata : " + filename)
-                            found_metadata=True
-                            illegal_metadata.append(filename)
-                            none_metadatacount+=1
-                        if "#TBD" in line:
-                            print("#TBD metadata : " + filename)
-                            found_metadata=True
-                            TBD_metadatacount+=1
-                    if not found_metadata:
-                        metadatacount+=1
-                        if metadatacount == 1:
-                            print(" Artefacts with no metadata:")
-                        
-                        print("No metadata : " + filename)
-            
-            if metadatacount == 0:
-                print("All artefact files have metadata tags.")
-            else:
-                if none_metadatacount>0:
-                            print(str(none_metadatacount) + " Artefacts with #None metadata:")
-                if TBD_metadatacount > 0:
-                            print(str(TBD_metadatacount) + " Artefacts with #TBD metadata:")                            
-                print(str(metadatacount) + " with no metadata.")
-
-            #for fullfilename in illegal_metadata:
-            #    print("#None metadata : " + fullfilename)
-            output = read_db("SELECT * FROM documents WHERE (metadata IS NULL or metadata = '') and documenttype='Manuals';")
-            
-            for row in output:
-                print(row["name"] + ' has no metadata')
-            
-                metadataskeleton=".. #Metadata {'Product':'QQQQ','Name':'XXXXX','Folder': '@@'}"
-                #    metadataskeleton=".. #Metadata {'Product':'YYYY','Name':'XXXXX','Storage': 'S','Drawer':0,'Row':0,'Column':0}"
-
-                metadataline = metadataskeleton.replace('XXXXX',row["name"]).replace('YYYY',row["location"]).replace('QQQQ',row["documentid"])    
-                if row["location"].strip() == '':
-
-                    metadataline = metadataline.replace('@@','None')
-                else:
-                    metadataline = metadataline.replace('@@',row["location"])    
-                print(metadataline)
-                fullfilename = row["filename"]
-                print('In file: ' + fullfilename)
-                with open(fullfilename, 'r') as f:
-                    lines = f.readlines()     
-                with open(fullfilename, 'w') as f:
-                    for line in lines:
-                        
-                        if line.startswith('.. _'):
-                            f.write(line)
-                            f.write('\n' + metadataline + '\n')
-                        else:
-                            f.write(line)
-                        
-                #       if '#Metadata' in line:
-                #            newline=line.replace(':X',':0').replace(':Y',':0').replace(':Z',':0')
-                #            f.write(newline)
-                #        else:
-                #           f.write(line)
-
-                
-                
-            print('Done') 
         case "?":
             pass
         case "-":

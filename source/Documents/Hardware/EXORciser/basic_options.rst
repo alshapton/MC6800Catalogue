@@ -64,10 +64,13 @@ Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../../
    :widths: 30, 70
 
     ":ref:`M68MM01 <M68MM01>`","Micromodule 1 M6800 CPU Module"
-    ":ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
+    "|present| :ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
     ":ref:`M68MM05A <M68MM05A>`","Micromodule 5A 8 Channel 12 Bit A/D Converter"
-    ":ref:`M68MM12 <M68MM12>`","M68MM12 Micromodule 12 GPIB Interface Module"
-    ":ref:`M68MM15A <M68MM15A>`","M68MM15A Micromodule 15A High Level A/D Module"
+    "|present| :ref:`M68MM12 <M68MM12>`","M68MM12 Micromodule 12 GPIB Interface Module"
+    "|present| :ref:`M68MM15A <M68MM15A>`","M68MM15A Micromodule 15A High Level A/D Module"
+    "|present| :ref:`M68MM15B <M68MM15B>`","M68MM15B Micromodule 15B Low Level A/D Module"
+    "|present| :ref:`M68MM15C <M68MM15C>`","M68MM15C Micromodule 15C High Level D/A Module"
+    "|present| :ref:`M68MM15BEX <M68MM15BEX>`","M68MM15BEX Micromodule 15BEX Low Level Expander Module"
     ":ref:`M68MM17 <M68MM17>`","Micromodule 17 6809 Monoboard Microcomputer"
     ":ref:`M68MM19 <M68MM19>`","Micromodule 19 6809 Monoboard Microcomputer"
 

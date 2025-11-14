@@ -18,6 +18,7 @@ MC6850S Asynchronous Communications Interface Adapter (MC6850)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","TBD"
    "Location","TBD"
@@ -25,11 +26,11 @@ MC6850S Asynchronous Communications Interface Adapter (MC6850)
    "Frequency","1MHz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |notpresent|
+   |notpresent|
+

@@ -2,7 +2,7 @@
 
 .. _MC68B44P:
 
-.. #Metadata {'Product':'MC68B44P','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
+.. #Metadata {'Product':'MC68B44P','Name':'MC68B44P Direct Memory Access Controller (DMAC)','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':2}
 
 MC68B44P Direct Memory Access Controller (DMAC)
 ===============================================
@@ -18,20 +18,21 @@ MC68B44P Direct Memory Access Controller (DMAC)
 
    "Date Code","8853"
    "Manufacture Date","26-DEC-1988 to 01-JAN-1989"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 2 <Storage_Box_1_Drawer_1>`"
-   "Notes",""
-   "Frequency","2 MHz"
    "Temperature","0-70\ :sup:`o`\ C"
-   
+   "Frequency","2 MHz"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-    |present| 12-MAR-2025
+   |present| 12-MAR-2025
 
 .. rubric:: Links
 
