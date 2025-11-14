@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 12-11-2025).
+This is the timeline of acquisitions (as at 14-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -161,4 +161,4 @@ This is the timeline of acquisitions (as at 12-11-2025).
    28-OCT-2025,:ref:`MC68701S Microprocessor Unit <MC68701S>`
    28-OCT-2025,:ref:`MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10CL>`
    05-NOV-2025,:ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>`
-   12-NOV-2025,:ref:`8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide <MEX68162(D2)>`
+   12-NOV-2025,:ref:`8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide <MEX68162(D2)>`

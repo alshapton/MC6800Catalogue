@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 12-11-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 14-11-2025) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -228,6 +228,7 @@ This is the current collection (as at 12-11-2025) of the items produced by Motor
  	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MES6800 <MES6800>`","MES6800 User Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
  
 
