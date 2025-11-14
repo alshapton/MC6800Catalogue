@@ -18,6 +18,7 @@ MC68A03NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -25,14 +26,13 @@ MC68A03NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

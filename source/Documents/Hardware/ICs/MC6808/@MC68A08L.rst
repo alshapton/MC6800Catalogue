@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A08L','Name':'MC68A08L Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A08L Microprocessor with Clock and Optional RAM (MC6808)
 ============================================================
 
@@ -19,6 +18,7 @@ MC68A08L Microprocessor with Clock and Optional RAM (MC6808)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,16 +26,14 @@ MC68A08L Microprocessor with Clock and Optional RAM (MC6808)
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
 :download:`MC6808 Microprocessor with Clock and Optional RAM (MC6808)  <../../../../_static/Documents/Datasheets/DS-MC6802-6808-6802NS.pdf>`
-

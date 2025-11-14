@@ -18,6 +18,7 @@ MC6803EG-1 8-Bit Microprocessor (MC6803E)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
@@ -25,14 +26,13 @@ MC6803EG-1 8-Bit Microprocessor (MC6803E)
    "Frequency","1.25 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
