@@ -2,7 +2,7 @@
 
 .. _MC6860L:
 
-.. #Metadata {'Product':'MC6860L','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6860L','Name':'MC6860L 0-600 bps Digital Modem','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':2}
 
 MC6860L 0-600 bps Digital Modem
 ===============================
@@ -18,10 +18,13 @@ MC6860L 0-600 bps Digital Modem
 
    "Date Code","7633"
    "Manufacture Date","09-AUG-1976 to 15-AUG-1976"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 0, Row 1, Column 2 <Storage_Box_2_Drawer_0>`"
-   "Notes","New in box, unopened"
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -29,10 +32,9 @@ MC6860L 0-600 bps Digital Modem
    :header: "Acquired"
    :widths: auto
 
-   "|present| 02-JUN-2025"
+   |present| 02-JUN-2025
 
 .. rubric:: Links
-
 
 :download:`MC6860 Datasheet <../../../../_static/Documents/Datasheets/MC6860.pdf>`
 

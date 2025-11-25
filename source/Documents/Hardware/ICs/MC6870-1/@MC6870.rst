@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6870','Name':'MC6870 Two-Phase Microprocessor Clock','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6870 Two-Phase Microprocessor Clock
 =====================================
 
@@ -19,6 +18,7 @@ MC6870 Two-Phase Microprocessor Clock
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,15 +26,14 @@ MC6870 Two-Phase Microprocessor Clock
    "Frequency","N/A"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
-      
+   |notpresent|
+
 .. rubric:: Links
 
 :download:`Two-Phase Microprocessor Clock (MC6870)  <../../../../_static/Documents/Datasheets/MC6870-MC6871.pdf>`
