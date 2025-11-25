@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6854L','Name':'MC6854L Advanced Data-Link Controller (ADLC)','Storage': 'Storage Box 1','Drawer':4,'Row':3,'Column':5}
 
-
 MC6854L Advanced Data-Link Controller (ADLC)
 ============================================
 
@@ -19,19 +18,18 @@ MC6854L Advanced Data-Link Controller (ADLC)
 
    "Date Code","8349"
    "Manufacture Date","28-NOV-1983 to 04-DEC-1983"
+   "Mask","N6R"
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 5 <Storage_Box_1_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Mask","N6R"
    "Frequency","1 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
    |present| 28-OCT-2025

@@ -823,7 +823,7 @@ def update_storage():
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     
     # Changing collapsing into rubrics
-    print('Changing collapsing into rubrics')
+    console.print('\n\t\tChanging collapsing into rubrics (tables.fragment.<snippet file>):',style="info")
     for snippetfile in sorted(snippetfiles):
         with open(snippetfile, 'r') as fd:
             content = fd.readlines()
@@ -840,12 +840,18 @@ def update_storage():
             for pl in lines:
                 if not pl.startswith('>'):
                     fw.write(pl)                    
-                    
 
-
-        print('     ' + os.path.basename(snippetfile) + ' updated.')
+        
+        tfname = os.path.basename(snippetfile).split('.')
+        if tfname[2] == tfname[3]:
+            display_tfname = tfname[2] + '.snippet'
+        else:
+            display_tfname=os.path.basename(snippetfile).replace('tables.fragment.','')
+        console.print('\t\t\t' + display_tfname,style="info")
     
     # Move snippets into snippets folder
+    console.print('\n\t\tMoving snippets into snippets folder',style="info")
+
     print('Moving snippets into snippets folder')
     snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
     print('Snippet index file: ' + snippeticindexfile)
@@ -2411,7 +2417,7 @@ while True:
             console.print(output, style="info") 
             
         case "9":
-            output=read_db("SELECT * FROM ics WHERE parent = 'MC6852' order by icid asc;")
+            output=read_db("SELECT * FROM ics WHERE parent = 'MC6854' order by icid asc;")
             for chipinfo in output:
                 filename=chipinfo["filename"]
                 write_IC(filename,chipinfo)

@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6854CS','Name':'MC6854CS Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6854CS Advanced Data-Link Controller (ADLC)
 =============================================
 
@@ -19,6 +18,7 @@ MC6854CS Advanced Data-Link Controller (ADLC)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","CERDIP"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC6854CS Advanced Data-Link Controller (ADLC)
    "Frequency","1 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

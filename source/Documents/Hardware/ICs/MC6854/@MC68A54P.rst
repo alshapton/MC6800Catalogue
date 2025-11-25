@@ -2,7 +2,7 @@
 
 .. _MC68A54P:
 
-.. #Metadata {'Product':'MC68A54P','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':3}
+.. #Metadata {'Product':'MC68A54P','Name':'MC68A54P Advanced Data-Link Controller (ADLC)','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':3}
 
 MC68A54P Advanced Data-Link Controller (ADLC)
 =============================================
@@ -18,13 +18,13 @@ MC68A54P Advanced Data-Link Controller (ADLC)
 
    "Date Code","8446"
    "Manufacture Date","05-NOV-1984 to 11-NOV-1984"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 3 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 
@@ -33,7 +33,7 @@ MC68A54P Advanced Data-Link Controller (ADLC)
    :widths: auto
 
    |present| 05-OCT-2025
-   
+
 .. rubric:: Links
 
 :download:`MC6854 Advanced Data-Link Controller (ADLC)  <../../../../_static/Documents/Datasheets/MC6854.pdf>`
