@@ -4,13 +4,16 @@
 
 .. #Metadata {'Product':'MC6882AL','Name':'MC6882AL Octal Three-State Buffer/Latch','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6882AL Octal Three-State Buffer/Latch
 =======================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
    :align: center
+
+.. note::
+
+   This is the inverting version of this product
 
 .. rubric:: Specific Information
 
@@ -19,21 +22,21 @@ MC6882AL Octal Three-State Buffer/Latch
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-75\ :sup:`o`\ C"
-   "Function","Inverting"
+   "Frequency",""
    "Notes",""
-
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

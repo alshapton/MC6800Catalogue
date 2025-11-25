@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6885P','Name':'MC6885P Hex Three-State Buffer/Inverter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6885P Hex Three-State Buffer/Inverter
 =======================================
 
@@ -19,21 +18,21 @@ MC6885P Hex Three-State Buffer/Inverter
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Plastic"
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
-   "Notes","Non Inverting, 2-input enable controlling all 6 buffers"
-
+   "Notes",""
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

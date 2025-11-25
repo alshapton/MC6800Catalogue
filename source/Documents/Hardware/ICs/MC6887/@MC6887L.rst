@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC6887L','Name':'MC6887L Hex Three-State Buffer/Inverter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC6887L Hex Three-State Buffer/Inverter
 =======================================
 
@@ -19,21 +18,21 @@ MC6887L Hex Three-State Buffer/Inverter
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
-   "Notes","Non Inverting, 2 enable inputs, controlling 2 and 4 buffers"
-
+   "Notes",""
 
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

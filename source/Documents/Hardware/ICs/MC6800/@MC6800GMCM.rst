@@ -24,7 +24,7 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    "Frequency","N/A"
    "Temperature","N/A"
       
-.. notes:
+.. note::
 
     The top of this IC is  pencil marked GMCM CPU. 
     These would be upwards compatible with the original 6800. 
