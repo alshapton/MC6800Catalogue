@@ -6,4 +6,4 @@
       :widths: auto
 
       "|present| :ref:`MC6860P <MC6860P>`","Plastic","","",""
-      "|present| :ref:`MC6860L <MC6860L>`","Ceramic","","","New in box, unopened"
+      "|present| :ref:`MC6860L <MC6860L>`","Ceramic","","",""
