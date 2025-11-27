@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A701U4L-1','Name':'MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM
 ==================================================
 
@@ -19,20 +18,21 @@ MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
    "Location","TBD"
-   "Notes",""
-   "Frequency","1.25 MHz"
    "Temperature","0-70\ :sup:`o`\ C"
-   
+   "Frequency","1.25 MHz"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

@@ -18,14 +18,14 @@ MC68701S Microprocessor Unit
 
    "Date Code","8933"
    "Manufacture Date","07-AUG-1989 to 13-AUG-1989"
+   "Mask","32D"
    "Packaging","Ceramic"
    "Status","Production"
    "Location",":ref:`Storage Box 2, Drawer 2, Row 3, Column 1 <Storage_Box_2_Drawer_2>`"
-   "Notes",""
-   "Frequency","TBD"
    "Temperature","TBD"
-   "Mask","32D"
-   
+   "Frequency","TBD"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 

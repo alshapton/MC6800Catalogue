@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68701CL','Name':'MC68701CL Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68701CL Microprocessor Unit
 =============================
 
@@ -19,20 +18,21 @@ MC68701CL Microprocessor Unit
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","TBD"
    "Status","TBD"
    "Location","TBD"
-   "Notes",""
-   "Frequency","TBD"
    "Temperature","TBD"
-   
+   "Frequency","TBD"
+   "Notes",""
+
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 
