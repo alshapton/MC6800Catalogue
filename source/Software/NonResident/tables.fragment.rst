@@ -15,6 +15,7 @@
    :widths: 20,80,20 
 
    "|present| :ref:`N/A <M68BASR010M>`","M68BASR010M MDOS BASIC 2.0",""
+   "|present| :ref:`N/A <M68MASR010M>`","M68MASR010M MDOS Macro Assembler 3.0",""
    "|present| :ref:`N/A <SRC-FOR-MASM-PDP-11>`","Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11)",""
 
 .. rubric:: Folder Microprocessor Course

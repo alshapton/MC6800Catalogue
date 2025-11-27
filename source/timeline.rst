@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 25-11-2025).
+This is the timeline of acquisitions (as at 27-11-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -173,3 +173,4 @@ This is the timeline of acquisitions (as at 25-11-2025).
    17-NOV-2025,:ref:`MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10P>`
    17-NOV-2025,:ref:`LILbug Monitor V1.0 <LILBUG_1_0>`
    21-NOV-2025,:ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`
+   27-NOV-2025,:ref:`M68MASR010M MDOS Macro Assembler 3.0 <M68MASR010M>`

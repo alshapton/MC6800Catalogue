@@ -97,6 +97,7 @@
     :ref:`JBUG Monitor V1.8 <JBUG_1_8>`,""
     :ref:`LILbug Monitor V1.0 <LILBUG_1_0>`,""
     :ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`,""
+    :ref:`M68MASR010M MDOS Macro Assembler 3.0 <M68MASR010M>`,""
     :ref:`MIKBUG Monitor Assembly Listing REV 009 <@MIKBUG-MINIBUG_04_09_mk_ass>`,""
     :ref:`MINIBUG Monitor Assembly Listing REV 004 <@MIKBUG-MINIBUG_04_09_mn_ass>`,""
     :ref:`Motorola FORTRAN Source Code for MSAM68 Cross Assembler (PDP-11) <SRC-FOR-MASM-PDP-11>`,""

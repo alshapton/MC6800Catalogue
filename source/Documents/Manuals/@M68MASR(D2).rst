@@ -22,3 +22,5 @@ Macro Assemblers Reference Manual
 .. rubric:: Links
 
 :download:`Macro Assemblers Reference Manual <../../_static/Documents/Manuals/M68MASR_Macro_Assemblers_Reference_6800_6801_6805_6809_Sep1979.pdf>`
+
+:ref:`M68MASR010M MDOS MacroAssembler 3.0 <M68MASR010M>`

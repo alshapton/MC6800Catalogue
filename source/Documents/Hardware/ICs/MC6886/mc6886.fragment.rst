@@ -6,5 +6,5 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      "|notpresent| :ref:`MC6886L <MC6886L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2-input enable controlling all 6 buffers"
-      "|notpresent| :ref:`MC6886P <MC6886P>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C","Inverting, 2-input enable controlling all 6 buffers"
+      "|notpresent| :ref:`MC6886L <MC6886L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MC6886P <MC6886P>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""

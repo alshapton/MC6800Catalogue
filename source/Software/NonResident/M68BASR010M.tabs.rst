@@ -4,6 +4,8 @@
 
           .. note:: 
       
+               This is a MDOS 2.2 bootable disk.
+               
                A disk image of MDOS BASIC 2.0 for the M68BASR010M system, in IMD format. 
           
                Sector size is 128
