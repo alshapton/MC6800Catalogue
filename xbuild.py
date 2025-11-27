@@ -2164,7 +2164,6 @@ def write_IC(filename,chipinfo):
         if 'M68MM' in chipinfo["Storage"]:
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '"+ chipinfo["Storage"] +"'}\n\n"
             locationfull=':ref:`' + chipinfo["Storage"] +' Micromodule <Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule_Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule>`'    
-            print(locationfull)
 
 
         c.write(MD)
