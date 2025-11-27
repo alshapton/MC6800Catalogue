@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MCM6810CJCS','Name':'MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
 =============================================================
 
@@ -19,6 +18,7 @@ MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","MIL-STD-883C"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)
    "Frequency",""
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
-   :header: "Component"
+   :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

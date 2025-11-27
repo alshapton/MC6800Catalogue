@@ -2,10 +2,10 @@
 
 .. _MCM6810L:
 
+.. #Metadata {'Product':'MCM6810L','Name':'MCM6810L 128 x 8-bit RAM','Storage': 'Briefcase'}
+
 MCM6810L 128 x 8-bit RAM
 ========================
-
-.. #Metadata {'Product':'MCM6810L','Name':'128 x 8-bit RAM','Storage': 'Briefcase'}
 
 .. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810L.png
    :width: 400
@@ -17,11 +17,13 @@ MCM6810L 128 x 8-bit RAM
    :widths: auto
 
    "Date Code","7530"
-   "Manufacture Date"," 21-JUL-1975 to 27-JUL-1975"
+   "Manufacture Date","21-JUL-1975 to 27-JUL-1975"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Briefcase"
+   "Location",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
    "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency",""
    "Notes",""
 
 .. rubric:: Collection Information
@@ -30,8 +32,7 @@ MCM6810L 128 x 8-bit RAM
    :header: "Acquired"
    :widths: auto
 
-   "|present| 30-JAN-2025"
-
+   |present| 30-JAN-2025
 
 .. rubric:: Links
 
