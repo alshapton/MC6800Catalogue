@@ -23,4 +23,3 @@ Engineering Note EN-100 - MIKBUG/MINIBUG ROM
 
 :download:`Engineering Note EN-100 <../../_static/Documents/EngineeringNotes/EN-100.pdf>`
 
-:ref:`MCM6830L7`

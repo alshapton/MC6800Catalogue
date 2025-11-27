@@ -2,14 +2,19 @@
 
 .. _MCM6830AP-2:
 
-MCM6830AP-2 1024 x 8-bit ROM 
-============================
+.. #Metadata {'Product':'MCM6830AP-2','Name':'MCM6830AP-2 1024 x 8-bit ROM','Storage': 'MEK6800D2'}
 
-.. #Metadata {'Product':'MCM6830AP-2','Name':'1024 x 8-bit ROM containing JBUG', 'Storage': 'MEK6800D2'}
+MCM6830AP-2 1024 x 8-bit ROM
+============================
 
 .. image:: ../../../../images/Hardware/ICs/MCM6830/MCM6830AP-2.png
    :width: 400
    :align: center
+
+.. note:: 
+   
+   Without dumping the ROM, there is no reliable way to determine which version of JBUG is contained therein.
+
 
 .. rubric:: Specific Information
 
@@ -18,15 +23,13 @@ MCM6830AP-2 1024 x 8-bit ROM
 
    "Date Code","8208"
    "Manufacture Date","15-FEB-1982 to 21-FEB-1982"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 4, Row 2, Column 4 <Storage_Box_1_Drawer_4>`"
-   "Frequency","1.0-70Mhz"
+   "Location",":ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`"
    "Temperature","-0-70\ :sup:`o`\ C"
-   "Notes","The content has not yet been verified, but the numbering scheme suggests it is MIKBUG/MINIBUG but in a faster-clocked chip"
-
-.. rubric:: Without dumping the ROM, there is no reliable way to determine which version of JBUG is contained therein.
-
+   "Frequency","1.0-70Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -34,13 +37,8 @@ MCM6830AP-2 1024 x 8-bit ROM
    :header: "Acquired"
    :widths: auto
 
-   "|present| 09-SEP-2025"
+   |present| 09-SEP-2025
 
 .. rubric:: Links
 
 :ref:`JBUG Monitor V1.8 <JBUG_1_8>`
-
-
-
-
-

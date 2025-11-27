@@ -2,10 +2,10 @@
 
 .. _MCM6830L7:
 
+.. #Metadata {'Product':'MCM6830L7','Name':'MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG','Storage': 'Briefcase'}
+
 MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
 ====================================================
-
-.. #Metadata {'Product':'MCM6830L7','Name':'1024 x 8-bit ROM containing MIKBUG/MINIBUG','Storage': 'Briefcase'}
 
 .. image:: ../../../../images/Hardware/ICs/MCM6830/MCM6830L7.png
    :width: 400
@@ -18,12 +18,13 @@ MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
 
    "Date Code","7523"
    "Manufacture Date","02-JUN-1975 to 08-JUN-1975"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","Briefcase"
-   "Notes","Standard MCM6830 which came pre-programmed with MIKBUG/MINIBUG."
-
-
+   "Location",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
+   "Temperature",""
+   "Frequency",""
+   "Notes",""
 
 .. rubric:: Collection Information
 
@@ -31,10 +32,8 @@ MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG
    :header: "Acquired"
    :widths: auto
 
-   "|present| 30-JAN-2025"
+   |present| 30-JAN-2025
 
 .. rubric:: Links
 
 :ref:`MC6830L7 Engineering Note EN-100 <EN-100>`
-
-
