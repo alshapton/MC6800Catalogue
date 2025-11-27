@@ -4,7 +4,6 @@
 
 .. #Metadata {'Product':'MC68A488CLDS','Name':'MC68A488CLDS General Purpose Interface Adapter','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-
 MC68A488CLDS General Purpose Interface Adapter
 ==============================================
 
@@ -19,6 +18,7 @@ MC68A488CLDS General Purpose Interface Adapter
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
+   "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"
@@ -26,14 +26,13 @@ MC68A488CLDS General Purpose Interface Adapter
    "Frequency","1.5 Mhz"
    "Notes",""
 
-
 .. rubric:: Collection Information
 
 .. csv-table:: 
    :header: "Acquired"
    :widths: auto
 
-   "|notpresent|"
+   |notpresent|
 
 .. rubric:: Links
 

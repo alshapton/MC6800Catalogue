@@ -2,7 +2,7 @@
 
 .. _MC68488CP:
 
-.. #Metadata {'Product':'MC68488CP','Storage': 'Storage Box 1','Drawer':2,'Row':2,'Column':3}
+.. #Metadata {'Product':'MC68488CP','Name':'MC68488CP General Purpose Interface Adapter','Storage': 'Storage Box 1','Drawer':2,'Row':2,'Column':3}
 
 MC68488CP General Purpose Interface Adapter
 ===========================================
@@ -18,13 +18,13 @@ MC68488CP General Purpose Interface Adapter
 
    "Date Code","8436"
    "Manufacture Date","27-AUG-1984 to 02-SEP-1984"
+   "Mask",""
    "Packaging","Plastic"
    "Status","Production"
    "Location",":ref:`Storage Box 1, Drawer 2, Row 2, Column 3 <Storage_Box_1_Drawer_2>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
-
 
 .. rubric:: Collection Information
 
