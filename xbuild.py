@@ -365,11 +365,17 @@ def update_IC_pre_fragments():
             op.write('\n.. collapse:: ' + lines[0] + '\n\n')
             if len(ttop)>1:
                 op.write(ttop)
-            op.write('   .. csv-table::\n')
-            op.write('      :header: "Part","Packaging","Freq","Temp","Notes"\n')
-            op.write('      :widths: auto\n\n')
-
             targetfiles=os.listdir(os.path.dirname(yfile))
+            chipcount=0
+            for ff in targetfiles:
+                if ff.startswith('@'):
+                    chipcount+=1
+            if chipcount > 0:
+            
+                op.write('   .. csv-table::\n')
+                op.write('      :header: "Part","Packaging","Freq","Temp","Notes"\n')
+                op.write('      :widths: auto\n\n')
+
             for tfile in targetfiles:
                 if 'fragment' not in tfile :
                     fragfile = os.path.dirname(yfile) + OSSEP + tfile
@@ -753,7 +759,7 @@ def update_storage():
                             written_title = True
                         c.write('       |i' + j["Product"] + '|, :ref:`'+ j["Product"] + ' ' + j["Name"] +' <' + j["Product"] +'>`\n')
 
-    console.print('\tSplitting',style="info")
+    console.print('\n\tSplitting',style="info")
     console.print('\t\tLVL1 Splitting',style="info")
 
     with open(TABLES_FILE,"r") as tf:
@@ -801,7 +807,7 @@ def update_storage():
                 LOCATIONINSTORAGE=stripped.split('..')[1].strip().replace('collapse:: ','').replace(' ','_')
                 if LOCATIONINSTORAGE is  None:
                     LOCATIONINSTORAGE = 'Unknown'
-                console.print('\t\t\tProcessing location: ' + LOCATIONINSTORAGE,style="info")
+                console.print('\t\t Processing location: ' + LOCATIONINSTORAGE.replace('\n',''),style="info")
                 outputfile = outputfile_base + '.' + LOCATIONINSTORAGE + '.snippet'
                 with open(outputfile,"w") as opf:
                     if not stripped.endswith('`>\n'):
@@ -809,7 +815,7 @@ def update_storage():
                     opf.write(stripped)
 
     # Remove specific known problematic file 
-    console.print("\n\t\t\tRemove specific known problematic file",style="warning")              
+    console.print("\n\t\tRemove specific known problematic file",style="warning")              
     os.remove('source/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
     
     # Remove temporary "tiny" working files
@@ -852,7 +858,6 @@ def update_storage():
     # Move snippets into snippets folder
     console.print('\n\t\tMoving snippets into snippets folder',style="info")
 
-    print('Moving snippets into snippets folder')
     snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
     print('Snippet index file: ' + snippeticindexfile)
     HDR=''
@@ -1632,6 +1637,13 @@ def rebuild_db():
                             temperature_raw     TEXT       \
                         );")
     conn.commit()
+    
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclist  \
+                       (    id INTEGER PRIMARY KEY,        \
+                            ic                  TEXT,      \
+                            name                TEXT       \
+                        );")
+    conn.commit()
 
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclinks     \
                        (    id INTEGER PRIMARY KEY,        \
@@ -1731,6 +1743,7 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
     cursor_obj.execute("DELETE FROM ics;")
+    cursor_obj.execute("DELETE FROM iclist;")
     conn.commit()
 
     cursor_obj.execute("DELETE FROM documents;")
@@ -1742,6 +1755,14 @@ def rebuild_db():
 
     conn.commit()
 
+    with open('xbuild_support/ics.dat', 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            name = line.split(',')[0].strip()
+            id = line.split(',')[1].strip()
+            conn.execute("INSERT INTO iclist (ic,name) VALUES (?,?);", (id,name))
+            conn.commit()
+        
     for file in files:
 
         if ('Software' + OSSEP + 'Resident' + OSSEP + 'EXORset30ROMS' + OSSEP + '@' in file or
