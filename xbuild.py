@@ -6,6 +6,7 @@ import os
 
 import ast
 import tomllib
+import json
 
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
@@ -34,12 +35,11 @@ UNDER_OFFER   = '|underoffer|'
 BIGGER_DOC    = '|document|'
 
 OSSEP         = os.sep
-
-DB = 'xbuild_support' + OSSEP + 'xbuild.db'
+XBS           = 'xbuild_support'
+DB            = XBS + OSSEP + 'xbuild.db'
 
 ANYUNDEROFFER = False
 ANYINTRANSIT  = False
-
 
 PREFIX ='source' + OSSEP
 SUFFIX = 'rst'
@@ -1603,6 +1603,21 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     copy_and_replace('./xbuild_support/index.master','./source/index.rst')
 
 
+def extract_seed_chip_info(chip_seed_file):
+    chips=[]
+    chiprows = read_db("SELECT * from iclist;")
+    print(len(chiprows))
+    for chip in chiprows:
+        chipjson={}
+        chipjson["ID"]=chip["ic"]
+        chipjson["Name"]=chip["name"]
+        chipjson["Top"]=chip["ctop"]
+        chipjson["Bottom"]=chip["cbottom"]
+        chips.append(chipjson)
+    chiplist={"Chips":chips}
+
+    with open(chip_seed_file, 'w') as f:
+        f.write(json.dumps(chiplist, indent=4))
 
 def rebuild_db():
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
@@ -1641,7 +1656,9 @@ def rebuild_db():
     cursor_obj.execute("CREATE TABLE IF NOT EXISTS iclist  \
                        (    id INTEGER PRIMARY KEY,        \
                             ic                  TEXT,      \
-                            name                TEXT       \
+                            name                TEXT,       \
+                            ctop                TEXT,       \
+                            cbottom             TEXT       \
                         );")
     conn.commit()
 
@@ -1743,7 +1760,6 @@ def rebuild_db():
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
     cursor_obj.execute("DELETE FROM ics;")
-    cursor_obj.execute("DELETE FROM iclist;")
     conn.commit()
 
     cursor_obj.execute("DELETE FROM documents;")
@@ -1755,14 +1771,21 @@ def rebuild_db():
 
     conn.commit()
 
-    with open('xbuild_support/ics.dat', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            name = line.split(',')[0].strip()
-            id = line.split(',')[1].strip()
-            conn.execute("INSERT INTO iclist (ic,name) VALUES (?,?);", (id,name))
+    # Populate IC LIST from seed file     
+    conn.execute("DELETE FROM iclist;")
+    conn.commit()
+    with open("xbuild_support/seed_chips.json", "r") as f:
+        chipdata = json.load(f)
+        for chip in chipdata["Chips"]:
+            chipid = chip["ID"]
+            chipname = chip["Name"]
+            ctop = chip["Top"]
+            cbottom = chip["Bottom"]
+            conn.execute("INSERT INTO iclist (ic,name,ctop,cbottom) VALUES (?,?,?,?);", (chipid,chipname,ctop,cbottom))
             conn.commit()
-        
+    
+    # IC LIST is now fully and correctly populated
+
     for file in files:
 
         if ('Software' + OSSEP + 'Resident' + OSSEP + 'EXORset30ROMS' + OSSEP + '@' in file or
@@ -2240,12 +2263,12 @@ while True:
     console.print('\t3 Create new IC group index',style="info")    
     console.print('\t4 Create new IC group from index',style="info")    
     console.print('\t5 Update IC status (WIP)',style="warning")
-    console.print('\t6 Unused',style="danger")
+    console.print('\t6 Unload Seed IC file',style="info")
     console.print('\t7 Rebuild DB',style="info")
     console.print('\t- Delete DB',style="danger")
     console.print('\t0 Update ALL ',style="info")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","7","-","0","A","X","?","9"]
+    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2262,7 +2285,20 @@ while True:
         case "3":
             create_new_group_index()
         case "4":
-            create_new_group_from_index()        
+            create_new_group_from_index()       
+        case "6":
+            chip_seed_file = XBS + OSSEP + 'seed_chips.json'
+            console.print("This is destructive", style="danger")
+            choice = Prompt.ask("Do you really want to overwrite the seed chip file?", choices=["Y", "N"], default="N", case_sensitive=True)
+            if choice == 'Y':
+                if os.path.exists(chip_seed_file):
+                    from datetime import datetime
+                    dt=datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+                    backup_file=chip_seed_file.replace('.json','_' + dt + '.bak.json')
+                    copyfile(chip_seed_file, backup_file)
+                    console.print("Created a backup file", style="info")
+                extract_seed_chip_info(chip_seed_file)
+            
         case "0":
             import os
             clear = lambda: os.system('clear')
