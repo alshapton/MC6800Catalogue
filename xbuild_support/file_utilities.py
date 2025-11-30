@@ -19,7 +19,7 @@ def make_directory(path):
         os.mkdir(path)
         return True
     except FileExistsError:
-        return True
+        return False
 
 
 def line_prepender(filename, line):

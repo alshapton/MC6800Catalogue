@@ -1774,7 +1774,7 @@ def rebuild_db():
     # Populate IC LIST from seed file     
     conn.execute("DELETE FROM iclist;")
     conn.commit()
-    with open("xbuild_support/seed_chips.json", "r") as f:
+    with open(XBS + OSSEP + "seed_chips.json", "r") as f:
         chipdata = json.load(f)
         for chip in chipdata["Chips"]:
             chipid = chip["ID"]
@@ -1784,7 +1784,7 @@ def rebuild_db():
             conn.execute("INSERT INTO iclist (ic,name,ctop,cbottom) VALUES (?,?,?,?);", (chipid,chipname,ctop,cbottom))
             conn.commit()
     
-    # IC LIST is now fully and correctly populated
+    # IC Seed List is now fully and correctly populated
 
     for file in files:
 
@@ -2473,8 +2473,36 @@ while True:
             console.print(output, style="info") 
             
         case "9":
+            
+            console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
+
+            output = read_db("SELECT * FROM iclist order by ic asc;")
+            IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
+            if not make_directory(IC_LOCATIONSNEW):
+                console.print("Could not create directory " + IC_LOCATIONSNEW, style="danger")
+                exit()
+            
+            for row in output:
+                console.print("Processing " + row["ic"],style="info")
+                make_directory(IC_LOCATIONSNEW + OSSEP + row["ic"])
+                filename=IC_LOCATIONSNEW + OSSEP + row["ic"] + OSSEP + row["ic"].lower() + '.pre.fragment'
+                with open(filename, 'w') as f:
+                    f.write(row["name"] + ' (' + row["ic"] + ')\n')
+                    if row["ctop"] is not None:
+                        f.write("##TOP\n")
+                        f.write(row["ctop"])
+                    if row["cbottom"] is not None:
+                        f.write("##BOTTOM\n")
+                        f.write(row["cbottom"])
+                        f.write('\n')
+            console.print("IC framework completed", style="info")
+
+            exit()
+
+
             output=read_db("SELECT * FROM ics  order by icid asc;")
             for chipinfo in output:
+                
                 filename=chipinfo["filename"]
                 write_IC(filename,chipinfo)
                 newfilename = filename + ".new.rst"
