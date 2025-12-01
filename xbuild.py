@@ -2476,7 +2476,7 @@ while True:
             
         case "9":
             
-            #IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
+            # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
             IC_LOCATIONSNEW=IC_LOCATIONS
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
 
@@ -2510,7 +2510,7 @@ while True:
             output=read_db("SELECT * FROM ics order by icid asc;")
             for chipinfo in output:
                 filename=chipinfo["filename"]
-                filename=filename.replace('ICs','ICsNEW')
+                #filename=filename.replace('ICs','ICsNEW')
                 print(filename)
                 
                 write_IC(filename,chipinfo)
