@@ -2498,6 +2498,10 @@ while True:
                         f.write("##BOTTOM\n")
                         f.write(row["cbottom"])
                         f.write('\n')
+            make_directory(IC_LOCATIONSNEW + OSSEP + 'snippets')
+            copyfile(XBS + OSSEP + 'ICs' + OSSEP + 'index.master', IC_LOCATIONSNEW + OSSEP + 'index.rst')
+            copyfile(XBS + OSSEP + 'ICs' + OSSEP + 'packaging.master', IC_LOCATIONSNEW + OSSEP + 'packaging.rst')
+
             console.print("IC framework completed", style="info")
 
             # exit()
