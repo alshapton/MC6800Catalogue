@@ -81,8 +81,8 @@
         {
             "ID": "MC6821",
             "Name": "Peripheral Interface Adapter",
-            "Top": "   .. rubric:: Part Numbering\n\n   In addition to the usual part numbers (depicted below) for the MC6821, there are also an additional number of variants.\n\n   .. image:: /images/Hardware/ICs/MC6821/MC6821-ordering.png\n      :width: 400\n      :align: center\n\n   To order these variants, as detailled below, customers were required to add on additional letters to the part number as required.\n\n   .. image:: /images/Hardware/ICs/MC6821/MC6821-variants.png\n      :width: 400\n      :align: center",
-            "Bottom": "NULL"
+            "Top": "   .. rubric:: Part Numbering\n\n   In addition to the usual part numbers (depicted below) for the MC6821, there are also an additional number of variants.\n\n   .. image:: /images/Hardware/ICs/MC6821/MC6821-ordering.png\n      :width: 400\n      :align: center\n\n   To order these variants, as detailled below, customers were required to add on additional letters to the part number as required.\n\n   .. image:: /images/Hardware/ICs/MC6821/MC6821-variants.png\n      :width: 400\n      :align: center\n\n",
+            "Bottom": null
         },
         {
             "ID": "MC6875",

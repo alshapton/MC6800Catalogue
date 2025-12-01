@@ -1,5 +1,5 @@
 
-.. collapse:: Two-Phase Microprocessor Clock (MC6870/MC6871)
+.. collapse:: Two-Phase Microprocessor Clock (MC6870-1)
 
 
    .. csv-table::
@@ -10,4 +10,4 @@
       "|notpresent| :ref:`MC6870 <MC6870>`","Ceramic","N/A","-55-125\ :sup:`o`\ C",""
       "|present| :ref:`MC6871A20 <MC6871A20>`","Hermetically sealed ceramic DIP","2Mhz","0-120\ :sup:`o`\ C",""
 
-   [1] - The packaging is a hermetically sealed ceramic package.
+   [1] - The packaging is a hermetically sealed ceramic package

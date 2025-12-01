@@ -2310,7 +2310,7 @@ while True:
             setup_icons()
             output='Commencing rebuild of database'
             console.print(output, style="info")
-            rebuild_db()
+            #rebuild_db()
             console.print('Completed rebuild of database',style="info")     
             console.print('\n\nCommencing updating storage metadata links',style="info")
 
@@ -2476,8 +2476,8 @@ while True:
             
         case "9":
             
-            IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
-
+            # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
+            IC_LOCATIONSNEW=IC_LOCATIONS
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
 
             output = read_db("SELECT * FROM iclist order by ic asc;")
@@ -2495,7 +2495,7 @@ while True:
                         f.write("##TOP\n")
                         f.write(row["ctop"])
                     if row["cbottom"] is not None:
-                        f.write("##BOTTOM\n")
+                        f.write("\n##BOTTOM\n")
                         f.write(row["cbottom"])
                         f.write('\n')
             make_directory(IC_LOCATIONSNEW + OSSEP + 'snippets')
@@ -2510,7 +2510,7 @@ while True:
             output=read_db("SELECT * FROM ics order by icid asc;")
             for chipinfo in output:
                 filename=chipinfo["filename"]
-                filename=filename.replace('ICs','ICsNEW')
+                #filename=filename.replace('ICs','ICsNEW')
                 print(filename)
                 
                 write_IC(filename,chipinfo)

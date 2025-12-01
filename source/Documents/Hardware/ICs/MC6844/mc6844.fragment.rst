@@ -1,5 +1,6 @@
 
-.. collapse:: Direct Memory Access Controller (DMAC) (MC644)
+.. collapse:: Direct Memory Access Controller (DMAC) (MC6844)
+
 
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"

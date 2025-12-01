@@ -17,7 +17,6 @@
       :width: 400
       :align: center
 
-
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
