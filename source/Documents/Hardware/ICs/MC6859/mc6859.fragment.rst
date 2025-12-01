@@ -1,5 +1,6 @@
 
-.. collapse:: Data Security Device (MC6859) 
+.. collapse:: Data Security Device (MC6859)
+
 
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"

@@ -1,5 +1,6 @@
 
-.. collapse:: CRT Controller (CRTC) (MC6835) 
+.. collapse:: CRT Controller (CRTC) (MC6835)
+
 
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"

@@ -1,6 +1,7 @@
 
 .. collapse:: Floating Point ROM (MC6839)
 
+
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto

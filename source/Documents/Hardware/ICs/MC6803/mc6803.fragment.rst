@@ -1,6 +1,7 @@
 
 .. collapse:: Microcomputer/Microprocessor (MCU/MPU) (MC6803)
 
+
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
