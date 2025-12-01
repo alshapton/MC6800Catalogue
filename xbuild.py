@@ -2185,6 +2185,8 @@ def write_IC(filename,chipinfo):
     newgroupname=chipinfo["parent"]
 
     newfilename=filename + ".new.rst"
+    newfilename=filename 
+    
     with open(newfilename, "w") as c:
         c.write(':orphan:\n\n')
         c.write('.. _' + chipinfo["tag"] + ':\n\n')
@@ -2474,10 +2476,11 @@ while True:
             
         case "9":
             
+            IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
+
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
 
             output = read_db("SELECT * FROM iclist order by ic asc;")
-            IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
             if not make_directory(IC_LOCATIONSNEW):
                 console.print("Could not create directory " + IC_LOCATIONSNEW, style="danger")
                 exit()
@@ -2497,22 +2500,24 @@ while True:
                         f.write('\n')
             console.print("IC framework completed", style="info")
 
-            exit()
+            # exit()
 
 
-            output=read_db("SELECT * FROM ics  order by icid asc;")
+            output=read_db("SELECT * FROM ics order by icid asc;")
             for chipinfo in output:
-                
                 filename=chipinfo["filename"]
+                filename=filename.replace('ICs','ICsNEW')
+                print(filename)
+                
                 write_IC(filename,chipinfo)
-                newfilename = filename + ".new.rst"
-                issame=compare_files(filename,newfilename)
-                if issame:
-                    #console.print(os.path.basename(filename) + ' is identical to ' + os.path.basename(newfilename),style="info")
-                    os.remove(newfilename)
-                    pass;
-                else:
-                    console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
+                #newfilename = filename + ".new.rst"
+                #issame=compare_files(filename,newfilename)
+                #if issame:
+                #    #console.print(os.path.basename(filename) + ' is identical to ' + os.path.basename(newfilename),style="info")
+                #    os.remove(newfilename)
+                #    pass;
+                #else:
+                #    console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
 
             
             
@@ -2523,6 +2528,7 @@ while True:
                 documentid=row["documentid"]
 
                 newfilename=row["filename"]+'.new.rst'
+                print(newfilename.replace('ICs',))
                 filename=row["filename"]
 
                 with open(newfilename, 'w') as f:
