@@ -18,6 +18,6 @@
       "|notpresent| :ref:`MC68B40L <MC68B40L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6840CP <MC6840CP>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A40CL <MC68A40CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""
-      "|notpresent| :ref:`MC6840L <MC6840L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|intransit| :ref:`MC6840L <MC6840L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A40S <MC68A40S>`","CERDIP","1.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A40P <MC68A40P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""

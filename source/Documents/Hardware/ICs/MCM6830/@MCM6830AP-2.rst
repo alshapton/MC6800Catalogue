@@ -13,7 +13,10 @@ MCM6830AP-2 1024 x 8-bit ROM
 
 .. note:: 
    
-   Without dumping the ROM, there is no reliable way to determine which version of JBUG is contained therein.
+   This contains JBUG rev 1.8 9-6-76 (06-SEP-1976) as listed in the documentation linked below.
+   This has been confirmed by examining each byte of the ROM area between $E000 and $E3FF and comparing
+   the content to the assembly listing in the aforementioned document. Since the byte-for-byte comparison 
+   showed no differences, it can be determined that the version of JBUG burned onto the ROM is 1.8.
 
 
 .. rubric:: Specific Information
