@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 01-12-2025).
+This is the timeline of acquisitions (as at 02-12-2025).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -174,3 +174,5 @@ This is the timeline of acquisitions (as at 01-12-2025).
    17-NOV-2025,:ref:`LILbug Monitor V1.0 <LILBUG_1_0>`
    21-NOV-2025,:ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`
    27-NOV-2025,:ref:`M68MASR010M MDOS Macro Assembler 3.0 <M68MASR010M>`
+   02-DEC-2025,:ref:`MC6843L Floppy Disk Controller (FDC) (MC6843) <MC6843L>`
+   02-DEC-2025,:ref:`MDOS 2.20 <MDOS220>`
