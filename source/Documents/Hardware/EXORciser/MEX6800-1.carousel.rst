@@ -1,0 +1,17 @@
+.. card-carousel:: 2
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-1.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-2.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-3.jpg
+         :width: 800
+

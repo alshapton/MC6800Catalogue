@@ -1,0 +1,19 @@
+:orphan:
+
+.. _MEX6800-1:
+
+.. #Metadata {'Product':'MEX6800-1 M6800 MPU Module','Folder': ' '}
+
+MEX6800-1 M6800 MPU Module
+==========================
+
+.. include:: MEX6800-1.carousel.rst
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |intransit|
+
