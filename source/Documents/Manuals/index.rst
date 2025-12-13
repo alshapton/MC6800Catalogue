@@ -42,6 +42,7 @@ Reference Manuals
    ":ref:`M68EXORSET(D1) <M68EXORSET(D1)>`","EXORset User's Guide (Binder set 1 & 2)",""
    ":ref:`N/A <MESH>`","Micromodule Enclosure and System Hardware (etc)","Various hardware"
 
+
 .. rubric:: Expansion Card Manuals
 
 .. csv-table:: 
@@ -50,6 +51,7 @@ Reference Manuals
 
 
    ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
+   ":ref:`MEX68162(D) <MEX68162(D)>`","MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide",""   
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
    ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
    ":ref:`M68SFDC3(D3) <M68SFDC3(D3)>`","Floppy Disk Controller Module","Third Edition September 1979"
