@@ -49,7 +49,6 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
-
    ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
    ":ref:`MEX68162(D) <MEX68162(D)>`","MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide",""   
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
@@ -57,11 +56,13 @@ Reference Manuals
    ":ref:`M68SFDC3(D3) <M68SFDC3(D3)>`","Floppy Disk Controller Module","Third Edition September 1979"
    ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"
+   ":ref:`N/A <MEX6850-ACIASUP>`","MEX6850 ACIA Module Supplement",""
    "|present| :ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide","Second Edition December 1978"
    "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
    ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
    ":ref:`MEX68USMUG(D1) <MEX68USMUG(D1)>`","MEX68USMUG(D1) MEX68USM Universal Support Module User's Guide",""
+   ":ref:`MEX68USEC <MEX68USEC-UG>`","MEX68USEC 2Mhz User System Evaluator User Guide",""
    
 .. rubric:: Micromodule Manuals
 
