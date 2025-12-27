@@ -2,7 +2,7 @@
 
 .. _MEX6800-1:
 
-.. #Metadata {'Product':'MEX6800-1 M6800 MPU Module','Folder': ' '}
+.. #Metadata {'Product':'MEX6800-1 M6800 MPU Module','Folder': 'Hardware'}
 
 MEX6800-1 M6800 MPU Module
 ==========================
@@ -15,5 +15,8 @@ MEX6800-1 M6800 MPU Module
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 27-DEC-2025
 
+.. rubric:: Links
+
+:download:`EXORciser MPU Module Datasheet<../../../_static/Documents/Datasheets/DS-MEX6800.pdf>`

@@ -20,6 +20,7 @@ EXORciser I and EXORterm 200 (1 MHz frequency limit)
    :header: "Part Number","Name"
    :widths: 30, 70
 
+    "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
     "MEX68PP3A/B/M","PROM Programmer  "
     "MEX68USM  ","Universal Support Module to support 6800 family of devices "
     "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "

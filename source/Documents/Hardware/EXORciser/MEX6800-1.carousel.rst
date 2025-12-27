@@ -15,3 +15,23 @@
       .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-3.jpg
          :width: 800
 
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-4.jpeg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-5.jpeg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-6.jpeg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/EXORciser/MEX6800-1/MEX680011-7.jpeg
+         :width: 800
+
