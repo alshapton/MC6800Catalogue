@@ -4,4 +4,4 @@
 
 Under Offer
 ===========
-This is the current set of items (as at 28-12-2025) under offer.
+This is the current set of items (as at 30-12-2025) under offer.

@@ -51,5 +51,5 @@ Motorola HEP Kit Educator II
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
