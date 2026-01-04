@@ -1,4 +1,6 @@
-.. card-carousel:: 2
+.. rubric:: Assembled MEK6800D2
+
+.. card-carousel:: 1
 
     .. card::
 
@@ -38,5 +40,19 @@
     .. card::
 
       .. image:: ../../../images/Hardware/Other/MEK6800D2/1.MEK6800D2.8.jpg
+         :width: 800
+
+.. rubric:: Unssembled MEK6800D2
+
+.. card-carousel:: 2
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/MEK6800D2/2.MEK6800D2.1.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/MEK6800D2/2.MEK6800D2.2.jpg
          :width: 800
 

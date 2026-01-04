@@ -62,7 +62,67 @@
 
     .. card::
 
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.20.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.21.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.22.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.23.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.24.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.25.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.26.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.27.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.28.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.29.jpg
+         :width: 800
+
+    .. card::
+
       .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.3.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.30.jpg
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.31.jpg
          :width: 800
 
     .. card::

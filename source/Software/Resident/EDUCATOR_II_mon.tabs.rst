@@ -2,7 +2,7 @@
 
     .. tab-item:: Dissassembly Listing
 
-         **Note that a dissassembly without a proven base address assumes a base address of $0000**
+         **This disassembly assumes a base address of $8200, which is where the Educator-II PROM is set up to be addressable**
 
          .. literalinclude:: ../../_static/Monitors/EDUCATOR-II/monitor.asm
 

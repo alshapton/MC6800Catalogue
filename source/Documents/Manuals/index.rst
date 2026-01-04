@@ -41,7 +41,9 @@ Reference Manuals
    ":ref:`MC6801RM(AD2) <MC6801RM(AD2)>`","MC6801 8-Bit Single-Chip Microcomputer (Including MC6803 & MC68701","May 1984"
    ":ref:`M68EXORSET(D1) <M68EXORSET(D1)>`","EXORset User's Guide (Binder set 1 & 2)",""
    ":ref:`N/A <MESH>`","Micromodule Enclosure and System Hardware (etc)","Various hardware"
-
+   ":ref:`M6809PM/AD <M6809PMAD>`","MC6809-MC6809E Microprocessor Programming Manual"
+   "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
+   ":ref:`MC68488UM(AD) <MC68488UM(AD)>`","MC68488 GPIA Users Manual","1980"
 
 .. rubric:: Expansion Card Manuals
 

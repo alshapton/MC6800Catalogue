@@ -2,9 +2,9 @@
 
 .. _MC6862S:
 
-.. #Metadata {'Product':'MC6882S','Name':'MC6882S 2400 bps Digital Modulator','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6862S','Name':'MC6862S 2400 bps Digital Modulator','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC6882S 2400 bps Digital Modulator
+MC6862S 2400 bps Digital Modulator
 ==================================
 
 .. image:: ../../../../images/NOIMAGE.png
