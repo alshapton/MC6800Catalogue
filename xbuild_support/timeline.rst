@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 04-01-2026).
+This is the timeline of acquisitions (as at 08-01-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -177,3 +177,4 @@ This is the timeline of acquisitions (as at 04-01-2026).
    02-DEC-2025,:ref:`MC6843L Floppy Disk Controller (FDC) (MC6843) <MC6843L>`
    02-DEC-2025,:ref:`MDOS 2.20 <MDOS220>`
    27-DEC-2025,:ref:`MEX6800-1 M6800 MPU Module <MEX6800-1>`
+   08-JAN-2026,:ref:`MC6840L Programmable Timer Module (PTM) <MC6840L>`

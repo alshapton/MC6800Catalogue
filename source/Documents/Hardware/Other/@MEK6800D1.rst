@@ -1,0 +1,31 @@
+:orphan:
+
+.. _MEK6800D1HARDWARE:
+
+.. #Metadata {'Product':'MEK6800D1','Name':'MEK6800D1 Development board for the 6800 microprocessor','Folder': 'Hardware'}
+
+MEK6800D1 Development board for the 6800 microprocessor
+=======================================================
+
+.. include:: MEK6800D1.carousel.rst
+
+.. note::
+
+   The MEK6800D1 was released in 1975 as a standalone system for the evaluation of the MC6800 microprocessor and its related peripheral chips. 
+   
+   Two MC6820 PIA devices are included: one is available for general use, while the other is used to implement a bit-banging serial port for the RS232C or TTY current loop terminal interface running at 110 or 300 bps (These bit rates are set by adjusting two potentiometers in an R/C oscillator connected to an MC14536 programmable timer.) 
+   
+   The board supports up to six MCM6810 SRAM chips, providing 128-640 bytes of SRAM for user programs and 128 bytes of SRAM for the MIKBUG firmware, which is in a mask programmed MCM6830L7 ROM. 
+   
+   An MC6850 ACIA was also included in some versions of the kit to support an additional serial communication channel, but its 16x bit rate clock needed to be supplied from an off-board circuit via connector P2 -- an MC14411 bit rate generator chip with crystal controlled clock was suggested.
+
+   An 86-pin Motorola EXORciser bus (EXORbus) connector allows for further expansion.
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent| 
+

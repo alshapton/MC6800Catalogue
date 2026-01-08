@@ -18,7 +18,7 @@ MC68B40L Programmable Timer Module (PTM)
 
    "Date Code","TBD"
    "Manufacture Date","TBD"
-   "Mask",""
+   "Mask","TBD"
    "Packaging","Ceramic"
    "Status","TBD"
    "Location","TBD"

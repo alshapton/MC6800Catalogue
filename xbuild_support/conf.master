@@ -9,7 +9,7 @@
 
 
 project = 'Motorola MC6800 Family Product Catalogue'
-copyright = '2025, Andrew Shapton'
+copyright = '2024-2026, Andrew Shapton'
 author = 'Andrew Shapton'
 release = '0.2'
 
