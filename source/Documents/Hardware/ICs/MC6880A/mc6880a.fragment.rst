@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Quad Tri-State Bus Transceiver (MC6880A)
 

@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Programmable Timer Module (PTM) (MC6840)
 

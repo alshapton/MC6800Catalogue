@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Synchronous Serial Data Adapter SSDA (MC6852)
 

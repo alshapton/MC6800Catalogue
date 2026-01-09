@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: M6800 Two-Phase Clock Generator/Driver (MC6875)
 

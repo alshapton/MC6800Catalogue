@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Data Security Device (MC6859)
 

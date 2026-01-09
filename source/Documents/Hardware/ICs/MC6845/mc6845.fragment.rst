@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: CRT Controller (CRTC) (MC6845)
 

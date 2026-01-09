@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Priority Interrupt Controller (MC6828)
 

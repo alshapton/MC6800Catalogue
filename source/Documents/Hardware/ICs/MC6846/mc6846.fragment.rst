@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: ROM I/O Timer (MC6846)
 

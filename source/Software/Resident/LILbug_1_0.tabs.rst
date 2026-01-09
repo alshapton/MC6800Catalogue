@@ -1,3 +1,5 @@
+:nosearch:
+
 .. tab-set::
 
     .. tab-item:: Assembly Listing

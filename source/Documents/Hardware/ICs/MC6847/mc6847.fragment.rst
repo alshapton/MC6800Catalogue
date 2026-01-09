@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Video Display Generator (MC6847)
 

@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Direct Memory Access Controller (DMAC) (MC6844)
 

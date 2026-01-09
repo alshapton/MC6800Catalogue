@@ -362,6 +362,7 @@ def update_IC_pre_fragments():
             
         outputfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('pre','new')+ '.' + SUFFIX
         with open(outputfile,'w') as op:
+            op.write(':nosearch:\n\n')
             op.write('\n.. collapse:: ' + lines[0] + '\n\n')
             if len(ttop)>1:
                 op.write(ttop)
@@ -957,7 +958,7 @@ def update_IC_index():
     
     IC_FRAGMENTS_INDEX=IC_LOCATIONS + OSSEP + 'icindex.fragment.rst'
     with open(IC_FRAGMENTS_INDEX,"w") as c:
-
+        c.write(':nosearch:\n\n')
         for chip in chips:
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 

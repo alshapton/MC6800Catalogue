@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Peripheral Interface Adapter (PIA) (MC6820)
 

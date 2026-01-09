@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Floating Point ROM (MC6839)
 

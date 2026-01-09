@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: 2048 x 8-bit Read Only Memory (MCM6832)
 

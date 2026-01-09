@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Memory Management Unit (MC6829)
 

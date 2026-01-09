@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Microprocessor Unit (MC6800)
 

@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Two-Phase Microprocessor Clock (MC6870-1)
 

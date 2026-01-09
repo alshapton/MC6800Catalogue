@@ -1,3 +1,5 @@
+:nosearch:
+
 
 .. collapse:: Microprocessor with Clock and Optional RAM (MC6808)
 
