@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Enhanced MC6800 Microcomputer Unit (MC68701)
 

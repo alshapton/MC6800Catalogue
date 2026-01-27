@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: 2400 bps Digital Modulator (MC6862)
 

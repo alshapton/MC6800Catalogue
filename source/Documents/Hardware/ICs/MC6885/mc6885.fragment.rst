@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Hex Three-State Buffer/Inverter (MC6885)
 

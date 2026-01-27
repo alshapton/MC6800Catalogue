@@ -51,5 +51,5 @@ Motorola HEP Kit Educator II
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 14-JAN-2026
 

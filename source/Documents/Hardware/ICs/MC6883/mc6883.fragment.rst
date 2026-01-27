@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Synchronous Address Multiplexer (MC6883)
 

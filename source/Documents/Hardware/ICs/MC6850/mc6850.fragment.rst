@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Asynchronous Communications Interface Adapter (MC6850)
 

@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. include:: ./MC6800/mc6800.fragment.rst
 |

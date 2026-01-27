@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 09-01-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 27-01-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -78,6 +78,7 @@ This is the current collection (as at 09-01-2026) of the items produced by Motor
 	:header: "Part Number","Packaging","Location" 
 	:widths: 25, 20, 55
 
+	":ref:`HEPC4801L <HEPC4801L>`","Ceramic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MC6800L <2!MC6800L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC68B00L <MC68B00L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 1 <Storage_Box_1_Drawer_1>`"
@@ -103,6 +104,7 @@ This is the current collection (as at 09-01-2026) of the items produced by Motor
 	":ref:`MCM68A10CL <MCM68A10CL>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 6 <Storage_Box_1_Drawer_4>`"
 	":ref:`MCM68A10P <MCM68A10P>`","Plastic",":ref:`M68MM12 Micromodule <Components_attached_to_the_M68MM12_Micromodule_Components_attached_to_the_M68MM12_Micromodule>`"
 	":ref:`MCM68B10P <MCM68B10P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 3 <Storage_Box_1_Drawer_4>`"
+	":ref:`HEPC4821L <HEPC4821L>`","Ceramic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
 	":ref:`MC6820L <MC6820L>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
 	":ref:`XC6820 <XC6820>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MC6821P <MC6821P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 2 <Storage_Box_1_Drawer_1>`"
@@ -113,6 +115,7 @@ This is the current collection (as at 09-01-2026) of the items produced by Motor
 	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 4 <Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6832P <MCM6832P>`","Plastic",":ref:`Storage Box 1, Drawer 4, Row 2, Column 5 <Storage_Box_1_Drawer_4>`"
+	":ref:`MC6840L <MC6840L>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 3, Column 6 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC68B40P <MC68B40P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 3 <Storage_Box_1_Drawer_1>`"
 	":ref:`MC6843L <MC6843L>`","Ceramic",":ref:`Storage Box 2, Drawer 2, Row 1, Column 2 <Storage_Box_2_Drawer_2>`"
 	":ref:`MC6844L <MC6844L>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 2, Column 2 <Storage_Box_1_Drawer_2>`"

@@ -1,0 +1,501 @@
+8200-                  9              .EF errors.err       ; ERROR FILE                  ; *   FLAG - GO/HALT STATUS
+8200-                 10              .SF ED2.SYM          ; CREATE SYMBOL FILE          ; *
+8200-                 11                                                                 ; *   PANADR - TWO BYTES FOR PANEL ADR
+8200-                 12                                                                 ; *
+8200-                 13                                                                 ; *   STACK1 - STORAGE FOR STACK POINTER
+8200-                 14                                                                 ; *           ON ENTRY TO "HALT"  POINTS
+8200-                 15                                                                 ; *           TO STACK USED FOR GO RTI
+8200-                 16                                                                 ; *
+8200-                 17                                                                 ; *
+8200-                 18                                                                 ; *   STACK2 - "BOTTOM" OF STACK AREA USED IN
+8200-                 19                                                                 ; *            GO/HALT OPERATIONS  TARGET
+8200-                 20                                                                 ; *            PROGRAM START VECTOR WILL BE
+8200-                 21                                                                 ; *            AT FA (PCL) AND F9 (PCH)
+8200-                 22                                                                 ; *
+8200-                 23                                                                 ; ***********************************
+8200-                 24                                                                 ; *
+8200-                 25                                                                 ;         ORG     $F0
+8200-                 26                                                                 ; *
+00F0-                 27      BEGADR  .EQU    $F0                                        ; BEGADR  RMB     2
+00F2-                 28      LAST    .EQU    $F2                                        ; LAST    RMB     1
+00F3-                 29      STACK2  .EQU    $F3                                        ; STACK2  RMB     1
+00F4-                 30      CCR     .EQU    $F4                                        ; CCR     RMB     1
+00F5-                 31      ACCB    .EQU    $F5                                        ; ACCB    RMB     1
+00F6-                 32      ACCA    .EQU    $F6                                        ; ACCA    RMB     1
+00F7-                 33      IXH     .EQU    $F7                                        ; IXH     RMB     1
+00F8-                 34      IXL     .EQU    $F8                                        ; IXL     RMB     1
+00F9-                 35      PRGHI   .EQU    $F9                                        ; PRGHI   RMB     1
+00FA-                 36      PRGLO   .EQU    $FA                                        ; PRGLO   RMB     1
+00FB-                 37      STACK1  .EQU    $FB                                        ; STACK1  RMB     2
+00FD-                 38      PANADR  .EQU    $FD                                        ; PANADR  RMB     2
+00FF-                 39      FLAG    .EQU    $FF                                        ; FLAG    RMB     1
+8200-                 40                                                                 ; *
+8200-                 41                                                                 ; *
+8200-                 42                                                                 ; *
+00F6-                 43      BYTE    .EQU    ACCA                                       ; BYTE    EQU     ACCA
+4000-                 44      DRA     .EQU    $4000                                      ; DRA     EQU     $4000
+4002-                 45      DRB     .EQU    DRA+2                                      ; DRB     EQU     DRA+2
+4001-                 46      CRA     .EQU    DRA+1                                      ; CRA     EQU     DRA+1
+4003-                 47      CRB     .EQU    DRB+1                                      ; CRB     EQU     DRB+1
+2200-                 48      STACK   .EQU    $2200                                      ; STACK   EQU     $2200
+8200-                 49                                                                 ; *
+8200-                 50                                                                 ; *
+8200-                 51                                                                 ;         ORG     $8200
+8200-                 52                                                                 ; *
+8200-                 53                                                                 ; *
+8200-                 54                                                                 ; *     SUBROUTINE DEPOSIT     *
+8200-                 55                                                                 ; *
+8200-                 56                                                                 ; *
+8200-E6 00            57 ( 5) DEP     LDAB    0,X      CLR INT FLAG IN PIA               ; DEP     LDA B   0,X      CLR INT FLAG IN PIA
+8202-85 02            58 ( 2)         BITA    #02      DISPLAY DATA IF ZERO ADDRESS      ;         BIT A   #02      DISPLAY DATA IF ZERO ADDRESS
+8204-26 15            59 ( 4)         BNE     ADR                                        ;         BNE     ADR
+8206-DE FD            60 ( 4) DATA1   LDX     PANADR                                     ; DATA1   LDX     PANADR
+8208-E7 00            61 ( 6)         STAB    0,X      PLACE PANEL DATA IN MEMORY        ;         STA B   0,X      PLACE PANEL DATA IN MEMORY
+820A-E1 00            62 ( 5)         CMPB    0,X                                        ;         CMP B   0,X
+820C-26 6A            63 ( 4)         BNE     BLINK                                      ;         BNE     BLINK
+820E-F7 40 02         64 ( 5)         STAB    DRB      PLACE DATA INTO DISPLAY           ;         STA B   DRB      PLACE DATA INTO DISPLAY
+8211-08               65 ( 4)         INX                                                ;         INX
+8212-DF FD            66 ( 5)         STX     PANADR   INCREMENT AND STORE PANEL ADD     ;         STX     PANADR   INCREMENT AND STORE PANEL ADD
+8214-86 0F            67 ( 2)         LDAA    #$0F     SET INT FOR POS EDGE              ;         LDA A   #$0F     SET INT FOR POS EDGE
+8216-B7 40 01         68 ( 5) STORA   STAA    CRA                                        ; STORA   STA A   CRA
+8219-20 24            69 ( 4)         BRA     BACK1                                      ;         BRA     BACK1
+821B-D6 FE            70 ( 3) ADR     LDAB    PANADR+1                                   ; ADR     LDA B   PANADR+1
+821D-E7 02            71 ( 6)         STAB    2,X      PUT LSBYTE OF ADR INTO DISP       ;         STA B   2,X      PUT LSBYTE OF ADR INTO DISP
+821F-86 0D            72 ( 2)         LDAA    #$0D     SETS INT FOR NEG EDGE             ;         LDA A   #$0D     SETS INT FOR NEG EDGE
+8221-20 F3            73 ( 4)         BRA     STORA                                      ;         BRA     STORA
+8223-                 74                                                                 ; *
+8223-                 75                                                                 ; *
+8223-                 76                                                                 ; ****    SUBROUTINE EXAMINE     *****
+8223-                 77                                                                 ; *
+8223-                 78                                                                 ; *
+8223-                 79                                                                 ; *
+8223-DE FD            80 ( 4) EXAM    LDX     PANADR   GET PANEL ADR FOR DATA FETCH      ; EXAM    LDX     PANADR   GET PANEL ADR FOR DATA FETCH
+8225-C5 02            81 ( 2)         BITB    #$2                                        ;         BIT B   #$2
+8227-27 09            82 ( 4)         BEQ     ADR2     NEG EDGE=ADR IN DISPLAY           ;         BEQ     ADR2     NEG EDGE=ADR IN DISPLAY
+8229-A6 00            83 ( 5) DATA2   LDAA    0,X                                        ; DATA2   LDA A   0,X
+822B-B7 40 02         84 ( 5)         STAA    DRB      PUT OLD DATA INTO DISPLAY         ;         STA A   DRB      PUT OLD DATA INTO DISPLAY
+822E-C6 35            85 ( 2)         LDAB    #$35                                       ;         LDA B   #$35
+8230-20 0A            86 ( 4)         BRA     STORB                                      ;         BRA     STORB
+8232-08               87 ( 4) ADR2    INX              INCREMENT PANEL ADR               ; ADR2    INX              INCREMENT PANEL ADR
+8233-DF FD            88 ( 5)         STX     PANADR   STORE NEW PANEL ADR               ;         STX     PANADR   STORE NEW PANEL ADR
+8235-96 FE            89 ( 3)         LDAA    PANADR+1 GET LSBYTE OF PANEL ADR           ;         LDA A   PANADR+1 GET LSBYTE OF PANEL ADR
+8237-B7 40 02         90 ( 5)         STAA    DRB      LSBYTE OF PANEL ADR INTO DISP     ;         STA A   DRB      LSBYTE OF PANEL ADR INTO DISP
+823A-C6 37            91 ( 2)         LDAB    #$37                                       ;         LDA B   #$37
+823C-F7 40 03         92 ( 5) STORB   STAB    CRB                                        ; STORB   STA B   CRB
+823F-20 68            93 ( 4) BACK1   BRA     BACK                                       ; BACK1   BRA     BACK
+8241-                 94                                                                 ; *
+8241-                 95                                                                 ; *
+8241-                 96                                                                 ; *********   IRQ ROUTINE *********
+8241-                 97                                                                 ; *
+8241-                 98                                                                 ; *       CHECK FOR CB2 INTERRUPT *****
+8241-                 99                                                                 ; *
+8241-                100                                                                 ; *
+8241-                101      IRQ     .EQU    *                                          ; IRQ     EQU     *
+8241-F6 40 03        102 ( 4)         LDAB    CRB                                        ;         LDA B   CRB
+8244-C5 40           103 ( 2)         BITB    #$40                                       ;         BIT B   #$40
+8246-27 03           104 ( 4)         BEQ     DELAY                                      ;         BEQ     DELAY
+8248-7E 00 80        105 ( 3)         JMP     $80                                        ;         JMP     $80
+824B-                106                                                                 ; *
+824B-                107                                                                 ; *
+824B-                108                                                                 ; ********  DEBOUNCE ROUTINE ******
+824B-                109                                                                 ; *
+824B-                110                                                                 ; *
+824B-CE 09 60        111 ( 3) DELAY   LDX     #2400    SET DEBOUNCE TYPE                 ; DELAY   LDX     #2400    SET DEBOUNCE TYPE
+824E-09              112 ( 4) D2      DEX                                                ; D2      DEX
+824F-26 FD           113 ( 4)         BNE     D2                                         ;         BNE     D2
+8251-CE 40 00        114 ( 3)         LDX     #DRA                                       ;         LDX     #DRA
+8254-                115                                                                 ; *
+8254-                116                                                                 ; *
+8254-                117                                                                 ; *   IRQ SERVICE CONTINUED **
+8254-                118                                                                 ; *
+8254-                119                                                                 ; *
+8254-E6 03           120 ( 5)         LDAB    3,X                                       ;         LDA B    3,X
+8256-A6 01           121 ( 5)         LDAA    1,X                                       ;         LDA A    1,X
+8258-2B 06           122 ( 4)         BMI     D1       CA1 = DEPOSIT                     ;         BMI     D1       CA1 = DEPOSIT
+825A-85 40           123 ( 2)         BITA    #$40     NOT CA1. TEST CA2                 ;         BIT A   #$40     NOT CA1. TEST CA2
+825C-26 08           124 ( 4)         BNE     D3                                         ;         BNE     D3
+825E-20 C3           125 ( 4)         BRA     EXAM                                       ;         BRA     EXAM
+8260-85 40           126 ( 2) D1      BITA    #$40                                       ; D1      BIT A   #$40
+8262-26 58           127 ( 4)         BNE     MSBYTE                                     ;         BNE     MSBYTE
+8264-20 9A           128 ( 4)         BRA     DEP      CA1 AND NOT CA2                   ;         BRA     DEP      CA1 AND NOT CA2
+8266-C5 80           129 ( 2) D3      BITB    #$80                                       ; D3      BIT B   #$80
+8268-26 58           130 ( 4)         BNE     LSBYTE                                     ;         BNE     LSBYTE
+826A-20 18           131 ( 4)         BRA     GOHALT                                     ;         BRA     GOHALT
+826C-                132                                                                 ; *
+826C-                133                                                                 ; *
+826C-                134                                                                 ; *
+826C-                135                                                                 ; *
+826C-                136                                                                 ; *
+826C-                137                                                                 ; *
+826C-                138                                                                 ; *        ENTRY FOR RAM DUMP.  $00 - $F0
+826C-                139                                                                 ; *
+826C-                140                                                                 ; *
+826C-                141                                                                 ; *
+826C-CE 00 00        142 ( 3)         LDX     #0                                         ;         LDX     #0
+826F-DF F0           143 ( 5)         STX     $F0                                        ;         STX     $F0
+8271-CE 00 F0        144 ( 3)         LDX     #$F0                                       ;         LDX     #$F0
+8274-DF F2           145 ( 5)         STX     $F2                                        ;         STX     $F2
+8276-20 57           146 ( 4)         BRA     TAPOUT                                     ;         BRA     TAPOUT
+8278-                147                                                                 ; *
+8278-                148                                                                 ; *
+8278-                149                                                                 ; *
+8278-                150                                                                 ; ***** BLINKING DISPLAY ROUTING *******
+8278-                151                                                                 ; *
+8278-                152                                                                 ; *
+8278-                153                                                                 ; *
+8278-CE 61 A8        154 ( 3) BLINK   LDX     #25000                                     ; BLINK   LDX     #25000
+827B-0E              155 ( 2)         CLI                                                ;         CLI
+827C-73 40 02        156 ( 6)         COM     DRB                                        ;         COM     DRB
+827F-09              157 ( 4) LOOP    DEX                                                ; LOOP    DEX
+8280-26 FD           158 ( 4)         BNE     LOOP                                       ;         BNE     LOOP
+8282-20 F4           159 ( 4)         BRA     BLINK                                      ;         BRA     BLINK
+8284-                160                                                                 ; *
+8284-                161                                                                 ; *
+8284-                162                                                                 ; *
+8284-                163                                                                 ; *       GO/HALT ROUTINE         *
+8284-                164                                                                 ; *
+8284-                165                                                                 ; *
+8284-85 10           166 ( 2) GOHALT  BITA    #$10     MASK FOR EDGE BIT                 ; GOHALT  BIT A   #$10     MASK FOR EDGE BIT
+8286-27 0B           167 ( 4)         BEQ     OK       IF ZERO, NEG EDGE                 ;         BEQ     OK       IF ZERO, NEG EDGE
+8288-86 0D           168 ( 2)         LDAA    #$0D                                       ;         LDA A   #$0D
+828A-A7 01           169 ( 6)         STAA    1,X                                        ;         STA A   1,X
+828C-6D 00           170 ( 7)         TST     0,X                                        ;         TST     0,X
+828E-96 FF           171 ( 3)         LDAA    FLAG                                       ;         LDA A   FLAG
+8290-27 17           172 ( 4)         BEQ     BACK                                       ;         BEQ     BACK
+8292-3B              173 (10)         RTI                                                ;         RTI
+8293-86 1D           174 ( 2) OK      LDAA    #$1D     SET FOR POS EDGE                  ; OK      LDA A   #$1D     SET FOR POS EDGE
+8295-A7 01           175 ( 6)         STAA    1,X                                        ;         STA A   1,X
+8297-96 FF           176 ( 3)         LDAA    FLAG                                       ;         LDA A   FLAG
+8299-27 19           177 ( 4)         BEQ     GO       ZERO=GO, FF=HALT                  ;         BEQ     GO       ZERO=GO, FF=HALT
+829B-30              178 ( 4) HALT    TSX                                                ; HALT    TSX
+829C-A6 06           179 ( 5)         LDAA    6,X      FETCH PCL FROM STACK              ;         LDAA    6,X      FETCH PCL FROM STACK
+829E-4A              180 ( 2)         DECA                                               ;         DEC A
+829F-B7 40 02        181 ( 5) HALT3   STAA    DRB      PUT PCL-1 INTO DISPLAY            ; HALT3   STA A   DRB      PUT PCL-1 INTO DISPLAY
+82A2-9F FD           182 ( 5) HALT2   STS     PANADR   STORE STACK AT PANEL ADR          ; HALT2   STS     PANADR   STORE STACK AT PANEL ADR
+82A4-9F FB           183 ( 5)         STS     STACK1   STORE USER'S STACK POINTER        ;         STS     STACK1   STORE USER'S STACK POINTER
+82A6-7F 00 FF        184 ( 6)         CLR     FLAG     RESET FLAG FOR "GO"               ;         CLR     FLAG     RESET FLAG FOR "GO"
+82A9-8E 22 00        185 ( 3) BACK    LDS     #STACK   RESTORE PANEL PHANTOM STACK       ; BACK    LDS     #STACK   RESTORE PANEL PHANTOM STACK
+82AC-7D 40 02        186 ( 6)         TST     DRB      CLR INT                           ;         TST     DRB      CLR INT
+82AF-7D 40 00        187 ( 6)         TST     DRA                                        ;         TST     DRA
+82B2-0E              188 ( 2)         CLI              READY FOR GO                      ;         CLI              READY FOR GO
+82B3-3E              189 ( 9)         WAI                                                ;         WAI
+82B4-9E FB           190 ( 4) GO      LDS     STACK1   RESTORE USER'S STACK POINTER      ; GO      LDS     STACK1   RESTORE USER'S STACK POINTER
+82B6-73 00 FF        191 ( 6)         COM     FLAG     SET FLG FOR HALT                  ;         COM     FLAG     SET FLG FOR HALT
+82B9-6D 00           192 ( 7)         TST     0,X      LOADS "OLD" STACK INTO PROCSR     ;         TST     0,X      LOADS "OLD" STACK INTO PROCSR
+82BB-3B              193 (10)         RTI                                                ;         RTI
+82BC-                194                                                                 ; *
+82BC-                195                                                                 ; *
+82BC-                196                                                                 ; ******   SUBROUTINE M S BYTE  ********
+82BC-                197                                                                 ; *
+82BC-                198                                                                 ; *
+82BC-A6 00           199 ( 5) MSBYTE  LDAA    0,X                                        ; MSBYTE  LDA A   0,X
+82BE-97 FD           200 ( 4)         STAA    PANADR                                     ;         STAA    PANADR
+82C0-20 04           201 ( 4)         BRA     FETCH                                      ;         BRA     FETCH
+82C2-                202                                                                 ; *
+82C2-                203                                                                 ; *
+82C2-                204                                                                 ; *     SUBROUTINE LOAD LSBYTE  *
+82C2-                205                                                                 ; *
+82C2-                206                                                                 ; *
+82C2-A6 00           207 ( 5) LSBYTE  LDAA    0,X      LOAD SWITCH INFO INTO ACCA        ; LSBYTE  LDA A   0,X      LOAD SWITCH INFO INTO ACCA
+82C4-97 FE           208 ( 4)         STAA    PANADR+1 STORE LSBYTE INTO PANEL ADR       ;         STA A   PANADR+1 STORE LSBYTE INTO PANEL ADR
+82C6-DE FD           209 ( 4) FETCH   LDX     PANADR   GET DATA AT PANEL ADR             ; FETCH   LDX     PANADR   GET DATA AT PANEL ADR
+82C8-A6 00           210 ( 5)         LDAA    0,X                                        ;         LDA A   0,X
+82CA-B7 40 02        211 ( 5)         STAA    DRB      DISPLAY DATA IN PANEL ADR         ;         STA A   DRB      DISPLAY DATA IN PANEL ADR
+82CD-20 DA           212 ( 4)         BRA     BACK                                       ;         BRA     BACK
+82CF-                213                                                                 ; *
+82CF-                214                                                                 ; *
+82CF-                215                                                                 ; *
+82CF-8E 00 FF        216 ( 3) TAPOUT  LDS     #$FF                                       ; TAPOUT  LDS     #$FF
+82D2-8D 2C           217 ( 8)         BSR     INITIA                                     ;         BSR     INITIA
+82D4-                218                                                                 ; *
+82D4-                219                                                                 ; *
+82D4-4F              220 ( 2) START   CLRA                                               ; START   CLR A
+82D5-97 F9           221 ( 4)         STAA    PRGHI                                      ;         STA A   PRGHI
+82D7-5F              222 ( 2) START1  CLRB                                               ; START1  CLR B
+82D8-D7 FF           223 ( 4)         STAB    FLAG                                       ;         STA B   FLAG
+82DA-D7 F4           224 ( 4)         STAB    CCR                                        ;         STA B   CCR
+82DC-8E 00 F3        225 ( 3)         LDS     #STACK2                                    ;         LDS     #STACK2
+82DF-7F 40 01        226 ( 6) INZ     CLR     CRA                                        ; INZ     CLR     CRA
+82E2-7F 40 03        227 ( 6)         CLR     CRB                                        ;         CLR     CRB
+82E5-CE 00 0D        228 ( 3)         LDX     #$000D                                     ;         LDX     #$000D
+82E8-FF 40 00        229 ( 6)         STX     $4000                                      ;         STX     $4000
+82EB-CE FF 35        230 ( 3)         LDX     #$FF35                                     ;         LDX     #$FF35
+82EE-FF 40 02        231 ( 6)         STX     $4002                                      ;         STX     $4002
+82F1-                232                                                                 ; *
+82F1-20 AC           233 ( 4)         BRA     HALT3                                      ;         BRA     HALT3
+82F3-                234                                                                 ; *
+82F3-                235                                                                 ; *
+82F3-                236                                                                 ; * CASSETTE INPUT ENTRY FOR FILE  *
+82F3-                237                                                                 ; * NUMBER IN SWITCHES  *
+82F3-                238                                                                 ; *
+82F3-B6 40 00        239 ( 4) TAPIN1  LDAA    DRA                                        ; TAPIN1  LDA A    DRA
+82F6-40              240 ( 2)         NEGA                                               ;         NEG A
+82F7-97 FF           241 ( 4)         STAA    FLAG                                       ;         STAA    FLAG
+82F9-                242                                                                 ; *
+82F9-                243                                                                 ; * CASSETTE INPUT ENTRY FOR NEXT FILE *
+82F9-                244                                                                 ; *
+82F9-8E 00 FE        245 ( 3)         LDS     #$00FE                                     ;         LDS     #$00FE
+82FC-8D 63           246 ( 8)         BSR     TAPE2                                      ;         BSR     TAPE2
+82FE-20 D7           247 ( 4)         BRA     START1                                     ;         BRA     START1
+8300-                248                                                                 ; *
+8300-                249                                                                 ; *
+8300-                250                                                                 ; *
+8300-                251                                                                 ; *
+8300-                252                                                                 ; *
+8300-                253                                                                 ; *
+8300-                254                                                                 ; *
+8300-                255                                                                 ; *
+8300-                256                                                                 ; * *** CASSETTE INTERFACE PROGRAM
+8300-                257                                                                 ; *
+8300-                258                                                                 ; *
+8300-                259                                                                 ; *   OUTPUT TO TAPE ROUTINE:     *
+8300-                260                                                                 ; *
+8300-                261                                                                 ; *   START VECTOR = 82CF (F9,FA)  *
+8300-                262                                                                 ; *   PUT START DUMP ADR AT F0,F1  *
+8300-                263                                                                 ; *  END DUMP ADR AT F2,F3    *
+8300-                264                                                                 ; *  START TAPE; DEPRESS G/H  *
+8300-                265                                                                 ; *  01 IN DISPLAY = END OF TRANSMISSION *
+8300-                266                                                                 ; *
+8300-                267                                                                 ; *
+8300-                268                                                                 ; *
+8300-                269                                                                 ; *
+8300-                270                                                                 ; *
+8300-                271                                                                 ; *   INPUT FROM TAPE ROUTINE         *
+8300-                272                                                                 ; *
+8300-                273                                                                 ; *   START VECTOR = 82F9
+8300-                274                                                                 ; *   DEPRESS G/H; START TAPE.    *
+8300-                275                                                                 ; *
+8300-                276                                                                 ; *   PROGRAM STATUS IS IN DISPLAY:    *
+8300-                277                                                                 ; *   $80 = PROGRAM RUNNING   *
+8300-                278                                                                 ; *   $81 = TAPE LEADER TONE DETECTED *
+8300-                279                                                                 ; *   $02 = NO MEMORY AT LOAD ADR  *
+8300-                280                                                                 ; *   $03 = SYNC ERROR     *
+8300-                281                                                                 ; *   $04 = TONE TRAILER DETECTED   *
+8300-                282                                                                 ; *
+8300-                283                                                                 ; **** OUTPUT TO TAPE ROUTINE   *****
+8300-                284                                                                 ; *
+8300-                285                                                                 ;
+8300-                286      ; Code below here supplied by disassembing second ROM in
+8300-                287      ; the EDUCATOR-II, since early editions of the manual only
+8300-                288      ; had the first ROM source code shown.
+8300-                289      ; Therefore, disassembled code on the right:
+8300-                290      INITIA                                                     ; L8300:
+8300-0F              291 ( 2)         SEI                                                ;         SEI
+8301-8D 36           292 ( 8)         BSR     R2LBL8                                     ;         BSR     $8339
+8303-96 F0           293 ( 3)         LDAA    $F0                                        ;         LDAA    $F0
+8305-8D 15           294 ( 8)         BSR     $831C                                      ;         BSR     $831C
+8307-96 F1           295 ( 3)         LDAA    $F1                                        ;         LDAA    $F1
+8309-8D 11           296 ( 8)         BSR     $831C                                      ;         BSR     $831C
+830B-DE F0           297 ( 4)         LDX     $F0                                        ;         LDX     $F0
+830D-                298      INITLP                                                     ; L830D:
+830D-A6 00           299 ( 5)         LDAA    0,X                                        ;         LDAA    $00,X
+830F-8D 0B           300 ( 8)         BSR     $831C                                      ;         BSR     $831C
+8311-9C F2           301 ( 4)         CPX     $F2                                        ;         CPX     $F2
+8313-27 03           302 ( 4)         BEQ     $8318                                      ;         BEQ     $8318
+8315-08              303 ( 4)         INX                                                ;         INX
+8316-20 F5           304 ( 4)         BRA     INITLP                                     ;         BRA     $830D
+8318-                305      R2LBL1
+8318-                306      L8318:                                                     ; L8318:
+8318-8D 36           307 ( 8)         BSR     $8350                                      ;         BSR     $8350
+831A-20 1D           308 ( 4)         BRA     R2LBL8                                     ;         BRA     $8339
+831C-                309      R2LBL2
+831C-                310      L831C:                                                     ; L831C:
+831C-97 F6           311 ( 4)         STAA    $F6                                        ;         STAA    $F6
+831E-8D 30           312 ( 8)         BSR     $8350                                      ;         BSR     $8350
+8320-C6 09           313 ( 2)         LDAB    #$09                                       ;         LDAB    #$09
+8322-20 0A           314 ( 4)         BRA     $832E                                      ;         BRA     $832E
+8324-                315      R2LBL3
+8324-                316      L8324:                                                     ; L8324:
+8324-5A              317 ( 2)         DECB                                               ;         DECB
+8325-27 11           318 ( 4)         BEQ     $8338                                      ;         BEQ     $8338
+8327-8D 27           319 ( 8)         BSR     $8350                                      ;         BSR     $8350
+8329-79 00 F6        320 ( 6)         ROL     $00F6                                      ;         ROL     $00F6
+832C-25 06           321 ( 4)         BCS     $8334                                      ;         BCS     $8334
+832E-                322      R2LBL4
+832E-                323      L832E:                                                     ; L832E:
+832E-86 14           324 ( 2)         LDAA    #$14                                       ;         LDAA    #$14
+8330-                325      R2LBL5
+8330-                326      L8330:                                                     ; L8330:
+8330-8D 11           327 ( 8)         BSR     $8343                                      ;         BSR     $8343
+8332-20 F0           328 ( 4)         BRA     $8324                                      ;         BRA     $8324
+8334-                329      R2LBL6
+8334-                330      L8334:                                                     ; L8334:
+8334-86 28           331 ( 2)         LDAA    #$28                                       ;         LDAA    #$28
+8336-20 F8           332 ( 4)         BRA     $8330                                      ;         BRA     $8330
+8338-                333      R2LBL7
+8338-                334      L8338:                                                     ; L8338:
+8338-39              335 ( 5)         RTS                                                ;         RTS
+8339-                336      R2LBL8                                                     ; L8339:
+8339-C6 0F           337 ( 2)         LDAB    #$0F                                       ;         LDAB    #$0F
+833B-                338      R2LBL9
+833B-                339      L833B:                                                     ; L833B:
+833B-86 7E           340 ( 2)         LDAA    #$7E                                       ;         LDAA    #$7E
+833D-8D 04           341 ( 8)         BSR     $8343                                      ;         BSR     $8343
+833F-5A              342 ( 2)         DECB                                               ;         DECB
+8340-26 F9           343 ( 4)         BNE     $833B                                      ;         BNE     $833B
+8342-39              344 ( 5)         RTS                                                ;         RTS
+8343-                345      R2LBL10
+8343-                346      L8343:                                                     ; L8343:
+8343-B7 40 02        347 ( 5)         STAA    $4002                                      ;         STAA    $4002
+8346-                348      R2LBL11
+8346-                349      L8346:                                                     ; L8346:
+8346-86 19           350 ( 2)         LDAA    #$19                                       ;         LDAA    #$19
+8348-8D 13           351 ( 8)         BSR     $835D                                      ;         BSR     $835D
+834A-7A 40 02        352 ( 6)         DEC     $4002                                      ;         DEC     $4002
+834D-26 F7           353 ( 4)         BNE     $8346                                      ;         BNE     $8346
+834F-39              354 ( 5)         RTS                                                ;         RTS
+8350-                355      R2LBL12
+8350-                356      L8350:                                                     ; L8350:
+8350-7F 40 02        357 ( 6)         CLR     $4002                                      ;         CLR     $4002
+8353-8D 06           358 ( 8)         BSR     $835B                                      ;         BSR     $835B
+8355-7C 40 02        359 ( 6)         INC     $4002                                      ;         INC     $4002
+8358-8D 01           360 ( 8)         BSR     $835B                                      ;         BSR     $835B
+835A-39              361 ( 5)         RTS                                                ;         RTS
+835B-                362      R2LBL13
+835B-                363      L835B:                                                     ; L835B:
+835B-86 64           364 ( 2)         LDAA    #$64                                       ;         LDAA    #$64
+835D-                365      R2LBL14
+835D-                366      L835D:                                                     ; L835D:
+835D-4A              367 ( 2)         DECA                                               ;         DECA
+835E-26 FD           368 ( 4)         BNE     $835D                                      ;         BNE     $835D
+8360-39              369 ( 5)         RTS                                                ;         RTS
+8361-                370      TAPE2:                                                     ; L8361:
+8361-86 38           371 ( 2)         LDAA    #$38                                       ;         LDAA    #$38
+8363-CE 40 00        372 ( 3)         LDX     #$4000                                     ;         LDX     #$4000
+8366-06              373 ( 2)         TAP                                                ;         TAP
+8367-01              374 ( 2)         NOP                                                ;         NOP
+8368-A7 03           375 ( 6)         STAA    3,X                                        ;         STAA    $03,X
+836A-C6 7F           376 ( 2)         LDAB    #$7F                                       ;         LDAB    #$7F
+836C-E7 02           377 ( 6)         STAB    2,X                                        ;         STAB    $02,X
+836E-86 3C           378 ( 2)         LDAA    #$3C                                       ;         LDAA    #$3C
+8370-A7 03           379 ( 6)         STAA    3,X                                        ;         STAA    $03,X
+8372-6F 02           380 ( 7)         CLR     2,X                                        ;         CLR     $02,X
+8374-7C 00 FF        381 ( 6)         INC     $00FF                                      ;         INC     $00FF
+8377-                382      R2LBL15
+8377-                383      L8377:                                                     ; L8377:
+8377-8D 4F           384 ( 8)         BSR     $83C8                                      ;         BSR     $83C8
+8379-4D              385 ( 2)         TSTA                                               ;         TSTA
+837A-26 FB           386 ( 4)         BNE     R2LBL15                                    ;         BNE     $8377
+837C-6C 02           387 ( 7)         INC     2,X                                        ;         INC     $02,X
+837E-                388      R2LBL16
+837E-                389      L837E:                                                     ; L837E:
+837E-8D 48           390 ( 8)         BSR     $83C8                                      ;         BSR     $83C8
+8380-4D              391 ( 2)         TSTA                                               ;         TSTA
+8381-27 FB           392 ( 4)         BEQ     $837E                                      ;         BEQ     $837E
+8383-8D 1D           393 ( 8)         BSR     $83A2                                      ;         BSR     $83A2
+8385-97 F0           394 ( 4)         STAA    $F0                                        ;         STAA    $F0
+8387-8D 19           395 ( 8)         BSR     $83A2                                      ;         BSR     $83A2
+8389-97 F1           396 ( 4)         STAA    $F1                                        ;         STAA    $F1
+838B-DE F0           397 ( 4)         LDX     $F0                                        ;         LDX     $F0
+838D-                398      R2LBL17
+838D-                399      L838D:                                                     ; L838D:
+838D-8D 13           400 ( 8)         BSR     $83A2                                      ;         BSR     $83A2
+838F-D6 FF           401 ( 3)         LDAB    $FF                                        ;         LDAB    $FF
+8391-26 FA           402 ( 4)         BNE     $838D                                      ;         BNE     $838D
+8393-A7 00           403 ( 6)         STAA    0,X                                        ;         STAA    $00,X
+8395-B7 40 02        404 ( 5)         STAA    $4002                                      ;         STAA    $4002
+8398-A1 00           405 ( 5)         CMPA    0,X                                        ;         CMPA    $00,X
+839A-26 03           406 ( 4)         BNE     $839F                                      ;         BNE     $839F
+839C-08              407 ( 4)         INX                                                ;         INX
+839D-20 EE           408 ( 4)         BRA     $838D                                      ;         BRA     $838D
+839F-                409      R2LBL18
+839F-                410      L839F:                                                     ; L839F:
+839F-86 02           411 ( 2)         LDAA    #$02                                       ;         LDAA    #$02
+83A1-                412      R2LBL19
+83A1-                413      L83A1:                                                     ; L83A1:
+83A1-39              414 ( 5)         RTS                                                ;         RTS
+83A2-                415      R2LBL20
+83A2-                416      L83A2:                                                     ; L83A2:
+83A2-C6 09           417 ( 2)         LDAB    #$09                                       ;         LDAB    #$09
+83A4-8D 22           418 ( 8)         BSR     $83C8                                      ;         BSR     $83C8
+83A6-4D              419 ( 2)         TSTA                                               ;         TSTA
+83A7-27 37           420 ( 4)         BEQ     $83E0                                      ;         BEQ     $83E0
+83A9-81 EE           421 ( 2)         CMPA    #$EE                                       ;         CMPA    #$EE
+83AB-24 08           422 ( 4)         BCC     $83B5                                      ;         BCC     $83B5
+83AD-86 03           423 ( 2)         LDAA    #$03                                       ;         LDAA    #$03
+83AF-20 44           424 ( 4)         BRA     $83F5                                      ;         BRA     $83F5
+83B1-                425      R2LBL21
+83B1-                426      L83B1:                                                     ; L83B1:
+83B1-0C              427 ( 2)         CLC                                                ;         CLC
+83B2-                428      R2LBL22
+83B2-                429      L83B2:                                                     ; L83B2:
+83B2-79 00 F6        430 ( 6)         ROL     $00F6                                      ;         ROL     $00F6
+83B5-                431      R2LBL23
+83B5-                432      L83B5:                                                     ; L83B5:
+83B5-96 F6           433 ( 3)         LDAA    $F6                                        ;         LDAA    $F6
+83B7-5A              434 ( 2)         DECB                                               ;         DECB
+83B8-27 E7           435 ( 4)         BEQ     $83A1                                      ;         BEQ     $83A1
+83BA-8D 0C           436 ( 8)         BSR     $83C8                                      ;         BSR     $83C8
+83BC-4D              437 ( 2)         TSTA                                               ;         TSTA
+83BD-27 21           438 ( 4)         BEQ     $83E0                                      ;         BEQ     $83E0
+83BF-81 F0           439 ( 2)         CMPA    #$F0                                       ;         CMPA    #$F0
+83C1-24 EE           440 ( 4)         BCC     $83B1                                      ;         BCC     $83B1
+83C3-0D              441 ( 2)         SEC                                                ;         SEC
+83C4-20 EC           442 ( 4)         BRA     $83B2                                      ;         BRA     $83B2
+83C6-                443      R2LBL24
+83C6-                444      L83C6:                                                     ; L83C6:
+83C6-20 99           445 ( 4)         BRA     $8361                                      ;         BRA     $8361
+83C8-                446      R2LBL25
+83C8-                447      L83C8:                                                     ; L83C8:
+83C8-37              448 ( 4)         PSHB                                               ;         PSHB
+83C9-96 FF           449 ( 3)         LDAA    $FF                                        ;         LDAA    $FF
+83CB-                450      R2LBL26
+83CB-                451      L83CB:                                                     ; L83CB:
+83CB-5F              452 ( 2)         CLRB                                               ;         CLRB
+83CC-7D 40 02        453 ( 6)         TST     $4002                                      ;         TST     $4002
+83CF-2A FA           454 ( 4)         BPL     $83CB                                      ;         BPL     $83CB
+83D1-4A              455 ( 2)         DECA                                               ;         DECA
+83D2-27 22           456 ( 4)         BEQ     $83F6                                      ;         BEQ     $83F6
+83D4-                457      R2LBL27
+83D4-                458      L83D4:                                                     ; L83D4:
+83D4-7D 40 02        459 ( 6)         TST     $4002                                      ;         TST     $4002
+83D7-2A F2           460 ( 4)         BPL     $83CB                                      ;         BPL     $83CB
+83D9-5C              461 ( 2)         INCB                                               ;         INCB
+83DA-C1 19           462 ( 2)         CMPB    #$19                                       ;         CMPB    #$19
+83DC-23 F6           463 ( 4)         BLS     $83D4                                      ;         BLS     $83D4
+83DE-20 16           464 ( 4)         BRA     $83F6                                      ;         BRA     $83F6
+83E0-                465      R2LBL28
+83E0-                466      L83E0:                                                     ; L83E0:
+83E0-CE FF FF        467 ( 3)         LDX     #$FFFF                                     ;         LDX     #$FFFF
+83E3-                468      R2LBL29
+83E3-                469      L83E3:                                                     ; L83E3:
+83E3-09              470 ( 4)         DEX                                                ;         DEX
+83E4-01              471 ( 2)         NOP                                                ;         NOP
+83E5-26 FC           472 ( 4)         BNE     $83E3                                      ;         BNE     $83E3
+83E7-96 FF           473 ( 3)         LDAA    $FF                                        ;         LDAA    $FF
+83E9-27 04           474 ( 4)         BEQ     $83EF                                      ;         BEQ     $83EF
+83EB-31              475 ( 4)         INS                                                ;         INS
+83EC-31              476 ( 4)         INS                                                ;         INS
+83ED-20 D7           477 ( 4)         BRA     $83C6                                      ;         BRA     $83C6
+83EF-                478      R2LBL30
+83EF-                479      L83EF:                                                     ; L83EF:
+83EF-DE F0           480 ( 4)         LDX     $F0                                        ;         LDX     $F0
+83F1-DF F9           481 ( 5)         STX     $F9                                        ;         STX     $F9
+83F3-86 04           482 ( 2)         LDAA    #$04                                       ;         LDAA    #$04
+83F5-                483      R2LBL31
+83F5-                484      L83F5:                                                     ; L83F5:
+83F5-31              485 ( 4)         INS                                                ;         INS
+83F6-                486      R2LBL32
+83F6-                487      L83F6:                                                     ; L83F6:
+83F6-33              488 ( 4)         PULB                                               ;         PULB
+83F7-39              489 ( 5)         RTS                                                ;         RTS
+83F8-                490                                                                 ;
+83F8-                491      ; Interrupt Request Vector                                 ;         ; Interrupt Request Vector
+83F8-                492      ;                                                          ;         ;
+83F8-82              493              .DB     $82                                        ;         .DB     $82
+83F9-41              494              .DB     $41                                        ;         .DB     $41
+83FA-                495                                                                 ;
+83FA-                496      ; Software Interrupt Vector                                ;         ; Software Interrupt Vector
+83FA-                497      ;                                                          ;         ;
+83FA-82              498              .DB     $82                                        ;         .DB     $82
+83FB-9B              499              .DB     $9B                                        ;         .DB     $9B
+83FC-                500                                                                 ;
+83FC-                501      ; Non-Maskable Interrupt Vector                            ;         ; Non-Maskable Interrupt Vector
+83FC-                502      ;                                                          ;         ;
+83FC-00              503              .DB     $00                                        ;         .DB     $00
+83FD-83              504              .DB     $83                                        ;         .DB     $83
+83FE-                505                                                                 ;
+83FE-                506      ; Reset Vector                                             ;         ; Reset Vector
+83FE-                507      ;                                                          ;         ;
+83FE-82              508              .DB     $82                                        ;         .DB     $82
+83FF-D4              509              .DB     $D4                                        ;         .DB     $D4

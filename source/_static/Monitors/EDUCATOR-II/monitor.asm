@@ -157,6 +157,7 @@ L82F3:
         LDS     #$00FE
         BSR     $8361
         BRA     $82D7
+        
 L8300:
         SEI
         BSR     $8339

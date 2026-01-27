@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: 128 x 8-Bit Static Random Access Memory (MCM6810)
 
@@ -13,6 +11,7 @@
       "|present| :ref:`MCM6810P <MCM6810P>`","Plastic","","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM6810S <MCM6810S>`","CERDIP","1MHz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM68A10L <MCM68A10L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MCM6810CPD <MCM6810CPD>`","Plastic","1MHz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MCM68B10P <MCM68B10P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B","1MHz","-55-125\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810EL <MCM6810EL>`","Ceramic","TBD","TBD",""
@@ -21,5 +20,6 @@
       "|present| :ref:`MCM6810L <MCM6810L>`","Ceramic","","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM6810CL <MCM6810CL>`","Plastic","1MHz","-55-125\ :sup:`o`\ C",""
       "|present| :ref:`MCM68A10CL <MCM68A10CL>`","Ceramic","1.5MHz","-40-85\ :sup:`o`\ C",""
+      "|present| :ref:`HEPC4811P <HEPC4811P>`","Plastic","","",""
       "|notpresent| :ref:`MCM6810CJCS <MCM6810CJCS>`","MIL-STD-883C","","",""
       "|present| :ref:`MCM68A10P <MCM68A10P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C",""

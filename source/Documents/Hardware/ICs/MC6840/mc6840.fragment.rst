@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Programmable Timer Module (PTM) (MC6840)
 
@@ -14,6 +12,7 @@
       "|notpresent| :ref:`MC6840CL <MC6840CL>`","Ceramic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A40CS <MC68A40CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MC68B40P <MC68B40P>`","Plastic","","",""
+      "|notpresent| :ref:`MC6840CPD <MC6840CPD>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6840P <MC6840P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6840S <MC6840S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6840CS <MC6840CS>`","CERDIP","1 Mhz","-40-85\ :sup:`o`\ C",""

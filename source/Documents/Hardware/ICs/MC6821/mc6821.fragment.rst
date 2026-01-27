@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Peripheral Interface Adapter (MC6821)
 

@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 09-01-2026).
+This is the timeline of acquisitions (as at 27-01-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -178,3 +178,7 @@ This is the timeline of acquisitions (as at 09-01-2026).
    02-DEC-2025,:ref:`MDOS 2.20 <MDOS220>`
    27-DEC-2025,:ref:`MEX6800-1 M6800 MPU Module <MEX6800-1>`
    08-JAN-2026,:ref:`MC6840L Programmable Timer Module (PTM) <MC6840L>`
+   14-JAN-2026,:ref:`HEPC4801L HEP version of MC6800 <HEPC4801L>`
+   14-JAN-2026,:ref:`HEPC4821L HEP version of MC6820 <HEPC4821L>`
+   14-JAN-2026,:ref:`HEPC4811P 128 x 8-bit RAM <HEPC4811P>`
+   14-JAN-2026,:ref:`Motorola HEP Kit Educator II <HEPEducatorKt2>`

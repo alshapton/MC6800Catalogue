@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: NonInverting Quad Three-State Bus Transceiver (MC6889)
 

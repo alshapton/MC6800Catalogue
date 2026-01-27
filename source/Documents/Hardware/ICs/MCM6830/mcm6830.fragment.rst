@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: 1024 Byte ROM (MCM6830)
 

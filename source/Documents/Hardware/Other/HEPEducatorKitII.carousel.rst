@@ -127,6 +127,16 @@
 
     .. card::
 
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.32.png
+         :width: 800
+
+    .. card::
+
+      .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.33.png
+         :width: 800
+
+    .. card::
+
       .. image:: ../../../images/Hardware/Other/HEPEducatorKitII/hk1000.4.jpg
          :width: 800
 

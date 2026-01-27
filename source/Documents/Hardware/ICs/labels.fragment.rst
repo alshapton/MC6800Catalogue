@@ -42,6 +42,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iHEPC4811P|  image:: /images/Hardware/ICs/MCM6810/HEPC4811P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMCM68A10P|  image:: /images/Hardware/ICs/MCM6810/MCM68A10P.png
    :width: 200
    :class: no-scaled-links
@@ -155,6 +159,10 @@
    :class: no-scaled-links
 
 .. |iXC6820|  image:: /images/Hardware/ICs/MC6820/XC6820.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iHEPC4821L|  image:: /images/Hardware/ICs/MC6820/HEPC4821L.png
    :width: 200
    :class: no-scaled-links
 

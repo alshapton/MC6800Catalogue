@@ -25,6 +25,7 @@ This is a catalogue of the items produced by Motorola in the MC6800 Range of CPU
 .. Important:: 
    2nd source manufacturers (e.g. Hitachi, NEC, Advanced Micros etc.) are not specifically included in this collection unless an item of hardware is not easily available in its native Motorola implementation.
 
+Information about the broad capabilities of the family can be founod on :ref:`family`.
 
 Scope
 =====

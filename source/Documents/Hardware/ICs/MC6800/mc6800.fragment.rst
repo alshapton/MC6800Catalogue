@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Microprocessor Unit (MC6800)
 
@@ -14,7 +12,7 @@
       "|notpresent| :ref:`MC68A00CS <MC68A00CS>`","CERDIP","1.5Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6800S <MC6800S>`","CERDIP","1Mhz","-0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6800P <MC6800P>`","Plastic","1Mhz","-0-70\ :sup:`o`\ C",""
-      "|notpresent| :ref:`HEPC4801L <HEPC4801L>`","Ceramic","","",""
+      "|present| :ref:`HEPC4801L <HEPC4801L>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MC68B00P <MC68B00P>`","Plastic","2Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC68B00S <MC68B00S>`","CERDIP","2Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`SC44204P <SC44204P>`","Plastic","","",""

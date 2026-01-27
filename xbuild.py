@@ -362,7 +362,6 @@ def update_IC_pre_fragments():
             
         outputfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('pre','new')+ '.' + SUFFIX
         with open(outputfile,'w') as op:
-            op.write(':nosearch:\n\n')
             op.write('\n.. collapse:: ' + lines[0] + '\n\n')
             if len(ttop)>1:
                 op.write(ttop)
@@ -378,7 +377,7 @@ def update_IC_pre_fragments():
                 op.write('      :widths: auto\n\n')
 
             for tfile in targetfiles:
-                if 'fragment' not in tfile :
+                if 'fragment' not in tfile and 'outline' not in tfile and 'root' not in tfile:
                     fragfile = os.path.dirname(yfile) + OSSEP + tfile
                     with open(fragfile,'r') as ff: 
                         fflines = ff.readlines()
@@ -773,6 +772,7 @@ def update_storage():
     cnt=0
     for r in f:
         FN=str(cnt)
+        
         if cnt > 0:
             # Don't bother writing the first component of the split file - irrelevant
             with open(TABLES_FILE + '.' + FN + ".tiny","w") as ci:
@@ -800,7 +800,8 @@ def update_storage():
                 line = tf.readline()
             f = data.split('#LVL2')
             sname = storagename[1:].replace(' ','_').strip()
-            outputfile_base = lvl2file.replace('.tiny','').replace('rst.','')[:-2] + '.' + sname            
+            outputfile_base = lvl2file.replace('.tiny','').replace('rst.','')[:-2] + '.' + sname
+            outputfile_base = outputfile_base.replace('..','.')
             for i in range(1,len(f)):
                 minimum = f[i][:-3]
                 start = f[i].find('.. collapse::')
@@ -814,7 +815,7 @@ def update_storage():
                     if not stripped.endswith('`>\n'):
                         stripped = stripped + '>`\n'
                     opf.write(stripped)
-
+    
     # Remove specific known problematic file 
     console.print("\n\t\tRemove specific known problematic file",style="warning")              
     os.remove('source/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
@@ -848,12 +849,11 @@ def update_storage():
                 if not pl.startswith('>'):
                     fw.write(pl)                    
 
-        
         tfname = os.path.basename(snippetfile).split('.')
         if tfname[2] == tfname[3]:
-            display_tfname = tfname[2] + '.snippet'
+            display_tfname = tfname[2] + '.snippet'.replace('..','.')
         else:
-            display_tfname=os.path.basename(snippetfile).replace('tables.fragment.','')
+            display_tfname=os.path.basename(snippetfile).replace('tables.fragment..','').replace('tables.fragment.','')
         console.print('\t\t\t' + display_tfname,style="info")
     
     # Move snippets into snippets folder
@@ -918,6 +918,78 @@ def update_storage():
 
     console.print('\nLocations fully updated',style="info")      
 
+def update_IC_root():
+    console.print('\n\tUpdating IC root pages',style="info")
+    
+    tableslines=[]
+
+    files = glob.glob('**/MC*/*outline', recursive=True)
+    for file in files:
+        filinfo=os.path.split(os.path.abspath(file))  
+        filpath=filinfo[0]
+        filname=filinfo[1].replace('outline','outline.rst')
+        ICNUMBER=filname.replace('.outline.rst','')
+        PREFFILE=filpath + OSSEP + filname.replace('.outline.rst','')+'.pre.fragment'
+        ICFILE=filpath + OSSEP + filname.replace('.outline.rst','')+'.fragment.rst'
+        fulltarget=filpath + OSSEP + filname
+
+        ROOTFILE=PREFFILE.replace('.pre.fragment','.root.rst')
+        OUTFILE=PREFFILE.replace('.pre.fragment','.outline')
+        with open(PREFFILE,"r") as c:
+            ICNAME=c.readline()
+
+        with open(OUTFILE,"r") as c:
+            lines = [line.rstrip() for line in c]
+
+        datasheets=[]
+        
+        for line in lines:
+            if '#DS#' in line:
+                datasheets.append(line.replace('#DS#','').strip())
+            if '#OUTLINE#' in line:
+                tableslines.append(line.replace('#OUTLINE#','').strip())
+                
+        with open(ICFILE,"r") as c:
+            iclines = [line.rstrip() for line in c]
+
+        with open(ROOTFILE,"w") as c:
+                c.write(':orphan:\n\n')
+                c.write('.. _'+ICNUMBER+'root:\n\n')
+                c.write (ICNAME)
+                c.write('=' * len(ICNAME) + '\n\n')
+                if len(datasheets)>0:
+                    c.write('.. rubric:: Datasheets\n\n')
+                    for sheet in datasheets:
+                        c.write(':ref:`' + sheet + '`.\n\n')
+                c.write('\n.. rubric:: Integrated Circuits\n\n')
+
+                for icline in iclines:
+
+                    if "collapse" not in icline:
+                        if "csv" in icline:
+                            c.write(icline.lstrip() + '\n')
+
+                        if icline.lstrip().startswith('"'):
+                            c.write(icline + '\n')
+                    
+                        if ":width" in icline:
+                            c.write('   ' + icline.replace('   ','') + '\n\n')
+
+                        if ":header" in icline:
+                            c.write('   ' + icline.replace('   ','') + '\n')
+    
+    if len(tableslines)>0:
+        with open('xbuild_support/familyfile.inc',"w") as c:
+            c.write('.. csv-table::\n')
+            c.write('      :header: "Device","Tech","RAM","I/O Lines","Special I/O","Inst","Clock","Timer"\n')
+            c.write('      :widths: 16,12,8,12,16,12,12,12\n')
+            c.write('\n')
+            for tableline in sorted(tableslines):
+                c.write('      '+tableline+'\n')
+
+    console.print('\n\tCompleted updating IC root pages',style="info")
+
+
 def update_IC_index():
 
     console.print('\n\tUpdating IC index',style="info")
@@ -958,12 +1030,10 @@ def update_IC_index():
     
     IC_FRAGMENTS_INDEX=IC_LOCATIONS + OSSEP + 'icindex.fragment.rst'
     with open(IC_FRAGMENTS_INDEX,"w") as c:
-        c.write(':nosearch:\n\n')
         for chip in chips:
             c.write('\n.. include:: .' + OSSEP + chip + OSSEP + chip.lower() + '.fragment.rst\n|\n')
 
     console.print('\n\tCompleted updating IC index\n',style="info")
-
 
 def do_underoffer():
     ANYUNDEROFFER=False
@@ -2203,8 +2273,11 @@ def write_IC(filename,chipinfo):
             locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
             locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
         if chipinfo["Storage"] == "Briefcase":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'EDUCATORII'}\n\n"
             locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+        if chipinfo["Storage"] == "EDUCATORII":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
+            locationfull=':ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`'    
         if chipinfo["Storage"] == "MEK6800D2":
             MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
             locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
@@ -2322,6 +2395,7 @@ while True:
 
             update_carousel()
             update_IC_pre_fragments()
+            update_IC_root()
             update_IC_index()
             update_storage()
             do_collection()

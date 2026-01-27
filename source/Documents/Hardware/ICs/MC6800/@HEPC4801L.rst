@@ -2,7 +2,7 @@
 
 .. _HEPC4801L:
 
-.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'EDUCATORII'}
 
 HEPC4801L HEP version of MC6800
 ===============================
@@ -16,14 +16,14 @@ HEPC4801L HEP version of MC6800
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","7632B"
+   "Manufacture Date","02-AUG-1976 to 08-AUG-1976"
+   "Mask","PK"
    "Packaging","Ceramic"
    "Status","HEP"
-   "Location","TBD"
-   "Temperature",""
-   "Frequency",""
+   "Location",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
+   "Temperature","-40-85\ :sup:`o`\ C"
+   "Frequency","1Mhz"
    "Notes",""
 
 .. rubric:: Collection Information
@@ -32,5 +32,5 @@ HEPC4801L HEP version of MC6800
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |present| 14-JAN-2026
 

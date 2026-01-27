@@ -1,5 +1,3 @@
-:nosearch:
-
 
 .. collapse:: Advanced Data-Link Controller (ADLC) (MC6854)
 
