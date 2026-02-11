@@ -2,13 +2,13 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 27-01-2026) in transit.
+This is the current set of items (as at 11-02-2026) in transit.
 
 
-.. rubric:: ICs
+.. rubric:: Manuals
 
 .. csv-table:: 
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	MCM6810AP,":ref:`MCM6810AP 128 x 8-bit RAM <MCM6810AP>` "
+	M68PLM(D2),":ref:`Motorola PASCAL Language Manual <M68PLM(D2)>` "
