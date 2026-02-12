@@ -2395,7 +2395,7 @@ while True:
 
             update_carousel()
             update_IC_pre_fragments()
-            update_IC_root()
+            #update_IC_root()
             update_IC_index()
             update_storage()
             do_collection()
