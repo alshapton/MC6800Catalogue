@@ -21,7 +21,6 @@ extensions = [
         'sphinx_collapse',
         'sphinx_design',
         'linuxdoc.rstFlatTable',
-        'hoverxref.extension',
         'sphinx.ext.extlinks',
 ]
 

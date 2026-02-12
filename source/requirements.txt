@@ -1,4 +1,3 @@
 sphinx_design
 sphinx_collapse
 linuxdoc
-sphinx-hoverxref
