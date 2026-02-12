@@ -222,10 +222,6 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iHEPC4801L|  image:: /images/Hardware/ICs/MC6800/HEPC4801L.png
-   :width: 200
-   :class: no-scaled-links
-
 .. |iMC68B00P|  image:: /images/Hardware/ICs/MC6800/MC68B00P.png
    :width: 200
    :class: no-scaled-links
