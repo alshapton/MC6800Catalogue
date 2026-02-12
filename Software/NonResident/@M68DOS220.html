@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MDOS 2.20 &#8212; Motorola MC6800 Family Product Catalogue 0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_collapse.css?v=226d88b4" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=324bbda0" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="../../_static/documentation_options.js?v=10f1778b"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="mdos220"></span><section id="mdos-2-20">
+<h1>MDOS 2.20<a class="headerlink" href="#mdos-2-20" title="Link to this heading">¶</a></h1>
+<a class="reference internal image-reference" href="../../_images/MDOS220.1.png"><img alt="../../_images/MDOS220.1.png" class="align-center" src="../../_images/MDOS220.1.png" style="width: 400px;" />
+</a>
+<a class="reference internal image-reference" href="../../_images/MDOS220.2.png"><img alt="../../_images/MDOS220.2.png" class="align-center" src="../../_images/MDOS220.2.png" style="width: 400px;" />
+</a>
+<dl class="field-list simple">
+<dt class="field-odd">nosearch<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Notes</label><div class="sd-tab-content docutils">
+<p>This is a MDOS 2.20 bootable disk.</p>
+<p>A disk image of an MDOS 2.20 bootable disk in .dsk format</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Disk Contents</label><div class="sd-tab-content docutils">
+<p>Directory Listing of MDOS 2.20 DOSGEN’d System Disk</p>
+<p><strong>Including hidden files</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>=DIR;S
+DRIVE : 0   DISK I.D. : MDOS0220
+BINEX   .CM
+LIST    .CM
+MDOSOV0 .SY
+DIR     .CM
+MERGE   .CM
+RLOAD   .CM
+MDOSOV4 .SY
+MDOS    .SY
+MDOSOV6 .SY
+REVASM  .CM
+RASM    .CM
+FREE    .CM
+ROLLOUT .CM
+MEMLOC  .LO
+EQU     .SA
+DUMP    .CM
+EXBIN   .CM
+NAME    .CM
+MDOSOV1 .SY
+PROMPROG.CM
+PATCH   .CM
+ASM     .CM
+BLOKEDIT.CM
+ECHO    .CM
+EDIT    .CM
+EDITM   .CM
+LOAD    .CM
+MDOSOV3 .SY
+MDOSER  .SY
+DEL     .CM
+CHAIN   .CM
+BACKUP  .CM
+REPAIR  .CM
+MDOSOV5 .SY
+DOSGEN  .CM
+EMCOPY  .CM
+MECOPY  .CM
+COPY    .CM
+FORMAT  .CM
+SCRIBE  .CM
+MDOSOV2 .SY
+EXBUG   .CM
+TOTAL DIRECTORY ENTRIES SHOWN : 042/$2A
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Banners</label><div class="sd-tab-content docutils">
+<p><strong>Startup Banner:</strong></p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MDOS</span> <span class="mf">02.20</span>
+<span class="o">=</span>
+</pre></div>
+</div>
+<p>Contents of software on disk:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ASM</span>
+<span class="n">MDOS</span> <span class="n">ASSEMBLER</span> <span class="mf">2.0</span>
+<span class="n">COPYRIGHT</span> <span class="n">MOTOROLA</span> <span class="mi">1977</span>
+
+<span class="n">REVASM</span>
+<span class="mi">6800</span> <span class="n">REVERSE</span> <span class="n">ASSEMBLER</span>  <span class="p">(</span><span class="n">FOR</span> <span class="n">SOURCE</span><span class="p">)</span>
+
+<span class="n">EDIT</span>
+<span class="n">MDOS</span> <span class="n">EDITOR</span> <span class="mf">2.0</span>
+<span class="n">COPYRIGHT</span> <span class="n">MOTOROLA</span> <span class="mi">1977</span>
+
+<span class="n">EDITM</span>
+<span class="n">EDITM</span> <span class="n">RELEASE</span> <span class="mf">2.9</span><span class="n">A</span>
+<span class="n">COPYRIGHT</span> <span class="n">BY</span> <span class="n">MOTOROLA</span> <span class="mi">1978</span>
+
+<span class="n">EXBUG</span>
+<span class="n">EXBUG</span> <span class="mf">1.1</span>
+
+<span class="n">PROMPROG</span>
+<span class="n">PROM</span> <span class="n">PROGRAMMER</span> <span class="mf">2.10</span>
+<span class="n">COPYRIGHT</span> <span class="n">MOTOROLA</span> <span class="mi">1977</span>
+
+<span class="n">RLOAD</span>
+<span class="n">MDOS</span> <span class="n">LINKING</span> <span class="n">LOADER</span> <span class="n">REV</span> <span class="mf">2.01</span>
+<span class="n">COPYRIGHT</span> <span class="n">BY</span> <span class="n">MOTOROLA</span> <span class="mi">1977</span>
+
+<span class="n">SCRIBE</span>
+<span class="n">SCRIBE</span> <span class="n">TEXT</span> <span class="n">PROCESSOR</span> <span class="mf">02.08</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+EQU file</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>PAGE 001  EQU     .SA:0
+
+PAGE
+*
+* MDOS VERSION 02.20 -- SYSTEM EQUATE FILE -- FEB. 24,1978
+*
+SPC 3
+*
+*DEFINE MULTI-SECTOR/SINGLE SECTOR I/O--RESIDENT MDOS ONLY
+*
+MULTS EQU 0 . 0 =&gt; SINGLE SECTOR, 1 =&gt; MULTIPLE SECTOR
+*
+*DEFINE TYPE OF MDOS--RESIDENT MDOS ONLY
+*
+MDOSF$ EQU 0 . 0 =&gt; MDOS, 1 =&gt; OEM MDOS
+SPC 3
+*
+* S K I P 2     M A C R O
+*
+* THE GENERATED BYTE IS A &quot;COMPARE INDEX IMMEDIATE&quot;.
+* THE EXECUTION OF THE BYTE WILL CHANGE THE CONDITION CODES ONLY.
+* NO REGISTERS ARE AFFECTED.  THUS, A ONE BYTE INSTRUCTION
+* IS FORMED THAT SKIPS FORWARD TWO BYTES.
+*
+SKIP2 MACR
+FCB $8C .
+ENDM
+*
+* S K I P 1     M A C R O
+*
+* THE SAME CONCEPT AS THE &quot;SKIP2&quot; MACRO IS USED, EXCEPT THAT
+* A &quot;BIT TEST ACCUMULATOR A IMMEDIATE&quot; OP CODE IS GENERATED.
+*
+SKIP1 MACR
+FCB $85
+ENDM
+*
+* S C A L L     M A C R O    (SYSTEM FUNCTION CALL)
+*
+SCALL MACR
+IFEQ NARG-1
+SWI
+FCB \0!.%01111111
+ENDC
+*
+IFNE NARG-1
+FAIL * UNDEFINED SWI CALL ARGUMENT *
+ENDC
+ENDM
+*
+* U C A L L     M A C R O    (USER FUNCTION CALL)
+*
+UCALL MACR
+IFEQ NARG-1
+SWI
+FCB \0!+%10000000
+ENDC
+*
+IFNE NARG-1
+SCALL
+
+
+
+
+
+
+PAGE 002  EQU     .SA:0
+
+ENDC
+ENDM
+*
+* S E Q     M A C R O      (NUMBERING SEQUENTIAL EQUATES)
+*
+SEQ MACR
+IFNE NARG
+\0 EQU * .
+ENDC
+ORG *+1 .
+ENDM
+PAGE
+*
+* S Y S T E M     F U N C T I O N     D E F I N I T I O N S
+*
+*
+* SET LOCATION COUNT TO 0 FOR THE EQUATE DEFINITIONS
+*
+.$SAV SET * . SAVE OLD LOCATION COUNT
+ORG $0 .
+*
+*
+*
+SEQ .RESRV . RESERVE A DEVICE
+SEQ .RELES . RELEASE A DEVICE
+SEQ .OPEN . OPEN A FILE
+SEQ .CLOSE . CLOSE A FILE
+SEQ .GETRC . READ A RECORD
+SEQ .PUTRC . WRITE A RECORD
+SEQ .REWND . POSITION TO BEGINNING OF FILE
+SEQ .GETLS . READ LOGICAL SECTOR
+SEQ .PUTLS . WRITE LOGICAL SECTOR
+SEQ .KEYIN . CONSOLE INPUT
+SEQ .DSPLY . CONSOLE OUTPUT (TERM W/ CR)
+SEQ .DSPLX . CONSOLE OUTPUT (TERM W/ EOT)
+SEQ .DSPLZ . CONSOLE OUTPUT (TERM W/ EOT, NO CR/LF AT END)
+SEQ .CKBRK . CHECK CONSOLE FOR BREAK KEY
+SEQ .DREAD . EROM DISK READ
+SEQ .DWRIT . EROM DISK WRITE
+SEQ .MOVE . MOVE A STRING
+SEQ .CMPAR . COMPARE STRINGS
+SEQ .STCHB . STORE BLANKS
+SEQ .STCHR . STORE CHARACTERS
+SEQ .ALPHA . CHECK ALPHABETIC CHARACTER
+SEQ .NUMD . CHECK DECIMAL DIGIT
+SEQ .ADDAM . INCREMENT MEMORY (DOUBLE BYTE) BY A
+SEQ .SUBAM . DECREMENT MEMORY (DOUBLE BYTE) BY A
+SEQ .MMA . MULTIPLY (SHIFT LEFT) MEMORY BY A (COUNT)
+SEQ .DMA . DIVIDE (SHIFT RIGHT) MEMORY BY A (COUNT)
+SEQ .MDENT . ENTER MDOS WITHOUT RELOADING
+SEQ .LOAD . LOAD A FILE FROM DISK
+SEQ .DIRSM . DIRECTORY SEARCH AND MODIFY
+SEQ .PFNAM . PROCESS FILE NAME
+SEQ .ALUSM . ALLOCATE USER MEMORY
+SEQ .CHANG . CHANGE NAME/ATTRIBUTES
+SEQ .MDERR . MDOS ERROR MESSAGE HANDLER
+SEQ .ALLOC . ALLOCATE DISK SPACE
+SEQ .DEALC . RETURN DISK SPACE
+
+
+
+
+
+
+PAGE 003  EQU     .SA:0
+
+SEQ .EWORD . SET ERROR STATUS WORD FOR CHAIN
+SEQ .TXBA . TRANSFER X TO B,A
+SEQ .TBAX . TRANSFER B,A TO X
+SEQ .XBAX . EXCHANGE B,A AND X
+SEQ .ADBX . ADD B TO X
+SEQ .ADAX . ADD A TO X
+SEQ .ADBAX . ADD B,A TO X
+SEQ .ADXBA . ADD X TO B,A
+SEQ .SUBX . SUBTRACT B FROM X
+SEQ .SUAX . SUBTRACT A FROM X
+SEQ .SUBAX . SUBTRACT B,A FROM X
+SEQ .SUXBA . SUBTRACT X FROM B,A
+SEQ .CPBAX . COMPARE B,A TO X
+SEQ .ASRX . SHIFT X RIGHT (ARITHMETIC)
+SEQ .ASLX . SHIFT X LEFT (ARITHMETIC/LOGICAL)
+SEQ .PSHX . PUSH X ON STACK
+SEQ .PULX . PULL X FROM STACK
+SEQ .PRINT . PRINT-TERMINATE WITH CR
+SEQ .PRINX . PRINT-TERMINATE WITH EOT
+SEQ .GETFD . READ FDR (RESIDENT MDOS ONLY)
+SEQ .PUTFD . WRITE FDR (RESIDENT MDOS ONLY)
+SEQ .PUTEF . WRITE EOF (RESIDENT MDOS ONLY)
+SEQ .EREAD . DISK READ W/ ERR RETN
+SEQ .EWRIT . DISK WRITE W/ ERR RETN
+IFNE MULTS
+SEQ .MREAD . MULTIPLE SECTOR READ
+SEQ .MWRIT . MULTIPLE SECTOR WRITE
+SEQ .MERED . MULTIPLE SECTOR READ W/ ERR RETURN
+SEQ .MEWRT . MULTIPLE SECTOR WRITE W/ ERR RETURN
+ENDC
+IFEQ MULTS
+SEQ
+SEQ
+SEQ
+SEQ
+ENDC
+SEQ .BOOT . RELOAD MDOS
+*
+ORG .$SAV . RESTORE LOCATION COUNTER
+PAGE
+*
+* A S C I I     C O N T R O L     C H A R A C A T E R S
+*
+NULL EQU 0 . NULL
+SOH EQU 1 . START OF HEADING
+STX EQU 2 . START OF TEXT
+ETX EQU 3 . END OF TEXT
+EOT EQU 4 . END OF TRANSMISSION
+ENQ EQU 5 . ENQUIRY (WRU - WHO ARE YOU)
+ACK EQU 6 . ACKNOWLEDGE
+BEL EQU 7 . BELL
+BS EQU 8 . BACKSPACE
+HT EQU 9 . HORIZONTAL TAB
+LF EQU $A . LINE FEED
+VT EQU $B . VERTICAL TAB
+FF EQU $C . FORM FEED
+CR EQU $D . CARRIAGE RETURN
+SO EQU $E . SHIFT OUT
+
+
+
+
+
+
+PAGE 004  EQU     .SA:0
+
+SI EQU $F . SHIFT IN
+DLE EQU $10 . DATA LINK ESCAPE
+DC1 EQU $11 . DEVICE CONTROL 1
+DC2 EQU $12 . DEVICE CONTROL 2
+DC3 EQU $13 . DEVICE CONTROL 4
+DC4 EQU $14 . DEVICE CONTROL 4
+NAK EQU $15 . NEGATIVE ACKNOWLEDGE
+SYN EQU $16 . SYNCHRONOUS IDLE
+ETB EQU $17 . END OF TRANSMISSION BLOCK
+CAN EQU $18 . CANCEL
+EM EQU $19 . END OF MEDIUM
+SUB EQU $1A . SUBSTITUTE
+ESC EQU $1B . ESCAPE
+FS EQU $1C . FILE SEPARATOR
+GS EQU $1D . GROUP SEPARATOR
+RS EQU $1E . RECORD SEPARATOR
+US EQU $1F . UNIT SEPARATOR
+SPACE EQU $20 . SPACE (WORD SEPARATOR)
+RUBOUT EQU $7F . DELETE (RUB OUT)
+*
+* S P E C I A L     C H A R A C T E R     E Q U A T E S
+*
+SUFDLM EQU &#39;. . SUFFIX DELIMETER
+OPTDLM EQU &#39;; . OPTIONS DELIMETER
+DRVDLM EQU &#39;: . LOGICAL DRIVER DELIMETER
+DEVDLM EQU &#39;# . GENERIC DEVICE NAME DELIMETER
+FAMDLM EQU &#39;* . FAMILY NAME/SUFFIX DELIMETER
+E$FATL EQU 1!&lt;7 . FATAL ERROR BIT
+PAGE
+*
+* M D O S     S E C T O R     E Q U A T E S
+*
+SC$DID EQU 0 . DISK ID PHYSICAL SECTOR NUMBER
+SC$CAT EQU 1 . CLUSTER ALLOCATION TABLE PHSYICAL SECTOR NUMBER
+SC$LOK EQU 2 . LOCKOUT CLUSTER TABLE PHYSICAL SECTOR NUMBER
+SC$DIR EQU 3 . DIRECTORY START PHYSICAL SECTOR NUMBER
+SC$DRE EQU $16 . DIRECTORY END PHYSICAL SECTOR NUMBER
+SC$BB EQU $17 . BOOT BLOCK PHYSICAL SECTOR NUMBER
+SC$DOS EQU $18 . OPERATING SYSTEM PHSYICAL SECTOR NUMBER (RIB ADDRESS)
+SC$SIZ EQU 128 . SECTOR SIZE IN BYTES
+SC$TRK EQU 26 . NUMBER OF SECTORS / TRACK
+SC$CLS EQU 4 . NUMBER OF SECTORS / CLUSTER
+SC$MAX EQU 2000 . MAXIMUM NO. OF USABLE SECTORS
+DFCLS$ EQU 32 . DEFAULT NO. OF CLUSTERS
+*
+* D I S K    I D     S E C T O R     O F F S E T S
+*
+DID$ID EQU 0 . OFFSET TO DISK ID (8 BYTES)
+DID$VN EQU 8 . OFFSET TO VERSION NUMBER (2 BYTES)
+DID$RN EQU 10 . OFFSET TO REVISION NUMBER (2 BYTES)
+DID$DT EQU 12 . OFFSET TO DATE (6 BYTES)
+DID$NM EQU 18 . OFFSET TO USER NAME (20 BYTES)
+DID$RB EQU 38 . OFFSET TO RIB ADDRS. (20 BYTES)
+*
+* D I R E C T O R Y     E N T R Y      O F F S E T S
+*
+DIR$NM EQU 0 . OFFSET TO NAME (8 BYTES)
+DIR$SX EQU 8 . OFFSET TO SUFFIX (2 BYTES)
+
+
+
+
+
+
+PAGE 005  EQU     .SA:0
+
+DIR$RB EQU 10 . OFFSET TO RIB ADDRESS (2 BYTES)
+DIR$AT EQU 12 . OFFSET OF ATTRIBUTES (2 BYTES)
+DIR$NU EQU 14 . OFFSET TO NOT USED AREA (2 BYTES)
+*
+* R . I . B .     B I N A R Y     F I L E     O F F S E T S
+*
+RIB$LB EQU 117 . NUMBER OF BYTES IN LAST SECTOR
+RIB$SL EQU 118 . NUMBER OF SECTORS TO LOAD
+RIB$LA EQU 120 . MEMORY LOAD ADDRESS
+RIB$SA EQU 122 . START EXECUTION ADDRESS
+PAGE
+*
+* U N I F I E D     I / O      C O N T R O L     B L O C K
+*
+*                     O F F S E T S
+*
+*
+IOCSTA EQU 0 . ERROR STATUS
+IOCDTT EQU 1 . DATA TRANSFER TYPE
+IOCDBP EQU 2 . DATA BUFFER POINTER
+IOCDBS EQU 4 . DATA BUFFER START ADDRESS
+IOCDBE EQU 6 . DATA BUFFER END ADDRESS
+IOCGDW EQU 8 . GENERIC DEVICE TYPE/CONTROL DESCRIPTOR ADDRESS
+IOCLUN EQU 10 . LOGICAL UNIT NUMBER
+IOCNAM EQU 11 . FILE NAME
+IOCMLS EQU 11 . MAXIMUM REFERENCED LOGICAL SECTOR NUMBER
+IOCSDW EQU 13 . CURRENT SEGMENT DESCRIPTOR WORD
+IOCSLS EQU 15 . 1ST LOGICAL SECTOR OF CURRENT SEGMENT
+IOCLSN EQU 17 . CURRENT LOGICAL SECTOR NUMBER
+IOCSUF EQU 19 . FILE NAME SUFFIX
+IOCEOF EQU 19 . LOGICAL END OF FILE
+IOCRIB EQU 21 . PHYSICAL DISK ADDRESS OF R.I.B.
+IOCFDF EQU 23 . FILE DESCRIPTOR FLAGS
+IOCDEN EQU 27 . DIRECTORY ENTRY NUMBER
+IOCSBP EQU 29 . SECTOR BUFFER POINTER/INITIAL ALLOCATION
+IOCSBS EQU 31 . SECTOR BUFFER START ADDRESS
+IOCSBE EQU 33 . SECTOR BUFFER END ADDRESS
+IOCSBI EQU 35 . SECTOR BUFFER INTERNAL PTR
+IOCBLN EQU IOCSBI+2-IOCSTA . IOCB LENGTH
+*
+* U N I F I E D     I / O     E R R O R     S T A T U S E S
+*
+.$SAV SET * . REMEMBER THE CURRENT LOCATION COUNTER
+ORG $0 . RESET IT TO ZERO TO USE THE SEQ MACRO
+*
+SEQ I$NOER . NO ERRORS, NORMAL RETURN
+SEQ I$NODV . NO SUCH DEVICE
+SEQ I$RESV . DEVICE RESERVED ALREADY
+SEQ I$NORV . DEVICE NOT RESERVED
+SEQ I$NRDY . DEVICE NOT READY
+SEQ I$IVDV . INVALID DEVICE
+SEQ I$DUPE . DUPLICATE FILE NAME
+SEQ I$NONM . FILE NAME NOT FOUND
+SEQ I$CLOS . FILE NAME NOT OPEN/OR FILE NOT CLOSED
+SEQ I$EOF . END OF FILE
+SEQ I$FTYP . INVALID FILE TYPE
+SEQ I$DTYP . INVALID DATA TRANSFER TYPE
+SEQ I$EOM . END OF MEDIA
+
+
+
+
+
+
+PAGE 006  EQU     .SA:0
+
+SEQ I$BUFO . BUFFER OVERFLOW
+SEQ I$CKSM . CHECKSUM ERROR
+SEQ I$WRIT . FILE IS WRITE PROTECTED
+SEQ I$DELT . FILE IS DELETE PROTECTED
+SEQ I$RANG . LOGICAL SECTOR NUMBER OUT OF RANGE
+SEQ I$FSPC . NO DISK FILE SPACE AVAILABLE
+SEQ I$DSPC . NO DIRECTORY SPACE AVAILABLE
+SEQ I$SSPC . NO SEGMENT DESCRIPTOR SPACE AVAILABLE
+SEQ I$IDEN . INVALID DIR. ENTRY NO.
+SEQ I$RIB . INVALID RIB
+SEQ I$DEAL . CAN&#39;T DEALLOCATE ALL SPACE
+SEQ I$RECL . BINARY RECORD LENGTH TOO LRGE
+SEQ I$SECB . SECTOR BUFFER SIZE ERROR
+*
+ORG .$SAV . RESTORE THE LOCATION COUNTER
+*
+PAGE
+*
+* M D O S     I N T E R N A L      V A R I A B L E
+*
+*       A N D      L O C A T I O N      E Q U A T E S
+*
+MDOS$ EQU $100 . START OF MDOS ASECT
+CBUFL$ EQU 80 . COMMAND BUFFER LENGTH
+CBUFF$ EQU MDOS$-CBUFL$-2 . COMMAND BUFFER LOCATION
+CBUFP$ EQU CBUFF$+CBUFL$ . COMMAND BUFFER SCAN POINTER
+VERS$$ EQU MDOS$ . VERSION #
+REVS$$ EQU VERS$$+2 . REVISION #
+KYI$SV EQU REVS$$+2 . SAVE AREA FOR KEYIN$ VECTOR
+ENDOS$ EQU KYI$SV+2 . END OF MDOS
+ENDUS$ EQU ENDOS$+2 . END OF USER PROGRAM AREA
+ENDSY$ EQU ENDUS$+2 . END OF SYSTEM (MDOS) RAM
+RIBBA$ EQU ENDSY$+4 . RIB BUFFER ADDRESS
+ENDRV$ EQU RIBBA$+2 . END OF MDOS ROM VARIABLES
+GDBA$ EQU ENDRV$+2 . GENERIC DEVICE TABLE ADDRESS
+SYERR$ EQU GDBA$+2 . SYSTEM ERROR STATUS WORD
+SWI$SV EQU SYERR$+2 . SWI VECTOR SAVE AREA
+SWI$UV EQU SWI$SV+2 . SWI USER VECTOR
+IRQ$UV EQU SWI$UV+2 . IRQ USER VECTOR
+IRQ$SV EQU IRQ$UV+2 . IRQ VECTOR SAVE AREA
+CHFLG$ EQU IRQ$SV+2 . CHAIN FUNCTION FLAG WORD
+SYIOCB EQU CHFLG$+2 . SYSTEM CONSOLE  IOCB
+SYPOCB EQU SYIOCB+IOCBLN . SYSTEM PRINTER IOCB
+SYEOCB EQU SYPOCB+IOCBLN . ERR MSG FILE
+PAGE
+*
+*L O G I C A L   U N I T   N U M B E R - - B I T   D E F I N I T I O N
+*
+LU$RES EQU %01000000 . IOCB RESERVED FLAG
+*
+* I O C D T T    --     B I T     D E F I N I T I O N S
+*
+DT$OPP EQU %00000000 . OPEN UPDATE/INPUT
+DT$OPI EQU %00000001 . OPEN INPUT MODE
+DT$OPO EQU %00000010 . OPEN OUTPUT MODE
+DT$OPU EQU %00000011 . OPEN UPDATE MODE
+DT$NFF EQU %00000100 . NON-FILE FORMAT I/O FLAG
+DT$TRU EQU %00001000 . TRUNCATE FLAG
+
+
+
+
+
+
+PAGE 007  EQU     .SA:0
+
+DT$CLS EQU %00010000 . FILE OPEN/CLOSE FLAG
+DT$SIO EQU %00100000 . SECTOR I/O FLAG
+DT$OUT EQU %01000000 . OUTPUT TRANSFER TYPE
+DT$INP EQU %10000000 . INPUT TRANSFER TYPE
+*
+* I O C F D F    --    B I T     D E F I N I T I O N S
+*
+FD$FMU EQU %00000000 . USER DEFINED FORMAT (SECTOR I/O ONLY)
+FD$FMD EQU %00000001 . DEFAULT OBJECT REC&#39;D FORMAT (DEVICE DEPENDENT)
+FD$FML EQU %00000010 . BINARY LOAD FORMAT -- ABSOLUTE MEMORY IMAGE
+FD$FMB EQU %00000011 . BINARY RECORD FORMAT -- RASM OUTPUT, RLOAD INPUT
+FD$FMR EQU %00000100 . BINARY LOAD FORMAT -- RELOCATABLE MEMORY IMAGE
+FD$FMA EQU %00000101 . ASCII RECORD FORMAT -- INCLUDES EXORCISOR LOAD F
+FD$FMC EQU %00000111 . ASCI-CONVERTED-BINARY RECORD FORMAT
+FD$CMP EQU %00001000 . SPACE COMPRESSION FLAG
+FD$CON EQU %00010000 . CONTIGUOUS ALLOCATION FLAG
+FD$SYS EQU %00100000 . SYSTEM FILE ATTRIBUTE
+FD$DEL EQU %01000000 . DELETE PROTECTION ATTRIBUTE
+FD$WRT EQU %10000000 . WRITE PROTECTION ATTRIBUTE
+*
+* U N I F I E D    I / O    C O N T R O L     D E S C R I P T O R
+*
+*                  B L O C K     O F F S E T S
+*
+CDBIOC EQU 0 . ADDRESS OF IOCB
+CDBSDA EQU 2 . SOFTWARE DRIVER ADDRESS
+CDBHAD EQU 4 . HARDWARE ADDRESS
+CDBDDF EQU 6 . DEVICE DESCRIPTOR FLAGS
+CDBVDT EQU 7 . VALID DATA TYPE
+CDBDDA EQU 8 . DEVICE DEPENDENT AREA
+CDBWST EQU 10 . WORKING STORAGE
+*
+* C D B D D F    --    B I T    D E F I N I T I O N S
+*
+DD$FMC EQU %00000001 . ASCII-CONVERTED-BINARY IS DEFAULT OBJECT RECORD
+DD$LOG EQU %00000010 . LOGICAL SECTOR I/O FLAG
+DD$CNS EQU %00000100 . CONSOLE FLAG
+DD$RWD EQU %00001000 . REWIND FLAG
+DD$OCF EQU %00010000 . OPEN/CLOSE FLAG
+DD$INP EQU %00100000 . INPUT DEVICE FLAG
+DD$OUT EQU %01000000 . OUTPUT DEVICE FLAG
+DD$RES EQU %10000000 . RESERVABLE DEVICE FLAG
+*
+* C D B V D T    --     B I T    D E F I N I T I O N S
+*
+VD$BIN EQU %00000100 . BINARY OBJECT FLAG
+VD$GDB EQU %00001000 . TEMP GDB POINTER FLAG
+VD$SDA EQU %00010000 . TEMP SDA POINTER FLAG
+VD$NFF EQU %10000000 . NON-FILE FORMAT FLAG
+*
+* D E V I C E    D R I V E R     E N T R Y    O F F S E T S
+*
+DV$ON EQU 0 . DEVICE ON OFFSET
+DV$OFF EQU 3 . DEVICE OFF OFFSET
+DV$INT EQU 6 . DEVICE INTIALIZATION OFFSET
+DV$TRM EQU 9 . DEVICE TERMINATION OFFSET
+DV$IO EQU 12 . DEVICE CHARACTER INPUT/OUTPUT OFFSET
+PAGE
+
+
+
+
+
+
+PAGE 008  EQU     .SA:0
+
+*
+* D I S K     E R O M      E Q U A T E S
+*
+CURDRV EQU 0 . CURRENT DRIVE NUMBER
+STRSCT EQU 1 . STARTING PHYSICAL SECTOR NUMBER
+NUMSCT EQU 3 . NUMBER OF SECTORS TO OPERATE UPON
+LSCTLN EQU 5 . NUMBER OF BYTES TO BE READ FROM LAST SECTOR
+CURADR EQU 6 . MEMORY ADDRESS FOR DISK TRANSFER
+FDSTAT EQU 8 . DISK TRANSFER STATUS
+SCTCNT EQU 11 . SECTOR COUNT USED IN DETERMINING ERRORS
+PGMDRV EQU $1D . DRIVE FROM WHICH LAST PROGRAM WAS LOADED-NOT USED
+PGMPSN EQU $1E . PHYSICAL SECTOR NUMBER OF RIB OF LAST LOAD PGM-NOT USED
+*
+* E R O M    E N T R Y    P O I N T S
+*
+OSLOAD EQU $E800 . BOOTSTRAP THE OPERATING SYSTEM
+FDINIT EQU $E822 . INITIALIZE THE DISK&#39;S PIA AND SSDA
+CHKERR EQU $E853 . CHECK AND PRINT ERROR FROM FDSTAT
+PRNTER EQU $E85A . PRINT ERROR FROM FDSTAT
+READSC EQU $E869 . READ SECTOR(S)
+READPS EQU $E86D . READ PARTIAL SECTOR
+RDCRC EQU $E86F . READ AND CHECK FOR CRC
+RWTEST EQU $E872 . WRITE/READ TEST
+RESTOR EQU $E875 . MOVE HEAD TO TRACK 0
+SEEK EQU $E878 . POSITION HEAD TO TRACK OF &quot;STRSCT&quot;
+WRTEST EQU $E87B . WRITE TEST
+WRDDAM EQU $E87E . WRITE DELETED DATA MARK
+WRVERF EQU $E881 . WRITE AND VERIFY CRC
+WRITSC EQU $E884 . WRITE SECTOR(S)
+*
+* E R O M     E R R O R     E Q U A T E S
+*
+ER$CRC EQU &#39;1 . DATA CRC ERROR
+ER$WRT EQU &#39;2 . WRITE PROTECTED DISK
+ER$RDY EQU &#39;3 . DISK NOT READY
+ER$MRK EQU &#39;4 . DELETED DATA MARK ENCOUNTERED
+ER$TIM EQU &#39;5 . TIMEOUT
+ER$DAD EQU &#39;6 . INVALID DISK ADDRESS
+ER$SEK EQU &#39;7 . SEEK ERROR
+ER$DMA EQU &#39;8 . DATA ADDRESS MARK ERROR
+ER$ACR EQU &#39;9 . ADDRESS MARK CRC ERROR
+*
+* M I S C E L L A N E O U S     E R O M     E Q U A T E S
+*
+RETRY$ EQU 5 . RETRY COUNT FOR DISK READ/WRITE ERRORS
+*
+* L I N E    P R I N T E R     E R O M     E Q U A T E S
+*
+LPINIT EQU $EBC0 . INIT PRINTER PIA
+LIST EQU $EBCC . PRINT CONTENTS OF &#39;A&#39;
+LDATA EQU $EBE4 . PRINT STRING, CR/LF
+LDATA1 EQU $EBF2 . PRINT STRING, NO CR/LF
+PAGE
+*
+* E X B U G     E Q U A T E S     F O R     M D O S
+*     (PARTIAL LIST ONLY)
+INCHNP EQU $F015 . INPUT CHARACTER (NO PARITY)
+OUTCH EQU $F018 . OUTPUT ONE CHARACTER
+
+
+
+
+
+
+PAGE 009  EQU     .SA:0
+
+PCRLF EQU $F021 . PRINT LF/CR
+PDATA EQU $F024 . PRINT STRING
+SBIT$ EQU $FCFD . BIT 7 INDICATES IRQ OCCURRED (IF CLEARED)
+BRKPT$ EQU $FF1F . MAID&#39;S BREAKPOINT TABLE (8 FDB&#39;S)
+BKPIN$ EQU $FF4F . EXBUG BREAKPOINTS IN MEMORY (FROM CONTINUE CMD)
+AECHO EQU $FF53 . INPUT CHARACTER ECHO FLAG (0=&gt;ECHO)
+IRQ$VC EQU $FFF8 . IRQ VECTOR
+SWI$VC EQU $FFFA . SWI VECTOR
+NMI$VC EQU $FFFC . NMI VECTOR
+XSTAK$ EQU $FF8A . EXBUG STACK
+MAID$ EQU $F0F3 . MAID ENTRY POINT
+XREG$P EQU $FF16 . MAID P-REG.
+XREG$X EQU $FF18 . MAID X-REG.
+XREG$A EQU $FF1A . MAID A-REG.
+XREG$B EQU $FF1B . MAID B-REG.
+XREG$C EQU $FF1C . MAID C-REG.
+XREG$S EQU $FF1D . MAID S-REG.
+BRKPE$ EQU $FF63 . END OF MAID BREAKPOINT TABLE
+CNACI$ EQU $FCF4 . CONSOLE ACIA
+*
+* SPECIAL MACRO FOR THE CENTRONIX PRINTERS TO PRINT TITLES
+*      (NO LONGER USED)
+TITLE MACR
+TTL \0
+ENDM
+</pre></div>
+</div>
+</div>
+</div>
+<p class="rubric">Collection Information</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Acquired</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> 02-DEC-2025</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Links</p>
+<p><a class="reference download internal" download="" href="../../_downloads/c6cf171ff56238364e7fae130fc48887/MDOS220.dsk"><code class="xref download docutils literal notranslate"><span class="pre">Disk</span> <span class="pre">Image</span> <span class="pre">File</span> <span class="pre">for</span> <span class="pre">use</span> <span class="pre">in</span> <span class="pre">exorsim</span> <span class="pre">(.dsk</span> <span class="pre">Format)</span></code></a></p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Motorola MC6800 Family Product Catalogue</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../collection.html">Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../timeline.html">Timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../map.html">Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../transit.html">In Transit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../statistics.html">Statistics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/ApplicationNotes/index.html">Application Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Datasheets/index.html">DataSheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/EngineeringNotes/index.html">Engineering Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Generic/index.html">Generic Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Reference/index.html">Reference Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Manuals/index.html">Reference Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/ReferenceCards/index.html">Reference Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Hardware/EXORciser/index.html">Development Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Hardware/ICs/index.html">Integrated Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documents/Hardware/Other/index.html">Other Related Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Software for MC6800 systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ForSale/index.html">FOR SALE/TRADE</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024-2026, Andrew Shapton.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/Software/NonResident/@M68DOS220.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
