@@ -11,6 +11,7 @@ multi-chip module (MCM) package.
 .. important::
     Note all ICs in the family followed this convention. For example, the MC6846 did not have a suffix letter to indicate packaging, while others used different letters (all explained within their relevant data sheets).
 
+
 The suffix letter indicated the type of packaging used for the IC:
 
 .. csv-table:: 
