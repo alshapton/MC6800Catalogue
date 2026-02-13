@@ -243,6 +243,7 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
  	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68MPL(D2) <M68MPL(D2)>`","Motorola PASCAL Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MES6800 <MES6800>`","MES6800 User Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
