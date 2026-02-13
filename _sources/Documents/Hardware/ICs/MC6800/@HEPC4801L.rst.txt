@@ -1,0 +1,36 @@
+:orphan:
+
+.. _HEPC4801L:
+
+.. #Metadata {'Product':'HEPC4801L','Name':'HEPC4801L HEP version of MC6800','Storage': 'EDUCATORII'}
+
+HEPC4801L HEP version of MC6800
+===============================
+
+.. image:: ../../../../images/Hardware/ICs/MC6800/HEPC4801L.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","7632B"
+   "Manufacture Date","02-AUG-1976 to 08-AUG-1976"
+   "Mask","PK"
+   "Packaging","Ceramic"
+   "Status","HEP"
+   "Location",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
+   "Temperature","-40-85\ :sup:`o`\ C"
+   "Frequency","1Mhz"
+   "Notes",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |present| 14-JAN-2026
+
