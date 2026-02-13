@@ -23,5 +23,5 @@
       "|notpresent| :ref:`MC68A00S <MC68A00S>`","CERDIP","1.5Mhz","-0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6800CS <MC6800CS>`","CERDIP","1Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CL <MC68A00CL>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C",""
-      "|notpresent| :ref:`atHEPC4801L <HEPC4801L>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
+      "|present| :ref:`HEPC4801L <HEPC4801L>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6800CP <MC6800CP>`","Plastic","1Mhz","-40-85\ :sup:`o`\ C",""

@@ -32,5 +32,5 @@ HEPC4801L HEP version of MC6800
    :header: "Acquired"
    :widths: auto
 
-   |notpresent| 14-JAN-2026
+   |present| 14-JAN-2026
 
