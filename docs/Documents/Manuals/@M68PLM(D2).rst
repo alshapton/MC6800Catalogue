@@ -2,7 +2,7 @@
 
 .. _M68PLM(D2):
 
-.. #Metadata {'Product':'M68PLM(D2)','Name':'Motorola PASCAL Language Manual','Folder': 'None'}
+.. #Metadata {'Product':'M68PLM(D2)','Name':'Motorola PASCAL Language Manual','Folder': '1'}
 
 Motorola PASCAL Language Manual
 ===============================
@@ -17,4 +17,4 @@ Motorola PASCAL Language Manual
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 12-FEB-2026

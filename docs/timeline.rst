@@ -182,3 +182,4 @@ This is the timeline of acquisitions (as at 12-02-2026).
    14-JAN-2026,:ref:`HEPC4811P 128 x 8-bit RAM <HEPC4811P>`
    14-JAN-2026,:ref:`Motorola HEP Kit Educator II <HEPEducatorKt2>`
    30-JAN-2026,:ref:`MCM6810AP 128 x 8-bit RAM <MCM6810AP>`
+   12-FEB-2026,:ref:`Motorola PASCAL Language Manual <M68PLM(D2)>`
