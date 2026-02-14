@@ -195,7 +195,8 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
  	":ref:`N/A <REF-MC6840>`","MC6840 Programmable Timer Module Programming Summary",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC68488>`","MC68488 GPIA for IEEE-488 Bus",":ref:`Folder 1 <1_map_reference>`"
- 
+    ":ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`"
+
 
 .. rubric:: Reference Documents
 
@@ -243,7 +244,7 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
  	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`M68MPL(D2) <M68MPL(D2)>`","Motorola PASCAL Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MES6800 <MES6800>`","MES6800 User Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
