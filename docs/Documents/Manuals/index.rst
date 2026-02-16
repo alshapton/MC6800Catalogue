@@ -44,6 +44,8 @@ Reference Manuals
    ":ref:`M6809PM/AD <M6809PMAD>`","MC6809-MC6809E Microprocessor Programming Manual"
    "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
    ":ref:`MC68488UM(AD) <MC68488UM(AD)>`","MC68488 GPIA Users Manual","1980"
+   "|present| :ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual","1984"
+
 
 .. rubric:: Expansion Card Manuals
 

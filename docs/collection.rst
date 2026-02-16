@@ -251,7 +251,8 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
  	":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
- 
+    ":ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual",":ref:`Folder 5 <5_map_reference>`"
+
 
 .. rubric:: Resident Software
 

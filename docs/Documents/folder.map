@@ -67,6 +67,16 @@
     :ref:`Microprocessor Applications Manual <NONE-2>`,""
     :ref:`Motorola Memory Products <1979_Memory_Products>`,"1979"
 
+.. _5_map_reference:
+
+.. rubric:: Folder 5
+
+.. csv-table::
+   :header: "Name","Comments"
+   :widths: 60,40
+
+    :ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`,"A5-format paperback"
+    :ref:`MC6801 Single Chip Microcomputer Reference Manual <MC6801RMAD2>`,""
 
 .. _Hardware_map_reference:
 

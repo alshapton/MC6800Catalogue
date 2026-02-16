@@ -1,0 +1,21 @@
+:orphan:
+
+.. _MC6801RMAD2:
+
+.. #Metadata {'Product':'MC6801RM(AD2)','Name':'MC6801 Single Chip Microcomputer Reference Manual','Folder': '5'}
+
+MC6801 Single Chip Microcomputer Reference Manual
+=================================================
+
+.. image:: ../../images/Manuals/MC6801RM-AD2.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |present| 12-FEB-2026
+

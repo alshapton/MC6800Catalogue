@@ -184,3 +184,4 @@ This is the timeline of acquisitions (as at 12-02-2026).
    30-JAN-2026,:ref:`MCM6810AP 128 x 8-bit RAM <MCM6810AP>`
    12-FEB-2026,:ref:`Motorola PASCAL Language Manual <M68PLM(D2)>`
    12-FEB-2026,:ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`
+   12-FEB-2026,:ref:`MC6801RM(AD2) MC6801 Single Chip Microcomputer Reference Manual <MC6801RMAD2>`
