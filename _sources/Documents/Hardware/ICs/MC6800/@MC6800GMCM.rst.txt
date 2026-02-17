@@ -52,5 +52,5 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |present| 01-JAN-2026
 
