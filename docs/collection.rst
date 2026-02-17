@@ -78,7 +78,9 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
 	:header: "Part Number","Packaging","Location" 
 	:widths: 25, 20, 55
 
+
 	":ref:`HEPC4801L <HEPC4801L>`","Ceramic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
+	":ref:`MC680GMCM <MC6800GMCM>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MC6800L <2!MC6800L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC68B00L <MC68B00L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 1 <Storage_Box_1_Drawer_1>`"
