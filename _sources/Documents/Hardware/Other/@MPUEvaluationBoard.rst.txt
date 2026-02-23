@@ -15,6 +15,7 @@ MPU Evaluation Card MC6800 Microprocessor Board
 
    - `MES6800`
    - `M-GE`
+   - Schematic (See link)
 
 .. rubric:: Collection Information
 
@@ -24,3 +25,6 @@ MPU Evaluation Card MC6800 Microprocessor Board
 
    |present| 30-JAN-2025
 
+.. rubric:: Links
+
+:download:`Schematic <../../../_static/Documents/Hardware/MES6800.pdf>`
