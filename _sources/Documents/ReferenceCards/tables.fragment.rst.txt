@@ -13,4 +13,3 @@
    "|present| :ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",""
    "|present| :ref:`N/A <REF-MC68488>`","MC68488 GPIA for IEEE-488 Bus",""
    "|present| :ref:`N/A <MC68HC11A8RG-AD>`","MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide",""
-
