@@ -1,4 +1,4 @@
-.. |isource/Documents/Hardware/ICs/packaging|  image:: /images/General/better.png
+.. |idocs/Documents/Hardware/ICs/packaging|  image:: /images/General/better.png
    :width: 200
    :class: no-scaled-links
 
@@ -219,6 +219,10 @@
    :class: no-scaled-links
 
 .. |iMC6852L|  image:: /images/Hardware/ICs/MC6852/MC6852L.1.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iHEPC4801L|  image:: /images/Hardware/ICs/MC6800/HEPC4801L.png
    :width: 200
    :class: no-scaled-links
 

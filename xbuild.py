@@ -41,7 +41,7 @@ DB            = XBS + OSSEP + 'xbuild.db'
 ANYUNDEROFFER = False
 ANYINTRANSIT  = False
 
-PREFIX ='source' + OSSEP
+PREFIX ='docs' + OSSEP
 SUFFIX = 'rst'
 
 OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
@@ -51,7 +51,7 @@ UNDEROFFER_FILE = PREFIX + 'underoffer.' + SUFFIX
 MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp' + OSSEP
-IC_LOCATIONS = 'source'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'ICs'
+IC_LOCATIONS = 'docs'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'ICs'
 
 
 def update_or_not_metadata(filename):    
@@ -438,7 +438,7 @@ def update_carousel():
         dotdot = ''
         for f in range(0,f-1):
             dotdot += '../'
-        images_loc_full=dotdot + images_loc.replace('source/','')
+        images_loc_full=dotdot + images_loc.replace('docs/','')
         picfiles = os.listdir(images_loc)
         picfiles.sort()
 
@@ -499,9 +499,9 @@ def update_storage():
 
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     ICLABELSNAME='labels.fragment.rst'
-    ICLABELS_LOC='source/Documents/Hardware/ICs/'
+    ICLABELS_LOC='docs/Documents/Hardware/ICs/'
     ICLABELS_FILE=ICLABELS_LOC + ICLABELSNAME
-    TABLES_FILE='source/Documents/Hardware/ICs/tables.fragment.rst'
+    TABLES_FILE='docs/Documents/Hardware/ICs/tables.fragment.rst'
     PROPERTIES_FILE='storage.properties'
     file1 = open(PROPERTIES_FILE, 'r')
     properties = file1.readlines()
@@ -606,7 +606,7 @@ def update_storage():
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
     all_folders_storage_sorted =  sorted(foldershardware + sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
-    FOLDER_MAP_FILE = 'source'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
+    FOLDER_MAP_FILE = 'docs'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
     with open(FOLDER_MAP_FILE, "w") as fmf:
 
@@ -818,7 +818,7 @@ def update_storage():
     
     # Remove specific known problematic file 
     console.print("\n\t\tRemove specific known problematic file",style="warning")              
-    os.remove('source/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
+    os.remove('docs/Documents/Hardware/ICs/tables.fragment.S.Drawer_0.snippet')                    
     
     # Remove temporary "tiny" working files
     console.print("\n\t\tSplitting LVL2 files complete",style="info")
@@ -899,19 +899,19 @@ def update_storage():
     print('\nStorage updated')      
 
 
-    TABLES_FILE='source/Documents/ReferenceCards/tables.fragment.rst'
+    TABLES_FILE='docs/Documents/ReferenceCards/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders)
 
-    TABLES_FILE='source/Documents/Generic/tables.fragment.rst'
+    TABLES_FILE='docs/Documents/Generic/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_generic)
 
-    TABLES_FILE='source/Documents/Reference/tables.fragment.rst'
+    TABLES_FILE='docs/Documents/Reference/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_reference)
     
-    TABLES_FILE='source/Software/NonResident/tables.fragment.rst'
+    TABLES_FILE='docs/Software/NonResident/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_softnon)
 
-    TABLES_FILE='source/Software/Resident/tables.fragment.rst'
+    TABLES_FILE='docs/Software/Resident/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders_softres)
 
     console.print('\nFolders updated',style="info")      
@@ -1000,9 +1000,9 @@ def update_IC_index():
     memfiles=[]
     for file in files:
             
-            if 'source/Documents/Hardware/ICs/' in file:
+            if 'docs/Documents/Hardware/ICs/' in file:
 
-                fname=file.replace('source/Documents/Hardware/ICs/','')
+                fname=file.replace('docs/Documents/Hardware/ICs/','')
                 if 'MCM' in fname:
                     memfiles.append(fname[3:])
                     icfiles.append(fname[3:])
@@ -1040,7 +1040,7 @@ def do_underoffer():
     underofferinfo=''
 
     # Find all .rst files in the current directory and subdirectories
-    files = glob.glob('source/**/*.fragment.'+SUFFIX, recursive=True)
+    files = glob.glob('docs/**/*.fragment.'+SUFFIX, recursive=True)
     with open(UNDEROFFER_FILE,"w") as c:
         c.write(':orphan:\n\n')
         c.write('.. _underoffer:\n\n')
@@ -1054,7 +1054,7 @@ def do_underoffer():
 
 
         for file in files:
-            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
+            if (file not in ("README.md" ,"_static/docs/Software/NonResident/software.fragment") and
                 "underoffer.rst" not in file and
                 "@" not in file and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
@@ -1239,7 +1239,7 @@ def do_collection():
 
 
         for file in files:
-            if (file not in ("README.md" ,"_static/source/Software/NonResident/software.fragment") and
+            if (file not in ("README.md" ,"_static/docs/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
                 "@" not in file  and "carousel" not in file and "snippets" not in file):
                 with open(file) as f:
@@ -1409,7 +1409,7 @@ def do_create():
             console.print("Invalid product type",style="danger")
             exit() 
 
-    OUTPUT_FILE = f"source/{location}/@{product_number}.rst"
+    OUTPUT_FILE = f"docs/{location}/@{product_number}.rst"
     if os.path.exists(OUTPUT_FILE):
         console.print(f"File {OUTPUT_FILE} already exists",style="danger")
         exit()
@@ -1448,16 +1448,16 @@ def do_create():
             original_document = MOVE + '/' + linkdocument
         
         
-        target_image = images.replace(dotdot,'source/') + product_number + '.png'
+        target_image = images.replace(dotdot,'docs/') + product_number + '.png'
         console.print('Ready to move.....',style="info")
         
         if links =="Y":
-            target_document =  "source/_static/" + location + "/"+ linkdocument
+            target_document =  "docs/_static/" + location + "/"+ linkdocument
             movefile(original_document, target_document)
             
         if image_present:
             movefile(original_image, target_image)
-            console.print('Moved images and source data',style="info")
+            console.print('Moved images and docs data',style="info")
         else:
             console.print('No image to move',style="info")            
 
@@ -1479,7 +1479,7 @@ def setup_icons():
             
         newfile.write('"""\n')
 
-    copy_and_replace('./xbuild_support/setup.pre','./source/conf.py')
+    copy_and_replace('./xbuild_support/setup.pre','./docs/conf.py')
 
     with open('./xbuild_support/conventions.rst', 'w') as newfile:
         newfile.write(':orphan:\n\n')
@@ -1494,7 +1494,7 @@ def setup_icons():
                 newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
 
 
-    with open('source/Software/NonResident/media.inc', 'w') as newfile:
+    with open('docs/Software/NonResident/media.inc', 'w') as newfile:
         newfile.write('.. rubric:: Key to Symbols\n\n')
         newfile.write('.. csv-table::\n\n')
         
@@ -1578,7 +1578,7 @@ def do_timeline():
 
 
             
-        copy_and_replace('./xbuild_support/timeline.rst','./source/timeline.rst')
+        copy_and_replace('./xbuild_support/timeline.rst','./docs/timeline.rst')
 
             
         console.print('Timeline updated',style="info")
@@ -1644,7 +1644,7 @@ def do_statistics():
 
             f.write('   ' + 'TOTAL' + ',' + str(ot) + ',' + str(op) + ',' + str(opnp) + ',' + str(opit) + '\n')
         
-        copy_and_replace('./xbuild_support/statistics.rst','./source/statistics.rst')
+        copy_and_replace('./xbuild_support/statistics.rst','./docs/statistics.rst')
 
         
         console.print('Statistics updated',style="info")
@@ -1671,7 +1671,7 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
 
             else:             
                 f.write(line)
-    copy_and_replace('./xbuild_support/index.master','./source/index.rst')
+    copy_and_replace('./xbuild_support/index.master','./docs/index.rst')
 
 
 def extract_seed_chip_info(chip_seed_file):
@@ -2408,7 +2408,7 @@ while True:
             console.print('In-Transit updated',style="info")
             do_timeline()
             console.print('\n\n      Handing control to Sphinx\n\n\n',style="info")
-            os.system("make clean html")
+            os.system("make -C docs clean html")
 
         case "5":
             ic = input("Enter IC to change status: ")
