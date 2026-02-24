@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 21-02-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 24-02-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -78,9 +78,8 @@ This is the current collection (as at 21-02-2026) of the items produced by Motor
 	:header: "Part Number","Packaging","Location" 
 	:widths: 25, 20, 55
 
-
 	":ref:`HEPC4801L <HEPC4801L>`","Ceramic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
-	":ref:`MC680GMCM <MC6800GMCM>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MC6800L <2!MC6800L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC68B00L <MC68B00L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 1 <Storage_Box_1_Drawer_1>`"
@@ -99,6 +98,8 @@ This is the current collection (as at 21-02-2026) of the items produced by Motor
 	":ref:`HD63C09EP <HD63C09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC6809EP <MC6809EP>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC68B09EP <MC68B09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 3, Column 1 <Storage_Box_1_Drawer_3>`"
+	":ref:`HEPC4811P <HEPC4811P>`","Plastic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
+	":ref:`MCM6810AP <MCM6810AP>`","Plastic",":ref:`Storage Box 2, Drawer 4, Row 1, Column 3 <Storage_Box_2_Drawer_4>`"
 	":ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B",":ref:`Storage Box 1, Drawer 4, Row 3, Column 4 <Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810EL <MCM6810EL>`","Ceramic",":ref:`Storage Box 1, Drawer 4, Row 1, Column 3 <Storage_Box_1_Drawer_4>`"
 	":ref:`MCM6810L <MCM6810L>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
@@ -182,8 +183,9 @@ This is the current collection (as at 21-02-2026) of the items produced by Motor
 
 	":ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",":ref:`Folder Hardware <Hardware_map_reference>`"
- 	":ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board"
-	":ref:`HEP EDUCATOR 2 Kit<HEPEducatorKt2>`","EDUCATOR II Kit and power supply"
+ 	":ref:`N/A <HEPEducatorKt2>`","Motorola HEP Kit Educator II"
+	":ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board"
+
 
 .. rubric:: Reference Cards
 
@@ -193,12 +195,12 @@ This is the current collection (as at 21-02-2026) of the items produced by Motor
 
 	":ref:`N/A <M68SETPRC-D1>`","M68SETPRC/D1 EXORset Programmer Card",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6809AC3>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <MC68HC11A8RG-AD>`","MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6840>`","MC6840 Programmable Timer Module Programming Summary",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <REF-MC68488>`","MC68488 GPIA for IEEE-488 Bus",":ref:`Folder 1 <1_map_reference>`"
-    ":ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`"
-
+ 
 
 .. rubric:: Reference Documents
 
@@ -242,19 +244,19 @@ This is the current collection (as at 21-02-2026) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
+	":ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual"
 	":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Language Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MES6800 <MES6800>`","MES6800 User Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 1 <1_map_reference>`"
-    ":ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual",":ref:`Folder 5 <5_map_reference>`"
-
+ 
 
 .. rubric:: Resident Software
 
