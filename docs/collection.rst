@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 12-02-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 21-02-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -183,7 +183,7 @@ This is the current collection (as at 12-02-2026) of the items produced by Motor
 	":ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board"
-
+	":ref:`HEP EDUCATOR 2 Kit<HEPEducatorKt2>`","EDUCATOR II Kit and power supply"
 
 .. rubric:: Reference Cards
 
