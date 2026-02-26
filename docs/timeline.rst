@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 24-02-2026).
+This is the timeline of acquisitions (as at 26-02-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -187,3 +187,4 @@ This is the timeline of acquisitions (as at 24-02-2026).
    12-FEB-2026,:ref:`MC6801 Single Chip Microcomputer Reference Manual <MC6801RMAD2>`
    12-FEB-2026,:ref:`Motorola PASCAL Language Manual <M68PLM(D2)>`
    12-FEB-2026,:ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`
+   22-FEB-2026,:ref:`MC6800P Microprocessor Unit <MC6800P>`

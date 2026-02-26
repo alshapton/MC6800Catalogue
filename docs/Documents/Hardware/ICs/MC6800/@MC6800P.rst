@@ -2,12 +2,12 @@
 
 .. _MC6800P:
 
-.. #Metadata {'Product':'MC6800P','Name':'MC6800P Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6800P','Name':'MC6800P Microprocessor Unit','Storage': 'Storage Box 2','Drawer':2,'Row':3,'Column':2}
 
 MC6800P Microprocessor Unit
 ===========================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC6800P.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC6800P Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","8417"
+   "Manufacture Date","16-APR-1984 to 22-APR-1984"
+   "Mask","R7E"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 3, Column 2 <Storage_Box_2_Drawer_2>`"
    "Temperature","-0-70\ :sup:`o`\ C"
    "Frequency","1Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC6800P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 22-FEB-2026
 
 .. rubric:: Links
 
