@@ -45,8 +45,9 @@ Reference Manuals
    "|present| :ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",""
    ":ref:`MC68488UM(AD) <MC68488UM(AD)>`","MC68488 GPIA Users Manual","1980"
    "|present| :ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual","1984"
-
-
+   ":ref:`N/A <MEX6820_UG>`","MEX6820 Input/Output Module Supplement Users Guide",""
+   ":ref:`MEX68USEB(D) <MEX68USEB(D)>`","MEX68USEB User System Evaluator Users Guide",""
+   
 .. rubric:: Expansion Card Manuals
 
 .. csv-table:: 
