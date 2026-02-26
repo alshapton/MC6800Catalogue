@@ -1,0 +1,20 @@
+:orphan:
+
+.. _M68MM01A2:
+
+.. #Metadata {'Product':'Monoboard Micromodule 1A/1A2','Folder': ' '}
+
+Monoboard Micromodule 1A/1A2
+============================
+
+.. image:: ../../../../images/Hardware/EXORciser/Micromodules/M68MM01A2.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
