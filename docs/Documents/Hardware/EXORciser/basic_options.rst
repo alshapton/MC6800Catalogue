@@ -63,8 +63,9 @@ Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../../
 .. csv-table:: Micromodules
    :header: "Part Number","Name"
    :widths: 30, 70
-
+   
     ":ref:`M68MM01 <M68MM01>`","Micromodule 1 M6800 CPU Module"
+    ":ref:`M68MM01A2 <M68MM01A2>`","Monoboard Micromodule 1A/1A2"
     "|present| :ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
     ":ref:`M68MM05A <M68MM05A>`","Micromodule 5A 8 Channel 12 Bit A/D Converter"
     "|present| :ref:`M68MM12 <M68MM12>`","M68MM12 Micromodule 12 GPIB Interface Module"

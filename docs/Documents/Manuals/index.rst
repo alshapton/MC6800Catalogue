@@ -47,7 +47,7 @@ Reference Manuals
    "|present| :ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual","1984"
    ":ref:`N/A <MEX6820_UG>`","MEX6820 Input/Output Module Supplement Users Guide",""
    ":ref:`MEX68USEB(D) <MEX68USEB(D)>`","MEX68USEB User System Evaluator Users Guide",""
-   
+
 .. rubric:: Expansion Card Manuals
 
 .. csv-table:: 
@@ -88,6 +88,7 @@ Reference Manuals
    :widths: auto
 
    "|present| :ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual","1977"
+   ":ref:`M6809XDOS3(D) <M6809XDOS3(D)>`","EXOSET30 XDOS Operating System Users Guide",""
    ":ref:`M68MDOS3(D) <M68MDOS3(D)>`","EXORdisk II/III OS User's Guide","1978 1st Edition"
    ":ref:`M68MDOS3(D2) <M68MDOS3(D2)>`","EXORdisk II/III OS User's Guide","1979 2nd Edition"
    ":ref:`M68DOWNLD(D1) <M68DOWNLD(D1)>`","M6800/M6801/M6809 Download Program User's Guide","August 1979 1st Edition"
@@ -125,6 +126,7 @@ Reference Manuals
    ":ref:`M68COB(D) <M68COB(D)>`","M6800 Resident COBOL Language Reference Manual","1978"
    ":ref:`M68PLM(D1) <M68PLM(D1)>`","Motorola PASCAL Language Manual","May 1979"
    "|present|:ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Language Manual","January 1980"
+   ":ref:`M6809PASC(D2) <M6809PASC(D2)>`","M6809 Resident Pascal Compiler and Interpreter Users Guide",""
    ":ref:`M68BAS(D3) <M68BAS(D3)>`","M6800 BASIC Interpreter Reference Manual","3rd Edition 1980"
    ":ref:`M68FTN(D3) <M68FTN(D3)>`","M6800/M6809 MDOS Fortran Reference Manual","Third Edition September 1980"
    ":ref:`MSETLLD(D1) <MSETLLD(D1)>`","XDOS Linking Loader Reference Manual",""
