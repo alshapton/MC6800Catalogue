@@ -17,6 +17,8 @@ MPU Evaluation Card MC6800 Microprocessor Board
    - `M-GE`
    - Schematic (See link)
 
+   Indications are that this item would have been priced at around $1000 USD in 1975 as per image of article in Electonics magazine March 20 1975. 
+
 .. rubric:: Collection Information
 
 .. csv-table:: 

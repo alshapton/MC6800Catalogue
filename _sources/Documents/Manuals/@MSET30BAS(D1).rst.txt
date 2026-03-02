@@ -7,7 +7,7 @@
 M6809 BASIC-M Interactive Compiler Users Guide
 ==============================================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../images/Manuals/M6809-M-BASIC-MANUAL.png
    :width: 400
    :align: center
 
