@@ -2,6 +2,11 @@
 
     .. card::
 
+      .. image:: ../../../images/Hardware/Other/MPUEvaluationBoard/MES6800-ARTICLE-1.png
+         :width: 800
+
+    .. card::
+
       .. image:: ../../../images/Hardware/Other/MPUEvaluationBoard/MPU_Evaluation_Board.1.jpg
          :width: 800
 

@@ -46,7 +46,9 @@ Reference Manuals
    ":ref:`MC68488UM(AD) <MC68488UM(AD)>`","MC68488 GPIA Users Manual","1980"
    "|present| :ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual","1984"
    ":ref:`N/A <MEX6820_UG>`","MEX6820 Input/Output Module Supplement Users Guide",""
+   ":ref:`MEX68RR-MOD-SUP <MEX68RR-MOD-SUP>`","MEX68RR EROM/RAM Module Supplement",""   
    ":ref:`MEX68USEB(D) <MEX68USEB(D)>`","MEX68USEB User System Evaluator Users Guide",""
+   ":ref:`MEX68SA2(D2) <MEX68SA2(D2)>`","MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
