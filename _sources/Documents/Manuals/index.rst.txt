@@ -70,7 +70,10 @@ Reference Manuals
    ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
    ":ref:`MEX68USMUG(D1) <MEX68USMUG(D1)>`","MEX68USMUG(D1) MEX68USM Universal Support Module User's Guide",""
    ":ref:`MEX68USEC <MEX68USEC-UG>`","MEX68USEC 2Mhz User System Evaluator User Guide",""
-   
+   ":ref:`MEX68488(D) <MEX68488(D)>`","MEX68488 GPIA Support Module Users Guide",""
+   ":ref:`MEX6821-2-UG <MEX6821-2-UG>`","MEX6821-2 Input/Output Module Users Guide",""
+   ":ref:`MEX6845-CRTC-UG <MEX6845-CRTC-UG>`","MEX6845 CRTC Support Module Users Guide",""
+
 .. rubric:: Micromodule Manuals
 
 .. csv-table:: 
@@ -82,7 +85,8 @@ Reference Manuals
    ":ref:`M68MM04A(D2) <M68MM04A(D2)>`","ROM/EPROM Module Micromodule 4A","Second Edition December 1980"
    ":ref:`M68MM17-D2 <M68MM17-D2>`","Monoboard Microcomputer Micromodule 17 User's Manual","Second Edition June 1982"
    ":ref:`M68ADS2ASDRM <M68ADS2ASDRM>`","Micromodule/M68ADS2A Software Development Reference Manual","NO discernable product number"
-   
+   ":ref:`M68MM19-19A-UG <M68MM19-19A-UG>`","M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User Guide" 
+
 .. rubric:: Software Manuals
 
 .. csv-table:: 
