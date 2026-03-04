@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M68MM19-19A-UG:
+
+M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User Guide
+======================================================================
+
+.. image:: ../../images/Manuals/M68MM19-19A-UG.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
