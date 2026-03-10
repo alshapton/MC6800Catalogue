@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 04-03-2026) in transit.
+This is the current set of items (as at 06-03-2026) in transit.
 
 
 .. rubric:: ICs
@@ -11,7 +11,6 @@ This is the current set of items (as at 04-03-2026) in transit.
 	:header: "Part Number","Description"
 	:widths: 30, 70
 
-	MC6800CL,":ref:`MC6800CL Microprocessor Unit <MC6800CL>` "
 	MC68A00L,":ref:`MC68A00L Microprocessor Unit <MC68A00L>` "
 
 

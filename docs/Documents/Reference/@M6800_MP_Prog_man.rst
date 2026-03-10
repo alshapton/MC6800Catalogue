@@ -15,4 +15,4 @@ M6800 Microprocessor Programming Manual
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |notpresent|

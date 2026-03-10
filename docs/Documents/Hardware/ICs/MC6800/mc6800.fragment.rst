@@ -7,7 +7,7 @@
       :widths: auto
 
       "|intransit| :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","-0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
+      "|present| :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CP <MC68A00CP>`","Plastic","1.5Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CS <MC68A00CS>`","CERDIP","1.5Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6800S <MC6800S>`","CERDIP","1Mhz","-0-70\ :sup:`o`\ C",""

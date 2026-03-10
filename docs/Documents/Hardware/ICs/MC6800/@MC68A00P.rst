@@ -32,7 +32,7 @@ MC68A00P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit| 
 
 .. rubric:: Links
 
