@@ -32,7 +32,7 @@ MC68A45P CRT Controller (CRTC)
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit| 
 
 .. rubric:: Links
 

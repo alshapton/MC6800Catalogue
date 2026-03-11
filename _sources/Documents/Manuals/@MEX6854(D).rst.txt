@@ -1,11 +1,11 @@
 :orphan:
 
-.. _M6800_MP_Prog_man:
+.. _MEX6854(D):
 
-M6800 Microprocessor Programming Manual
+MEX6854 ADLC Support Module Users Guide
 =======================================
 
-.. image:: ../../images/Reference/M6800_MP_Prog_man.png
+.. image:: ../../images/Manuals/MEX6854(D).png
    :width: 400
    :align: center
 

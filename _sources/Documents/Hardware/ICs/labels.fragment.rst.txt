@@ -222,6 +222,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6800CL|  image:: /images/Hardware/ICs/MC6800/MC6800CL.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6800P|  image:: /images/Hardware/ICs/MC6800/MC6800P.png
    :width: 200
    :class: no-scaled-links
