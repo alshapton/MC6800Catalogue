@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEX6854(D):
+
+MEX6854 ADLC Support Module Users Guide
+=======================================
+
+.. image:: ../../images/Manuals/MEX6854(D).png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

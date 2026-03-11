@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 06-03-2026) in transit.
+This is the current set of items (as at 11-03-2026) in transit.
 
 
 .. rubric:: ICs
@@ -12,12 +12,5 @@ This is the current set of items (as at 06-03-2026) in transit.
 	:widths: 30, 70
 
 	MC68A00L,":ref:`MC68A00L Microprocessor Unit <MC68A00L>` "
-
-
-.. rubric:: Reference
-
-.. csv-table:: 
-	:header: "Part Number","Description"
-	:widths: 30, 70
-
-	M6800_MP_Prog_man,":ref:`M6800 Microprocessor Programming Manual <M6800_MP_Prog_man>` "
+	MC68A00P,":ref:`MC68A00P Microprocessor Unit <MC68A00P>` "
+	MC68A45P,":ref:`MC68A45P CRT Controller (CRTC) <MC68A45P>` "

@@ -130,7 +130,7 @@ There were also :ref:`basic options page` for these systems.
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68SDT2-2DM"
+   "Part #",":ref:`M68SDT2-DM <M68SDT2-DM>`"
    "Purpose","Software/Hardware Development"
    "Firmware","EXbug 2"
    "MPU Module","MPU2"
@@ -144,7 +144,7 @@ There were also :ref:`basic options page` for these systems.
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68SDT2-2SM"
+   "Part #",":ref:`M68SDT2-SM <M68SDT2-SM>`"
    "Purpose","Software/Hardware Development"
    "Firmware","EXbug 2"
    "MPU Module","MPU2"
@@ -158,7 +158,7 @@ There were also :ref:`basic options page` for these systems.
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68SDT2-2X"
+   "Part #",":ref:`M68SDT2-SX <M68SDT2-SX>`"
    "Purpose","Software/Hardware Development"
    "Firmware","EXbug 2"
    "MPU Module","MPU2"
