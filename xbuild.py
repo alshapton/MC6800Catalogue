@@ -1081,7 +1081,6 @@ def do_underoffer():
                                     this_chip_file = open(chip_file,'r')
                                     lines = this_chip_file.readlines()
                                     filtered = [line for line in lines if line.startswith(ch)]
-                                    
                                     description = filtered[0].replace(ch,'').replace('\n','')
 
 

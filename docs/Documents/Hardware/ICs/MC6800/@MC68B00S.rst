@@ -21,7 +21,6 @@ MC68B00S Microprocessor Unit
    "Mask",""
    "Packaging","CERDIP"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 1 <Storage_Box_1_Drawer_1>`"
    "Temperature","-0-70\ :sup:`o`\ C"
    "Frequency","2Mhz"
    "Notes",""
