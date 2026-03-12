@@ -38,6 +38,11 @@ Collection
 There are items in the collection which are detailed here which increase over time. The collection can be found on the :ref:`collection page`.
 
 
+Copyrights
+==========
+
+Any photographs in this collection are the images of and remain the property of the individuals/organisations who sourced them. They are used here for educational purposes, without financial gain.
+
 
 Conventions Used
 ================ 
@@ -67,6 +72,7 @@ Conventions Used
    Timeline <timeline>
    Map <map>
    In Transit <transit>
+   Under Offer <underoffer>
    Statistics <statistics>
 
 .. toctree::

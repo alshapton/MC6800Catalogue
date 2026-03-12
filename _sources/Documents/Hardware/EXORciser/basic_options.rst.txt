@@ -36,9 +36,9 @@ For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
     "MEX6808-22","8K Static RAM"
     "MEX6816-22S","16K Static RAM"
     "|present| :ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM "
-    "MEX6832-22","32K Dynamic RAM "
-    "MEX6848-22","48K Dynamic RAM "
-    "MEX6864-22","64K Dynamic RAM "
+    ":ref:`MEX6832-22D <MEX6832-22D>`","32K Dynamic RAM Module with parity"
+    ":ref:`MEX6848-22D <MEX6848-22D>`","48K Dynamic RAM Module with parity"
+    ":ref:`MEX6864-22D <MEX6864-22D>`","64K Dynamic RAM Module with parity"
 
 .. csv-table:: I/O Add-Ons
    :header: "Part Number","Name"
