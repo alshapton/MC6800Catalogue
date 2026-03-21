@@ -2,12 +2,12 @@
 
 .. _MC68A45P:
 
-.. #Metadata {'Product':'MC68A45P','Name':'MC68A45P CRT Controller (CRTC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68A45P','Name':'MC68A45P CRT Controller (CRTC)','Storage': 'Storage Box 2','Drawer':2,'Row':3,'Column':3}
 
 MC68A45P CRT Controller (CRTC)
 ==============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6845/MC68A45P.png
    :width: 400
    :align: center
 
@@ -32,7 +32,7 @@ MC68A45P CRT Controller (CRTC)
    :header: "Acquired"
    :widths: auto
 
-   |intransit| 
+   |present| 13-MAR-2026 
 
 .. rubric:: Links
 
