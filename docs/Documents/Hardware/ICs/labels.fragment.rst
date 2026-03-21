@@ -178,6 +178,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68A45P|  image:: /images/Hardware/ICs/MC6845/MC68A45P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6845P|  image:: /images/Hardware/ICs/MC6845/MC6845P.png
    :width: 200
    :class: no-scaled-links
