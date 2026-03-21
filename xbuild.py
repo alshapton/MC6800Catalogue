@@ -2372,8 +2372,7 @@ while True:
                     backup_file=chip_seed_file.replace('.json','_' + dt + '.bak.json')
                     copyfile(chip_seed_file, backup_file)
                     console.print("Created a backup file", style="info")
-                extract_seed_chip_info(chip_seed_file)
-            
+                extract_seed_chip_info(chip_seed_file)   
         case "0":
             import os
             clear = lambda: os.system('clear')
@@ -2408,7 +2407,6 @@ while True:
             do_timeline()
             console.print('\n\n      Handing control to Sphinx\n\n\n',style="info")
             os.system("make -C docs clean html")
-
         case "5":
             ic = input("Enter IC to change status: ")
             statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
@@ -2539,15 +2537,12 @@ while True:
                                     f.write(line)
 
                         console.print('Updated status : Now assess storage metadata',style="info")    
-
-
         case "7":
             output='Commencing rebuild of database'
             console.print(output, style="info") 
             rebuild_db()
             output='Completed rebuild of database'
-            console.print(output, style="info") 
-            
+            console.print(output, style="info")           
         case "9":
             
             # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
