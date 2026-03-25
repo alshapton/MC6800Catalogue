@@ -1582,6 +1582,7 @@ def do_timeline():
             
         console.print('Timeline updated',style="info")
 
+
 def do_statistics():
         ot=0
         op=0
@@ -1672,6 +1673,12 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
                 f.write(line)
     copy_and_replace('./xbuild_support/index.master','./docs/index.rst')
 
+def getICfilename(IC):
+    chiprows = read_db("SELECT * from ics where icid = '" + IC + "';")
+    chipfilename = 'DOESNOTEXIST'
+    for chip in chiprows:
+        chipfilename=chip["filename"]
+    return chipfilename
 
 def extract_seed_chip_info(chip_seed_file):
     chips=[]
@@ -2343,7 +2350,7 @@ while True:
     console.print('\t- Delete DB',style="danger")
     console.print('\t0 Update ALL ',style="info")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9"]
+    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2543,6 +2550,50 @@ while True:
             rebuild_db()
             output='Completed rebuild of database'
             console.print(output, style="info")           
+        case "8":
+            output="This is experimental - CTTL-C to exit"
+            console.print(output, style="info")           
+            firstIC=input("Enter First IC (full number): ")
+            
+            FIRST_IC_LOCATION=getICfilename(firstIC)
+            if os.path.exists(FIRST_IC_LOCATION):
+                with open(FIRST_IC_LOCATION, 'r') as file:
+                    firstlines = file.readlines()
+                present=False
+                for line in firstlines:
+                    if line.contains('|present|'):
+                        present=True
+                if not present:
+                    output=firstIC + " is not present in the collection"
+                    console.print(output, style="warning")           
+                else:    
+                    secondIC=input("Enter Second IC (full number): ")
+                    SECOND_IC_LOCATION=getICfilename(secondIC)
+                    if os.path.exists(SECOND_IC_LOCATION):
+                        with open(SECOND_IC_LOCATION, 'r') as file:
+                            secondlines = file.readlines()
+                        present=False
+                        for line in secondlines:
+                            if line.contains('|present|'):
+                                present=True
+                        if not present:
+                            output=secondIC + " is not present in the collection"
+                            console.print(output, style="warning")                          
+                        else:
+                            pass
+                            #Now we can start to the swap
+                    else:
+                        output=secondIC + " does not exist"
+                        console.print(output, style="warning")           
+                    
+            else:
+                output=firstIC + " does not exist"
+                console.print(output, style="warning")           
+                
+            
+                        
+
+
         case "9":
             
             # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
