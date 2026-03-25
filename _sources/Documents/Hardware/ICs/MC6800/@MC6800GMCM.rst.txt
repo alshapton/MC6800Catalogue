@@ -2,7 +2,7 @@
 
 .. _MC6800GMCM:
 
-.. #Metadata {'Product':'MC6800GMCM','Name':'MC6800GMCM General Motors/Delcom Microprocessor Unit','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6800GMCM','Name':'MC6800GMCM General Motors/Delcom Microprocessor Unit','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':2}
 
 MC6800GMCM General Motors/Delcom Microprocessor Unit
 ====================================================
@@ -41,7 +41,7 @@ MC6800GMCM General Motors/Delcom Microprocessor Unit
    "Mask",""
    "Packaging","Ceramic"
    "Status","Prototype"
-   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
+   "Location",":ref:`Storage Box 1, Drawer 1, Row 3, Column 2 <Storage_Box_1_Drawer_1>`"
    "Temperature","N/A"
    "Frequency","N/A"
    "Notes",""

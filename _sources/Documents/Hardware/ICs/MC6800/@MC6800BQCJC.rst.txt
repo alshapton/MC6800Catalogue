@@ -7,7 +7,7 @@
 MC6800BQCJC Microprocessor Unit
 ===============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC6800BQCJC.png
    :width: 400
    :align: center
 
@@ -32,7 +32,7 @@ MC6800BQCJC Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |underoffer| 12-MAR-2026
+   |notpresent|
 
 .. rubric:: Links
 

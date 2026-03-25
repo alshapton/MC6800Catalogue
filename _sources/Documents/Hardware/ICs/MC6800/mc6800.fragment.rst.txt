@@ -6,7 +6,7 @@
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
-      "|intransit| :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","-0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CP <MC68A00CP>`","Plastic","1.5Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CS <MC68A00CS>`","CERDIP","1.5Mhz","-40-85\ :sup:`o`\ C",""
@@ -14,12 +14,12 @@
       "|present| :ref:`MC6800P <MC6800P>`","Plastic","1Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`HEPC4801L <HEPC4801L>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MC68B00P <MC68B00P>`","Plastic","2Mhz","-0-70\ :sup:`o`\ C",""
-      "|underoffer| :ref:`XC6800B <XC6800B>`","Ceramic","","",""
+      "|notpresent| :ref:`XC6800B <XC6800B>`","Ceramic","","",""
       "|present| :ref:`MC68B00S <MC68B00S>`","CERDIP","2Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`SC44204P <SC44204P>`","Plastic","","",""
       "|present| :ref:`MC6800L <MC6800L>`","Ceramic","","",""
       "|present| :ref:`MC6800L <2!MC6800L>`","Ceramic","","",""
-      "|underoffer| :ref:`MC6800BQCJC <MC6800BQCJC>`","MIL-STD-883","","",""
+      "|notpresent| :ref:`MC6800BQCJC <MC6800BQCJC>`","MIL-STD-883","","",""
       "|present| :ref:`MC68B00L <MC68B00L>`","Ceramic","2Mhz","-0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00P <MC68A00P>`","Plastic","1.5Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC6800GMCM <MC6800GMCM>`","Ceramic","N/A","N/A",""

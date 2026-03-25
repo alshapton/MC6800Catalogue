@@ -226,6 +226,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68A00L|  image:: /images/Hardware/ICs/MC6800/MC68A00L.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6800CL|  image:: /images/Hardware/ICs/MC6800/MC6800CL.png
    :width: 200
    :class: no-scaled-links
@@ -242,6 +246,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iXC6800B|  image:: /images/Hardware/ICs/MC6800/XC6800B.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC68B00S|  image:: /images/Hardware/ICs/MC6800/MC68B00S.png
    :width: 200
    :class: no-scaled-links
@@ -255,6 +263,10 @@
    :class: no-scaled-links
 
 .. |i2!MC6800L|  image:: /images/Hardware/ICs/MC6800/2!MC6800L.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMC6800BQCJC|  image:: /images/Hardware/ICs/MC6800/MC6800BQCJC.png
    :width: 200
    :class: no-scaled-links
 

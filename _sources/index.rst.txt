@@ -71,8 +71,6 @@ Conventions Used
    Collection <collection>
    Timeline <timeline>
    Map <map>
-   In Transit <transit>
-   Under Offer <underoffer>
    Statistics <statistics>
 
 .. toctree::

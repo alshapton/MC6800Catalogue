@@ -2,12 +2,12 @@
 
 .. _MC68A00L:
 
-.. #Metadata {'Product':'MC68A00L','Name':'MC68A00L Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68A00L','Name':'MC68A00L Microprocessor Unit','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':3}
 
 MC68A00L Microprocessor Unit
 ============================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC68A00L.png
    :width: 400
    :align: center
 
@@ -32,7 +32,7 @@ MC68A00L Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |intransit| 
+   |present| 20-MAR-2026 
 
 .. rubric:: Links
 
