@@ -2389,7 +2389,7 @@ while True:
             setup_icons()
             output='Commencing rebuild of database'
             console.print(output, style="info")
-            #rebuild_db()
+            rebuild_db()
             console.print('Completed rebuild of database',style="info")     
             console.print('\n\nCommencing updating storage metadata links',style="info")
 
@@ -2551,46 +2551,25 @@ while True:
             output='Completed rebuild of database'
             console.print(output, style="info")           
         case "8":
-            output="This is experimental - CTTL-C to exit"
-            console.print(output, style="info")           
-            firstIC=input("Enter First IC (full number): ")
-            
-            FIRST_IC_LOCATION=getICfilename(firstIC)
-            if os.path.exists(FIRST_IC_LOCATION):
-                with open(FIRST_IC_LOCATION, 'r') as file:
-                    firstlines = file.readlines()
-                present=False
-                for line in firstlines:
-                    if line.contains('|present|'):
-                        present=True
-                if not present:
-                    output=firstIC + " is not present in the collection"
-                    console.print(output, style="warning")           
-                else:    
-                    secondIC=input("Enter Second IC (full number): ")
-                    SECOND_IC_LOCATION=getICfilename(secondIC)
-                    if os.path.exists(SECOND_IC_LOCATION):
-                        with open(SECOND_IC_LOCATION, 'r') as file:
-                            secondlines = file.readlines()
-                        present=False
-                        for line in secondlines:
-                            if line.contains('|present|'):
-                                present=True
-                        if not present:
-                            output=secondIC + " is not present in the collection"
-                            console.print(output, style="warning")                          
-                        else:
-                            pass
-                            #Now we can start to the swap
-                    else:
-                        output=secondIC + " does not exist"
-                        console.print(output, style="warning")           
-                    
-            else:
-                output=firstIC + " does not exist"
-                console.print(output, style="warning")           
+            output="This is experimental - CTRL-C to exit"
+            console.print(output, style="info")     
+            family = Prompt.ask("Enter chip family without the MC prefix e.g. 6809E")
+      
+            import pyperclip
+            statement = "SELECT * FROM ics WHERE status = 'notpresent'  and parent_number = '" + family+"' order by  parent_number,ic;"
+            output = read_db(statement)
+            wantslist=''
+            for row in output:
+                wantslist=wantslist+','+row['ic']
+            wantslist='('+wantslist[1:]+')'
+            pyperclip.copy(wantslist)
+            l=len(wantslist)
+            if l>99:
+                output='This probably wont work'
+                console.print(output, style="info")     
                 
-            
+
+
                         
 
 

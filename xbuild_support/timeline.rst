@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 24-03-2026).
+This is the timeline of acquisitions (as at 30-03-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -191,3 +191,4 @@ This is the timeline of acquisitions (as at 24-03-2026).
    05-MAR-2026,:ref:`MC6800CL Microprocessor Unit <MC6800CL>`
    13-MAR-2026,:ref:`MC68A45P CRT Controller (CRTC) <MC68A45P>`
    20-MAR-2026,:ref:`MC68A00L Microprocessor Unit <MC68A00L>`
+   29-MAR-2026,:ref:`MC68A00P Microprocessor Unit <MC68A00P>`
