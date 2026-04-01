@@ -2,7 +2,7 @@
 
 .. _XC6845L:
 
-.. #Metadata {'Product':'XC6845L','Name':'XC6845L CRT Controller','Storage': 'Storage Box 1','Drawer':1,'Row':2,'Column':3}
+.. #Metadata {'Product':'XC6845L','Name':'XC6845L CRT Controller','Storage': 'Storage Box 2','Drawer':3,'Row':1,'Column':1}
 
 XC6845L CRT Controller
 ======================
@@ -21,7 +21,7 @@ XC6845L CRT Controller
    "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering"
-   "Location",":ref:`Storage Box 1, Drawer 1, Row 2, Column 3 <Storage_Box_1_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 1, Column 1 <Storage_Box_2_Drawer_3>`"
    "Temperature",""
    "Frequency",""
    "Notes",""
