@@ -17,5 +17,5 @@ Micromodule Enclosure and System Hardware (etc)
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 

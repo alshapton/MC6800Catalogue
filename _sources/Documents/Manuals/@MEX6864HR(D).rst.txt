@@ -25,7 +25,7 @@ MEX6864 16K-64K Hidden Refresh Memory Module Users Guide
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 

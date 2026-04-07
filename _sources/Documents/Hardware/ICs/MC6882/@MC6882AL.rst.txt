@@ -36,7 +36,7 @@ MC6882AL Octal Three-State Buffer/Latch
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 

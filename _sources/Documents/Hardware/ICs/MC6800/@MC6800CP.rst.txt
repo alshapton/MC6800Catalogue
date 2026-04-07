@@ -32,7 +32,7 @@ MC6800CP Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |underoffer|
+   |intransit|
 
 .. rubric:: Links
 
