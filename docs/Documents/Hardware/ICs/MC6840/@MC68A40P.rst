@@ -32,7 +32,7 @@ MC68A40P Programmable Timer Module (PTM)
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 
