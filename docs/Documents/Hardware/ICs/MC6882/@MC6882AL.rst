@@ -2,12 +2,12 @@
 
 .. _MC6882AL:
 
-.. #Metadata {'Product':'MC6882AL','Name':'MC6882AL Octal Three-State Buffer/Latch','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6882AL','Name':'MC6882AL Octal Three-State Buffer/Latch','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':3}
 
 MC6882AL Octal Three-State Buffer/Latch
 =======================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6882/MC6882AL.png
    :width: 400
    :align: center
 
@@ -20,12 +20,12 @@ MC6882AL Octal Three-State Buffer/Latch
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code",""
+   "Manufacture Date","30-AUG-1982 to 05-SEP-1982"
+   "Mask","QQ"
    "Packaging","Ceramic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 3 <Storage_Box_2_Drawer_4>`"
    "Temperature","0-75\ :sup:`o`\ C"
    "Frequency",""
    "Notes",""
@@ -36,7 +36,7 @@ MC6882AL Octal Three-State Buffer/Latch
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 08-APR-2026
 
 .. rubric:: Links
 
