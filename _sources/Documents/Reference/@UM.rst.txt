@@ -2,7 +2,7 @@
 
 .. _UM:
 
-.. #Metadata {'Product':'Understanding Microprocessors','Folder': 'N/A'}
+.. #Metadata {'Product':'Understanding Microprocessors','Folder': '1'}
 
 Understanding Microprocessors
 =============================
@@ -17,4 +17,4 @@ Understanding Microprocessors
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 10-APR-2026

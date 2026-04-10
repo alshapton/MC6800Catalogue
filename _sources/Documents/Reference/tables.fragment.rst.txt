@@ -10,6 +10,7 @@
    "|present| :ref:`N/A <EDUCATOR-II-BROCHURE>`","EDUCATOR-II Brochure",""
    "|present| :ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",""
    "|present| :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
+   "|present| :ref:`N/A <UM>`","Understanding Microprocessors",""
 
 .. rubric:: Folder 4
 
@@ -55,11 +56,3 @@
    :widths: 20,80,20 
 
    "|present| :ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets",""
-
-.. rubric:: Folder N/A
-
-.. csv-table::
-   :header: "Part Number","Name","Comments"
-   :widths: 20,80,20 
-
-   "|intransit| :ref:`N/A <UM>`","Understanding Microprocessors",""
