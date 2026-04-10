@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 08-04-2026).
+This is the timeline of acquisitions (as at 10-04-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -194,3 +194,4 @@ This is the timeline of acquisitions (as at 08-04-2026).
    29-MAR-2026,:ref:`MC68A00P Microprocessor Unit <MC68A00P>`
    08-APR-2026,:ref:`MC6800CP Microprocessor Unit <MC6800CP>`
    08-APR-2026,:ref:`MC6882AL Octal Three-State Buffer/Latch <MC6882AL>`
+   10-APR-2026,:ref:`Understanding Microprocessors <UM>`
