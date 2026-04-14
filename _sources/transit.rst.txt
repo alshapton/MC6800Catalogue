@@ -2,16 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 10-04-2026) in transit.
-
-
-.. rubric:: ICs
-
-.. csv-table:: 
-	:header: "Part Number","Description"
-	:widths: 30, 70
-
-	MC68A40P,":ref:`MC68A40P Programmable Timer Module (PTM) <MC68A40P>` "
+This is the current set of items (as at 14-04-2026) in transit.
 
 
 .. rubric:: Manuals

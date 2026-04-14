@@ -330,6 +330,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68A40P|  image:: /images/Hardware/ICs/MC6840/MC68A40P.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6847P|  image:: /images/Hardware/ICs/MC6847/MC6847P.png
    :width: 200
    :class: no-scaled-links
