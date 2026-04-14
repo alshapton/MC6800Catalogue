@@ -2,12 +2,12 @@
 
 .. _MC68A40P:
 
-.. #Metadata {'Product':'MC68A40P','Name':'MC68A40P Programmable Timer Module (PTM)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68A40P','Name':'MC68A40P Programmable Timer Module (PTM)','Storage': 'Storage Box 2','Drawer':3,'Row':1,'Column':3}
 
 MC68A40P Programmable Timer Module (PTM)
 ========================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6840/MC68A40P.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC68A40P Programmable Timer Module (PTM)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","8343"
+   "Manufacture Date","17-OCT-1983 to 23-OCT-1983"
+   "Mask","GG6"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Productiom"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 1, Column 3 <Storage_Box_2_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC68A40P Programmable Timer Module (PTM)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 14-APR-2026
 
 .. rubric:: Links
 
