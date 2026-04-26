@@ -1,0 +1,3 @@
+Updates:
+- Added M68MMLC1 Micromodule Long Chassis 115V to listing
+- Added M68MMLC2 Micromodule Long Chassis 220V to listing

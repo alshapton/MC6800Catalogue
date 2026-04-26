@@ -1462,6 +1462,120 @@ def do_create():
 
     return index_entry
 
+def do_create_1(product_name,product_number,product_type,orphan,comments,acquired,links,linkdocument,acquired_date,silent):
+    #
+    #    Create individual entry from a supplied bit of data
+    #
+    if acquired == "present":
+        acquired = True
+        index_entry = '"|present| :ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status="|present| " + acquired_date + "\n\n"
+    if acquired == "notpresent":
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = "|notpresent|"
+    if acquired == "intransit":
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = "|intransit|"
+    if acquired == "underoffer":
+        acquired = False
+        index_entry = '":ref:`' + product_number + ' <' + product_number + '>`","' + product_name + '","' + comments + '"' 
+        acquired_status = "|underoffer|"
+
+    dotdot = '../../'
+    images = dotdot + 'images/'
+    match product_type:
+        case "A":
+            location = "Documents/ApplicationNotes"
+        case "R":
+            location = "Documents/Reference"
+            images = dotdot + 'images/Reference/'
+        case "D":
+            location = "Documents/Datasheets"
+            images = dotdot + 'images/DataSheets/'
+        case "C":
+            location = "Documents/ReferenceCards"
+        case "M":
+            location = "Software/Monitors"
+        case "N":
+            location = "Documents/Manuals"            
+            images = dotdot + 'images/Manuals/'
+        case "G":
+            location = "Documents/Generic"
+        case "I":
+            location = "Documents/Hardware/ICs"   
+            images = dotdot + 'images/Hardware/ICs/'
+        case "E":
+            location = "Documents/Hardware/EXORciser"
+            images = dotdot + 'images/Hardware/EXORciser/'
+        case "O":
+            location = "Documents/Hardware/Other"
+            images = dotdot + 'images/Hardware/Other/'
+        case _:
+            console.print("Invalid product type",style="danger")
+            exit() 
+
+    OUTPUT_FILE = f"docs/{location}/@{product_number}.rst"
+    if os.path.exists(OUTPUT_FILE):
+        console.print(f"File {OUTPUT_FILE} already exists",style="danger")
+        exit()
+
+    if silent == 'N':
+        console.print(f"Creating file {OUTPUT_FILE}",style="info")
+    with open(OUTPUT_FILE,"w") as c:
+        if orphan == "Y":
+            c.write(':orphan:\n\n')
+        c.write('.. _' + product_number + ':\n\n')
+        c.write(product_name + '\n')
+        for i in product_name:
+            c.write('=')
+        c.write('\n\n')
+        original_image = MOVE + '/' + product_number + '.png'
+        image_present = True
+        if not os.path.exists(original_image):
+            c.write('.. image:: '+ dotdot + 'images' + '/NOIMAGE.png\n')
+            image_present = False
+        else:
+            c.write('.. image:: '+ images + product_number + '.png\n')
+        c.write('   :width: 400\n')
+        c.write('   :align: center\n\n')
+
+        c.write('.. rubric:: Collection Information\n\n')
+        c.write('.. csv-table:: \n')
+        c.write('   :header: "Acquired"\n')
+        c.write('   :widths: auto\n\n')     
+
+        c.write('   ' + acquired_status)
+
+        original_document = ''
+        if links == "Y":
+            c.write('\n\n.. rubric:: Links\n\n')
+            target_document =  dotdot + '_static/' + location + "/"+ linkdocument
+            c.write(":download:`" + product_name + " <" + target_document+ ">`")
+            original_document = MOVE + '/' + linkdocument
+        
+        
+        target_image = images.replace(dotdot,'docs/') + product_number + '.png'
+        if silent == 'N':
+            console.print('Ready to move.....',style="info")
+        
+        if links =="Y":
+            target_document =  "docs/_static/" + location + "/"+ linkdocument
+            movefile(original_document, target_document)
+            
+        if image_present:
+            movefile(original_image, target_image)
+            if silent == 'N':
+                console.print('Moved images and docs data',style="info")
+        else:
+            if silent == 'N':
+                console.print('No image to move',style="info")            
+
+    return index_entry
+
+
+
 
 # DO SETUP
 def setup_icons():
@@ -2551,27 +2665,36 @@ while True:
             output='Completed rebuild of database'
             console.print(output, style="info")           
         case "8":
+
             output="This is experimental - CTRL-C to exit"
-            console.print(output, style="info")     
-            family = Prompt.ask("Enter chip family without the MC prefix e.g. 6809E")
-      
-            import pyperclip
-            statement = "SELECT * FROM ics WHERE status = 'notpresent'  and parent_number = '" + family+"' order by  parent_number,ic;"
-            output = read_db(statement)
-            wantslist=''
-            for row in output:
-                wantslist=wantslist+','+row['ic']
-            wantslist='('+wantslist[1:]+')'
-            pyperclip.copy(wantslist)
-            l=len(wantslist)
-            if l>99:
-                output='This probably wont work'
-                console.print(output, style="info")     
-                
-
-
-                        
-
+            filename = XBS + OSSEP + 'bulk.txt'
+            with open(filename, 'r') as file:
+                lines = file.readlines()
+            results = open(XBS+OSSEP+'bulk.results.txt', 'w')
+            results.write("Updates:\n")
+            for line in lines:
+                components = line.split(',')
+                product_name  = components[0]
+                product_number  = components[1]
+                product_type  = components[2]
+                orphan = 'Y'
+                comments = components[3]
+                acquired = components[4]
+                links = components[5]
+                linkdocument = components[6]
+                acquired_date = components[7]
+                index_entry = do_create_1(product_name,product_number,product_type,orphan,comments,acquired,links,linkdocument,acquired_date,'Y')
+                if acquired == "notpresent":
+                    acquired_text = "listing"
+                if acquired == "intransit":     
+                    acquired_text = "in transit"   
+                if acquired == "underoffer":
+                    acquired_text = "under offer"
+                if acquired == "present":
+                    acquired_text = "collection"                    
+                results.write('- Added ' + product_number + ' ' + product_name + ' to ' + acquired_text + '\n')
+                print(index_entry)
+            results.close()
 
         case "9":
             
