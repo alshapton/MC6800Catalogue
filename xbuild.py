@@ -2693,11 +2693,16 @@ while True:
                 if acquired == "present":
                     acquired_text = "collection"                    
                 results.write('- Added ' + product_number + ' ' + product_name + ' to ' + acquired_text + '\n')
-                print(index_entry)
+                console.print('\n'+index_entry+'\n',style="info")
+
+                
             results.close()
 
-            os.system("git add *")
-            os.system("git commit -F " + XBS+OSSEP+'bulk.results.txt' )
+
+            choice = Prompt.ask("Do you want to auto git commit?", choices=["Y", "N"], default="N", case_sensitive=True)
+            if choice == 'Y':
+                os.system("git add *")
+                os.system("git commit -F " + XBS+OSSEP+'bulk.results.txt' )
 
         case "9":
             

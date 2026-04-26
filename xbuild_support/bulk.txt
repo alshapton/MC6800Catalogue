@@ -1,2 +1,4 @@
-Micromodule Power Supply,M68MMPS1-1,O,,notpresent,,,
-Micromodule Card Cage,M68MMCC05,O,,notpresent,,,
+Micromodule 23 Mounting Kit,M68MM23IKIT,O,,notpresent,,,
+Short Chassis Rack Mounting Kit,M68MMSK,O,,notpresent,,,
+Long Chassis Rack Mounting Kit,M68MMLK,O,,notpresent,,,
+Front Loading Chassis Rack Mounting Kit,M68MFLK,O,,notpresent,,,
