@@ -2696,6 +2696,9 @@ while True:
                 print(index_entry)
             results.close()
 
+            os.system("git add *")
+            os.system("git commit -F " + XBS+OSSEP+'bulk.results.txt' )
+
         case "9":
             
             # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"

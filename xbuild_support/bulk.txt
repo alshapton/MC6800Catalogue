@@ -1,2 +1,2 @@
-Micromodule Long Chassis 115V,M68MMLC1,O,,notpresent,,,
-Micromodule Long Chassis 220V,M68MMLC2,O,,notpresent,,,
+Micromodule Power Supply,M68MMPS1-1,O,,notpresent,,,
+Micromodule Card Cage,M68MMCC05,O,,notpresent,,,
