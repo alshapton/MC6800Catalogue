@@ -2,7 +2,16 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 14-04-2026) in transit.
+This is the current set of items (as at 25-04-2026) in transit.
+
+
+.. rubric:: ICs
+
+.. csv-table:: 
+	:header: "Part Number","Description"
+	:widths: 30, 70
+
+	MC6808P,":ref:`MC6808P Microprocessor with Clock and Optional RAM (MC6808) <MC6808P>` "
 
 
 .. rubric:: Manuals
@@ -14,4 +23,3 @@ This is the current set of items (as at 14-04-2026) in transit.
 	M68MM01(D4),":ref:`Monoboard Microcomputer 1 Micromodule 1 <M68MM01(D4)>` "
 	MESH,":ref:`Micromodule Enclosure and System Hardware (etc) <MESH>` "
 	MEX6864HR(D),":ref:`MEX6864 16K-64K Hidden Refresh Memory Module Users Guide <MEX6864HR(D)>` "
-	MSETPASC(D1),":ref:`EXORset Resident Pascal Compiler Users Guide <MSETPASC(D1)>` "

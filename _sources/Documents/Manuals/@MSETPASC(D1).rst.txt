@@ -2,6 +2,8 @@
 
 .. _MSETPASC(D1):
 
+.. #Metadata {'Product':'MSETPASC(D1)','Name':'EXORset Resident Pascal Compiler Users Guide','Folder': '1'}
+
 EXORset Resident Pascal Compiler Users Guide
 ============================================
 
@@ -15,4 +17,4 @@ EXORset Resident Pascal Compiler Users Guide
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 25-APR-2026

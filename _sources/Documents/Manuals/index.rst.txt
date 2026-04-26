@@ -132,7 +132,7 @@ Reference Manuals
    ":ref:`N/A <MPLLREF(PRELIM)>`","MPL Language Reference Manual","Prelimimary March 1976"
    ":ref:`M68MPLC(D) <M68MPLC(D)>`","M6800 MPL Cross-Computer Language Reference Manual",""
    ":ref:`M68COB(D) <M68COB(D)>`","M6800 Resident COBOL Language Reference Manual","1978"
-   ":ref:`MSETPASC(D1) <MSETPASC(D1)>`","EXORset Resident Pascal Compiler Users Guide","New in packaging"
+   "|present|:ref:`MSETPASC(D1) <MSETPASC(D1)>`","EXORset Resident Pascal Compiler Users Guide","July 1981"
    ":ref:`M68PLM(D1) <M68PLM(D1)>`","Motorola PASCAL Language Manual","May 1979"
    "|present|:ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Language Manual","January 1980"
    ":ref:`M6809PASC(D2) <M6809PASC(D2)>`","M6809 Resident Pascal Compiler and Interpreter Users Guide",""
