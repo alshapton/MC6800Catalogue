@@ -5,7 +5,7 @@
 Front Loading Chassis Rack Mounting Kit
 =======================================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MFLK.png
    :width: 400
    :align: center
 

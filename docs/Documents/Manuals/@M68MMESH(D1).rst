@@ -1,13 +1,13 @@
 :orphan:
 
-.. _MESH:
+.. _M68MMESH(D1):
 
-.. #Metadata {'Product':'MESH','Name':'Micromodule Enclosure and System Hardware (etc)','Folder': 'None'}
+.. #Metadata {'Product':'M68MMESH(D1)','Name':'Micromodule Enclosure and System Hardware (etc)','Folder': 'None'}
 
 Micromodule Enclosure and System Hardware (etc)
 ===============================================
 
-.. image:: ../../images/Manuals/MESH.png
+.. image:: ../../images/Manuals/M68MMESH(D1).png
    :width: 400
    :align: center
 

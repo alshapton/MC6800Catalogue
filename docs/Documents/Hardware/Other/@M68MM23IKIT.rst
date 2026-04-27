@@ -5,7 +5,7 @@
 Micromodule 23 Mounting Kit
 ===========================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
 

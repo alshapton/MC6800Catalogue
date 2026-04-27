@@ -5,7 +5,7 @@
 Micromodule Short Chassis 220V
 ==============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
 

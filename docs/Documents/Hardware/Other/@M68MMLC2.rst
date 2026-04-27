@@ -5,7 +5,7 @@
 Micromodule Long Chassis 220V
 =============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MMLC2.png
    :width: 400
    :align: center
 

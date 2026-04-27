@@ -5,7 +5,7 @@
 Micromodule Power Supply
 ========================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MMPS1-1.png
    :width: 400
    :align: center
 
@@ -16,3 +16,8 @@ Micromodule Power Supply
    :widths: auto
 
    |notpresent|
+
+
+.. rubric:: Links
+
+:ref:`Micromodule Enclosure and System Hardware (etc) <M68MMESH(D1)>`

@@ -5,7 +5,7 @@
 Micromodule Long Chassis 115V
 =============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MMLC1.png
    :width: 400
    :align: center
 

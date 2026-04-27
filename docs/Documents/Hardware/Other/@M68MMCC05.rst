@@ -5,7 +5,7 @@
 Micromodule Card Cage
 =====================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MMCC05.png
    :width: 400
    :align: center
 

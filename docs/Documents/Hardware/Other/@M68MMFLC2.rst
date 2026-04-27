@@ -5,7 +5,7 @@
 Front Loading Chassis 220V
 ==========================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/Hardware/Other/M68MMFLC2.png
    :width: 400
    :align: center
 
