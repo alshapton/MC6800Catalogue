@@ -5,7 +5,7 @@
 Long Chassis Rack Mounting Kit
 ==============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
 
