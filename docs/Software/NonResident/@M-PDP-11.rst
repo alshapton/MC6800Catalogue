@@ -2,7 +2,7 @@
 
 .. _M-PDP-11:
 
-.. #Metadata {'Product':'Motorola Software for DEC PDP-11 InfoSheet','Folder': '1'}
+.. #Metadata {'Product':'Motorola Software for DEC PDP-11 InfoSheet','Folder': '6'}
 
 Motorola Software for DEC PDP-11 InfoSheet
 ==========================================

@@ -2,7 +2,7 @@
 
 .. _MC6840UM-AD:
 
-.. #Metadata {'Product':'MC6840 Programmable Timer Fundamentals and Applications','Folder': '1'}
+.. #Metadata {'Product':'MC6840 Programmable Timer Fundamentals and Applications','Folder': '6'}
 
 MC6840 Programmable Timer Fundamentals and Applications
 =======================================================

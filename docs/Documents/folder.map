@@ -8,7 +8,6 @@
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`All you need for your Microcomputer System <ALLYOUNEED>`,""
     :ref:`EDUCATOR-II Brochure <EDUCATOR-II-BROCHURE>`,""
     :ref:`M6800 Co-Resident Assembler Reference Manual <M68CRA(D)>`,""
     :ref:`M6800 Co-Resident Editor Reference Manual <M68CRE(D)>`,""
@@ -18,21 +17,15 @@
     :ref:`M68PLM(D2) <M68PLM(D2)>`,""
     :ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>`,""
     :ref:`MC6809/MC6809E 8-Bit Microprocessor Programming Model <MC6809AC3>`,""
-    :ref:`MC6840 Programmable Timer Fundamentals and Applications <MC6840UM-AD>`,""
     :ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`,""
     :ref:`MC6845 Cathode Ray Tube Controller Programming <REF-MC6845>`,""
     :ref:`MC68488 GPIA for IEEE-488 Bus <REF-MC68488>`,""
     :ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`,""
-    :ref:`MEK6800D2 Microcomputer Kit System Expansion Techniques <AN-771>`,""
-    :ref:`MES6800 User Guide <MES6800>`,""
-    :ref:`MEX6815-1 8K Dynamic RAM Module Supplement <MEX68151>`,""
     :ref:`MEX68162(D2) <MEX68162(D2)>`,""
     :ref:`MSETPASC(D1) <MSETPASC(D1)>`,""
     :ref:`Microprocessor Course Notes Page <M6800CNP>`,""
     :ref:`Monoboard Microcomputer 1A Micromodule 1A <M68MM01A(D4)>`,""
-    :ref:`Motorola MPU Vocabulary <MPUVocabulary>`,"First Edition 1977"
     :ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`,""
-    :ref:`Motorola Software for DEC PDP-11 InfoSheet <M-PDP-11>`,""
     :ref:`Understanding Microprocessors <UM>`,""
 
 
@@ -79,6 +72,23 @@
    :widths: 60,40
 
     :ref:`MC6801RM(AD2) <MC6801RMAD2>`,""
+
+
+.. _6_map_reference:
+
+.. rubric:: Folder 6
+
+.. csv-table::
+   :header: "Name","Comments"
+   :widths: 60,40
+
+    :ref:`All you need for your Microcomputer System <ALLYOUNEED>`,""
+    :ref:`MC6840 Programmable Timer Fundamentals and Applications <MC6840UM-AD>`,""
+    :ref:`MEK6800D2 Microcomputer Kit System Expansion Techniques <AN-771>`,""
+    :ref:`MES6800 User Guide <MES6800>`,""
+    :ref:`MEX6815-1 8K Dynamic RAM Module Supplement <MEX68151>`,""
+    :ref:`Motorola MPU Vocabulary <MPUVocabulary>`,"First Edition 1977"
+    :ref:`Motorola Software for DEC PDP-11 InfoSheet <M-PDP-11>`,""
 
 
 .. _Hardware_map_reference:

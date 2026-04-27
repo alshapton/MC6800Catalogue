@@ -2,7 +2,7 @@
 
 .. _MES6800:
 
-.. #Metadata {'Product':'MES6800 User Guide','Folder': '1'}
+.. #Metadata {'Product':'MES6800 User Guide','Folder': '6'}
 
 MES6800 User Guide
 ==================

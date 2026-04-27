@@ -2,7 +2,7 @@
 
 .. _AN-771:
 
-.. #Metadata {'Product':'MEK6800D2 Microcomputer Kit System Expansion Techniques','Folder': '1'}
+.. #Metadata {'Product':'MEK6800D2 Microcomputer Kit System Expansion Techniques','Folder': '6'}
 
 MEK6800D2 Microcomputer Kit System Expansion Techniques
 =======================================================
