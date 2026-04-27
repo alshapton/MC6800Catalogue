@@ -6,7 +6,6 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   "|present| :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
    "|present| :ref:`N/A <EDUCATOR-II-BROCHURE>`","EDUCATOR-II Brochure",""
    "|present| :ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",""
    "|present| :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
@@ -20,6 +19,14 @@
 
    "|present| :ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Collection of Documents <M6800_Microcomputer_System_Support_Products_map_reference>`"
    "|present| :ref:`N/A <NONE-2>`","Microprocessor Applications Manual",""
+
+.. rubric:: Folder 6
+
+.. csv-table::
+   :header: "Part Number","Name","Comments"
+   :widths: 20,80,20 
+
+   "|present| :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
 
 .. rubric:: Folder M6800 Microcomputer System Support Products
 
