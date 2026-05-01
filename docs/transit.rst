@@ -2,16 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 27-04-2026) in transit.
-
-
-.. rubric:: ICs
-
-.. csv-table:: 
-	:header: "Part Number","Description"
-	:widths: 30, 70
-
-	MC6808P,":ref:`MC6808P Microprocessor with Clock and Optional RAM (MC6808) <MC6808P>` "
+This is the current set of items (as at 01-05-2026) in transit.
 
 
 .. rubric:: Manuals

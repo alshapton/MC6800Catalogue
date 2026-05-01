@@ -2,12 +2,12 @@
 
 .. _MC6808P:
 
-.. #Metadata {'Product':'MC6808P','Name':'MC6808P Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6808P','Name':'MC6808L Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'Storage Box 2','Drawer':3,'Row':2,'Column':1}
 
-MC6808P Microprocessor with Clock and Optional RAM (MC6808)
-===========================================================
+MC6808P Microprocessor with Clock and Optional RAM
+==================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6808/MC6808P.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC6808P Microprocessor with Clock and Optional RAM (MC6808)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","8213"
+   "Manufacture Date","22-MAR-1982 to 28-MAR-1982"
+   "Mask","R1H"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 2, Column 1 <Storage_Box_2_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC6808P Microprocessor with Clock and Optional RAM (MC6808)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 29-APR-2026
 
 .. rubric:: Links
 
