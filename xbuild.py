@@ -1337,7 +1337,7 @@ def do_collection():
                             OUT=i['OLINE'][:-1]  + ',"' + BIGGER_DOC  + str(i['LOCATION'] )
                         if 'Folder' in str(i['LOCATION']) :
                             if 'None' in str(i['LOCATION']):
-                                print(str(i['LOCATION']))
+                                print('No folder :'+str(i['LOCATION']))
 
                     c.write(OUT.replace(',"'+i['DTYPE']+'"\n','\n'))
                 

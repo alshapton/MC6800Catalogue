@@ -89,6 +89,7 @@ Modules
    "|present| :ref:`DS-M68ASMR020 <DS-M68ASMR020>`","M6800 Resident Macro Asembler and Linkage Editor Datasheet","|advanceinfo|","1975"
    "|present| :ref:`DS-M68SAM <DS-M68SAM>`","M6800 Cross Assembler","|advanceinfo|","1975"
    "|present| :ref:`DS-MPL-COMPILER <DS-MPL-COMPILER>`","MPL Compiler Datasheet","|advanceinfo|","1976"
+   ":ref:`DS-M6809-PASCLI <DS-M6809-PASCLI>`","M6809 Pascal Compiler Datasheet","|advanceinfo|","1979"
    "|present| :ref:`DS-M68EML <DS-M68EML>`","M6800 Simulator","|advanceinfo|","1976"
    ":ref:`MEX68XT <MEX68XT>`","Extender Module","|advanceinfo|"
 
