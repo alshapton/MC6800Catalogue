@@ -2,7 +2,7 @@
 
 .. _M68MM01(D4):
 
-.. #Metadata {'Product':'M68MM01(D4)','Name':'Monoboard Microcomputer 1 Micromodule 1','Folder': 'None'}
+.. #Metadata {'Product':'M68MM01(D4)','Name':'Monoboard Microcomputer 1 Micromodule 1','Folder': '1'}
 
 Monoboard Microcomputer 1 Micromodule 1
 =======================================
@@ -17,7 +17,7 @@ Monoboard Microcomputer 1 Micromodule 1
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 25-APR-2026
 
 .. rubric:: Links
 
