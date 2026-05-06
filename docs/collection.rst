@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 04-05-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 06-05-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -202,13 +202,13 @@ This is the current collection (as at 04-05-2026) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`N/A <M68SETPRC-D1>`","M68SETPRC/D1 EXORset Programmer Card",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <MC6809AC3>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <MC68HC11A8RG-AD>`","MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <REF-MC6840>`","MC6840 Programmable Timer Module Programming Summary",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",":ref:`Folder 1 <1_map_reference>`"
- 	":ref:`N/A <REF-MC68488>`","MC68488 GPIA for IEEE-488 Bus",":ref:`Folder 1 <1_map_reference>`"
+	":ref:`N/A <M68SETPRC-D1>`","M68SETPRC/D1 EXORset Programmer Card",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <MC6809AC3>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <MC68HC11A8RG-AD>`","MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <REF-MC6840>`","MC6840 Programmable Timer Module Programming Summary",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <REF-MC6845>`","MC6845 Cathode Ray Tube Controller Programming",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <REF-MC68488>`","MC68488 GPIA for IEEE-488 Bus",":ref:`Folder 7 <7_map_reference>`"
  
 
 .. rubric:: Reference Documents

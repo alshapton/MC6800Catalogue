@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 04-05-2026).
+This is the timeline of acquisitions (as at 06-05-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -35,8 +35,8 @@ This is the timeline of acquisitions (as at 04-05-2026).
    12-MAR-2025,:ref:`MC6862P 2400 bps Digital Modulator <MC6862P>`
    12-MAR-2025,:ref:`MCM6810P 128 x 8-bit RAM <MCM6810P>`
    19-MAR-2025,:ref:`MC6809 – MC6809E 8-Bit Microprocessor Reference Card Programming Model - M6809(AC3) <MC6809AC3>`
-   19-MAR-2025,:ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`
-   19-MAR-2025,:ref:`MC6845 Cathode Ray Tube Controller Programming Reference Card <REF-MC6845>`
+   19-MAR-2025,:ref:`M6840(AC1) MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`
+   19-MAR-2025,:ref:`M6845(AC2) MC6845 Cathode Ray Tube Controller Programming Reference Card <REF-MC6845>`
    19-MAR-2025,:ref:`MC68488 GPIA for IEEE-488 Bus Reference Card <REF-MC68488>`
    20-MAR-2025,:ref:`M68MM01B1A Monoboard Microcomputer Module Datasheet <DS-M68MM01B1A>`
    20-MAR-2025,:ref:`MEX6816-22D 16K Dynamic RAM <MEX6816-22D>`

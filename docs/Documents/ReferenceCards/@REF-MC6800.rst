@@ -2,7 +2,7 @@
 
 .. _REF-MC6800:
 
-.. #Metadata {'Product':'M6800 Instruction Set Summary','Folder': '1'}
+.. #Metadata {'Product':'M6800 Instruction Set Summary','Folder': '7'}
 
 M6800 Microprocessor Instruction Set Summary
 ============================================
