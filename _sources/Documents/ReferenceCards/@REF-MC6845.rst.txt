@@ -2,10 +2,10 @@
 
 .. _REF-MC6845:
 
-.. #Metadata {'Product':'MC6845 Cathode Ray Tube Controller Programming','Folder': '1'}
+.. #Metadata {'Product':'MC6845 Cathode Ray Tube Controller Programming','Folder': '7'}
 
-MC6845 Cathode Ray Tube Controller Programming Reference Card
-=============================================================
+M6845(AC2) MC6845 Cathode Ray Tube Controller Programming Reference Card
+========================================================================
 
 .. image:: ../../images/ReferenceCards/MC6845CathodeRayTubeControllerProgrammableReference.1.png
    :width: 400

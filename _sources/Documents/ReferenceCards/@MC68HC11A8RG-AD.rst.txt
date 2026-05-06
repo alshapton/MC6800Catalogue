@@ -2,7 +2,7 @@
 
 .. _MC68HC11A8RG-AD:
 
-.. #Metadata {'Product':'MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide','Folder': '1'}
+.. #Metadata {'Product':'MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide','Folder': '7'}
 
 MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide
 ======================================================

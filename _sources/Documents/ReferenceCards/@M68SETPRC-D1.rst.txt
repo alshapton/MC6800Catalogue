@@ -2,7 +2,7 @@
 
 .. _M68SETPRC-D1:
 
-.. #Metadata {'Product':'M68SETPRC/D1 EXORset Programmer Card','Folder': '1'}
+.. #Metadata {'Product':'M68SETPRC/D1 EXORset Programmer Card','Folder': '7'}
 
 M68SETPRC/D1 EXORset Programmer Card
 ====================================

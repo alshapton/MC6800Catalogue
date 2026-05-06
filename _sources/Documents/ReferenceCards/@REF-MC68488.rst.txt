@@ -2,7 +2,7 @@
 
 .. _REF-MC68488:
 
-.. #Metadata {'Product':'MC68488 GPIA for IEEE-488 Bus','Folder': '1'}
+.. #Metadata {'Product':'MC68488 GPIA for IEEE-488 Bus','Folder': '7'}
 
 MC68488 GPIA for IEEE-488 Bus Reference Card
 ============================================

@@ -2,10 +2,10 @@
 
 .. _REF-MC6840:
 
-.. #Metadata {'Product':'MC6840 Programmable Timer Module Programming Summary','Folder': '1'}
+.. #Metadata {'Product':'MC6840 Programmable Timer Module Programming Summary','Folder': '7'}
 
-MC6840 Programmable Timer Module Programming Summary
-====================================================
+M6840(AC1) MC6840 Programmable Timer Module Programming Summary
+===============================================================
 
 .. image:: ../../images/ReferenceCards/MC6840ProgrammableTimerModuleProgrammingSummary.jpg
    :width: 400
