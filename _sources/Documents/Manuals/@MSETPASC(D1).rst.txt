@@ -2,7 +2,7 @@
 
 .. _MSETPASC(D1):
 
-.. #Metadata {'Product':'MSETPASC(D1)','Name':'EXORset Resident Pascal Compiler Users Guide','Folder': '1'}
+.. #Metadata {'Product':'EXORset Resident Pascal Compiler Users Guide','Folder': '1'}
 
 EXORset Resident Pascal Compiler Users Guide
 ============================================

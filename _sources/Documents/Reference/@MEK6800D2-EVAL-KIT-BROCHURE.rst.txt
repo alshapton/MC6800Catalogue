@@ -2,7 +2,7 @@
 
 .. _MEK6800D2-EVAL-KIT-BROCHURE:
 
-.. #Metadata {'Product':'M6800 Evaluation Kit II Brochure','Folder': '1','Comments':''}
+.. #Metadata {'Product':'M6800 Evaluation Kit II Brochure','Folder': '2','Comments':''}
 
 M6800 Evaluation Kit II Brochure
 ================================
