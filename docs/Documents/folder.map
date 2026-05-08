@@ -8,19 +8,14 @@
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`EDUCATOR-II Brochure <EDUCATOR-II-BROCHURE>`,""
+    :ref:`8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide <MEX68162(D2)>`,""
+    :ref:`EXORset Resident Pascal Compiler Users Guide <MSETPASC(D1)>`,""
     :ref:`M6800 Co-Resident Assembler Reference Manual <M68CRA(D)>`,""
     :ref:`M6800 Co-Resident Editor Reference Manual <M68CRE(D)>`,""
     :ref:`M6800 Cross Assembler Reference Manual <M68SAM(D2)>`,""
-    :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`,""
-    :ref:`M68MM01(D4) <M68MM01(D4)>`,""
-    :ref:`M68PLM(D2) <M68PLM(D2)>`,""
-    :ref:`MEX68162(D2) <MEX68162(D2)>`,""
-    :ref:`MSETPASC(D1) <MSETPASC(D1)>`,""
-    :ref:`Microprocessor Course Notes Page <M6800CNP>`,""
+    :ref:`M68MM01 Monoboard Microcomputer 1 Micromodule 1 <M68MM01(D4)>`,""
     :ref:`Monoboard Microcomputer 1A Micromodule 1A <M68MM01A(D4)>`,""
-    :ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`,""
-    :ref:`Understanding Microprocessors <UM>`,""
+    :ref:`Motorola PASCAL Language Manual <M68PLM(D2)>`,""
 
 
 .. _2_map_reference:
@@ -33,6 +28,8 @@
 
     :ref:`Autonomous Development System (French) Datasheet <DS-M68ADS1-FRENCH>`,""
     :ref:`Autonomous Development System Datasheet <DS-M68ADS1>`,""
+    :ref:`EDUCATOR-II Brochure <EDUCATOR-II-BROCHURE>`,""
+    :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`,""
     :ref:`M68MM01B1A Monoboard Microcomputer Module Datasheet <DS-M68MM01B1A>`,""
     :ref:`M68MM01D Monoboard Microcomputer Module Datasheet <DS-M68MM01D>`,""
     :ref:`M68MM07 Quad Communications Micromodule Datasheet <DS-M68MM07>`,""
@@ -40,6 +37,9 @@
     :ref:`MC6850 Datasheet <MC6850>`,""
     :ref:`MEX78PP3 EROM/PROM Programmer Module <MEX68PP3>`,""
     :ref:`Micromodule 01B1 Datasheet <M68MM01B1>`,""
+    :ref:`Microprocessor Course Notes Page <M6800CNP>`,""
+    :ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`,""
+    :ref:`Understanding Microprocessors <UM>`,""
 
 
 .. _4_map_reference:

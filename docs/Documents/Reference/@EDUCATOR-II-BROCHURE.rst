@@ -2,7 +2,7 @@
 
 .. _EDUCATOR-II-BROCHURE:
 
-.. #Metadata {'Product':'EDUCATOR-II Brochure','Folder': '1', 'Comments': ''}
+.. #Metadata {'Product':'EDUCATOR-II Brochure','Folder': '2', 'Comments': ''}
 
 EDUCATOR-II Brochure
 ====================

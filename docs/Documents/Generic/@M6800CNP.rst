@@ -2,7 +2,7 @@
 
 .. _M6800CNP:
 
-.. #Metadata {'Product':'Microprocessor Course Notes Page','Folder': '1'}
+.. #Metadata {'Product':'Microprocessor Course Notes Page','Folder': '2'}
 
 Course Notes Page
 =================

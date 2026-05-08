@@ -2,7 +2,7 @@
 
 .. _MEX68162(D2):
 
-.. #Metadata {'Product':'MEX68162(D2)','Name':'8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide','Folder': '1'}
+.. #Metadata {'Product':'8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide','Folder': '1'}
 
 8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide
 ======================================================

@@ -2,7 +2,7 @@
 
 .. _M68PLM(D2):
 
-.. #Metadata {'Product':'M68PLM(D2)','Name':'Motorola PASCAL Language Manual','Folder': '1'}
+.. #Metadata {'Product':'Motorola PASCAL Language Manual','Name':'Motorola PASCAL Language Manual','Folder': '1'}
 
 Motorola PASCAL Language Manual
 ===============================

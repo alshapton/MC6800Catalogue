@@ -1,6 +1,6 @@
 
 
-.. rubric:: Folder 1
+.. rubric:: Folder 2
 
 .. csv-table::
    :header: "Part Number","Name","Comments"
