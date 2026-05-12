@@ -2,7 +2,7 @@
 
 .. _M6809BASICM(D1):
 
-.. #Metadata {'Product':'EXORset 30 BASIC-M Users Guide','Folder': '4','Comments':'A5-format paperback'}
+.. #Metadata {'Product':'EXORset 30 BASIC-M Users Guide','Folder': '5','Comments':'A5-format paperback'}
 
 EXORset 30 BASIC-M Users Guide
 ==============================

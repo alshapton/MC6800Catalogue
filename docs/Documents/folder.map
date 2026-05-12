@@ -50,7 +50,6 @@
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`,"A5-format paperback"
     :ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`,":ref:`Collection of Documents <M6800_Microcomputer_System_Support_Products_map_reference>`"
     :ref:`Microcomputer Development Systems and Subsystems <1979_MCDS>`,"1979"
     :ref:`Microprocessor Applications Manual <NONE-2>`,""
@@ -65,7 +64,8 @@
    :header: "Name","Comments"
    :widths: 60,40
 
-    :ref:`MC6801RM(AD2) <MC6801RMAD2>`,""
+    :ref:`EXORset 30 BASIC-M Users Guide <M6809BASICM(D1)>`,"A5-format paperback"
+    :ref:`MC6801 Single Chip Microcomputer Reference Manual <MC6801RMAD2>`,""
 
 
 .. _6_map_reference:
@@ -100,6 +100,18 @@
     :ref:`MC6845 Cathode Ray Tube Controller Programming <REF-MC6845>`,""
     :ref:`MC68488 GPIA for IEEE-488 Bus <REF-MC68488>`,""
     :ref:`MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide <MC68HC11A8RG-AD>`,""
+
+
+.. _8_map_reference:
+
+.. rubric:: Folder 8
+
+.. csv-table::
+   :header: "Name","Comments"
+   :widths: 60,40
+
+    :ref:`MEX6864HR(A1) <MEX6864HR(A1)>`,""
+    :ref:`MEX6864HR(D) <MEX6864HR(D)>`,""
 
 
 .. _Hardware_map_reference:

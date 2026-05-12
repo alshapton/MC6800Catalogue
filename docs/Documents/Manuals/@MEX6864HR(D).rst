@@ -2,12 +2,12 @@
 
 .. _MEX6864HR(D):
 
-.. #Metadata {'Product':'MEX6864HR(D)','Name':'MEX6864 16K-64K Hidden Refresh Memory Module Users Guide','Folder': 'None'}
+.. #Metadata {'Product':'MEX6864HR(D)','Name':'MEX6864 16K-64K Hidden Refresh Memory Module Users Guide','Folder': '8'}
 
 MEX6864 16K-64K Hidden Refresh Memory Module Users Guide
 ========================================================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../images/Manuals/MEX6864HR(D).png
    :width: 400
    :align: center
 
@@ -25,7 +25,7 @@ MEX6864 16K-64K Hidden Refresh Memory Module Users Guide
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 25-APR-2026
 
 .. rubric:: Links
 
