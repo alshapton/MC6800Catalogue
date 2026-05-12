@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 08-05-2026).
+This is the timeline of acquisitions (as at 12-05-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -197,5 +197,7 @@ This is the timeline of acquisitions (as at 08-05-2026).
    10-APR-2026,:ref:`Understanding Microprocessors <UM>`
    14-APR-2026,:ref:`MC68A40P Programmable Timer Module (PTM) <MC68A40P>`
    25-APR-2026,:ref:`Monoboard Microcomputer 1 Micromodule 1 <M68MM01(D4)>`
+   25-APR-2026,:ref:`Addendum to MEX6864 16K-64K Hidden Refresh Memory Module Users Guide <MEX6864HR(A1)>`
+   25-APR-2026,:ref:`MEX6864 16K-64K Hidden Refresh Memory Module Users Guide <MEX6864HR(D)>`
    25-APR-2026,:ref:`EXORset Resident Pascal Compiler Users Guide <MSETPASC(D1)>`
    29-APR-2026,:ref:`MC6808P Microprocessor with Clock and Optional RAM <MC6808P>`

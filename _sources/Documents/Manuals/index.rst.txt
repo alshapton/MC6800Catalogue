@@ -64,6 +64,7 @@ Reference Manuals
    ":ref:`MEX6854(D) <MEX6854(D)>`","MEX6854 ADLC Support Module Users Guide",""
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
    ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
+   ":ref:`MEX6864HR(A1) <MEX6864HR(A1)>`","Addendum to MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","December 1979"
    ":ref:`M68SFDC3(D3) <M68SFDC3(D3)>`","Floppy Disk Controller Module","Third Edition September 1979"
    ":ref:`MEX68PI2(D) <MEX68PI2(D)>`","Printer Interface Module","First Edition July 1978"
    ":ref:`MEX68502(D) <MEX68502(D)>`","ACIA/SSDA Module User's Guide","First Edition 1978"

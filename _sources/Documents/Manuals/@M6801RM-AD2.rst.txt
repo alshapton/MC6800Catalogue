@@ -2,7 +2,7 @@
 
 .. _MC6801RMAD2:
 
-.. #Metadata {'Product':'MC6801RM(AD2)','Name':'MC6801 Single Chip Microcomputer Reference Manual','Folder': '5'}
+.. #Metadata {'Product':'MC6801 Single Chip Microcomputer Reference Manual','Folder': '5'}
 
 MC6801 Single Chip Microcomputer Reference Manual
 =================================================
