@@ -2,10 +2,10 @@
 
 .. _M68MMESH(D1):
 
-.. #Metadata {'Product':'M68MMESH(D1)','Name':'Micromodule Enclosure and System Hardware (etc)','Folder': 'None'}
+.. #Metadata {'Product':'M68MMESH(D1)','Name':'Micromodule Enclosure and System Hardware (etc)','Folder': '8'}
 
-Micromodule Enclosure and System Hardware (etc)
-===============================================
+M68MMESH(D1) Micromodule Enclosure and System Hardware (etc)
+============================================================
 
 .. image:: ../../images/Manuals/M68MMESH(D1).png
    :width: 400
@@ -17,5 +17,5 @@ Micromodule Enclosure and System Hardware (etc)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 25-APR-2026
 
