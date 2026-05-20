@@ -1,11 +1,11 @@
 :orphan:
 
-.. _M68KBD1:
+.. _M68KBC1:
 
-.. #Metadata {'Product':'M68KBD1','Name':'M68KBD1 Full ASCII Keyboard','Folder': 'Hardware'}
+.. #Metadata {'Product':'M68KBC1','Name':'M68KBC1 Keyboard Enclosure','Folder': 'Hardware'}
 
-Full ASCII Keyboard
-===================
+Keyboard Enclosure
+==================
 
 .. image:: ../../../images/Hardware/Other/M68KBD1.png
    :width: 400
@@ -21,7 +21,7 @@ Full ASCII Keyboard
 
 .. rubric:: Links
 
-:ref:`M68KBC1 Keyboard enclosure <M68KBC1>`
+:ref:`M68KBD1 Full ASCII Keyboard <M68KBD1>`
 
 :ref:`M68ADS1 Autonomous Development System Datasheet <DS-M68ADS1>`
 
