@@ -2,7 +2,7 @@
 
 .. _HB211:
 
-.. #Metadata {'Product':'Programming the 6800 Microprocessor','Folder': 'None','Comments':'Authored by B.SOuthern, distributed by Motorola'}
+.. #Metadata {'Product':'Programming the 6800 Microprocessor','Folder': 'None','Comments':'Authored by B.Southern, distributed by Motorola'}
 
 Programming the 6800 Microprocessor
 ===================================

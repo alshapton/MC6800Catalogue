@@ -26,7 +26,12 @@ desc = "This item has not yet been acquired for the collection."
 tag  = "conventions"
 name = "advanceinfo"
 icon = ":material-regular:`lock_open;2em;sd-text-danger`"
-desc = "Usually datasheets, this is preliminary or advance information and will be subject to change."
+desc = "Usually datasheets, this is advance information and will be subject to change."
+[[icons]]
+tag  = "conventions"
+name = "preliminaryinfo"
+icon = ":material-twotone:`lock_open;2em;sd-text-warning`"
+desc = "Usually datasheets, this is preliminary and may be subject to change."
 [[icons]]
 tag  = "conventions"
 name = "confirminfo"

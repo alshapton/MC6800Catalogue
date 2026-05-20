@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 13-05-2026).
+This is the timeline of acquisitions (as at 20-05-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -202,3 +202,6 @@ This is the timeline of acquisitions (as at 13-05-2026).
    25-APR-2026,:ref:`MEX6864 16K-64K Hidden Refresh Memory Module Users Guide <MEX6864HR(D)>`
    25-APR-2026,:ref:`EXORset Resident Pascal Compiler Users Guide <MSETPASC(D1)>`
    29-APR-2026,:ref:`MC6808P Microprocessor with Clock and Optional RAM <MC6808P>`
+   15-MAY-2026,:ref:`MC6801/68701/6803 Microcomputer Instruction Set Summary <MC6801(AC)>`
+   16-MAY-2026,:ref:`Motorola Microsystems Factory Service Plans and Warranty <M68FSP-1>`
+   16-MAY-2026,:ref:`Technical Information Publication 000 <TIP000>`

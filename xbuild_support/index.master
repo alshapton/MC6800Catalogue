@@ -54,7 +54,8 @@ Conventions Used
 
    |present|,"This item is present in the collection."
    |notpresent|,"This item has not yet been acquired for the collection."
-   |advanceinfo|,"Usually datasheets, this is preliminary or advance information and will be subject to change."
+   |advanceinfo|,"Usually datasheets, this is advance information and will be subject to change."
+   |preliminaryinfo|,"Usually datasheets, this is preliminary information and may be subject to change."
    |confirminfo|,"This is published material relating to the product as sold."
    |2ndsource|,"A second-source item."
    |intransit|,"An item in transit"
@@ -62,6 +63,8 @@ Conventions Used
    |underoffer|,"Under Offer."
    |document|, "Part of a larger single document."
 
+
+More information about document statuses can be found here :ref:`glossary_document_status`.
 
 
 .. toctree::
@@ -71,6 +74,7 @@ Conventions Used
    Collection <collection>
    Timeline <timeline>
    Map <map>
+   In Transit <transit>
    Statistics <statistics>
 
 .. toctree::

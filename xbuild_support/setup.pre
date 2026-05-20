@@ -54,6 +54,7 @@ rst_prolog = """
 .. |present| 	replace:: :material-regular:`verified;2em;sd-text-success`
 .. |notpresent| 	replace:: :material-regular:`thumb_down;2em;sd-text-danger`
 .. |advanceinfo| 	replace:: :material-regular:`lock_open;2em;sd-text-danger`
+.. |preliminaryinfo| 	replace:: :material-twotone:`lock_open;2em;sd-text-warning`
 .. |confirminfo| 	replace:: :material-regular:`lock;2em;sd-text-success`
 .. |2ndsource| 	replace:: :octicon:`list-ordered;2em`
 .. |underoffer| 	replace:: :material-regular:`gavel;2em;sd-text-danger`

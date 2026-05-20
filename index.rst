@@ -58,6 +58,7 @@ Conventions Used
    |document|, "Part of a larger single document."
 
 
+More information about document statuses can be found here :ref:`glossary_document_status`.
 
 .. toctree::
    :hidden:

@@ -34,11 +34,14 @@
     :ref:`M68MM01D Monoboard Microcomputer Module Datasheet <DS-M68MM01D>`,""
     :ref:`M68MM07 Quad Communications Micromodule Datasheet <DS-M68MM07>`,""
     :ref:`M68SXS EXORterm 200 Datasheet <DS-M68SXS>`,""
+    :ref:`MC6829 Memory Management Unit <MC6829>`,""
     :ref:`MC6850 Datasheet <MC6850>`,""
     :ref:`MEX78PP3 EROM/PROM Programmer Module <MEX68PP3>`,""
     :ref:`Micromodule 01B1 Datasheet <M68MM01B1>`,""
     :ref:`Microprocessor Course Notes Page <M6800CNP>`,""
     :ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`,""
+    :ref:`Motorola Microsystems Factory Service Plans and Warranty <M68FSP-1>`,""
+    :ref:`Technical Information Publication 000 <TIP000>`,"Rev A"
     :ref:`Understanding Microprocessors <UM>`,""
 
 
@@ -95,6 +98,7 @@
 
     :ref:`M6800 Instruction Set Summary <REF-MC6800>`,""
     :ref:`M68SETPRC/D1 EXORset Programmer Card <M68SETPRC-D1>`,""
+    :ref:`MC6801/68701/6803 Microcomputer Instruction Set Summary <MC6801(AC)>`,""
     :ref:`MC6809/MC6809E 8-Bit Microprocessor Programming Model <MC6809AC3>`,""
     :ref:`MC6840 Programmable Timer Module Programming Summary <REF-MC6840>`,""
     :ref:`MC6845 Cathode Ray Tube Controller Programming <REF-MC6845>`,""

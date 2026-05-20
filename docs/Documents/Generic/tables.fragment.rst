@@ -7,6 +7,8 @@
    :widths: 20,80,20 
 
    "|present| :ref:`N/A <M6800CNP>`","Microprocessor Course Notes Page",""
+   "|present| :ref:`N/A <M68FSP-1>`","Motorola Microsystems Factory Service Plans and Warranty",""
+   "|present| :ref:`N/A <TIP000>`","Technical Information Publication 000","Rev A"
 
 .. rubric:: Folder 4
 
@@ -41,4 +43,4 @@
 
    "|notpresent| :ref:`N/A <BASCNEWS(D2)>`","BASICNEWS for BASIC-M","Not sure what this document alludes to."
    "|notpresent| :ref:`N/A <FTCTTM>`","From the Computer... to the Microprocessor",""
-   "|notpresent| :ref:`N/A <HB211>`","Programming the 6800 Microprocessor","Authored by B.SOuthern, distributed by Motorola"
+   "|notpresent| :ref:`N/A <HB211>`","Programming the 6800 Microprocessor","Authored by B.Southern, distributed by Motorola"

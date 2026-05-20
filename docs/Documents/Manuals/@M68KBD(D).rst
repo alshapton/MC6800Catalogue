@@ -2,7 +2,7 @@
 
 .. _M68KBD(D):
 
-.. #Metadata {'Product':'M68KBD(D)','Name':'KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide)','Folder': 'None'}
+.. #Metadata {'Product':'M68KBD(D)','Name':'KEYBOARD ASSEMBLY (Supplement to Basic Display Unit Users Guide)','Folder': 'None'}
 
 KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide)
 =================================================================
