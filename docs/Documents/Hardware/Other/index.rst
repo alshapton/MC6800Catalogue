@@ -11,6 +11,7 @@ Other Related Hardware
    "|present| :ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board","In original briefcase"
    "|present| :ref:`N/A <HEPEducatorKt2>`","Motorola HEP Kit Educator II",""
    "|intransit| :ref:`M68KBD1 <M68KBD1>`","Full ASCII Keyboard","M68KBD1 mounted in M68KBC1"
+   "|intransit| :ref:`M68KBC1 <M68KBC1>`","M68KBC1 Keyboard enclosure","M68KBC1 with mounted M68KBC1 Keyboard"
    ":ref:`MEK6800D1 <MEK6800D1HARDWARE>`","MEK6800D1 Development board for the 6800 microprocessor",""
    "|present| :ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",""
    ":ref:`MEK6803D3 <MEK6803D3>`","MEK6803D3 Evaluation Board for the 6803 microprocessor",""
