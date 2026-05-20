@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 13-05-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 20-05-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -68,8 +68,10 @@ This is the current collection (as at 13-05-2026) of the items produced by Motor
 	":ref:`N/A <1979_MCDS>`","Microcomputer Development Systems and Subsystems",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`N/A <1979_Memory_Products>`","Motorola Memory Products",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`N/A <M6800CNP>`","Microprocessor Course Notes Page",":ref:`Folder 2 <2_map_reference>`"
+ 	":ref:`N/A <M68FSP-1>`","Motorola Microsystems Factory Service Plans and Warranty",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`N/A <MC6800CRSBNDR>`","Microprocessor Course"
 	":ref:`N/A <MPUVocabulary>`","Motorola MPU Vocabulary",":ref:`Folder 6 <6_map_reference>`"
+ 	":ref:`N/A <TIP000>`","Technical Information Publication 000",":ref:`Folder 2 <2_map_reference>`"
  
 
 .. rubric:: ICs
@@ -203,6 +205,7 @@ This is the current collection (as at 13-05-2026) of the items produced by Motor
 	:widths: 18, 60, 22
 
 	":ref:`N/A <M68SETPRC-D1>`","M68SETPRC/D1 EXORset Programmer Card",":ref:`Folder 7 <7_map_reference>`"
+ 	":ref:`N/A <MC6801(AC)>`","MC6801/68701/6803 Microcomputer Instruction Set Summary",":ref:`Folder 7 <7_map_reference>`"
  	":ref:`N/A <MC6809AC3>`","MC6809/MC6809E 8-Bit Microprocessor Programming Model",":ref:`Folder 7 <7_map_reference>`"
  	":ref:`N/A <MC68HC11A8RG-AD>`","MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide",":ref:`Folder 7 <7_map_reference>`"
  	":ref:`N/A <REF-MC6800>`","M6800 Instruction Set Summary",":ref:`Folder 7 <7_map_reference>`"
