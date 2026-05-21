@@ -205,3 +205,5 @@ This is the timeline of acquisitions (as at 21-05-2026).
    15-MAY-2026,:ref:`MC6801/68701/6803 Microcomputer Instruction Set Summary <MC6801(AC)>`
    16-MAY-2026,:ref:`Motorola Microsystems Factory Service Plans and Warranty <M68FSP-1>`
    16-MAY-2026,:ref:`Technical Information Publication 000 <TIP000>`
+   21-MAY-2026,:ref:`Keyboard Enclosure <M68KBC1>`
+   21-MAY-2026,:ref:`Full ASCII Keyboard <M68KBD1>`

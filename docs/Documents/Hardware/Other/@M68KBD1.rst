@@ -7,9 +7,7 @@
 Full ASCII Keyboard
 ===================
 
-.. image:: ../../../images/Hardware/Other/M68KBD1.png
-   :width: 400
-   :align: center
+.. include:: M68KBD1.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -17,7 +15,7 @@ Full ASCII Keyboard
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 21-MAY-2026
 
 .. rubric:: Links
 

@@ -192,7 +192,9 @@ This is the current collection (as at 21-05-2026) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
-	":ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)",":ref:`Folder Hardware <Hardware_map_reference>`"
+	":ref:`M68KBC1 <M68KBC1>`","M68KBC1 Keyboard enclosure",":ref:`Folder Hardware <Hardware_map_reference>`"
+ 	":ref:`M68KBD1 <M68KBD1>`","Full ASCII Keyboard",":ref:`Folder Hardware <Hardware_map_reference>`"
+ 	":ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`N/A <HEPEducatorKt2>`","Motorola HEP Kit Educator II"
 	":ref:`N/A <MPU_EVALUATION_BOARD>`","MPU Evalution Card MC6800 Microprocessor Board"
