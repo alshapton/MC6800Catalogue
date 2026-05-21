@@ -7,9 +7,7 @@
 Keyboard Enclosure
 ==================
 
-.. image:: ../../../images/Hardware/Other/M68KBD1.png
-   :width: 400
-   :align: center
+.. include:: M68KBC1.carousel.rst
 
 .. rubric:: Collection Information
 
@@ -17,7 +15,7 @@ Keyboard Enclosure
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 21-MAY-2026
 
 .. rubric:: Links
 

@@ -1,6 +1,6 @@
 :orphan:
 
-.. _MEX68WW:
+.. _DS-MEX68WW:
 
 .. #Metadata {'Product':'Universal Wirewrap Module','Folder': 'None'}
 
