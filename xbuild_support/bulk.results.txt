@@ -1,2 +1,9 @@
 Updates:
-- Added MEC68MIN3E MINIBUG 3E Firmware ROM with Breakpoints capability to listing
+- Added M68MEB1 Microprocessor Evaluation Board to listing
+- Added M68SAC1 Standalone Computer to listing
+- Added MEC68MIN2 MINIBUG II Firmware to listing
+- Added M68DIM Display Interface Module to listing
+- Added M68MDM1 5-inch Display Monitor to listing
+- Added M68IOS1 Input/Output Supervisor Firmware to listing
+- Added M68ICC1 Interconnection Cables Set to listing
+- Added M68BSC1 Bus System Card to listing
