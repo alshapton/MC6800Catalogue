@@ -5,7 +5,7 @@
 Audio Cassette Interface Module
 ===============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
 
@@ -16,3 +16,7 @@ Audio Cassette Interface Module
    :widths: auto
 
    |notpresent|
+
+.. rubric:: Links
+
+:ref:`M68ADS1 Autonomous Development System Data Sheet <DS-M68ADS1>`

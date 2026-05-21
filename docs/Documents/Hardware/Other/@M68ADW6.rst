@@ -5,7 +5,7 @@
 Autonomous Development System
 =============================
 
-.. image:: ../../images/NOIMAGE.png
+.. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
 
@@ -16,3 +16,7 @@ Autonomous Development System
    :widths: auto
 
    |notpresent|
+
+.. rubric:: Links
+
+:ref:`M68ADS1 Autonomous Development System Data Sheet <DS-M68ADS1>`
