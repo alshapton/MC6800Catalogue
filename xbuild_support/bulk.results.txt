@@ -1,5 +1,2 @@
 Updates:
-- Added M68MM23IKIT Micromodule 23 Mounting Kit to listing
-- Added M68MMSK Short Chassis Rack Mounting Kit to listing
-- Added M68MMLK Long Chassis Rack Mounting Kit to listing
-- Added M68MFLK Front Loading Chassis Rack Mounting Kit to listing
+- Added MEC68MIN3E MINIBUG 3E Firmware ROM with Breakpoints capability to listing

@@ -30,3 +30,27 @@ Other Related Hardware
    ":ref:`M68MMSK <M68MMSK>`","Short Chassis Rack Mounting Kit",""
    ":ref:`M68MMLK <M68MMLK>`","Long Chassis Rack Mounting Kit",""
    ":ref:`M68MFLK <M68MFLK>`","Front Loading Chassis Rack Mounting Kit",""
+
+.. rubric ADS1 Autonomous Development System
+
+.. csv-table:: 
+   :header: "Part Number","Name","Comments" 
+   :widths: 25,40,35
+
+   ":ref:`M68ADS1 <M68ADS1>`","Autonomous Development System",""
+   ":ref:`M68ADS6 <M68ADS6>`","Autonomous Development System",""
+   ":ref:`M68ADW1 <M68ADW1>`","Autonomous Development System",""
+   ":ref:`M68ADW2 <M68ADW2>`","Autonomous Development System",""
+   ":ref:`M68ADW6 <M68ADW6>`","Autonomous Development System",""
+   ":ref:`M68MDM9 <M68MDM9>`","9 inch CRT Monitor",""
+   ":ref:`M68MPR1 <M68MPR1>`","Motorola 30 chr/sec Printer",""
+   ":ref:`M68PP1 <M68PP1>`","Electro-sensitive paper for MPR Printer",""
+   ":ref:`M68MDMC1 <M68MDMC1>`","Display Monitor Cabinet for 5 inch CRT Monitor",""
+   ":ref:`M68MDMC9 <M68MDMC9>`","Display Monitor Cabinet for 9 inch CRT Monitor",""
+   ":ref:`M68EAM1 <M68EAM1>`","ROM Resident Assembler/Editor Module",""
+   ":ref:`M68EAB1 <M68EAB1>`","ROM Resident Assembler/Editor/BASIC Interpreter Module",""
+   ":ref:`MMS68103 <MMS68103>`","16K-byte RAM Module",""
+   ":ref:`MMS68103-1 <MMS68103-1>`","8K-byte RAM Module",""
+   ":ref:`M68CIM1 <M68CIM1>`","Audio Cassette Interface Module",""
+   ":ref:`M68PPR1 <M68PPR1>`","PDS PROM Programmer",""
+   ":ref:`MEC68MIN3E <MEC68MIN3E>`","MINIBUG 3E Firmware ROM with Breakpoints capability",""

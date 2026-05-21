@@ -13,7 +13,7 @@ KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide)
 
 .. note::
    
-   This document is marked as PRELIMINARY |advanceinfo|
+   This document is marked as PRELIMINARY |preliminaryinfo|
 
 .. rubric:: Collection Information
 
