@@ -8,6 +8,16 @@ Autonomous Development System
 .. image:: ../../../images/NOIMAGE.png
    :width: 400
    :align: center
+   
+.. Note::
+
+   .. csv-table:: 
+      :header: "Specification","Value"
+      :widths: auto
+         
+      "Assembled","Yes"
+      "CRT","5 inch"
+      "Display","16 line x 64 character"
 
 .. rubric:: Collection Information
 

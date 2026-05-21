@@ -9,6 +9,16 @@ Autonomous Development System
    :width: 400
    :align: center
 
+.. Note::
+
+   .. csv-table:: 
+      :header: "Specification","Value"
+      :widths: auto
+         
+      "Assembled","Yes"
+      "CRT","5 inch"
+      "Display","16 line x 32 character"
+
 .. rubric:: Collection Information
 
 .. csv-table:: 

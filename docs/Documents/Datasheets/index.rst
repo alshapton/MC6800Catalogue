@@ -81,7 +81,7 @@ Modules
    :widths: 27,34,7,15,22
 
    "|present| :ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)","|advanceinfo|","1976",""    
-   "|present| :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System","|confirminfo|","1977",""
+   "|present| :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System","|confirminfo|","December 1977",""
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit","|advanceinfo|","1975",""    
    "|present| :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200","|confirminfo|","Issue A 1978",""
    "|notpresent| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
