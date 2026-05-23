@@ -74,6 +74,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC6871B|  image:: /images/Hardware/ICs/MC6870-1/MC6871B.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6871A15|  image:: /images/Hardware/ICs/MC6870-1/MC6871A15.png
    :width: 200
    :class: no-scaled-links
