@@ -1945,6 +1945,23 @@ def rebuild_db():
                         GROUP BY status,artefacttype;")
                         
     conn.commit()
+
+    cursor_obj.execute("CREATE VIEW IF NOT EXISTS present                     \
+                        (                                                     \
+                        name,                                          \
+                        id,                                                \
+                        real_date \
+                        )                                                     \
+                        AS                                                    \
+                        SELECT name,tag,real_date          \
+                        FROM documents                                         \
+                        WHERE real_date <> ''  \
+                        UNION                                                 \
+                        SELECT name, icid,real_date                \
+                        FROM ics \
+                        where real_date <> '';")
+                        
+    conn.commit()
     
 
     # Clean tables if needed

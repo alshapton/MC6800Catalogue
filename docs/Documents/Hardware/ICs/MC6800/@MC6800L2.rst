@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MC6800L2:
+
+MC6800L2 Microprocessor Unit
+============================
+
+.. image:: ../../../../images/Hardware/ICs/MC6800/MC6800L2.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
