@@ -31,7 +31,7 @@ MCM6830AP-2 1024 x 8-bit ROM
    "Status","Production"
    "Location",":ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`"
    "Temperature","-0-70\ :sup:`o`\ C"
-   "Frequency","1.0-70Mhz"
+   "Frequency","1.0Mhz"
    "Notes",""
 
 .. rubric:: Collection Information

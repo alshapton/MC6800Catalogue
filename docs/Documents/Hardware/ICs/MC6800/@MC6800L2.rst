@@ -8,6 +8,20 @@ MC6800L2 Microprocessor Unit
 .. image:: ../../../../images/Hardware/ICs/MC6800/MC6800L2.png
    :width: 400
    :align: center
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBC"
+   "Manufacture Date","TBC"
+   "Mask",""
+   "Packaging","Ceramic"
+   "Status","Production"
+   "Location","TBC"
+   "Temperature","-0-70\ :sup:`o`\ C"
+   "Frequency","2Mhz"
+   "Notes",""
 
 .. rubric:: Collection Information
 
