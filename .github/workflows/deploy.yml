@@ -17,14 +17,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-python-version: '3.x'
-
-      - name: Generate JSON files from SQLite
-        run: python xbuild_support/build_api.py
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
