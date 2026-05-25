@@ -2,10 +2,84 @@
 .. collapse:: Microprocessor Unit (MC6800)
 
 
+
+
+    .. rubric:: Comparison: Motorola MC6800L2 vs. MC68B00
+
+    The processing cores and performance characteristics of the **MC6800L2** and the 
+    **MC68B00** are identical; both are rated for a maximum clock speed of 2.0 MHz. 
+    However, they represent separate eras in Motorola's packaging technology and 
+    part-numbering conventions.
+
+    .. rubric:: Part Number Architectural Breakdown
+
+
+    .. rubric:: MC6800L2 (Early 2.0 MHz Designation)
+    
+    * **MC**: Motorola Integrated Circuit Prefix
+    * **6800**: Core 8-bit architecture reference
+    * **L**: Ceramic Dual In-line Package (Ceramic DIP)
+    * **2**: Factory-binned performance tier certifying stable operation at 2.0 MHz
+
+    .. rubric:: MC68B00 (Standardized Family Designation)
+    
+    * **MC**: Motorola Integrated Circuit Prefix
+    * **68**: Architectural family group
+    * **B**: Integrated speed alphanumeric identifier (explicitly indicating 2.0 MHz)
+    * **00**: Base CPU core configuration
+    * **Package Suffix**: Typically omitted in broad documentation, but stamped on hardware as **P** (Plastic) or **S** (Cerdip)
+
+
+    .. rubric:: Physical and Generational Divergence
+
+    .. table:: Structural and Materials Comparison Matrix
+            :widths: 25 35 40
+
+    +-------------------+----------------------------+----------------------------+
+    | Feature           | MC6800L2                   | MC68B00                    |
+    +===================+============================+============================+
+    | **Production Era**| Mid-to-late 1970s          | Late 1970s through 1980s   |
+    +-------------------+----------------------------+----------------------------+
+    | **Max Clock Rate**| 2.0 MHz                    | 2.0 MHz                    |
+    +-------------------+----------------------------+----------------------------+
+    | **Enclosure**     | Premium Ceramic base with  | Black epoxy plastic (P) or |
+    |                   | gold-plated lid            | glass-sealed cerdip (S)    |
+    +-------------------+----------------------------+----------------------------+
+    | **Pin Metallurgy**| Gold-plated                | Tin-plated                 |
+    +-------------------+----------------------------+----------------------------+
+    | **Availability**  | Rare vintage collector tier| High volume surplus        |
+    +-------------------+----------------------------+----------------------------+
+
+    .. rubric:: Hardware Interoperability Guidelines
+
+    .. note::
+        From an electrical and execution standpoint, these two microprocessors are 
+        fully interchangeable drop-in replacements. Both utilize identical 40-pin 
+        DIP layouts and require matching external two-phase non-overlapping clock 
+        driver circuitry.
+
+    .. rubric:: Timing Equivalence Rule
+
+    Both components share identical internal bus cycle metrics:
+
+    .. math::
+
+        f_{max} = 2.0\text{ MHz} \implies t_{cyc} \ge 500\text{ ns}
+
+    The minimum allowable clock pulse high width (:math:`PWH_{\phi\_1}`) for both 
+    variants is strictly bounded:
+
+    .. math::
+
+        PW_{H} \ge 180\text{ ns}
+
+    .. warning::
+        While a ceramic **MC6800L2** can always replace a plastic **MC68B00P**, replacing an MC6800L2 with a plastic MC68B00P in high-temperature or high-humidity industrial settings may degrade environmental tolerance due to the shift from gold/ceramic to tin/plastic materials.
    .. csv-table::
       :header: "Part","Packaging","Freq","Temp","Notes"
       :widths: auto
 
+      "|notpresent| :ref:`MC6800L2 <MC6800L2>`","","","",""
       "|present| :ref:`MC68A00L <MC68A00L>`","Ceramic","1.5Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC6800CL <MC6800CL>`","Ceramic","1Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A00CP <MC68A00CP>`","Plastic","1.5Mhz","-40-85\ :sup:`o`\ C",""

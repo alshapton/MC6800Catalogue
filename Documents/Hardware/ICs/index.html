@@ -18,6 +18,7 @@
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Other Related Hardware" href="../Other/index.html" />
@@ -46,7 +47,83 @@ This logical system allowed engineers to easily identify the role of each compon
 <p>Family members were further identified by <a class="reference internal" href="packaging.html#packaging"><span class="std std-ref">additional components within the IC number</span></a></p>
 <p>Note that the IC part numbers within the following sections are as exhaustive as available information dictates. More information, and hence more IC part numbers may be added subsequently.</p>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="6106882e-67c2-4557-a12d-d68ea088c7c3" name="6106882e-67c2-4557-a12d-d68ea088c7c3" type="checkbox"><label class="sphinx_collapse__label" for="6106882e-67c2-4557-a12d-d68ea088c7c3"><i class="sphinx_collapse__icon"></i>Microprocessor Unit (MC6800)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="d62a18f5-d221-41cf-a4e8-c2871be3ac68" name="d62a18f5-d221-41cf-a4e8-c2871be3ac68" type="checkbox"><label class="sphinx_collapse__label" for="d62a18f5-d221-41cf-a4e8-c2871be3ac68"><i class="sphinx_collapse__icon"></i>Microprocessor Unit (MC6800)</label><div class="sphinx_collapse__content docutils">
+<blockquote>
+<div><p class="rubric">Comparison: Motorola MC6800L2 vs. MC68B00</p>
+<p>The processing cores and performance characteristics of the <strong>MC6800L2</strong> and the
+<strong>MC68B00</strong> are identical; both are rated for a maximum clock speed of 2.0 MHz.
+However, they represent separate eras in Motorola’s packaging technology and
+part-numbering conventions.</p>
+<p class="rubric">Part Number Architectural Breakdown</p>
+<p class="rubric">MC6800L2 (Early 2.0 MHz Designation)</p>
+<ul class="simple">
+<li><p><strong>MC</strong>: Motorola Integrated Circuit Prefix</p></li>
+<li><p><strong>6800</strong>: Core 8-bit architecture reference</p></li>
+<li><p><strong>L</strong>: Ceramic Dual In-line Package (Ceramic DIP)</p></li>
+<li><p><strong>2</strong>: Factory-binned performance tier certifying stable operation at 2.0 MHz</p></li>
+</ul>
+<p class="rubric">MC68B00 (Standardized Family Designation)</p>
+<ul class="simple">
+<li><p><strong>MC</strong>: Motorola Integrated Circuit Prefix</p></li>
+<li><p><strong>68</strong>: Architectural family group</p></li>
+<li><p><strong>B</strong>: Integrated speed alphanumeric identifier (explicitly indicating 2.0 MHz)</p></li>
+<li><p><strong>00</strong>: Base CPU core configuration</p></li>
+<li><p><strong>Package Suffix</strong>: Typically omitted in broad documentation, but stamped on hardware as <strong>P</strong> (Plastic) or <strong>S</strong> (Cerdip)</p></li>
+</ul>
+<p class="rubric">Physical and Generational Divergence</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>MC6800L2</p></th>
+<th class="head"><p>MC68B00</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Production Era</strong></p></td>
+<td><p>Mid-to-late 1970s</p></td>
+<td><p>Late 1970s through 1980s</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Max Clock Rate</strong></p></td>
+<td><p>2.0 MHz</p></td>
+<td><p>2.0 MHz</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Enclosure</strong></p></td>
+<td><p>Premium Ceramic base with
+gold-plated lid</p></td>
+<td><p>Black epoxy plastic (P) or
+glass-sealed cerdip (S)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Pin Metallurgy</strong></p></td>
+<td><p>Gold-plated</p></td>
+<td><p>Tin-plated</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Availability</strong></p></td>
+<td><p>Rare vintage collector tier</p></td>
+<td><p>High volume surplus</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Hardware Interoperability Guidelines</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From an electrical and execution standpoint, these two microprocessors are
+fully interchangeable drop-in replacements. Both utilize identical 40-pin
+DIP layouts and require matching external two-phase non-overlapping clock
+driver circuitry.</p>
+</div>
+<p class="rubric">Timing Equivalence Rule</p>
+<p>Both components share identical internal bus cycle metrics:</p>
+<div class="math notranslate nohighlight">
+\[f_{max} = 2.0\text{ MHz} \implies t_{cyc} \ge 500\text{ ns}\]</div>
+<p>The minimum allowable clock pulse high width (<span class="math notranslate nohighlight">\(PWH_{\phi\_1}\)</span>) for both
+variants is strictly bounded:</p>
+<div class="math notranslate nohighlight">
+\[PW_{H} \ge 180\text{ ns}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While a ceramic <strong>MC6800L2</strong> can always replace a plastic <strong>MC68B00P</strong>, replacing an MC6800L2 with a plastic MC68B00P in high-temperature or high-humidity industrial settings may degrade environmental tolerance due to the shift from gold/ceramic to tin/plastic materials.</p>
+</div>
+</div></blockquote>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -57,127 +134,133 @@ This logical system allowed engineers to easily identify the role of each compon
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68A00L.html#mc68a00l"><span class="std std-ref">MC68A00L</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800L2.html#mc6800l2"><span class="std std-ref">MC6800L2</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68A00L.html#mc68a00l"><span class="std std-ref">MC68A00L</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800CL.html#mc6800cl"><span class="std std-ref">MC6800CL</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800CL.html#mc6800cl"><span class="std std-ref">MC6800CL</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CP.html#mc68a00cp"><span class="std std-ref">MC68A00CP</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CP.html#mc68a00cp"><span class="std std-ref">MC68A00CP</span></a></p></td>
 <td><p>Plastic</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CS.html#mc68a00cs"><span class="std std-ref">MC68A00CS</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CS.html#mc68a00cs"><span class="std std-ref">MC68A00CS</span></a></p></td>
 <td><p>CERDIP</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800S.html#mc6800s"><span class="std std-ref">MC6800S</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800S.html#mc6800s"><span class="std std-ref">MC6800S</span></a></p></td>
 <td><p>CERDIP</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800P.html#mc6800p"><span class="std std-ref">MC6800P</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800P.html#mc6800p"><span class="std std-ref">MC6800P</span></a></p></td>
 <td><p>Plastic</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40HEPC4801L.html#hepc4801l"><span class="std std-ref">HEPC4801L</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40HEPC4801L.html#hepc4801l"><span class="std std-ref">HEPC4801L</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00P.html#mc68b00p"><span class="std std-ref">MC68B00P</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00P.html#mc68b00p"><span class="std std-ref">MC68B00P</span></a></p></td>
 <td><p>Plastic</p></td>
 <td><p>2Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40XC6800B.html#xc6800b"><span class="std std-ref">XC6800B</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40XC6800B.html#xc6800b"><span class="std std-ref">XC6800B</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00S.html#mc68b00s"><span class="std std-ref">MC68B00S</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00S.html#mc68b00s"><span class="std std-ref">MC68B00S</span></a></p></td>
 <td><p>CERDIP</p></td>
 <td><p>2Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40SC44204P.html#sc44204p"><span class="std std-ref">SC44204P</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40SC44204P.html#sc44204p"><span class="std std-ref">SC44204P</span></a></p></td>
 <td><p>Plastic</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800L.html#mc6800l"><span class="std std-ref">MC6800L</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800L.html#mc6800l"><span class="std std-ref">MC6800L</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%402%21MC6800L.html#mc6800l"><span class="std std-ref">MC6800L</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%402%21MC6800L.html#mc6800l"><span class="std std-ref">MC6800L</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800BQCJC.html#mc6800bqcjc"><span class="std std-ref">MC6800BQCJC</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800BQCJC.html#mc6800bqcjc"><span class="std std-ref">MC6800BQCJC</span></a></p></td>
 <td><p>MIL-STD-883</p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00L.html#mc68b00l"><span class="std std-ref">MC68B00L</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68B00L.html#mc68b00l"><span class="std std-ref">MC68B00L</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>2Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68A00P.html#mc68a00p"><span class="std std-ref">MC68A00P</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC68A00P.html#mc68a00p"><span class="std std-ref">MC68A00P</span></a></p></td>
 <td><p>Plastic</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800GMCM.html#mc6800gmcm"><span class="std std-ref">MC6800GMCM</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800GMCM.html#mc6800gmcm"><span class="std std-ref">MC6800GMCM</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>N/A</p></td>
 <td><p>N/A</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00S.html#mc68a00s"><span class="std std-ref">MC68A00S</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00S.html#mc68a00s"><span class="std std-ref">MC68A00S</span></a></p></td>
 <td><p>CERDIP</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-0-70<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800CS.html#mc6800cs"><span class="std std-ref">MC6800CS</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC6800CS.html#mc6800cs"><span class="std std-ref">MC6800CS</span></a></p></td>
 <td><p>CERDIP</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CL.html#mc68a00cl"><span class="std std-ref">MC68A00CL</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6800/%40MC68A00CL.html#mc68a00cl"><span class="std std-ref">MC68A00CL</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800CP.html#mc6800cp"><span class="std std-ref">MC6800CP</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6800/%40MC6800CP.html#mc6800cp"><span class="std std-ref">MC6800CP</span></a></p></td>
 <td><p>Plastic</p></td>
 <td><p>1Mhz</p></td>
 <td><p>-40-85<sup>o</sup>C</p></td>
@@ -191,7 +274,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="d8f7d48d-f93a-499e-b220-02e8b18dde30" name="d8f7d48d-f93a-499e-b220-02e8b18dde30" type="checkbox"><label class="sphinx_collapse__label" for="d8f7d48d-f93a-499e-b220-02e8b18dde30"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6801)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="59f82c94-ece5-4a5e-a6d6-1bc5f8af2d50" name="59f82c94-ece5-4a5e-a6d6-1bc5f8af2d50" type="checkbox"><label class="sphinx_collapse__label" for="59f82c94-ece5-4a5e-a6d6-1bc5f8af2d50"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6801)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -264,7 +347,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="b0c49312-5753-4bdb-9e70-ded66de8d8fd" name="b0c49312-5753-4bdb-9e70-ded66de8d8fd" type="checkbox"><label class="sphinx_collapse__label" for="b0c49312-5753-4bdb-9e70-ded66de8d8fd"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6802)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="2b705bfb-98d1-4a28-9035-b40aec972445" name="2b705bfb-98d1-4a28-9035-b40aec972445" type="checkbox"><label class="sphinx_collapse__label" for="2b705bfb-98d1-4a28-9035-b40aec972445"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6802)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -343,7 +426,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="3ef59e76-0f7e-4b3b-b4e8-cbfbafdde3be" name="3ef59e76-0f7e-4b3b-b4e8-cbfbafdde3be" type="checkbox"><label class="sphinx_collapse__label" for="3ef59e76-0f7e-4b3b-b4e8-cbfbafdde3be"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6802NS)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="0aac161b-a772-4f82-be1d-8593db5fa384" name="0aac161b-a772-4f82-be1d-8593db5fa384" type="checkbox"><label class="sphinx_collapse__label" for="0aac161b-a772-4f82-be1d-8593db5fa384"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6802NS)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -374,7 +457,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="c6cc6101-228f-4931-83ca-d70c8b44424e" name="c6cc6101-228f-4931-83ca-d70c8b44424e" type="checkbox"><label class="sphinx_collapse__label" for="c6cc6101-228f-4931-83ca-d70c8b44424e"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6803)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="e59b7bae-c2c7-47c5-a990-a3a4c63005c3" name="e59b7bae-c2c7-47c5-a990-a3a4c63005c3" type="checkbox"><label class="sphinx_collapse__label" for="e59b7bae-c2c7-47c5-a990-a3a4c63005c3"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6803)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -453,7 +536,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="64eb4626-12b7-49c9-a70b-e80373329e7c" name="64eb4626-12b7-49c9-a70b-e80373329e7c" type="checkbox"><label class="sphinx_collapse__label" for="64eb4626-12b7-49c9-a70b-e80373329e7c"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessor (MC6803E)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="980de8e8-4e38-41ec-854a-758b209685db" name="980de8e8-4e38-41ec-854a-758b209685db" type="checkbox"><label class="sphinx_collapse__label" for="980de8e8-4e38-41ec-854a-758b209685db"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessor (MC6803E)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -496,7 +579,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="4277eeb1-1a7d-48f7-ba51-71251fe0176f" name="4277eeb1-1a7d-48f7-ba51-71251fe0176f" type="checkbox"><label class="sphinx_collapse__label" for="4277eeb1-1a7d-48f7-ba51-71251fe0176f"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6803NR)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="905e0e2e-eb29-4cac-b83a-e3d5b49059aa" name="905e0e2e-eb29-4cac-b83a-e3d5b49059aa" type="checkbox"><label class="sphinx_collapse__label" for="905e0e2e-eb29-4cac-b83a-e3d5b49059aa"><i class="sphinx_collapse__icon"></i>Microcomputer/Microprocessor (MCU/MPU) (MC6803NR)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -563,7 +646,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="189fe2bd-ea1a-4ee0-aecf-9543668a7ecf" name="189fe2bd-ea1a-4ee0-aecf-9543668a7ecf" type="checkbox"><label class="sphinx_collapse__label" for="189fe2bd-ea1a-4ee0-aecf-9543668a7ecf"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6808)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="55149b5a-bee8-4fdb-b7eb-58094b3ef5af" name="55149b5a-bee8-4fdb-b7eb-58094b3ef5af" type="checkbox"><label class="sphinx_collapse__label" for="55149b5a-bee8-4fdb-b7eb-58094b3ef5af"><i class="sphinx_collapse__icon"></i>Microprocessor with Clock and Optional RAM (MC6808)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -618,7 +701,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="1acebf8c-f5f6-4aa3-ac45-5f60f8927cae" name="1acebf8c-f5f6-4aa3-ac45-5f60f8927cae" type="checkbox"><label class="sphinx_collapse__label" for="1acebf8c-f5f6-4aa3-ac45-5f60f8927cae"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessing Unit (MC6809)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="18d2240b-926f-42fb-aa1f-d62cfcc75490" name="18d2240b-926f-42fb-aa1f-d62cfcc75490" type="checkbox"><label class="sphinx_collapse__label" for="18d2240b-926f-42fb-aa1f-d62cfcc75490"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessing Unit (MC6809)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -751,7 +834,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="b0a35eb2-0c5d-43b0-9781-87489327bac1" name="b0a35eb2-0c5d-43b0-9781-87489327bac1" type="checkbox"><label class="sphinx_collapse__label" for="b0a35eb2-0c5d-43b0-9781-87489327bac1"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessing Unit (MC6809E)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="f249b4da-6782-4b96-9935-cc2d6dc66c32" name="f249b4da-6782-4b96-9935-cc2d6dc66c32" type="checkbox"><label class="sphinx_collapse__label" for="f249b4da-6782-4b96-9935-cc2d6dc66c32"><i class="sphinx_collapse__icon"></i>8-Bit Microprocessing Unit (MC6809E)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -884,7 +967,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="f8bf4e9e-2ec3-4baf-8acc-9d7b28f315e0" name="f8bf4e9e-2ec3-4baf-8acc-9d7b28f315e0" type="checkbox"><label class="sphinx_collapse__label" for="f8bf4e9e-2ec3-4baf-8acc-9d7b28f315e0"><i class="sphinx_collapse__icon"></i>128 x 8-Bit Static Random Access Memory (MCM6810)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="14e6ab09-aef1-4119-ab0b-f9e44abaac1b" name="14e6ab09-aef1-4119-ab0b-f9e44abaac1b" type="checkbox"><label class="sphinx_collapse__label" for="14e6ab09-aef1-4119-ab0b-f9e44abaac1b"><i class="sphinx_collapse__icon"></i>128 x 8-Bit Static Random Access Memory (MCM6810)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1005,7 +1088,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="3672f71c-5342-4bb5-8946-e01827532133" name="3672f71c-5342-4bb5-8946-e01827532133" type="checkbox"><label class="sphinx_collapse__label" for="3672f71c-5342-4bb5-8946-e01827532133"><i class="sphinx_collapse__icon"></i>Peripheral Interface Adapter (PIA) (MC6820)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="ea57c87e-6c04-45c5-82e7-a8974b214b59" name="ea57c87e-6c04-45c5-82e7-a8974b214b59" type="checkbox"><label class="sphinx_collapse__label" for="ea57c87e-6c04-45c5-82e7-a8974b214b59"><i class="sphinx_collapse__icon"></i>Peripheral Interface Adapter (PIA) (MC6820)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1048,7 +1131,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="ab9633ef-0042-4f28-902f-daa9c6adb087" name="ab9633ef-0042-4f28-902f-daa9c6adb087" type="checkbox"><label class="sphinx_collapse__label" for="ab9633ef-0042-4f28-902f-daa9c6adb087"><i class="sphinx_collapse__icon"></i>Peripheral Interface Adapter (MC6821)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="b1788de3-a7aa-4759-892f-6bb8fd930e81" name="b1788de3-a7aa-4759-892f-6bb8fd930e81" type="checkbox"><label class="sphinx_collapse__label" for="b1788de3-a7aa-4759-892f-6bb8fd930e81"><i class="sphinx_collapse__icon"></i>Peripheral Interface Adapter (MC6821)</label><div class="sphinx_collapse__content docutils">
 <p class="rubric">Part Numbering</p>
 <p>In addition to the usual part numbers (depicted below) for the MC6821, there are also an additional number of variants.</p>
 <a class="reference internal image-reference" href="../../../_images/MC6821-ordering.png"><img alt="../../../_images/MC6821-ordering.png" class="align-center" src="../../../_images/MC6821-ordering.png" style="width: 400px;" />
@@ -1506,7 +1589,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="b413541a-5335-45e6-91ab-4c1e0321204b" name="b413541a-5335-45e6-91ab-4c1e0321204b" type="checkbox"><label class="sphinx_collapse__label" for="b413541a-5335-45e6-91ab-4c1e0321204b"><i class="sphinx_collapse__icon"></i>Priority Interrupt Controller (MC6828)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="0de202d5-985f-4538-9211-507ea62d3f84" name="0de202d5-985f-4538-9211-507ea62d3f84" type="checkbox"><label class="sphinx_collapse__label" for="0de202d5-985f-4538-9211-507ea62d3f84"><i class="sphinx_collapse__icon"></i>Priority Interrupt Controller (MC6828)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1537,7 +1620,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="b1fae29d-49b2-46d4-ae69-8299edb34d90" name="b1fae29d-49b2-46d4-ae69-8299edb34d90" type="checkbox"><label class="sphinx_collapse__label" for="b1fae29d-49b2-46d4-ae69-8299edb34d90"><i class="sphinx_collapse__icon"></i>Memory Management Unit (MC6829)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="4449ebb3-a5a3-4d02-afac-dc35fc7d577d" name="4449ebb3-a5a3-4d02-afac-dc35fc7d577d" type="checkbox"><label class="sphinx_collapse__label" for="4449ebb3-a5a3-4d02-afac-dc35fc7d577d"><i class="sphinx_collapse__icon"></i>Memory Management Unit (MC6829)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1646,7 +1729,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="c1d764e0-2979-47e2-a724-b81bd07b1fd2" name="c1d764e0-2979-47e2-a724-b81bd07b1fd2" type="checkbox"><label class="sphinx_collapse__label" for="c1d764e0-2979-47e2-a724-b81bd07b1fd2"><i class="sphinx_collapse__icon"></i>1024 Byte ROM (MCM6830)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="c5479a39-d6a0-4ffc-bfa1-8f8d868d526e" name="c5479a39-d6a0-4ffc-bfa1-8f8d868d526e" type="checkbox"><label class="sphinx_collapse__label" for="c5479a39-d6a0-4ffc-bfa1-8f8d868d526e"><i class="sphinx_collapse__icon"></i>1024 Byte ROM (MCM6830)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1683,7 +1766,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="d4da0e1e-787b-4acb-9f77-a163deb52415" name="d4da0e1e-787b-4acb-9f77-a163deb52415" type="checkbox"><label class="sphinx_collapse__label" for="d4da0e1e-787b-4acb-9f77-a163deb52415"><i class="sphinx_collapse__icon"></i>2048 x 8-bit Read Only Memory (MCM6832)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="f776d74c-e49a-4564-95b0-e6ded9066c91" name="f776d74c-e49a-4564-95b0-e6ded9066c91" type="checkbox"><label class="sphinx_collapse__label" for="f776d74c-e49a-4564-95b0-e6ded9066c91"><i class="sphinx_collapse__icon"></i>2048 x 8-bit Read Only Memory (MCM6832)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1714,7 +1797,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="c47d0e95-91a9-49ce-a96b-f811c32b3857" name="c47d0e95-91a9-49ce-a96b-f811c32b3857" type="checkbox"><label class="sphinx_collapse__label" for="c47d0e95-91a9-49ce-a96b-f811c32b3857"><i class="sphinx_collapse__icon"></i>CRT Controller (CRTC) (MC6835)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="ca69f970-c4a5-4d43-aa7e-f29d29b369d9" name="ca69f970-c4a5-4d43-aa7e-f29d29b369d9" type="checkbox"><label class="sphinx_collapse__label" for="ca69f970-c4a5-4d43-aa7e-f29d29b369d9"><i class="sphinx_collapse__icon"></i>CRT Controller (CRTC) (MC6835)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1841,7 +1924,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="81200a2b-4f6c-4d86-895c-529a06140f55" name="81200a2b-4f6c-4d86-895c-529a06140f55" type="checkbox"><label class="sphinx_collapse__label" for="81200a2b-4f6c-4d86-895c-529a06140f55"><i class="sphinx_collapse__icon"></i>Floating Point ROM (MC6839)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="3c014a88-2148-448a-9f5c-67d3d7b7203b" name="3c014a88-2148-448a-9f5c-67d3d7b7203b" type="checkbox"><label class="sphinx_collapse__label" for="3c014a88-2148-448a-9f5c-67d3d7b7203b"><i class="sphinx_collapse__icon"></i>Floating Point ROM (MC6839)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1884,7 +1967,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="4666276a-f0d9-45a8-975a-6a26d89e9b7e" name="4666276a-f0d9-45a8-975a-6a26d89e9b7e" type="checkbox"><label class="sphinx_collapse__label" for="4666276a-f0d9-45a8-975a-6a26d89e9b7e"><i class="sphinx_collapse__icon"></i>Programmable Timer Module (PTM) (MC6840)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="b0bbe1de-9e58-4ca6-8f06-7b43c1afac92" name="b0bbe1de-9e58-4ca6-8f06-7b43c1afac92" type="checkbox"><label class="sphinx_collapse__label" for="b0bbe1de-9e58-4ca6-8f06-7b43c1afac92"><i class="sphinx_collapse__icon"></i>Programmable Timer Module (PTM) (MC6840)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -1999,7 +2082,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="5fbaf78b-22f4-460d-a6eb-75e44b376529" name="5fbaf78b-22f4-460d-a6eb-75e44b376529" type="checkbox"><label class="sphinx_collapse__label" for="5fbaf78b-22f4-460d-a6eb-75e44b376529"><i class="sphinx_collapse__icon"></i>Floppy Disk Controller (FDC) (MC6843)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="2be0530e-bf5b-4867-8fb1-f499e0d01560" name="2be0530e-bf5b-4867-8fb1-f499e0d01560" type="checkbox"><label class="sphinx_collapse__label" for="2be0530e-bf5b-4867-8fb1-f499e0d01560"><i class="sphinx_collapse__icon"></i>Floppy Disk Controller (FDC) (MC6843)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2030,7 +2113,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="06976de7-6600-431f-a015-767202134d51" name="06976de7-6600-431f-a015-767202134d51" type="checkbox"><label class="sphinx_collapse__label" for="06976de7-6600-431f-a015-767202134d51"><i class="sphinx_collapse__icon"></i>Direct Memory Access Controller (DMAC) (MC6844)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="41b700c5-abd2-4f9b-89c9-f8740e2c0d88" name="41b700c5-abd2-4f9b-89c9-f8740e2c0d88" type="checkbox"><label class="sphinx_collapse__label" for="41b700c5-abd2-4f9b-89c9-f8740e2c0d88"><i class="sphinx_collapse__icon"></i>Direct Memory Access Controller (DMAC) (MC6844)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2139,7 +2222,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="317089c6-15b3-4ca0-ad48-ed991ad66c13" name="317089c6-15b3-4ca0-ad48-ed991ad66c13" type="checkbox"><label class="sphinx_collapse__label" for="317089c6-15b3-4ca0-ad48-ed991ad66c13"><i class="sphinx_collapse__icon"></i>CRT Controller (CRTC) (MC6845)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="8263b867-348c-46b7-940c-e176fda988eb" name="8263b867-348c-46b7-940c-e176fda988eb" type="checkbox"><label class="sphinx_collapse__label" for="8263b867-348c-46b7-940c-e176fda988eb"><i class="sphinx_collapse__icon"></i>CRT Controller (CRTC) (MC6845)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2254,7 +2337,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="de5f82b7-c0d6-4744-8bc6-11add1885889" name="de5f82b7-c0d6-4744-8bc6-11add1885889" type="checkbox"><label class="sphinx_collapse__label" for="de5f82b7-c0d6-4744-8bc6-11add1885889"><i class="sphinx_collapse__icon"></i>ROM I/O Timer (MC6846)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="7b51e60d-a010-43c6-85c8-a53c8202dca1" name="7b51e60d-a010-43c6-85c8-a53c8202dca1" type="checkbox"><label class="sphinx_collapse__label" for="7b51e60d-a010-43c6-85c8-a53c8202dca1"><i class="sphinx_collapse__icon"></i>ROM I/O Timer (MC6846)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2345,7 +2428,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="27b378dd-3ab4-43ef-bef7-fd81f34ef008" name="27b378dd-3ab4-43ef-bef7-fd81f34ef008" type="checkbox"><label class="sphinx_collapse__label" for="27b378dd-3ab4-43ef-bef7-fd81f34ef008"><i class="sphinx_collapse__icon"></i>Video Display Generator (MC6847)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="1f9882f0-d651-4860-886f-6f2771ca2abc" name="1f9882f0-d651-4860-886f-6f2771ca2abc" type="checkbox"><label class="sphinx_collapse__label" for="1f9882f0-d651-4860-886f-6f2771ca2abc"><i class="sphinx_collapse__icon"></i>Video Display Generator (MC6847)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2418,7 +2501,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="e571a89f-c4f9-47cb-a097-12586f0a8a0d" name="e571a89f-c4f9-47cb-a097-12586f0a8a0d" type="checkbox"><label class="sphinx_collapse__label" for="e571a89f-c4f9-47cb-a097-12586f0a8a0d"><i class="sphinx_collapse__icon"></i>Asynchronous Communications Interface Adapter (MC6850)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="a013c6ee-1700-4bbc-89c9-208dc99c72d7" name="a013c6ee-1700-4bbc-89c9-208dc99c72d7" type="checkbox"><label class="sphinx_collapse__label" for="a013c6ee-1700-4bbc-89c9-208dc99c72d7"><i class="sphinx_collapse__icon"></i>Asynchronous Communications Interface Adapter (MC6850)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2533,7 +2616,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="e7e3d035-3204-4b92-b070-c9c933c2bd2e" name="e7e3d035-3204-4b92-b070-c9c933c2bd2e" type="checkbox"><label class="sphinx_collapse__label" for="e7e3d035-3204-4b92-b070-c9c933c2bd2e"><i class="sphinx_collapse__icon"></i>Synchronous Serial Data Adapter SSDA (MC6852)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="24514e70-5adb-4f6f-bc35-8cf9b79520a8" name="24514e70-5adb-4f6f-bc35-8cf9b79520a8" type="checkbox"><label class="sphinx_collapse__label" for="24514e70-5adb-4f6f-bc35-8cf9b79520a8"><i class="sphinx_collapse__icon"></i>Synchronous Serial Data Adapter SSDA (MC6852)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2642,7 +2725,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="7f08a2fa-e997-482d-bcc6-33491d83bf28" name="7f08a2fa-e997-482d-bcc6-33491d83bf28" type="checkbox"><label class="sphinx_collapse__label" for="7f08a2fa-e997-482d-bcc6-33491d83bf28"><i class="sphinx_collapse__icon"></i>Advanced Data-Link Controller (ADLC) (MC6854)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="6c140fca-8abf-486c-9ddb-3ef7b3574829" name="6c140fca-8abf-486c-9ddb-3ef7b3574829" type="checkbox"><label class="sphinx_collapse__label" for="6c140fca-8abf-486c-9ddb-3ef7b3574829"><i class="sphinx_collapse__icon"></i>Advanced Data-Link Controller (ADLC) (MC6854)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2769,7 +2852,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="ac20e2fa-516f-4541-b50c-e3eb7fa6ceae" name="ac20e2fa-516f-4541-b50c-e3eb7fa6ceae" type="checkbox"><label class="sphinx_collapse__label" for="ac20e2fa-516f-4541-b50c-e3eb7fa6ceae"><i class="sphinx_collapse__icon"></i>Microprocessor Unit (MC6855)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="8ad2a393-1187-48e2-8832-1e9d2574567e" name="8ad2a393-1187-48e2-8832-1e9d2574567e" type="checkbox"><label class="sphinx_collapse__label" for="8ad2a393-1187-48e2-8832-1e9d2574567e"><i class="sphinx_collapse__icon"></i>Microprocessor Unit (MC6855)</label><div class="sphinx_collapse__content docutils">
 <p>This product was cancelled by Motorola prior to/approximately 1981. It is listed here for reference only.</p>
 </div>
 </div>
@@ -2777,7 +2860,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="25aa7d99-1da3-401c-a115-aa376c210563" name="25aa7d99-1da3-401c-a115-aa376c210563" type="checkbox"><label class="sphinx_collapse__label" for="25aa7d99-1da3-401c-a115-aa376c210563"><i class="sphinx_collapse__icon"></i>Data Security Device (MC6859)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="ea56a7d5-5e8b-47d3-8563-1bdd71e8c81f" name="ea56a7d5-5e8b-47d3-8563-1bdd71e8c81f" type="checkbox"><label class="sphinx_collapse__label" for="ea56a7d5-5e8b-47d3-8563-1bdd71e8c81f"><i class="sphinx_collapse__icon"></i>Data Security Device (MC6859)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2802,7 +2885,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="9a00a825-e259-4a04-b1f0-41f8c92ed736" name="9a00a825-e259-4a04-b1f0-41f8c92ed736" type="checkbox"><label class="sphinx_collapse__label" for="9a00a825-e259-4a04-b1f0-41f8c92ed736"><i class="sphinx_collapse__icon"></i>0-600 bps Digital Modem (MC6860)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="dbf958fa-8f78-4bc1-8db4-6d17fd9f8de9" name="dbf958fa-8f78-4bc1-8db4-6d17fd9f8de9" type="checkbox"><label class="sphinx_collapse__label" for="dbf958fa-8f78-4bc1-8db4-6d17fd9f8de9"><i class="sphinx_collapse__icon"></i>0-600 bps Digital Modem (MC6860)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2833,7 +2916,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="40922b1b-9c86-4770-9353-9d360e179e99" name="40922b1b-9c86-4770-9353-9d360e179e99" type="checkbox"><label class="sphinx_collapse__label" for="40922b1b-9c86-4770-9353-9d360e179e99"><i class="sphinx_collapse__icon"></i>2400 bps Digital Modulator (MC6862)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="374c8a34-e2a4-4656-85e3-c4aa54797efb" name="374c8a34-e2a4-4656-85e3-c4aa54797efb" type="checkbox"><label class="sphinx_collapse__label" for="374c8a34-e2a4-4656-85e3-c4aa54797efb"><i class="sphinx_collapse__icon"></i>2400 bps Digital Modulator (MC6862)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2870,7 +2953,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="51f424cc-e946-447e-a66e-df41d7d4c4d8" name="51f424cc-e946-447e-a66e-df41d7d4c4d8" type="checkbox"><label class="sphinx_collapse__label" for="51f424cc-e946-447e-a66e-df41d7d4c4d8"><i class="sphinx_collapse__icon"></i>Two-Phase Microprocessor Clock (MC6870-1)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="66114f4d-950c-479d-9cab-9b02f773aa71" name="66114f4d-950c-479d-9cab-9b02f773aa71" type="checkbox"><label class="sphinx_collapse__label" for="66114f4d-950c-479d-9cab-9b02f773aa71"><i class="sphinx_collapse__icon"></i>Two-Phase Microprocessor Clock (MC6870-1)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2881,19 +2964,25 @@ This logical system allowed engineers to easily identify the role of each compon
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6870-1/%40MC6871A15.html#mc6871a15"><span class="std std-ref">MC6871A15</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6870-1/%40MC6871B.html#mc6871b"><span class="std std-ref">MC6871B</span></a></p></td>
+<td><p>Hermetically sealed ceramic DIP</p></td>
+<td><p>614.4 KHz</p></td>
+<td><p>0-70<sup>o</sup>C</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6870-1/%40MC6871A15.html#mc6871a15"><span class="std std-ref">MC6871A15</span></a></p></td>
 <td><p>Hermetically sealed ceramic DIP</p></td>
 <td><p>1.5Mhz</p></td>
 <td><p>0-120<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6870-1/%40MC6870.html#mc6870"><span class="std std-ref">MC6870</span></a></p></td>
+<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> <a class="reference internal" href="MC6870-1/%40MC6870.html#mc6870"><span class="std std-ref">MC6870</span></a></p></td>
 <td><p>Ceramic</p></td>
 <td><p>N/A</p></td>
 <td><p>-55-125<sup>o</sup>C</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6870-1/%40MC6871A20.html#mc6871a20"><span class="std std-ref">MC6871A20</span></a></p></td>
+<tr class="row-odd"><td><p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> <a class="reference internal" href="MC6870-1/%40MC6871A20.html#mc6871a20"><span class="std std-ref">MC6871A20</span></a></p></td>
 <td><p>Hermetically sealed ceramic DIP</p></td>
 <td><p>2Mhz</p></td>
 <td><p>0-120<sup>o</sup>C</p></td>
@@ -2908,7 +2997,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="7c52e801-e07a-42c0-b70d-a046a9b668fe" name="7c52e801-e07a-42c0-b70d-a046a9b668fe" type="checkbox"><label class="sphinx_collapse__label" for="7c52e801-e07a-42c0-b70d-a046a9b668fe"><i class="sphinx_collapse__icon"></i>M6800 Two-Phase Clock Generator/Driver (MC6875)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="fdc428e3-b1fa-4809-b0d3-3716a3afabf7" name="fdc428e3-b1fa-4809-b0d3-3716a3afabf7" type="checkbox"><label class="sphinx_collapse__label" for="fdc428e3-b1fa-4809-b0d3-3716a3afabf7"><i class="sphinx_collapse__icon"></i>M6800 Two-Phase Clock Generator/Driver (MC6875)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2939,7 +3028,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="0b40c672-6624-48c9-b86c-13658bc1f59e" name="0b40c672-6624-48c9-b86c-13658bc1f59e" type="checkbox"><label class="sphinx_collapse__label" for="0b40c672-6624-48c9-b86c-13658bc1f59e"><i class="sphinx_collapse__icon"></i>Quad Tri-State Bus Transceiver (MC6880A)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="7453a681-7534-4642-8c14-08d843167fb6" name="7453a681-7534-4642-8c14-08d843167fb6" type="checkbox"><label class="sphinx_collapse__label" for="7453a681-7534-4642-8c14-08d843167fb6"><i class="sphinx_collapse__icon"></i>Quad Tri-State Bus Transceiver (MC6880A)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -2970,7 +3059,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="b0bf7cbb-b37c-4b81-baa7-2e1cf9abb3f6" name="b0bf7cbb-b37c-4b81-baa7-2e1cf9abb3f6" type="checkbox"><label class="sphinx_collapse__label" for="b0bf7cbb-b37c-4b81-baa7-2e1cf9abb3f6"><i class="sphinx_collapse__icon"></i>Octal Three-State Buffer/Latch (MC6882)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="da89a4c0-345b-4efa-98ac-859f18aa22db" name="da89a4c0-345b-4efa-98ac-859f18aa22db" type="checkbox"><label class="sphinx_collapse__label" for="da89a4c0-345b-4efa-98ac-859f18aa22db"><i class="sphinx_collapse__icon"></i>Octal Three-State Buffer/Latch (MC6882)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3001,7 +3090,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="265a388a-42ed-479e-9210-a9df216a2e0b" name="265a388a-42ed-479e-9210-a9df216a2e0b" type="checkbox"><label class="sphinx_collapse__label" for="265a388a-42ed-479e-9210-a9df216a2e0b"><i class="sphinx_collapse__icon"></i>Synchronous Address Multiplexer (MC6883)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="437184f7-8d0e-4d79-942a-46f3848876a7" name="437184f7-8d0e-4d79-942a-46f3848876a7" type="checkbox"><label class="sphinx_collapse__label" for="437184f7-8d0e-4d79-942a-46f3848876a7"><i class="sphinx_collapse__icon"></i>Synchronous Address Multiplexer (MC6883)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3026,7 +3115,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="8f5cba35-f236-4214-a8d6-347be8842736" name="8f5cba35-f236-4214-a8d6-347be8842736" type="checkbox"><label class="sphinx_collapse__label" for="8f5cba35-f236-4214-a8d6-347be8842736"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6885)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="24283de9-9954-4de6-a34d-5b3f478d074d" name="24283de9-9954-4de6-a34d-5b3f478d074d" type="checkbox"><label class="sphinx_collapse__label" for="24283de9-9954-4de6-a34d-5b3f478d074d"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6885)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3057,7 +3146,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="bfefd59e-bb80-409d-bc75-d758e13c21b7" name="bfefd59e-bb80-409d-bc75-d758e13c21b7" type="checkbox"><label class="sphinx_collapse__label" for="bfefd59e-bb80-409d-bc75-d758e13c21b7"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6886)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="d6dd222f-db11-4c70-a82d-4ca182ee0eab" name="d6dd222f-db11-4c70-a82d-4ca182ee0eab" type="checkbox"><label class="sphinx_collapse__label" for="d6dd222f-db11-4c70-a82d-4ca182ee0eab"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6886)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3088,7 +3177,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="6d60f6c7-91cf-435b-8c20-3274b0130530" name="6d60f6c7-91cf-435b-8c20-3274b0130530" type="checkbox"><label class="sphinx_collapse__label" for="6d60f6c7-91cf-435b-8c20-3274b0130530"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6887)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="80c99c56-d938-4419-987a-0a4414285a2d" name="80c99c56-d938-4419-987a-0a4414285a2d" type="checkbox"><label class="sphinx_collapse__label" for="80c99c56-d938-4419-987a-0a4414285a2d"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6887)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3119,7 +3208,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="c2b73ac6-8c04-4ecd-8ea7-5c19fe2c6726" name="c2b73ac6-8c04-4ecd-8ea7-5c19fe2c6726" type="checkbox"><label class="sphinx_collapse__label" for="c2b73ac6-8c04-4ecd-8ea7-5c19fe2c6726"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6888)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="14569ffc-71d9-4871-85e5-b4c55d3a7c72" name="14569ffc-71d9-4871-85e5-b4c55d3a7c72" type="checkbox"><label class="sphinx_collapse__label" for="14569ffc-71d9-4871-85e5-b4c55d3a7c72"><i class="sphinx_collapse__icon"></i>Hex Three-State Buffer/Inverter (MC6888)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3150,7 +3239,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="4c166c08-1d32-4013-96f9-c1b89f53dd88" name="4c166c08-1d32-4013-96f9-c1b89f53dd88" type="checkbox"><label class="sphinx_collapse__label" for="4c166c08-1d32-4013-96f9-c1b89f53dd88"><i class="sphinx_collapse__icon"></i>NonInverting Quad Three-State Bus Transceiver (MC6889)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="ae1e6604-bd90-46d8-b76b-43863dfd4b6f" name="ae1e6604-bd90-46d8-b76b-43863dfd4b6f" type="checkbox"><label class="sphinx_collapse__label" for="ae1e6604-bd90-46d8-b76b-43863dfd4b6f"><i class="sphinx_collapse__icon"></i>NonInverting Quad Three-State Bus Transceiver (MC6889)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3181,7 +3270,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="8932bbc9-e011-4dcb-98c2-ebf2ff5b97a8" name="8932bbc9-e011-4dcb-98c2-ebf2ff5b97a8" type="checkbox"><label class="sphinx_collapse__label" for="8932bbc9-e011-4dcb-98c2-ebf2ff5b97a8"><i class="sphinx_collapse__icon"></i>MPU Bus-Compatible 8-Bit D-to-A Converter (MC6890)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="38afaf45-4b52-498f-b224-34479ca4060a" name="38afaf45-4b52-498f-b224-34479ca4060a" type="checkbox"><label class="sphinx_collapse__label" for="38afaf45-4b52-498f-b224-34479ca4060a"><i class="sphinx_collapse__icon"></i>MPU Bus-Compatible 8-Bit D-to-A Converter (MC6890)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3212,7 +3301,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="654f27a0-bae3-4924-815b-75968b9416c7" name="654f27a0-bae3-4924-815b-75968b9416c7" type="checkbox"><label class="sphinx_collapse__label" for="654f27a0-bae3-4924-815b-75968b9416c7"><i class="sphinx_collapse__icon"></i>General Purpose Interface Adapter (MC68488)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="c03f054c-432c-41d9-a8b1-8030ebb78dce" name="c03f054c-432c-41d9-a8b1-8030ebb78dce" type="checkbox"><label class="sphinx_collapse__label" for="c03f054c-432c-41d9-a8b1-8030ebb78dce"><i class="sphinx_collapse__icon"></i>General Purpose Interface Adapter (MC68488)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
@@ -3663,7 +3752,7 @@ This logical system allowed engineers to easily identify the role of each compon
 <div class="line"><br /></div>
 </div>
 <div class="sphinx_collapse docutils">
-<input class="sphinx_collapse__input" id="1e2e8d87-d5e4-40dd-9e00-1d5f7a28e3cd" name="1e2e8d87-d5e4-40dd-9e00-1d5f7a28e3cd" type="checkbox"><label class="sphinx_collapse__label" for="1e2e8d87-d5e4-40dd-9e00-1d5f7a28e3cd"><i class="sphinx_collapse__icon"></i>Enhanced MC6800 Microcomputer Unit (MC68701)</label><div class="sphinx_collapse__content docutils">
+<input class="sphinx_collapse__input" id="d056daaa-0497-401a-97d4-7a245647ba45" name="d056daaa-0497-401a-97d4-7a245647ba45" type="checkbox"><label class="sphinx_collapse__label" for="d056daaa-0497-401a-97d4-7a245647ba45"><i class="sphinx_collapse__icon"></i>Enhanced MC6800 Microcomputer Unit (MC68701)</label><div class="sphinx_collapse__content docutils">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Part</p></th>
