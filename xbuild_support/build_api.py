@@ -16,7 +16,7 @@ for row in rows:
     items_list.append(item)
     
 # Create the main list endpoint /api/items.json
-with open('../docs/items.json', 'w') as f:
+with open('items.json', 'w') as f:
     json.dump(items_list, f, indent=2)
 
 conn.close()
