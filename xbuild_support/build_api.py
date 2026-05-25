@@ -10,7 +10,7 @@ cursor = conn.cursor()
 os.makedirs('../public/api', exist_ok=True)
 
 # Fetch data from your table (e.g., "items")
-cursor.execute("SELECT name, id  FROM present")
+cursor.execute("SELECT name, id FROM present")
 rows = cursor.fetchall()
 
 items_list = []
