@@ -18,6 +18,14 @@ jobs:
       with:
         name: html-docs
         path: docs/build/html/
+    - name: Copy API file to a new directory
+      run: |
+        # Ensure the destination directory exists
+        mkdir -p docs/build/api/
+        
+        # Copy the file (source -> destination)
+        cp xbuild_support/items.json docs/build/api/items.json    
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
