@@ -2,8 +2,10 @@
 
 .. _MC6871B:
 
-MPU Clock 614.4 KHz
-===================
+.. #Metadata {'Product':'MC6871B','Name':'MC6871B MPU Clock 614.4 KHz','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+
+MC6871B MPU Clock 614.4 KHz
+===========================
 
 .. image:: ../../../../images/Hardware/ICs/MC6870-1/MC6871B.png
    :width: 400

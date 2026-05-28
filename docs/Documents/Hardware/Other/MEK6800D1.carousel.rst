@@ -15,8 +15,3 @@
       .. image:: ../../../images/Hardware/Other/MEK6800D1/MEK6800D1.3.jpeg
          :width: 800
 
-    .. card::
-
-      .. image:: ../../../images/Hardware/Other/MEK6800D1/MEK6800D1.4.png
-         :width: 800
-

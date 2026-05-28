@@ -2,7 +2,7 @@
 
 .. _MCM6810AL:
 
-.. #Metadata {'Product':'MCM6810L','Name':'MCM6810L 128 x 8-bit RAM','Storage': 'None'}
+.. #Metadata {'Product':'MCM6810L','Name':'MCM6810L 128 x 8-bit RAM','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MCM6810AL 128 x 8-bit RAM
 ========================

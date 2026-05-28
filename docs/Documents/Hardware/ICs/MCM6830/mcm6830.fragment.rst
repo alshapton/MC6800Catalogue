@@ -7,5 +7,6 @@
       :widths: auto
 
       "|present| :ref:`MCM68A30L8 <MCM68A30L8>`","Ceramic","1.5Mhz","-40-85\ :sup:`o`\ C",""
-      "|present| :ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic","1.0-70Mhz","-0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic","1.0Mhz","-0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MCM6830AL-2 <MCM6830AL-2>`","Plastic","2.0Mhz","-0-70\ :sup:`o`\ C",""
       "|present| :ref:`MCM6830L7 <MCM6830L7>`","Ceramic","","",""

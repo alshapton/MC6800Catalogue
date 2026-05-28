@@ -531,6 +531,8 @@ def update_storage():
                         if '.. #Metadata' in line:
                             this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
                             loc = ast.literal_eval(this_loc)
+                            if 'Drawer' not in loc:
+                                print(loc)
                             is_misc=False
                             
                             for i in oths["Other"]:
@@ -546,7 +548,7 @@ def update_storage():
                     c.write('.. |' + label + '|  image:: ' + image + '\n')                        
                     c.write('   :width: 200\n')                            
                     c.write('   :class: no-scaled-links\n\n')
-            
+
             if 'ReferenceCards' in file and 'fragment' not in file and 'index' not in file:
                 metadata,loc = get_loc(file)                
                 if metadata:
@@ -603,8 +605,9 @@ def update_storage():
     sorted_folders_generic = sorted(foldersgeneric, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders = sorted(foldersrefcard, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
-    sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
 
+    sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
+    
     all_folders_storage_sorted =  sorted(foldershardware + sorted_folders_manuals + sorted_folders_datasheets+sorted_folders_appnotes + sorted_folders_softres + sorted_folders_softnon + sorted_folders_generic + sorted_folders + sorted_folders_reference, key=lambda x: (x['Folder'],x['Product']))
     FOLDER_MAP_FILE = 'docs'+ OSSEP + 'Documents' + OSSEP + 'folder.map'
     current_folder=''
