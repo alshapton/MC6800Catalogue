@@ -2,6 +2,8 @@
 
 .. _MC6800L2:
 
+.. #Metadata {'Product':'MC6800L2','Name':'MC6800L2 Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+
 MC6800L2 Microprocessor Unit
 ============================
 
@@ -18,7 +20,7 @@ MC6800L2 Microprocessor Unit
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBC"
+   "Location","TBD"
    "Temperature","-0-70\ :sup:`o`\ C"
    "Frequency","2Mhz"
    "Notes",""

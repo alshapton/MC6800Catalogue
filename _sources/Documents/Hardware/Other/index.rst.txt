@@ -24,6 +24,7 @@ Other Related Hardware
    
    ":ref:`EXORSET-30 <EXORSET-30>`","Motorola Exorset 30 Model M6809 Set 30",""
    ":ref:`EXORSET-30-T33 <EXORSET-30-T33>`","Motorola Exorset 30 Model M6809 T33",""
+   ":ref:`EXORSET DS35 (M68SETDS351) <M68SETDS351>`","Motorola Exorset 30 Model M6809 T35",""
 
 
 .. rubric:: Hardware

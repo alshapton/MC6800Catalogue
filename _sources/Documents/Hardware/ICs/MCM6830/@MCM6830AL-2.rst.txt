@@ -2,12 +2,12 @@
 
 .. _MCM6830AL-2:
 
-.. #Metadata {'Product':'MCM6830AP-2','Name':'MCM6830AP-2 1024 x 8-bit ROM','Storage': 'None'}
+.. #Metadata {'Product':'MCM6830AL-2','Name':'MCM6830AL-2 1024 x 8-bit ROM','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MCM6830AL-2 1024 x 8-bit ROM
 ============================
 
-.. image:: ../../../../images/Hardware/ICs/MCM6830/MCM6830AL-2.png
+.. image:: ../../../../images/Hardware/ICs/MCM6830/MCM6830AL-2.jpg
    :width: 400
    :align: center
 

@@ -37,6 +37,7 @@ Modules
    ":ref:`MC6808 <DS-MC6802-08-02NS>`","Microprocessor with Clock and Optional RAM","|confirminfo|","1984",""
    ":ref:`MC6809 <MC6809>`","8-Bit Microprocessing Unit","|confirminfo|",""
    ":ref:`MC6809E <MC6809E>`","8-Bit Processing Unit","|confirminfo|",""
+   ":ref:`MC68HC09E <DS-MC68HC09E>`","8-bit HCMOS Microprocessor Unit","|preliminaryinfo|","1984"
    "|document| :ref:`MCM6810 <DS-MCM6810-MAY75>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","May 1975",":ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
    ":ref:`MCM6810 <DS-MCM6810>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","",""
    ":ref:`MCM6810 <DS-MCM6810-2>`","128 x 8-Bit Static Random Access Memory","|advanceinfo|","1981",""

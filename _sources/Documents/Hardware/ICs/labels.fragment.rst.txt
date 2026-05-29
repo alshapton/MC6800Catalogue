@@ -22,6 +22,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMCM6810AL|  image:: /images/Hardware/ICs/MCM6810/MCM6810AL.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMCM68B10P|  image:: /images/Hardware/ICs/MCM6810/MCM68B10P.png
    :width: 200
    :class: no-scaled-links
@@ -355,6 +359,10 @@
    :class: no-scaled-links
 
 .. |iMCM6830AP-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AP-2.png
+   :width: 200
+   :class: no-scaled-links
+
+.. |iMCM6830AL-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AL-2.jpg
    :width: 200
    :class: no-scaled-links
 

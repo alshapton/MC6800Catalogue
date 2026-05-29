@@ -9,6 +9,7 @@
       "|notpresent| :ref:`MCM68A10CP <MCM68A10CP>`","Ceramic","1.5MHz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM6810CP <MCM6810CP>`","Plastic","1MHz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810P <MCM6810P>`","Plastic","","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MCM6810AL <MCM6810AL>`","Ceramic","","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM6810S <MCM6810S>`","CERDIP","1MHz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM68A10L <MCM68A10L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MCM6810CPD <MCM6810CPD>`","Plastic","1MHz","-40-85\ :sup:`o`\ C",""
