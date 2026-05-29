@@ -7,7 +7,7 @@
 8-bit HCMOS Microprocessor Unit
 ===============================
 
-.. image:: ../../images/Hardware/Datasheets/MC68HC09E.png
+.. image:: ../../images/Datasheets/MC68HC09E.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@
 
 .. rubric:: Links
 
-:download:`8-bit HCMOS Microprocessor Unit <../../_static/Documents/Hardware/Datasheets/68HC09E.pdf>`
+:download:`8-bit HCMOS Microprocessor Unit <../../_static/Documents/Datasheets/68HC09E.pdf>`

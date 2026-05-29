@@ -362,7 +362,7 @@
    :width: 200
    :class: no-scaled-links
 
-.. |iMCM6830AL-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AL-2.png
+.. |iMCM6830AL-2|  image:: /images/Hardware/ICs/MCM6830/MCM6830AL-2.jpg
    :width: 200
    :class: no-scaled-links
 

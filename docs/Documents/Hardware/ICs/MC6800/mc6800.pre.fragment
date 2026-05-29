@@ -33,20 +33,20 @@ Microprocessor Unit (MC6800)
     .. table:: Structural and Materials Comparison Matrix
             :widths: 25 35 40
 
-    +-------------------+----------------------------+----------------------------+
-    | Feature           | MC6800L2                   | MC68B00                    |
-    +===================+============================+============================+
-    | **Production Era**| Mid-to-late 1970s          | Late 1970s through 1980s   |
-    +-------------------+----------------------------+----------------------------+
-    | **Max Clock Rate**| 2.0 MHz                    | 2.0 MHz                    |
-    +-------------------+----------------------------+----------------------------+
-    | **Enclosure**     | Premium Ceramic base with  | Black epoxy plastic (P) or |
-    |                   | gold-plated lid            | glass-sealed cerdip (S)    |
-    +-------------------+----------------------------+----------------------------+
-    | **Pin Metallurgy**| Gold-plated                | Tin-plated                 |
-    +-------------------+----------------------------+----------------------------+
-    | **Availability**  | Rare vintage collector tier| High volume surplus        |
-    +-------------------+----------------------------+----------------------------+
+        +-------------------+----------------------------+----------------------------+
+        | Feature           | MC6800L2                   | MC68B00                    |
+        +===================+============================+============================+
+        | **Production Era**| Mid-to-late 1970s          | Late 1970s through 1980s   |
+        +-------------------+----------------------------+----------------------------+
+        | **Max Clock Rate**| 2.0 MHz                    | 2.0 MHz                    |
+        +-------------------+----------------------------+----------------------------+
+        | **Enclosure**     | Premium Ceramic base with  | Black epoxy plastic (P) or |
+        |                   | gold-plated lid            | glass-sealed cerdip (S)    |
+        +-------------------+----------------------------+----------------------------+
+        | **Pin Metallurgy**| Gold-plated                | Tin-plated                 |
+        +-------------------+----------------------------+----------------------------+
+        | **Availability**  | Rare vintage collector tier| High volume surplus        |
+        +-------------------+----------------------------+----------------------------+
 
     .. rubric:: Hardware Interoperability Guidelines
 
@@ -73,3 +73,4 @@ Microprocessor Unit (MC6800)
 
     .. warning::
         While a ceramic **MC6800L2** can always replace a plastic **MC68B00P**, replacing an MC6800L2 with a plastic MC68B00P in high-temperature or high-humidity industrial settings may degrade environmental tolerance due to the shift from gold/ceramic to tin/plastic materials.
+

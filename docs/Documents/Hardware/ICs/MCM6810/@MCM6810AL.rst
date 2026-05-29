@@ -5,7 +5,7 @@
 .. #Metadata {'Product':'MCM6810L','Name':'MCM6810L 128 x 8-bit RAM','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MCM6810AL 128 x 8-bit RAM
-========================
+=========================
 
 .. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810AL.png
    :width: 400

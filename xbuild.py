@@ -8,6 +8,8 @@ import ast
 import tomllib
 import json
 
+from pathlib import Path
+
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
 
@@ -52,6 +54,50 @@ MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
 NEW_GROUP_TMP_LOC='tmp' + OSSEP
 IC_LOCATIONS = 'docs'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'ICs'
+
+
+
+def rename_files_in_folder(folder_path_str):
+    # Convert the string input to a Path object
+    folder_path = Path(folder_path_str)
+    
+    # Check if the folder actually exists
+    if not folder_path.exists():
+        print(f"Error: The folder '{folder_path_str}' does not exist.")
+        return
+    
+    if not folder_path.is_dir():
+        print(f"Error: '{folder_path_str}' is not a directory.")
+        return
+
+    # Get just the folder name (e.g., /home/user/Pics -> Pics)
+    folder_name = folder_path.name
+    
+    # Initialize the incremental counter
+    counter = 1
+    
+    # Iterate through all items in the folder
+    for item in folder_path.iterdir():
+        # Only rename files, skip any subfolders
+        if item.is_file():
+            # Extract the original file extension (e.g., .jpg, .txt)
+            file_extension = item.suffix
+            
+            # Construct the new file name: 1.FOLDERNAME.jpg
+            new_name = f"{counter}.{folder_name}{file_extension}"
+            
+            # Create the full new path
+            new_file_path = folder_path / new_name
+            
+            try:
+                # Rename the file
+                item.rename(new_file_path)
+                print(f"Renamed: '{item.name}' -> '{new_name}'")
+                counter += 1
+            except Exception as e:
+                print(f"Failed to rename '{item.name}': {e}")
+
+    print(f"\nSuccess! Renamed {counter - 1} files.")
 
 
 def update_or_not_metadata(filename):    
@@ -2484,7 +2530,7 @@ while True:
     console.print('\t- Delete DB',style="danger")
     console.print('\t0 Update ALL ',style="info")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8"]
+    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8","R"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2851,7 +2897,11 @@ while True:
         case "X"|"x":
             console.print("Exiting", style="info")
             exit()
-        
+
+        case "R"|"r":
+            folder_path_str = input("Enter foldername (relative to MC6800Catalogue: ")
+            folder_path_str = "."+OSSEP + folder_path_str
+            rename_files_in_folder(folder_path_str)  
         case _:
             console.print("Invalid Choice", style="warning")
             
