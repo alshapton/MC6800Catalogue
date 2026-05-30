@@ -50,6 +50,8 @@ Reference Manuals
    ":ref:`MEX68RR-MOD-SUP <MEX68RR-MOD-SUP>`","MEX68RR EROM/RAM Module Supplement",""   
    ":ref:`MEX68USEB(D) <MEX68USEB(D)>`","MEX68USEB User System Evaluator Users Guide",""
    ":ref:`MEX68SA2(D2) <MEX68SA2(D2)>`","MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide",""
+   ":ref:`N/A <MC6801-SS-UG>`","MC6801 Support Systems User Guide",""
+   ":ref:`N/A <MEX68CT-MOTEST-1-UG>`","MEX68CT MOTEST-1 Component Tester Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
