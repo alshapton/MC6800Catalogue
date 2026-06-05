@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68B21S:
+.. _MC68B54CS:
 
-.. #Metadata {'Product':'MC68B21S','Name':'MC68B21S Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68B54CS','Name':'MC68B54CS Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC68B21S Peripheral Interface Adapter (PIA)
-===========================================
+MC68B54CS Advanced Data-Link Controller (ADLC)
+==============================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -22,7 +22,7 @@ MC68B21S Peripheral Interface Adapter (PIA)
    "Packaging","CERDIP"
    "Status","TBD"
    "Location","TBD"
-   "Temperature","0-70\ :sup:`o`\ C"
+   "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""
 
@@ -32,8 +32,8 @@ MC68B21S Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |notpresent|
 
 .. rubric:: Links
 
-:download:`MC6821 MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`
+:download:`MC6854 Advanced Data-Link Controller (ADLC)  <../../../../_static/Documents/Datasheets/MC6854.pdf>`

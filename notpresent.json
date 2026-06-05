@@ -1,0 +1,1787 @@
+[
+  {
+    "id": "MMS68103 16K-byte RAM Module"
+  },
+  {
+    "id": "MEX6864(D) 16K/64K Dynamic RAM Module Users Guide"
+  },
+  {
+    "id": "MEX68162(D) 1MHz Memory Expansion Users Guide"
+  },
+  {
+    "id": "MEX6832-22D 32K Dynamic RAM Module with parity"
+  },
+  {
+    "id": "MEX6848-22D 48K Dynamic RAM Module with parity"
+  },
+  {
+    "id": "M68MDM1 5-inch Display Monitor"
+  },
+  {
+    "id": "MEX6864-22D 64K Dynamic RAM Module with parity"
+  },
+  {
+    "id": "DS-MC6800 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809E 8-Bit Processing Unit"
+  },
+  {
+    "id": "DS-MC68HC09E 8-bit HCMOS Microprocessor Unit"
+  },
+  {
+    "id": "MMS68103-1 8K-byte RAM Module"
+  },
+  {
+    "id": "M68MDM9 9 inch CRT Monitor"
+  },
+  {
+    "id": "AN-773 A CRT Terminal Using The M6800 Family"
+  },
+  {
+    "id": "AN-777 A Dual Processor System For Use In The EXORcisor"
+  },
+  {
+    "id": "AN-764 A Floppy Disk Controller using the MC6582 and other MC6800 Microprocessor Family Parts"
+  },
+  {
+    "id": "MEX68502(D) ACIA/SSDA Module Users Guide"
+  },
+  {
+    "id": "M68FTN(A1) Addendum to M6800/M6809 MDOS FORTRAN Reference Manual M68FTN(D3)"
+  },
+  {
+    "id": "MC6854 Advanced Data Link Controller (ADLC)"
+  },
+  {
+    "id": "MEK6800D1 Assembly Instructions M6800 Design Evaluation Kit"
+  },
+  {
+    "id": "M68CIM1 Audio Cassette Interface Module"
+  },
+  {
+    "id": "M68ADS1 Autonomous Development System"
+  },
+  {
+    "id": "M68ADS6 Autonomous Development System"
+  },
+  {
+    "id": "M68ADW1 Autonomous Development System"
+  },
+  {
+    "id": "M68ADW2 Autonomous Development System"
+  },
+  {
+    "id": "M68ADW6 Autonomous Development System"
+  },
+  {
+    "id": "BASCNEWS(D2) BASICNEWS for BASIC-M"
+  },
+  {
+    "id": "M68SVS(D) Basic Display Unit Users Guide"
+  },
+  {
+    "id": "M68SDT Basic Exorciser"
+  },
+  {
+    "id": "M68BSC1 Bus System Card"
+  },
+  {
+    "id": "DS-MC6859 DS-MC6859 Data Security Device"
+  },
+  {
+    "id": "M68DIM Display Interface Module"
+  },
+  {
+    "id": "M68MDMC1 Display Monitor Cabinet for 5 inch CRT Monitor"
+  },
+  {
+    "id": "M68MDMC9 Display Monitor Cabinet for 9 inch CRT Monitor"
+  },
+  {
+    "id": "M68EBS(D1) EXORbus Specification Manual"
+  },
+  {
+    "id": "EXORciser DS booklet EXORciser Data Sheets"
+  },
+  {
+    "id": "M68SDT2-DM EXORciser II Development System 220V with Dynamic Memory (32K)"
+  },
+  {
+    "id": "M68SDT2-SM EXORciser II Development System 220V with Static Memory (32K)"
+  },
+  {
+    "id": "M68SDT2-SX EXORciser II Development System 220V without Memory"
+  },
+  {
+    "id": "EXORCISER-II-UG EXORciser II Users Guide"
+  },
+  {
+    "id": "MEX6800 EXORciser MPU Module Datasheet"
+  },
+  {
+    "id": "M68SFDC2(D) EXORdisk II Floppy Disk Controller Module Users Guide"
+  },
+  {
+    "id": "M68FD3601-3604 EXORdisk Users Guide"
+  },
+  {
+    "id": "MSETPLOT1(D1) EXORset 30 PLOT 1 Users Guide"
+  },
+  {
+    "id": "M6809SET30(D) EXORset 30 Users Guide"
+  },
+  {
+    "id": "M6809ASM09(D) EXORset 30 XDOS Assembler Users Guide"
+  },
+  {
+    "id": "M6809XDOSEDT(D) EXORset 30 XDOS Editor Users Manual"
+  },
+  {
+    "id": "M68SETDS35(D1) EXORset DS35 Development System Users Manual"
+  },
+  {
+    "id": "M68SETEDITORM(D1) EXORset EDITOR Reference Manual"
+  },
+  {
+    "id": "M68SXD150(D2) EXORterm 150 EXORciser Display Console Users Guide"
+  },
+  {
+    "id": "M6809XDOS3(D) EXOSET30 XDOS Operating System Users Guide"
+  },
+  {
+    "id": "M68PP1 Electro-sensitive paper for MPR Printer"
+  },
+  {
+    "id": "EN-100 Engineering Note EN-100 - MIKBUG/MINIBUG ROM"
+  },
+  {
+    "id": "MSET30DOS(D1) Exorset 30 XDOS OS User\u2019s Guide"
+  },
+  {
+    "id": "M68DSP(D) Extended Display Supplement Basic Display Unit Users Guide"
+  },
+  {
+    "id": "DS-MEX68XT Extender Module"
+  },
+  {
+    "id": "MC6839 Floating-Point ROM"
+  },
+  {
+    "id": "MC6843 Floppy Disk Controller (FDC)"
+  },
+  {
+    "id": "M68SFDC3(D3) Floppy Disk Controller Module"
+  },
+  {
+    "id": "M68FDIC-D1 Floppy Disk Interconnect Adapter Users Manual"
+  },
+  {
+    "id": "FTCTTM From the Computer... to the Microprocessor"
+  },
+  {
+    "id": "M68MMFLC1 Front Loading Chassis 115V"
+  },
+  {
+    "id": "M68MMFLC2 Front Loading Chassis 220V"
+  },
+  {
+    "id": "M68MFLK Front Loading Chassis Rack Mounting Kit"
+  },
+  {
+    "id": "MC68488 General Purpose Interface Adapter"
+  },
+  {
+    "id": "M68IOS1 Input/Output Supervisor Firmware"
+  },
+  {
+    "id": "M68ICC1 Interconnection Cables Set"
+  },
+  {
+    "id": "M68KBD(D) KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit Users Guide)"
+  },
+  {
+    "id": "MC6801L1UM(AD) LILbug Monitor for the MC6801L1"
+  },
+  {
+    "id": "M68MMLK Long Chassis Rack Mounting Kit"
+  },
+  {
+    "id": "AN-747 Low Speed Modem Design using the MC6860"
+  },
+  {
+    "id": "M68BAS(D3) M6800 BASIC Interpreter Reference Manual"
+  },
+  {
+    "id": "MC6875 M6800 Clock Generator (MC6875)"
+  },
+  {
+    "id": "M6800EXORUG M6800 EXORciser Users Guide"
+  },
+  {
+    "id": "M6800EXORUG.2 M6800 EXORciser Users Guide"
+  },
+  {
+    "id": "M68SDT1(D1) M6800 EXORciser/EXORciser I/EXORciser IA Users Guide"
+  },
+  {
+    "id": "M68SXS(D) M6800 EXORterm 200 Development System Users Guide"
+  },
+  {
+    "id": "RMPLCOMP M6800 M6809 Resident MPL Compiler Reference Manual"
+  },
+  {
+    "id": "M68MPLC(D) M6800 MPL Cross-Computer Language Reference Manual"
+  },
+  {
+    "id": "M6800_MP_Prog_man M6800 Microprocessor Programming Manual"
+  },
+  {
+    "id": "M68COB(D) M6800 Resident COBOL Language Reference Manual"
+  },
+  {
+    "id": "M68DOWNLD(D1) M6800/M6801/M6809 Download Program Users Guide"
+  },
+  {
+    "id": "M68EDITORM(D3) M6800/M6809 EDITORM Resident Editor Reference Manual"
+  },
+  {
+    "id": "M68FTN(D3) M6800/M6809 MDOS Fortran Reference Manual"
+  },
+  {
+    "id": "MSET30BAS(D1) M6809 BASIC-M Interactive Compiler Users Guide"
+  },
+  {
+    "id": "M6809EXOR(D1) M6809 EXORciser Users Guide"
+  },
+  {
+    "id": "DS-M6809-PASCLI M6809 Pascal Compiler Datasheet"
+  },
+  {
+    "id": "M6809PASC(D2) M6809 Resident Pascal Compiler and Interpreter Users Guide"
+  },
+  {
+    "id": "M6809UI(D2) M6809 Upgrade Instructions Guide"
+  },
+  {
+    "id": "M6809XDOSREF M6809 XDOS Absolute Assembler Reference Manual"
+  },
+  {
+    "id": "M6809DB(D1) M6809DB DEbug Module Users Guide"
+  },
+  {
+    "id": "M6809MPU(D2) M6809MPU MPU Module Users Guide"
+  },
+  {
+    "id": "M68EXORSET(D1) M68EXORSET(D1) EXORset Users Guide"
+  },
+  {
+    "id": "M68MDOS3(D) M68MDOS3 EXORdisk II/III OS Users Guide"
+  },
+  {
+    "id": "M68MDOS3(D2) M68MDOS3 EXORdisk II/III OS Users Guide"
+  },
+  {
+    "id": "M68MM01 M68MM01 Micromodule 1 M6800 CPU Module"
+  },
+  {
+    "id": "M68MM05A M68MM05A Micromodule 5A 8 Channel 12 Bit A/D Converter"
+  },
+  {
+    "id": "M68MM17 M68MM17 Micromodule 17 6809 Monoboard Microcomputer"
+  },
+  {
+    "id": "M68MM19 M68MM19 Micromodule 17 6809 Monoboard Microcomputer"
+  },
+  {
+    "id": "M68MM19-19A-UG M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User Guide"
+  },
+  {
+    "id": "M68MODOS(D) M68MODOS010 Disk Operating System Users Guide"
+  },
+  {
+    "id": "M68UCANA(D1) M68UCANA Microcomputer Analyzer"
+  },
+  {
+    "id": "MC6800BQCJC MC6800BQCJC Microprocessor Unit"
+  },
+  {
+    "id": "MC6800CS MC6800CS Microprocessor Unit"
+  },
+  {
+    "id": "MC6800L2 MC6800L2 Microprocessor Unit"
+  },
+  {
+    "id": "MC6800S MC6800S Microprocessor Unit"
+  },
+  {
+    "id": "MC6801RM(AD2) MC6801 8-Bit Single-Chip Microcomputer"
+  },
+  {
+    "id": "MC6801-SS-UG MC6801 Support Systems User Guide"
+  },
+  {
+    "id": "AN-797 MC6801/03 Port Expansion"
+  },
+  {
+    "id": "MC6801G MC6801G Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC6801L-1 MC6801L-1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC6802CL MC6802CL Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC6802CP MC6802CP Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC6802L MC6802L Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC6802NSL MC6802NSL Microprocessor with Clock and Optional RAM (MC6802NS)"
+  },
+  {
+    "id": "MC6802NSP MC6802NSP Microprocessor with Clock and Optional RAM (MC6802NS)"
+  },
+  {
+    "id": "MC6803E MC6803E 8-Bit Microprocessor"
+  },
+  {
+    "id": "MC6803EG MC6803EG 8-Bit Microprocessor (MC6803E)"
+  },
+  {
+    "id": "MC6803EG-1 MC6803EG-1 8-Bit Microprocessor (MC6803E)"
+  },
+  {
+    "id": "MC6803EL MC6803EL 8-Bit Microprocessor (MC6803E)"
+  },
+  {
+    "id": "MC6803EL-1 MC6803EL-1 8-Bit Microprocessor (MC6803E)"
+  },
+  {
+    "id": "MC6803G MC6803G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC6803NRG MC6803NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC6803NRL MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC6803P MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "M6809PMAD MC6809-MC6809E Microprocessor Programming Manual"
+  },
+  {
+    "id": "MC6809CL MC6809CL 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809CP MC6809CP 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809CS MC6809CS 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809ECL MC6809ECL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC6809ECP MC6809ECP 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC6809ECS MC6809ECS 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC6809EL MC6809EL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC6809ES MC6809ES 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC6809L MC6809L 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809P MC6809P 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6809S MC6809S  8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC6820P MC6820P Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CL MC6821CL Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CLD MC6821CLD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CLDS MC6821CLDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CLS MC6821CLS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CP MC6821CP Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CPD MC6821CPD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CPDS MC6821CPDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CPS MC6821CPS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CS MC6821CS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CSD MC6821CSD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CSDS MC6821CSDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821CSS MC6821CSS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821L MC6821L Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821LD MC6821LD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821LDS MC6821LDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821LS MC6821LS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821PD MC6821PD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821PDS MC6821PDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821PS MC6821PS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821S MC6821S Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821SD MC6821SD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821SDS MC6821SDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6821SS MC6821SS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC6822 MC6822 Industrial Interface Adapter"
+  },
+  {
+    "id": "MC6828L MC6828L Priority Interrupt Controller"
+  },
+  {
+    "id": "MC6829CL MC6829CL Memory Management Unit"
+  },
+  {
+    "id": "MC6829CP MC6829CP Memory Management Unit"
+  },
+  {
+    "id": "MC6829CS MC6829CS Memory Management Unit"
+  },
+  {
+    "id": "MC6829L MC6829L Memory Management Unit"
+  },
+  {
+    "id": "MC6829P MC6829P Memory Management Unit"
+  },
+  {
+    "id": "MC6829S MC6829S Memory Management Unit"
+  },
+  {
+    "id": "DS-MC6832 MC6832 2048 x 8-bit Read Only Memory"
+  },
+  {
+    "id": "MC6835 MC6835 CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835CL MC6835CL CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835CP MC6835CP CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835CS MC6835CS CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835L MC6835L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835P MC6835P CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6835S MC6835S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6840CL MC6840CL Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6840CP MC6840CP Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6840CPD MC6840CPD Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6840CS MC6840CS Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6840P MC6840P Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6840S MC6840S Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC6843P MC6843P Floppy Disk Controller (FDC) (MC6843)"
+  },
+  {
+    "id": "MC6844 MC6844 Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC6844CP MC6844CP Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC6844CS MC6844CS Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC6844CL MC6844L Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC6844S MC6844S Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC6845 MC6845 CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6845CL MC6845CL CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6845CS MC6845CS CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6845L MC6845L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6845S MC6845S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC6846CL MC6846CL ROM I/O Timer"
+  },
+  {
+    "id": "MC6846CP MC6846CP ROM I/O Timer"
+  },
+  {
+    "id": "MC6846CS MC6846CS ROM I/O Timer"
+  },
+  {
+    "id": "MC6846L MC6846L ROM I/O Timer"
+  },
+  {
+    "id": "MC6846P MC6846P ROM I/O Timer"
+  },
+  {
+    "id": "MC6846S MC6846S ROM I/O Timer"
+  },
+  {
+    "id": "MC6847 MC6847/MC6847Y Video Display Generator (VDG)"
+  },
+  {
+    "id": "MC6847L MC6847L Non-Interlaced Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847S MC6847S Non-Interlaced Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847T1 MC6847T1 Video Display Generator (VDG)"
+  },
+  {
+    "id": "MC6847T1L MC6847T1L Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847T1P MC6847T1P Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847T1S MC6847T1S Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847YL MC6847YL Interlaced Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847YP MC6847YP Interlaced Video Display Generator Unit"
+  },
+  {
+    "id": "MC6847YS MC6847YS Interlaced Video Display Generator Unit"
+  },
+  {
+    "id": "MC68488UM(AD) MC68488 GPIA Users Manual"
+  },
+  {
+    "id": "MC68488CL MC68488CL General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CLD MC68488CLD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CLDS MC68488CLDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CLS MC68488CLS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CPD MC68488CPD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CPDS MC68488CPDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CPS MC68488CPS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CS MC68488CS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CSD MC68488CSD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CSDS MC68488CSDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488CSS MC68488CSS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488LD MC68488LD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488LDS MC68488LDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488LS MC68488LS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488P MC68488P General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488PD MC68488PD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488PDS MC68488PDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488PS MC68488PS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488S MC68488S General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488SD MC68488SD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488SDS MC68488SDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68488SS MC68488SS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC6850CL MC6850CL Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC6850CP MC6850CP Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC6850CS MC6850CS Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC6850S MC6850S Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC6852CL MC6852CL Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MC6852CP MC6852CP Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MC6852CS MC6852CS Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MC6852P MC6852P Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MC6852S MC6852S Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MC6854CL MC6854CL Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC6854CP MC6854CP Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC6854CS MC6854CS Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC6854P MC6854P Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC6854S MC6854S Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "DS-MC6855 MC6855 Serial Direct Memory Access Processor"
+  },
+  {
+    "id": "DS-MC6862 MC6862 2400 bps Digital Modem"
+  },
+  {
+    "id": "MC6882S MC6862S 2400 bps Digital Modulator"
+  },
+  {
+    "id": "MC6870 MC6870 Two-Phase Microprocessor Clock"
+  },
+  {
+    "id": "MC6870-71 MC6870-71 Two-Phase Microprocessor Clock"
+  },
+  {
+    "id": "MC68701 MC68701 Microcomputer Unit"
+  },
+  {
+    "id": "MC68701U4 MC68701 Microcomputer Unit with 8-bit-EPROM"
+  },
+  {
+    "id": "MC68701CL MC68701CL Microprocessor Unit"
+  },
+  {
+    "id": "MC68701L MC68701L Microprocessor Unit"
+  },
+  {
+    "id": "MC68701L-1 MC68701L-1 Microprocessor Unit"
+  },
+  {
+    "id": "MC68701U4L-1 MC68701U4L-1 Microprocessor Unit with 8-bit EPROM"
+  },
+  {
+    "id": "MC6871 MC6871 Two-Phase Microprocessor Clock"
+  },
+  {
+    "id": "MC6871B MC6871B MPU Clock 614.4 KHz"
+  },
+  {
+    "id": "MC6875AL MC6875AL M6800 Two-Phase Clock Generator/Driver (MC6875)"
+  },
+  {
+    "id": "MC6880AL MC6880AL Quad Three-State Bus Transceiver"
+  },
+  {
+    "id": "DS-MC6882 MC6882 Octal Three-State Buffer/Latch"
+  },
+  {
+    "id": "MC6882BL MC6882BL Octal Three-State Buffer/Latch"
+  },
+  {
+    "id": "MC6883 MC6883 Synchronous Address Multiplexer"
+  },
+  {
+    "id": "MC6885-88 MC6885/6/7/8 Hex Three-State Buffer Inverters"
+  },
+  {
+    "id": "MC6885L MC6885L Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6885P MC6885P Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6886L MC6886L Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6886P MC6886P Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6887L MC6887L Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6888L MC6888L Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6888P MC6888P Hex Three-State Buffer/Inverter"
+  },
+  {
+    "id": "MC6889L MC6889L NonInverting Quad Three-State Bus Transceiver"
+  },
+  {
+    "id": "MC6890 MC6890 MPU Bus-Compatible 8-Bit D-to-A Converter"
+  },
+  {
+    "id": "MC6890AL MC6890AL MPU Bus-Compatible 8-Bit D-to-A Converter"
+  },
+  {
+    "id": "MC6890L MC6890L MPU Bus-Compatible 8-Bit D-to-A Converter"
+  },
+  {
+    "id": "MC68A00CL MC68A00CL Microprocessor Unit"
+  },
+  {
+    "id": "MC68A00CP MC68A00CP Microprocessor Unit"
+  },
+  {
+    "id": "MC68A00CS MC68A00CS Microprocessor Unit"
+  },
+  {
+    "id": "MC68A00S MC68A00S Microprocessor Unit"
+  },
+  {
+    "id": "MC68A01-1G MC68A01-1G Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68A01-1L MC68A01-1L Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68A01G MC68A01G Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68A01L MC68A01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68A02CL MC68A02CL Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC68A02L MC68A02L Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC68A02P MC68A02P Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC68A03-1G MC68A03-1G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68A03-1L MC68A03-1L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68A03G MC68A03G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68A03L MC68A03L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68A03NR-1G MC68A03NR-1G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68A03NR-1L MC68A03NR-1L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68A03NRG MC68A03NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68A03NRL MC68A03NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68A08L MC68A08L Microprocessor with Clock and Optional RAM (MC6808)"
+  },
+  {
+    "id": "MC68A08P MC68A08P Microprocessor with Clock and Optional RAM (MC6808)"
+  },
+  {
+    "id": "MC68A09CL MC68A09CL 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A09CP MC68A09CP 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A09CS MC68A09CS 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A09ECL MC68A09ECL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09ECP MC68A09ECP 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09ECS MC68A09ECS 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09EL MC68A09EL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09EP MC68A09EP 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09ES MC68A09ES 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68A09L MC68A09L 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A09P MC68A09P 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A09S MC68A09S 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68A21CL MC68A21CL Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CLD MC68A21CLD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CLDS MC68A21CLDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CLS MC68A21CLS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CP MC68A21CP Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CPD MC68A21CPD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CPDS MC68A21CPDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CPS MC68A21CPS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CS MC68A21CS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CSD MC68A21CSD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CSDS MC68A21CSDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21CSS MC68A21CSS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21L MC68A21L Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21LD MC68A21LD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21LDS MC68A21LDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21LS MC68A21LS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21P MC68A21P Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21PD MC68A21PD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21PDS MC68A21PDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21PS MC68A21PS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21S MC68A21S Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21SD MC68A21SD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21SDS MC68A21SDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A21SS MC68A21SS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68A29CL MC68A29CL Memory Management Unit"
+  },
+  {
+    "id": "MC68A29CP MC68A29CP Memory Management Unit"
+  },
+  {
+    "id": "MC68A29CS MC68A29CS Memory Management Unit"
+  },
+  {
+    "id": "MC68A29L MC68A29L Memory Management Unit"
+  },
+  {
+    "id": "MC68A29P MC68A29P Memory Management Unit"
+  },
+  {
+    "id": "MC68A29S MC68A29S Memory Management Unit"
+  },
+  {
+    "id": "MC68A35CL MC68A35CL CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A35CP MC68A35CP CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A35CS MC68A35CS CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A35L MC68A35L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A35P MC68A35P CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A35S MC68A35S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A39C MC68A39C Floating Point ROM"
+  },
+  {
+    "id": "MC68A39P MC68A39P Floating Point ROM"
+  },
+  {
+    "id": "MC68A40CL MC68A40CL Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68A40CP MC68A40CP Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68A40CS MC68A40CS Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68A40L MC68A40L Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68A40S MC68A40S Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68A44CL MC68A44CL Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A44CP MC68A44CP Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A44CS MC68A44CS Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A44L MC68A44L Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A44P MC68A44P Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A44S MC68A44S Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68A45CL MC68A45CL CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A45CP MC68A45CP CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A45CS MC68A45CS CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A45L MC68A45L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A45S MC68A45S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68A46CL MC68A46CL ROM I/O Timer"
+  },
+  {
+    "id": "MC68A46CP MC68A46CP ROM I/O Timer"
+  },
+  {
+    "id": "MC68A46CS MC68A46CS ROM I/O Timer"
+  },
+  {
+    "id": "MC68A46L MC68A46L ROM I/O Timer"
+  },
+  {
+    "id": "MC68A46P MC68A46P ROM I/O Timer"
+  },
+  {
+    "id": "MC68A46S MC68A46S ROM I/O Timer"
+  },
+  {
+    "id": "MC68A488CL MC68A488CL General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CLD MC68A488CLD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CLDS MC68A488CLDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CLS MC68A488CLS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CP MC68A488CP General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CPD MC68A488CPD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CPDS MC68A488CPDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CPS MC68A488CPS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CS MC68A488CS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CSD MC68A488CSD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CSDS MC68A488CSDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488CSS MC68A488CSS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488L MC68A488L General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488LD MC68A488LD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488LDS MC68A488LDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488LS MC68A488LS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488P MC68A488P General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488PD MC68A488PD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488PDS MC68A488PDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488PS MC68A488PS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488S MC68A488S General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488SD MC68A488SD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488SDS MC68A488SDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A488SS MC68A488SS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68A50CL MC68A50CL Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68A50CP MC68A50CP Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68A50CS MC68A50CS Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68A50L MC68A50L Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68A50S MC68A50S Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68A54CL MC68A54CL Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68A54CP MC68A54CP Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68A54CS MC68A54CS Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68A54L MC68A54L Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68A54S MC68A54S Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68A701L MC68A701L Microprocessor Unit"
+  },
+  {
+    "id": "MC68B01G MC68B01G Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68B01L MC68B01L Microcomputer/Microprocessor (MCU/MPU) (MC6801)"
+  },
+  {
+    "id": "MC68B02CP MC68B02CP Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC68B02L MC68B02L Microprocessor with Clock and Optional RAM (MC6802)"
+  },
+  {
+    "id": "MC68B03G MC68B03G Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68B03L MC68B03L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)"
+  },
+  {
+    "id": "MC68B03NRG MC68B03NRG Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68B03NRL MC68B03NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803NR)"
+  },
+  {
+    "id": "MC68B08L MC68B08L Microprocessor with Clock and Optional RAM (MC6808)"
+  },
+  {
+    "id": "MC68B08P MC68B08P Microprocessor with Clock and Optional RAM (MC6808)"
+  },
+  {
+    "id": "MC68B09CL MC68B09CL 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68B09CS MC68B09CS 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68B09ECL MC68B09ECL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68B09ECP MC68B09ECP 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68B09ECS MC68B09ECS 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68B09EL MC68B09EL 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68B09ES MC68B09ES 8-Bit Microprocessing Unit (MC6809E)"
+  },
+  {
+    "id": "MC68B09L MC68B09L 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68B09S MC68B09S 8-Bit Microprocessing Unit"
+  },
+  {
+    "id": "MC68B21CL MC68B21CL Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CLD MC68B21CLD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CLDS MC68B21CLDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CLS MC68B21CLS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CP MC68B21CP Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CPD MC68B21CPD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CPDS MC68B21CPDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CPS MC68B21CPS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CS MC68B21CS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CSD MC68B21CSD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CSDS MC68B21CSDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21CSS MC68B21CSS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21LD MC68B21LD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21LDS MC68B21LDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21LS MC68B21LS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21PD MC68B21PD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21PDS MC68B21PDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21PS MC68B21PS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21S MC68B21S Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21SD MC68B21SD Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21SDS MC68B21SDS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B21SS MC68B21SS Peripheral Interface Adapter (PIA)"
+  },
+  {
+    "id": "MC68B29L MC68B29L Memory Management Unit"
+  },
+  {
+    "id": "MC68B29P MC68B29P Memory Management Unit"
+  },
+  {
+    "id": "MC68B29S MC68B29S Memory Management Unit"
+  },
+  {
+    "id": "MC68B35CL MC68B35CL CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B35CP MC68B35CP CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B35CS MC68B35CS CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B35L MC68B35L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B35P MC68B35P CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B35S MC68B35S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B39C MC68B39C Floating Point ROM"
+  },
+  {
+    "id": "MC68B39P MC68B39P Floating Point ROM"
+  },
+  {
+    "id": "MC68B40L MC68B40L Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68B40S MC68B40S Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "MC68B44S MC68B44S Direct Memory Access Controller (DMAC)"
+  },
+  {
+    "id": "MC68B45L MC68B45L CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B45P MC68B45P CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B45S MC68B45S CRT Controller (CRTC)"
+  },
+  {
+    "id": "MC68B488CL MC68B488CL General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CLD MC68B488CLD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CLDS MC68B488CLDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CLS MC68B488CLS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CP MC68B488CP General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CPD MC68B488CPD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CPDS MC68B488CPDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CPS MC68B488CPS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CS MC68B488CS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CSD MC68B488CSD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CSDS MC68B488CSDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488CSS MC68B488CSS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488L MC68B488L General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488LD MC68B488LD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488LDS MC68B488LDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488LS MC68B488LS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488P MC68B488P General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488PD MC68B488PD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488PDS MC68B488PDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488PS MC68B488PS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488S MC68B488S General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488SD MC68B488SD General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488SDS MC68B488SDS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B488SS MC68B488SS General Purpose Interface Adapter"
+  },
+  {
+    "id": "MC68B50C MC68B50C Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68B50S MC68B50S Asynchronous Communications Interface Adapter (MC6850)"
+  },
+  {
+    "id": "MC68B54CL MC68B54CL Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68B54CP MC68B54CP Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68B54CS MC68B54CS Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68B54L MC68B54L Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68B54S MC68B54S Advanced Data-Link Controller (ADLC)"
+  },
+  {
+    "id": "MC68B701 MC68B701L Microprocessor Unit"
+  },
+  {
+    "id": "MC68A701U4L-1 MC68B701U4L-1 Microprocessor Unit with 8-bit EPROM"
+  },
+  {
+    "id": "MCA6852CL MCA6852CL Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCA6852CP MCA6852CP Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCA6852CS MCA6852CS Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCA6852L MCA6852L Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCA6852P MCA6852P Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCA6852S MCA6852S Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCB6852L MCB6852L Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCB6852P MCB6852P Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "MCB6852S MCB6852S Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "DS-MCM6810 MCM6810 128 x 8-Bit Static Random Access Memory"
+  },
+  {
+    "id": "DS-MCM6810-2 MCM6810 128 x 8-Bit Static Random Access Memory (1981 Edition)"
+  },
+  {
+    "id": "MCM6810AL MCM6810AL 128 x 8-bit RAM"
+  },
+  {
+    "id": "MCM6810CJCS MCM6810CJCS 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM6810CL MCM6810CL 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM6810CP MCM6810CP 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM6810CPD MCM6810CPD 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM6810S MCM6810P 128 x 8-bit RAM"
+  },
+  {
+    "id": "MCM6830AL-2 MCM6830AL-2 1024 x 8-bit ROM"
+  },
+  {
+    "id": "MCM6832L MCM6832L 2048 x 8-bit Read Only Memory"
+  },
+  {
+    "id": "MCM68A10CP MCM68A10CP 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM68A10L MCM68A10L 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "MCM68B10L MCM68B10L 128 x 8-Bit Static Random Access Memory (MCM6810)"
+  },
+  {
+    "id": "M68LLD(D4) MDOS Linking Loader Reference Manual"
+  },
+  {
+    "id": "MEK6800D1HARDWARE MEK6800D1 Development board for the 6800 microprocessor"
+  },
+  {
+    "id": "MEK6800D2.1 MEK6800D2 Evaluation Kit II Manual"
+  },
+  {
+    "id": "MEK6802D5(D2) MEK6802D5 Microcomputer Evaluation Board Users Manual"
+  },
+  {
+    "id": "MEK6803D3 MEK6803D3 Evaluation Board"
+  },
+  {
+    "id": "MEK68R2 MEK68R2 Programmable CRT Video Interface"
+  },
+  {
+    "id": "MEX3870OM MEX3870OM 3870 Emulator Users Guide"
+  },
+  {
+    "id": "MEX68B00(D) MEX6800-2 MPU II MODULE Users Guide"
+  },
+  {
+    "id": "MEX6801EVM1 MEX6801EVM1 Evaluation Module Users Guide"
+  },
+  {
+    "id": "MEX68701(D1) MEX6801EVM1 Evaluation Module Users Guide"
+  },
+  {
+    "id": "DS-MEX6812-1 MEX6812-1 2K Static RAM Module"
+  },
+  {
+    "id": "MEX6820 MEX6820 I/O Module Supplment M6800 EXORciser User Guide"
+  },
+  {
+    "id": "MEX6820_UG MEX6820 Input/Output Module Supplement Users Guide"
+  },
+  {
+    "id": "MEX6821-2-UG MEX6821-2 Input/Output Module Users Guide"
+  },
+  {
+    "id": "MEX6845-CRTC-UG MEX6845 CRTC Support Module Users Guide"
+  },
+  {
+    "id": "MEX68488(D) MEX68488 GPIA Support Module Users Guide"
+  },
+  {
+    "id": "MEX6850-ACIASUP MEX6850 ACIA Module Supplement"
+  },
+  {
+    "id": "MEX6854(D) MEX6854 ADLC Support Module Users Guide"
+  },
+  {
+    "id": "MEX6864HR MEX6864 64K Hidden Refresh RAM"
+  },
+  {
+    "id": "MEX68CT-MOTEST-1-UG MEX68CT MOTEST-1 Component Tester Users Guide"
+  },
+  {
+    "id": "MEX68DB2(D2) MEX68DB2 DEBUG II Module Users Guide"
+  },
+  {
+    "id": "MEX68RR-MOD-SUP MEX68RR EROM/RAM Module Supplement"
+  },
+  {
+    "id": "MEX68SA2(D2) MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide"
+  },
+  {
+    "id": "MEX68USEB(D) MEX68USEB User System Evaluator Users Guide"
+  },
+  {
+    "id": "MEX68USEC(D1) MEX68USEC 2 MHz User System Evaluation Guide"
+  },
+  {
+    "id": "MEX68USEC-UG MEX68USEC 2Mhz User System Evaluator User Guide"
+  },
+  {
+    "id": "MEX68USMUG(D1) MEX68USMUG(D1) MEX68USM Universal Support Module Users Guide"
+  },
+  {
+    "id": "MEX68WW MEX68WW Universal Wirewrap Module"
+  },
+  {
+    "id": "MEX68XT MEX68XT Extender Module"
+  },
+  {
+    "id": "MEC68MIN3E MINIBUG 3E Firmware ROM with Breakpoints capability"
+  },
+  {
+    "id": "MEC68MIN2 MINIBUG II Firmware"
+  },
+  {
+    "id": "MEX68CT MOTEST (Component Tester)"
+  },
+  {
+    "id": "MPLLREF(PRELIM) MPL Language Reference Manual"
+  },
+  {
+    "id": "MSET30(D1) MSET30(D1) EXORset 30 Users Guide"
+  },
+  {
+    "id": "MSETBAS(S1) MSETBAS(S1) M6809 BASIC-M Interactive Compiler Supplement"
+  },
+  {
+    "id": "M68MASR(D2) Macro Assemblers Reference Manual"
+  },
+  {
+    "id": "DS-MC6801-03-03NR Microcomputer/Microprocessor (MCU/MPU) (MC6801/MC6803/MC6803NR)"
+  },
+  {
+    "id": "M68MM23IKIT Micromodule 23 Mounting Kit"
+  },
+  {
+    "id": "M68MMCC05 Micromodule Card Cage"
+  },
+  {
+    "id": "M68MMLC1 Micromodule Long Chassis 115V"
+  },
+  {
+    "id": "M68MMLC2 Micromodule Long Chassis 220V"
+  },
+  {
+    "id": "M68MMPS1-1 Micromodule Power Supply"
+  },
+  {
+    "id": "M68MMSC1 Micromodule Short Chassis 115V"
+  },
+  {
+    "id": "M68MMSC2 Micromodule Short Chassis 220V"
+  },
+  {
+    "id": "M68ADS2ASDRM Micromodule/M68ADS2A Software Development Reference Manual"
+  },
+  {
+    "id": "M68MEB1 Microprocessor Evaluation Board"
+  },
+  {
+    "id": "DS-MC6802-08-02NS Microprocessor with Clock and Optional RAM (MC6802/MC6808/MC6802NS)"
+  },
+  {
+    "id": "M68MM17-D2 Monoboard Microcomputer Micromodule 17 Users Manual"
+  },
+  {
+    "id": "M68MM01A2 Monoboard Micromodule 1A/1A2"
+  },
+  {
+    "id": "M68MPR1 Motorola 30 chr/sec Printer"
+  },
+  {
+    "id": "M68SETDS351 Motorola Exorset 30 Model M6809 DS35 (M68SETDS351)"
+  },
+  {
+    "id": "EXORSET-30 Motorola Exorset 30 Model M6809 Set 30"
+  },
+  {
+    "id": "EXORSET-30-T33 Motorola Exorset 30 Model M6809 T33"
+  },
+  {
+    "id": "AN-851 Motorola MC6845 CRTC Simplifies Video Display Control"
+  },
+  {
+    "id": "M68PLM(D1) Motorola PASCAL Language Manual"
+  },
+  {
+    "id": "MC6889 NonInverting Quad Three-State Bus Transceiever"
+  },
+  {
+    "id": "M68PPR1 PDS PROM Programmer"
+  },
+  {
+    "id": "MEX68PP3(D) PROM Programmer III Users Guide"
+  },
+  {
+    "id": "MC6821 Peripheral Interface Adapter"
+  },
+  {
+    "id": "MEX68PI2(D) Printer Interface Module"
+  },
+  {
+    "id": "MC6828 Priority Interrupt Controller"
+  },
+  {
+    "id": "MC6840 Programmable Timer Module (PTM)"
+  },
+  {
+    "id": "HB211 Programming the 6800 Microprocessor"
+  },
+  {
+    "id": "MC6880A Quad Three-State Bus Transceiver"
+  },
+  {
+    "id": "MC6846 ROM I/O Timer"
+  },
+  {
+    "id": "M68EAM1 ROM Resident Assembler/Editor Module"
+  },
+  {
+    "id": "M68EAB1 ROM Resident Assembler/Editor/BASIC Interpreter Module"
+  },
+  {
+    "id": "M68MM04A(D2) ROM/EPROM Module Micromodule 4A"
+  },
+  {
+    "id": "AN906A-D Self-Programming the MC68701 and the MC68701U4"
+  },
+  {
+    "id": "M68MMSK Short Chassis Rack Mounting Kit"
+  },
+  {
+    "id": "AN-807 Special Considerations Using the MC6801 Interrupt Capabilities"
+  },
+  {
+    "id": "M68SAC1 Standalone Computer"
+  },
+  {
+    "id": "M68XDOS4(S1) Supplement to EXORset XDOS Operating System Users Guide"
+  },
+  {
+    "id": "MC6852 Synchronous Serial Data Adapter (SSDA)"
+  },
+  {
+    "id": "DS-MEX68WW Universal Wirewrap Module"
+  },
+  {
+    "id": "XC6800B XC6800B Microprocessor Unit"
+  },
+  {
+    "id": "MSETLLD(D1) XDOS Linking Loader Reference Manual"
+  }
+]

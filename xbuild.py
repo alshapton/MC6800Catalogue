@@ -2011,7 +2011,23 @@ def rebuild_db():
                         where real_date <> '';")
                         
     conn.commit()
-    
+
+    cursor_obj.execute("CREATE VIEW IF NOT EXISTS notpresent                     \
+                        (                                                     \
+                        name,                                          \
+                        id,                                                \
+                        real_date \
+                        )                                                     \
+                        AS                                                    \
+                        SELECT name,tag,real_date          \
+                        FROM documents                                         \
+                        WHERE real_date == ''  \
+                        UNION                                                 \
+                        SELECT name, icid,real_date                \
+                        FROM ics \
+                        where real_date == '';")
+                        
+    conn.commit()
 
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
