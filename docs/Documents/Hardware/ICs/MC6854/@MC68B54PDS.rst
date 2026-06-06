@@ -1,13 +1,13 @@
 :orphan:
 
-.. _MC68B54CS:
+.. _MC68B54PDS:
 
-.. #Metadata {'Product':'MC68B54CS','Name':'MC68B54CS Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68B54PDS','Name':'MC68B54PDS Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC68B54CS Advanced Data-Link Controller (ADLC)
-==============================================
+MC68B54PDS Advanced Data-Link Controller (ADLC)
+===============================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6854/MC68B54PDS.png
    :width: 400
    :align: center
 

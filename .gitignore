@@ -1,3 +1,4 @@
 
 build/
-ebay_creds.py
+xbuild_support/ebay_creds.py
+xbuild_support/__pycache__

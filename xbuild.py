@@ -464,7 +464,7 @@ def update_IC_pre_fragments():
                     if '!' in tref:
                         tref=tref.split('!')[1]
                     fileref='"' + posess + ' :ref:`'+ tref + ' <' + tag + '>`","'+packaging+'","'+frequency+'","'+temperature+'","'+notes+'"'
-                    op.write('      '+fileref+'\n')  
+                    op.write('      '+fileref.replace('  <',' <') +'\n')  
             if len(bbottom)>1:
                 op.write(bbottom)
             fragmentfile=os.path.dirname(yfile) + OSSEP + os.path.basename(yfile).replace('.pre','')+'.rst'
