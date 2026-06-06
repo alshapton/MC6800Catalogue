@@ -1,13 +1,13 @@
 :orphan:
 
-.. _MC6803P:
+.. _MC6803P-1:
 
-.. #Metadata {'Product':'MC6803P','Name':'MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6803P-1','Name':'MC6803P-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC6803P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
-=========================================================================
+MC6803P-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
+===========================================================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6803/MC6803P.png
+.. image:: ../../../../images/Hardware/ICs/MC6803/MC6803P-1.png
    :width: 400
    :align: center
 
