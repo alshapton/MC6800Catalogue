@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 11-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 13-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -270,6 +270,8 @@ This is the current collection (as at 11-06-2026) of the items produced by Motor
  	":ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement",":ref:`Folder 6 <6_map_reference>`"
  	":ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`MSETPASC(D1) <MSETPASC(D1)>`","EXORset Resident Pascal Compiler Users Guide",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`N/A <HEP-EDUCATOR-ASSEMBLY>`","HEP EDUCATOR-II Assembly And Operation Manual",":ref:`Folder Hardware <Hardware_map_reference>`"
+ 	":ref:`N/A <HEP-EDUCATOR-PWRSUPPLY>`","HEP EDUCATOR-II Power Supply Assembly And Operation Manual",":ref:`Folder Hardware <Hardware_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 6 <6_map_reference>`"
  	":ref:`N/A <MC6840UM-AD>`","MC6840 Programmable Timer Fundamentals and Applications",":ref:`Folder 6 <6_map_reference>`"
  
