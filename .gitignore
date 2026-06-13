@@ -1,4 +1,6 @@
 
 build/
+output/*
 xbuild_support/ebay_creds.py
 xbuild_support/__pycache__
+tmp/output/

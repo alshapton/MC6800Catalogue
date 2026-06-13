@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 11-06-2026).
+This is the timeline of acquisitions (as at 13-06-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -183,6 +183,8 @@ This is the timeline of acquisitions (as at 11-06-2026).
    14-JAN-2026,:ref:`HEPC4821L HEP version of MC6820 <HEPC4821L>`
    14-JAN-2026,:ref:`HEPC4811P 128 x 8-bit RAM <HEPC4811P>`
    14-JAN-2026,:ref:`Motorola HEP Kit Educator II <HEPEducatorKt2>`
+   14-JAN-2026,:ref:`HEP EDUCATOR-II Assembly And Operation Manual <HEP-EDUCATOR-ASSEMBLY>`
+   14-JAN-2026,:ref:`HEP EDUCATOR-II Power Supply Assembly And Operation Manual <HEP-EDUCATOR-PWRSUPPLY>`
    30-JAN-2026,:ref:`MCM6810AP 128 x 8-bit RAM <MCM6810AP>`
    12-FEB-2026,:ref:`MC6801 Single Chip Microcomputer Reference Manual <MC6801RMAD2>`
    12-FEB-2026,:ref:`Motorola PASCAL Language Manual <M68PLM(D2)>`

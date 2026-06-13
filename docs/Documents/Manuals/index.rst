@@ -10,6 +10,8 @@ Reference Manuals
    :header: "Part Number","Name","Comments" 
    :widths: auto
 
+   "|present| :ref:`N/A <HEP-EDUCATOR-ASSEMBLY>`","HEP EDUCATOR-II Assembly And Operation Manual",""
+   "|present| :ref:`N/A <HEP-EDUCATOR-PWRSUPPLY>`","HEP EDUCATOR-II Power Supply Assembly And Operation Manual",""
    ":ref:`N/A <MEK6800D2.1>`","MEK6800D2 Evaluation Kit II Manual","Second Edition 1977"
    "|present| :ref:`MES6800 <MES6800>`","MES6800 User Guide","September 1975"
    ":ref:`M68KBD(D) <M68KBD(D)>`","KEYBOARD ASSEMBLY (Suppliement to Basic Display Unit User's Guide)","Preliminary Information (First Edition 1977)"

@@ -127,6 +127,8 @@
    :header: "Name","Comments"
    :widths: 60,40
 
+    :ref:`HEP EDUCATOR-II Assembly And Operation Manual <HEP-EDUCATOR-ASSEMBLY>`,""
+    :ref:`HEP EDUCATOR-II Power Supply Assembly And Operation Manual <HEP-EDUCATOR-PWRSUPPLY>`,""
     :ref:`HEPEducatorKt2 <HEPEducatorKt2>`,""
     :ref:`M68KBC1 <M68KBC1>`,""
     :ref:`M68KBD1 <M68KBD1>`,""
