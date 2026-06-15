@@ -11,6 +11,12 @@ Microcomputer Development Systems and Subsystems
    :width: 400
    :align: center
 
+.. Note:: 
+   
+   This document is a collection of many datasheets, including:
+
+   - :ref:`M68SDT EXORciser Emulator for M6800 Based Systems <DS-M68SDT-1>`
+  
 .. rubric:: Collection Information
 
 .. csv-table:: 

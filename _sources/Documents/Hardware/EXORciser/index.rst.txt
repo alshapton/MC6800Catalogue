@@ -67,12 +67,12 @@ There were also :ref:`basic options page` for these systems.
    "Notes",""
 
 
-.. rubric:: EXORciser I
+.. rubric:: 220 Volt Table Top EXORciser 1
 
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68SDTT2"
+   "Part #","M68DTT2 <M68DTT2>`"
    "Purpose","Software/Hardware Development"
    "Firmware","EXbug 1.2"
    "MPU Module","MPU"
@@ -81,12 +81,12 @@ There were also :ref:`basic options page` for these systems.
    "Included Options","RS232/TTY Interface"
    "Notes",""
 
-.. rubric:: USE EXORciser I
+.. rubric:: 220 Volt Table Top EXORciser 1 with USEB
 
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68SDTTU2B"
+   "Part #",":ref:`M68DTTU2B <M68DTTU2B>`"
    "Purpose","Software/Hardware Development"
    "Firmware","EXbug 1.2"
    "MPU Module","Use B"
@@ -180,6 +180,3 @@ There were also :ref:`basic options page` for these systems.
    "RAM","32K Dynamic"
    "Included Options","12 inch CRT, Keyboard"
    "Notes",""
-
-
-

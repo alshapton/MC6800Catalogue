@@ -46,7 +46,7 @@ Other Related Hardware
    ":ref:`M68MMSK <M68MMSK>`","Short Chassis Rack Mounting Kit",""
    ":ref:`M68MMLK <M68MMLK>`","Long Chassis Rack Mounting Kit",""
    ":ref:`M68MFLK <M68MFLK>`","Front Loading Chassis Rack Mounting Kit",""
-
+   ":ref:`MEX68RK <MEX68RK>`","Rack Mounted Conversion Kit",""
 
 .. rubric:: ADS1 Autonomous Development System
 
@@ -81,3 +81,4 @@ Other Related Hardware
    ":ref:`M68IOS1 <M68IOS1>`","Input/Output Supervisor Firmware",""
    ":ref:`M68ICC1 <M68ICC1>`","Interconnection Cables Set",""
    ":ref:`M68BSC1 <M68BSC1>`","Bus System Card",""
+
