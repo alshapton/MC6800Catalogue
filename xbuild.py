@@ -2755,6 +2755,7 @@ while True:
             results = open(XBS+OSSEP+'bulk.results.txt', 'w')
             results.write("Updates:\n")
             for line in lines:
+                acquired_text=''
                 components = line.split(',')
                 product_name  = components[0]
                 product_number  = components[1]

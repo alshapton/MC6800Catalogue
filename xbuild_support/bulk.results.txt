@@ -1,9 +1,4 @@
 Updates:
-- Added M68MEB1 Microprocessor Evaluation Board to listing
-- Added M68SAC1 Standalone Computer to listing
-- Added MEC68MIN2 MINIBUG II Firmware to listing
-- Added M68DIM Display Interface Module to listing
-- Added M68MDM1 5-inch Display Monitor to listing
-- Added M68IOS1 Input/Output Supervisor Firmware to listing
-- Added M68ICC1 Interconnection Cables Set to listing
-- Added M68BSC1 Bus System Card to listing
+- Added M68DTT2 220 Volt Table Top EXORciser 1 to under offer
+- Added M68DTTU2B 220 Volt Table Top EXORciser 1 with USEB to under offer
+- Added MEX68RK Rack Mounted Conversion Kit to under offer

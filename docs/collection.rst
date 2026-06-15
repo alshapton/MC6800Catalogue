@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 13-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 15-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -22,6 +22,7 @@ This is the current collection (as at 13-06-2026) of the items produced by Motor
 	:header: "Part Number","Description","Location"
 	:widths: 18, 60, 22
 
+	"|document| :ref:`M68SDT <DS-M68SDT-1>`","EXORciser 1 Emulator for M6800 Based Systems","|document|:ref:`1979 Microcomputer Development Systems <1979_MCDS>`"
 	"|document| :ref:`MC6800 <DS-MC6800-MAY75>`","8-Bit Microprocessing Unit","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
 	"|document| :ref:`MC6820 <DS-MC6820-MAY75>`","Peripheral Interface Adapter (PIA)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
 	"|document| :ref:`MC6850 <DS-MC6850-MAY75>`","Asynchronous Communications Interface Adapter (ACIA)","|document|:ref:`M6800 Systems Reference and Data Sheets <SYSREF>`"
