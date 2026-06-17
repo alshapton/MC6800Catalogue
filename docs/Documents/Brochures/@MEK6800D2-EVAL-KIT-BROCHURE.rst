@@ -7,7 +7,7 @@
 M6800 Evaluation Kit II Brochure
 ================================
 
-.. image:: ../../images/Reference/MEK6800D2-EVAL-KIT-BROCHURE.png
+.. image:: ../../images/Brochures/MEK6800D2-EVAL-KIT-BROCHURE.png
    :width: 400
    :align: center
 
@@ -25,4 +25,4 @@ M6800 Evaluation Kit II Brochure
 
 .. rubric:: Links
 
-:download:`M6800 Evaluation Kit II Brochure <../../_static/Documents/Reference/MEK6800D2-EVAL-KIT-BROCHURE.pdf>`
+:download:`M6800 Evaluation Kit II Brochure <../../_static/Documents/Brochures/MEK6800D2-EVAL-KIT-BROCHURE.pdf>`

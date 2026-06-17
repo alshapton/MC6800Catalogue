@@ -7,7 +7,7 @@
 M6800 Time Sharing Systems Software Brochure
 ============================================
 
-.. image:: ../../images/Reference/M6800-TIME-SHARING-SYSTEMS-BROCHURE.png
+.. image:: ../../images/Brochures/M6800-TIME-SHARING-SYSTEMS-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M6800 Time Sharing Systems Software Brochure
 
 .. rubric:: Links
 
-:download:`M6800 Time Sharing Systems Software Brochure <../../_static/Documents/Reference/M6800-TIME-SHARING-SYSTEMS-BROCHURE.pdf>`
+:download:`M6800 Time Sharing Systems Software Brochure <../../_static/Documents/Brochures/M6800-TIME-SHARING-SYSTEMS-BROCHURE.pdf>`

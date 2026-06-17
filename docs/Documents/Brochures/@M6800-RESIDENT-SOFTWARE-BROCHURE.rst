@@ -7,7 +7,7 @@
 M6800 Resident Software Brochure
 ================================
 
-.. image:: ../../images/Reference/M6800-RESIDENT-SOFTWARE-BROCHURE.png
+.. image:: ../../images/Brochures/M6800-RESIDENT-SOFTWARE-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,6 +21,6 @@ M6800 Resident Software Brochure
 
 .. rubric:: Links
 
-:download:`M6800 Resident Software Brochure <../../_static/Documents/Reference/M6800-RESIDENT-SOFTWARE-BROCHURE.pdf>`
+:download:`M6800 Resident Software Brochure <../../_static/Documents/Brochures/M6800-RESIDENT-SOFTWARE-BROCHURE.pdf>`
 
 :ref:`M6800-Resident-Software Datasheet <DS-M6800ResSoftware>`

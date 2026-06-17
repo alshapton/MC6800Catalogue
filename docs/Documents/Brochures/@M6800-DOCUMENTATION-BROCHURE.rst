@@ -7,7 +7,7 @@
 Documentation Brochure
 ======================
 
-.. image:: ../../images/Reference/M6800-DOCUMENTATION-BROCHURE.png
+.. image:: ../../images/Brochures/M6800-DOCUMENTATION-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ Documentation Brochure
 
 .. rubric:: Links
 
-:download:`Documentation Brochure <../../_static/Documents/Reference/M6800-DOCUMENTATION-BROCHURE.pdf>`
+:download:`Documentation Brochure <../../_static/Documents/Brochures/M6800-DOCUMENTATION-BROCHURE.pdf>`

@@ -6,8 +6,6 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   "|present| :ref:`N/A <EDUCATOR-II-BROCHURE>`","EDUCATOR-II Brochure",""
-   "|present| :ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",""
    "|present| :ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",""
    "|present| :ref:`N/A <UM>`","Understanding Microprocessors",""
 
@@ -34,27 +32,7 @@
    :header: "Part Number","Name","Comments"
    :widths: 20,80,20 
 
-   "|present| :ref:`N/A <M6800-DOCUMENTATION-BROCHURE>`","Documentation Brochure",""
-   "|present| :ref:`N/A <M6800EXORDISK-BROCHURE>`","M6800 EXORdisk Brochure",""
-   "|present| :ref:`N/A <M6800EXORTAPE-BROCHURE>`","M6800 EXORtape Brochure",""
-   "|present| :ref:`N/A <M6800-RESIDENT-SOFTWARE-BROCHURE>`","M6800 Resident Software Brochure",""
-   "|present| :ref:`N/A <M6800SOFTWARE-IN-HOUSE-BROCHURE>`","M6800 Software for In-House-Computers Brochure",""
-   "|present| :ref:`N/A <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`","M6800 Time Sharing Systems Software Brochure",""
-   "|present| :ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",""
-   "|present| :ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",""
-   "|present| :ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",""
    "|present| :ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",""
-   "|present| :ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",""
-   "|present| :ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",""
-   "|present| :ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",""
-   "|present| :ref:`N/A <MEX6820-BROCHURE>`","MEX6820 Input/Output Module Brochure",""
-   "|present| :ref:`N/A <MEX6850-BROCHURE>`","MEX6850 ACIA Module Brochure",""
-   "|present| :ref:`N/A <MEX68CT-BROCHURE>`","MEX68CT MOTEST-1 Component Tester Brochure",""
-   "|present| :ref:`N/A <MEX68PP1-BROCHURE>`","MEX68PP1 PROM Programmer Module Brochure",""
-   "|present| :ref:`N/A <MEX68RR-BROCHURE>`","MEX68RR EROM/RAM Module Brochure",""
-   "|present| :ref:`N/A <MEX68SA-BROCHURE>`","MEX68SA Systems Analyzer Brochure",""
-   "|present| :ref:`N/A <MEX68USE-BROCHURE>`","MEX68USE User System Evaluator (USE) Brochure",""
-   "|present| :ref:`N/A <MEX68WW-MEX68XT-BROCHURE>`","MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure",""
 
 .. rubric:: Folder Microprocessor Course
 

@@ -7,7 +7,7 @@
 MEX6820 Input/Output Module Brochure
 ====================================
 
-.. image:: ../../images/Reference/MEX6820-BROCHURE.png
+.. image:: ../../images/Brochures/MEX6820-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX6820 Input/Output Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX6820 Input/Output Module Brochure <../../_static/Documents/Reference/MEX6820-BROCHURE.pdf>`
+:download:`MEX6820 Input/Output Module Brochure <../../_static/Documents/Brochures/MEX6820-BROCHURE.pdf>`

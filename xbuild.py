@@ -538,6 +538,7 @@ def update_storage():
     folderssoftnon=[]
     folderssoftres=[]
     foldersappnotes=[]
+    foldersbrochures=[]
     storage_properties = []
     other_storage = []
     other_products = []
@@ -643,6 +644,11 @@ def update_storage():
                 if metadata:
                     foldersappnotes.append(loc)
 
+            if 'Brochures' in file and  'fragment' not in file and 'index' not in file:
+                metadata,loc = get_loc(file)   
+                if metadata:
+                    foldersbrochures.append(loc)
+
     sorted_folders_datasheets = sorted(foldersdatasheets, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_manuals = sorted(foldersmanuals, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_appnotes = sorted(foldersappnotes, key=lambda x: (x['Folder'],x['Product']))   
@@ -650,6 +656,8 @@ def update_storage():
     sorted_folders_softnon = sorted(folderssoftnon, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders_generic = sorted(foldersgeneric, key=lambda x: (x['Folder'],x['Product']))   
     sorted_folders = sorted(foldersrefcard, key=lambda x: (x['Folder'],x['Product']))   
+    sorted_brochures = sorted(foldersbrochures, key=lambda x: (x['Folder'],x['Product']))   
+
     sorted_folders_reference =sorted(foldersreference, key=lambda x: (x['Folder'],x['Product']))   
 
     sorted_storage = sorted(storage, key=lambda x: (x['Storage'],x['Drawer'],x['Row'],x['Column']))   
@@ -947,6 +955,9 @@ def update_storage():
 
     print('\nStorage updated')      
 
+
+    TABLES_FILE='docs/Documents/Brochures/tables.fragment.rst'
+    do_standard_folders(TABLES_FILE,sorted_brochures)
 
     TABLES_FILE='docs/Documents/ReferenceCards/tables.fragment.rst'
     do_standard_folders(TABLES_FILE,sorted_folders)
@@ -1397,7 +1408,7 @@ def do_create():
     console.print("Enter the following information:",style="info")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
-    product_type = input("  Product Type:\n     (A)pplication Note\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
+    product_type = input("  Product Type:\n     (A)pplication Note\n     (B)rochure\n     Reference (C)ard\n     (D)atasheet\n     (G)eneric\n     (I)Cs\n     (M)onitors\n     Ma(n)uals\n     (R)eference\n     (E)XORciser hardware\n     (O)ther hardware\n      : ")
     orphan = input("Orphan ? (Y/N): ")
     comments = input("Comments: ")
     acquired = input("Status ? (present/notpresent/intransit/underoffer): ")
@@ -1429,6 +1440,9 @@ def do_create():
     match product_type:
         case "A":
             location = "Documents/ApplicationNotes"
+        case "B":
+            location = "Documents/Brochures"
+            images = dotdot + 'images/Brochures/'
         case "R":
             location = "Documents/Reference"
             images = dotdot + 'images/Reference/'
@@ -1537,6 +1551,9 @@ def do_create_1(product_name,product_number,product_type,orphan,comments,acquire
     match product_type:
         case "A":
             location = "Documents/ApplicationNotes"
+        case "B":
+            location = "Documents/Brochures"
+            images = dotdot + 'images/Brochures/'
         case "R":
             location = "Documents/Reference"
             images = dotdot + 'images/Reference/'
@@ -2069,6 +2086,7 @@ def rebuild_db():
             'Hardware' + OSSEP + 'EXORciser' + OSSEP + 'Micromodules' + OSSEP + '@' in file or
             'Generic' in file or
             'Manuals' in file or 
+            'Brochures' in file or 
             'Reference' in file or 
             'EngineeringNotes' in file or 'Datasheets' in file or 
             'ApplicationNotes' in file) \
@@ -2093,6 +2111,8 @@ def rebuild_db():
                 lines = f.readlines()
                 if 'Manuals' in file:
                     documenttype='Manuals'
+                if 'Brochures' in file:
+                    documenttype='Brochures'
                 if 'Datasheets' in file:
                     documenttype='Datasheets'
                 if 'ApplicationNotes' in file:

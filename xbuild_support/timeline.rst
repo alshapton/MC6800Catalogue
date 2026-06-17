@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 15-06-2026).
+This is the timeline of acquisitions (as at 17-06-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -100,11 +100,6 @@ This is the timeline of acquisitions (as at 15-06-2026).
    07-JUL-2025,:ref:`MC68488L General Purpose Interface Adapter <MC68488L>`
    07-JUL-2025,:ref:`MC6871A-15 Two-Phase Microprocessor Clock <MC6871A15>`
    07-JUL-2025,:ref:`MC6871A-20 Two-Phase Microprocessor Clock <MC6871A20>`
-   17-JUL-2025,:ref:`M6800 Co-Resident Software Datasheet <DS-M6800ResSoftware>`
-   17-JUL-2025,:ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`
-   17-JUL-2025,:ref:`M6800 Simulator Datasheet <DS-M68EML>`
-   17-JUL-2025,:ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`
-   17-JUL-2025,:ref:`MPL Compiler Datasheet <DS-MPL-COMPILER>`
    17-JUL-2025,:ref:`Documentation Brochure <M6800-DOCUMENTATION-BROCHURE>`
    17-JUL-2025,:ref:`M6800 Resident Software Brochure <M6800-RESIDENT-SOFTWARE-BROCHURE>`
    17-JUL-2025,:ref:`M6800 Time Sharing Systems Software Brochure <M6800-TIME-SHARING-SYSTEMS-BROCHURE>`
@@ -112,10 +107,8 @@ This is the timeline of acquisitions (as at 15-06-2026).
    17-JUL-2025,:ref:`M6800 EXORdisk Brochure <M6800EXORDISK-BROCHURE>`
    17-JUL-2025,:ref:`M6800 EXORtape Brochure <M6800EXORTAPE-BROCHURE>`
    17-JUL-2025,:ref:`M6800 Software for In-House-Computers Brochure <M6800SOFTWARE-IN-HOUSE-BROCHURE>`
-   17-JUL-2025,:ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`
    17-JUL-2025,:ref:`M68BASR010 Resident BASIC Interpreter Brochure <M68BASR010-BROCHURE>`
    17-JUL-2025,:ref:`M68FTNR10D Resident FORTRAN Compiler Brochure <M68FTNR10D-BROCHURE>`
-   17-JUL-2025,:ref:`M68SDT EXORciser Emulator for M6800 Based Systems Brochure <M68SDTEXOR-BROCHURE>`
    17-JUL-2025,:ref:`MEX6812-1 2K Static RAM Module Brochure <MEX6812-1-BROCHURE>`
    17-JUL-2025,:ref:`MEX6815-3 8K Dynamic RAM Module Brochure <MEX6815-3-BROCHURE>`
    17-JUL-2025,:ref:`MEX6816-1 16K Dynamic RAM Module Brochure <MEX6816-1-BROCHURE>`
@@ -127,13 +120,20 @@ This is the timeline of acquisitions (as at 15-06-2026).
    17-JUL-2025,:ref:`MEX68SA Systems Analyzer Brochure <MEX68SA-BROCHURE>`
    17-JUL-2025,:ref:`MEX68USE User System Evaluator (USE) Brochure <MEX68USE-BROCHURE>`
    17-JUL-2025,:ref:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <MEX68WW-MEX68XT-BROCHURE>`
+   17-JUL-2025,:ref:`M6800 Co-Resident Software Datasheet <DS-M6800ResSoftware>`
+   17-JUL-2025,:ref:`M6800 Resident Macro Asembler and Linkage Editor Datasheet <DS-M68ASMR020>`
+   17-JUL-2025,:ref:`M6800 Simulator Datasheet <DS-M68EML>`
+   17-JUL-2025,:ref:`M6800 Cross Assembler DataSheet <DS-M68SAM>`
+   17-JUL-2025,:ref:`MPL Compiler Datasheet <DS-MPL-COMPILER>`
+   17-JUL-2025,:ref:`M6800 Microcomputer System Support Products <M6800SYSSUPPPROD>`
+   17-JUL-2025,:ref:`M68SDT EXORciser Emulator for M6800 Based Systems Brochure <M68SDTEXOR-BROCHURE>`
    06-AUG-2025,:ref:`SC84003L (MC6809) 8-Bit Microprocessing Unit <SC84003L>`
    09-AUG-2025,:ref:`MC6800L Microprocessor Unit <2!MC6800L>`
    09-AUG-2025,:ref:`MC6808L Microprocessor with Clock and Optional RAM (MC6808) <MC6808L>`
    09-AUG-2025,:ref:`MC6820L Peripheral Interface Adapter (PIA) <MC6820L>`
-   18-AUG-2025,:ref:`MC6803L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC6803L>`
    18-AUG-2025,:ref:`EDUCATOR-II Brochure <EDUCATOR-II-BROCHURE>`
    18-AUG-2025,:ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
+   18-AUG-2025,:ref:`MC6803L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC6803L>`
    22-AUG-2025,:ref:`JBUG Monitor V1.8 <JBUG_1_8>`
    04-SEP-2025,:ref:`MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM6810BJCS>`
    08-SEP-2025,:ref:`MEK6800D2 Development board for the 6800 microprocessor <MEK6800D2>`

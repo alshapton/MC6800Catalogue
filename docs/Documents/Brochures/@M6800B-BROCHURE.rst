@@ -7,7 +7,7 @@
 M6800B Evaluation Module II Brochure
 ====================================
 
-.. image:: ../../images/DataSheets/M6800B-BROCHURE.png
+.. image:: ../../images/Brochures/M6800B-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M6800B Evaluation Module II Brochure
 
 .. rubric:: Links
 
-:download:`M6800B Evaluation Module II Brochure <../../_static/Documents/Reference/M6800B-BROCHURE.pdf>`
+:download:`M6800B Evaluation Module II Brochure <../../_static/Documents/Brochures/M6800B-BROCHURE.pdf>`

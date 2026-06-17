@@ -7,7 +7,7 @@
 MEX68SA Systems Analyzer Brochure
 =================================
 
-.. image:: ../../images/Reference/MEX68SA-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68SA-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX68SA Systems Analyzer Brochure
 
 .. rubric:: Links
 
-:download:`MEX68SA Systems Analyzer <../../_static/Documents/Reference/MEX68SA-BROCHURE.pdf>`
+:download:`MEX68SA Systems Analyzer <../../_static/Documents/Brochures/MEX68SA-BROCHURE.pdf>`

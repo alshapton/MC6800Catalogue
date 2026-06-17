@@ -7,7 +7,7 @@
 MEX68PP1 PROM Programmer Module Brochure
 ========================================
 
-.. image:: ../../images/Reference/MEX68PP1-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68PP1-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX68PP1 PROM Programmer Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX68PP1 PROM Programmer Module Brochure <../../_static/Documents/Reference/MEX68PP1-BROCHURE.pdf>`
+:download:`MEX68PP1 PROM Programmer Module Brochure <../../_static/Documents/Brochures/MEX68PP1-BROCHURE.pdf>`

@@ -7,7 +7,7 @@
 M6800 EXORtape Brochure
 =======================
 
-.. image:: ../../images/Reference/M6800EXORTAPE-BROCHURE.png
+.. image:: ../../images/Brochures/M6800EXORTAPE-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M6800 EXORtape Brochure
 
 .. rubric:: Links
 
-:download:`M6800 EXORtape Brochure <../../_static/Documents/Reference/M6800EXORTAPE-BROCHURE.pdf>`
+:download:`M6800 EXORtape Brochure <../../_static/Documents/Brochures/M6800EXORTAPE-BROCHURE.pdf>`

@@ -7,7 +7,7 @@
 MEX6812-1 2K Static RAM Module Brochure
 =======================================
 
-.. image:: ../../images/Reference/MEX6812-1-BROCHURE.png
+.. image:: ../../images/Brochures/MEX6812-1-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,6 +21,6 @@ MEX6812-1 2K Static RAM Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX6812-1 2K Static RAM Module <../../_static/Documents/Reference/MEX6812-1-BROCHURE.pdf>`
+:download:`MEX6812-1 2K Static RAM Module <../../_static/Documents/Brochures/MEX6812-1-BROCHURE.pdf>`
 
 :ref:`MEX6812-1 2K Static RAM Module Datasheet <DS-MEX6812-1>`

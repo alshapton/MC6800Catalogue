@@ -7,7 +7,7 @@
 MEX68RR EROM/RAM Module Brochure
 ================================
 
-.. image:: ../../images/Reference/MEX68RR-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68RR-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX68RR EROM/RAM Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX68RR EROM/RAM Module Brochure <../../_static/Documents/Reference/MEX68RR-BROCHURE.pdf>`
+:download:`MEX68RR EROM/RAM Module Brochure <../../_static/Documents/Brochures/MEX68RR-BROCHURE.pdf>`

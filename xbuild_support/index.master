@@ -83,6 +83,7 @@ More information about document statuses can be found here :ref:`glossary_docume
    :hidden:
 
    Documents/ApplicationNotes/index
+   Documents/Brochures/index
    Documents/Datasheets/index
    Documents/EngineeringNotes/index
    Documents/Generic/index
