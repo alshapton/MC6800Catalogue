@@ -7,7 +7,7 @@
 MEX6815-3 8K Dynamic RAM Module Brochure
 ========================================
 
-.. image:: ../../images/Reference/MEX6815-3-BROCHURE.png
+.. image:: ../../images/Brochures/MEX6815-3-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX6815-3 8K Dynamic RAM Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX6815-3 8K Dynamic RAM Module <../../_static/Documents/Reference/MEX6815-3-BROCHURE.pdf>`
+:download:`MEX6815-3 8K Dynamic RAM Module <../../_static/Documents/Brochures/MEX6815-3-BROCHURE.pdf>`

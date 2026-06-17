@@ -7,7 +7,7 @@
 MEX6816-1 16K Dynamic RAM Module Brochure
 =========================================
 
-.. image:: ../../images/Reference/MEX6816-1-BROCHURE.png
+.. image:: ../../images/Brochures/MEX6816-1-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX6816-1 16K Dynamic RAM Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX6816-1 16K Dynamic RAM Module Brochure <../../_static/Documents/Reference/MEX6816-1-BROCHURE.pdf>`
+:download:`MEX6816-1 16K Dynamic RAM Module Brochure <../../_static/Documents/Brochures/MEX6816-1-BROCHURE.pdf>`

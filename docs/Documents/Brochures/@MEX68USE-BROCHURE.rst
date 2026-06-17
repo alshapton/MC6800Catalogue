@@ -7,7 +7,7 @@
 MEX68USE User System Evaluator (USE) Brochure
 =============================================
 
-.. image:: ../../images/Reference/MEX68USE-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68USE-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX68USE User System Evaluator (USE) Brochure
 
 .. rubric:: Links
 
-:download:`MEX68USE User System Evaluator (USE) Brochure <../../_static/Documents/Reference/MEX68USE-BROCHURE.pdf>`
+:download:`MEX68USE User System Evaluator (USE) Brochure <../../_static/Documents/Brochures/MEX68USE-BROCHURE.pdf>`

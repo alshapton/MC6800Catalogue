@@ -7,7 +7,7 @@
 MEX6850 ACIA Module Brochure
 ============================
 
-.. image:: ../../images/Reference/MEX6850-BROCHURE.png
+.. image:: ../../images/Brochures/MEX6850-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX6850 ACIA Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX6850 ACIA Module Brochure <../../_static/Documents/Reference/MEX6850-BROCHURE.pdf>`
+:download:`MEX6850 ACIA Module Brochure <../../_static/Documents/Brochures/MEX6850-BROCHURE.pdf>`

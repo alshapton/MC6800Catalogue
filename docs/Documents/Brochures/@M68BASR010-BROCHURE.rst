@@ -7,7 +7,7 @@
 M68BASR010 Resident BASIC Interpreter Brochure
 ==============================================
 
-.. image:: ../../images/Reference/M68BASR010-BROCHURE.png
+.. image:: ../../images/Brochures/M68BASR010-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M68BASR010 Resident BASIC Interpreter Brochure
 
 .. rubric:: Links
 
-:download:`M68BASR010 Resident BASIC Interpreter Brochure <../../_static/Documents/Reference/M68BASR010-BROCHURE.pdf>`
+:download:`M68BASR010 Resident BASIC Interpreter Brochure <../../_static/Documents/Brochures/M68BASR010-BROCHURE.pdf>`

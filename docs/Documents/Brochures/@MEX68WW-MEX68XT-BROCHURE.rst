@@ -7,7 +7,7 @@
 MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure
 =========================================================
 
-.. image:: ../../images/Reference/MEX68WW-MEX68XT-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68WW-MEX68XT-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,6 +21,6 @@ MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure
 
 .. rubric:: Links
 
-:download:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <../../_static/Documents/Reference/MEX68WW-MEX68XT-BROCHURE.pdf>`
+:download:`MEX68WW Wirewrap Module/MEX68EXT Extended Module Brochure <../../_static/Documents/Brochures/MEX68WW-MEX68XT-BROCHURE.pdf>`
 
 :ref:`MEX68WW Wirewrap Module Datasheet <MEX68WW>`

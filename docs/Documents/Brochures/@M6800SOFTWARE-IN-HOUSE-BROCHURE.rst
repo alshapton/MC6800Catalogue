@@ -7,7 +7,7 @@
 M6800 Software for In-House-Computers Brochure
 ==============================================
 
-.. image:: ../../images/Reference/M6800SOFTWARE-IN-HOUSE-BROCHURE.png
+.. image:: ../../images/Brochures/M6800SOFTWARE-IN-HOUSE-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M6800 Software for In-House-Computers Brochure
 
 .. rubric:: Links
 
-:download:`M6800 Software for In-House-Computers Brochure <../../_static/Documents/Reference/M6800SOFTWARE-IN-HOUSE-BROCHURE.pdf>`
+:download:`M6800 Software for In-House-Computers Brochure <../../_static/Documents/Brochures/M6800SOFTWARE-IN-HOUSE-BROCHURE.pdf>`

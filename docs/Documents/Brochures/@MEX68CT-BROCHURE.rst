@@ -7,7 +7,7 @@
 MEX68CT MOTEST-1 Component Tester Brochure
 ==========================================
 
-.. image:: ../../images/Reference/MEX68CT-BROCHURE.png
+.. image:: ../../images/Brochures/MEX68CT-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ MEX68CT MOTEST-1 Component Tester Brochure
 
 .. rubric:: Links
 
-:download:`MEX68CT MOTEST-1 Component Tester <../../_static/Documents/Reference/MEX68CT-BROCHURE.pdf>`
+:download:`MEX68CT MOTEST-1 Component Tester <../../_static/Documents/Brochures/MEX68CT-BROCHURE.pdf>`

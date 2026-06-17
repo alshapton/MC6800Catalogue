@@ -7,7 +7,7 @@
 M6800 EXORdisk Brochure
 =======================
 
-.. image:: ../../images/Reference/M6800EXORDISK-BROCHURE.png
+.. image:: ../../images/Brochures/M6800EXORDISK-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M6800 EXORdisk Brochure
 
 .. rubric:: Links
 
-:download:`M6800 EXORdisk Brochure <../../_static/Documents/Reference/M6800EXORDISK-BROCHURE.pdf>`
+:download:`M6800 EXORdisk Brochure <../../_static/Documents/Brochures/M6800EXORDISK-BROCHURE.pdf>`

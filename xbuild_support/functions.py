@@ -11,6 +11,8 @@ def convert_type_to_real_type(type):
     match type:
         case "Documents/ApplicationNotes":
             doc_type = "Application Notes"
+        case "Documents/ApplicationNotes":
+            doc_type = "Brochures"            
         case "Documents/Hardware/ICs":    
             doc_type = "ICs"
         case "Documents/Reference":
@@ -50,6 +52,8 @@ def insert_spaces_into_document_type(type):
             doc_type = "Reference Manuals"
         case "Hardware/EXORciser/Micromodules":
             doc_type = "Exorciser Micromodules"
+        case "Brochures":
+            doc_type = "Brochures"
         case "Datasheets":
             doc_type = "Datasheets"
         case "ReferenceCards":

@@ -7,7 +7,7 @@
 M68FTNR10D Resident FORTRAN Compiler Brochure
 =============================================
 
-.. image:: ../../images/Reference/M68FTNR010D-BROCHURE.png
+.. image:: ../../images/Brochures/M68FTNR010D-BROCHURE.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M68FTNR10D Resident FORTRAN Compiler Brochure
 
 .. rubric:: Links
 
-:download:`M68FTNR010D Resident FORTRAN Compiler Brochure <../../_static/Documents/Reference/M68FTNR010D-BROCHURE.pdf>`
+:download:`M68FTNR010D Resident FORTRAN Compiler Brochure <../../_static/Documents/Brochures/M68FTNR010D-BROCHURE.pdf>`

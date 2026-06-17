@@ -7,7 +7,7 @@
 EDUCATOR-II Brochure
 ====================
 
-.. image:: ../../images/Reference/EDUCATOR-II-BROCHURE.png
+.. image:: ../../images/Brochures/EDUCATOR-II-BROCHURE.png
    :width: 400
    :align: center
 
@@ -25,6 +25,6 @@ EDUCATOR-II Brochure
 
 .. rubric:: Links
 
-:download:`EDUCATOR-II Brochure <../../_static/Documents/Reference/EDUCATOR-II-BROCHURE.pdf>`
+:download:`EDUCATOR-II Brochure <../../_static/Documents/Brochures/EDUCATOR-II-BROCHURE.pdf>`
 
 :ref:`M6800 Evaluation Kit II Brochure <MEK6800D2-EVAL-KIT-BROCHURE>`
