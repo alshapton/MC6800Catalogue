@@ -2,12 +2,12 @@
 
 .. _MC68B21S:
 
-.. #Metadata {'Product':'MC68B21S','Name':'MC68B21S Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68B21S','Name':'MC68B21S Peripheral Interface Adapter (PIA)','Storage': 'Storage Box 2','Drawer':3,'Row':2,'Column':3}
 
 MC68B21S Peripheral Interface Adapter (PIA)
 ===========================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6821/MC68B21S.pngNOIMAGE.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC68B21S Peripheral Interface Adapter (PIA)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","9311"
+   "Manufacture Date","08-MAR-1993 to 14-MAR-1993"
+   "Mask","OK2P"
    "Packaging","CERDIP"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 2, Column 3 <Storage_Box_2_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC68B21S Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 17-JUN-2026
 
 .. rubric:: Links
 
