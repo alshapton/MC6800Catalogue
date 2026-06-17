@@ -7,7 +7,7 @@
 M68SDT EXORciser 1 Emulator for M6800 Based Systems
 ===================================================
 
-.. image:: ../../images/DataSheets/DS-M68SDT-1.png
+.. image:: ../../images/Brochures/DS-M68SDT-1.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M68SDT EXORciser 1 Emulator for M6800 Based Systems
 
 .. rubric:: Links
 
-:download:`M68SDT EXORciser 1 Emulator for M6800 Based Systems <../../_static/Documents/Datasheets/DS-M68SDT-1.pdf>`
+:download:`M68SDT EXORciser 1 Emulator for M6800 Based Systems <../../_static/Documents/Brochures/DS-M68SDT-1.pdf>`
