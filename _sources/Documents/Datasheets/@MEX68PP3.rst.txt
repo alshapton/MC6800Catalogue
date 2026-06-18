@@ -2,9 +2,9 @@
 
 .. _MEX68PP3:
 
-.. #Metadata {'Product':'MEX78PP3 EROM/PROM Programmer Module','Folder': '2'}
+.. #Metadata {'Product':'MEX68PP3 EROM/PROM Programmer Module','Folder': '2'}
 
-MEX78PP3 EROM/PROM Programmer Module Datasheet
+MEX68PP3 EROM/PROM Programmer Module Datasheet
 ==============================================
 
 .. image:: ../../images/DataSheets/MEX68PP3.png

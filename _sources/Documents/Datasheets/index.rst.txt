@@ -84,7 +84,6 @@ Modules
    "|present| :ref:`M68ADS1 <DS-M68ADS1-FRENCH>`","Autonomous Development System (French)","|advanceinfo|","1976",""    
    "|present| :ref:`M68ADS1 <DS-M68ADS1>`","Autonomous Development System","|confirminfo|","December 1977",""
    ":ref:`M68SDT <M68SDT>`","Basic EXORciser Unit","|advanceinfo|","1975",""    
-   "|document| :ref:`M68SDT <DS-M68SDT-1>`","EXORciser 1 Emulator for M6800 Based Systems ","","",":ref:`1979 Microcomputer Development Systems <1979_MCDS>`"
    "|present| :ref:`M68SXS <DS-M68SXS>`","M68SXS EXORterm 200","|confirminfo|","Issue A 1978",""
    "|notpresent| :ref:`N/A <EXORciser DS booklet>`","EXORciser Data Sheets","","August 1975",""
    "|present| :ref:`N/A <DS-M6800ResSoftware>`","M6800 Resident Software","|advanceinfo|","1975"
