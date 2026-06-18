@@ -5,6 +5,12 @@
 - Added CHANGELOG
 - Changed MC68B50PD Asynchronous Communications Interface Adapter to notpresent
 - Corrected bug showing incorrect totals for datasheets on Statistics page
+- Added MEX6800-2 MPU II Module to listing
+- Added MEX68DB2 Debug Module to listing
+- Added MEX6821-2 PIA Input Output Module 2 to listing
+- Added MEX6850-2 ACIA SSDA Module II to listing
+- Added MEX68PI2  Printer Interface Module II to listing
+- Added MEX68SA2  Systems Analyser II to listing
 
 ## 2026-06-17
 

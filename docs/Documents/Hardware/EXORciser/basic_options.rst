@@ -6,64 +6,35 @@ Basic Options for EXORciser
 ===========================
 
 
-EXORciser I and EXORterm 200 (1 MHz frequency limit)
 
-
-.. csv-table:: I/O Add-Ons
+.. csv-table:: 
    :header: "Part Number","Name"
    :widths: 30, 70
 
-    "MEX6820   ","PIA Module with four 8-bit I/O ports for parallel-oriented peripherals  "
-    "MEX6850   ","ACIA Module  "
-
-.. csv-table:: Auxilliary Modules
-   :header: "Part Number","Name"
-   :widths: 30, 70
-
+    "MEX6820","PIA Module with four 8-bit I/O ports for parallel-oriented peripherals  "
+    "MEX6850","ACIA Module 1"
     "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
     "MEX68PP3A/B/M","PROM Programmer  "
+    ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module"
+    ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module"
+    ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II"
+    ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II"
     "MEX68USM  ","Universal Support Module to support 6800 family of devices "
     "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "
     ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module for prototype Development  "
     ":ref:`MEX68XT <MEX68XT>`","MEX68XT Extender Module"
-
-For EXORSizer II and EXORterm 220 (1, 1.5 and 2 MHz frequency)
-
-.. csv-table:: Development System Options
-   :header: "Part Number","Name"
-   :widths: 30,70
-
     "MEX6808-22","8K Static RAM"
     "MEX6816-22S","16K Static RAM"
     "|present| :ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM "
     ":ref:`MEX6832-22D <MEX6832-22D>`","32K Dynamic RAM Module with parity"
     ":ref:`MEX6848-22D <MEX6848-22D>`","48K Dynamic RAM Module with parity"
     ":ref:`MEX6864-22D <MEX6864-22D>`","64K Dynamic RAM Module with parity"
-
-.. csv-table:: I/O Add-Ons
-   :header: "Part Number","Name"
-   :widths: 30, 70
-
-    "MEX6821-2","PIA Module with four 8-bit I/O ports for parallel-oriented peripherals"
-    "MEX6850-2","ACIA Module"
-
-.. csv-table:: Auxilliary Modules
-   :header: "Part Number","Name"
-   :widths: 30, 70
-
+    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2"
+    ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II"
     "MEX68PP3A/B/M","PROM Programmer"
     "MEX68USM","Universal Support Module to support 6800 family of devices"
-    "MEX68SA2","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 <br />Microprocessor Systems "
     "MEX68WW","Universal Wirewrap Module for prototype Development"
     "MEX68XT","Extender Module permits access to any development module from outside the EXORciser chassis"
-
-
-Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../../_static/Documents/Generic/1979_Microcomputer_Development_Systems.pdf>`
-
-.. csv-table:: Micromodules
-   :header: "Part Number","Name"
-   :widths: 30, 70
-   
     ":ref:`M68MM01 <M68MM01>`","Micromodule 1 M6800 CPU Module"
     ":ref:`M68MM01A2 <M68MM01A2>`","Monoboard Micromodule 1A/1A2"
     "|present| :ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
@@ -78,3 +49,4 @@ Reference: Page 7 : :download:`1979 Microcomputer Development Systems <../../../
 
     
 
+   

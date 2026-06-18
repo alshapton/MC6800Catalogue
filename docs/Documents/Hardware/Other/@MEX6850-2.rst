@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEX6850-2:
+
+ACIA SSDA Module II
+===================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

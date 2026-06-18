@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEX6821-2:
+
+PIA Input Output Module 2
+=========================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

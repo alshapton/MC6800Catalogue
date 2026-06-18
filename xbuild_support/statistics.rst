@@ -10,16 +10,16 @@ A set of statistics of known MC6800 artefacts (as at 18-06-2026).
 
    Application Notes,9,1,8,0
    Brochures,23,23,0,0
-   Datasheets,68,22,46,0
+   Datasheets,67,21,46,0
    EngineeringNotes,1,0,1,0
    Generic Documents,10,7,3,0
    Exorciser Hardware,13,2,11,0
    Exorciser Micromodules,12,7,5,0
-   Other Hardware,51,6,45,0
+   Other Hardware,57,6,51,0
    ICs,482,88,394,0
    Reference Manuals,105,19,86,0
    Reference Documents,7,6,1,0
    Reference Cards,8,8,0,0
    NonResident Software,8,8,0,0
    Resident Software,12,12,0,0
-   TOTAL,809,209,600,0
+   TOTAL,814,208,606,0

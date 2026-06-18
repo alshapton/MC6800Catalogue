@@ -82,3 +82,15 @@ Other Related Hardware
    ":ref:`M68ICC1 <M68ICC1>`","Interconnection Cables Set",""
    ":ref:`M68BSC1 <M68BSC1>`","Bus System Card",""
 
+.. rubric:: Other Hardware
+
+.. csv-table:: 
+   :header: "Part Number","Name","Comments" 
+   :widths: 25,40,35
+
+   ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module",""
+   ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module",""
+   ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2",""
+   ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II",""
+   ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II",""
+   ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II",""
