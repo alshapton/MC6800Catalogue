@@ -24,6 +24,7 @@
    "|present| :ref:`N/A <M6800B-BROCHURE>`","M6800B Evaluation Module II Brochure",""
    "|present| :ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",""
    "|present| :ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",""
+   "|present| :ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",""
    "|present| :ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",""
    "|present| :ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",""
    "|present| :ref:`N/A <MEX6816-1-BROCHURE>`","MEX6816-1 16K Dynamic RAM Module Brochure",""

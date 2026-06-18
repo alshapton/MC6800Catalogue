@@ -18,7 +18,7 @@
       "|present| :ref:`MC68B50CP <MC68B50CP>`","Plastic","2 MHz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MC68A50P <MC68A50P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A50S <MC68A50S>`","CERDIP","1.5MHz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC68B50PD <MC68B50PD>`","Ceramic","2MHz","0-70\ :sup:`o`\ C",""
+      "|notpresent| :ref:`MC68B50PD <MC68B50PD>`","Ceramic","2MHz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A50CS <MC68A50CS>`","CERDIP","1.5MHz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6850CL <MC6850CL>`","Ceramic","1MHz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A50CP <MC68A50CP>`","Plastic","1.5MHz","-40-85\ :sup:`o`\ C",""

@@ -7,7 +7,7 @@
 M68SDT EXORciser Emulator for M6800 Based Systems Brochure
 ==========================================================
 
-.. image:: ../../images/Reference/M68SDTEXORciser.png
+.. image:: ../../images/Brochures/M68SDTEXORciser.png
    :width: 400
    :align: center
 
@@ -21,4 +21,4 @@ M68SDT EXORciser Emulator for M6800 Based Systems Brochure
 
 .. rubric:: Links
 
-:download:`M68SDT EXORciser Emulator for M6800 Based Systems <../../_static/Documents/Reference/M68SDTEXOR.pdf>`
+:download:`M68SDT EXORciser Emulator for M6800 Based Systems <../../_static/Documents/Brochures/M68SDTEXOR.pdf>`

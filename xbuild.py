@@ -1799,7 +1799,7 @@ def do_statistics():
                 
                 for r in items:
                     if r["status"] == 'present' or r["status"] == '|document|':
-                        present=r["total"]
+                        present = present+r["total"]
                     if r["status"] == 'notpresent':
                             notpresent=r["total"]
                     if r["status"] == 'intransit':
@@ -2088,7 +2088,8 @@ def rebuild_db():
             'Manuals' in file or 
             'Brochures' in file or 
             'Reference' in file or 
-            'EngineeringNotes' in file or 'Datasheets' in file or 
+            'EngineeringNotes' in file or 
+            'Datasheets' in file or 
             'ApplicationNotes' in file) \
             and 'fragment' not in file and 'index' not in file \
             and 'carousel' not in file :

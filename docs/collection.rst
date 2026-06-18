@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 17-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 18-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -119,9 +119,10 @@ This is the current collection (as at 17-06-2026) of the items produced by Motor
 	":ref:`HEPC4821L <HEPC4821L>`","Ceramic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
 	":ref:`MC6820L <MC6820L>`","Ceramic",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
 	":ref:`XC6820 <XC6820>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
-	":ref:`MC6821P <MC6821P>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
+	":ref:`MC6821P <MC6821P>`","Plastic",":ref:`Storage Box 2, Drawer 3, Row 2, Column 2 <Storage_Box_2_Drawer_3>`"
 	":ref:`MC68B21L <MC68B21L>`","Plastic",":ref:`Storage Box 2, Drawer 3, Row 1, Column 2 <Storage_Box_2_Drawer_3>`"
 	":ref:`MC68B21P <MC68B21P>`","Plastic",":ref:`M68MM16 Micromodule <Components_attached_to_the_M68MM16_Micromodule_Components_attached_to_the_M68MM16_Micromodule>`"
+	":ref:`MC68B21S <MC68B21S>`","CERDIP",":ref:`Storage Box 2, Drawer 3, Row 2, Column 3 <Storage_Box_2_Drawer_3>`"
 	":ref:`MC6828P <MC6828P>`","Plastic",":ref:`Storage Box 2, Drawer 4, Row 1, Column 2 <Storage_Box_2_Drawer_4>`"
 	":ref:`MCM6830AP-2 <MCM6830AP-2>`","Plastic",":ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`"
 	":ref:`MCM6830L7 <MCM6830L7>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
@@ -203,6 +204,7 @@ This is the current collection (as at 17-06-2026) of the items produced by Motor
  	":ref:`N/A <M6800SOFTWARE-IN-HOUSE-BROCHURE>`","M6800 Software for In-House-Computers Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68BASR010-BROCHURE>`","M68BASR010 Resident BASIC Interpreter Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <M68FTNR10D-BROCHURE>`","M68FTNR10D Resident FORTRAN Compiler Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
+ 	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEK6800D2-EVAL-KIT-BROCHURE>`","M6800 Evaluation Kit II Brochure",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`N/A <MEX6812-1-BROCHURE>`","MEX6812-1 2K Static RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <MEX6815-3-BROCHURE>`","MEX6815-3 8K Dynamic RAM Module Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
@@ -255,7 +257,6 @@ This is the current collection (as at 17-06-2026) of the items produced by Motor
 
 	":ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",":ref:`Folder 6 <6_map_reference>`"
  	":ref:`N/A <M6800SYSSUPPPROD>`","M6800 Microcomputer System Support Products",":ref:`Folder 4 <4_map_reference>`"
- 	":ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",":ref:`Folder M6800 Microcomputer System Support Products <M6800_Microcomputer_System_Support_Products_map_reference>`"
  	":ref:`N/A <NONE-1>`","Motorola Microcomputer System Design Data Manual",":ref:`Folder 2 <2_map_reference>`"
  	":ref:`N/A <NONE-2>`","Microprocessor Applications Manual",":ref:`Folder 4 <4_map_reference>`"
  	":ref:`N/A <SYSREF>`","M6800 Systems Reference and Data Sheets",":ref:`Folder Microprocessor Course <Microprocessor_Course_map_reference>`"
