@@ -7,7 +7,7 @@
 MC68B21S Peripheral Interface Adapter (PIA)
 ===========================================
 
-.. image:: ../../../../images/Hardware/ICs/MC6821/MC68B21S.pngNOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6821/MC68B21S.png
    :width: 400
    :align: center
 

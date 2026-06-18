@@ -41,7 +41,7 @@
       "|notpresent| :ref:`MC68B21PD <MC68B21PD>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6821CPD <MC6821CPD>`","Plastic","1 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6821CPS <MC6821CPS>`","Plastic","1 Mhz","-25-150\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC68B21S <MC68B21S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC68B21S <MC68B21S>`","CERDIP","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A21CS <MC68A21CS>`","CERDIP","1.5 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6821S <MC6821S>`","CERDIP","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6821LD <MC6821LD>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""

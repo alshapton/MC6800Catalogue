@@ -142,6 +142,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMC68B21S|  image:: /images/Hardware/ICs/MC6821/MC68B21S.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMC6821P|  image:: /images/Hardware/ICs/MC6821/MC6821P.png
    :width: 200
    :class: no-scaled-links

@@ -74,7 +74,6 @@ More information about document statuses can be found here :ref:`glossary_docume
    Collection <collection>
    Timeline <timeline>
    Map <map>
-   In Transit <transit>
    Statistics <statistics>
 
 .. toctree::

@@ -26,14 +26,6 @@
 
    "|present| :ref:`N/A <ALLYOUNEED>`","All you need for your Microcomputer System",""
 
-.. rubric:: Folder M6800 Microcomputer System Support Products
-
-.. csv-table::
-   :header: "Part Number","Name","Comments"
-   :widths: 20,80,20 
-
-   "|present| :ref:`N/A <M68SDTEXOR-BROCHURE>`","M68SDT EXORciser Emulator for M6800 Based Systems Brochure",""
-
 .. rubric:: Folder Microprocessor Course
 
 .. csv-table::

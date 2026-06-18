@@ -33,5 +33,5 @@ MC68B50PD Asynchronous Communications Interface Adapter (MC6850)
    :header: "intransit"
    :widths: auto
 
-   |intransit|
+   |notpresent|
 
