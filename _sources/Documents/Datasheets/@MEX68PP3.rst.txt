@@ -1,6 +1,6 @@
 :orphan:
 
-.. _MEX68PP3:
+.. _DS-MEX68PP3:
 
 .. #Metadata {'Product':'MEX68PP3 EROM/PROM Programmer Module','Folder': '2'}
 
