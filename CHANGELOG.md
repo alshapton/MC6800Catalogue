@@ -1,10 +1,37 @@
 # Change Log
 
+The symbls used in the notes are as follows:
+
+| Symbol                      | Description             |
+| --------------------------- | ----------------------- |
+| :twisted_rightwards_arrows: | Moved artefact(s)       |
+| :new:                       | New artefact            |
+| :hammer_and_pick:           | Task under construction |
+
 ## 2026-06-19
+
+:twisted_rightwards_arrows: Moved M68EXORSET(D1) EXORset Users Guide to EXORciser hardware directory  
+:twisted_rightwards_arrows: Moved all EXORciser hardware out of "Other" category into "EXORciser" category  
+:twisted_rightwards_arrows: Moved all EXORciser hardware out of "Other" category into "EXORciser" category  
+:new: Introduced symbols to CHANGELOG
+:new: Added MEX68488 GPIA Support Module to listing  
+:new: Added MEX6845 CRT Controller Module to listing  
+:new: Added MEX6854 MC6854 ADLC Support Module to listing  
+:new: Added MEX68PP3 PROM Programmer III to listing  
+:new: Added MEX68USM Universal Support Module to listing  
+:new: Added information about  MEX3870M/MC3870 Development System being out of scope for collecting  
+:hammer_and_pick: Commenced rationalising modules, development systems and hardware indexes  
+
 
 - Moved M68EXORSET(D1) EXORset Users Guide to EXORciser hardware directory
 - Moved all EXORciser hardware out of "Other" category into "EXORciser" category
-
+- Added MEX68488 GPIA Support Module to listing
+- Added MEX6845 CRT Controller Module to listing
+- Added MEX6854 MC6854 ADLC Support Module to listing
+- Added MEX68PP3 PROM Programmer III to listing
+- Added MEX68USM Universal Support Module to listing
+- Commenced rationalising modules, development systems and hardware indexes
+- Added information about  MEX3870M/MC3870 Development System being out of scope for collecting
 
 ## 2026-06-18
 
@@ -20,12 +47,10 @@
 
 ## 2026-06-17
 
-
 - Added MC68B21S to collection, moved MC6821P in storage
 - Introduced the concept of Brochures and migrated all brochure content
 
 ## 2026-06-15
-
 
 - Added Datasheet for EXORciser 1 Emulator for M6800 Based Systems to collection to listing
 - Added M68DTT2 - 220 Volt Table Top EXORciser 1 to listing

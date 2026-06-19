@@ -124,48 +124,15 @@ There were also :ref:`basic options page` for these systems.
    "Included Options","12 inch CRT, Keyboard"
    "Notes",""
 
-
-.. rubric:: EXORciser 2, Dynamic
-
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #",":ref:`M68SDT2-DM <M68SDT2-DM>`"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 2"
-   "MPU Module","MPU2"
-   "Frequency","2 MHz"
-   "RAM","32K Dynamic"
-   "Included Options","RS232 Interface"
-   "Notes",""
-
-.. rubric:: EXORciser 2, Static
+.. rubric:: EXORciser II Development Systems
 
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #",":ref:`M68SDT2-SM <M68SDT2-SM>`"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 2"
-   "MPU Module","MPU2"
-   "Frequency","2 MHz"
-   "RAM","32K Static"
-   "Included Options","RS232 Interface"
-   "Notes",""
+    ":ref:`M68SDT2-DM <M68SDT2-DM>`","EXORciser II Development System 220V with Dynamic Memory (32K)"
+    ":ref:`M68SDT2-SM <M68SDT2-SM>`","EXORciser II Development System 220V with Static Memory (32K)"
+    ":ref:`M68SDT2-SX <M68SDT2-SX>`","EXORciser II Development System 220V with no memory"
 
-.. rubric:: EXORciser 2
-
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #",":ref:`M68SDT2-SX <M68SDT2-SX>`"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 2"
-   "MPU Module","MPU2"
-   "Frequency","2 MHz"
-   "RAM","N/A"
-   "Included Options","RS232 Interface"
-   "Notes",""
 
 .. rubric:: EXORterm 200
 

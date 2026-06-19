@@ -1,7 +1,4 @@
 Updates:
-- Added MEX6800-2 MPU II Module to listing
-- Added MEX68DB2 Debug Module to listing
-- Added MEX6821-2 PIA Input Output Module 2 to listing
-- Added MEX6850-2 ACIA SSDA Module II to listing
-- Added MEX68PI2  Printer Interface Module II to listing
-- Added MEX68SA2  Systems Analyser II to listing
+- Added MEX68488 GPIA Support Module to listing
+- Added MEX6845 CRT Controller Module to listing
+- Added MEX6854 MC6854 ADLC Support Module to listing

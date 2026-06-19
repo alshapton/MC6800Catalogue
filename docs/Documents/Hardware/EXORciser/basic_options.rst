@@ -6,33 +6,48 @@ Basic Options for EXORciser
 ===========================
 
 .. csv-table:: 
-   :header: "Part Number","Name"
-   :widths: 30, 70
+   :header: "Part Number","Name","Comments"
+   :widths: 25,40,35
 
+    "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
     "MEX6820","PIA Module with four 8-bit I/O ports for parallel-oriented peripherals  "
     "MEX6850","ACIA Module 1"
-    "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
-    "MEX68PP3A/B/M","PROM Programmer  "
+    ":ref:`MEX68PP3 <MEX68PP3>`","PROM Programmer III"
     ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module"
     ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module"
     ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II"
+    "MEX68SA","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "    
     ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II"
-    "MEX68USM  ","Universal Support Module to support 6800 family of devices "
-    "MEX68SA   ","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "
     ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module for prototype Development  "
     ":ref:`MEX68XT <MEX68XT>`","MEX68XT Extender Module"
+    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2"
+    ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II"
+    ":ref:`MEX68USM <MEX68USM>`","Universal Support Module"
+    ":ref:`M68SDT2-DM <M68SDT2-DM>`","EXORciser II Development System 220V with Dynamic Memory (32K)"
+    ":ref:`M68SDT2-SM <M68SDT2-SM>`","EXORciser II Development System 220V with Static Memory (32K)"
+    ":ref:`M68SDT2-SX <M68SDT2-SX>`","EXORciser II Development System 220V with no memory"
     "MEX6808-22","8K Static RAM"
     "MEX6816-22S","16K Static RAM"
     "|present| :ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM "
     ":ref:`MEX6832-22D <MEX6832-22D>`","32K Dynamic RAM Module with parity"
     ":ref:`MEX6848-22D <MEX6848-22D>`","48K Dynamic RAM Module with parity"
     ":ref:`MEX6864-22D <MEX6864-22D>`","64K Dynamic RAM Module with parity"
-    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2"
-    ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II"
-    "MEX68PP3A/B/M","PROM Programmer"
-    "MEX68USM","Universal Support Module to support 6800 family of devices"
-    "MEX68WW","Universal Wirewrap Module for prototype Development"
-    "MEX68XT","Extender Module permits access to any development module from outside the EXORciser chassis"
+    ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module",""
+    ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module",""
+    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2",""
+    ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II",""
+    ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II",""
+    ":ref:`MEX68488 <MEX68488>`","GPIA Support Module",""
+    ":ref:`MEX6845 <MEX6845>`","CRT Controller Module",""
+    ":ref:`MEX6854 <MEX6854>`","MC6854 ADLC Support Module",""
+
+
+.. rubric:: MicroModules
+
+.. csv-table:: 
+   :header: "Part Number","Name","Comments" 
+   :widths: 25,40,35
+
     ":ref:`M68MM01 <M68MM01>`","Micromodule 1 M6800 CPU Module"
     ":ref:`M68MM01A2 <M68MM01A2>`","Monoboard Micromodule 1A/1A2"
     "|present| :ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
@@ -44,19 +59,6 @@ Basic Options for EXORciser
     "|present| :ref:`M68MM15BEX <M68MM15BEX>`","M68MM15BEX Micromodule 15BEX Low Level Expander Module"
     ":ref:`M68MM17 <M68MM17>`","Micromodule 17 6809 Monoboard Microcomputer"
     ":ref:`M68MM19 <M68MM19>`","Micromodule 19 6809 Monoboard Microcomputer"
-
-    
-
-   
-.. rubric:: Terminals
-
-.. csv-table:: 
-   :header: "Part Number","Name","Comments" 
-   :widths: 25,40,35
-   
-   ":ref:`EXORSET-30 <EXORSET-30>`","Motorola Exorset 30 Model M6809 Set 30",""
-   ":ref:`EXORSET-30-T33 <EXORSET-30-T33>`","Motorola Exorset 30 Model M6809 T33",""
-   ":ref:`EXORSET DS35 (M68SETDS351) <M68SETDS351>`","Motorola Exorset 30 Model M6809 T35",""
 
 
 .. rubric:: Hardware
@@ -79,13 +81,6 @@ Basic Options for EXORciser
    ":ref:`M68MMLK <M68MMLK>`","Long Chassis Rack Mounting Kit",""
    ":ref:`M68MFLK <M68MFLK>`","Front Loading Chassis Rack Mounting Kit",""
    ":ref:`MEX68RK <MEX68RK>`","Rack Mounted Conversion Kit",""
-
-.. rubric:: ADS1 Autonomous Development System
-
-.. csv-table:: 
-   :header: "Part Number","Name","Comments" 
-   :widths: 25,40,35
-
    ":ref:`M68ADS1 <M68ADS1>`","Autonomous Development System",""
    ":ref:`M68ADS6 <M68ADS6>`","Autonomous Development System",""
    ":ref:`M68ADW1 <M68ADW1>`","Autonomous Development System",""
@@ -112,15 +107,27 @@ Basic Options for EXORciser
    ":ref:`M68ICC1 <M68ICC1>`","Interconnection Cables Set",""
    ":ref:`M68BSC1 <M68BSC1>`","Bus System Card",""
 
-.. rubric:: Other Hardware
+.. rubric:: Terminals
 
 .. csv-table:: 
    :header: "Part Number","Name","Comments" 
    :widths: 25,40,35
+   
+   ":ref:`EXORSET-30 <EXORSET-30>`","Motorola Exorset 30 Model M6809 Set 30",""
+   ":ref:`EXORSET-30-T33 <EXORSET-30-T33>`","Motorola Exorset 30 Model M6809 T33",""
+   ":ref:`EXORSET DS35 (M68SETDS351) <M68SETDS351>`","Motorola Exorset 30 Model M6809 T35",""
 
-   ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module",""
-   ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module",""
-   ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2",""
-   ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II",""
-   ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II",""
-   ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II",""
+
+.. rubric:: MEX3870M/MC3870 Development System
+
+.. note::
+
+   Although not in scope for the collection, the 3870 plug-in module provides the EXORciser or EXORterm user with virtually all of the processing
+and control power of a 3870 single chip microcomputer. It IS listed here as an add-on for the EXORCiser II.
+
+.. csv-table:: 
+   :header: "Part Number","Name"
+   :widths: 25,40
+
+   "MEX3870M","3270 Emulator including Cross Assembler (EXORciser or EXORterm and Emulator package (Module and Software)""
+   "MEX3870D","Emulator User's Guide"

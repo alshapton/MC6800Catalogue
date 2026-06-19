@@ -50,7 +50,7 @@ This is the timeline of acquisitions (as at 19-06-2026).
    28-MAR-2025,:ref:`M68MM07 Quad Communications Micromodule Datasheet <DS-M68MM07>`
    28-MAR-2025,:ref:`M68SXS EXORterm 200 <DS-M68SXS>`
    28-MAR-2025,:ref:`Micromodule 01B1 Datasheet <M68MM01B1>`
-   28-MAR-2025,:ref:`MEX68PP3 EROM/PROM Programmer Module Datasheet <MEX68PP3>`
+   28-MAR-2025,:ref:`MEX68PP3 EROM/PROM Programmer Module Datasheet <DS-MEX68PP3>`
    28-MAR-2025,:ref:`Motorola MPU Vocabulary <MPUVocabulary>`
    28-MAR-2025,:ref:`MC6840 Programmable Timer Fundamentals and Applications <MC6840UM-AD>`
    31-MAR-2025,:ref:`Course Notes Page <M6800CNP>`
