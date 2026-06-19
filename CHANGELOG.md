@@ -13,7 +13,7 @@ The symbls used in the notes are as follows:
 :twisted_rightwards_arrows: Moved M68EXORSET(D1) EXORset Users Guide to EXORciser hardware directory  
 :twisted_rightwards_arrows: Moved all EXORciser hardware out of "Other" category into "EXORciser" category  
 :twisted_rightwards_arrows: Moved all EXORciser hardware out of "Other" category into "EXORciser" category  
-:new: Introduced symbols to CHANGELOG
+:new: Introduced symbols to CHANGELOG  
 :new: Added MEX68488 GPIA Support Module to listing  
 :new: Added MEX6845 CRT Controller Module to listing  
 :new: Added MEX6854 MC6854 ADLC Support Module to listing  
@@ -21,17 +21,6 @@ The symbls used in the notes are as follows:
 :new: Added MEX68USM Universal Support Module to listing  
 :new: Added information about  MEX3870M/MC3870 Development System being out of scope for collecting  
 :hammer_and_pick: Commenced rationalising modules, development systems and hardware indexes  
-
-
-- Moved M68EXORSET(D1) EXORset Users Guide to EXORciser hardware directory
-- Moved all EXORciser hardware out of "Other" category into "EXORciser" category
-- Added MEX68488 GPIA Support Module to listing
-- Added MEX6845 CRT Controller Module to listing
-- Added MEX6854 MC6854 ADLC Support Module to listing
-- Added MEX68PP3 PROM Programmer III to listing
-- Added MEX68USM Universal Support Module to listing
-- Commenced rationalising modules, development systems and hardware indexes
-- Added information about  MEX3870M/MC3870 Development System being out of scope for collecting
 
 ## 2026-06-18
 
