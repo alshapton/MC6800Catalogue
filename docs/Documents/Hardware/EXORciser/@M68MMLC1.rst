@@ -1,11 +1,11 @@
 :orphan:
 
-.. _M68MFLK:
+.. _M68MMLC1:
 
-Front Loading Chassis Rack Mounting Kit
-=======================================
+Micromodule Long Chassis 115V
+=============================
 
-.. image:: ../../../images/Hardware/Other/M68MFLK.png
+.. image:: ../../../images/Hardware/EXORciser/M68MMLC1.png
    :width: 400
    :align: center
 

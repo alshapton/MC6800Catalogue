@@ -1,11 +1,11 @@
 :orphan:
 
-.. _M68MMFLC1:
+.. _M68MMLC2:
 
-Front Loading Chassis 115V
-==========================
+Micromodule Long Chassis 220V
+=============================
 
-.. image:: ../../../images/Hardware/Other/M68MMFLC1.png
+.. image:: ../../../images/Hardware/EXORciser/M68MMLC2.png
    :width: 400
    :align: center
 

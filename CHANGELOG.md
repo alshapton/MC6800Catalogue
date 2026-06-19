@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-06-19
+
+- Moved M68EXORSET(D1) EXORset Users Guide to EXORciser hardware directory
+- Moved all EXORciser hardware out of "Other" category into "EXORciser" category
+
+
 ## 2026-06-18
 
 - Added CHANGELOG

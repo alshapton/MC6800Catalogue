@@ -5,7 +5,7 @@
 Micromodule Power Supply
 ========================
 
-.. image:: ../../../images/Hardware/Other/M68MMPS1-1.png
+.. image:: ../../../images/Hardware/EXORciser/M68MMPS1-1.png
    :width: 400
    :align: center
 

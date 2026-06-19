@@ -5,7 +5,7 @@
 Micromodule Card Cage
 =====================
 
-.. image:: ../../../images/Hardware/Other/M68MMCC05.png
+.. image:: ../../../images/Hardware/EXORciser/M68MMCC05.png
    :width: 400
    :align: center
 

@@ -5,7 +5,7 @@
 Motorola Exorset 30 Model M6809 Set 30
 ======================================
 
-.. image:: ../../../images/Hardware/Other/EXORSET-30.png
+.. image:: ../../../images/Hardware/EXORciser/EXORSET-30.png
    :width: 400
    :align: center
 

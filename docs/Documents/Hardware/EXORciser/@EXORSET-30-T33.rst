@@ -5,7 +5,7 @@
 Motorola Exorset 30 Model M6809 T33
 ===================================
 
-.. image:: ../../../images/Hardware/Other/EXORSET-30-T33.png
+.. image:: ../../../images/Hardware/EXORciser/EXORSET-30-T33.png
    :width: 400
    :align: center
 

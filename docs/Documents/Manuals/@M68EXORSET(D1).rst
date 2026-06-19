@@ -49,4 +49,4 @@ M68EXORSET(D1) EXORset Users Guide
 
 .. rubric:: Links
 
-:download:`Schematics <../../../_static/Documents/Generic/EXORset_schematics.pdf>`
+:download:`Schematics <../../_static/Documents/Generic/EXORset_schematics.pdf>`
