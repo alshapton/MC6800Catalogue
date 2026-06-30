@@ -107,7 +107,7 @@ def convert_changelog():
                     # Keep the leading ':', add the '*', and append everything after the second ':'
                     line = "*" + line[second_colon_index+1:]
             
-            updated_lines.append(line.replace('\ :raw-html-m2r:`<br>`',''))
+            updated_lines.append(line.replace('\\ :raw-html-m2r:`<br>`',''))
 
     # Write the modified content back to the original file
     with open(path, 'w', encoding='utf-8') as file:

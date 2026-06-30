@@ -15,7 +15,8 @@ Changes to the repository are documented here.
 JUL-2026
 --------
 
-* Added requirements.txt file for dependabot scans  
+* Added requirements.txt file for dependabot scans
+*  Fixed issue with erroneous entry to timeline  
 
 2026-06-20 -> 2026-06-30
 ------------------------
