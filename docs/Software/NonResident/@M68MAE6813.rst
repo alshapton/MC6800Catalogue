@@ -1,0 +1,18 @@
+:orphan:
+
+.. _M68MAE6813:
+
+Co-resident Assembler/Editor available for use with M68MM08
+===========================================================
+
+.. image:: ../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

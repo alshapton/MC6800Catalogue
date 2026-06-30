@@ -1,3 +1,4 @@
-GPIA Support Module,MEX68488,E,,notpresent,,,,,
-CRT Controller Module,MEX6845,E,,notpresent,,,,,
-MC6854 ADLC Support Module,MEX6854,E,,notpresent,,,,,
+MEX6816-1HR 16K Hidden Refresh RAM Module,MEX6816-1HR,E,,notpresent,,,,,
+MEX6832-1HR 32K Hidden Refresh RAM Module,MEX6832-1HR,E,,notpresent,,,,,
+MEX6848-1HR 48K Hidden Refresh RAM Module,MEX6848-1HR,E,,notpresent,,,,,
+MEX6864-1HR 64K Hidden Refresh RAM Module,MEX6864-1HR,E,,notpresent,,,,,

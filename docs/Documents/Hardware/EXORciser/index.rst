@@ -5,145 +5,190 @@
 Development Systems
 ===================
 
-There were also :ref:`basic options page` for these systems.
-
-.. rubric:: TDS1
+.. rubric:: Development Systems
 
 .. csv-table:: 
    :widths: 25,75
 
-   "Part #","M68TDS1"
-   "Purpose","Medium Size Software Development"
-   "Firmware","MINIBUG 3E"
-   "MPU Module","SAC"
-   "Frequency","921.6 KHz"
-   "RAM","8K"
-   "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler"
-   "Notes",""
+   ":ref:`M68SDT2-DM <M68SDT2-DM>`","EXORciser II Development System 220V with Dynamic Memory (32K)"
+   ":ref:`M68SDT2-SM <M68SDT2-SM>`","EXORciser II Development System 220V with Static Memory (32K)"
+   ":ref:`M68SDT2-SX <M68SDT2-SX>`","EXORciser II Development System 220V with no memory"
+   ":ref:`M68DTTU2B <M68DTTU2B>`","220 Volt Table Top EXORciser 1 with USEB"
+   ":ref:`M68DTT2 <M68DTT2>`","220 Volt Table Top EXORciser I"
+   ":ref:`M68TDS1 <M68TDS1>`","TDS1"
+   ":ref:`M68TDS2 <M68TDS2>`","TDS2"
+   ":ref:`M68TDS3 <M68TDS3>`","TDS3"
+   ":ref:`M68TDS4 <M68TDS4>`","TDS4"
+   ":ref:`EXORSET-30 <EXORSET-30>`","Motorola Exorset 30 Model M6809 Set 30"
+   ":ref:`EXORSET-30-T33 <EXORSET-30-T33>`","Motorola Exorset 30 Model M6809 T33"
+   ":ref:`EXORSET DS35 (M68SETDS351) <M68SETDS351>`","Motorola Exorset 30 Model M6809 T35"
+   ":ref:`M68SXS10200 <M68SXS10200>`","M68SXS10200 EXORterm 200 Development System 220V"      
+   ":ref:`M68SXS102B0 <M68SXS102B0>`","M68SXS102B0 USE EXORterm 200 Development System 220V"      
+   ":ref:`M68SXS102202 <M68SXS102202>`","M68SXS102B0 EXORterm 200 Development System 220V"      
 
-
-.. rubric:: TDS2
-
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #","M68TDS2"
-   "Purpose","Medium Size Software Development"
-   "Firmware","MINIBUG 3E"
-   "MPU Module","SAC"
-   "Frequency","921.6 KHz"
-   "RAM","8K"
-   "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler, BASIC"
-   "Notes",""
-
-
-.. rubric:: TDS3
+  
+Basic Options for EXORciser
+===========================
 
 .. csv-table:: 
-   :widths: 25,75
+   :header: "Part Number","Name","Comments"
+   :widths: 25,40,35
 
-   "Part #","M68TDS3"
-   "Purpose","Medium Size Software Development"
-   "Firmware","MINIBUG 3E"
-   "MPU Module","SAC"
-   "Frequency","921.6 KHz"
-   "RAM","16K"
-   "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler"
-   "Notes",""
+    "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
+    ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module",""
+    ":ref:`MEX68PP3 <MEX68PP3>`","PROM Programmer III"
+    ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module"
+    ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II"
+    "MEX68SA","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "    
+    ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II"
+    ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module for prototype Development  "
+    ":ref:`MEX68XT <MEX68XT>`","MEX68XT Extender Module"
+    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2"
+    ":ref:`MEX68USM <MEX68USM>`","Universal Support Module"
+    ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module",""
+    ":ref:`MEX6820 <MEX6820>`","MEX6820 Input/Output Module",""
+    ":ref:`MEX6821-2 <MEX6821-2>`","PIA Input Output Module 2",""
+    ":ref:`MEX68IC2 <MEX68IC2>`","MEX68IC2 Interconnect Cable","Used to connect a peripheral to a MEX6821-2 I/O Module"
+    ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II",""
+    ":ref:`MEX68488 <MEX68488>`","GPIA Support Module",""
+    ":ref:`MEX6845 <MEX6845>`","CRT Controller Module",""
+    ":ref:`MEX6850 <MEX6850>`","MEX6850 ACIA Module",""
+    ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II"
+    ":ref:`MEX6854 <MEX6854>`","MC6854 ADLC Support Module",""
 
-
-.. rubric:: TDS4
-
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #","M68TDS4"
-   "Purpose","Medium Size Software Development"
-   "Firmware","MINIBUG 3E"
-   "MPU Module","SAC"
-   "Frequency","921.6 KHz"
-   "RAM","16K"
-   "Included Options","5 inch CRT, Keyboard, Kansas City Interface, Printer Interface, Editor/Assembler, BASIC"
-   "Notes",""
-
-
-.. rubric:: 220 Volt Table Top EXORciser 1
+.. rubric:: memory Expansions
 
 .. csv-table:: 
-   :widths: 25,75
+   :header: "Part Number","Name","Comments"
+   :widths: 25,40,35
 
-   "Part #","M68DTT2 <M68DTT2>`"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 1.2"
-   "MPU Module","MPU"
-   "Frequency","1 MHz"
-   "RAM","N/A"
-   "Included Options","RS232/TTY Interface"
-   "Notes",""
+    
+    ":ref:`MEX6815-3 <MEX6815-3>`","MEX6815-3 8K Dynamic RAM Module"
+    ":ref:`MEX6816-1 <MEX6816-1>`","MEX6816-1 16K Dynamic RAM Module"
+    ":ref:`MEX6808-22S <MEX6808-22S>`","MEX6808-22S 8K 2.0 Mhz Static RAM Module"
+    ":ref:`MEX6816-22S <MEX6816-22S>`","MEX6816-22S 16K 2.0 Mhz Static RAM Module"
+    "|present| :ref:`MEX6816-22D <MEX6816-22D>`","16K Dynamic RAM "
+    ":ref:`MEX6832-22D <MEX6832-22D>`","32K Dynamic RAM Module with parity"
+    ":ref:`MEX6848-22D <MEX6848-22D>`","48K Dynamic RAM Module with parity"
+    ":ref:`MEX6864-22D <MEX6864-22D>`","64K Dynamic RAM Module with parity"
+    ":ref:`MEX6816-1HR <MEX6816-1HR>`","MEX6816-1HR 16K Hidden Refresh RAM Module"
+    ":ref:`MEX6832-1HR <MEX6832-1HR>`","MEX6832-1HR 32K Hidden Refresh RAM Module"
+    ":ref:`MEX6848-1HR <MEX6848-1HR>`","MEX6848-1HR 48K Hidden Refresh RAM Module"
+    ":ref:`MEX6864-1HR <MEX6864-1HR>`","MEX6864-1HR 64K Hidden Refresh RAM Module"
 
-.. rubric:: 220 Volt Table Top EXORciser 1 with USEB
 
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #",":ref:`M68DTTU2B <M68DTTU2B>`"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 1.2"
-   "MPU Module","Use B"
-   "Frequency","1 MHz"
-   "RAM","N/A"
-   "Included Options","RS232/TTY Interface"
-   "Notes",""
-
-.. rubric:: EXORterm 200 Development System 220V
+.. rubric:: MicroModules
 
 .. csv-table:: 
-   :widths: 25,75
+   :header: "Part Number","Name","Comments" 
+   :widths: 25,40,35
 
-   "Part #","SXS10200"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 1.2"
-   "MPU Module","MPU"
-   "Frequency","1 MHz"
-   "RAM","N/A"
-   "Included Options","12 inch CRT, Keyboard"
-   "Notes",""
+    ":ref:`M68MM01 <M68MM01>`","Micromodule 1 M6800 CPU Module"
+    ":ref:`M68MM01A2 <M68MM01A2>`","Monoboard Micromodule 1A/1A2"
+    "|present| :ref:`M68MM04A <M68MM04A>`","Micromodule 4A ROM/EPROM Module"
+    ":ref:`M68MM05A <M68MM05A>`","Micromodule 5A 8 Channel 12 Bit A/D Converter"
+    ":ref:`M68MM06 <M68MM06>`","2K Static RAM Module"
+    ":ref:`M68MM08 <M68MM08>`","MICRObug ROM Monitor/Debug Module"
+    ":ref:`M68MM08A <M68MM08A>`","MICRObug ROM Monitor/Debug Module"
+    ":ref:`M68MM09E2 <M68MM09E2>`","Micromodule 09 - 2K x 8-bit CMOS-RAM Module"
+    ":ref:`M68MM09E4 <M68MM09E4>`","Micromodule 09 - 4K x 8-bit CMOS-RAM Module"
+    ":ref:`M68MM11 <M68MM11>`","RS-232 to TTY adapter module"
+    "|present| :ref:`M68MM12 <M68MM12>`","M68MM12 Micromodule 12 GPIB Interface Module"
+    ":ref:`M68MM13B <M68MM13B>`","Micromodule 13B - 32 digital outputs (contact closures) micromodule"
+    ":ref:`M68MM13C <M68MM13C>`","Micromodule 13C Optically-isolated Digital Input (24 voltage input channels)"
+    ":ref:`M68MM13D <M68MM13D>`","Micromodule 13D Optically-isolated Digital Input (24 contact closure input channels)"
+    "|present| :ref:`M68MM15A <M68MM15A>`","M68MM15A Micromodule 15A High Level A/D Module"
+    ":ref:`M68MM15A1 <M68MM15A1>`","Micromodule 15A1 High Level 32-Channel A/D module to listing"
+    "|present| :ref:`M68MM15B <M68MM15B>`","M68MM15B Micromodule 15B Low Level A/D Module"
+    "|present| :ref:`M68MM15BEX <M68MM15BEX>`","M68MM15BEX Micromodule 15BEX Low Level Expander Module"
+    "|present| :ref:`M68MM15C <M68MM15C>`","M68MM15C Micromodule 15C High Level D/A Module"
+    ":ref:`M68MM15CI1 <M68MM15CI1>`","Current High-Level Voltage D/A Module Single·channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CI2 <M68MM15CI2>`","Current High-Level Voltage D/ A Module Dual-channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CI3 <M68MM15CI3>`","Current High-Level Voltage D/ A Module Three-channel 12-bit digital-to-analog converter" 
+    ":ref:`M68MM15CI4 <M68MM15CI4>`","Current High-Level Voltage D/ A Module Four-channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CV1 <M68MM15CV1>`","High·Level Voltage D/A Module Single·channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CV2 <M68MM15CV2>`","High-Level Voltage D/ A Module Dual-channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CV3 <M68MM15CV3>`","High-Level Voltage D/ A Module Three-channel 12-bit digital-to-analog converter"
+    ":ref:`M68MM15CV4 <M68MM15CV4>`","High-Level Voltage D/ A Module Four-channel 12-bit digital-to-analog converter",""
+    ":ref:`M68MM17 <M68MM17>`","Micromodule 17 6809 Monoboard Microcomputer"
+    ":ref:`M68MM19 <M68MM19>`","Micromodule 19 6809 Monoboard Microcomputer"    
 
-
-.. rubric:: USE EXORterm 200 Development System 220V
-
-.. csv-table:: 
-   :widths: 25,75
-
-   "Part #","SXS102B0"
-   "Purpose","Software/Hardware Development"
-   "Firmware","EXbug 1.2"
-   "MPU Module","MPU"
-   "Frequency","1 MHz"
-   "RAM","N/A"
-   "Included Options","12 inch CRT, Keyboard"
-   "Notes",""
-
-.. rubric:: EXORciser II Development Systems
-
-.. csv-table:: 
-   :widths: 25,75
-
-    ":ref:`M68SDT2-DM <M68SDT2-DM>`","EXORciser II Development System 220V with Dynamic Memory (32K)"
-    ":ref:`M68SDT2-SM <M68SDT2-SM>`","EXORciser II Development System 220V with Static Memory (32K)"
-    ":ref:`M68SDT2-SX <M68SDT2-SX>`","EXORciser II Development System 220V with no memory"
-
-
-.. rubric:: EXORterm 200
+.. rubric:: Hardware
 
 .. csv-table:: 
-   :widths: 25,75
+   :header: "Part Number","Name","Comments" 
+   :widths: 25,40,35
+   
+   "|present| :ref:`M68MMCC10 <M68MMCC10>`","Card Cage (10 Card)","|2ndsource| Micro Industries"
+   ":ref:`M68MMFLC1 <M68MMFLC1>`","Front Loading Chassis 115V",""
+   ":ref:`M68MMFLC2 <M68MMFLC2>`","Front Loading Chassis 220V",""
+   ":ref:`M68MMSC1 <M68MMSC1>`","Micromodule Short Chassis 115V",""
+   ":ref:`M68MMSC2 <M68MMSC2>`","Micromodule Short Chassis 220V",""
+   ":ref:`M68MMLC1 <M68MMLC1>`","Micromodule Long Chassis 115V",""
+   ":ref:`M68MMLC2 <M68MMLC2>`","Micromodule Long Chassis 220V",""
+   ":ref:`N/A <BAUD-RATE>`","BAUD Rate Module",""
+   ":ref:`N/A <POWER-SUPPLY>`","Power Supply Module",""
+   ":ref:`M68MMPS1-1 <M68MMPS1-1>`","Micromodule Power Supply",""
+   ":ref:`M68MMCC05 <M68MMCC05>`","Micromodule Card Cage",""
+   ":ref:`M68MM23IKIT <M68MM23IKIT>`","Micromodule 23 Mounting Kit",""
+   ":ref:`M68MMSK <M68MMSK>`","Short Chassis Rack Mounting Kit",""
+   ":ref:`M68MMLK <M68MMLK>`","Long Chassis Rack Mounting Kit",""
+   ":ref:`M68MMSK <M68MMSK>`","Short Chassis Rack Mounting Kit",""
+   ":ref:`M68MFLK <M68MFLK>`","Front Loading Chassis Rack Mounting Kit",""
+   ":ref:`MEX68RK <MEX68RK>`","Rack Mounted Conversion Kit",""
+   ":ref:`M68ADS1 <M68ADS1>`","Autonomous Development System",""
+   ":ref:`M68ADS6 <M68ADS6>`","Autonomous Development System",""
+   ":ref:`M68ADW1 <M68ADW1>`","Autonomous Development System",""
+   ":ref:`M68ADW2 <M68ADW2>`","Autonomous Development System",""
+   ":ref:`M68ADW6 <M68ADW6>`","Autonomous Development System",""
+   ":ref:`M68MDM9 <M68MDM9>`","9 inch CRT Monitor",""
+   "|present| :ref:`M68KBD1 <M68KBD1>`","Full ASCII Keyboard","M68KBD1 mounted in M68KBC1"
+   "|present| :ref:`M68KBC1 <M68KBC1>`","M68KBC1 Keyboard enclosure","M68KBC1 with mounted M68KBD1 Keyboard"
+   ":ref:`M68MPR1 <M68MPR1>`","Motorola 30 chr/sec Printer",""
+   ":ref:`M68PP1 <M68PP1>`","Electro-sensitive paper for MPR Printer",""
+   ":ref:`M68MDMC1 <M68MDMC1>`","Display Monitor Cabinet for 5 inch CRT Monitor",""
+   ":ref:`M68MDMC9 <M68MDMC9>`","Display Monitor Cabinet for 9 inch CRT Monitor",""
+   ":ref:`M68EAM1 <M68EAM1>`","ROM Resident Assembler/Editor Module",""
+   ":ref:`M68EAB1 <M68EAB1>`","ROM Resident Assembler/Editor/BASIC Interpreter Module",""
+   ":ref:`MMS68103 <MMS68103>`","16K-byte RAM Module",""
+   ":ref:`MMS68103-1 <MMS68103-1>`","8K-byte RAM Module",""
+   ":ref:`M68CIM1 <M68CIM1>`","Audio Cassette Interface Module",""
+   ":ref:`M68PPR1 <M68PPR1>`","PDS PROM Programmer",""
+   ":ref:`M68MEB1 <M68MEB1>`","Microprocessor Evaluation Board",""
+   ":ref:`M68SAC1 <M68SAC1>`","Standalone Computer",""
+   ":ref:`M68DIM1 <M68DIM1>`","Display Interface Module 1",""
+   ":ref:`M68DIM2 <M68DIM2>`","Display Interface Module 2",""
+   ":ref:`M68DIM6 <M68DIM6>`","Display Interface Module 6",""
+   ":ref:`M68MDM1 <M68MDM1>`","5-inch Display Monitor",""
+   ":ref:`M68ICC1 <M68ICC1>`","Interconnection Cables Set",""
+   ":ref:`M68BSC1 <M68BSC1>`","Bus System Card",""
 
-   "Part #","M68SXS2202"
-   "Purpose","Software Development"
-   "Firmware","EXbug 2"
-   "MPU Module","MPU2"
-   "Frequency","2 MHz"
-   "RAM","32K Dynamic"
-   "Included Options","12 inch CRT, Keyboard"
-   "Notes",""
+
+Although not in scope for the collection, the following EXORcisor add-ons are listed here for completeness:
+
+.. rubric:: MEX3870M/MC3870 Development System
+ 
+The 3870 plug-in module provides the EXORciser or EXORterm user with virtually all of the processing and control power of a 3870 single chip microcomputer.
+
+.. csv-table:: 
+   :header: "Part Number","Name"
+   :widths: 25,40
+
+   "MEX3870M","3270 Emulator including Cross Assembler (EXORciser or EXORterm and Emulator package (Module and Software)"
+   "MEX3870D","Emulator User's Guide"
+
+.. rubric:: MEX141000M MC141000/1200 Development System
+
+The purpose of the 141000/1200 simulator module is to provide an EXORciser or EXORterm based tool for debugging MC141000/1200 application in the actual hardware and software configuration of the user's final system.
+
+.. csv-table:: 
+   :header: "Part Number","Name"
+   :widths: 25,40
+
+   "MEX141000M","141000/1200 Simulator including Cross Assembler (EXORciser or EXORterm) and Simulator Package (Module and Software)"
+   "MEX141000D","141000/1200 User's Guide"
+
+
+
+
+   

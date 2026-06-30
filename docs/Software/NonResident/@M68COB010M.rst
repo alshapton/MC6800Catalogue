@@ -1,0 +1,21 @@
+:orphan:
+
+.. _M68COB010M:
+
+.. #Metadata {'Product':'M68COB010M Resident ANSI COBOL Compiler on MDOS Diskette','Folder': 'None'}
+
+M68COB010M Resident ANSI COBOL Compiler on MDOS Diskette
+========================================================
+
+.. image:: ../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+

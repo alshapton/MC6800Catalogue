@@ -2,10 +2,10 @@
 
 .. _M68MASR010M:
 
-.. #Metadata {'Product':'M68MASR010M MDOS Macro Assembler 3.0','Folder': 'LOCAL'}
+.. #Metadata {'Product':'M68MASR010M MDOS Macro Assembler 3.0 on MDOS Diskette','Folder': 'LOCAL'}
 
-M68MASR010M MDOS Macro Assembler 3.0
-====================================
+M68MASR010M MDOS Macro Assembler 3.0 on MDOS Diskette 
+=====================================================
 
 .. image:: ../../images/Software/Non-Resident/M68MASR010M/M68MASR010M.1.png
    :width: 400

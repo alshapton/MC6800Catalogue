@@ -15,6 +15,7 @@
       "|notpresent| :ref:`MCM6810CPD <MCM6810CPD>`","Plastic","1MHz","-40-85\ :sup:`o`\ C",""
       "|present| :ref:`MCM68B10P <MCM68B10P>`","Plastic","1.5MHz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810BJCS <MCM6810BJCS>`","MIL-STD-883B","1MHz","-55-125\ :sup:`o`\ C",""
+      "|intransit| :ref:`MCM6810AP-1 <MCM6810AP-1>`","Plastic","1MHz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810EL <MCM6810EL>`","Ceramic","TBD","TBD",""
       "|notpresent| :ref:`MCM68B10L <MCM68B10L>`","Ceramic","1.5MHz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MCM6810AP <MCM6810AP>`","Plastic","1MHz","0-70\ :sup:`o`\ C",""

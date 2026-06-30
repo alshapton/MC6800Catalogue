@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MC68B52:
+
+MC68B52 SSDA Conversion Device
+==============================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

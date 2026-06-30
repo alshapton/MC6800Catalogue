@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEX6816-1HR:
+
+MEX6816-1HR 16K Hidden Refresh RAM Module
+=========================================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

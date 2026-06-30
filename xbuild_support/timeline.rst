@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 19-06-2026).
+This is the timeline of acquisitions (as at 30-06-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -12,6 +12,7 @@ This is the timeline of acquisitions (as at 19-06-2026).
    27-JAN-2025,:ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`
    30-JAN-2025,:ref:`MC6800L Microprocessor Unit <MC6800L>`
    30-JAN-2025,:ref:`XC6820 Peripheral Interface Adapter <XC6820>`
+   30-JAN-2025,:ref:`MC6880 Quad Three-State Bus Transceiver <MC6880P>`
    30-JAN-2025,:ref:`MCM6810L 128 x 8-bit RAM <MCM6810L>`
    30-JAN-2025,:ref:`MCM6830L7 1024 x 8-bit ROM containing MIKBUG/MINIBUG <MCM6830L7>`
    30-JAN-2025,:ref:`MPU Evaluation Card MC6800 Microprocessor Board <MPU_EVALUATION_BOARD>`
@@ -162,7 +163,7 @@ This is the timeline of acquisitions (as at 19-06-2026).
    12-NOV-2025,:ref:`8K/16K 1.0Mhz and 2.0MHz Static RAM Module Users Guide <MEX68162(D2)>`
    17-NOV-2025,:ref:`M68MM04A Micromodule 4A ROM/EPROM Module <M68MM04A>`
    17-NOV-2025,:ref:`M68MM12 Micromodule 12 GPIB Interface Module <M68MM12>`
-   17-NOV-2025,:ref:`M68MM15A Micromodule 15A High Level A/D module <M68MM15A>`
+   17-NOV-2025,:ref:`M68MM15A Micromodule 15A High Level 16-Channel A/D module <M68MM15A>`
    17-NOV-2025,:ref:`M68MM15B Micromodule 15B Low Level A/D module <M68MM15B>`
    17-NOV-2025,:ref:`M68MM15BEX Micromodule 15BEX Low Level Expander module <M68MM15BEX>`
    17-NOV-2025,:ref:`M68MM15C Micromodule 15C High Level D/A module <M68MM15C>`
@@ -172,8 +173,8 @@ This is the timeline of acquisitions (as at 19-06-2026).
    17-NOV-2025,:ref:`MC6887P Hex Three-State Buffer/Inverter <MC6887P>`
    17-NOV-2025,:ref:`MCM68A10P 128 x 8-Bit Static Random Access Memory (MCM6810) <MCM68A10P>`
    17-NOV-2025,:ref:`LILbug Monitor V1.0 <LILBUG_1_0>`
-   21-NOV-2025,:ref:`M68BASR010M MDOS BASIC 2.0 <M68BASR010M>`
-   27-NOV-2025,:ref:`M68MASR010M MDOS Macro Assembler 3.0 <M68MASR010M>`
+   21-NOV-2025,:ref:`M68BASR010M MDOS BASIC 2.0 MDOS Diskette <M68BASR010M>`
+   27-NOV-2025,:ref:`M68MASR010M MDOS Macro Assembler 3.0 on MDOS Diskette <M68MASR010M>`
    02-DEC-2025,:ref:`MC6843L Floppy Disk Controller (FDC) (MC6843) <MC6843L>`
    02-DEC-2025,:ref:`MDOS 2.20 <MDOS220>`
    27-DEC-2025,:ref:`MEX6800-1 M6800 MPU Module <MEX6800-1>`
@@ -210,3 +211,5 @@ This is the timeline of acquisitions (as at 19-06-2026).
    21-MAY-2026,:ref:`Keyboard Enclosure <M68KBC1>`
    21-MAY-2026,:ref:`Full ASCII Keyboard <M68KBD1>`
    17-JUN-2026,:ref:`MC68B21S Peripheral Interface Adapter (PIA) <MC68B21S>`
+   24-JUN-2026,:ref:`MC6809-MC6809E Microprocessor Programming Manual <M6809PMAD>`
+   * now using  and |2ndsource| identifiers,:ref:`Change Log <changelog>`

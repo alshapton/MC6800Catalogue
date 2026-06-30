@@ -7,7 +7,7 @@
 MCM6810AP 128 x 8-bit RAM
 =========================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810AP.png
    :width: 400
    :align: center
 

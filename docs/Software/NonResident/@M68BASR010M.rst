@@ -2,10 +2,10 @@
 
 .. _M68BASR010M:
 
-.. #Metadata {'Product':'M68BASR010M MDOS BASIC 2.0','Folder': 'LOCAL'}
+.. #Metadata {'Product':'M68BASR010M MDOS BASIC 2.0 on MDOS Diskette','Folder': 'LOCAL'}
 
-M68BASR010M MDOS BASIC 2.0
-==========================
+M68BASR010M MDOS BASIC 2.0 MDOS Diskette
+========================================
 
 .. image:: ../../images/Software/Non-Resident/M68BASR010M.png
    :width: 400
