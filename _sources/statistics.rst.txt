@@ -3,7 +3,7 @@
 Statistics
 ==========
 
-A set of statistics of known MC6800 artefacts (as at 19-06-2026).
+A set of statistics of known MC6800 artefacts (as at 30-06-2026).
 
 .. csv-table::
    :header: "Document Type","Total","Present","Not Present","In Transit" 
@@ -13,13 +13,13 @@ A set of statistics of known MC6800 artefacts (as at 19-06-2026).
    Datasheets,67,21,46,0
    EngineeringNotes,1,0,1,0
    Generic Documents,10,7,3,0
-   Exorciser Hardware,67,5,62,0
-   Exorciser Micromodules,12,7,5,0
+   Exorciser Hardware,89,5,84,0
+   Exorciser Micromodules,31,7,24,0
    Other Hardware,7,3,4,0
-   ICs,482,88,394,0
-   Reference Manuals,106,19,87,0
+   ICs,486,89,394,3
+   Reference Manuals,105,20,85,0
    Reference Documents,7,6,1,0
    Reference Cards,8,8,0,0
-   NonResident Software,8,8,0,0
-   Resident Software,12,12,0,0
-   TOTAL,819,208,611,0
+   NonResident Software,19,8,11,0
+   Resident Software,13,12,1,0
+   TOTAL,875,210,662,3

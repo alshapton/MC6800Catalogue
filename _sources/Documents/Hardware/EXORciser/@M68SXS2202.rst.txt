@@ -1,0 +1,37 @@
+:orphan:
+
+.. _M68SXS102202:
+
+.. #Metadata {'Product':'M68SXS102202 EXORterm 200 Development System 220V','Folder': 'None'}
+
+M68SXS102202 EXORterm 200 Development System 220V
+=================================================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. note::
+
+   The table below shows the properties of the SXS10200
+
+   +------------------+-----------------------+   
+   | Firmware         | EXbug 2               |
+   +------------------+-----------------------+   
+   | MPU Module       | MPU 2                 |
+   +------------------+-----------------------+   
+   | Frequency        | 2 MHz                 |
+   +------------------+-----------------------+   
+   | Memory           | 32K Dynamic           |
+   +------------------+-----------------------+   
+   | Included Options | 12 inch CRT, Keyboard |
+   +------------------+-----------------------+   
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+

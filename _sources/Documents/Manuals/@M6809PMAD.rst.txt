@@ -2,7 +2,7 @@
 
 .. _M6809PMAD:
 
-.. #Metadata {'Product':'M6809PMAD','Name':'MC6809-MC6809E Microprocessor Programming Manual','Folder': 'None'}
+.. #Metadata {'Product':'M6809PMAD','Name':'MC6809-MC6809E Microprocessor Programming Manual','Folder': '8'}
 
 MC6809-MC6809E Microprocessor Programming Manual
 ================================================
@@ -17,7 +17,7 @@ MC6809-MC6809E Microprocessor Programming Manual
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |present| 24-JUN-2026
 
 .. rubric:: Links
 

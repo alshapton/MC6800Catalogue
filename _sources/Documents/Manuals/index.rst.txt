@@ -60,11 +60,11 @@ Reference Manuals
 .. csv-table:: 
    :header: "Part Number","Name","Comments" 
    :widths: auto
-
+   
    ":ref:`MEX68B00(D) <MEX68B00(D)>`","MEX6800-2 MPU II MODULE Users Guide","June 1978"
    ":ref:`MEX68162(D) <MEX68162(D)>`","MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide",""   
    ":ref:`MEX6820 <MEX6820>`","MEX6820 I/O Module Supplment M6800 EXORciser User Guide",""
-   ":ref:`MEX6845-CRTC-UG <MEX6845-CRTC-UG>`","MEX6845 CRTC Support Module Users Guide",""
+   ":ref:`MEX6845-CRTC(D)) <MEX6845-CRTC(D))>`","MEX6845 CRTC Support Module Users Guide",""
    ":ref:`MEX6854(D) <MEX6854(D)>`","MEX6854 ADLC Support Module Users Guide",""
    ":ref:`MEX6864(D) <MEX6864(D)>`","16K/64K Dynamic RAM Module Users Guide","First Edition May 1978"
    ":ref:`MEX6864HR(D) <MEX6864HR(D)>`","MEX6864 16K-64K Hidden Refresh Memory Module User's Guide","First Edition October 1978"
@@ -79,7 +79,7 @@ Reference Manuals
    ":ref:`MEX68USMUG(D1) <MEX68USMUG(D1)>`","MEX68USMUG(D1) MEX68USM Universal Support Module User's Guide",""
    ":ref:`MEX68USEC <MEX68USEC-UG>`","MEX68USEC 2Mhz User System Evaluator User Guide",""
    ":ref:`MEX68488(D) <MEX68488(D)>`","MEX68488 GPIA Support Module Users Guide",""
-   ":ref:`MEX6821-2-UG <MEX6821-2-UG>`","MEX6821-2 Input/Output Module Users Guide",""
+   ":ref:`MEX6821-2(D) <MEX6821-2(D)>`","MEX6821-2 Input/Output Module Users Guide",""
 
 .. rubric:: Micromodule Manuals
 

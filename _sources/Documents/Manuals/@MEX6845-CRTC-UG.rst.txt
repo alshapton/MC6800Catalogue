@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MEX6845-CRTC-UG:
+.. _MEX6845-CRTC(D)):
 
 MEX6845 CRTC Support Module Users Guide
 =======================================
 
-.. image:: ../../images/Manuals/MEX6845-CRTC-UG.png
+.. image:: ../../images/Manuals/MEX6845-CRTC(D).png
    :width: 400
    :align: center
 

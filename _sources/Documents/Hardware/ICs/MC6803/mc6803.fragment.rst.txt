@@ -17,3 +17,4 @@
       "|notpresent| :ref:`MC6803G <MC6803G>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A03-1L <MC68A03-1L>`","Ceramic","1.25 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A03L <MC68A03L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
+      "|intransit| :ref:`MC6803L-1 <MC6803L-1>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
