@@ -1,0 +1,21 @@
+:orphan:
+
+.. _M68XAE6813A:
+
+.. #Metadata {'Product':'M68XAE6813A Resident Editor/ Assembler on Cassette','Folder': 'None'}
+
+M68XAE6813A Resident Editor/ Assembler on Cassette
+==================================================
+
+.. image:: ../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+

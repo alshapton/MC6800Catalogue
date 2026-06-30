@@ -32,7 +32,7 @@ MC68B54PDS Advanced Data-Link Controller (ADLC)
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 

@@ -1,0 +1,21 @@
+:orphan:
+
+.. _M68MM15A1:
+
+.. #Metadata {'Product':'M68MM15A1 Micromodule 15A1 High Level 32-Channel A/D module','Folder': 'None'}
+
+M68MM15A1 Micromodule 15A1 High Level 32-Channel A/D module
+===========================================================
+ 
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+   
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|
+

@@ -2,8 +2,8 @@
 
 .. _MEX68488:
 
-GPIA Support Module
-===================
+MEX 68488 GPIA Support Module
+=============================
 
 .. image:: ../../../images/NOIMAGE.png
    :width: 400

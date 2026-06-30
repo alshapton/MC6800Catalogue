@@ -13,7 +13,9 @@ Motorola MC6800 Family Product Catalogue documentation
 The Motorola 6800  (P/N 156-0426-00,156-0426-04,156-2413-00,156-5472-01) is an 8-bit microprocessor monolithic integrated circuit family introduced in 1974.
 The original 6800 requires a +5 V supply only (generating bias voltages on chip) and came initially in 40-pin DIL packages. The 6800 has non-multiplexed data (8 bit) and address (16 bit) buses, and requires an external non-overlapping two-phase 0.1 − 1 MHz clock (later versions from 1976 on up to 2 MHz).
 
-The 6802, introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. The 6808 is the same without RAM.
+The 6801, introduced in 1977 had a slightly upgraded 6800 CPU, which included a multiply instruction, at the request of the lead customer, General Motors (GM). GM initially used the MC6801 microcontroller for the TripMaster digital trip meter in the 1978 Cadillac Seville. It was a very expensive, $920 factory option.
+
+The 6802, also introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. The 6808 is the same without RAM.
 
 The 68HC11, introduced in 1984, is an upward-compatible microcontroller that adds a second index register, 8x8 multiply and 16/16 divide instructions, as well as a range of 16-bit instructions that treat A and B as a combined 16-bit accumulator. On-chip peripherals include timers, parallel ports, A/D, SPI and UART.
 This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their compatible derivatives, support chips and tooling.
@@ -31,6 +33,8 @@ Scope
 
 It would be an enormous, but not impossible task to list all the Motorola products which are related to ALL of the families described above. However, the scope of this effort (and the physical collection) can be understood on the :ref:`scope page` page.
 
+
+What products are known are listed are detailed within. A detailed list of changes since the project commenced can be found on the :ref:`changelog` page.
 
 Collection
 ==========
@@ -97,4 +101,3 @@ More information about document statuses can be found here :ref:`glossary_docume
    Documents/Hardware/Other/index
    Software/index
    ForSale/index
-

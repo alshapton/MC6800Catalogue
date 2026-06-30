@@ -1,0 +1,22 @@
+:orphan:
+
+.. _M68MM08:
+
+MICRObug ROM Monitor/Debug Module
+=================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. Note::
+
+   This micromodule consists of MICRObug ROM and MEX6850 used with M68MMOl and M68MM02.
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

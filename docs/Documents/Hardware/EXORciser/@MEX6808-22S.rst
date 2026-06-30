@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEX6808-22S:
+
+MEX6808-22S 8K 2.0 Mhz Static RAM Module
+========================================
+
+.. image:: ../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

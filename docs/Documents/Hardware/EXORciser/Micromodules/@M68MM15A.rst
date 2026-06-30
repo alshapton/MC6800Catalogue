@@ -2,10 +2,10 @@
 
 .. _M68MM15A:
 
-.. #Metadata {'Product':'M68MM15A Micromodule 15A High Level A/D module','Folder': 'Hardware'}
+.. #Metadata {'Product':'M68MM15A Micromodule 15A High Level 16-Channel A/D module','Folder': 'Hardware'}
 
-M68MM15A Micromodule 15A High Level A/D module
-==============================================
+M68MM15A Micromodule 15A High Level 16-Channel A/D module
+=========================================================
 
 .. include:: M68MM15A.carousel.rst
 

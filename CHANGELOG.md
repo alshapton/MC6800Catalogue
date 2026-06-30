@@ -1,12 +1,83 @@
+
 # Change Log
 
 The symbls used in the notes are as follows:
 
 | Symbol                      | Description             |
 | --------------------------- | ----------------------- |
+| :put_litter_in_its_place:   | Deleted artefact        |
 | :twisted_rightwards_arrows: | Moved artefact(s)       |
 | :new:                       | New artefact            |
-| :hammer_and_pick:           | Task under construction |
+| :atom_symbol:               | Technical Change        |
+| :ophiuchus:                 | Under construction      |
+| :eight_spoked_asterisk:     | Updated                 |
+
+
+Changes to the repository are documented here. 
+
+## 2026-06-20 -> 2026-06-30
+
+:new: Added MC68B52 SSDA Conversion Device  to listing  
+:new: Added MEX6850 ACIA Module to listing  
+:new: Added MEX68IC2 Interconnect Cable to listing  
+:new: Added MEX6820 Input/Output Module to listing  
+:new: Added MEX6816-1HR 16K Hidden Refresh RAM Module to listing  
+:new: Added MEX6832-1HR 32K Hidden Refresh RAM Module to listing  
+:new: Added MEX6848-1HR 48K Hidden Refresh RAM Module to listing  
+:new: Added MEX6864-1HR 64K Hidden Refresh RAM Module to listing  
+:new: Added MEX6816-1 16K Dynamic RAM Module to listing  
+:new: Added MEX6815-3 8K Dynamic RAM Module to listing  
+:new: Added MEX6808-22S 8K 2.0 Mhz Static RAM Module to listing  
+:new: Added MEX6816-22S 16K 2.0 Mhz Static RAM Module to listing  
+:new: Added M68MASR010A MDOS Macro Assembler 3.0 on Cassette to listing  
+:new: Added M68MASR010B MDOS Macro Assembler 3.0 on Paper Tape to listing  
+:new: Added M68BASR010A MDOS BASIC 2.0 on Cassette to listing  
+:new: Added M68BASR010B MDOS BASIC 2.0 on Paper Tape to listing    
+:new: Added M68MPLR010M Resident MPL Compiler on MDOS Diskette to listing    
+:new: Added BAUD Rate Module to listing  
+:new: Added Power Supply Module to listing  
+:new: Added M68FTNR012M Resident FORTRAN Compiler and Linking Loader on MDOS Diskette to listing  
+:new: Added M68COB010M Resident ANSI COBOL Compiler on MDOS Diskette to listing  
+:new: Added M68XAE6813A Resident Editor/ Assembler on Cassette to listing  
+:new: Added M68XAE6813B Resident Editor/ Assembler on Paper Tape to listing  
+:new: Added M68SMDOS100 Resident Editor/ Assembler/Relocatable Macro Assembler and linking Loader with Disk Operating System on MDOS Diskette to listing  
+:new: Added M68MAE6813 Co-resident Assembler/Editor available for use with M68MM08 to listing  
+:new: Added M68MM13A Micromodule 13A - 16 digital outputs (contact closures) micromodule to listing  
+:new: Added M68MM13B Micromodule 13B - 32 digital outputs (contact closures) micromodule to listing  
+:new: Added Micromodule 11 RS·232·to·TTY adapter module to listing  
+:new: Added M68MM09E2 Micromodule 09 - 2K x 8-bit CMOS-RAM Module to listing  
+:new: Added M68MM09E4 Micromodule 09 - 4K x 8-bit CMOS-RAM Module to listing  
+:new: Added M68MM08 MICRObug ROM Monitor/Debug Module to listing  
+:new: Added M68MM08A MICRObug ROM Monitor/Debug Module to listing  
+:new: Added M68MM13C Micromodule 13C Optically-isolated Digital Input (24 voltage input channels) to listing  
+:new: Added M68MM13D Micromodule 13D Optically-isolated Digital Input (24 contact closure input channels) to listing  
+:new: Added M68MM15A1 Micromodule 15A1 High Level 32-Channel A/D module to listing  
+:new: Added M68MM15CI1 Current High·Level Voltage D/A Module Single·channel 12-bit digital-to-analog converter  
+:new: Added M68MM15CI2 Current High-Level Voltage D/ A Module Dual-channel 12-bit D/A converter to listing    
+:new: Added M68MM15CI3 Current High-Level Voltage D/ A Module Three-channel 12-bit D/A converter to listing  
+:new: Added M68MM15CI4 Current High-Level Voltage D/ A Module Four-channel 12-bit D/A converter to listing  
+:new: Added M68MM15CV1 High·Level Voltage D/A Module Single·channel 12-bit digital-to-analog converter to listing  
+:new: Added M68MM15CV2 High-Level Voltage D/ A Module Dual-channel 12-bit digital-to-analog converter to listing  
+:new: Added M68MM15CV3 High-Level Voltage D/ A Module Three-channel 12-bit digital-to-analog converter to listing  
+:new: Added M68MM15CV4 High-Level Voltage D/ A Module Four-channel 12-bit digital-to-analog converter to listing  
+:new: Added 2K Static RAM Module to listing  
+:new: Added MC6809-MC6809E Microprocessor Programming Manual to collection  
+:new: Added MC6880 Quad Three-State Bus Transceiver to collection  
+:new: Added MC6875SL M6800 Two-Phase Clock Generator/Driver to listing     
+:twisted_rightwards_arrows: Renamed MC6880A group to MC6880 group  
+:twisted_rightwards_arrows: Moved MC6845P from SB1/D1 to S2/D3  
+:eight_spoked_asterisk: Changed MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) to In Transit  
+:eight_spoked_asterisk: Changed MCM6810AP-1 128 x 8-bit RAM to In Transit  
+:eight_spoked_asterisk: Changed MC68B54PDS Advanced Data-Link Controller (ADLC) to In Transit  
+:eight_spoked_asterisk: Updated M68DIM to correct M68DIM1/2/6  
+:ophiuchus: Continued rationalising modules, development systems and hardware indexes  
+:ophiuchus: Collapsed "Basic Options" into main EXORciser index page  
+:ophiuchus: Amended filename for MEX6821-2-UG to MEX68212(D)  
+:ophiuchus: Amended filename for MEX6856-CRTC-UG to MEX6845-CRTC(D)  
+:atom_symbol: Optimised build.py  
+:atom_symbol: Added some new CHANGELOG symbols  
+:atom_symbol: Added changelog page to SCOPE page  
+:atom_symbol: Introduced Dependabot alerting to codebase  
 
 ## 2026-06-19
 
@@ -20,7 +91,7 @@ The symbls used in the notes are as follows:
 :new: Added MEX68PP3 PROM Programmer III to listing  
 :new: Added MEX68USM Universal Support Module to listing  
 :new: Added information about  MEX3870M/MC3870 Development System being out of scope for collecting  
-:hammer_and_pick: Commenced rationalising modules, development systems and hardware indexes  
+:ophiuchus: Commenced rationalising modules, development systems and hardware indexes  
 
 ## 2026-06-18
 

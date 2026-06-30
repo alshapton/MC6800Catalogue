@@ -11,6 +11,23 @@
    :width: 400
    :align: center
 
+.. note::
+
+   The table below shows the properties of the 220 Volt Table Top EXORciser 1
+
+   +------------------+-----------------+   
+   | Firmware         | EXbug 1.2       |
+   +------------------+-----------------+   
+   | MPU Module       | MPU             |
+   +------------------+-----------------+   
+   | Frequency        | 1 Mhz           |
+   +------------------+-----------------+   
+   | memory.          | N/A.            |
+   +------------------+-----------------+   
+   | Included Options | RS232 Interface/|
+   |                  | TTY Interface.  |
+   +------------------+-----------------+   
+
 .. rubric:: Collection Information
 
 .. csv-table:: 

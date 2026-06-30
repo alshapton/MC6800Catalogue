@@ -5,18 +5,18 @@ import glob
 import os
 
 import ast
-import tomllib
 import json
 
 from pathlib import Path
 
 from xbuild_support.functions import *
 from xbuild_support.file_utilities import *
+from xbuild_support.db import *
+from xbuild_support.fom import *
 
 import sqlite3
 
 # Set up rich environment
-import rich
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.theme import Theme
@@ -40,15 +40,19 @@ OSSEP         = os.sep
 XBS           = 'xbuild_support'
 DB            = XBS + OSSEP + 'xbuild.db'
 
-ANYUNDEROFFER = False
-ANYINTRANSIT  = False
-
 PREFIX ='docs' + OSSEP
 SUFFIX = 'rst'
 
+# Filenames
+CONVENTIONSFILENAME='conventions.' + SUFFIX
 OUTPUT_FILE = PREFIX + 'collection.' + SUFFIX
 TRANSIT_FILE = PREFIX + 'transit.' + SUFFIX
 UNDEROFFER_FILE = PREFIX + 'underoffer.' + SUFFIX
+
+CONFPY='conf.py'
+
+ANYUNDEROFFER = False
+ANYINTRANSIT  = False
 
 MOVE='tmp'  + OSSEP + 'move'
 CAROUSEL='carousel'
@@ -57,48 +61,60 @@ IC_LOCATIONS = 'docs'  + OSSEP + 'Documents'  + OSSEP + 'Hardware'  + OSSEP + 'I
 
 
 
-def rename_files_in_folder(folder_path_str):
-    # Convert the string input to a Path object
-    folder_path = Path(folder_path_str)
-    
-    # Check if the folder actually exists
-    if not folder_path.exists():
-        print(f"Error: The folder '{folder_path_str}' does not exist.")
-        return
-    
-    if not folder_path.is_dir():
-        print(f"Error: '{folder_path_str}' is not a directory.")
-        return
 
-    # Get just the folder name (e.g., /home/user/Pics -> Pics)
-    folder_name = folder_path.name
-    
-    # Initialize the incremental counter
-    counter = 1
-    
-    # Iterate through all items in the folder
-    for item in folder_path.iterdir():
-        # Only rename files, skip any subfolders
-        if item.is_file():
-            # Extract the original file extension (e.g., .jpg, .txt)
-            file_extension = item.suffix
-            
-            # Construct the new file name: 1.FOLDERNAME.jpg
-            new_name = f"{counter}.{folder_name}{file_extension}"
-            
-            # Create the full new path
-            new_file_path = folder_path / new_name
-            
-            try:
-                # Rename the file
-                item.rename(new_file_path)
-                print(f"Renamed: '{item.name}' -> '{new_name}'")
-                counter += 1
-            except Exception as e:
-                print(f"Failed to rename '{item.name}': {e}")
+def convert_changelog():
+    import os
+    from pathlib import Path
 
-    print(f"\nSuccess! Renamed {counter - 1} files.")
+    import m2r2
 
+    import xbuild_support.file_utilities as fu
+
+    OSSEP    = os.sep
+    SRCFILE  = 'CHANGELOG.md'
+    DESTFILE = 'CHANGELOG.rst'
+
+    with open(SRCFILE, "r", encoding="utf-8") as f:
+        markdown_data = f.read()
+
+    # Convert the string
+    rst_data = m2r2.convert(markdown_data)
+
+    with open(DESTFILE, "w", encoding="utf-8") as f:
+        f.write(rst_data)
+
+    # Post process file
+
+    fu.remove_lines_between(DESTFILE, 'Change Log', 'Changes to the repository are documented here.', False)
+
+    fu.replace_line_in_file(DESTFILE, 'Change Log', 'Change Log\n==========\n\n')
+
+    path = Path(DESTFILE)
+    if not path.exists():
+        raise FileNotFoundError(f"The file '{DESTFILE}' does not exist.")
+
+    updated_lines = []
+
+    with open(path, 'r', encoding='utf-8') as file:
+        for line in file:
+            # Check if the line starts with a colon
+            if line.startswith(':'):
+                # Find the index of the second colon, starting the search from index 1
+                second_colon_index = line.find(':', 1)
+                
+                # If a second colon is found, perform the replacement
+                if second_colon_index != -1:
+                    # Keep the leading ':', add the '*', and append everything after the second ':'
+                    line = "*" + line[second_colon_index+1:]
+            
+            updated_lines.append(line.replace('\ :raw-html-m2r:`<br>`',''))
+
+    # Write the modified content back to the original file
+    with open(path, 'w', encoding='utf-8') as file:
+        file.writelines(updated_lines)
+
+    fu.prepend_file('xbuild_support/changelog.pre',DESTFILE)
+    fu.movefile(DESTFILE,'docs' + OSSEP + DESTFILE)
 
 def update_or_not_metadata(filename):    
 
@@ -473,50 +489,6 @@ def update_IC_pre_fragments():
 
     console.print('\n\tFinished updating IC pre-fragments',style="info")
 
-def update_carousel():
-    files = glob.glob('**/*.'+ CAROUSEL + '.' + SUFFIX, recursive=True)
-    for filename in files:   
-        i=str(filename)
-        images_loc = i.replace('Documents','images').replace('.'+ CAROUSEL + '.' + SUFFIX,'')
-        base = os.path.basename(i).replace('.' + CAROUSEL + '.' + SUFFIX,'')
-        fullbase = i.replace(os.path.basename(i),'') +  base + os.sep + base + '.'  + CAROUSEL + '.' + SUFFIX
-        f=i.count(os.sep)
-        dotdot = ''
-        for f in range(0,f-1):
-            dotdot += '../'
-        images_loc_full=dotdot + images_loc.replace('docs/','')
-        picfiles = os.listdir(images_loc)
-        picfiles.sort()
-
-
-        if ('carousel.properties' in picfiles):
-            carouselfile=images_loc + os.sep + 'carousel.properties'
-            with open(carouselfile, "r") as cf:
-                carousel_properties = cf.readlines()[0]
-                cp=ast.literal_eval(carousel_properties)
-                cars=cp["Carousels"]
-                with open(i ,"w") as d:
-                    for car in cars:
-                        carousel_number=str(car["Number"])
-                        carousel_title=car["Title"]
-                        d.write('.. rubric:: ' + carousel_title + '\n\n')
-                        d.write('.. card-carousel:: ' + carousel_number + '\n\n')
-                        for picfile in picfiles:
-                            if picfile.startswith(carousel_number):
-                                fullfile=images_loc_full + os.sep + picfile
-                                d.write('    .. card::\n\n')
-                                d.write('      .. image:: ' + fullfile + '\n')
-                                d.write('         :width: 800\n\n')        
-        else:
-            with open(i ,"w") as d:
-                d.write('.. card-carousel:: 2\n\n')
-                for picfile in picfiles:
-                    if not picfile.startswith('_'):
-                        fullfile=images_loc_full + os.sep + picfile
-                        d.write('    .. card::\n\n')
-                        d.write('      .. image:: ' + fullfile + '\n')
-                        d.write('         :width: 800\n\n')
-    console.print('\n\n\tCarousels updated',style="info")
 
 
 
@@ -578,8 +550,6 @@ def update_storage():
                         if '.. #Metadata' in line:
                             this_loc=line.split('.. #Metadata')[1].strip().replace("{'Info': ",'').replace('}}','}')
                             loc = ast.literal_eval(this_loc)
-                            if 'Drawer' not in loc:
-                                print(loc)
                             is_misc=False
                             
                             for i in oths["Other"]:
@@ -950,10 +920,13 @@ def update_storage():
             console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
 
 
-    print('Cleaning up')
+    console.print('\nCleaning Up',style="info")
     os.remove(TABLES_FILE)
 
-    print('\nStorage updated')      
+    console.print('\n+-----------------+',style="info")
+    console.print('| Storage updated |',style="info")
+    console.print('+-----------------+',style="info")
+    
 
 
     TABLES_FILE='docs/Documents/Brochures/tables.fragment.rst'
@@ -1108,10 +1081,8 @@ def do_underoffer():
         c.write('===========')
         c.write('\n')
         c.write('This is the current set of items (as at ' + time.strftime("%d-%m-%Y") + ') under offer.\n')
-        
     
         underoffer=[]
-
 
         for file in files:
             if (file not in ("README.md" ,"_static/docs/Software/NonResident/software.fragment") and
@@ -1276,10 +1247,6 @@ def collect_metadata():
     console.print('Location metadata collected',style="info")
     return md 
 
-
-
-
-
 def do_collection():
     # Collect location medatadta
     md = collect_metadata()
@@ -1300,7 +1267,8 @@ def do_collection():
         for file in files:
             if (file not in ("README.md" ,"_static/docs/Software/NonResident/software.fragment") and
                 "collection" not in file and "transit.rst" not in file and
-                "@" not in file  and "carousel" not in file and "snippets" not in file):
+                "@" not in file  and "carousel" not in file and "snippets" not in file and
+                'CHANGELOG.rst' not in file):
                 with open(file) as f:
                     #print('Checking for acquired ' + file)
                     type = os.path.dirname(file).replace(PREFIX,'')
@@ -1641,46 +1609,6 @@ def do_create_1(product_name,product_number,product_type,orphan,comments,acquire
     return index_entry
 
 
-
-
-# DO SETUP
-def setup_icons():
-    with open("./xbuild_support/setup.toml", "rb") as f:
-        data = tomllib.load(f)
-
-    # Prepare new conf.py file
-    copy_and_replace('./xbuild_support/conf.master','./xbuild_support/setup.pre')
-    with open('./xbuild_support/setup.pre', 'a') as newfile:
-        newfile.write("\n")
-        newfile.write('rst_prolog = """\n')
-        for icon in data["icons"]:
-            newfile.write(".. |"+icon["name"].strip()+"| " + '\treplace:: ' + icon["icon"]+'\n')
-            
-        newfile.write('"""\n')
-
-    copy_and_replace('./xbuild_support/setup.pre','./docs/conf.py')
-
-    with open('./xbuild_support/conventions.rst', 'w') as newfile:
-        newfile.write(':orphan:\n\n')
-        newfile.write('.. csv-table::')
-        newfile.write('   :header: "Symbol","Description"\n')
-        newfile.write('   :widths: 14, 86\n')
-        newfile.write('   :width: 100\n\n')
-
-   
-        for icon in data["icons"]:
-            if (icon["tag"] == "conventions"):
-                newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
-
-
-    with open('docs/Software/NonResident/media.inc', 'w') as newfile:
-        newfile.write('.. rubric:: Key to Symbols\n\n')
-        newfile.write('.. csv-table::\n\n')
-        
-        for icon in data["icons"]:
-            if (icon["tag"] == "media"):
-                newfile.write("   |"+icon["name"].strip()+"|, " + '"' + icon["desc"]+'"\n')
-
 def do_timeline():
     console.print('Updating timeline',style="info")
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
@@ -1701,34 +1629,10 @@ def do_timeline():
                     if line.find('|present') != -1:
                         acquired_date = line.replace("|present|",'').replace('"','').strip()
                         m=acquired_date[3:6].upper()
-                        match m:
-                            case "JAN":
-                                month='01'
-                            case "FEB":
-                                month='02'
-                            case "MAR":
-                                month='03'
-                            case "APR":
-                                month='04'
-                            case "MAY":
-                                month='05'
-                            case "JUN":
-                                month='06'
-                            case "JUL":
-                                month='07'
-                            case "AUG":
-                                month='08'
-                            case "SEP":
-                                month='09'
-                            case "OCT":
-                                month='10'
-                            case "NOV":
-                                month='11'
-                            case "DEC":
-                                month='12'
-                            case _:
-                                console.print('Invalid month in ' + file,style="warning")
-                                invalid_months=True
+                        month=convert_MMM_to_MM(m)
+                        if month == 0:
+                            console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
+                            invalid_months=True
                         converted_date=acquired_date[7:11]+month+acquired_date[0:2]
                         dline='{"Date":"' + converted_date + '"' + \
                                 ',"File":"' + file + \
@@ -1768,8 +1672,8 @@ def do_statistics():
         op=0
         opnp=0
         opit=0
-        output = read_db("SELECT * FROM summary where documenttype != 'Software/Resident/EXORset30ROMS' order by  documenttype;")
-        e30roms = read_db("SELECT * FROM collection where artfacttype = 'Software/Resident/EXORset30ROMS' order by  artfacttype;")
+        output = read_db("SELECT * FROM summary where documenttype != 'Software/Resident/EXORset30ROMS' order by  documenttype;",DB)
+        e30roms = read_db("SELECT * FROM collection where artfacttype = 'Software/Resident/EXORset30ROMS' order by  artfacttype;",DB)
         e30present=0
         e30notpresent=0
         e30intransit=0
@@ -1795,7 +1699,7 @@ def do_statistics():
                 present = 0
                 notpresent = 0
                 intransit =0
-                items = read_db("SELECT * FROM collection where artfacttype = '" + row["documenttype"] +"';")
+                items = read_db("SELECT * FROM collection where artfacttype = '" + row["documenttype"] +"';",DB)
                 
                 for r in items:
                     if r["status"] == 'present' or r["status"] == '|document|':
@@ -1854,7 +1758,7 @@ def do_index_contents(ANYUNDEROFFER,ANYINTRANSIT):
     copy_and_replace('./xbuild_support/index.master','./docs/index.rst')
 
 def getICfilename(IC):
-    chiprows = read_db("SELECT * from ics where icid = '" + IC + "';")
+    chiprows = read_db("SELECT * from ics where icid = '" + IC + "';",DB)
     chipfilename = 'DOESNOTEXIST'
     for chip in chiprows:
         chipfilename=chip["filename"]
@@ -1862,7 +1766,7 @@ def getICfilename(IC):
 
 def extract_seed_chip_info(chip_seed_file):
     chips=[]
-    chiprows = read_db("SELECT * from iclist;")
+    chiprows = read_db("SELECT * from iclist;",DB)
     print(len(chiprows))
     for chip in chiprows:
         chipjson={}
@@ -1876,7 +1780,7 @@ def extract_seed_chip_info(chip_seed_file):
     with open(chip_seed_file, 'w') as f:
         f.write(json.dumps(chiplist, indent=4))
 
-def rebuild_db():
+def rebuild_db(DB):
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     conn = sqlite3.connect(DB)
     cursor_obj = conn.cursor()
@@ -2202,33 +2106,9 @@ def rebuild_db():
                             if status != BIGGER_DOC:
                                 acquired_date = line.split('|')[2].strip().replace('"','')
                             m=acquired_date[3:6].upper()
-                            match m:
-                                case "JAN":
-                                    month='01'
-                                case "FEB":
-                                    month='02'
-                                case "MAR":
-                                    month='03'
-                                case "APR":
-                                    month='04'
-                                case "MAY":
-                                    month='05'
-                                case "JUN":
-                                    month='06'
-                                case "JUL":
-                                    month='07'
-                                case "AUG":
-                                    month='08'
-                                case "SEP":
-                                    month='09'
-                                case "OCT":
-                                    month='10'
-                                case "NOV":
-                                    month='11'
-                                case "DEC":
-                                    month='12'
-                                case _:
-                                    console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
+                            month=convert_MMM_to_MM(m)
+                            if month == 0:
+                                console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
                             real_date, tag,notes, location, metadata,filename, status,bigger) \
@@ -2359,33 +2239,9 @@ def rebuild_db():
                     if CHECK_MARK in line:
                             acquired_date = line.split('|')[2].strip().replace('"','')
                             m=acquired_date[3:6].upper()
-                            match m:
-                                case "JAN":
-                                    month='01'
-                                case "FEB":
-                                    month='02'
-                                case "MAR":
-                                    month='03'
-                                case "APR":
-                                    month='04'
-                                case "MAY":
-                                    month='05'
-                                case "JUN":
-                                    month='06'
-                                case "JUL":
-                                    month='07'
-                                case "AUG":
-                                    month='08'
-                                case "SEP":
-                                    month='09'
-                                case "OCT":
-                                    month='10'
-                                case "NOV":
-                                    month='11'
-                                case "DEC":
-                                    month='12'
-                                case _:
-                                    print('Invalid month in ' + file)
+                            month=convert_MMM_to_MM(m)
+                            if month == 0:
+                                console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
                     parent_number = parent.replace('MCM','').replace('MC','').strip()
             conn.execute("INSERT INTO ics (icid, ic,  parent, parent_number, name, status, acquired_date, real_date, \
@@ -2400,26 +2256,6 @@ def rebuild_db():
             conn.commit()
     conn.close()
 
-def read_db(statement):
-    conn = sqlite3.connect('xbuild_support/xbuild.db')
-    conn.row_factory = sqlite3.Row
-    cursor_obj = conn.cursor()
-    cursor_obj.execute(statement)
-    output = cursor_obj.fetchall()
-    conn.close()
-    return output
-
-def get_links_from_db(documentid,documenttype):
-    conn = sqlite3.connect(DB)
-    conn.row_factory = sqlite3.Row
-    cursor_obj = conn.cursor()
-    if documenttype == 'ICs':
-        cursor_obj.execute("SELECT * FROM iclinks WHERE icid = ?;", (documentid,))
-    else:
-        cursor_obj.execute("SELECT * FROM documentlinks WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
-    output = cursor_obj.fetchall()
-    conn.close()
-    return output   
 
 def get_images_from_db(documentid,documenttype):
     conn = sqlite3.connect(DB)
@@ -2456,7 +2292,7 @@ def get_carousels_from_db(documentid,documenttype):
 
 def update_chip_info(f):
     
-    output = read_db("SELECT * FROM ics WHERE status = 'present' order by  parent_number,ic;")
+    output = read_db("SELECT * FROM ics WHERE status = 'present' order by  parent_number,ic;",DB)
 
     f.write('\n\n.. rubric:: ICs\n\n')
     f.write('.. csv-table::\n')
@@ -2544,7 +2380,7 @@ def write_IC(filename,chipinfo):
             c.write('   |'+ chipinfo["status"] + '|\n')
 
         c.write('\n')
-        lnks=get_links_from_db(chipinfo["icid"],"ICs")
+        lnks=get_links_from_db(chipinfo["icid"],"ICs",DB)
         if len(lnks) > 1:
             endline='\n'
         else:
@@ -2555,6 +2391,22 @@ def write_IC(filename,chipinfo):
                 c.write('\n' + lnk["link"] + endline)
     return 
 
+    
+def do_file_operations_menu(console):
+    
+
+    while True:
+        console.print("\t  File Operations Menu\n",style="bold black")
+        console.print('\tR Rename Carousel files incrementally ',style="info")
+        console.print('\tX Exit',style="info")
+        choicesList=["R","X"]
+        type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
+        match type:
+            case "R"|"r":
+                do_FOM_rename_files(OSSEP,console)
+            case "X"|"x":
+                console.print("Exiting", style="info")
+                return()
 while True:
     console.print("\t  Main Menu\n",style="bold black")
     console.print('\t1 Get date range from week ',style="info")
@@ -2563,11 +2415,12 @@ while True:
     console.print('\t4 Create new IC group from index',style="info")    
     console.print('\t5 Update IC status (WIP)',style="warning")
     console.print('\t6 Unload Seed IC file',style="info")
-    console.print('\t7 Rebuild DB',style="info")
+    console.print('\t7 Rebuild DB\n',style="info")
+    console.print('\tF File Operations\n',style="info")
     console.print('\t- Delete DB',style="danger")
     console.print('\t0 Update ALL ',style="info")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8","R"]
+    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8","R","F"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2603,11 +2456,16 @@ while True:
             clear()
             output='\nSetting Up icons\n\n'
             console.print(output, style="info")
-            setup_icons()
+            mediaincfilename='docs!Software!NonResident!media.inc'.replace('!',OSSEP)
+            setup_icons(OSSEP,XBS,CONFPY,CONVENTIONSFILENAME,mediaincfilename)
             output='Commencing rebuild of database'
             console.print(output, style="info")
-            rebuild_db()
-            console.print('Completed rebuild of database',style="info")     
+            rebuild_db(DB)
+            console.print('Completed rebuild of database',style="info")  
+
+            convert_changelog()
+            console.print('\n\nCHANGELOG converted',style="info")
+   
             console.print('\n\nCommencing updating storage metadata links',style="info")
 
             rstfiles = glob.glob('**/*.rst', recursive=True)
@@ -2615,7 +2473,9 @@ while True:
                 update_or_not_metadata(file)
         
 
-            update_carousel()
+            update_carousel(CAROUSEL,SUFFIX)
+            console.print('\n\n\tCarousels updated',style="info")
+
             update_IC_pre_fragments()
             #update_IC_root()
             update_IC_index()
@@ -2634,7 +2494,7 @@ while True:
         case "5":
             ic = input("Enter IC to change status: ")
             statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
-            output = read_db(statement)
+            output = read_db(statement,DB)
             c=0
             for row in output:
                c=c+1 
@@ -2764,7 +2624,7 @@ while True:
         case "7":
             output='Commencing rebuild of database'
             console.print(output, style="info") 
-            rebuild_db()
+            rebuild_db(DB)
             output='Completed rebuild of database'
             console.print(output, style="info")           
         case "8":
@@ -2814,7 +2674,7 @@ while True:
             IC_LOCATIONSNEW=IC_LOCATIONS
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
 
-            output = read_db("SELECT * FROM iclist order by ic asc;")
+            output = read_db("SELECT * FROM iclist order by ic asc;",DB)
             if not make_directory(IC_LOCATIONSNEW):
                 console.print("Could not create directory " + IC_LOCATIONSNEW, style="danger")
                 exit()
@@ -2841,7 +2701,7 @@ while True:
             # exit()
 
 
-            output=read_db("SELECT * FROM ics order by icid asc;")
+            output=read_db("SELECT * FROM ics order by icid asc;",DB)
             for chipinfo in output:
                 filename=chipinfo["filename"]
                 #filename=filename.replace('ICs','ICsNEW')
@@ -2859,8 +2719,8 @@ while True:
 
             
             
-            #output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;")
-            output = read_db("SELECT * FROM documents WHERE documenttype='FRED' order by filename asc;")
+            #output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;",DB)
+            output = read_db("SELECT * FROM documents WHERE documenttype='FRED' order by filename asc;",DB)
             for row in output:
                 documenttype=row["documenttype"]
                 documentid=row["documentid"]
@@ -2905,7 +2765,7 @@ while True:
                             f.write(' '+ row["acquired_date"])
                         
                     f.write('\n\n')
-                    lnks=get_links_from_db(documentid,documenttype)
+                    lnks=get_links_from_db(documentid,documenttype,DB)
                     if len(lnks) > 1:
                         endline='\n'
                     else:
@@ -2936,13 +2796,10 @@ while True:
             console.print("Exiting", style="info")
             exit()
 
-        case "R"|"r":
-            folder_path_str = input("Enter foldername (relative to MC6800Catalogue: ")
-            folder_path_str = "."+OSSEP + folder_path_str
-            rename_files_in_folder(folder_path_str)  
+        case "F"|"f":
+            do_file_operations_menu(console)
+
         case _:
             console.print("Invalid Choice", style="warning")
             
         
-
-
