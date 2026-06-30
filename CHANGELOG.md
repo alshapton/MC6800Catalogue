@@ -15,6 +15,10 @@ The symbls used in the notes are as follows:
 
 Changes to the repository are documented here. 
 
+## JUL-2026
+
+:atom_symbol: Added requirements.txt file for dependabot scans  
+
 ## 2026-06-20 -> 2026-06-30
 
 :new: Added MC68B52 SSDA Conversion Device  to listing  

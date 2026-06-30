@@ -12,6 +12,11 @@ Change Log
 
 Changes to the repository are documented here. 
 
+JUL-2026
+--------
+
+* Added requirements.txt file for dependabot scans  
+
 2026-06-20 -> 2026-06-30
 ------------------------
 

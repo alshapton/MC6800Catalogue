@@ -1615,7 +1615,7 @@ def do_timeline():
     timeline=[]
     invalid_months=False
     for file in files:
-        if 'root' not in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file:
+        if 'root' not in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'CHANGELOG' not in file.upper():
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()
