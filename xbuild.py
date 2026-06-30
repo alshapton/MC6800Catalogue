@@ -107,7 +107,7 @@ def convert_changelog():
                     # Keep the leading ':', add the '*', and append everything after the second ':'
                     line = "*" + line[second_colon_index+1:]
             
-            updated_lines.append(line.replace('\ :raw-html-m2r:`<br>`',''))
+            updated_lines.append(line.replace('\\ :raw-html-m2r:`<br>`',''))
 
     # Write the modified content back to the original file
     with open(path, 'w', encoding='utf-8') as file:
@@ -1615,7 +1615,7 @@ def do_timeline():
     timeline=[]
     invalid_months=False
     for file in files:
-        if 'root' not in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file:
+        if 'root' not in file and 'fragment' not in file and 'basic_options' not in file and 'index' not in file and 'conventions' not in file and 'CHANGELOG' not in file.upper():
             with open(file, 'r') as f:
                 prevproductname=''                
                 lines = f.readlines()

@@ -5,6 +5,7 @@ The symbls used in the notes are as follows:
 
 | Symbol                      | Description             |
 | --------------------------- | ----------------------- |
+| :bug:                       | Bug Fix                 |
 | :put_litter_in_its_place:   | Deleted artefact        |
 | :twisted_rightwards_arrows: | Moved artefact(s)       |
 | :new:                       | New artefact            |
@@ -14,6 +15,11 @@ The symbls used in the notes are as follows:
 
 
 Changes to the repository are documented here. 
+
+## JUL-2026
+
+:atom_symbol: Added requirements.txt file for dependabot scans  
+:bug: Fixed issue with erroneous entry to timeline  
 
 ## 2026-06-20 -> 2026-06-30
 

@@ -212,4 +212,3 @@ This is the timeline of acquisitions (as at 30-06-2026).
    21-MAY-2026,:ref:`Full ASCII Keyboard <M68KBD1>`
    17-JUN-2026,:ref:`MC68B21S Peripheral Interface Adapter (PIA) <MC68B21S>`
    24-JUN-2026,:ref:`MC6809-MC6809E Microprocessor Programming Manual <M6809PMAD>`
-   * now using  and |2ndsource| identifiers,:ref:`Change Log <changelog>`
