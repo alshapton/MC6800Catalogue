@@ -16,7 +16,22 @@ The symbls used in the notes are as follows:
 
 Changes to the repository are documented here. 
 
+
 ## JUL-2026
+
+:new: Added M68PPR2 PDS PROM Programmer to listing  
+:twisted_rightwards_arrows: Moved MC6809EP from SB1/D2 to SB1/D3  
+:twisted_rightwards_arrows: Moved MC6800P from SB2/D2 to SB1/D1  
+:new: Added MEX6801EVM Evaluation Module to listing  
+:new: Added MGD6800DSM Data Security Module to listing  
+:new: Added MEX68USE2B USEB Cable and Buffer Assembly to listing  
+:new: Added MEX68USEB USEB with Processor+Intercept Modules + Cable and Buffer Assembly to listing  
+:new: Added MEX68PIC Printer Interconnect Cable to listing  
+:new: Added MEX68SPM System Performance Module to listing  
+:new: Added MEX68SPM(D) System Performance Module Users Guide to listing  
+:eight_spoked_asterisk: Added new option to MEX68PP3 (software on EDOS Diskette)  
+
+## JUL-2026.1
 
 :atom_symbol: Added requirements.txt file for dependabot scans  
 :bug: Fixed issue with erroneous entry to timeline  

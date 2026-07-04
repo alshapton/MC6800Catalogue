@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 30-06-2026).
+This is the timeline of acquisitions (as at 02-07-2026).
 
 .. csv-table::
    :header: "Date","Product" 

@@ -2,7 +2,7 @@
 
 .. _MC6800P:
 
-.. #Metadata {'Product':'MC6800P','Name':'MC6800P Microprocessor Unit','Storage': 'Storage Box 2','Drawer':2,'Row':3,'Column':2}
+.. #Metadata {'Product':'MC6800P','Name':'MC6800P Microprocessor Unit','Storage': 'Storage Box 1','Drawer':1,'Row':3,'Column':3}
 
 MC6800P Microprocessor Unit
 ===========================
@@ -21,7 +21,7 @@ MC6800P Microprocessor Unit
    "Mask","R7E"
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 2, Row 3, Column 2 <Storage_Box_2_Drawer_2>`"
+   "Location",":ref:`Storage Box 1, Drawer 1, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"
    "Temperature","-0-70\ :sup:`o`\ C"
    "Frequency","1Mhz"
    "Notes",""

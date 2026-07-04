@@ -249,3 +249,85 @@ def update_carousel(CAROUSEL,SUFFIX):
                         d.write('    .. card::\n\n')
                         d.write('      .. image:: ' + fullfile + '\n')
                         d.write('         :width: 800\n\n')
+
+def write_IC(filename,chipinfo,CHECK_MARK,DB):
+    from .db import get_links_from_db, get_images_from_db
+    chip=chipinfo["ic"] 
+    newgroupname=chipinfo["parent"]
+
+    newfilename=filename + ".new.rst"
+    newfilename=filename 
+    
+    with open(newfilename, "w") as c:
+        c.write(':orphan:\n\n')
+        c.write('.. _' + chipinfo["tag"] + ':\n\n')
+        
+        locationfull = "TBD"
+
+        if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
+            locationfull = "TBD"
+        else:
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n"
+            locationtext=chipinfo["Storage"] + ', Drawer ' + str(chipinfo["Drawer"]) + ', Row ' + str(chipinfo["Row"]) + ', Column ' + str(chipinfo["Col"])
+            locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
+            locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
+        if chipinfo["Storage"] == "Briefcase":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'EDUCATORII'}\n\n"
+            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
+        if chipinfo["Storage"] == "EDUCATORII":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
+            locationfull=':ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`'    
+        if chipinfo["Storage"] == "MEK6800D2":
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
+            locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
+        if 'M68MM' in chipinfo["Storage"]:
+            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '"+ chipinfo["Storage"] +"'}\n\n"
+            locationfull=':ref:`' + chipinfo["Storage"] +' Micromodule <Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule_Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule>`'    
+
+
+        c.write(MD)
+        
+        c.write(chipinfo["name"] + '\n')
+        c.write('=' * len(chipinfo["name"]) + '\n\n')
+        imgs=get_images_from_db(chipinfo["icid"],"ICs",DB)
+        for img in imgs:
+            c.write('.. image:: ' + img["image"] + '\n')
+            c.write('   :width: 400\n')
+            c.write('   :align: center\n\n')
+
+        if chipinfo["notes"] != '':
+            c.write(chipinfo["notes"])
+
+        c.write('.. rubric:: Specific Information\n\n')
+        c.write('.. csv-table:: \n')
+        c.write('   :widths: auto\n\n')
+        c.write('   "Date Code","'+chipinfo["date_code"]+'"\n')
+        c.write('   "Manufacture Date","'+chipinfo["manufacture_date"]+'"\n')        
+        c.write('   "Mask","'+chipinfo["mask"]+'"\n')
+        c.write('   "Packaging","'+chipinfo["packaging"]+'"\n')
+        c.write('   "Status","'+chipinfo["manufacture_status"]+'"\n')
+        c.write('   "Location","' + locationfull + '"\n')
+        c.write('   "Temperature","'+chipinfo["temperature_raw"]+'"\n')
+        c.write('   "Frequency","'+chipinfo["frequency"]+'"\n')
+        c.write('   "Notes",""\n\n')
+        c.write('.. rubric:: Collection Information\n\n')
+        c.write('.. csv-table:: \n')
+        c.write('   :header: "Acquired"\n') 
+        c.write('   :widths: auto\n\n')
+        if chipinfo["status"] == 'present':
+            c.write('   '+ CHECK_MARK + ' ' + chipinfo["acquired_date"]+'\n')     
+        else:
+            c.write('   |'+ chipinfo["status"] + '|\n')
+
+        c.write('\n')
+        lnks=get_links_from_db(chipinfo["icid"],"ICs",DB)
+        if len(lnks) > 1:
+            endline='\n'
+        else:
+            endline=''
+        if len(lnks) > 0:
+            c.write('.. rubric:: Links\n')
+            for lnk in lnks:
+                c.write('\n' + lnk["link"] + endline)
+    return 
