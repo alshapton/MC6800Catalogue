@@ -2257,17 +2257,6 @@ def rebuild_db(DB):
     conn.close()
 
 
-def get_images_from_db(documentid,documenttype):
-    conn = sqlite3.connect(DB)
-    conn.row_factory = sqlite3.Row
-    cursor_obj = conn.cursor()
-    if documenttype == 'ICs':
-        cursor_obj.execute("SELECT * FROM icimages WHERE icid = ?;", (documentid,))
-    else:
-        cursor_obj.execute("SELECT * FROM documentimages WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
-    output = cursor_obj.fetchall()
-    conn.close()
-    return output 
 
 def get_notes_from_db(documentid,documenttype):
     conn = sqlite3.connect(DB)
@@ -2309,87 +2298,7 @@ def update_chip_info(f):
     f.write('\n')
 
     
-def write_IC(filename,chipinfo):
 
-    chip=chipinfo["ic"] 
-    newgroupname=chipinfo["parent"]
-
-    newfilename=filename + ".new.rst"
-    newfilename=filename 
-    
-    with open(newfilename, "w") as c:
-        c.write(':orphan:\n\n')
-        c.write('.. _' + chipinfo["tag"] + ':\n\n')
-        
-        locationfull = "TBD"
-
-        if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
-            locationfull = "TBD"
-        else:
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n"
-            locationtext=chipinfo["Storage"] + ', Drawer ' + str(chipinfo["Drawer"]) + ', Row ' + str(chipinfo["Row"]) + ', Column ' + str(chipinfo["Col"])
-            locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
-            locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
-        if chipinfo["Storage"] == "Briefcase":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'EDUCATORII'}\n\n"
-            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
-        if chipinfo["Storage"] == "EDUCATORII":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
-            locationfull=':ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`'    
-        if chipinfo["Storage"] == "MEK6800D2":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
-            locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
-        if 'M68MM' in chipinfo["Storage"]:
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '"+ chipinfo["Storage"] +"'}\n\n"
-            locationfull=':ref:`' + chipinfo["Storage"] +' Micromodule <Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule_Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule>`'    
-
-
-        c.write(MD)
-        
-        c.write(chipinfo["name"] + '\n')
-        c.write('=' * len(chipinfo["name"]) + '\n\n')
-        imgs=get_images_from_db(chipinfo["icid"],"ICs")
-        for img in imgs:
-            c.write('.. image:: ' + img["image"] + '\n')
-            c.write('   :width: 400\n')
-            c.write('   :align: center\n\n')
-
-        if chipinfo["notes"] != '':
-            c.write(chipinfo["notes"])
-
-        c.write('.. rubric:: Specific Information\n\n')
-        c.write('.. csv-table:: \n')
-        c.write('   :widths: auto\n\n')
-        c.write('   "Date Code","'+chipinfo["date_code"]+'"\n')
-        c.write('   "Manufacture Date","'+chipinfo["manufacture_date"]+'"\n')        
-        c.write('   "Mask","'+chipinfo["mask"]+'"\n')
-        c.write('   "Packaging","'+chipinfo["packaging"]+'"\n')
-        c.write('   "Status","'+chipinfo["manufacture_status"]+'"\n')
-        c.write('   "Location","' + locationfull + '"\n')
-        c.write('   "Temperature","'+chipinfo["temperature_raw"]+'"\n')
-        c.write('   "Frequency","'+chipinfo["frequency"]+'"\n')
-        c.write('   "Notes",""\n\n')
-        c.write('.. rubric:: Collection Information\n\n')
-        c.write('.. csv-table:: \n')
-        c.write('   :header: "Acquired"\n') 
-        c.write('   :widths: auto\n\n')
-        if chipinfo["status"] == 'present':
-            c.write('   '+ CHECK_MARK + ' ' + chipinfo["acquired_date"]+'\n')     
-        else:
-            c.write('   |'+ chipinfo["status"] + '|\n')
-
-        c.write('\n')
-        lnks=get_links_from_db(chipinfo["icid"],"ICs",DB)
-        if len(lnks) > 1:
-            endline='\n'
-        else:
-            endline=''
-        if len(lnks) > 0:
-            c.write('.. rubric:: Links\n')
-            for lnk in lnks:
-                c.write('\n' + lnk["link"] + endline)
-    return 
 
     
 def do_file_operations_menu(console):
@@ -2398,12 +2307,17 @@ def do_file_operations_menu(console):
     while True:
         console.print("\t  File Operations Menu\n",style="bold black")
         console.print('\tR Rename Carousel files incrementally ',style="info")
+        console.print('\tS Swap ICs in storage ',style="info")
+        
         console.print('\tX Exit',style="info")
-        choicesList=["R","X"]
+        choicesList=["R","S","X"]
         type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
         match type:
             case "R"|"r":
                 do_FOM_rename_files(OSSEP,console)
+            case "S"|"s":
+                do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK)
+                            
             case "X"|"x":
                 console.print("Exiting", style="info")
                 return()
@@ -2669,7 +2583,7 @@ while True:
                 os.system("git commit -F " + XBS+OSSEP+'bulk.results.txt' )
 
         case "9":
-            
+            exit()
             # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
             IC_LOCATIONSNEW=IC_LOCATIONS
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
@@ -2707,7 +2621,7 @@ while True:
                 #filename=filename.replace('ICs','ICsNEW')
                 print(filename)
                 
-                write_IC(filename,chipinfo)
+                write_IC(filename,chipinfo,CHECK_MARK,DB)
                 #newfilename = filename + ".new.rst"
                 #issame=compare_files(filename,newfilename)
                 #if issame:
@@ -2738,7 +2652,7 @@ while True:
                         f.write('=')
                     f.write('\n\n')
 
-                    imgs=get_images_from_db(documentid,documenttype)
+                    imgs=get_images_from_db(documentid,documenttype,DB)
                     for img in imgs:
                         f.write('.. image:: ' + img["image"] + '\n')
                         f.write('   :width: 400\n')
