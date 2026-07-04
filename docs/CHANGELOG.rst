@@ -15,8 +15,23 @@ Changes to the repository are documented here.
 JUL-2026
 --------
 
+* Added M68PPR2 PDS PROM Programmer to listing
+* Moved MC6809EP from SB1/D2 to SB1/D3
+* Moved MC6800P from SB2/D2 to SB1/D1
+* Added MEX6801EVM Evaluation Module to listing
+* Added MGD6800DSM Data Security Module to listing
+* Added MEX68USE2B USEB Cable and Buffer Assembly to listing
+* Added MEX68USEB USEB with Processor+Intercept Modules + Cable and Buffer Assembly to listing
+* Added MEX68PIC Printer Interconnect Cable to listing
+* Added MEX68SPM System Performance Module to listing
+* Added MEX68SPM(D) System Performance Module Users Guide to listing
+* Added new option to MEX68PP3 (software on EDOS Diskette)  
+
+JUL-2026.1
+----------
+
 * Added requirements.txt file for dependabot scans
-*  Fixed issue with erroneous entry to timeline  
+* Fixed issue with erroneous entry to timeline  
 
 2026-06-20 -> 2026-06-30
 ------------------------

@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 30-06-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 02-07-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -89,7 +89,7 @@ This is the current collection (as at 30-06-2026) of the items produced by Motor
 	":ref:`MC6800GMCM <MC6800GMCM>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 3, Column 2 <Storage_Box_1_Drawer_1>`"
 	":ref:`MC6800L <MC6800L>`","Ceramic",":ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`"
 	":ref:`MC6800L <2!MC6800L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 2 <Storage_Box_1_Drawer_1>`"
-	":ref:`MC6800P <MC6800P>`","Plastic",":ref:`Storage Box 2, Drawer 2, Row 3, Column 2 <Storage_Box_2_Drawer_2>`"
+	":ref:`MC6800P <MC6800P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"
 	":ref:`MC68A00L <MC68A00L>`","Ceramic","TBD"
 	":ref:`MC68A00P <MC68A00P>`","Plastic",":ref:`Storage Box 1, Drawer 1, Row 2, Column 3 <Storage_Box_1_Drawer_1>`"
 	":ref:`MC68B00L <MC68B00L>`","Ceramic",":ref:`Storage Box 1, Drawer 1, Row 1, Column 1 <Storage_Box_1_Drawer_1>`"
@@ -107,7 +107,7 @@ This is the current collection (as at 30-06-2026) of the items produced by Motor
 	":ref:`MC68B09P <MC68B09P>`","Plastic",":ref:`Storage Box 2, Drawer 2, Row 2, Column 2 <Storage_Box_2_Drawer_2>`"
 	":ref:`SC84003L <SC84003L>`","Ceramic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`HD63C09EP <HD63C09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 1, Column 2 <Storage_Box_1_Drawer_3>`"
-	":ref:`MC6809EP <MC6809EP>`","Plastic",":ref:`Storage Box 1, Drawer 2, Row 3, Column 3 <Storage_Box_1_Drawer_2>`"
+	":ref:`MC6809EP <MC6809EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 2, Column 3 <Storage_Box_1_Drawer_3>`"
 	":ref:`MC68B09EP <MC68B09EP>`","Plastic",":ref:`Storage Box 1, Drawer 3, Row 3, Column 1 <Storage_Box_1_Drawer_3>`"
 	":ref:`HEPC4811P <HEPC4811P>`","Plastic",":ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`"
 	":ref:`MCM6810AP <MCM6810AP>`","Plastic",":ref:`Storage Box 2, Drawer 4, Row 1, Column 3 <Storage_Box_2_Drawer_4>`"
