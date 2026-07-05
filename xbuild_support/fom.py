@@ -1,4 +1,103 @@
 
+
+def print_FOM_drawers(output):
+    ICs=[]
+    storedrow=-1
+    outputrow=[]
+    for row in output:
+        if storedrow == -1:
+            storedrow=row["row"]
+        if row["row"] != storedrow:
+            print(outputrow)
+            outputrow=[]
+            storedrow=row["row"]
+            ICs.append(row["icid"])           
+            outputrow.append(row["icid"])           
+        else:
+            ICs.append(row["icid"])           
+            outputrow.append(row["icid"])                   
+    print(outputrow)
+    return ICs
+     
+
+def do_FOM_swap_drawer(OSSEP,console,DB,CHECK_MARK):
+    import json
+    from rich.prompt import Prompt
+    from .functions import write_IC
+    from .db import read_db, update_db
+
+    output="This is experimental - CTRL-C to exit"
+    console.print(output, style="danger")           
+ 
+    storage_properties=[]
+    PROPERTIES_FILE='storage.properties'
+    file1 = open(PROPERTIES_FILE, 'r')
+    properties = file1.readlines()
+    for prop in properties:
+        if 'Storage' in prop:
+            storage_properties.append(prop)
+    
+    storagejson=json.loads(storage_properties[0].replace("'",'"'))["Storage"]
+    SB_PREFIX="Storage Box "
+    storage=[]
+    for i in storagejson:        
+        drawers=i["Drawers"]
+        for d in drawers:
+            drawer=d["Drawer"]
+            storage.append(i["Name"].replace(SB_PREFIX,'')+'-'+str(drawer))
+        
+    sorted_storage=sorted(storage)
+    
+    first_location = Prompt.ask("Enter SB/Drawer 1", choices=sorted_storage, case_sensitive=True)
+    sorted_storage.remove(first_location)
+    second_location = Prompt.ask("Enter SB/Drawer 2", choices=sorted_storage, case_sensitive=True)
+
+    split_loc = first_location.split("-")
+    first_sb=SB_PREFIX + split_loc[0]
+    first_d=split_loc[1]
+
+    split_loc = second_location.split("-")
+    second_sb=SB_PREFIX + split_loc[0]
+    second_d=split_loc[1]
+    
+    output=first_sb + " Drawer " + first_d
+    console.print(output, style="info")           
+    statement = "SELECT * FROM ics where storage = '" + first_sb + "' and drawer = " + first_d + " order by row,col;"
+    output = read_db(statement,DB)
+    ICs1=print_FOM_drawers(output)
+    
+    output=second_sb + " Drawer " + second_d
+    console.print(output, style="info")           
+    statement = "SELECT * FROM ics where storage = '" + second_sb + "' and drawer = " + second_d + " order by row,col;"
+    output = read_db(statement,DB)
+    ICs2=print_FOM_drawers(output)
+
+    choice = Prompt.ask("Are these suitable to be swapped?", choices=["Y", "N"], default="N", case_sensitive=True)
+    if choice == 'Y':    
+        #statement = "UPDATE ics set storage = '" + first_sb + "X', drawer = -1 where storage = '" + second_sb + "' and drawer = " + second_d + " ;"
+        #update_db(statement,DB)
+        #statement = "UPDATE ics set storage = '" + second_sb + "', drawer = " + second_d + " where storage = '" + first_sb + "' and drawer = " + first_d + " ;"
+        #update_db(statement,DB)
+        #statement = "UPDATE ics set storage = '" + first_sb + "', drawer = " + first_d + " where storage = '" + first_sb + "X' and drawer = -1 ;"
+        #update_db(statement,DB)
+        #console.print('Swapping has been done at the database.',style="info")
+
+        print('ICs involved in swap')
+        for i in ICs1:
+
+            output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
+            for chipinfo in output:
+                write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
+            print(i)
+        for i in ICs2:
+            output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
+            for chipinfo in output:
+                write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
+            print(i)
+        console.print('Swapping has been done at the file level.',style="info")
+        console.print('\nSwapping is complete.',style="info")
+        return
+
 def do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK):
     from .db import read_db, update_db
     from rich.prompt import Prompt
@@ -7,7 +106,6 @@ def do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK):
     output="This is experimental - CTRL-C to exit"
     console.print(output, style="danger")           
     first_IC = input("Enter IC 1: ")
-    first_IC = "MC6882AL"
     
     statement = "SELECT * FROM ics WHERE icid = '" + first_IC + "';"
 
@@ -37,9 +135,6 @@ def do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK):
     filename1 = row["filename"]
 
     second_IC = input("Enter IC 2: ")
-
-    
-    second_IC = "MC68A00L"
 
     statement = "SELECT * FROM ics WHERE icid = '" + second_IC + "';"
 

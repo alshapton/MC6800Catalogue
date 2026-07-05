@@ -117,17 +117,6 @@ def get_location(ref,md):
     return loc
 
 
-
-def multiline_input(prompt):
-    print(prompt + '(Ctrl-D to end):')
-    contents = []
-    while True:
-        try:
-            line = input()
-        except EOFError:
-            break
-        contents.append(line)
-
 def convert_MMM_to_MM(m):
     upperm=m.upper()
     match upperm:
@@ -256,7 +245,7 @@ def write_IC(filename,chipinfo,CHECK_MARK,DB):
     newgroupname=chipinfo["parent"]
 
     newfilename=filename + ".new.rst"
-    newfilename=filename 
+    #newfilename=filename 
     
     with open(newfilename, "w") as c:
         c.write(':orphan:\n\n')
