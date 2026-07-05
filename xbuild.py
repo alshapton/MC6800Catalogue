@@ -2308,15 +2308,18 @@ def do_file_operations_menu(console):
         console.print("\t  File Operations Menu\n",style="bold black")
         console.print('\tR Rename Carousel files incrementally ',style="info")
         console.print('\tS Swap ICs in storage ',style="info")
+        console.print('\tD Swap 2 entire drawers ',style="info")
         
         console.print('\tX Exit',style="info")
-        choicesList=["R","S","X"]
+        choicesList=["R","S","X","D"]
         type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
         match type:
             case "R"|"r":
                 do_FOM_rename_files(OSSEP,console)
             case "S"|"s":
                 do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK)
+            case "D"|"d":
+                do_FOM_swap_drawer(OSSEP,console,DB,CHECK_MARK)
                             
             case "X"|"x":
                 console.print("Exiting", style="info")

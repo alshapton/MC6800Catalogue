@@ -16,8 +16,6 @@ JUL-2026
 --------
 
 * Added M68PPR2 PDS PROM Programmer to listing
-* Moved MC6809EP from SB1/D2 to SB1/D3
-* Moved MC6800P from SB2/D2 to SB1/D1
 * Added MEX6801EVM Evaluation Module to listing
 * Added MGD6800DSM Data Security Module to listing
 * Added MEX68USE2B USEB Cable and Buffer Assembly to listing
@@ -25,7 +23,11 @@ JUL-2026
 * Added MEX68PIC Printer Interconnect Cable to listing
 * Added MEX68SPM System Performance Module to listing
 * Added MEX68SPM(D) System Performance Module Users Guide to listing
-* Added new option to MEX68PP3 (software on EDOS Diskette)  
+* Added new option to MEX68PP3 (software on EDOS Diskette)
+* Moved MC6809EP from SB1/D2 to SB1/D3
+* Moved MC6800P from SB2/D2 to SB1/D1
+* Added new functionality to swap ICs in Drawer Storage
+* Added new Storage Box 3  
 
 JUL-2026.1
 ----------

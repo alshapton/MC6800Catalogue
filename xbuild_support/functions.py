@@ -117,17 +117,6 @@ def get_location(ref,md):
     return loc
 
 
-
-def multiline_input(prompt):
-    print(prompt + '(Ctrl-D to end):')
-    contents = []
-    while True:
-        try:
-            line = input()
-        except EOFError:
-            break
-        contents.append(line)
-
 def convert_MMM_to_MM(m):
     upperm=m.upper()
     match upperm:
