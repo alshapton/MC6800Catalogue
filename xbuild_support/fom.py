@@ -74,13 +74,13 @@ def do_FOM_swap_drawer(OSSEP,console,DB,CHECK_MARK):
 
     choice = Prompt.ask("Are these suitable to be swapped?", choices=["Y", "N"], default="N", case_sensitive=True)
     if choice == 'Y':    
-        #statement = "UPDATE ics set storage = '" + first_sb + "X', drawer = -1 where storage = '" + second_sb + "' and drawer = " + second_d + " ;"
-        #update_db(statement,DB)
-        #statement = "UPDATE ics set storage = '" + second_sb + "', drawer = " + second_d + " where storage = '" + first_sb + "' and drawer = " + first_d + " ;"
-        #update_db(statement,DB)
-        #statement = "UPDATE ics set storage = '" + first_sb + "', drawer = " + first_d + " where storage = '" + first_sb + "X' and drawer = -1 ;"
-        #update_db(statement,DB)
-        #console.print('Swapping has been done at the database.',style="info")
+        statement = "UPDATE ics set storage = '" + first_sb + "X', drawer = -1 where storage = '" + second_sb + "' and drawer = " + second_d + " ;"
+        update_db(statement,DB)
+        statement = "UPDATE ics set storage = '" + second_sb + "', drawer = " + second_d + " where storage = '" + first_sb + "' and drawer = " + first_d + " ;"
+        update_db(statement,DB)
+        statement = "UPDATE ics set storage = '" + first_sb + "', drawer = " + first_d + " where storage = '" + first_sb + "X' and drawer = -1 ;"
+        update_db(statement,DB)
+        console.print('Swapping has been done at the database.',style="info")
 
         print('ICs involved in swap')
         for i in ICs1:

@@ -245,7 +245,7 @@ def write_IC(filename,chipinfo,CHECK_MARK,DB):
     newgroupname=chipinfo["parent"]
 
     newfilename=filename + ".new.rst"
-    #newfilename=filename 
+    newfilename=filename 
     
     with open(newfilename, "w") as c:
         c.write(':orphan:\n\n')
