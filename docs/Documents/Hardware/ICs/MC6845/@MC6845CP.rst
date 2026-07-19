@@ -2,7 +2,7 @@
 
 .. _MC6845CP:
 
-.. #Metadata {'Product':'MC6845CP','Name':'MC6845CP CRT Controller','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':2}
+.. #Metadata {'Product':'MC6845CP','Name':'MC6845CP CRT Controller','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':1}
 
 MC6845CP CRT Controller
 =======================
@@ -21,7 +21,7 @@ MC6845CP CRT Controller
    "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 2 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 2, Column 1 <Storage_Box_2_Drawer_2>`"
    "Temperature","N/A"
    "Frequency","N/A"
    "Notes",""

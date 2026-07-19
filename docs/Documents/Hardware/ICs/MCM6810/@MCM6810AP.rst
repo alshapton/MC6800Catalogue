@@ -2,7 +2,7 @@
 
 .. _MCM6810AP:
 
-.. #Metadata {'Product':'MCM6810AP','Name':'MCM6810AP 128 x 8-bit RAM','Storage': 'Storage Box 1','Drawer':4,'Row':1,'Column':3}
+.. #Metadata {'Product':'MCM6810AP','Name':'MCM6810AP 128 x 8-bit RAM','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':3}
 
 MCM6810AP 128 x 8-bit RAM
 =========================

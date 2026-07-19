@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 05-07-2026).
+This is the timeline of acquisitions (as at 19-07-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -212,3 +212,5 @@ This is the timeline of acquisitions (as at 05-07-2026).
    21-MAY-2026,:ref:`Full ASCII Keyboard <M68KBD1>`
    17-JUN-2026,:ref:`MC68B21S Peripheral Interface Adapter (PIA) <MC68B21S>`
    24-JUN-2026,:ref:`MC6809-MC6809E Microprocessor Programming Manual <M6809PMAD>`
+   07-JUL-2026,:ref:`MC68B54PDS Advanced Data-Link Controller (ADLC) <MC68B54PDS>`
+   11-JUL-2026,:ref:`MCM6810AP-1 128 x 8-bit RAM <MCM6810AP-1>`

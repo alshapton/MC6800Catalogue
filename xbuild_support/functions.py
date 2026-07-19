@@ -1,4 +1,8 @@
-
+def cls():
+    import os
+    clear = lambda: os.system('clear')
+    clear()
+            
 def getDateRangeFromWeek(p_year,p_week):
     import datetime
     firstdayofweek = datetime.datetime.strptime(f'{p_year}-W{int(p_week )- 1}-1', "%Y-W%W-%w").date()

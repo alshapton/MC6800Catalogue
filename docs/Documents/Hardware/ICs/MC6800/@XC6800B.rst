@@ -16,8 +16,8 @@ XC6800B Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBC"
-   "Manufacture Date","TBC"
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
    "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering"
@@ -32,7 +32,7 @@ XC6800B Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 

@@ -2,7 +2,7 @@
 
 .. _MC68488L:
 
-.. #Metadata {'Product':'MC68488L','Name':'MC68488L General Purpose Interface Adapter','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':3}
+.. #Metadata {'Product':'MC68488L','Name':'MC68488L General Purpose Interface Adapter','Storage': 'Storage Box 3','Drawer':1,'Row':1,'Column':3}
 
 MC68488L General Purpose Interface Adapter
 ==========================================
@@ -21,7 +21,7 @@ MC68488L General Purpose Interface Adapter
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 3 <Storage_Box_1_Drawer_2>`"
+   "Location",":ref:`Storage Box 3, Drawer 1, Row 1, Column 3 <Storage_Box_3_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

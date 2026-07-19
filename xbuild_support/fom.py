@@ -1,4 +1,133 @@
+def do_get_storage_drawers(DB):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT distinct(concat(replace(sb,'SB',''),'-',drawer)) result FROM storage,drawers where type='Box' ORDER by result;"
+    output = read_db(statement,DB)
+    storage_properties=[]
+    for row in output:
+        storage_properties.append(row["result"])
+    return sorted(storage_properties)
 
+def do_get_rows_cols_for_drawer(DB,box,drawer):
+    # Really should move to db.py
+    from .db import read_db
+    rowscols=[]
+    statement = "SELECT *,concat(rows,'-',json_array_length(columns)) as rowcols FROM drawers where sb='SB" +  box + "' and drawer = '" + drawer + "';"
+    output = read_db(statement,DB)    
+    for row in output:
+        rowscols.append(row["rowcols"])
+    return sorted(rowscols)
+    
+def do_get_rows_col_count_for_drawer(DB,box,drawer):
+    # Really should move to db.py
+    from .db import read_db
+    rowscols=[]
+    statement = "SELECT *,concat(rows,'-',json_array_length(columns)) as rowcols FROM drawers where sb='SB" +  box + "' and drawer = '" + drawer + "';"
+    output = read_db(statement,DB)    
+    for row in output:
+        rows=row["rowcols"].split("-")[0]
+        cols=row["rowcols"].split("-")[1]
+        return rows,cols
+    
+def do_FOM_move_IC(OSSEP,console,CHECK_MARK,DB):
+    import json
+    from .db import read_db, update_db
+    from rich.prompt import Prompt
+    from .functions import write_IC
+        
+    IC = input("Enter IC to move: ")
+    
+    statement = "SELECT * FROM ics WHERE icid = '" + IC + "';"
+
+    output = read_db(statement,DB)
+    c=0
+    for row in output:
+        c=c+1 
+    if c == 0:
+        console.print('IC ' + IC + ' not found',style="danger")
+        input ("")
+        return
+    if c > 1:
+        console.print('IC ' + IC + ' found multiple times - manual update required',style="danger")
+        input ("")
+        return
+
+    if c == 1:
+        for row in output:    
+            filename1 = row["filename"]
+            status1=row["status"]
+            storage1=row["storage"]
+            drawer1=row["drawer"]
+            row1=row["row"]
+            col1=row["col"]
+            filename1 = row["filename"]
+
+            if (row["status"] != 'present'):
+                console.print('Current status of ' + row["icid"] + ' is ' + row["status"],style="info")
+                
+                return
+    
+    # Get sorted storage boxes and drawers
+    sorted_storage = do_get_storage_drawers(DB)
+    location = Prompt.ask("Enter SB/Drawer ", choices=sorted_storage, case_sensitive=True)
+
+    #PROPERTIES_FILE='storage.properties'
+    #file1 = open(PROPERTIES_FILE, 'r')
+    #properties = file1.readlines()
+    #for prop in properties:
+    #    if 'Storage' in prop:
+    #        storage_properties.append(prop)
+    #storagejson=json.loads(storage_properties[0].replace("'",'"'))["Storage"]
+    #SB_PREFIX="Storage Box "
+    #storage=[]
+    #for i in storagejson:        
+    #    drawers=i["Drawers"]
+    #    for d in drawers:
+    #        drawer=d["Drawer"]
+    #        storage.append(i["Name"].replace(SB_PREFIX,'')+'-'+str(drawer))
+    #    
+    SB_PREFIX="Storage Box "
+    split_loc = location.split("-")
+    sb=SB_PREFIX + split_loc[0]
+    d=split_loc[1]
+
+    #for i in storagejson:
+    #    if i["Name"]==sb:
+    #        for dr in i["Drawers"]:
+    #            if str(dr["Drawer"]) == d:
+    #                for rloop in range (dr["Row"]):
+    #                    for loop in range(len(dr["Columns"])):
+    #                        rowscols.append(str(rloop+1) + '-' + str(loop+1))
+
+    sorted_rc=do_get_rows_cols_for_drawer(DB,split_loc[0],d)
+    location = Prompt.ask("Enter Row/Col in Drawer " + str(d) + " in " + sb + " ", choices=sorted_rc, case_sensitive=True)
+    
+    split_rc = location.split("-")
+    r=split_rc[0]
+    c=split_rc[1]
+
+    output= "Moving " + IC + " from \t"  + storage1 + ", Drawer " + str(drawer1) + ", Row " + str(row1) + ", Column " + str(col1)
+    output = output +   "\n \t\tto "  + sb + ", Drawer " + str(d) + ", Row " + str(r) + ", Column " + str(c)
+    console.print(output,style="info")
+    
+    choice = Prompt.ask("Is this the correct move?", choices=["Y", "N"], default="N", case_sensitive=True)
+    if choice == 'Y':    
+    
+        statement = "UPDATE ics " + \
+        "set storage = '" + sb + "', " +  \
+        "    drawer = '" + d + "', " +  \
+        "    row = '" + r + "', " +  \
+        "    col = '" + c + "' " +  \
+        "WHERE icid = '" + IC + "';"
+        output = update_db(statement,DB)
+
+        console.print('Swapping has been done at the database.',style="info")
+        # Now we can generate the files
+
+        output=read_db("SELECT * FROM ics WHERE icid = '" + IC + "';",DB)
+        for chipinfo in output:
+            write_IC(filename1,chipinfo,CHECK_MARK,DB)
+    return
 
 def print_FOM_drawers(output):
     ICs=[]
@@ -26,85 +155,78 @@ def do_FOM_swap_drawer(OSSEP,console,DB,CHECK_MARK):
     from .functions import write_IC
     from .db import read_db, update_db
 
-    output="This is experimental - CTRL-C to exit"
+    output="Only possible if BOTH drawers have the same row x columns. \nCTRL-C to exit"
     console.print(output, style="danger")           
- 
-    storage_properties=[]
-    PROPERTIES_FILE='storage.properties'
-    file1 = open(PROPERTIES_FILE, 'r')
-    properties = file1.readlines()
-    for prop in properties:
-        if 'Storage' in prop:
-            storage_properties.append(prop)
     
-    storagejson=json.loads(storage_properties[0].replace("'",'"'))["Storage"]
     SB_PREFIX="Storage Box "
-    storage=[]
-    for i in storagejson:        
-        drawers=i["Drawers"]
-        for d in drawers:
-            drawer=d["Drawer"]
-            storage.append(i["Name"].replace(SB_PREFIX,'')+'-'+str(drawer))
-        
-    sorted_storage=sorted(storage)
+    sorted_storage = do_get_storage_drawers(DB)
     
     first_location = Prompt.ask("Enter SB/Drawer 1", choices=sorted_storage, case_sensitive=True)
+    split_loc = first_location.split("-")
+    rows1,cols1=do_get_rows_col_count_for_drawer(DB,split_loc[0],split_loc[1])
+    
     sorted_storage.remove(first_location)
     second_location = Prompt.ask("Enter SB/Drawer 2", choices=sorted_storage, case_sensitive=True)
-
-    split_loc = first_location.split("-")
-    first_sb=SB_PREFIX + split_loc[0]
-    first_d=split_loc[1]
-
     split_loc = second_location.split("-")
-    second_sb=SB_PREFIX + split_loc[0]
-    second_d=split_loc[1]
+    rows2,cols2=do_get_rows_col_count_for_drawer(DB,split_loc[0],split_loc[1])
     
-    output=first_sb + " Drawer " + first_d
-    console.print(output, style="info")           
-    statement = "SELECT * FROM ics where storage = '" + first_sb + "' and drawer = " + first_d + " order by row,col;"
-    output = read_db(statement,DB)
-    ICs1=print_FOM_drawers(output)
-    
-    output=second_sb + " Drawer " + second_d
-    console.print(output, style="info")           
-    statement = "SELECT * FROM ics where storage = '" + second_sb + "' and drawer = " + second_d + " order by row,col;"
-    output = read_db(statement,DB)
-    ICs2=print_FOM_drawers(output)
+    if rows1==rows2 and cols1==cols2:
 
-    choice = Prompt.ask("Are these suitable to be swapped?", choices=["Y", "N"], default="N", case_sensitive=True)
-    if choice == 'Y':    
-        statement = "UPDATE ics set storage = '" + first_sb + "X', drawer = -1 where storage = '" + second_sb + "' and drawer = " + second_d + " ;"
-        update_db(statement,DB)
-        statement = "UPDATE ics set storage = '" + second_sb + "', drawer = " + second_d + " where storage = '" + first_sb + "' and drawer = " + first_d + " ;"
-        update_db(statement,DB)
-        statement = "UPDATE ics set storage = '" + first_sb + "', drawer = " + first_d + " where storage = '" + first_sb + "X' and drawer = -1 ;"
-        update_db(statement,DB)
-        console.print('Swapping has been done at the database.',style="info")
+        split_loc = first_location.split("-")
+        first_sb=SB_PREFIX + split_loc[0]
+        first_d=split_loc[1]
 
-        print('ICs involved in swap')
-        for i in ICs1:
+        split_loc = second_location.split("-")
+        second_sb=SB_PREFIX + split_loc[0]
+        second_d=split_loc[1]
+        
+        output=first_sb + " Drawer " + first_d
+        console.print(output, style="info")           
+        statement = "SELECT * FROM ics where storage = '" + first_sb + "' and drawer = " + first_d + " order by row,col;"
+        output = read_db(statement,DB)
+        ICs1=print_FOM_drawers(output)
+        
+        output=second_sb + " Drawer " + second_d
+        console.print(output, style="info")           
+        statement = "SELECT * FROM ics where storage = '" + second_sb + "' and drawer = " + second_d + " order by row,col;"
+        output = read_db(statement,DB)
+        ICs2=print_FOM_drawers(output)
 
-            output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
-            for chipinfo in output:
-                write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
-            print(i)
-        for i in ICs2:
-            output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
-            for chipinfo in output:
-                write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
-            print(i)
-        console.print('Swapping has been done at the file level.',style="info")
-        console.print('\nSwapping is complete.',style="info")
-        return
+        choice = Prompt.ask("Are these suitable to be swapped?", choices=["Y", "N"], default="N", case_sensitive=True)
+        if choice == 'Y':    
+            statement = "UPDATE ics set storage = '" + first_sb + "X', drawer = -1 where storage = '" + second_sb + "' and drawer = " + second_d + " ;"
+            update_db(statement,DB)
+            statement = "UPDATE ics set storage = '" + second_sb + "', drawer = " + second_d + " where storage = '" + first_sb + "' and drawer = " + first_d + " ;"
+            update_db(statement,DB)
+            statement = "UPDATE ics set storage = '" + first_sb + "', drawer = " + first_d + " where storage = '" + first_sb + "X' and drawer = -1 ;"
+            update_db(statement,DB)
+            console.print('Swapping has been done at the database.',style="info")
+
+            print('ICs involved in swap')
+            for i in ICs1:
+
+                output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
+                for chipinfo in output:
+                    write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
+                print(i)
+            for i in ICs2:
+                output=read_db("SELECT * FROM ics WHERE icid = '" + i + "';",DB)
+                for chipinfo in output:
+                    write_IC(chipinfo["filename"],chipinfo,CHECK_MARK,DB)
+                print(i)
+            console.print('Swapping has been done at the file level.',style="info")
+            console.print('\nSwapping is complete.',style="info")
+            input("")
+            return
+    else:
+        console.print('The drawers are not compatible, since the rows and columns of each differ.They cannot be swapped.',style="danger")
+        input("")
 
 def do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK):
     from .db import read_db, update_db
     from rich.prompt import Prompt
     from .functions import write_IC
 
-    output="This is experimental - CTRL-C to exit"
-    console.print(output, style="danger")           
     first_IC = input("Enter IC 1: ")
     
     statement = "SELECT * FROM ics WHERE icid = '" + first_IC + "';"

@@ -1,0 +1,211 @@
+{
+    "storage": [
+        {
+            "id": 1,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 1"
+        },
+        {
+            "id": 2,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 2"
+        },
+        {
+            "id": 3,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 4"
+        },
+        {
+            "id": 4,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 6"
+        },
+        {
+            "id": 5,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 7"
+        },
+        {
+            "id": 6,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 8"
+        },
+        {
+            "id": 7,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "M6800 Microcomputer System Support Products"
+        },
+        {
+            "id": 8,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Microprocessor Course"
+        },
+        {
+            "id": 9,
+            "type": "Other",
+            "name": "Briefcase",
+            "description": "Briefcase MES6800"
+        },
+        {
+            "id": 10,
+            "type": "Other",
+            "name": "EDUCATORII",
+            "description": "Educator II Microcomputer Kit"
+        },
+        {
+            "id": 11,
+            "type": "Other",
+            "name": "Boxed",
+            "description": "Still Boxed"
+        },
+        {
+            "id": 12,
+            "type": "Other",
+            "name": "MEK6800D2",
+            "description": "Components attached to the MEK6800D2 Board"
+        },
+        {
+            "id": 13,
+            "type": "Other",
+            "name": "M68MM04A",
+            "description": "Components attached to the M68MM04A Board"
+        },
+        {
+            "id": 14,
+            "type": "Other",
+            "name": "M68MM16",
+            "description": "Components attached to the M68MM16 Board"
+        },
+        {
+            "id": 15,
+            "type": "Other",
+            "name": "M68MM12",
+            "description": "Components attached to the M68MM12 Board"
+        },
+        {
+            "id": 16,
+            "type": "Other",
+            "name": "Hardware",
+            "description": "Hardware Store"
+        },
+        {
+            "id": 17,
+            "type": "Box",
+            "name": "SB1",
+            "description": "Storage Box 1"
+        },
+        {
+            "id": 18,
+            "type": "Box",
+            "name": "SB2",
+            "description": "Storage Box 2"
+        },
+        {
+            "id": 19,
+            "type": "Box",
+            "name": "SB3",
+            "description": "Storage Box 3"
+        }
+    ],
+    "drawers": [
+        {
+            "id": 1,
+            "sb": "SB1",
+            "drawer": "1",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 2,
+            "sb": "SB1",
+            "drawer": "2",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 3,
+            "sb": "SB1",
+            "drawer": "3",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 4,
+            "sb": "SB1",
+            "drawer": "4",
+            "rows": "3",
+            "columns": "[16, 16, 16, 16, 16, 16]"
+        },
+        {
+            "id": 5,
+            "sb": "SB2",
+            "drawer": "0",
+            "rows": "2",
+            "columns": "[50,50]"
+        },
+        {
+            "id": 6,
+            "sb": "SB2",
+            "drawer": "1",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 7,
+            "sb": "SB2",
+            "drawer": "2",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 8,
+            "sb": "SB2",
+            "drawer": "3",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 9,
+            "sb": "SB2",
+            "drawer": "4",
+            "rows": "3",
+            "columns": "[16, 16, 16, 16, 16, 16]"
+        },
+        {
+            "id": 10,
+            "sb": "SB3",
+            "drawer": "1",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 11,
+            "sb": "SB3",
+            "drawer": "2",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 12,
+            "sb": "SB3",
+            "drawer": "3",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        },
+        {
+            "id": 13,
+            "sb": "SB3",
+            "drawer": "4",
+            "rows": "3",
+            "columns": "[33,34,33]"
+        }
+    ]
+}

@@ -81,6 +81,7 @@ More information about document statuses can be found here :ref:`glossary_docume
    ##INTRANSIT##
    ##UNDEROFFER##
    Statistics <statistics>
+   Technical Information <workflow>
 
 .. toctree::
    :titlesonly:

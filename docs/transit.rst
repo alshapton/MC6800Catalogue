@@ -2,7 +2,7 @@
 
 In-Transit
 ===========
-This is the current set of items (as at 05-07-2026) in transit.
+This is the current set of items (as at 19-07-2026) in transit.
 
 
 .. rubric:: ICs
@@ -12,5 +12,4 @@ This is the current set of items (as at 05-07-2026) in transit.
 	:widths: 30, 70
 
 	MC6803L-1,":ref:`MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC6803L-1>` "
-	MC68B54PDS,":ref:`MC68B54PDS Advanced Data-Link Controller (ADLC) <MC68B54PDS>` "
-	MCM6810AP-1,":ref:`MCM6810AP-1 128 x 8-bit RAM <MCM6810AP-1>` "
+	XC6800B,":ref:`XC6800B Microprocessor Unit <XC6800B>` "
