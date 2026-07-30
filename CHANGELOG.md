@@ -19,6 +19,7 @@ Changes to the repository are documented here.
 ## AUG-2026
 
 :ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-03-11  
+:bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan) 
 
 ## JUL-2026
 :new: Added new logo for website in readiness for `VCF GB 2026 <https://www.facebook.com/vcfgb>`_   
