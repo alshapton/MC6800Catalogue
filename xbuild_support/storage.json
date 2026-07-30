@@ -113,6 +113,18 @@
             "type": "Box",
             "name": "SB3",
             "description": "Storage Box 3"
+        },
+        {
+            "id": 20,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 3"
+        },
+        {
+            "id": 21,
+            "type": "Folder",
+            "name": "Folder",
+            "description": "Folder 5"
         }
     ],
     "drawers": [
@@ -143,13 +155,6 @@
             "drawer": "4",
             "rows": "3",
             "columns": "[16, 16, 16, 16, 16, 16]"
-        },
-        {
-            "id": 5,
-            "sb": "SB2",
-            "drawer": "0",
-            "rows": "2",
-            "columns": "[50,50]"
         },
         {
             "id": 6,

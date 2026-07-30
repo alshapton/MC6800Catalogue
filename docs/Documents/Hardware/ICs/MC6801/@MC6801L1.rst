@@ -2,7 +2,7 @@
 
 .. _MC6801L1:
 
-.. #Metadata {'Product':'MC6801L1','Name':'MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6801L1','Name':'MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)','Storage': 'Storage Box 2','Drawer':1,'Row':1,'Column':1}
 
 MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
 ========================================================
@@ -21,7 +21,7 @@ MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801)
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 2 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 1, Column 1 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

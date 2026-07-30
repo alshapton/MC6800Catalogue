@@ -1,3 +1,163 @@
+
+def produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
+    from .fom import do_get_folders,do_get_artefacts_for_folder,do_get_others
+    from .db import read_db
+    SOURCE='docs/Documents/Hardware/ICs/snippets/tables.fragment.'
+    
+    statement="SELECT distinct(location) FROM ics where location like '%<%>%' and location not like '%Storage%' order by location ;"
+    output = read_db(statement,DB)
+    for row in output:
+        location=row["location"]
+        loc=location.split('<')
+        locright=loc[1][:-2]
+        mainlabel=locright[:int(len(locright)/2)]
+        print(mainlabel)
+        FILENAME = SOURCE + mainlabel + '.' + mainlabel + '.snippet'
+
+        with open(FILENAME,"w") as opf:
+
+            opf.write('.. _' + mainlabel + '_' + mainlabel+':\n')
+            opf.write('\n')
+            opf.write('\n.. rubric:: ' +  mainlabel.replace('_',' ') + '\n')
+            opf.write('\n')
+            opf.write('.. csv-table::\n')
+            opf.write('   :header-rows: 0\n')
+            opf.write('   :widths: 50,50\n')
+            opf.write('\n')
+            
+            statement="SELECT icid,name FROM ics where location = '" + location + "' order by icid;"
+            ics = read_db(statement,DB)
+            for ic in ics:
+                opf.write('   |i'+ic["icid"] + '|, :ref:`'+ic["name"]+'<'+ic["icid"]+'>`\n')
+                
+
+    with open('mapfile',"w") as opf:
+
+        folders=do_get_folders(DB)    
+    
+        for folder in folders:
+            documents = do_get_artefacts_for_folder(DB,folder)
+            number_of_documents = len(documents)
+            if number_of_documents > 0:                
+                label='\n\n.. _'+folder.replace(' ','_') + '_map_reference:\n'
+                opf.write('\n')
+                opf.write(label)
+                opf.write('\n.. rubric:: Folder ' +  folder + '\n')
+                opf.write('\n')
+                opf.write('.. csv-table::\n')
+                opf.write('   :header: "Name","Comments"\n')
+                opf.write('   :widths: 60,40\n')
+                opf.write('\n')
+                
+                for document in documents:
+                    opf.write('    :ref:`' + document["name"] + '<' + document["documentid"] + '>`,"' + document["comments"] + '"\n')
+                opf.write('\n')
+                opf.write('\n')
+
+
+        others=do_get_others(DB)    
+    
+        for other in others:
+            documents = do_get_artefacts_for_folder(DB,other)
+            number_of_documents = len(documents)
+            if number_of_documents > 0:
+                print('Storage: ' + other + ' has ' + str(number_of_documents))
+                
+                label='\n\n.. _'+folder.replace(' ','_') + '_map_reference:\n'
+                opf.write('\n')
+                opf.write(label)
+                opf.write('\n.. rubric:: Other ' +  folder + '\n')
+                opf.write('\n')
+                opf.write('.. csv-table::\n')
+                opf.write('   :header: "Name","Comments"\n')
+                opf.write('   :widths: 60,40\n')
+                opf.write('\n')
+                
+                for document in documents:
+                    opf.write('    :ref:`' + document["name"] + '<' + document["documentid"] + '>`,"' + document["comments"] + '"\n')
+                opf.write('\n')
+                opf.write('\n')
+    #exit()
+
+    # Need to do folder map for hardware here...
+    return
+
+
+def produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
+    from .fom import do_get_storage_drawers,do_get_col_widths_for_drawer,do_get_IC_for_place,do_get_rows_cols_for_drawer,do_count_IC_in_SBs,do_get_rows_col_count_for_drawer,do_count_IC_in_SB_D
+    from .db import read_db
+
+    
+    SB_PREFIX="Storage Box "
+    SOURCE='docs/Documents/Hardware/ICs/snippets/tables.fragment.'
+    # "|iMC68701CL-1| :ref:`MC68701CL-1 <MC68701CL-1>`"
+    template = '"|i##| :ref:`## <##>`"'
+    
+    # Need to do folder map for non-storage box stuff here
+
+    sb_drawers=do_get_storage_drawers(DB)
+
+    # Check to see if there are any ICs in this SB first.....
+    icsinboxes=do_count_IC_in_SBs(DB)
+    for row in icsinboxes:
+        if row["ics"]>0:
+            
+            
+            this_sb=row["storage"].replace(SB_PREFIX,'')
+            
+            # Get number of drawers in this SB
+            for sb_drawer in sb_drawers:
+                if this_sb == sb_drawer.split('-')[0]:
+                    this_draw_in_this_sb = sb_drawer.split('-')[1]
+                    c_in_d = do_count_IC_in_SB_D(DB,row["storage"],this_draw_in_this_sb)
+                    if c_in_d > 0:
+                        rc_for_drawer=do_get_rows_cols_for_drawer(DB,this_sb,this_draw_in_this_sb)
+                        columns=do_get_col_widths_for_drawer(DB,sb_drawer.split('-')[0].replace(SB_PREFIX,''),sb_drawer.split('-')[1])
+                       
+
+                        # Now we know that there are ics in this drawer/sb combo            
+                        # and we have the row/col count
+                        # Create blank for this drawer
+                        row_count = rc_for_drawer[0].split('-')[0]
+                        col_count = rc_for_drawer[0].split('-')[1]
+                        storage_row=[]
+                        storage_col=[]
+                        
+                        for rc in range(1,int(row_count)+1):
+                            storage_col=[]
+                            for cc in range(1,int(col_count)+1):                                
+                                IC=''
+                                IC = do_get_IC_for_place(DB,row["storage"],this_draw_in_this_sb,str(rc),str(cc))
+                                if IC != '':
+                                    content=template.replace('##',IC,1)
+                                    content=content.replace('##',IC,1).replace('2!','')
+                                    content=content.replace('##',IC,1)
+                                    storage_col.append(content)
+                                else:
+                                    storage_col.append('""')
+                            storage_row.append(storage_col)
+
+                        widths=columns[0].replace('[','').replace(']','').replace(' ','')
+                        outputfile=SOURCE + row["storage"].replace(' ','_') + '.Drawer_' + sb_drawer.split('-')[1] + '.snippet'
+                        with open(outputfile,"w") as opf:
+                            label='\n\n.. _'+row["storage"].replace(' ','_') + '_Drawer_' + sb_drawer.split('-')[1]+':\n'
+                            opf.write(label)
+                            opf.write('\n')
+                            opf.write('.. rubric:: Drawer ' +  sb_drawer.split('-')[1] + '\n')
+                            opf.write('\n')
+                            opf.write('.. csv-table::\n')
+                            opf.write('   :header-rows: 0\n')
+                            opf.write('   :widths: ' + widths + '\n')
+                            opf.write('\n')
+                            for rc in range(0,int(row_count)):                            
+                                output_row='   '
+                                for col in range(len(storage_row[rc])):
+                                    output_row=output_row + storage_row[rc][col] + ','
+                                output_row=output_row[:-1]
+                                if "<" in output_row:
+                                    opf.write(output_row + '\n')
+           
+
 def cls():
     import os
     clear = lambda: os.system('clear')
@@ -291,7 +451,6 @@ def write_IC(filename,chipinfo,CHECK_MARK,DB):
 
         if chipinfo["notes"] != '':
             c.write(chipinfo["notes"])
-
         c.write('.. rubric:: Specific Information\n\n')
         c.write('.. csv-table:: \n')
         c.write('   :widths: auto\n\n')

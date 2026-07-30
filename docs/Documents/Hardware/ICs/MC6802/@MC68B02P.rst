@@ -2,7 +2,7 @@
 
 .. _MC68B02P:
 
-.. #Metadata {'Product':'MC68B02P','Name':'MC68B02P Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC68B02P','Name':'MC68B02P Microprocessor with Clock and Optional RAM (MC6802)','Storage': 'Storage Box 2','Drawer':2,'Row':1,'Column':1}
 
 MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
 ============================================================
@@ -21,7 +21,7 @@ MC68B02P Microprocessor with Clock and Optional RAM (MC6802)
    "Mask","1R1H"
    "Packaging","Plastic"
    "Status","TBD"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 1, Column 1 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

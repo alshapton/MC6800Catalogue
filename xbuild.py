@@ -788,7 +788,6 @@ def update_storage():
 
     console.print('\n\tSplitting',style="info")
     console.print('\t\tLVL1 Splitting',style="info")
-
     with open(TABLES_FILE,"r") as tf:
         data = ''
         line=tf.readline()
@@ -883,11 +882,17 @@ def update_storage():
             display_tfname=os.path.basename(snippetfile).replace('tables.fragment..','').replace('tables.fragment.','')
         console.print('\t\t\t' + display_tfname,style="info")
     
+    # Produce new IC snippets files
+    console.print('\nProducing V2 Storage Box/Drawer snippet files',style="info")
+    produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
+    
+    
     # Move snippets into snippets folder
     console.print('\n\t\tMoving snippets into snippets folder',style="info")
 
     snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
-    print('Snippet index file: ' + snippeticindexfile)
+
+
     HDR=''
     with open(snippeticindexfile, 'w') as sicif:
 
@@ -918,6 +923,10 @@ def update_storage():
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
+    
+    # Produce new Folder snippets files
+    console.print('\nProducing V2 Folder snippet files',style="info")
+    produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
 
 
     console.print('\nCleaning Up',style="info")
@@ -1839,7 +1848,8 @@ def rebuild_db(DB):
                             metadata            TEXT,        \
                             filename            TEXT,        \
                             status              TEXT,        \
-                            bigger              TEXT         \
+                            bigger              TEXT,        \
+                            comments            TEXT         \
                             );")
     conn.commit()
 
@@ -2017,6 +2027,7 @@ def rebuild_db(DB):
             notes=''
             status=''
             bigger=''
+            comments=''
             with open(file, 'r') as f:
 
                 prevproductname=''                
@@ -2093,6 +2104,11 @@ def rebuild_db(DB):
                         location = metadata_dict["Folder"]
                         location = location.replace("None",'')
 
+                        if "Comments" in metadata:
+                            comments = metadata_dict["Comments"]
+                        else:
+                            comments=''
+
                     if line.startswith('.. _'):
                         tag=line.replace('.. _','').split(':')[0]
                     if line.startswith("====="):
@@ -2118,10 +2134,10 @@ def rebuild_db(DB):
                                 console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
-                            real_date, tag,notes, location, metadata,filename, status,bigger) \
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                            real_date, tag,notes, location, metadata,filename, status,bigger,comments) \
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
                     (documenttype,documentid, documentid, productname, acquired_date,converted_date,tag,\
-                    notes,location,metadata,file,status,bigger))
+                    notes,location,metadata,file,status,bigger,comments))
             conn.commit()
 
 
@@ -2308,22 +2324,25 @@ def update_chip_info(f):
 
     
 def do_admin_menu(console):
-    from xbuild_support.admin import do_ADMIN_unload_seed,do_ADMIN_unload_storage,do_ADMIN_load_storage
+    from xbuild_support.admin import do_ADMIN_unload_seed,do_ADMIN_unload_storage,do_ADMIN_load_storage,do_ADMIN_chip_storage_report
 
     while True:
         cls()
 
         console.print("\t  Admin Menu\n",style="bold black")
         console.print('\tU Unload Seed file ',style="info")
-        console.print('\tS Unload Storage (WIP) ',style="info")
-        console.print('\tL Load Storage (WIP) ',style="info")        
+        console.print('\tS Unload Storage  ',style="info")
+        console.print('\tL Load Storage ',style="info") 
+        console.print('\tT Chip Storage Report',style="info")       
         console.print('\tD Delete DB',style="danger")
         console.print('\tR Rebuild DB\n',style="info")
 
         console.print('\n\tX Exit',style="info")
-        choicesList=["X","U","D","R","S","L"]
+        choicesList=["X","U","D","R","S","L","T"]
         type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
         match type:
+            case "T"|"t":
+                do_ADMIN_chip_storage_report(OSSEP,console,DB,XBS)
             case "S"|"s":
                 do_ADMIN_unload_storage(OSSEP,console,DB,XBS,'storage.json')
             case "L"|"l":

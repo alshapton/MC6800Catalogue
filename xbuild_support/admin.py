@@ -1,9 +1,25 @@
+
 # https://stackoverflow.com/a/3300514/15239951
 def dict_factory(cursor, row):
     d = {}
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
     return d
+
+
+def do_ADMIN_chip_storage_report(OSSEP,console,DB,XBS):
+
+    from .db import read_db
+    import json
+    REPORT_FILENAME='report.csv'
+    chiprows = read_db("SELECT * FROM ics where drawer > 0 order by storage, drawer, row, col;",DB)
+    headerrow='IC,Name,StorageBox,Drawer,Row,Col\n'
+    with open(XBS + OSSEP + REPORT_FILENAME, 'w') as fp:
+        fp.write(headerrow)
+        for chip in chiprows:
+            outputrow=chip["icid"]+ ',' + chip["Name"]+ ',' + chip["Storage"]+ ',' + chip["Drawer"]+ ',' + chip["Row"]+ ',' + chip["Col"]+'\n'
+            fp.write(outputrow)
+
 
 def do_ADMIN_unload_storage(OSSEP,console,DB,XBS,STORAGE_FILENAME):
 

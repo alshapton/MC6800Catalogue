@@ -1,3 +1,53 @@
+
+
+
+
+def do_get_artefacts_for_folder(DB,folder):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT * from documents where location = '" + folder + "' order by name;"
+    output = read_db(statement,DB)
+    return output
+
+def do_get_others(DB):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT name,description from storage where type != 'Folder' and type != 'Box' order by name,description;"
+    output = read_db(statement,DB)
+    folders=[]
+    for row in output:
+        folders.append(row["description"])
+    return folders
+
+def do_get_folders(DB):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT name,description from storage where type = 'Folder' order by name,description;"
+    output = read_db(statement,DB)
+    folders=[]
+    for row in output:
+        if row["description"].startswith('Folder'):
+            folders.append(row["description"].replace('Folder ',''))
+        else:
+            folders.append(row["description"])
+    return folders
+
+def do_count_IC_in_SBs(DB):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT storage,count(icid) as ics FROM ics where storage like 'Storage Box%' and storage != '' group by storage;"
+    output = read_db(statement,DB)
+    return output
+
+def do_count_IC_in_SB_D(DB,sb,d):
+    # Really should move to db.py
+    from .db import read_db
+    statement="SELECT count(icid) as Tics FROM ics where storage = '" + sb + "' and drawer = '" + d + "';"
+    output = read_db(statement,DB)
+    for row in output:
+        ics_in_d=row["Tics"]
+    return ics_in_d
+
 def do_get_storage_drawers(DB):
     # Really should move to db.py
     from .db import read_db
@@ -18,6 +68,16 @@ def do_get_rows_cols_for_drawer(DB,box,drawer):
         rowscols.append(row["rowcols"])
     return sorted(rowscols)
     
+def do_get_col_widths_for_drawer(DB,box,drawer):
+    # Really should move to db.py
+    from .db import read_db
+    columns=[]
+    statement = "SELECT columns FROM drawers where sb='SB" +  box + "' and drawer = '" + drawer + "';"
+    output = read_db(statement,DB)    
+    for row in output:
+        columns.append(row["columns"])
+    return columns
+    
 def do_get_rows_col_count_for_drawer(DB,box,drawer):
     # Really should move to db.py
     from .db import read_db
@@ -28,6 +88,17 @@ def do_get_rows_col_count_for_drawer(DB,box,drawer):
         rows=row["rowcols"].split("-")[0]
         cols=row["rowcols"].split("-")[1]
         return rows,cols
+    
+def do_get_IC_for_place(DB,box,drawer,r,c):
+    # Really should move to db.py
+    from .db import read_db
+    
+    statement = "SELECT * FROM ics where storage= '" +  box + "' and drawer = '" + drawer + "' and row = '" + r + "' and col = '" + c + "';"
+    output = read_db(statement,DB)    
+    icid = ''
+    for row in output:
+        icid = row["icid"]
+    return icid
     
 def do_FOM_move_IC(OSSEP,console,CHECK_MARK,DB):
     import json
@@ -71,37 +142,16 @@ def do_FOM_move_IC(OSSEP,console,CHECK_MARK,DB):
     sorted_storage = do_get_storage_drawers(DB)
     location = Prompt.ask("Enter SB/Drawer ", choices=sorted_storage, case_sensitive=True)
 
-    #PROPERTIES_FILE='storage.properties'
-    #file1 = open(PROPERTIES_FILE, 'r')
-    #properties = file1.readlines()
-    #for prop in properties:
-    #    if 'Storage' in prop:
-    #        storage_properties.append(prop)
-    #storagejson=json.loads(storage_properties[0].replace("'",'"'))["Storage"]
-    #SB_PREFIX="Storage Box "
-    #storage=[]
-    #for i in storagejson:        
-    #    drawers=i["Drawers"]
-    #    for d in drawers:
-    #        drawer=d["Drawer"]
-    #        storage.append(i["Name"].replace(SB_PREFIX,'')+'-'+str(drawer))
-    #    
     SB_PREFIX="Storage Box "
     split_loc = location.split("-")
     sb=SB_PREFIX + split_loc[0]
     d=split_loc[1]
 
-    #for i in storagejson:
-    #    if i["Name"]==sb:
-    #        for dr in i["Drawers"]:
-    #            if str(dr["Drawer"]) == d:
-    #                for rloop in range (dr["Row"]):
-    #                    for loop in range(len(dr["Columns"])):
-    #                        rowscols.append(str(rloop+1) + '-' + str(loop+1))
 
-    sorted_rc=do_get_rows_cols_for_drawer(DB,split_loc[0],d)
-    location = Prompt.ask("Enter Row/Col in Drawer " + str(d) + " in " + sb + " ", choices=sorted_rc, case_sensitive=True)
+    sorted_rc=do_get_rows_cols_for_drawer(DB,'SB' + split_loc[0],d)
     
+    
+    location = input("Enter Row/Col in Drawer " + str(d) + " in " + sb + " e.g. [2-1] : ")
     split_rc = location.split("-")
     r=split_rc[0]
     c=split_rc[1]

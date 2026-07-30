@@ -1,0 +1,36 @@
+:orphan:
+
+.. _MC6843SL:
+
+.. #Metadata {'Product':'MC6843SL','Name':'MC6843SL Floppy Disk Controller (FDC) (MC6843)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+
+MC6843SL Floppy Disk Controller (FDC) (MC6843)
+==============================================
+
+.. image:: ../../../../images/NOIMAGE.png
+   :width: 400
+   :align: center
+
+.. rubric:: Specific Information
+
+.. csv-table:: 
+   :widths: auto
+
+   "Date Code","TBD"
+   "Manufacture Date","TBD"
+   "Mask",""
+   "Packaging","Ceramic"
+   "Status","Production"
+   "Location","TBD"
+   "Temperature","0-70\ :sup:`o`\ C"
+   "Frequency","1 Mhz"
+   "Notes",""
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |intransit| 
+

@@ -3,11 +3,12 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 19-07-2026).
+This is the timeline of acquisitions (as at 30-07-2026).
 
 .. csv-table::
    :header: "Date","Product" 
 
+   29-07-2026,:ref:`XC6800B Microprocessor Unit <XC6800B>`
    05-DEC-2024,:ref:`M6800 Programming Reference Manual <M68PRM(D)>`
    27-JAN-2025,:ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`
    30-JAN-2025,:ref:`MC6800L Microprocessor Unit <MC6800L>`

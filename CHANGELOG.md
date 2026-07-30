@@ -16,8 +16,10 @@ The symbols used in the notes are as follows:
 
 Changes to the repository are documented here. 
 
-
 ## JUL-2026
+:new: Added new logo for website in readiness for `VCF GB 2026 <https://www.facebook.com/vcfgb>`_   
+:new: Added MC6843SL Floppy Disk Controller (FDC) to intransit  
+:new: Added MC6843SP Floppy Disk Controller (FDC) to intransit  
 :new: Added MCM6810AP-1 to collection  
 :new: Added MC68B54PDS to collection  
 :new: Added M68PPR2 PDS PROM Programmer to listing  
@@ -28,17 +30,23 @@ Changes to the repository are documented here.
 :new: Added MEX68PIC Printer Interconnect Cable to listing  
 :new: Added MEX68SPM System Performance Module to listing  
 :new: Added MEX68SPM(D) System Performance Module Users Guide to listing  
-:eight_spoked_asterisk: Added XC6800B to in transit  
+:new: Added XC6800B to in collection  
 :eight_spoked_asterisk: Added new option to MEX68PP3 (software on EDOS Diskette)  
 :twisted_rightwards_arrows: Rearranged Storage in SB1/SB2/SB3  
 :atom_symbol: Added new Technical Information to website  
+:atom_symbol: IC Map components now produced from db not files  
 :atom_symbol: Added new functionality to move ICs in Drawer Storage to empty storage compartment  
 :atom_symbol: Added new functionality to swap ICs in Drawer Storage  
 :atom_symbol: Added new functionality to swap whole drawers over in Drawer Storage  
 :atom_symbol: Added new Storage Box 3  
-:ophiuchus: Converting storage properties to stored in database  
-:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-05-21    
+:atom_symbol: Removed Drawer 0 from Storage Box 2 
+:atom_symbol: Added README.md to repository   
+:ophiuchus: Converting storage properties to be stored in database  
+:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-04-01    
 :ophiuchus: Further optimising build scripts  
+:bug: Corrected issue with incorrect tagging of MC6803NRL   
+:bug: Corrected issue with incorrect placement of ICs in storage compared to DB     
+:bug: Corrected issue with not importing comments on documents  
 
 ## JUL-2026.1
 
@@ -251,93 +259,93 @@ Changes to the repository are documented here.
 
 ## 2026-05-12
 
-- Updated folder 5
-- Added Folder 8
-- Added MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection
-- Added Addendum to MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection
+:eight_spoked_asterisk: Updated folder 5  
+:new: Added Folder 8  
+:new: Added MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection  
+:new: Added Addendum to MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection  
 
 ## 2026-05-08
 
-- Cleaned references to Folder 1 - all complete and accurate
+:eight_spoked_asterisk: Cleaned references to Folder 1 - all complete and accurate  
 
 ## 2026-05-06
 
-- Moved ALL reference cards to Folder 7
+:eight_spoked_asterisk: Moved ALL reference cards to Folder 7  
 
 ## 2026-05-04
 
-- Added M68MM01(D4) - Monoboard Microcomputer 1 Micromodule 1 manual to collection
+:new Added M68MM01(D4) - Monoboard Microcomputer 1 Micromodule 1 manual to collection  
 
 ## 2026-05-03
 
-- Added M6809 Pascal Compiler Datasheet to listing
+:new: Added M6809 Pascal Compiler Datasheet to listing  
 
 ## 2026-05-01
 
-- Added MC6808P to collection
+:new: Added MC6808P to collection  
 
 ## 2026-04-27
 
-- Added Folder 6 and moved some documents into it to make space in Folder 3
-- Added MM68 power supply image
-- Corrected invalid image links
-- Added MM68FLC1/MM68FLC2 pictures
-- Added M68MMLC1/M68MMLC2 pictures
-- Added M68MMCC05 to pictures
-- Added M68MFLK to pictures
+:new: Added Folder 6 and moved some documents into it to make space in Folder 3  
+:new: Added MM68 power supply image  
+:new: Added MM68FLC1/MM68FLC2 pictures  
+:new: Added M68MMLC1/M68MMLC2 pictures  
+:new: Added M68MMCC05 to pictures  
+:new: Added M68MFLK to pictures  
+:bug: Corrected invalid image links  
 
 ## 2026-04-26
 
-- Added M68MM23IKIT Micromodule 23 Mounting Kit to listing
-- Added M68MMSK Short Chassis Rack Mounting Kit to listing
-- Added M68MMLK Long Chassis Rack Mounting Kit to listing
-- Added M68MFLK Front Loading Chassis Rack Mounting Kit to listing
-- Added M68MMPS1-1 Micromodule Power Supply to listing
-- Added M68MMCC05 Micromodule Card Cage to listing
-- Added MSETPASC(D1) - EXORset Resident Pascal Compiler Users Guide to collection
-- Added M68MMFLC1 Front Loading Chassis 115V to listing
-- Added M68MMFLC2 Front Loading Chassis 220V to listing
-- Added M68MMSC1 Micromodule Short Chassis 115V to listing
-- Added M68MMSC2 Micromodule Short Chassis 220V to listing
-- Added M68MMLC1 Micromodule Long Chassis 115V to listing
-- Added M68MMLC2 Micromodule Long Chassis 220V to listing
+:new: Added M68MM23IKIT Micromodule 23 Mounting Kit to listing  
+:new: Added M68MMSK Short Chassis Rack Mounting Kit to listing  
+:new: Added M68MMLK Long Chassis Rack Mounting Kit to listing  
+:new: Added M68MFLK Front Loading Chassis Rack Mounting Kit to listing  
+:new: Added M68MMPS1-1 Micromodule Power Supply to listing  
+:new: Added M68MMCC05 Micromodule Card Cage to listing  
+:new: Added MSETPASC(D1) - EXORset Resident Pascal Compiler Users Guide to collection  
+:new: Added M68MMFLC1 Front Loading Chassis 115V to listing  
+:new: Added M68MMFLC2 Front Loading Chassis 220V to listing  
+:new: Added M68MMSC1 Micromodule Short Chassis 115V to listing  
+:new: Added M68MMSC2 Micromodule Short Chassis 220V to listing  
+:new: Added M68MMLC1 Micromodule Long Chassis 115V to listing  
+:new: Added M68MMLC2 Micromodule Long Chassis 220V to listing  
 
 ## 2026-04-23
 
-- Added MC6808P to in transit
+:new: Added MC6808P to in transit  
 
 ## 2026-04-14
 
-- Added MC68A40P to collection
+:new: Added MC68A40P to collection  
 
 ## 2026-04-10
 
-- Added Understanding Microprocessors to the collection
+:new: Added Understanding Microprocessors to the collection  
 
 ## 2026-04-08
 
-- Moved MC68B21L to make room for new MC6800 in first drawer
-- Added MC6800CP to collection
-- Added MC6882AL to collection
+:eight_spoked_asterisk: Moved MC68B21L to make room for new MC6800 in first drawer  
+:new: Added MC6800CP to collection  
+:new: Added MC6882AL to collection   
 
 ## 2026-04-07
 
-- Updated MC68A40P to in transit
-- Updated MC6882AL to in transiit
-- Updated MC6800CP to in transit
-- Updated Monoboard Microcomputer 1 Micromodule 1 to in transit
-- Updated Micromodule Enclosure and System Hardware (etc) to in transit
-- Updated MEX6864 16K-64K Hidden Refresh Memory Module Users Guide to in transit
-- Added Understanding Microprocessors document (and added to in transit list)
-- Added EXORset Resident Pascal Compiler Users Guide document (and added to in transit list)
+:eight_spoked_asterisk: Updated MC68A40P to in transit  
+:eight_spoked_asterisk: Updated MC6882AL to in transit  
+:eight_spoked_asterisk: Updated MC6800CP to in transit  
+:eight_spoked_asterisk: Updated Monoboard Microcomputer 1 Micromodule 1 to in transit  
+:eight_spoked_asterisk: Updated Micromodule Enclosure and System Hardware (etc) to in transit  
+:eight_spoked_asterisk: Updated MEX6864 16K-64K Hidden Refresh Memory Module Users Guide to  in transit  
+:new: Added Understanding Microprocessors document (and added to in transit list)  
+:new: Added EXORset Resident Pascal Compiler Users Guide document (and added to in transit list)  
 
 ## 2026-04-01
 
-- MC6800CP under offer
-- Swapped MC68B00P and MC68B40P positions
-- Swapped MC6800CL and MC68B44P positions
-- Moved XC6845L to Drawer 3
-- Added MC68A00P to collection
+:eight_spoked_asterisk: MC6800CP under offer  
+:eight_spoked_asterisk: Swapped MC68B00P and MC68B40P positions  
+:eight_spoked_asterisk: Swapped MC6800CL and MC68B44P positions  
+:eight_spoked_asterisk: Moved XC6845L to Drawer 3  
+:new: Added MC68A00P to collection  
 
 ## 2026-03-25
 
