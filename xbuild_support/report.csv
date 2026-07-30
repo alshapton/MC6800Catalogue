@@ -1,0 +1,88 @@
+IC,Name,StorageBox,Drawer,Row,Col
+MC68B00L,MC68B00L Microprocessor Unit,Storage Box 1,1,1,1
+2!MC6800L,MC6800L Microprocessor Unit,Storage Box 1,1,1,2
+MC68B00P,MC68B00P Microprocessor Unit,Storage Box 1,1,1,3
+MC68B00S,MC68B00S Microprocessor Unit,Storage Box 1,1,2,1
+MC6800CL,MC6800CL Microprocessor Unit,Storage Box 1,1,2,2
+MC68A00P,MC68A00P Microprocessor Unit,Storage Box 1,1,2,3
+MC6800CP,MC6800CP Microprocessor Unit,Storage Box 1,1,3,1
+MC6800GMCM,MC6800GMCM General Motors/Delcom Microprocessor Unit,Storage Box 1,1,3,2
+MC6800P,MC6800P Microprocessor Unit,Storage Box 1,1,3,3
+
+MC68A00L,MC68A00L Microprocessor Unit,Storage Box 1,2,1,1
+
+MC68B09CP,MC68B09CP 8-Bit Microprocessing Unit,Storage Box 1,3,1,1
+HD63C09EP,HD63C09EP 8-Bit Microprocessing Unit Hitachi (Enhanced),Storage Box 1,3,1,2
+SC84003L,SC84003L (MC6809) 8-Bit Microprocessing Unit,Storage Box 1,3,1,3
+MC68B09P,MC68B09P 8-Bit Microprocessing Unit,Storage Box 1,3,2,1
+MC6883P,MC6883P Synchronous Address Multiplexer,Storage Box 1,3,2,2
+MC6809EP,MC6809EP 8-Bit Microprocessing Unit (MC6809E),Storage Box 1,3,2,3
+MC68B09EP,MC68B09EP 8-Bit Microprocessing Unit (MC6809E),Storage Box 1,3,3,1
+
+MC6850L,MC6850L Asynchronous Communications Interface Adapter (MC6850),Storage Box 1,4,1,1
+MC6862L,MC6862L 2400 bps Digital Modulator,Storage Box 1,4,1,2
+MCM6810EL,MCM6810EL 128 x 8-bit RAM,Storage Box 1,4,1,3
+MC68A50P,MC68A50P Asynchronous Communications Interface Adapter (MC6850),Storage Box 1,4,1,4
+MC68B50P,MC68B50P Asynchronous Communications Interface Adapter (MC5850),Storage Box 1,4,2,1
+MC6862P,MC6862P 2400 bps Digital Modulator,Storage Box 1,4,2,2
+MCM68B10P,MCM68B10P 128 x 8-bit RAM,Storage Box 1,4,2,3
+MCM68A30L8,MCM68A30L8 1024 x 8-bit ROM,Storage Box 1,4,2,4
+MCM6832P,MCM6832P 2048 x 8-bit Read Only Memory,Storage Box 1,4,2,5
+MCM68A10CL,MCM68A10CL 128 x 8-Bit Static Random Access Memory (MCM6810),Storage Box 1,4,2,6
+MC68B50CP,MC68B50CP Asynchronous Communications Interface Adapter (MC6850),Storage Box 1,4,3,1
+MCM6810P,MCM6810P 128 x 8-bit RAM,Storage Box 1,4,3,2
+MC6860P,MC6860P 0-600 bps Digital Modem,Storage Box 1,4,3,3
+MCM6810BJCS,MCM6810BJCS 128 x 8-Bit Static Random Access Memory (MCM6810),Storage Box 1,4,3,4
+MC6840L,MC6840L Programmable Timer Module (PTM),Storage Box 1,4,3,5
+
+MC6801L1,MC6801L1 Microcomputer/Microprocessor (MCU/MPU) (MC6801),Storage Box 2,1,1,1
+MC68B02P,MC68B02P Microprocessor with Clock and Optional RAM (MC6802),Storage Box 2,1,1,2
+MC6808L,MC6808L Microprocessor with Clock and Optional RAM (MC6808),Storage Box 2,1,2,1
+MC6802P,MC6802P Microprocessor with Clock and Optional RAM (MC6802),Storage Box 2,1,2,2
+MC68B40P,MC68B40P Programmable Timer,Storage Box 2,1,2,3
+MC6803L,MC6803L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803),Storage Box 2,1,3,1
+MC6803NRL,MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803),Storage Box 2,1,3,1
+MC68B03P,MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803),Storage Box 2,1,3,2
+MC6847P,MC6847P Non-Interlaced Video Display Generator Unit,Storage Box 2,1,3,3
+
+MC6820L,MC6820L Peripheral Interface Adapter (PIA),Storage Box 2,2,1,1
+MC6843L,MC6843L Floppy Disk Controller (FDC) (MC6843),Storage Box 2,2,1,2
+MC68B44P,MC68B44P Direct Memory Access Controller (DMAC),Storage Box 2,2,1,3
+MC6845CP,MC6845CP CRT Controller,Storage Box 2,2,2,1
+MC6871A15,MC6871A-15 Two-Phase Microprocessor Clock,Storage Box 2,2,2,2
+MC6871A20,MC6871A-20 Two-Phase Microprocessor Clock,Storage Box 2,2,2,3
+MC68A45P,MC68A45P CRT Controller (CRTC),Storage Box 2,2,3,1
+
+XC6845L,XC6845L CRT Controller,Storage Box 2,3,1,1
+MC68B21L,MC68B21L Peripheral Interface Adapter,Storage Box 2,3,1,2
+MC68A40P,MC68A40P Programmable Timer Module (PTM),Storage Box 2,3,1,3
+MC6808P,MC6808P Microprocessor with Clock and Optional RAM,Storage Box 2,3,2,1
+MC6821P,MC6821P Peripheral Interface Adapter,Storage Box 2,3,2,2
+MC68B21S,MC68B21S Peripheral Interface Adapter (PIA),Storage Box 2,3,2,3
+MC6845P,MC6845P CRT Controller,Storage Box 2,3,3,1
+
+MC6859L,MC6859L Data Security Device,Storage Box 2,4,1,1
+MC6828P,MC6828P Priority Interrupt Controller,Storage Box 2,4,1,2
+MCM6810AP,MCM6810AP 128 x 8-bit RAM,Storage Box 2,4,1,3
+MC6882AL,MC6882AL Octal Three-State Buffer/Latch,Storage Box 2,4,1,4
+MC6889P,MC6889P NonInverting Quad Three-State Bus Transceiver,Storage Box 2,4,1,5
+MC6875L,MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875),Storage Box 2,4,1,6
+
+MC68701CL-1,MC68701CL-1 Microprocessor Unit,Storage Box 3,1,1,1
+MC68B44L,MC68B44L Direct Memory Access Controller (DMAC),Storage Box 3,1,1,2
+MC68488L,MC68488L General Purpose Interface Adapter,Storage Box 3,1,1,3
+MC68701U4L,MC68701U4L Microprocessor Unit with 8-bit EPROM,Storage Box 3,1,2,1
+MC6844L,MC6844L Direct Memory Access Controller (DMAC),Storage Box 3,1,2,2
+MC68488CP,MC68488CP General Purpose Interface Adapter,Storage Box 3,1,2,3
+MC68701U4S1,MC68701U4S-1 Microprocessor Unit with 8-bit EPROM,Storage Box 3,1,3,1
+MC6844P,MC6844P Direct Memory Access Controller (DMAC),Storage Box 3,1,3,2
+MC68701S,MC68701S Microprocessor Unit,Storage Box 3,1,3,3
+
+MC68B54PDS,MC68B54PDS Advanced Data-Link Controller (ADLC),Storage Box 3,2,1,1
+MC68B54P,MC68B54P Advanced Data Link Controller (ADLC),Storage Box 3,2,1,2
+MC6854L,MC6854L Advanced Data-Link Controller (ADLC),Storage Box 3,2,1,3
+MC68A54P,MC68A54P Advanced Data-Link Controller (ADLC),Storage Box 3,2,2,1
+
+MCM6810AP-1,MCM6810AP-1 128 x 8-bit RAM,Storage Box 3,4,1,1
+MC6852L,MC6852L Synchronous Serial Adapter (1 Mhz),Storage Box 3,4,1,2
+MC6860L,MC6860L 0-600 bps Digital Modem,Storage Box 3,4,1,3

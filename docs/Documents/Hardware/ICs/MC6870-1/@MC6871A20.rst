@@ -2,7 +2,7 @@
 
 .. _MC6871A20:
 
-.. #Metadata {'Product':'MC6871A20','Name':'MC6871A-20 Two-Phase Microprocessor Clock','Storage': 'Storage Box 1','Drawer':3,'Row':3,'Column':3}
+.. #Metadata {'Product':'MC6871A20','Name':'MC6871A-20 Two-Phase Microprocessor Clock','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':3}
 
 MC6871A-20 Two-Phase Microprocessor Clock
 =========================================
@@ -21,7 +21,7 @@ MC6871A-20 Two-Phase Microprocessor Clock
    "Mask",""
    "Packaging","Hermetically sealed ceramic DIP"
    "Status","Product"
-   "Location",":ref:`Storage Box 1, Drawer 3, Row 3, Column 3 <Storage_Box_1_Drawer_3>`"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 2, Column 3 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-120\ :sup:`o`\ C"
    "Frequency","2Mhz"
    "Notes",""

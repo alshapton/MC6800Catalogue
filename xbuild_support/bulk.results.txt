@@ -1,5 +1,0 @@
-Updates:
-- Added MEX6816-1HR MEX6816-1HR 16K Hidden Refresh RAM Module to listing
-- Added MEX6832-1HR MEX6832-1HR 32K Hidden Refresh RAM Module to listing
-- Added MEX6848-1HR MEX6848-1HR 48K Hidden Refresh RAM Module to listing
-- Added MEX6864-1HR MEX6864-1HR 64K Hidden Refresh RAM Module to listing

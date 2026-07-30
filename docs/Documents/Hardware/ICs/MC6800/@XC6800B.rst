@@ -2,7 +2,7 @@
 
 .. _XC6800B:
 
-.. #Metadata {'Product':'XC6800B','Name':'XC6800B Microprocessor Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'XC6800B','Name':'XC6800B Microprocessor Unit','Storage': 'Storage Box 1','Drawer':2,'Row':1,'Column':2}
 
 XC6800B Microprocessor Unit
 ===========================
@@ -16,12 +16,12 @@ XC6800B Microprocessor Unit
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBC"
-   "Manufacture Date","TBC"
+   "Date Code","7511"
+   "Manufacture Date","10-MAR-1975 to 16-MAR-1975"
    "Mask",""
    "Packaging","Ceramic"
    "Status","Engineering"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 1, Drawer 2, Row 1, Column 2 <Storage_Box_1_Drawer_2>`"
    "Temperature",""
    "Frequency",""
    "Notes",""
@@ -32,7 +32,7 @@ XC6800B Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |present| 29-07-2026
 
 .. rubric:: Links
 

@@ -32,7 +32,7 @@ MC68A00P Microprocessor Unit
    :header: "Acquired"
    :widths: auto
 
-   |present| 29-MAR-2026 
+   |present| 29-MAR-2026
 
 .. rubric:: Links
 

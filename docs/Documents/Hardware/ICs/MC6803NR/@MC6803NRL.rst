@@ -2,7 +2,7 @@
 
 .. _MC6803NRL:
 
-.. #Metadata {'Product':'MC6803NRL','Name':'MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC6803NRL','Name':'MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
 MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 ===========================================================================
@@ -21,7 +21,7 @@ MC6803NRL Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
    "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 1 <Storage_Box_2_Drawer_1>`"
+   "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

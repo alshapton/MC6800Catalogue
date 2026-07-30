@@ -2,7 +2,7 @@
 
 .. _MC68B09CP:
 
-.. #Metadata {'Product':'MC68B09CP','Name':'MC68B09CP 8-Bit Microprocessing Unit','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':3}
+.. #Metadata {'Product':'MC68B09CP','Name':'MC68B09CP 8-Bit Microprocessing Unit','Storage': 'Storage Box 1','Drawer':3,'Row':1,'Column':1}
 
 MC68B09CP 8-Bit Microprocessing Unit
 ====================================
@@ -21,7 +21,7 @@ MC68B09CP 8-Bit Microprocessing Unit
    "Mask","C65P"
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 3 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 1, Drawer 3, Row 1, Column 1 <Storage_Box_1_Drawer_3>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

@@ -8,12 +8,15 @@ Development Systems
 .. rubric:: Development Systems
 
 .. csv-table:: 
-   :widths: 25,75
+   :header: "Part Number","Name","Comments"
+   :widths: 25,50,25
 
    ":ref:`M68SDT2-DM <M68SDT2-DM>`","EXORciser II Development System 220V with Dynamic Memory (32K)"
    ":ref:`M68SDT2-SM <M68SDT2-SM>`","EXORciser II Development System 220V with Static Memory (32K)"
    ":ref:`M68SDT2-SX <M68SDT2-SX>`","EXORciser II Development System 220V with no memory"
    ":ref:`M68DTTU2B <M68DTTU2B>`","220 Volt Table Top EXORciser 1 with USEB"
+   ":ref:`MEX68USEB <MEX68USEB>`","MEX68USEB USEB with Processor+Intercept Modules + Cable and Buffer Assembly"
+   ":ref:`MEX68USE2B <MEX68USE2B>`","MEX68USE2B USEB Cable and Buffer Assembly","Used to upgrade MEX68USE to 6800/6802 capability)"
    ":ref:`M68DTT2 <M68DTT2>`","220 Volt Table Top EXORciser I"
    ":ref:`M68TDS1 <M68TDS1>`","TDS1"
    ":ref:`M68TDS2 <M68TDS2>`","TDS2"
@@ -36,9 +39,12 @@ Basic Options for EXORciser
 
     "|present| :ref:`MEX6800-1 <MEX6800-1>`","MEX6800-1 M6800 MPU Module"
     ":ref:`MEX6800-2 <MEX6800-2>`","MPU II Module",""
+    ":ref:`MEX6801EVM <MEX6801EVM>`","MEX6801EVM Evaluation Module",""
     ":ref:`MEX68PP3 <MEX68PP3>`","PROM Programmer III"
+    ":ref:`MEX68SPM <MEX68SPM>`","MEX68SPM System Performance Module",""
     ":ref:`MEX68DB2 <MEX68DB2>`","Debug Module"
     ":ref:`MEX68PI2 <MEX68PI2>`","Printer Interface Module II"
+    ":ref:`MEX68PIC <MEX68PIC>`","MEX68PIC Printer Interconnect Cable",""
     "MEX68SA","Systems Analyzer for Monitoring, Analyzing and trouble-shooting MC6800/MC6802 Microprocessor Systems  "    
     ":ref:`MEX68SA2 <MEX68SA2>`","Systems Analyser II"
     ":ref:`MEX68WW <MEX68WW>`","Universal Wirewrap Module for prototype Development  "
@@ -55,6 +61,8 @@ Basic Options for EXORciser
     ":ref:`MEX6850 <MEX6850>`","MEX6850 ACIA Module",""
     ":ref:`MEX6850-2 <MEX6850-2>`","ACIA SSDA Module II"
     ":ref:`MEX6854 <MEX6854>`","MC6854 ADLC Support Module",""
+    ":ref:`MGD6800DSM <MGD6800DSM>`","MGD6800DSM Data Security Module",""
+    
 
 .. rubric:: memory Expansions
 
@@ -162,7 +170,7 @@ Basic Options for EXORciser
    ":ref:`M68MDM1 <M68MDM1>`","5-inch Display Monitor",""
    ":ref:`M68ICC1 <M68ICC1>`","Interconnection Cables Set",""
    ":ref:`M68BSC1 <M68BSC1>`","Bus System Card",""
-
+   ":ref:`M68PPR2 <M68PPR2>`","M68PPR2 PDS PROM Programmer",""
 
 Although not in scope for the collection, the following EXORcisor add-ons are listed here for completeness:
 

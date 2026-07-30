@@ -2,7 +2,7 @@
 
 .. _MC6882AL:
 
-.. #Metadata {'Product':'MC6882AL','Name':'MC6882AL Octal Three-State Buffer/Latch','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':3}
+.. #Metadata {'Product':'MC6882AL','Name':'MC6882AL Octal Three-State Buffer/Latch','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':4}
 
 MC6882AL Octal Three-State Buffer/Latch
 =======================================
@@ -25,7 +25,7 @@ MC6882AL Octal Three-State Buffer/Latch
    "Mask","QQ"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 3 <Storage_Box_2_Drawer_4>`"
+   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 4 <Storage_Box_2_Drawer_4>`"
    "Temperature","0-75\ :sup:`o`\ C"
    "Frequency",""
    "Notes",""

@@ -788,7 +788,6 @@ def update_storage():
 
     console.print('\n\tSplitting',style="info")
     console.print('\t\tLVL1 Splitting',style="info")
-
     with open(TABLES_FILE,"r") as tf:
         data = ''
         line=tf.readline()
@@ -883,11 +882,17 @@ def update_storage():
             display_tfname=os.path.basename(snippetfile).replace('tables.fragment..','').replace('tables.fragment.','')
         console.print('\t\t\t' + display_tfname,style="info")
     
+    # Produce new IC snippets files
+    console.print('\nProducing V2 Storage Box/Drawer snippet files',style="info")
+    produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
+    
+    
     # Move snippets into snippets folder
     console.print('\n\t\tMoving snippets into snippets folder',style="info")
 
     snippeticindexfile=IC_LOCATIONS + OSSEP + 'icindex.snippet'
-    print('Snippet index file: ' + snippeticindexfile)
+
+
     HDR=''
     with open(snippeticindexfile, 'w') as sicif:
 
@@ -918,6 +923,10 @@ def update_storage():
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
+    
+    # Produce new Folder snippets files
+    console.print('\nProducing V2 Folder snippet files',style="info")
+    produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
 
 
     console.print('\nCleaning Up',style="info")
@@ -1764,23 +1773,10 @@ def getICfilename(IC):
         chipfilename=chip["filename"]
     return chipfilename
 
-def extract_seed_chip_info(chip_seed_file):
-    chips=[]
-    chiprows = read_db("SELECT * from iclist;",DB)
-    print(len(chiprows))
-    for chip in chiprows:
-        chipjson={}
-        chipjson["ID"]=chip["ic"]
-        chipjson["Name"]=chip["name"]
-        chipjson["Top"]=chip["ctop"]
-        chipjson["Bottom"]=chip["cbottom"]
-        chips.append(chipjson)
-    chiplist={"Chips":chips}
-
-    with open(chip_seed_file, 'w') as f:
-        f.write(json.dumps(chiplist, indent=4))
 
 def rebuild_db(DB):
+    from xbuild_support.admin import do_ADMIN_load_storage
+
     files = glob.glob('**/*.'+SUFFIX, recursive=True)
     conn = sqlite3.connect(DB)
     cursor_obj = conn.cursor()
@@ -1852,7 +1848,8 @@ def rebuild_db(DB):
                             metadata            TEXT,        \
                             filename            TEXT,        \
                             status              TEXT,        \
-                            bigger              TEXT         \
+                            bigger              TEXT,        \
+                            comments            TEXT         \
                             );")
     conn.commit()
 
@@ -1918,17 +1915,17 @@ def rebuild_db(DB):
 
     cursor_obj.execute("CREATE VIEW IF NOT EXISTS present                     \
                         (                                                     \
-                        name,                                          \
-                        id,                                                \
-                        real_date \
+                        name,                                                 \
+                        id,                                                   \
+                        real_date                                             \
                         )                                                     \
                         AS                                                    \
-                        SELECT name,tag,real_date          \
-                        FROM documents                                         \
-                        WHERE real_date <> ''  \
+                        SELECT name,tag,real_date                             \
+                        FROM documents                                        \
+                        WHERE real_date <> ''                                 \
                         UNION                                                 \
-                        SELECT name, icid,real_date                \
-                        FROM ics \
+                        SELECT name, icid,real_date                           \
+                        FROM ics                                              \
                         where real_date <> '';")
                         
     conn.commit()
@@ -1950,6 +1947,22 @@ def rebuild_db(DB):
                         
     conn.commit()
 
+    # Create Storage tables
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS storage  \
+                       (    id INTEGER PRIMARY KEY,                \
+                            type                TEXT,              \
+                            name                TEXT,              \
+                            description         TEXT               \
+                        );")
+    cursor_obj.execute("CREATE TABLE IF NOT EXISTS drawers  \
+                       (    id INTEGER PRIMARY KEY,                \
+                            sb                  TEXT,              \
+                            drawer              TEXT,              \
+                            rows                TEXT,              \
+                            columns             TEXT               \
+                        );")
+    conn.commit()
+
     # Clean tables if needed
     cursor_obj.execute("DELETE FROM icimages;")
     cursor_obj.execute("DELETE FROM iclinks;")
@@ -1961,9 +1974,13 @@ def rebuild_db(DB):
     cursor_obj.execute("DELETE FROM documentlinks;")
     cursor_obj.execute("DELETE FROM carousels;")
 
+    cursor_obj.execute("DELETE FROM storage;")
 
 
     conn.commit()
+
+
+    do_ADMIN_load_storage(OSSEP,console,DB,XBS,'storage.json')
 
     # Populate IC LIST from seed file     
     conn.execute("DELETE FROM iclist;")
@@ -2010,6 +2027,7 @@ def rebuild_db(DB):
             notes=''
             status=''
             bigger=''
+            comments=''
             with open(file, 'r') as f:
 
                 prevproductname=''                
@@ -2086,6 +2104,11 @@ def rebuild_db(DB):
                         location = metadata_dict["Folder"]
                         location = location.replace("None",'')
 
+                        if "Comments" in metadata:
+                            comments = metadata_dict["Comments"]
+                        else:
+                            comments=''
+
                     if line.startswith('.. _'):
                         tag=line.replace('.. _','').split(':')[0]
                     if line.startswith("====="):
@@ -2111,10 +2134,10 @@ def rebuild_db(DB):
                                 console.print('Invalid month in ' + file + "(" + m + ")",style="warning")
                             converted_date=acquired_date[7:11]+month+acquired_date[0:2]
             conn.execute("INSERT INTO documents (documenttype,documentid, document, name, acquired_date, \
-                            real_date, tag,notes, location, metadata,filename, status,bigger) \
-                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);",
+                            real_date, tag,notes, location, metadata,filename, status,bigger,comments) \
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);",
                     (documenttype,documentid, documentid, productname, acquired_date,converted_date,tag,\
-                    notes,location,metadata,file,status,bigger))
+                    notes,location,metadata,file,status,bigger,comments))
             conn.commit()
 
 
@@ -2257,17 +2280,6 @@ def rebuild_db(DB):
     conn.close()
 
 
-def get_images_from_db(documentid,documenttype):
-    conn = sqlite3.connect(DB)
-    conn.row_factory = sqlite3.Row
-    cursor_obj = conn.cursor()
-    if documenttype == 'ICs':
-        cursor_obj.execute("SELECT * FROM icimages WHERE icid = ?;", (documentid,))
-    else:
-        cursor_obj.execute("SELECT * FROM documentimages WHERE documentid = ? AND documenttype = ?;", (documentid,documenttype))
-    output = cursor_obj.fetchall()
-    conn.close()
-    return output 
 
 def get_notes_from_db(documentid,documenttype):
     conn = sqlite3.connect(DB)
@@ -2309,103 +2321,82 @@ def update_chip_info(f):
     f.write('\n')
 
     
-def write_IC(filename,chipinfo):
 
-    chip=chipinfo["ic"] 
-    newgroupname=chipinfo["parent"]
-
-    newfilename=filename + ".new.rst"
-    newfilename=filename 
     
-    with open(newfilename, "w") as c:
-        c.write(':orphan:\n\n')
-        c.write('.. _' + chipinfo["tag"] + ':\n\n')
-        
-        locationfull = "TBD"
+def do_admin_menu(console):
+    from xbuild_support.admin import do_ADMIN_unload_seed,do_ADMIN_unload_storage,do_ADMIN_load_storage,do_ADMIN_chip_storage_report
 
-        if chipinfo["Storage"] == 'S' or chipinfo["Storage"] == '':
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'S','Drawer':0,'Row':0,'Column':0}\n\n"
-            locationfull = "TBD"
-        else:
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '" + chipinfo["Storage"] + "','Drawer':" + chipinfo["Drawer"] + ",'Row':" + chipinfo["Row"] + ",'Column':" + chipinfo["Col"] + "}\n\n"
-            locationtext=chipinfo["Storage"] + ', Drawer ' + str(chipinfo["Drawer"]) + ', Row ' + str(chipinfo["Row"]) + ', Column ' + str(chipinfo["Col"])
-            locationanglebrackets='<' + chipinfo["Storage"] + ', Drawer ' + chipinfo["Drawer"] + '>'
-            locationfull=':ref:`'+locationtext  + ' ' + locationanglebrackets.replace(' ','_').replace(',','') + '`'    
-        if chipinfo["Storage"] == "Briefcase":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'EDUCATORII'}\n\n"
-            locationfull=':ref:`Briefcase <Briefcase_MES6800_Briefcase_MES6800>`'    
-        if chipinfo["Storage"] == "EDUCATORII":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'Briefcase'}\n\n"
-            locationfull=':ref:`EDUCATORII <Educator_II_Microcomputer_Kit_Educator_II_Microcomputer_Kit>`'    
-        if chipinfo["Storage"] == "MEK6800D2":
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': 'MEK6800D2'}\n\n"
-            locationfull=':ref:`MEK6800D2 <Components_attached_to_the_MEK6800D2_board_Components_attached_to_the_MEK6800D2_board>`'    
-        if 'M68MM' in chipinfo["Storage"]:
-            MD=".. #Metadata {'Product':'" + chipinfo["icid"] + "','Name':'" + chipinfo["Name"] + "','Storage': '"+ chipinfo["Storage"] +"'}\n\n"
-            locationfull=':ref:`' + chipinfo["Storage"] +' Micromodule <Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule_Components_attached_to_the_' + chipinfo["Storage"] + '_Micromodule>`'    
+    while True:
+        cls()
 
+        console.print("\t  Admin Menu\n",style="bold black")
+        console.print('\tU Unload Seed file ',style="info")
+        console.print('\tS Unload Storage  ',style="info")
+        console.print('\tL Load Storage ',style="info") 
+        console.print('\tT Chip Storage Report',style="info")       
+        console.print('\tD Delete DB',style="danger")
+        console.print('\tR Rebuild DB\n',style="info")
 
-        c.write(MD)
-        
-        c.write(chipinfo["name"] + '\n')
-        c.write('=' * len(chipinfo["name"]) + '\n\n')
-        imgs=get_images_from_db(chipinfo["icid"],"ICs")
-        for img in imgs:
-            c.write('.. image:: ' + img["image"] + '\n')
-            c.write('   :width: 400\n')
-            c.write('   :align: center\n\n')
+        console.print('\n\tX Exit',style="info")
+        choicesList=["X","U","D","R","S","L","T"]
+        type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
+        match type:
+            case "T"|"t":
+                do_ADMIN_chip_storage_report(OSSEP,console,DB,XBS)
+            case "S"|"s":
+                do_ADMIN_unload_storage(OSSEP,console,DB,XBS,'storage.json')
+            case "L"|"l":
+                do_ADMIN_load_storage(OSSEP,console,DB,XBS,'storage.json')
+                input("Press a key")
 
-        if chipinfo["notes"] != '':
-            c.write(chipinfo["notes"])
-
-        c.write('.. rubric:: Specific Information\n\n')
-        c.write('.. csv-table:: \n')
-        c.write('   :widths: auto\n\n')
-        c.write('   "Date Code","'+chipinfo["date_code"]+'"\n')
-        c.write('   "Manufacture Date","'+chipinfo["manufacture_date"]+'"\n')        
-        c.write('   "Mask","'+chipinfo["mask"]+'"\n')
-        c.write('   "Packaging","'+chipinfo["packaging"]+'"\n')
-        c.write('   "Status","'+chipinfo["manufacture_status"]+'"\n')
-        c.write('   "Location","' + locationfull + '"\n')
-        c.write('   "Temperature","'+chipinfo["temperature_raw"]+'"\n')
-        c.write('   "Frequency","'+chipinfo["frequency"]+'"\n')
-        c.write('   "Notes",""\n\n')
-        c.write('.. rubric:: Collection Information\n\n')
-        c.write('.. csv-table:: \n')
-        c.write('   :header: "Acquired"\n') 
-        c.write('   :widths: auto\n\n')
-        if chipinfo["status"] == 'present':
-            c.write('   '+ CHECK_MARK + ' ' + chipinfo["acquired_date"]+'\n')     
-        else:
-            c.write('   |'+ chipinfo["status"] + '|\n')
-
-        c.write('\n')
-        lnks=get_links_from_db(chipinfo["icid"],"ICs",DB)
-        if len(lnks) > 1:
-            endline='\n'
-        else:
-            endline=''
-        if len(lnks) > 0:
-            c.write('.. rubric:: Links\n')
-            for lnk in lnks:
-                c.write('\n' + lnk["link"] + endline)
-    return 
+            case "U"|"u":
+                do_ADMIN_unload_seed(OSSEP,console,DB,XBS,'seed_chips.json')
+            case "D":
+                console.print("This is destructive", style="danger")
+                choice = Prompt.ask("Do you really want to delete the database?", choices=["Y", "N"], default="N", case_sensitive=True)
+                if choice == 'Y':
+                    os.remove(DB)
+                    console.print("Database deleted", style="danger")
+            case "R":
+                output='Commencing rebuild of database'
+                console.print(output, style="info") 
+                rebuild_db(DB)
+                output='Completed rebuild of database'
+                console.print(output, style="info")      
+            
+            case "X"|"x":
+                console.print("Exiting", style="info")
+                cls()
+                return()
 
     
 def do_file_operations_menu(console):
     
 
     while True:
+        cls()
+
         console.print("\t  File Operations Menu\n",style="bold black")
-        console.print('\tR Rename Carousel files incrementally ',style="info")
-        console.print('\tX Exit',style="info")
-        choicesList=["R","X"]
+        console.print('\tM Move IC to empty location ',style="info")
+        console.print('\tS Swap ICs in storage ',style="info")
+        console.print('\tD Swap 2 entire drawers ',style="info")
+        console.print('\n\tR Rename Carousel files incrementally ',style="info")
+        
+        console.print('\n\tX Exit',style="info")
+        choicesList=["R","S","X","D","M"]
         type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
         match type:
+            case "M"|"m":
+                do_FOM_move_IC(OSSEP,console,CHECK_MARK,DB) 
             case "R"|"r":
                 do_FOM_rename_files(OSSEP,console)
+            case "S"|"s":
+                do_FOM_swap_IC(OSSEP,console,DB,CHECK_MARK)
+            case "D"|"d":
+                do_FOM_swap_drawer(OSSEP,console,DB,CHECK_MARK)
             case "X"|"x":
                 console.print("Exiting", style="info")
+                cls()
                 return()
 while True:
     console.print("\t  Main Menu\n",style="bold black")
@@ -2413,14 +2404,12 @@ while True:
     console.print('\t2 Create new entry  ',style="info")
     console.print('\t3 Create new IC group index',style="info")    
     console.print('\t4 Create new IC group from index',style="info")    
-    console.print('\t5 Update IC status (WIP)',style="warning")
-    console.print('\t6 Unload Seed IC file',style="info")
-    console.print('\t7 Rebuild DB\n',style="info")
-    console.print('\tF File Operations\n',style="info")
-    console.print('\t- Delete DB',style="danger")
+    console.print('\t5 Update IC status',style="info")
+    console.print('\tA Admin Menu',style="info")
+    console.print('\tF File/chip Operations\n',style="info")
     console.print('\t0 Update ALL ',style="info")
     console.print('\tX Exit',style="info")
-    choicesList=["1", "2","3","4","5","6","7","-","0","A","X","?","9","8","R","F"]
+    choicesList=["1", "2","3","4","5","0","A","X","?","9","8","R","F"]
     type = Prompt.ask("Enter choice: ",choices=choicesList, default="?", case_sensitive=False,show_choices=False)
     match type:
         case "1":
@@ -2438,22 +2427,8 @@ while True:
             create_new_group_index()
         case "4":
             create_new_group_from_index()       
-        case "6":
-            chip_seed_file = XBS + OSSEP + 'seed_chips.json'
-            console.print("This is destructive", style="danger")
-            choice = Prompt.ask("Do you really want to overwrite the seed chip file?", choices=["Y", "N"], default="N", case_sensitive=True)
-            if choice == 'Y':
-                if os.path.exists(chip_seed_file):
-                    from datetime import datetime
-                    dt=datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
-                    backup_file=chip_seed_file.replace('.json','_' + dt + '.bak.json')
-                    copyfile(chip_seed_file, backup_file)
-                    console.print("Created a backup file", style="info")
-                extract_seed_chip_info(chip_seed_file)   
         case "0":
-            import os
-            clear = lambda: os.system('clear')
-            clear()
+            cls()
             output='\nSetting Up icons\n\n'
             console.print(output, style="info")
             mediaincfilename='docs!Software!NonResident!media.inc'.replace('!',OSSEP)
@@ -2462,27 +2437,19 @@ while True:
             console.print(output, style="info")
             rebuild_db(DB)
             console.print('Completed rebuild of database',style="info")  
-
             convert_changelog()
             console.print('\n\nCHANGELOG converted',style="info")
-   
             console.print('\n\nCommencing updating storage metadata links',style="info")
-
             rstfiles = glob.glob('**/*.rst', recursive=True)
             for file in rstfiles:
                 update_or_not_metadata(file)
-        
-
             update_carousel(CAROUSEL,SUFFIX)
             console.print('\n\n\tCarousels updated',style="info")
-
             update_IC_pre_fragments()
-            #update_IC_root()
             update_IC_index()
             update_storage()
             do_collection()
             do_statistics()
-
             console.print('Collection updated',style="info")
             ANYUNDEROFFER=do_underoffer()
             ANYINTRANSIT=do_in_transit()
@@ -2509,124 +2476,78 @@ while True:
                 for row in output:    
                     filename = row["filename"]
                     console.print('Current status of ' + row["icid"] + ' is ' + row["status"],style="info")
-                    newstatus = input("Enter new status (present, notpresent, underoffer, intransit): ")
-                    
+                    newstatus = Prompt.ask("Enter new status (P)resent, (N)ot Present, (U)nder Offer, (I)n transit):", choices=["P","U","N","I"], default="N", case_sensitive=True)
+                    metadata=row["metadata"]
 
-                    if newstatus == 'intransit':
-                        with open(filename, 'r') as f:
-                            lines = f.readlines()
-                        
-                        with open(filename+'.new', 'w') as f:                        
-                            for line in lines:
-                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
-                                    newline = '   |' + newstatus + '| '  + '\n'
-                                    f.write(newline)
-                                else:
-                                    f.write(line)
-
-
-                    if newstatus == 'notpresent':
-                        with open(filename, 'r') as f:
-                            lines = f.readlines()
-                        
-                        with open(filename+'.new', 'w') as f:                        
-                            for line in lines:
-                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
-                                    newline = '   |' + newstatus + '| '  + '\n'
-                                    f.write(newline)
-                                else:
-                                    f.write(line)
-
-                    if newstatus== "present":
+                tobestatus=""
+                newstatus=newstatus.upper()
+                acquired_date = ""
+                realmanudate="TBD"
+                manudate="TBD"
+                mask=""
+                sb=""
+                d=""
+                r=""
+                c=""
+                loc=""
+                converted_date=""
+                
+                match newstatus:
+                    case "P":
+                        tobestatus="present"
                         acquired_date = input("Enter acquired date (DD-MON-YYYY): ")
-                        newline = '   |' + newstatus + '| ' + acquired_date + '\n'                    
-                        y = input('Enter year: ')
-                        w = input('Enter week: ')
+                        y = input('Enter Manufacture year: ')
+                        w = input('Enter Manufacture week: ')
                         firstdate, lastdate =  getDateRangeFromWeek(y,w)
                         manudate=y[-2:]+w
                         realmanudate=firstdate + ' to ' + lastdate
                         mask=input('Enter mask (if known): ')
-                        storagebox=input('Enter Storage Box: ')
-                        drawer=input('Enter Drawer: ')
-                        rownum=input('Enter Row: ')
-                        column=input('Enter Column: ')
+                        m=acquired_date[3:6].upper()
+                        month=convert_MMM_to_MM(m)
                         
-                        loc ='"Location",":ref:`Storage Box @, Drawer !, Row #, Column + <Storage_Box_@_Drawer_!>`"'.replace('@',storagebox).replace('!',drawer).replace('#',rownum).replace('+',column)
+                        converted_date=acquired_date[7:11]+month+acquired_date[0:2]
+                        sb = input('Enter Storage Box: ')
+                        d = input('Enter Drawer:      ')
+                        r = input('Enter Row:         ')
+                        c = input('Enter Column:      ')
+                        
+                        loc = '"Location",":ref:`Storage Box @, Drawer !, Row #, Column + <Storage_Box_@_Drawer_!>`"'.replace('@',sb).replace('!',d).replace('#',d).replace('+',c)
 
-                        with open(filename, 'r') as f:
-                            lines = f.readlines()
-                        for line in lines:
-                            maskfound=False
-                            metadatafound=False
-                            if "Mask" in line:
-                                maskfound=True
-                            if ".. #Metadata " in line:
-                                metadatafound=True
-                            
-                        metadataskeleton=".. #Metadata {'Product':'XXXXX','Storage': 'Storage Box !','Drawer':@,'Row':$,'Column':%}"
-                        metadataline = metadataskeleton.replace('XXXXX',row["icid"]).replace('!',storagebox).replace('@',drawer).replace('$',rownum).replace('%',column )                        
+                        sb = "Storage Box " + sb
 
-                        with open(filename+'.new', 'w') as f:                        
-                            for line in lines:
-                                writeln=False
-                                if '|present|' in line or '|notpresent|' in line or '|underoffer|' in line or '|intransit|' in line:
-                                    newline = '   |' + newstatus + '| ' + acquired_date + '\n'
-                                    f.write(newline)
-                                    writeln=True
+                    case "N":
+                        tobestatus="notpresent"
+                    case "U":
+                        tobestatus="underoffer"
+                    case "I":
+                        tobestatus="intransit"
+                        
+                statement = "UPDATE ics " + \
+                "set storage = '" + sb + "', " +  \
+                "    mask = '" + mask + "', " +  \
+                "    status = '" + tobestatus + "', " +  \
+                "    date_code = '" + manudate + "', " +  \
+                "    manufacture_date = '" + realmanudate + "', " +  \
+                "    acquired_date = '" + acquired_date + "', " +  \
+                "    real_date = '" + converted_date + "', " +  \
+                "    location = '" + loc + "', " +  \
+                "    metadata = '" + metadata.replace("'","''") + "', " +  \
+                "    drawer = '" + d + "', " +  \
+                "    row = '" + r + "', " +  \
+                "    col = '" + c + "' " +  \
+                "WHERE icid = '" + ic + "';"
+                print(statement)
+                output = update_db(statement,DB)
+                
+                statement = "SELECT * FROM ics WHERE icid = '" + ic + "';"
+                output = read_db(statement,DB)
 
-                                if (line.startswith('.. #Metadata '.upper())) or (line.startswith('..#None '.upper())) :
-                                    f.write(metadataline)
-                                    writeln=True     
+                for chipinfo in output:
+                    filename=chipinfo["filename"]
+                    write_IC(filename,chipinfo,CHECK_MARK,DB)
 
-                                if line.startswith('.. #None '):
-                                    pass
-
-                                if line.startswith('.. _') and not metadatafound:
-                                    f.write(line+'\n')
-                                    f.write(metadataline + '\n')
-                                    console.print('Added Metadata to IC information',style="info")
-                                    writeln=True
-
-                                if "Temperature" in line and not maskfound:
-                                    f.write(line)
-                                    f.write('   "Mask","' + mask + '"\n')
-                                    console.print('Added Mask to IC information',style="info")
-                                    writeln=True
-
-                                if line.startswith('.. image::'):
-                                    ifile='../../../../images/Hardware/ICs/' + row["parent"] + '/' + row["icid"] +'.png'
-                                    newimage = '.. image:: ' + ifile + '\n'
-                                    f.write(newimage)
-                                    if not os.path.exists(newimage):
-                                        console.print('Warning: Image ' + ifile + ' not found',style="warning")
-                                    writeln=True
-                                
-                                if "Date Code" in line:
-                                    newline = '   "Date Code","' + manudate + '"\n'
-                                    f.write(newline)
-                                    writeln=True
-
-                                if "Manufacture Date" in line:
-                                    newline = '   "Manufacture Date","' + realmanudate + '"\n'
-                                    f.write(newline)
-                                    writeln=True
-
-                                if "Location" in line:
-                                    if drawer != '':
-                                        f.write('   ' + loc + '\n')
-                                    else:
-                                        f.write('   "Location","TBD"\n')   
-                                    writeln=True
-                                if not writeln:
-                                    f.write(line)
-
-                        console.print('Updated status : Now assess storage metadata',style="info")    
-        case "7":
-            output='Commencing rebuild of database'
-            console.print(output, style="info") 
-            rebuild_db(DB)
-            output='Completed rebuild of database'
-            console.print(output, style="info")           
+                
+                console.print('Updated status for ' + ic,style="info")         
         case "8":
 
             output="This is experimental - CTRL-C to exit"
@@ -2658,10 +2579,8 @@ while True:
                     acquired_text = "collection"                    
                 results.write('- Added ' + product_number + ' ' + product_name + ' to ' + acquired_text + '\n')
                 console.print('\n'+index_entry+'\n',style="info")
-
-                
+    
             results.close()
-
 
             choice = Prompt.ask("Do you want to auto git commit?", choices=["Y", "N"], default="N", case_sensitive=True)
             if choice == 'Y':
@@ -2669,7 +2588,7 @@ while True:
                 os.system("git commit -F " + XBS+OSSEP+'bulk.results.txt' )
 
         case "9":
-            
+            exit()
             # IC_LOCATIONSNEW=IC_LOCATIONS+"NEW"
             IC_LOCATIONSNEW=IC_LOCATIONS
             console.print("Creating IC framework in  " + IC_LOCATIONSNEW, style="info")
@@ -2707,18 +2626,9 @@ while True:
                 #filename=filename.replace('ICs','ICsNEW')
                 print(filename)
                 
-                write_IC(filename,chipinfo)
-                #newfilename = filename + ".new.rst"
-                #issame=compare_files(filename,newfilename)
-                #if issame:
-                #    #console.print(os.path.basename(filename) + ' is identical to ' + os.path.basename(newfilename),style="info")
-                #    os.remove(newfilename)
-                #    pass;
-                #else:
-                #    console.print(os.path.basename(filename) + ' is different to ' + os.path.basename(newfilename),style="danger")
+                write_IC(filename,chipinfo,CHECK_MARK,DB)
 
-            
-            
+                    
             #output = read_db("SELECT * FROM documents WHERE documenttype='Software/Resident/EXORset30ROMS' order by filename asc;",DB)
             output = read_db("SELECT * FROM documents WHERE documenttype='FRED' order by filename asc;",DB)
             for row in output:
@@ -2738,7 +2648,7 @@ while True:
                         f.write('=')
                     f.write('\n\n')
 
-                    imgs=get_images_from_db(documentid,documenttype)
+                    imgs=get_images_from_db(documentid,documenttype,DB)
                     for img in imgs:
                         f.write('.. image:: ' + img["image"] + '\n')
                         f.write('   :width: 400\n')
@@ -2785,16 +2695,14 @@ while True:
 
         case "?":
             pass
-        case "-":
-                console.print("This is destructive", style="danger")
-                choice = Prompt.ask("Do you really want to delete the database?", choices=["Y", "N"], default="N", case_sensitive=True)
-                if choice == 'Y':
-                    os.remove(DB)
-                    console.print("Database deleted", style="danger")
+        
 
         case "X"|"x":
             console.print("Exiting", style="info")
             exit()
+
+        case "A"|"a":
+            do_admin_menu(console)
 
         case "F"|"f":
             do_file_operations_menu(console)

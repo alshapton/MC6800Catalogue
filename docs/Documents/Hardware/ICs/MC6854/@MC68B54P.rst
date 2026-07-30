@@ -2,7 +2,7 @@
 
 .. _MC68B54P:
 
-.. #Metadata {'Product':'MC68B54P','Name':'MC68B54P Advanced Data Link Controller (ADLC)','Storage': 'Storage Box 1','Drawer':3,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC68B54P','Name':'MC68B54P Advanced Data Link Controller (ADLC)','Storage': 'Storage Box 3','Drawer':2,'Row':1,'Column':2}
 
 MC68B54P Advanced Data Link Controller (ADLC)
 =============================================
@@ -21,7 +21,7 @@ MC68B54P Advanced Data Link Controller (ADLC)
    "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 3, Row 2, Column 1 <Storage_Box_1_Drawer_3>`"
+   "Location",":ref:`Storage Box 3, Drawer 2, Row 1, Column 2 <Storage_Box_3_Drawer_2>`"
    "Temperature",""
    "Frequency",""
    "Notes",""

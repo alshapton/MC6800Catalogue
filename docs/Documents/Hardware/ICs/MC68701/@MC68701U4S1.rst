@@ -2,7 +2,7 @@
 
 .. _MC68701U4S1:
 
-.. #Metadata {'Product':'MC68701U4S1','Name':'MC68701U4S-1 Microprocessor Unit with 8-bit EPROM','Storage': 'Storage Box 1','Drawer':2,'Row':3,'Column':1}
+.. #Metadata {'Product':'MC68701U4S1','Name':'MC68701U4S-1 Microprocessor Unit with 8-bit EPROM','Storage': 'Storage Box 3','Drawer':1,'Row':3,'Column':1}
 
 MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
 =================================================
@@ -21,7 +21,7 @@ MC68701U4S-1 Microprocessor Unit with 8-bit EPROM
    "Mask",""
    "Packaging","CERDIP"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 2, Row 3, Column 1 <Storage_Box_1_Drawer_2>`"
+   "Location",":ref:`Storage Box 3, Drawer 1, Row 3, Column 1 <Storage_Box_3_Drawer_1>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","1.25 MHz"
    "Notes",""
