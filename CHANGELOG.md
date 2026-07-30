@@ -16,6 +16,10 @@ The symbols used in the notes are as follows:
 
 Changes to the repository are documented here. 
 
+## AUG-2026
+
+:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-03-11  
+
 ## JUL-2026
 :new: Added new logo for website in readiness for `VCF GB 2026 <https://www.facebook.com/vcfgb>`_   
 :new: Added MC6843SL Floppy Disk Controller (FDC) to intransit  
@@ -244,14 +248,13 @@ Changes to the repository are documented here.
 
 ## 2026-05-20
 
-
-- Added M68KBC1 Keyboard Enclosure to in transit
-- Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)
-- Added MC6801/68701/6803 Microcomputer Instruction Set Summary to collection
-- Added new icon for preliminary documentation
-- Added Technical Information Publication 000 to collection
-- Added Motorola Microsystems Factory Service Plans and Warranty to collection
-- Added M68KBD1 Full ASCII Keyboard to in transit
+:new: Added M68KBC1 Keyboard Enclosure to in transit  
+:new: Added MC6801/68701/6803 Microcomputer Instruction Set Summary to collection  
+:new: Added new icon for preliminary documentation  
+:new: Added Technical Information Publication 000 to collection  
+:new: Added Motorola Microsystems Factory Service Plans and Warranty to collection  
+:new: Added M68KBD1 Full ASCII Keyboard to in transit  
+:atom_symbol:  Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)  
 
 ## 2026-05-13
 
@@ -349,31 +352,31 @@ Changes to the repository are documented here.
 
 ## 2026-03-25
 
-- Added pictures for XC6800B and MC6800BQCJC
-- Changed status for XC6800B and MC6800BQCJC to notpresent
-- Added MC68A00L to collection
-- Swapped positions of MC6800GMCM and  MC68B44L
-- Swapped positions of MC6800L and  MC6821P
-- Changed MC68A00P to in transit
+:new: Added MC68A00L to collection  
+:eight_spoked_asterisk: Added pictures for XC6800B and MC6800BQCJC  
+:eight_spoked_asterisk: Swapped positions of MC6800GMCM and MC68B44L  
+:eight_spoked_asterisk: Swapped positions of MC6800L and  MC6821P  
+:eight_spoked_asterisk: Changed status for XC6800B and MC6800BQCJC to notpresent  
+:eight_spoked_asterisk: Changed MC68A00P to in transit  
 
 ## 2026-03-21
 
-- Full update and recon of site
+:eight_spoked_asterisk: Full update and recon of site  
 
 ## 2026-03-12
 
-- Added 32K Dynamic RAM Module with parity to listing
-- Added 48K Dynamic RAM Module with parity to listing
-- Added 64K Dynamic RAM Module with parity to listing
-- Added additionnal information re: copyrights
-- Added MC6800BQCJC and XC6800B to under offer
+:new: Added 32K Dynamic RAM Module with parity to listing  
+:new: Added 48K Dynamic RAM Module with parity to listing  
+:new: Added 64K Dynamic RAM Module with parity to listing  
+:new: Added additionnal information re: copyrights  
+:new: Added MC6800BQCJC and XC6800B to under offer  
 
 ## 2026-03-11
 
-- Added MEX6854 Support Module Users Guide to list
-- Added EXORciser II Development System 220V without Memory to list
-- Added EXORciser II Development System 220V with 32K Dynamic Memory to list
-- Added EXORciser II Development System 220V with 32K Static Memory to list
+:new: Added MEX6854 Support Module Users Guide to list  
+:new: Added EXORciser II Development System 220V without Memory to list  
+:new: Added EXORciser II Development System 220V with 32K Dynamic Memory to list  
+:new: Added EXORciser II Development System 220V with 32K Static Memory to list  
 
 ## 2026-03-10
 
@@ -1407,19 +1410,19 @@ NOTE - BOTH concurrently are NOT supported.
 
 - Added MC6800L
 - Added MC6862L
-- Reformatted IC tables to improve look
 - Added XC6820
 - Added MCM6830L7
 - Added HEPC4801L
+- Reformatted IC tables to improve look
 
 ## 2025-04-22
 
 - Added Listing for M68EXORbus specification
 - Added listing for M6800/M6809 Resident editor manual
-- Corrected document location bug in create function of utils.py
 - Added some manuals for preparation
 - Added MC6850L IC  to collection
 - Added MC6862P IC - 2400 bps Digital Modulator - to collection
+- Corrected document location bug in create function of utils.py
 
 ## 2025-04-21
 
@@ -1430,10 +1433,10 @@ NOTE - BOTH concurrently are NOT supported.
 - Added M68ASM Cross Assembler source code (FORTRAN for PDP-11)
 - Added M6800 Support Software DEC PDP-11 Info Sheet
 - Added M6800 Support Software GE Info Sheet
-- Commenced adding locations to documents
 - Added Monoboard Microcomputer 1 Micromodule 1 listing
 - Added M6800 Cross Assembler Reference Manual listing (pending arrival)
 - Added Extended Display Supplement Basic Display Unit User's Guide listing
+- Commenced adding locations to documents
 
 ## 2025-04-20
 
@@ -1443,9 +1446,9 @@ NOTE - BOTH concurrently are NOT supported.
 
 ## 2025-04-19
 
+- Added dependency for sphinx_collapse
 - Improvements to index
 - Fix for development systems table issue
-- Added dependency for sphinx_collapse
 - Continued alignment of directory structures
 
 ## 2025-04-09
