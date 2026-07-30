@@ -2,7 +2,7 @@
 
 .. _MC6820L:
 
-.. #Metadata {'Product':'MC6820L','Name':'MC6820L Peripheral Interface Adapter (PIA)','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC6820L','Name':'MC6820L Peripheral Interface Adapter (PIA)','Storage': 'Storage Box 2','Drawer':2,'Row':2,'Column':1}
 
 MC6820L Peripheral Interface Adapter (PIA)
 ==========================================
@@ -25,7 +25,7 @@ MC6820L Peripheral Interface Adapter (PIA)
    "Mask","N/A"
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 1 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 2, Column 1 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

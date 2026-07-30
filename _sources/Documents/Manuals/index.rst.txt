@@ -54,6 +54,7 @@ Reference Manuals
    ":ref:`MEX68SA2(D2) <MEX68SA2(D2)>`","MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide",""
    ":ref:`N/A <MC6801-SS-UG>`","MC6801 Support Systems User Guide",""
    ":ref:`N/A <MEX68CT-MOTEST-1-UG>`","MEX68CT MOTEST-1 Component Tester Users Guide",""
+   ":ref:`MEX68SPM(D) <MEX68SPM(D)>`","MEX68SPM(D) System Performance Module Users Guide",""
 
 .. rubric:: Expansion Card Manuals
 
@@ -76,7 +77,7 @@ Reference Manuals
    "|present| :ref:`MEX68162(D2) <MEX68162(D2)>`","8K/16K, 1.0Mhz and 2.0MHz Static RAM Module Users Guide","Second Edition December 1978"
    "|present| :ref:`MEX6815-1 <MEX68151>`","8K Dynamic RAM Module Supplement","First Edition 1975"
    ":ref:`MEX68701(D1) <MEX68701(D1)>`","MEX6801EVM1 Evaluation Module User's Guide",""
-   ":ref:`MEX68USMUG(D1) <MEX68USMUG(D1)>`","MEX68USMUG(D1) MEX68USM Universal Support Module User's Guide",""
+   ":ref:`MEX68USM(D1) <MEX68USM(D1)>`","MEX68USM(D1) MEX68USM Universal Support Module User's Guide",""
    ":ref:`MEX68USEC <MEX68USEC-UG>`","MEX68USEC 2Mhz User System Evaluator User Guide",""
    ":ref:`MEX68488(D) <MEX68488(D)>`","MEX68488 GPIA Support Module Users Guide",""
    ":ref:`MEX6821-2(D) <MEX6821-2(D)>`","MEX6821-2 Input/Output Module Users Guide",""

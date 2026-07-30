@@ -34,6 +34,10 @@
    :width: 200
    :class: no-scaled-links
 
+.. |iMCM6810AP-1|  image:: /images/Hardware/ICs/MCM6810/MCM6810AP-1.png
+   :width: 200
+   :class: no-scaled-links
+
 .. |iMCM6810EL|  image:: /images/Hardware/ICs/MCM6810/MCM6810EL.png
    :width: 200
    :class: no-scaled-links

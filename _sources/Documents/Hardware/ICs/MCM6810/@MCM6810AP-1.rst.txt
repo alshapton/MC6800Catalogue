@@ -2,12 +2,12 @@
 
 .. _MCM6810AP-1:
 
-.. #Metadata {'Product':'MCM6810AP-1','Name':'MCM6810AP 128 x 8-bit RAM','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MCM6810AP-1','Name':'MCM6810AP-1 128 x 8-bit RAM','Storage': 'Storage Box 3','Drawer':4,'Row':1,'Column':1}
 
 MCM6810AP-1 128 x 8-bit RAM
 ===========================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MCM6810/MCM6810AP-1.png
    :width: 400
    :align: center
 
@@ -16,15 +16,15 @@ MCM6810AP-1 128 x 8-bit RAM
 .. csv-table:: 
    :widths: auto
 
-   "Date Code",""
-   "Manufacture Date",""
+   "Date Code","7643"
+   "Manufacture Date","18-OCT-1976 to 24-OCT-1976"
    "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 3, Drawer 4, Row 1, Column 1 <Storage_Box_3_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1MHz"
-   "Notes",""
+   "Notes","New in box (unopened)"
 
 .. rubric:: Collection Information
 
@@ -32,7 +32,7 @@ MCM6810AP-1 128 x 8-bit RAM
    :header: "Acquired"
    :widths: auto
 
-   |intransit|  
+   |present| 11-JUL-2026
 
 .. rubric:: Links
 

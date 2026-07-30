@@ -2,7 +2,7 @@
 
 .. _MC6860L:
 
-.. #Metadata {'Product':'MC6860L','Name':'MC6860L 0-600 bps Digital Modem','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':2}
+.. #Metadata {'Product':'MC6860L','Name':'MC6860L 0-600 bps Digital Modem','Storage': 'Storage Box 3','Drawer':4,'Row':1,'Column':3}
 
 MC6860L 0-600 bps Digital Modem
 ===============================
@@ -21,7 +21,7 @@ MC6860L 0-600 bps Digital Modem
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 0, Row 1, Column 2 <Storage_Box_2_Drawer_0>`"
+   "Location",":ref:`Storage Box 3, Drawer 4, Row 1, Column 3 <Storage_Box_3_Drawer_4>`"
    "Temperature",""
    "Frequency",""
    "Notes",""

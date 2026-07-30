@@ -80,6 +80,7 @@ More information about document statuses can be found here :ref:`glossary_docume
    Map <map>
    In Transit <transit>
    Statistics <statistics>
+   Technical Information <workflow>
 
 .. toctree::
    :titlesonly:

@@ -2,7 +2,7 @@
 
 .. _MC68B54PDS:
 
-.. #Metadata {'Product':'MC68B54PDS','Name':'MC68B54PDS Advanced Data-Link Controller (ADLC)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68B54PDS','Name':'MC68B54PDS Advanced Data-Link Controller (ADLC)','Storage': 'Storage Box 3','Drawer':2,'Row':1,'Column':1}
 
 MC68B54PDS Advanced Data-Link Controller (ADLC)
 ===============================================
@@ -16,12 +16,12 @@ MC68B54PDS Advanced Data-Link Controller (ADLC)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","8326"
+   "Manufacture Date","20-JUN-1983 to 26-JUN-1983"
+   "Mask","N6R"
    "Packaging","CERDIP"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 3, Drawer 2, Row 1, Column 1 <Storage_Box_3_Drawer_2>`"
    "Temperature","-40-85\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC68B54PDS Advanced Data-Link Controller (ADLC)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 07-JUL-2026
 
 .. rubric:: Links
 

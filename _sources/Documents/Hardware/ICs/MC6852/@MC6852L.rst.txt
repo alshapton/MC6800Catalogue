@@ -2,7 +2,7 @@
 
 .. _MC6852L:
 
-.. #Metadata {'Product':'MC6852L','Name':'MC6852L Synchronous Serial Adapter (1 Mhz)','Storage': 'Storage Box 2','Drawer':0,'Row':1,'Column':1}
+.. #Metadata {'Product':'MC6852L','Name':'MC6852L Synchronous Serial Adapter (1 Mhz)','Storage': 'Storage Box 3','Drawer':4,'Row':1,'Column':2}
 
 MC6852L Synchronous Serial Adapter (1 Mhz)
 ==========================================
@@ -29,7 +29,7 @@ MC6852L Synchronous Serial Adapter (1 Mhz)
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 0, Row 1, Column 1 <Storage_Box_2_Drawer_0>`"
+   "Location",":ref:`Storage Box 3, Drawer 4, Row 1, Column 2 <Storage_Box_3_Drawer_4>`"
    "Temperature",""
    "Frequency",""
    "Notes",""
