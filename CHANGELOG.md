@@ -18,6 +18,9 @@ Changes to the repository are documented here.
 
 ## AUG-2026
 
+:new: Added MC68A21P to intransit  
+:new: Added MC68A03P to intransit  
+:new: Added MC68B09PDS to intransit  
 :ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-03-11  
 :bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan) 
 

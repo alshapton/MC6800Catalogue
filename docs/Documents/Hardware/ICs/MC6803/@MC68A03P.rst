@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68A21P:
+.. _MC68A03P:
 
-.. #Metadata {'Product':'MC68A21P','Name':'MC68A21P Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68A03P','Name':'MC68A03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC68A21P Peripheral Interface Adapter (PIA)
-===========================================
+MC68A03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC680P)
+==========================================================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -36,4 +36,4 @@ MC68A21P Peripheral Interface Adapter (PIA)
 
 .. rubric:: Links
 
-:download:`MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`
+:download:`MC6803 Microcomputer/Microprocessor (MCU/MPU) (MC6803)  <../../../../_static/Documents/Datasheets/MC6801-03-03NR.pdf>`

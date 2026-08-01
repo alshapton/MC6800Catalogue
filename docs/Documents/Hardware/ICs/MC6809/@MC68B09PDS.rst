@@ -1,11 +1,11 @@
 :orphan:
 
-.. _MC68A21P:
+.. _MC68B09PDS:
 
-.. #Metadata {'Product':'MC68A21P','Name':'MC68A21P Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68B09PDS','Name':'MC68B09PDS 8-Bit Microprocessing Unit','Storage': 'S','Drawer':0,'Row':0,'Column':0}
 
-MC68A21P Peripheral Interface Adapter (PIA)
-===========================================
+MC68B09PDS 8-Bit Microprocessing Unit
+=====================================
 
 .. image:: ../../../../images/NOIMAGE.png
    :width: 400
@@ -23,7 +23,7 @@ MC68A21P Peripheral Interface Adapter (PIA)
    "Status","TBD"
    "Location","TBD"
    "Temperature","0-70\ :sup:`o`\ C"
-   "Frequency","1.5 Mhz"
+   "Frequency","2 Mhz"
    "Notes",""
 
 .. rubric:: Collection Information
@@ -36,4 +36,4 @@ MC68A21P Peripheral Interface Adapter (PIA)
 
 .. rubric:: Links
 
-:download:`MC6821 Peripheral Interface Adapter (PIA)  <../../../../_static/Documents/Datasheets/MC6821.pdf>`
+:download:`MC6809 8-Bit Microprocessing Unit  <../../../../_static/Documents/Datasheets/MC6809.pdf>`
