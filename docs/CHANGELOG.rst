@@ -20,6 +20,7 @@ AUG-2026
 * Added MC68B09PDS to collection
 * Added MC6803L-1 to collection
 * Added MC6843SL to collection
+* Added MC6843SP to collection
 * Rationalising Storage
 * Retro fitting symbols to CHANGELOG back to 2026-02-13
 * Further optimising build scripts

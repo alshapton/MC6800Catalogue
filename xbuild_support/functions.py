@@ -280,6 +280,18 @@ def get_location(ref,md):
             loc  = ast.literal_eval(loc)
     return loc
 
+def convert_date_format(date_str: str) -> str:
+    """Converts a date string from 'DD-MMM-YYYY' (e.g., '31-JUL-2026')
+
+    to 'YYYY-MM-DD' (e.g., '2026-07-31').
+    """
+    # %d: 2-digit day
+    # %b: Abbreviated month name (case-insensitive in parsing)
+    # %Y: 4-digit year
+    from datetime import datetime
+    parsed_date = datetime.strptime(date_str, "%d-%b-%Y")
+    return parsed_date.strftime("%Y-%m-%d")
+
 def convert_MMM_to_MM(month: str) -> str:
     # Convert a 3 character month to a two digit month  e.g. “MAR” -> “03” or “0” if not found
     from datetime import datetime
