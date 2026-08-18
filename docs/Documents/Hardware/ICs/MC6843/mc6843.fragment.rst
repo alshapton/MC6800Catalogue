@@ -7,6 +7,6 @@
       :widths: auto
 
       "|present| :ref:`MC6843L <MC6843L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6843SP <MC6843SP>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC6843SP <MC6843SP>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6843P <MC6843P>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6843SL <MC6843SL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC6843SL <MC6843SL>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""

@@ -2,7 +2,7 @@
 
 .. _MC68B03P:
 
-.. #Metadata {'Product':'MC68B03P','Name':'MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':2}
+.. #Metadata {'Product':'MC68B03P','Name':'MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':2}
 
 MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 ==========================================================================
@@ -21,7 +21,7 @@ MC68B03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
    "Mask","A95E"
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 2 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 2 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","2 Mhz"
    "Notes",""

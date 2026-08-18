@@ -280,37 +280,44 @@ def get_location(ref,md):
             loc  = ast.literal_eval(loc)
     return loc
 
+def convert_MMM_to_MM(month: str) -> str:
+    # Convert a 3 character month to a two digit month  e.g. “MAR” -> “03” or “0” if not found
+    from datetime import datetime
+    try:
+            return f"{datetime.strptime(month.upper(), "%b").month:02d}"
+    except:
+            return "0"
 
-def convert_MMM_to_MM(m):
-    upperm=m.upper()
-    match upperm:
-        case "JAN":
-            month = '01'
-        case "FEB":
-            month = '02'
-        case "MAR":
-            month = '03'
-        case "APR":
-            month = '04'
-        case "MAY":
-            month = '05'
-        case "JUN":
-            month = '06'
-        case "JUL":
-            month = '07'
-        case "AUG":
-            month = '08'
-        case "SEP":
-            month = '09'
-        case "OCT":
-            month = '10'
-        case "NOV":
-            month = '11'
-        case "DEC":
-            month = '12'
-        case _:
-            month='0'
-    return month
+#def convert_MMM_to_MM(m):
+#    upperm=m.upper()
+#    match upperm:
+#        case "JAN":
+#            month = '01'
+#        case "FEB":
+#            month = '02'
+#        case "MAR":
+#            month = '03'
+#        case "APR":
+#            month = '04'
+#        case "MAY":
+#            month = '05'
+#        case "JUN":
+#            month = '06'
+#        case "JUL":
+#            month = '07'
+#        case "AUG":
+#            month = '08'
+#        case "SEP":
+#            month = '09'
+#        case "OCT":
+#            month = '10'
+#        case "NOV":
+#            month = '11'
+#        case "DEC":
+#            month = '12'
+#        case _:
+#            month='0'
+#    return month
 
 # DO SETUP OF ICONS
 def setup_icons(OSSEP,XBS,CONFPY,CONVENTIONSFILENAME,mediaincfilename):

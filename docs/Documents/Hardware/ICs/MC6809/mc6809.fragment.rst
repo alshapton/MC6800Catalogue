@@ -7,6 +7,7 @@
       :widths: auto
 
       "|notpresent| :ref:`MC68B09L <MC68B09L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC68B09PDS <MC68B09PDS>`","Plastic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B09CL <MC68B09CL>`","Ceramic","2 Mhz","-40-85\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC6809L <MC6809L>`","Ceramic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A09CL <MC68A09CL>`","Ceramic","1.5 Mhz","-40-85\ :sup:`o`\ C",""

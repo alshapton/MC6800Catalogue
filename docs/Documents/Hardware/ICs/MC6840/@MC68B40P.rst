@@ -2,7 +2,7 @@
 
 .. _MC68B40P:
 
-.. #Metadata {'Product':'MC68B40P','Name':'MC68B40P Programmable Timer','Storage': 'Storage Box 2','Drawer':1,'Row':2,'Column':3}
+.. #Metadata {'Product':'MC68B40P','Name':'MC68B40P Programmable Timer','Storage': 'Storage Box 2','Drawer':3,'Row':3,'Column':3}
 
 MC68B40P Programmable Timer
 ===========================
@@ -21,7 +21,7 @@ MC68B40P Programmable Timer
    "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 1, Row 2, Column 3 <Storage_Box_2_Drawer_1>`"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 3, Column 3 <Storage_Box_2_Drawer_3>`"
    "Temperature",""
    "Frequency",""
    "Notes",""

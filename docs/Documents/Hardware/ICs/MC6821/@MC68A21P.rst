@@ -2,12 +2,12 @@
 
 .. _MC68A21P:
 
-.. #Metadata {'Product':'MC68A21P','Name':'MC68A21P Peripheral Interface Adapter (PIA)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC68A21P','Name':'MC68A21P Peripheral Interface Adapter (PIA)','Storage': 'Storage Box 2','Drawer':3,'Row':3,'Column':2}
 
 MC68A21P Peripheral Interface Adapter (PIA)
 ===========================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6821/MC68A21P.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC68A21P Peripheral Interface Adapter (PIA)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
-   "Mask",""
+   "Date Code","9012"
+   "Manufacture Date","12-MAR-1990 to 18-MAR-1990"
+   "Mask","2M9N"
    "Packaging","Plastic"
-   "Status","TBD"
-   "Location","TBD"
+   "Status","Production"
+   "Location",":ref:`Storage Box 2, Drawer 3, Row 3, Column 2 <Storage_Box_2_Drawer_3>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC68A21P Peripheral Interface Adapter (PIA)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 31-JUL-2026
 
 .. rubric:: Links
 

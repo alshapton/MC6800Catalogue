@@ -3,12 +3,11 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 30-07-2026).
+This is the timeline of acquisitions (as at 17-08-2026).
 
 .. csv-table::
    :header: "Date","Product" 
 
-   29-07-2026,:ref:`XC6800B Microprocessor Unit <XC6800B>`
    05-DEC-2024,:ref:`M6800 Programming Reference Manual <M68PRM(D)>`
    27-JAN-2025,:ref:`Motorola Microcomputer System Design Data Manual <NONE-1>`
    30-JAN-2025,:ref:`MC6800L Microprocessor Unit <MC6800L>`
@@ -215,3 +214,10 @@ This is the timeline of acquisitions (as at 30-07-2026).
    24-JUN-2026,:ref:`MC6809-MC6809E Microprocessor Programming Manual <M6809PMAD>`
    07-JUL-2026,:ref:`MC68B54PDS Advanced Data-Link Controller (ADLC) <MC68B54PDS>`
    11-JUL-2026,:ref:`MCM6810AP-1 128 x 8-bit RAM <MCM6810AP-1>`
+   29-JUL-2026,:ref:`XC6800B Microprocessor Unit <XC6800B>`
+   31-JUL-2026,:ref:`MC68A21P Peripheral Interface Adapter (PIA) <MC68A21P>`
+   31-JUL-2026,:ref:`MC6843SL Floppy Disk Controller (FDC) (MC6843) <MC6843SL>`
+   31-JUL-2026,:ref:`MC6843SP Floppy Disk Controller (FDC) (MC6843) <MC6843SP>`
+   05-AUG-2026,:ref:`MC68A03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC680P) <MC68A03P>`
+   05-AUG-2026,:ref:`MC68B09PDS 8-Bit Microprocessing Unit <MC68B09PDS>`
+   17-AUG-2026,:ref:`MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC6803L-1>`

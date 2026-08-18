@@ -18,11 +18,17 @@ Changes to the repository are documented here.
 
 ## AUG-2026
 
-:new: Added MC68A21P to intransit  
-:new: Added MC68A03P to intransit  
-:new: Added MC68B09PDS to intransit  
-:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-03-11  
-:bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan) 
+:new: Added MC68A21P to collection  
+:new: Added MC68A03P to collection  
+:new: Added MC68B09PDS to collection  
+:new: Added MC6803L-1 to collection  
+:new: Added MC6843SL to collection  
+:new: Added MC6843SP to collection  
+:ophiuchus: Rationalising Storage  
+:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-02-13  
+:ophiuchus: Further optimising build scripts  
+:bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)  
+:bug: Corrected acquired date format in XC6800B   
 
 ## JUL-2026
 :new: Added new logo for website in readiness for `VCF GB 2026 <https://www.facebook.com/vcfgb>`_   
@@ -384,66 +390,66 @@ Changes to the repository are documented here.
 
 ## 2026-03-10
 
-- Changed MC68A45P and MC68A00P to in transit
-- Changed M6800 Microprocessor Programming Manual to notpresent
+:eight_spoked_asterisk: Changed MC68A45P and MC68A00P to in transit  
+:eight_spoked_asterisk: Changed M6800 Microprocessor Programming Manual to notpresent  
 
 ## 2026-03-04
 
-- Added MC68A00L to intransit
-- Added MEX68488 GPIA Support Module Users Guide to listing
-- Added MEX6821-2 Input/Output Module Users Guide to listing
-- Added M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User to listing
-- Added MEX6845 CRTC Support Module Users Guide to listing
+:new: Added MC68A00L to intransit  
+:new: Added MEX68488 GPIA Support Module Users Guide to listing  
+:new: Added MEX6821-2 Input/Output Module Users Guide to listing  
+:new: Added M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User to listing  
+:new: Added MEX6845 CRTC Support Module Users Guide to listing  
 
 ## 2026-03-02
 
-- Added MEX68RR EROM/RAM Module Supplement to listing
-- Added additional article and image for MES6800
-- Added MEK6803D3 Evaluation Board to listing
-- Added Motorola Exorset 30 Model M6809 Set 30 to listing
-- Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing
+:new: Added MEX68RR EROM/RAM Module Supplement to listing  
+:new: Added additional article and image for MES6800  
+:new: Added MEK6803D3 Evaluation Board to listing  
+:new: Added Motorola Exorset 30 Model M6809 Set 30 to listing  
+:new: Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing  
 
 ## 2026-02-26
 
-- Added M6809 Resident Pascal Compiler and Interpreter Users Guide to listing
-- Added EXOSET30 XDOS Operating System Users Guide to listing
-- Added M68MM1A2 Monoboard Micromodule 1A/1A2 to listing
-- Added MEX6820 Input/Output Module Supplement Users Guide to listing
-- Added MEX68USEB User System Evaluator Users Guide to listing
-- Added M6800 Microprocessor Programming Manual to intransit
-- Added MC6800P to collection
+:new: Added M6809 Resident Pascal Compiler and Interpreter Users Guide to listing  
+:new: Added EXOSET30 XDOS Operating System Users Guide to listing  
+:new: Added M68MM1A2 Monoboard Micromodule 1A/1A2 to listing  
+:new: Added MEX6820 Input/Output Module Supplement Users Guide to listing  
+:new: Added MEX68USEB User System Evaluator Users Guide to listing  
+:new: Added M6800 Microprocessor Programming Manual to intransit  
+:new: Added MC6800P to collection  
 
 ## 2026-02-24
 
-- Changes for repoint to enable xbuild to work with GH Pages
+:eight_spoked_asterisk: Changes for repoint to enable xbuild to work with GH Pages  
 
 ## 2026-02-23
 
-- Added MES6800 Schematic to collection
+:new: Added MES6800 Schematic to collection  
 
 ## 2026-02-17
 
-- Corrected in transit formatting
-- Added MC6800CL and MC6800P to in transit
-- Corrected MC6800GMCM issue
+:new: Added MC6800CL and MC6800P to in transit  
+:bug: Corrected in transit formatting  
+:bug: Corrected MC6800GMCM issue  
 
 ## 2026-02-16
 
-- Added MC6801RM(AD3) MC6801 Reference Manual
+ :bug: Added MC6801RM(AD3) MC6801 Reference Manual  
 
 ## 2026-02-15
 
-- Added CNAME file
+:bug: Added CNAME file  
 
 ## 2026-02-14
 
-- Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection
+:bug: Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection  
 
 ## 2026-02-13
 
-- Corrected PASCAL manual location
-- Added M68 Pascal reference Manual to collection
-- Final fixes to make Github pages
+:bug: Corrected PASCAL manual location  
+:new: Added M68 Pascal reference Manual to collection  
+:bug: Final fixes to make Github pages  
 
 ## 2026-02-12
 
