@@ -1662,11 +1662,13 @@ def do_timeline():
             f.write('This is the timeline of acquisitions (as at ' + time.strftime("%d-%m-%Y") + ').\n\n')
 
             f.write('.. csv-table::\n')
-            f.write('   :header: "Date","Product" \n\n')
-            
+            f.write('   :header: "Date","Product" \n')
+            f.write('   :class: sphinx-datatable \n\n')
             for t in sorted(timeline):
                 thisone = ast.literal_eval(t)
-                f.write('   ' + thisone['RDate'] + ',:ref:`'+ thisone['Name']+ ' <' + thisone['Tag']+'>`\n')
+                converted_date=convert_date_format(thisone['RDate'])
+
+                f.write('   ' + converted_date + ',:ref:`'+ thisone['Name']+ ' <' + thisone['Tag']+'>`\n')
 
 
             
