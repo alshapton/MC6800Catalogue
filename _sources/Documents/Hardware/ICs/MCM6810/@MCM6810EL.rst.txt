@@ -2,7 +2,7 @@
 
 .. _MCM6810EL:
 
-.. #Metadata {'Product':'MCM6810EL','Name':'MCM6810EL 128 x 8-bit RAM','Storage': 'Storage Box 1','Drawer':4,'Row':1,'Column':3}
+.. #Metadata {'Product':'MCM6810EL','Name':'MCM6810EL 128 x 8-bit RAM','Storage': 'Storage Box 1','Drawer':4,'Row':1,'Column':2}
 
 MCM6810EL 128 x 8-bit RAM
 =========================
@@ -21,7 +21,7 @@ MCM6810EL 128 x 8-bit RAM
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 3 <Storage_Box_1_Drawer_4>`"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 2 <Storage_Box_1_Drawer_4>`"
    "Temperature","TBD"
    "Frequency","TBD"
    "Notes",""

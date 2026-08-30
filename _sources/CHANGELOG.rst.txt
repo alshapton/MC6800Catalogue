@@ -12,6 +12,27 @@ Change Log
 
 Changes to the repository are documented here. 
 
+AUG-2026
+--------
+
+* Added MC68A21P to collection
+* Added MC68A03P to collection
+* Added MC68B09PDS to collection
+* Added MC6803L-1 to collection
+* Added MC6843SL to collection
+* Added MC6843SP to collection
+* Added MDOS Linking Loader Reference Manual to in transit
+* Added Resident Pascal Compiler Reference Guide to in transit
+* Rationalising Storage
+* Retro fitting symbols to CHANGELOG back to 2026-02-11
+* Further optimising build scripts
+* Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline
+* Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality
+* Updated front matter
+* Bump release version to 0.3 
+* Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)
+* Corrected acquired date format in XC6800B   
+
 JUL-2026
 --------
 
@@ -37,7 +58,7 @@ JUL-2026
 * Added new functionality to swap ICs in Drawer Storage
 * Added new functionality to swap whole drawers over in Drawer Storage
 * Added new Storage Box 3
-* Removed Drawer 0 from Storage Box 2 
+* Removed Drawer 0 from Storage Box 2
 * Added README.md to repository
 * Converting storage properties to be stored in database
 * Retro fitting symbols to CHANGELOG back to 2026-04-01
@@ -259,14 +280,13 @@ JUL-2026.1
 2026-05-20
 ----------
 
-
 * Added M68KBC1 Keyboard Enclosure to in transit
-* Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)
 * Added MC6801/68701/6803 Microcomputer Instruction Set Summary to collection
 * Added new icon for preliminary documentation
 * Added Technical Information Publication 000 to collection
 * Added Motorola Microsystems Factory Service Plans and Warranty to collection
 * Added M68KBD1 Full ASCII Keyboard to in transit
+*  Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)  
 
 2026-05-13
 ----------
@@ -380,69 +400,61 @@ JUL-2026.1
 2026-03-25
 ----------
 
-
-* Added pictures for XC6800B and MC6800BQCJC
-* Changed status for XC6800B and MC6800BQCJC to notpresent
 * Added MC68A00L to collection
-* Swapped positions of MC6800GMCM and  MC68B44L
+* Added pictures for XC6800B and MC6800BQCJC
+* Swapped positions of MC6800GMCM and MC68B44L
 * Swapped positions of MC6800L and  MC6821P
-* Changed MC68A00P to in transit
+* Changed status for XC6800B and MC6800BQCJC to notpresent
+* Changed MC68A00P to in transit  
 
 2026-03-21
 ----------
 
-
-* Full update and recon of site
+* Full update and recon of site  
 
 2026-03-12
 ----------
-
 
 * Added 32K Dynamic RAM Module with parity to listing
 * Added 48K Dynamic RAM Module with parity to listing
 * Added 64K Dynamic RAM Module with parity to listing
 * Added additionnal information re: copyrights
-* Added MC6800BQCJC and XC6800B to under offer
+* Added MC6800BQCJC and XC6800B to under offer  
 
 2026-03-11
 ----------
 
-
 * Added MEX6854 Support Module Users Guide to list
 * Added EXORciser II Development System 220V without Memory to list
 * Added EXORciser II Development System 220V with 32K Dynamic Memory to list
-* Added EXORciser II Development System 220V with 32K Static Memory to list
+* Added EXORciser II Development System 220V with 32K Static Memory to list  
 
 2026-03-10
 ----------
 
-
 * Changed MC68A45P and MC68A00P to in transit
-* Changed M6800 Microprocessor Programming Manual to notpresent
+* Changed M6800 Microprocessor Programming Manual to notpresent  
 
 2026-03-04
 ----------
-
 
 * Added MC68A00L to intransit
 * Added MEX68488 GPIA Support Module Users Guide to listing
 * Added MEX6821-2 Input/Output Module Users Guide to listing
 * Added M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User to listing
-* Added MEX6845 CRTC Support Module Users Guide to listing
+* Added MEX6845 CRTC Support Module Users Guide to listing  
 
 2026-03-02
 ----------
-
 
 * Added MEX68RR EROM/RAM Module Supplement to listing
 * Added additional article and image for MES6800
 * Added MEK6803D3 Evaluation Board to listing
 * Added Motorola Exorset 30 Model M6809 Set 30 to listing
-* Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing
+* Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing  
 
 2026-02-26
 ----------
-
 
 * Added M6809 Resident Pascal Compiler and Interpreter Users Guide to listing
 * Added EXOSET30 XDOS Operating System Users Guide to listing
@@ -450,57 +462,49 @@ JUL-2026.1
 * Added MEX6820 Input/Output Module Supplement Users Guide to listing
 * Added MEX68USEB User System Evaluator Users Guide to listing
 * Added M6800 Microprocessor Programming Manual to intransit
-* Added MC6800P to collection
+* Added MC6800P to collection  
 
 2026-02-24
 ----------
 
-
-* Changes for repoint to enable xbuild to work with GH Pages
+* Changes for repoint to enable xbuild to work with GH Pages  
 
 2026-02-23
 ----------
 
-
-* Added MES6800 Schematic to collection
+* Added MES6800 Schematic to collection  
 
 2026-02-17
 ----------
 
-
-* Corrected in transit formatting
 * Added MC6800CL and MC6800P to in transit
-* Corrected MC6800GMCM issue
+* Corrected in transit formatting
+* Corrected MC6800GMCM issue  
 
 2026-02-16
 ----------
 
-
-* Added MC6801RM(AD3) MC6801 Reference Manual
+ :bug: Added MC6801RM(AD3) MC6801 Reference Manual  
 
 2026-02-15
 ----------
 
-
-* Added CNAME file
+* Added CNAME file  
 
 2026-02-14
 ----------
 
-
-* Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection
+* Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection  
 
 2026-02-13
 ----------
 
-
 * Corrected PASCAL manual location
 * Added M68 Pascal reference Manual to collection
-* Final fixes to make Github pages
+* Final fixes to make Github pages  
 
 2026-02-12
 ----------
-
 
 * Add GitHub Actions workflow for Sphinx documentation
 * Changed location of source directory
@@ -509,13 +513,12 @@ JUL-2026.1
 * Add furo package to requirements
 * Add Sphinx workflow for rendering documentation
 * Removed Family page
-* Removed HoverXF Extension
+* Removed HoverXF Extension  
 
 2026-02-11
 ----------
 
-
-* Added extra pictures to MES6800
+* Added extra pictures to MES6800  
 
 2026-01-27
 ----------
@@ -1717,10 +1720,10 @@ JUL-2026.1
 
 * Added MC6800L
 * Added MC6862L
-* Reformatted IC tables to improve look
 * Added XC6820
 * Added MCM6830L7
 * Added HEPC4801L
+* Reformatted IC tables to improve look
 
 2025-04-22
 ----------
@@ -1728,10 +1731,10 @@ JUL-2026.1
 
 * Added Listing for M68EXORbus specification
 * Added listing for M6800/M6809 Resident editor manual
-* Corrected document location bug in create function of utils.py
 * Added some manuals for preparation
 * Added MC6850L IC  to collection
 * Added MC6862P IC - 2400 bps Digital Modulator - to collection
+* Corrected document location bug in create function of utils.py
 
 2025-04-21
 ----------
@@ -1744,10 +1747,10 @@ JUL-2026.1
 * Added M68ASM Cross Assembler source code (FORTRAN for PDP-11)
 * Added M6800 Support Software DEC PDP-11 Info Sheet
 * Added M6800 Support Software GE Info Sheet
-* Commenced adding locations to documents
 * Added Monoboard Microcomputer 1 Micromodule 1 listing
 * Added M6800 Cross Assembler Reference Manual listing (pending arrival)
 * Added Extended Display Supplement Basic Display Unit User's Guide listing
+* Commenced adding locations to documents
 
 2025-04-20
 ----------
@@ -1761,9 +1764,9 @@ JUL-2026.1
 ----------
 
 
+* Added dependency for sphinx_collapse
 * Improvements to index
 * Fix for development systems table issue
-* Added dependency for sphinx_collapse
 * Continued alignment of directory structures
 
 2025-04-09

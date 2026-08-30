@@ -7,6 +7,7 @@
       :widths: auto
 
       "|notpresent| :ref:`MC68A03-1G <MC68A03-1G>`","Plastic","1.25 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC68A03P <MC68A03P>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A03G <MC68A03G>`","Plastic","1.5 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68B03L <MC68B03L>`","Ceramic","2 Mhz","0-70\ :sup:`o`\ C",""
       "|present| :ref:`MC6803L <MC6803L>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
@@ -17,4 +18,4 @@
       "|notpresent| :ref:`MC6803G <MC6803G>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A03-1L <MC68A03-1L>`","Ceramic","1.25 Mhz","0-70\ :sup:`o`\ C",""
       "|notpresent| :ref:`MC68A03L <MC68A03L>`","Ceramic","1.5 Mhz","0-70\ :sup:`o`\ C",""
-      "|intransit| :ref:`MC6803L-1 <MC6803L-1>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""
+      "|present| :ref:`MC6803L-1 <MC6803L-1>`","Plastic","1 Mhz","0-70\ :sup:`o`\ C",""

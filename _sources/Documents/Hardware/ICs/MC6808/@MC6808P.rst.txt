@@ -2,7 +2,7 @@
 
 .. _MC6808P:
 
-.. #Metadata {'Product':'MC6808P','Name':'MC6808L Microprocessor with Clock and Optional RAM (MC6808)','Storage': 'Storage Box 2','Drawer':3,'Row':2,'Column':1}
+.. #Metadata {'Product':'MC6808P','Name':'MC6808P Microprocessor with Clock and Optional RAM','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':2}
 
 MC6808P Microprocessor with Clock and Optional RAM
 ==================================================
@@ -21,7 +21,7 @@ MC6808P Microprocessor with Clock and Optional RAM
    "Mask","R1H"
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 3, Row 2, Column 1 <Storage_Box_2_Drawer_3>`"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 2 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""

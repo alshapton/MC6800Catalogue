@@ -5,19 +5,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Change Log &#8212; Motorola MC6800 Family Product Catalogue 0.2 documentation</title>
+    <title>Change Log &#8212; Motorola MC6800 Family Product Catalogue 0.3 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx_collapse.css?v=226d88b4" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-2.3.5/datatables.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=324bbda0" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <script src="_static/documentation_options.js?v=10f1778b"></script>
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=b489f392"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.5/datatables.min.js"></script>
+    <script src="_static/activate_datatables.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
    
@@ -40,6 +45,28 @@
   <section id="change-log">
 <span id="changelog"></span><h1>Change Log<a class="headerlink" href="#change-log" title="Link to this heading">¶</a></h1>
 <p>Changes to the repository are documented here.</p>
+<section id="aug-2026">
+<h2>AUG-2026<a class="headerlink" href="#aug-2026" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Added MC68A21P to collection</p></li>
+<li><p>Added MC68A03P to collection</p></li>
+<li><p>Added MC68B09PDS to collection</p></li>
+<li><p>Added MC6803L-1 to collection</p></li>
+<li><p>Added MC6843SL to collection</p></li>
+<li><p>Added MC6843SP to collection</p></li>
+<li><p>Added MDOS Linking Loader Reference Manual to in transit</p></li>
+<li><p>Added Resident Pascal Compiler Reference Guide to in transit</p></li>
+<li><p>Rationalising Storage</p></li>
+<li><p>Retro fitting symbols to CHANGELOG back to 2026-02-11</p></li>
+<li><p>Further optimising build scripts</p></li>
+<li><p>Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline</p></li>
+<li><p>Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality</p></li>
+<li><p>Updated front matter</p></li>
+<li><p>Bump release version to 0.3</p></li>
+<li><p>Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)</p></li>
+<li><p>Corrected acquired date format in XC6800B</p></li>
+</ul>
+</section>
 <section id="jul-2026">
 <h2>JUL-2026<a class="headerlink" href="#jul-2026" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -305,12 +332,12 @@
 <h2>2026-05-20<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Added M68KBC1 Keyboard Enclosure to in transit</p></li>
-<li><p>Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)</p></li>
 <li><p>Added MC6801/68701/6803 Microcomputer Instruction Set Summary to collection</p></li>
 <li><p>Added new icon for preliminary documentation</p></li>
 <li><p>Added Technical Information Publication 000 to collection</p></li>
 <li><p>Added Motorola Microsystems Factory Service Plans and Warranty to collection</p></li>
 <li><p>Added M68KBD1 Full ASCII Keyboard to in transit</p></li>
+<li><p>Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)</p></li>
 </ul>
 </section>
 <section id="id17">
@@ -438,11 +465,11 @@
 <section id="id32">
 <h2>2026-03-25<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Added pictures for XC6800B and MC6800BQCJC</p></li>
-<li><p>Changed status for XC6800B and MC6800BQCJC to notpresent</p></li>
 <li><p>Added MC68A00L to collection</p></li>
-<li><p>Swapped positions of MC6800GMCM and  MC68B44L</p></li>
+<li><p>Added pictures for XC6800B and MC6800BQCJC</p></li>
+<li><p>Swapped positions of MC6800GMCM and MC68B44L</p></li>
 <li><p>Swapped positions of MC6800L and  MC6821P</p></li>
+<li><p>Changed status for XC6800B and MC6800BQCJC to notpresent</p></li>
 <li><p>Changed MC68A00P to in transit</p></li>
 </ul>
 </section>
@@ -525,16 +552,20 @@
 <section id="id42">
 <h2>2026-02-17<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Corrected in transit formatting</p></li>
 <li><p>Added MC6800CL and MC6800P to in transit</p></li>
+<li><p>Corrected in transit formatting</p></li>
 <li><p>Corrected MC6800GMCM issue</p></li>
 </ul>
 </section>
 <section id="id43">
 <h2>2026-02-16<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>Added MC6801RM(AD3) MC6801 Reference Manual</p></li>
-</ul>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">bug<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Added MC6801RM(AD3) MC6801 Reference Manual</p>
+</dd>
+</dl>
+</div></blockquote>
 </section>
 <section id="id44">
 <h2>2026-02-15<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h2>
@@ -1774,10 +1805,10 @@ NOTE - BOTH concurrently are NOT supported.</p></li>
 <ul class="simple">
 <li><p>Added MC6800L</p></li>
 <li><p>Added MC6862L</p></li>
-<li><p>Reformatted IC tables to improve look</p></li>
 <li><p>Added XC6820</p></li>
 <li><p>Added MCM6830L7</p></li>
 <li><p>Added HEPC4801L</p></li>
+<li><p>Reformatted IC tables to improve look</p></li>
 </ul>
 </section>
 <section id="id172">
@@ -1785,10 +1816,10 @@ NOTE - BOTH concurrently are NOT supported.</p></li>
 <ul class="simple">
 <li><p>Added Listing for M68EXORbus specification</p></li>
 <li><p>Added listing for M6800/M6809 Resident editor manual</p></li>
-<li><p>Corrected document location bug in create function of utils.py</p></li>
 <li><p>Added some manuals for preparation</p></li>
 <li><p>Added MC6850L IC  to collection</p></li>
 <li><p>Added MC6862P IC - 2400 bps Digital Modulator - to collection</p></li>
+<li><p>Corrected document location bug in create function of utils.py</p></li>
 </ul>
 </section>
 <section id="id173">
@@ -1801,10 +1832,10 @@ NOTE - BOTH concurrently are NOT supported.</p></li>
 <li><p>Added M68ASM Cross Assembler source code (FORTRAN for PDP-11)</p></li>
 <li><p>Added M6800 Support Software DEC PDP-11 Info Sheet</p></li>
 <li><p>Added M6800 Support Software GE Info Sheet</p></li>
-<li><p>Commenced adding locations to documents</p></li>
 <li><p>Added Monoboard Microcomputer 1 Micromodule 1 listing</p></li>
 <li><p>Added M6800 Cross Assembler Reference Manual listing (pending arrival)</p></li>
 <li><p>Added Extended Display Supplement Basic Display Unit User’s Guide listing</p></li>
+<li><p>Commenced adding locations to documents</p></li>
 </ul>
 </section>
 <section id="id174">
@@ -1818,9 +1849,9 @@ NOTE - BOTH concurrently are NOT supported.</p></li>
 <section id="id175">
 <h2>2025-04-19<a class="headerlink" href="#id175" title="Link to this heading">¶</a></h2>
 <ul class="simple">
+<li><p>Added dependency for sphinx_collapse</p></li>
 <li><p>Improvements to index</p></li>
 <li><p>Fix for development systems table issue</p></li>
-<li><p>Added dependency for sphinx_collapse</p></li>
 <li><p>Continued alignment of directory structures</p></li>
 </ul>
 </section>

@@ -2,12 +2,12 @@
 
 .. _MC6843SL:
 
-.. #Metadata {'Product':'MC6843SL','Name':'MC6843SL Floppy Disk Controller (FDC) (MC6843)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6843SL','Name':'MC6843SL Floppy Disk Controller (FDC) (MC6843)','Storage': 'Storage Box 2','Drawer':2,'Row':3,'Column':2}
 
 MC6843SL Floppy Disk Controller (FDC) (MC6843)
 ==============================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6843/MC6843SL.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC6843SL Floppy Disk Controller (FDC) (MC6843)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code","TBD"
-   "Manufacture Date","TBD"
+   "Date Code","8035"
+   "Manufacture Date","25-AUG-1980 to 31-AUG-1980"
    "Mask",""
    "Packaging","Ceramic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 2, Drawer 2, Row 3, Column 2 <Storage_Box_2_Drawer_2>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
@@ -32,5 +32,5 @@ MC6843SL Floppy Disk Controller (FDC) (MC6843)
    :header: "Acquired"
    :widths: auto
 
-   |intransit| 
+   |present| 31-JUL-2026
 
