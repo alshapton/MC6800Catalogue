@@ -15,4 +15,4 @@ M6809 Resident Pascal Compiler and Interpreter Users Guide
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|

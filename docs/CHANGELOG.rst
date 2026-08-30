@@ -21,9 +21,15 @@ AUG-2026
 * Added MC6803L-1 to collection
 * Added MC6843SL to collection
 * Added MC6843SP to collection
+* Added MDOS Linking Loader Reference Manual to in transit
+* Added Resident Pascal Compiler Reference Guide to in transit
 * Rationalising Storage
-* Retro fitting symbols to CHANGELOG back to 2026-02-13
+* Retro fitting symbols to CHANGELOG back to 2026-02-11
 * Further optimising build scripts
+* Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline
+* Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality
+* Updated front matter
+* Bump release version to 0.3 
 * Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)
 * Corrected acquired date format in XC6800B   
 
@@ -52,7 +58,7 @@ JUL-2026
 * Added new functionality to swap ICs in Drawer Storage
 * Added new functionality to swap whole drawers over in Drawer Storage
 * Added new Storage Box 3
-* Removed Drawer 0 from Storage Box 2 
+* Removed Drawer 0 from Storage Box 2
 * Added README.md to repository
 * Converting storage properties to be stored in database
 * Retro fitting symbols to CHANGELOG back to 2026-04-01
@@ -500,7 +506,6 @@ JUL-2026.1
 2026-02-12
 ----------
 
-
 * Add GitHub Actions workflow for Sphinx documentation
 * Changed location of source directory
 * Corrected location of makefile
@@ -508,13 +513,12 @@ JUL-2026.1
 * Add furo package to requirements
 * Add Sphinx workflow for rendering documentation
 * Removed Family page
-* Removed HoverXF Extension
+* Removed HoverXF Extension  
 
 2026-02-11
 ----------
 
-
-* Added extra pictures to MES6800
+* Added extra pictures to MES6800  
 
 2026-01-27
 ----------

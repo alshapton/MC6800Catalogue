@@ -2,7 +2,7 @@
 
 .. _MCM6810AP:
 
-.. #Metadata {'Product':'MCM6810AP','Name':'MCM6810AP 128 x 8-bit RAM','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':6}
+.. #Metadata {'Product':'MCM6810AP','Name':'MCM6810AP 128 x 8-bit RAM','Storage': 'Storage Box 1','Drawer':4,'Row':1,'Column':4}
 
 MCM6810AP 128 x 8-bit RAM
 =========================
@@ -21,7 +21,7 @@ MCM6810AP 128 x 8-bit RAM
    "Mask","JF2"
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 6 <Storage_Box_2_Drawer_4>`"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 4 <Storage_Box_1_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1MHz"
    "Notes",""

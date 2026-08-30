@@ -18,15 +18,23 @@ Changes to the repository are documented here.
 
 ## AUG-2026
 
+ 
 :new: Added MC68A21P to collection  
 :new: Added MC68A03P to collection  
 :new: Added MC68B09PDS to collection  
 :new: Added MC6803L-1 to collection  
 :new: Added MC6843SL to collection  
 :new: Added MC6843SP to collection  
+:new: Added MDOS Linking Loader Reference Manual to in transit  
+:new: Added Resident Pascal Compiler Reference Guide to in transit  
 :ophiuchus: Rationalising Storage  
-:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-02-13  
+:ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-02-11  
 :ophiuchus: Further optimising build scripts  
+:atom_symbol: Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline  
+:atom_symbol: Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality  
+:atom_symbol: Updated front matter  
+:atom_symbol: Bump release version to 0.3 
+:atom_symbol: Replaced VCF UK 26 logo on README with mc6800.info logo    
 :bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)  
 :bug: Corrected acquired date format in XC6800B   
 
@@ -53,7 +61,7 @@ Changes to the repository are documented here.
 :atom_symbol: Added new functionality to swap ICs in Drawer Storage  
 :atom_symbol: Added new functionality to swap whole drawers over in Drawer Storage  
 :atom_symbol: Added new Storage Box 3  
-:atom_symbol: Removed Drawer 0 from Storage Box 2 
+:atom_symbol: Removed Drawer 0 from Storage Box 2  
 :atom_symbol: Added README.md to repository   
 :ophiuchus: Converting storage properties to be stored in database  
 :ophiuchus: Retro fitting symbols to CHANGELOG back to 2026-04-01    
@@ -453,18 +461,18 @@ Changes to the repository are documented here.
 
 ## 2026-02-12
 
-- Add GitHub Actions workflow for Sphinx documentation
-- Changed location of source directory
-- Corrected location of makefile
-- Moved to docs
-- Add furo package to requirements
-- Add Sphinx workflow for rendering documentation
-- Removed Family page
-- Removed HoverXF Extension
+:new: Add GitHub Actions workflow for Sphinx documentation  
+:twisted_rightwards_arrows: Changed location of source directory  
+:bug: Corrected location of makefile  
+:twisted_rightwards_arrows: Moved to docs  
+:new: Add furo package to requirements  
+:new: Add Sphinx workflow for rendering documentation  
+:atom_symbol: Removed Family page  
+:atom_symbol: Removed HoverXF Extension  
 
 ## 2026-02-11
 
-- Added extra pictures to MES6800
+:new: Added extra pictures to MES6800  
 
 ## 2026-01-27
 

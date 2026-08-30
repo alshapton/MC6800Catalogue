@@ -2,7 +2,7 @@
 
 .. _MC68A50P:
 
-.. #Metadata {'Product':'MC68A50P','Name':'MC68A50P Asynchronous Communications Interface Adapter (MC6850)','Storage': 'Storage Box 1','Drawer':4,'Row':1,'Column':4}
+.. #Metadata {'Product':'MC68A50P','Name':'MC68A50P Asynchronous Communications Interface Adapter (MC6850)','Storage': 'Storage Box 1','Drawer':4,'Row':3,'Column':6}
 
 MC68A50P Asynchronous Communications Interface Adapter (MC6850)
 ===============================================================
@@ -21,7 +21,7 @@ MC68A50P Asynchronous Communications Interface Adapter (MC6850)
    "Mask",""
    "Packaging","Plastic"
    "Status","Production"
-   "Location",":ref:`Storage Box 1, Drawer 4, Row 1, Column 4 <Storage_Box_1_Drawer_4>`"
+   "Location",":ref:`Storage Box 1, Drawer 4, Row 3, Column 6 <Storage_Box_1_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1.5MHz"
    "Notes",""

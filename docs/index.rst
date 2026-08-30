@@ -10,14 +10,20 @@ Motorola MC6800 Family Product Catalogue documentation
 
 .. image:: ./images/General/mc6800logo.jpeg
 
-The Motorola 6800  (P/N 156-0426-00,156-0426-04,156-2413-00,156-5472-01) is an 8-bit microprocessor monolithic integrated circuit family introduced in 1974.
+The Motorola 6800 is an 8-bit microprocessor monolithic integrated circuit family introduced in 1974.
 The original 6800 requires a +5 V supply only (generating bias voltages on chip) and came initially in 40-pin DIL packages. The 6800 has non-multiplexed data (8 bit) and address (16 bit) buses, and requires an external non-overlapping two-phase 0.1 − 1 MHz clock (later versions from 1976 on up to 2 MHz).
 
-The 6801, introduced in 1977 had a slightly upgraded 6800 CPU, which included a multiply instruction, at the request of the lead customer, General Motors (GM). GM initially used the MC6801 microcontroller for the TripMaster digital trip meter in the 1978 Cadillac Seville. It was a very expensive, $920 factory option.
+There were a number of direct descendents of the original MC6800:
 
-The 6802, also introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. The 6808 is the same without RAM.
+* The 6801, introduced in 1977 had a slightly upgraded 6800 CPU, which included a multiply instruction, at the request of the lead customer, General Motors (GM). GM initially used the MC6801 microcontroller for the TripMaster digital trip meter in the 1978 Cadillac Seville. It was a very expensive, $920 factory option.
 
-The 68HC11, introduced in 1984, is an upward-compatible microcontroller that adds a second index register, 8x8 multiply and 16/16 divide instructions, as well as a range of 16-bit instructions that treat A and B as a combined 16-bit accumulator. On-chip peripherals include timers, parallel ports, A/D, SPI and UART.
+* The 6802, also introduced in 1977, includes 128 bytes RAM and an internal clock oscillator. 
+
+* The 6803, is version of the 6801 without the internal ROM or EPROM.
+
+* The 6808 is the 6802 without RAM.
+
+The 68HC11, introduced in 1984, is an upward-compatible microcontroller that adds a second index register, 8x8 multiply and 16/16 divide instructions, as well as a range of 16-bit instructions that treat A and B as a combined 16-bit accumulator. On-chip peripherals include timers, parallel ports, A/D, SPI and UART. It is not, however part of the scope of this collection.
 This is a catalogue of the items produced by Motorola in the MC6800 Range of CPUs and their compatible derivatives, support chips and tooling.
 
 .. Important:: 
@@ -39,7 +45,7 @@ What products are known are listed are detailed within. A detailed list of chang
 Collection
 ==========
 
-There are items in the collection which are detailed here which increase over time. The collection can be found on the :ref:`collection page`.
+There are items in the collection which are detailed here which increase over time. The collection can be found in the :ref:`collection page`.
 
 
 Copyrights
@@ -78,6 +84,7 @@ More information about document statuses can be found here :ref:`glossary_docume
    Collection <collection>
    Timeline <timeline>
    Map <map>
+   In Transit <transit>
    Statistics <statistics>
    Technical Information <workflow>
 

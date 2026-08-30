@@ -17,7 +17,7 @@ MDOS Linking Loader Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   |notpresent|
+   |intransit|
 
 .. rubric:: Links
 
