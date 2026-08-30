@@ -2,12 +2,12 @@
 
 .. _MC6803L-1:
 
-.. #Metadata {'Product':'MC6803L-1','Name':'MC6803L Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'S','Drawer':0,'Row':0,'Column':0}
+.. #Metadata {'Product':'MC6803L-1','Name':'MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)','Storage': 'Storage Box 2','Drawer':1,'Row':3,'Column':3}
 
 MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 ===========================================================================
 
-.. image:: ../../../../images/NOIMAGE.png
+.. image:: ../../../../images/Hardware/ICs/MC6803/MC6803L-1.png
    :width: 400
    :align: center
 
@@ -16,12 +16,12 @@ MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
 .. csv-table:: 
    :widths: auto
 
-   "Date Code",""
-   "Manufacture Date",""
-   "Mask",""
+   "Date Code","8422"
+   "Manufacture Date","21-MAY-1984 to 27-MAY-1984"
+   "Mask","GM5"
    "Packaging","Plastic"
    "Status","Production"
-   "Location","TBD"
+   "Location",":ref:`Storage Box 2, Drawer 1, Row 3, Column 3 <Storage_Box_2_Drawer_1>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","1 Mhz"
    "Notes",""
@@ -32,7 +32,7 @@ MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803)
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 17-AUG-2026
 
 .. rubric:: Links
 

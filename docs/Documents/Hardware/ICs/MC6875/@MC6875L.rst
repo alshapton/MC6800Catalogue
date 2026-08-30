@@ -2,7 +2,7 @@
 
 .. _MC6875L:
 
-.. #Metadata {'Product':'MC6875L','Name':'MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':6}
+.. #Metadata {'Product':'MC6875L','Name':'MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)','Storage': 'Storage Box 2','Drawer':4,'Row':1,'Column':3}
 
 MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)
 =======================================================
@@ -21,7 +21,7 @@ MC6875L M6800 Two-Phase Clock Generator/Driver (MC6875)
    "Mask",""
    "Packaging","Ceramic"
    "Status","TBD"
-   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 6 <Storage_Box_2_Drawer_4>`"
+   "Location",":ref:`Storage Box 2, Drawer 4, Row 1, Column 3 <Storage_Box_2_Drawer_4>`"
    "Temperature","0-70\ :sup:`o`\ C"
    "Frequency","N/A"
    "Notes",""

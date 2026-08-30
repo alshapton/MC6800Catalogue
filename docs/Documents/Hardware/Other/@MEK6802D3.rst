@@ -1,0 +1,18 @@
+:orphan:
+
+.. _MEK6802D3:
+
+MEK6802D3 Evaluation Board
+==========================
+
+.. image:: ../../../images/Hardware/Other/MEK6802D3.png
+   :width: 400
+   :align: center
+
+.. rubric:: Collection Information
+
+.. csv-table:: 
+   :header: "Acquired"
+   :widths: auto
+
+   |notpresent|

@@ -13,7 +13,10 @@ Other Related Hardware
    "|present| :ref:`N/A <HEPEducatorKt2>`","Motorola HEP Kit Educator II",""
    ":ref:`MEK6800D1 <MEK6800D1HARDWARE>`","MEK6800D1 Development board for the 6800 microprocessor",""
    "|present| :ref:`MEK6800D2 <MEK6800D2>`","MEK6800D2 Development board for the 6800 microprocessor",""
-   ":ref:`MEK6803D3 <MEK6803D3>`","MEK6803D3 Evaluation Board for the 6803 microprocessor",""
+   ":ref:`MEK6802D3 <MEK6802D3>`","MEK6823D3 Evaluation Board for the 6802 microprocessor",""
    ":ref:`MEC68MIN3E <MEC68MIN3E>`","MINIBUG 3E Firmware ROM with Breakpoints capability",""
    ":ref:`MEC68MIN2 <MEC68MIN2>`","MINIBUG II Firmware",""
 
+    :ref:`HEPEducatorKt2 <HEPEducatorKt2>`,""
+    :ref:`MEK6800D2 <MEK6800D2>`,""
+    :ref:`MPUEvaluationBoard <MPU_EVALUATION_BOARD>`,""

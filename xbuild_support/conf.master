@@ -11,7 +11,7 @@
 project = 'Motorola MC6800 Family Product Catalogue'
 copyright = '2024-2026, Andrew Shapton'
 author = 'Andrew Shapton'
-release = '0.2'
+release = '0.3'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -22,6 +22,8 @@ extensions = [
         'sphinx_design',
         'linuxdoc.rstFlatTable',
         'sphinx.ext.extlinks',
+        'sphinxcontrib.jquery',
+        'sphinx_datatables',
 ]
 #        
 
@@ -30,6 +32,13 @@ templates_path = ['_templates']
 exclude_patterns = []
 root_prefix = '/Users/andrew/MyProjects/Motorola-6800/MC6800Catalogue'
 source_suffix = ['.rst']
+
+datatables_options = {
+    "pageLength": -1,
+    "language": {"lengthLabels": {"-1": "Show all"},"search": "Search (on this page): "},
+    "lengthMenu": [10, 25, 50, 100, 200, -1],
+}
+
 
 
 # ExtLinks configuration:
