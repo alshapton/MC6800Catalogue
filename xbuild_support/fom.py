@@ -2,12 +2,7 @@
 
 
 
-def do_get_artefacts_for_folder(DB,folder):
-    # Really should move to db.py
-    from .db import read_db
-    statement="SELECT * from documents where location = '" + folder + "' order by name;"
-    output = read_db(statement,DB)
-    return output
+
 
 def do_get_others(DB):
     # Really should move to db.py

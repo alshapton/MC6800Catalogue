@@ -16,9 +16,14 @@ The symbols used in the notes are as follows:
 
 Changes to the repository are documented here. 
 
+## SEP-2026
+
+:ophiuchus: Retro fitting symbols to CHANGELOG back to 2025-11-14  
+:ophiuchus: Moved some functions to db.py from fom.py
+:ophiuchus: further work on deprecating storage.properties file
+
 ## AUG-2026
 
- 
 :new: Added MC68A21P to collection  
 :new: Added MC68A03P to collection  
 :new: Added MC68B09PDS to collection  
@@ -476,180 +481,180 @@ Changes to the repository are documented here.
 
 ## 2026-01-27
 
-- Added EDUCATOR-II to collection
-- Updated HEPC4801L to include in collection
-- Corrected impending bug with more than 10 locations for storage
-- Removed :nosearch: flag  as was nonfunctional
-- Added HEPC4821L to collection
-- Added MCM6810CPD to listing
-- Added MC6840CPD to listing
-- Improved pictures for HEPC4821L & HEPC4801L
-- Added HEPC4811P to collection
-- Introduced initial "family" CPU page
+:new: Added EDUCATOR-II to collection  
+:new: Updated HEPC4801L to include in collection  
+:bug: Corrected impending bug with more than 10 locations for storage  
+:put_litter_in_its_place: Removed :nosearch: flag  as was nonfunctional  
+:new: Added HEPC4821L to collection  
+:new: Added MCM6810CPD to listing  
+:new: Added MC6840CPD to listing  
+:eight_spoked_asterisk: Improved pictures for HEPC4821L & HEPC4801L  
+:new: Added HEPC4811P to collection  
+:new: Introduced initial "family" CPU page  
 
 ## 2026-01-09
 
-- Commenced removing pages with <no title> from search results using :nosearch: pragma ass first line in those pages
+:ophiuchus: Commenced removing pages with <no title> from search results using :nosearch: pragma as first line in those pages  
 
 ## 2026-01-08
 
-- Added M6809 XDOS Absolute Assembler Reference Manual to listing
-- Added MC6840L Programmable Timer Module (PTM) to collection
+:new: Added M6809 XDOS Absolute Assembler Reference Manual to listing  
+:new: Added MC6840L Programmable Timer Module (PTM) to collection  
 
 ## 2026-01-04
 
-- Added new pictures to Educator II
-- Corrected _static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address
-- Added new MEK6800D2 pictures
-- Added MC68488 GPIA Users Manual to listing
+:new: Added new pictures to Educator II  
+:bug: _static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address  
+:new: Added new MEK6800D2 pictures  
+:new: Added MC68488 GPIA Users Manual to listing  
 
 ## 2025-12-30
 
-- Added Motorola HEP Kit Educator II to in transit
+:new: Added Motorola HEP Kit Educator II to in transit  
 
 ## 2025-12-28
 
-- Added MC6840L in transit
+:new: Added MC6840L in transit  
 
 ## 2025-12-27
 
-- Added MEX6800-1 to collection
+:new: Added MEX6800-1 to collection    
 
 ## 2025-12-26
 
-- Added MEX6850 ACIA Module Supplement to listing
-- Added MEX68USEC 2Mhz User System Evaluator User Guide to listing
-- Added MCM610AP to intransit
+:new: Added MEX6850 ACIA Module Supplement to listing  
+:new: Added MEX68USEC 2Mhz User System Evaluator User Guide to listing  
+:new: Added MCM610AP to intransit  
 
 ## 2025-12-19
 
-- Confirmed that JBUG is version 1.8
+:new: Confirmed that JBUG is version 1.8  
 
 ## 2025-12-14
 
-- Added MCM6810S 128 x 8-bit RAM to listing
+:new: Added MCM6810S 128 x 8-bit RAM to listing  
 
 ## 2025-12-13
 
-- Added MEX68162(D) - "MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide to listing
+:new: Added MEX68162(D) - "MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide to listing  
 
 ## 2025-12-09
 
-- Added MEX6800-1 MPU to in transit
+:new: Added MEX6800-1 MPU to in transit  
 
 ## 2025-12-02
 
-- Added MC6843L to collection
-- Added MDOS 2.20 disk image to collection
-- Added MEX6800-1 MPU to in transit
-- MEX68162(D) - "MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide to listing
-- Added MCM6810S 128 x 8-bit RAM to listing
-- Confirmed that JBUG is version 1.8
-- Added MEX6850 ACIA Module Supplement to listing
-- Added MEX68USEC 2Mhz User System Evaluator User Guide to listing
-- Added MCM610AP to intransit
-- Added MEX6800-1 to collection
-- Added MC6840L in transit
-- Added MC6843L to collection
-- Added MDOS 2.20 disk image to collection
+:new: Added MC6843L to collection  
+:new: Added MDOS 2.20 disk image to collection  
+:new: Added MEX6800-1 MPU to in transit  
+:new: MEX68162(D) - "MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide to listing  
+:new: Added MCM6810S 128 x 8-bit RAM to listing  
+:new: Confirmed that JBUG is version 1.8  
+:new: Added MEX6850 ACIA Module Supplement to listing  
+:new: Added MEX68USEC 2Mhz User System Evaluator User Guide to listing  
+:new: Added MCM610AP to intransit  
+:new: Added MEX6800-1 to collection  
+:new: Added MC6840L in transit  
+:new: Added MC6843L to collection  
+:new: Added MDOS 2.20 disk image to collection  
 
 ## 2025-12-01
 
-- Completed final updates and successful rebuild of ICs
-- Added last two template files to IC Index folder
-- Build script now writes a complete "ICsNEW" shadow setup for ICs
+:atom_symbol: Added last two template files to IC Index folder  
+:atom_symbol: Completed final updates and successful rebuild of ICs  
+:atom_symbol: Build script now writes a complete "ICsNEW" shadow setup for ICs  
 
 ## 2025-11-30
 
-- Creating initial shadow IC framework for IC creation from DB
-- pre.fragments created
-- Added options to manage seed IC file generation and ingestion
+:atom_symbol: Creating initial shadow IC framework for IC creation from DB  
+:atom_symbol: pre.fragments created  
+:atom_symbol: Added options to manage seed IC file generation and ingestion  
 
 ## 2025-11-29
 
-- Fixed issue with creation of MC6855 from screatch
-- Added IC list to DB table to drive IC creation
+:bug: Fixed issue with creation of MC6855 from screatch  
+:atom_symbol: Added IC list to DB table to drive IC creation  
 
 ## 2025-11-27
 
-- All ICs now aligned.
-- Final alignment of straggler ICs
-- Aligned MCM6832
-- Aligned MCM6830
-- Aligned MCM6810
-- Aligned MC68701
-- Aligned MC68488
-- Aligned MC68490
-- Added M68MASR010M MDOS MacroAssembler 3.0 to collection
+:atom_symbol: All ICs now aligned  
+:atom_symbol: Final alignment of straggler ICs  
+:atom_symbol: Aligned MCM6832  
+:atom_symbol: Aligned MCM6830  
+:atom_symbol: Aligned MCM6810  
+:atom_symbol: Aligned MC68701  
+:atom_symbol: Aligned MC68488  
+:atom_symbol: Aligned MC68490  
+:new: Added M68MASR010M MDOS MacroAssembler 3.0 to collection  
 
 ## 2025-11-26
 
-- Added MC6843SL Floppy Disc controller
+:new: Added MC6843SL Floppy Disc controller  
 
 ## 2025-11-25
 
-- Aligned MC6887
-- Aligned MC6888
-- Aligned MC6889
-- Aligned MC6880A
-- Aligned MC6882
-- Aligned MC6883
-- Aligned MC6885
-- Aligned MC6886
-- Aligned MC6875
-- Aligned MC6859
-- Aligned MC6860
-- Aligned MC6862
-- Alignwed MC6870/1
-- Aligned MC6854
-- Improved appearance of build script when moving some snippet files
+:atom_symbol: Aligned MC6887  
+:atom_symbol: Aligned MC6888  
+:atom_symbol: Aligned MC6889  
+:atom_symbol: Aligned MC6880A  
+:atom_symbol: Aligned MC6882  
+:atom_symbol: Aligned MC6883  
+:atom_symbol: Aligned MC6885  
+:atom_symbol: Aligned MC6886  
+:atom_symbol: Aligned MC6875  
+:atom_symbol: Aligned MC6859  
+:atom_symbol: Aligned MC6860  
+:atom_symbol: Aligned MC6862  
+:atom_symbol: Alignwed MC6870/1  
+:atom_symbol: Aligned MC6854  
+:atom_symbol: Improved appearance of build script when moving some snippet files  
 
 ## 2025-11-14
 
-- Aligned MC6809
-- Aligned MC6809E & MC6820
-- Aligned MC6821
-- Aligned MC6828
-- Aligned MC6829
-- Aligned MC6835
-- Aligned MC6839
-- Aligned MC6840
-- Aligned MC6843
-- Added MC6801L1UM(AD) LILbug Monitor for the MC6801L1 to listing
-- Added LILbug monitor to collection
-- Added M68MM12 Micromodule 12 GPIB Interface Module to collection
-- Added MCM68A10P to collection
-- Added MC6887P to collection
-- Corrected missing MC6800GMCM
-- Added M68MM15C Micromodule 15C High Level D/A module to collection.
-- Improved build script for look'n'feel
-- Added M68MM15BEX Micromodule 15BEX Low Level Expander module to intransit
-- Added Statistics page
-- Added MC68B21P to collection
-- Added M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module to collection
-- Added M68MM15BEX Low Level Expander Module to collection
-- Added M68MM15B Micromodule Low Level A/D Module to in transiit
-- Aligned MC6844
-- Aligned MC6845
-- Fixed issue with generating links to Micromodules for map
-- Tested on MC6887
-- Removed options 6 & 8 from Build script
-- parameterised some functions to use DB global
-- Added MC6880AP to collection
-- Added M68MM15B to collection
-- Added M68MM04Ato collection
-- Added M68MM15B to collection
-- Added M68MM15A Micromodule 15A High Level A/D module to collection
-- Fixed bug with redundant in_transit file
-- Added M68MASR010M MDOS BASIC 2.0 to collection
-- Added hex dump and disassembly of M68BASR010M
-- Aligned MC6846
-- Aligned MC6847
-- Aligned MC6850
-- Aligned MC6852
-- Aligned MC6803E
-- Aligned MC6803NR
-- Aligned MC6808
+:atom_symbol: Aligned MC6809  
+:atom_symbol: Aligned MC6809E & MC6820  
+:atom_symbol: Aligned MC6821  
+:atom_symbol: Aligned MC6828  
+:atom_symbol: Aligned MC6829  
+:atom_symbol: Aligned MC6835  
+:atom_symbol: Aligned MC6839  
+:atom_symbol: Aligned MC6840  
+:atom_symbol: Aligned MC6843  
+:new: Added MC6801L1UM(AD) LILbug Monitor for the MC6801L1 to listing  
+:new: Added LILbug monitor to collection  
+:new: Added M68MM12 Micromodule 12 GPIB Interface Module to collection  
+:new: Added MCM68A10P to collection  
+:new: Added MC6887P to collection  
+:bug: Corrected missing MC6800GMCM  
+:new: Added M68MM15C Micromodule 15C High Level D/A module to collection.  
+:atom_symbol: Improved build script for look'n'feel  
+:new: Added M68MM15BEX Micromodule 15BEX Low Level Expander module to intransit  
+:atom_symbol: Added Statistics page  
+:new: Added MC68B21P to collection  
+:new: Added M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module to collection  
+:new: Added M68MM15BEX Low Level Expander Module to collection  
+:new: Added M68MM15B Micromodule Low Level A/D Module to in transit  
+:atom_symbol: Aligned MC6844  
+:atom_symbol: Aligned MC6845  
+:atom_symbol: Fixed issue with generating links to Micromodules for map  
+:atom_symbol: Tested on MC6887  
+:atom_symbol: Removed options 6 & 8 from Build script  
+:atom_symbol: parameterised some functions to use DB global  
+:new: Added MC6880AP to collection  
+:new: Added M68MM15B to collection  
+:new: Added M68MM04Ato collection  
+:new: Added M68MM15B to collection  
+:new: Added M68MM15A Micromodule 15A High Level A/D module to collection  
+:bug: Fixed bug with redundant in_transit file  
+:new: Added M68MASR010M MDOS BASIC 2.0 to collection  
+:new: Added hex dump and disassembly of M68BASR010M  
+:atom_symbol: Aligned MC6846  
+:atom_symbol: Aligned MC6847  
+:atom_symbol: Aligned MC6850  
+:atom_symbol: Aligned MC6852  
+:atom_symbol: Aligned MC6803E  
+:atom_symbol: Aligned MC6803NR  
+:atom_symbol: Aligned MC6808  
 
 ## 2025-11-12
 
