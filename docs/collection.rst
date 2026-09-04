@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 29-08-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 04-09-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 

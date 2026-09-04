@@ -3,7 +3,7 @@
 Statistics
 ==========
 
-A set of statistics of known MC6800 artefacts (as at 29-08-2026).
+A set of statistics of known MC6800 artefacts (as at 04-09-2026).
 
 .. csv-table::
    :header: "Document Type","Total","Present","Not Present","In Transit" 

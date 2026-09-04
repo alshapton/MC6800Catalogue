@@ -494,7 +494,7 @@ def update_IC_pre_fragments():
 
 
 
-def update_storage():
+def update_storage(DB):
     console.print('\tCleaning and prepping storage files\n',style="info")
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in snippetfiles:
@@ -528,12 +528,23 @@ def update_storage():
         if 'Storage' in prop:
             storage_properties.append(prop)
         if 'Other' in prop:
-            other_storage.append(prop)
+            other_storage.append(prop) # To deprecate
     file1.close()      
-    if len(other_storage) > 0:
-        oths = ast.literal_eval(other_storage[0])
-        for i in oths["Other"]:
-            misc_storage.append(i)
+    #if len(other_storage) > 0:
+    #    oths = ast.literal_eval(other_storage[0])
+    #    print(oths)
+    print('storage_properties=',storage_properties)
+    storage_properties={'Storage':do_get_storage_boxes(DB)}    
+    print('DB - Storage-properties=',storage_properties)
+
+    print('other_storage',other_storage)
+    oths={'Other':do_get_other_storage(DB)}  
+    print("DB-oths=",oths)
+    
+    for i in oths["Other"]:
+        misc_storage.append(i)
+    print("misc_storage=",misc_storage)
+    #exit()
     with open(ICLABELS_FILE,"w") as c:
         for file in files:
 
@@ -886,7 +897,6 @@ def update_storage():
     console.print('\nProducing V2 Storage Box/Drawer snippet files',style="info")
     produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
     
-    
     # Move snippets into snippets folder
     console.print('\n\t\tMoving snippets into snippets folder',style="info")
 
@@ -907,7 +917,7 @@ def update_storage():
                 
 
             _=line_prepender(snippetfile, PREAMBLE)
-            movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
+            #movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
             SF=snippetfile.replace(IC_LOCATIONS + OSSEP + 'tables.fragment.','').replace('.snippet','')
             if POSS_ISOPREAMBLE == ISOPREAMBLE:
                 console.print('     Duplicate tag detected: ' + ISOPREAMBLE,style="warning")
@@ -923,7 +933,7 @@ def update_storage():
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
-    
+
     # Produce new Folder snippets files
     console.print('\nProducing V2 Folder snippet files',style="info")
     produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
@@ -2449,7 +2459,7 @@ while True:
             console.print('\n\n\tCarousels updated',style="info")
             update_IC_pre_fragments()
             update_IC_index()
-            update_storage()
+            update_storage(DB)
             do_collection()
             do_statistics()
             console.print('Collection updated',style="info")

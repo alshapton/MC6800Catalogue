@@ -12,6 +12,12 @@ Change Log
 
 Changes to the repository are documented here. 
 
+SEP-2026
+--------
+
+* Retro fitting symbols to CHANGELOG back to 2026-01-08
+* Moved some functions to db.py from fom.py
+
 AUG-2026
 --------
 
@@ -30,6 +36,7 @@ AUG-2026
 * Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality
 * Updated front matter
 * Bump release version to 0.3 
+* Replaced VCF UK 26 logo on README with mc6800.info logo
 * Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)
 * Corrected acquired date format in XC6800B   
 
@@ -523,7 +530,6 @@ JUL-2026.1
 2026-01-27
 ----------
 
-
 * Added EDUCATOR-II to collection
 * Updated HEPC4801L to include in collection
 * Corrected impending bug with more than 10 locations for storage
@@ -533,20 +539,18 @@ JUL-2026.1
 * Added MC6840CPD to listing
 * Improved pictures for HEPC4821L & HEPC4801L
 * Added HEPC4811P to collection
-* Introduced initial "family" CPU page
+* Introduced initial "family" CPU page  
 
 2026-01-09
 ----------
 
-
-* Commenced removing pages with :raw-html-m2r:`<no title>` from search results using :nosearch: pragma ass first line in those pages
+* Commenced removing pages with :raw-html-m2r:`<no title>` from search results using :nosearch: pragma as first line in those pages  
 
 2026-01-08
 ----------
 
-
 * Added M6809 XDOS Absolute Assembler Reference Manual to listing
-* Added MC6840L Programmable Timer Module (PTM) to collection
+* Added MC6840L Programmable Timer Module (PTM) to collection  
 
 2026-01-04
 ----------

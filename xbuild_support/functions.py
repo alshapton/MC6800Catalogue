@@ -1,7 +1,7 @@
 
 def produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
-    from .fom import do_get_folders,do_get_artefacts_for_folder,do_get_others
-    from .db import read_db
+    from .fom import do_get_folders,do_get_others
+    from .db import read_db,do_get_artefacts_for_flder
     SOURCE='docs/Documents/Hardware/ICs/snippets/tables.fragment.'
     
     statement="SELECT distinct(location) FROM ics where location like '%<%>%' and location not like '%Storage%' order by location ;"
@@ -11,7 +11,6 @@ def produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
         loc=location.split('<')
         locright=loc[1][:-2]
         mainlabel=locright[:int(len(locright)/2)]
-        print(mainlabel)
         FILENAME = SOURCE + mainlabel + '.' + mainlabel + '.snippet'
 
         with open(FILENAME,"w") as opf:
@@ -36,7 +35,7 @@ def produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
         folders=do_get_folders(DB)    
     
         for folder in folders:
-            documents = do_get_artefacts_for_folder(DB,folder)
+            documents = do_get_artefacts_for_flder(DB,folder)
             number_of_documents = len(documents)
             if number_of_documents > 0:                
                 label='\n\n.. _'+folder.replace(' ','_') + '_map_reference:\n'
@@ -58,7 +57,7 @@ def produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
         others=do_get_others(DB)    
     
         for other in others:
-            documents = do_get_artefacts_for_folder(DB,other)
+            documents = do_get_artefacts_for_flder(DB,other)
             number_of_documents = len(documents)
             if number_of_documents > 0:
                 print('Storage: ' + other + ' has ' + str(number_of_documents))
@@ -113,7 +112,6 @@ def produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
                     if c_in_d > 0:
                         rc_for_drawer=do_get_rows_cols_for_drawer(DB,this_sb,this_draw_in_this_sb)
                         columns=do_get_col_widths_for_drawer(DB,sb_drawer.split('-')[0].replace(SB_PREFIX,''),sb_drawer.split('-')[1])
-                       
 
                         # Now we know that there are ics in this drawer/sb combo            
                         # and we have the row/col count
@@ -140,6 +138,8 @@ def produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
                         widths=columns[0].replace('[','').replace(']','').replace(' ','')
                         outputfile=SOURCE + row["storage"].replace(' ','_') + '.Drawer_' + sb_drawer.split('-')[1] + '.snippet'
                         with open(outputfile,"w") as opf:
+                            print(widths,columns[0])
+
                             label='\n\n.. _'+row["storage"].replace(' ','_') + '_Drawer_' + sb_drawer.split('-')[1]+':\n'
                             opf.write(label)
                             opf.write('\n')
@@ -147,6 +147,7 @@ def produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
                             opf.write('\n')
                             opf.write('.. csv-table::\n')
                             opf.write('   :header-rows: 0\n')
+                            print('widths=',widths)
                             opf.write('   :widths: ' + widths + '\n')
                             opf.write('\n')
                             for rc in range(0,int(row_count)):                            
@@ -250,10 +251,8 @@ def construct_drawer_reference(st, drawer):
     return ':ref:`' + str(st).replace(" ","") + "Drawer" + str(drawer) + '`'
 
 def get_cols_for_drawer(st,dr,rw, info):
-    
     import ast
-
-    l=ast.literal_eval(info[0])
+    l=ast.literal_eval(str(info))
     for j in l['Storage']:
         cols = []
         for i in range(0,len(j)):
