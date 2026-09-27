@@ -18,11 +18,11 @@ Changes to the repository are documented here.
 
 ## SEP-2026
 
-:atom_symbol: Bump m2r2 from 0.3.4 to 1.1.0
+:atom_symbol: Bump m2r2 from 0.3.4 to 1.1.0  
 :atom_symbol: Removed deprecated readthedocs.yaml file  
 :ophiuchus: Further restructuring work on build scripts  
 :ophiuchus: Retro fitting symbols to CHANGELOG back to 2025-11-14  
-:ophiuchus: Moved some functions to db.py from fom.py
+:ophiuchus: Moved some functions to db.py from fom.py  
 :ophiuchus: further work on deprecating storage.properties file
 
 ## AUG-2026
