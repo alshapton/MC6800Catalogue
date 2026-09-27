@@ -13,8 +13,12 @@ The symbols used in the notes are as follows:
 | :ophiuchus:                 | Under construction      |
 | :eight_spoked_asterisk:     | Updated                 |
 
-
 Changes to the repository are documented here. 
+
+## OCT-2026
+
+:ophiuchus: Further restructuring work on build scripts  
+
 
 ## SEP-2026
 
@@ -41,7 +45,7 @@ Changes to the repository are documented here.
 :atom_symbol: Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline  
 :atom_symbol: Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality  
 :atom_symbol: Updated front matter  
-:atom_symbol: Bump release version to 0.3 
+:atom_symbol: Bump release version to 0.3  
 :atom_symbol: Replaced VCF UK 26 logo on README with mc6800.info logo    
 :bug: Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)  
 :bug: Corrected acquired date format in XC6800B   
