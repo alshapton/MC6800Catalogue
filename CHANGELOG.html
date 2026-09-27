@@ -45,6 +45,15 @@
   <section id="change-log">
 <span id="changelog"></span><h1>Change Log<a class="headerlink" href="#change-log" title="Link to this heading">¶</a></h1>
 <p>Changes to the repository are documented here.</p>
+<section id="sep-2026">
+<h2>SEP-2026<a class="headerlink" href="#sep-2026" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Bump m2r2 from 0.3.4 to 1.1.0</p></li>
+<li><p>Retro fitting symbols to CHANGELOG back to 2025-11-14</p></li>
+<li><p>Moved some functions to db.py from fom.py</p></li>
+<li><p>further work on deprecating storage.properties file</p></li>
+</ul>
+</section>
 <section id="aug-2026">
 <h2>AUG-2026<a class="headerlink" href="#aug-2026" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -63,6 +72,7 @@
 <li><p>Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality</p></li>
 <li><p>Updated front matter</p></li>
 <li><p>Bump release version to 0.3</p></li>
+<li><p>Replaced VCF UK 26 logo on README with mc6800.info logo</p></li>
 <li><p>Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)</p></li>
 <li><p>Corrected acquired date format in XC6800B</p></li>
 </ul>
@@ -559,13 +569,9 @@
 </section>
 <section id="id43">
 <h2>2026-02-16<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">bug<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Added MC6801RM(AD3) MC6801 Reference Manual</p>
-</dd>
-</dl>
-</div></blockquote>
+<ul class="simple">
+<li><p>Added MC6801RM(AD3) MC6801 Reference Manual</p></li>
+</ul>
 </section>
 <section id="id44">
 <h2>2026-02-15<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h2>
@@ -624,7 +630,7 @@
 <section id="id50">
 <h2>2026-01-09<a class="headerlink" href="#id50" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Commenced removing pages with <span class="raw-html-m2r"><no title></span> from search results using :nosearch: pragma ass first line in those pages</p></li>
+<li><p>Commenced removing pages with <span class="raw-html-m2r"><no title></span> from search results using :nosearch: pragma as first line in those pages</p></li>
 </ul>
 </section>
 <section id="id51">
@@ -638,7 +644,7 @@
 <h2>2026-01-04<a class="headerlink" href="#id52" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Added new pictures to Educator II</p></li>
-<li><p>Corrected _static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address</p></li>
+<li><p>_static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address</p></li>
 <li><p>Added new MEK6800D2 pictures</p></li>
 <li><p>Added MC68488 GPIA Users Manual to listing</p></li>
 </ul>
@@ -714,8 +720,8 @@
 <section id="id62">
 <h2>2025-12-01<a class="headerlink" href="#id62" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Completed final updates and successful rebuild of ICs</p></li>
 <li><p>Added last two template files to IC Index folder</p></li>
+<li><p>Completed final updates and successful rebuild of ICs</p></li>
 <li><p>Build script now writes a complete “ICsNEW” shadow setup for ICs</p></li>
 </ul>
 </section>
@@ -737,7 +743,7 @@
 <section id="id65">
 <h2>2025-11-27<a class="headerlink" href="#id65" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>All ICs now aligned.</p></li>
+<li><p>All ICs now aligned</p></li>
 <li><p>Final alignment of straggler ICs</p></li>
 <li><p>Aligned MCM6832</p></li>
 <li><p>Aligned MCM6830</p></li>
@@ -799,7 +805,7 @@
 <li><p>Added MC68B21P to collection</p></li>
 <li><p>Added M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module to collection</p></li>
 <li><p>Added M68MM15BEX Low Level Expander Module to collection</p></li>
-<li><p>Added M68MM15B Micromodule Low Level A/D Module to in transiit</p></li>
+<li><p>Added M68MM15B Micromodule Low Level A/D Module to in transit</p></li>
 <li><p>Aligned MC6844</p></li>
 <li><p>Aligned MC6845</p></li>
 <li><p>Fixed issue with generating links to Micromodules for map</p></li>
@@ -1106,19 +1112,19 @@
 <section id="id95">
 <h2>2025-09-18<a class="headerlink" href="#id95" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Migrated to <svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-lock_open sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"></path></svg> and <svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-lock sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></svg> tags</p></li>
+<li><p>Migrated to |advanceinfo| and |confirminfo| tags</p></li>
 </ul>
 </section>
 <section id="id96">
 <h2>2025-09-17<a class="headerlink" href="#id96" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Migrated to <svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-thumb_down sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg> tag</p></li>
+<li><p>Migrated to |notpresent| tag</p></li>
 </ul>
 </section>
 <section id="id97">
 <h2>2025-09-16<a class="headerlink" href="#id97" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>now using <svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-verified sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><g><rect fill="none" height="24" width="24"></rect></g><g><path d="M23,12l-2.44-2.79l0.34-3.69l-3.61-0.82L15.4,1.5L12,2.96L8.6,1.5L6.71,4.69L3.1,5.5L3.44,9.2L1,12l2.44,2.79l-0.34,3.7 l3.61,0.82L8.6,22.5l3.4-1.47l3.4,1.46l1.89-3.19l3.61-0.82l-0.34-3.69L23,12z M10.09,16.72l-3.8-3.81l1.48-1.48l2.32,2.33 l5.85-5.87l1.48,1.48L10.09,16.72z"></path></g></svg> and <svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-list-ordered" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.604 3.089A.75.75 0 0 1 4 3.75V8.5h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 1 1 0-1.5h.75V5.151l-.334.223a.75.75 0 0 1-.832-1.248l1.5-1a.75.75 0 0 1 .77-.037ZM8.75 5.5a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5H8.75Zm0 6a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5H8.75Zm0 6a.75.75 0 0 0 0 1.5h11.5a.75.75 0 0 0 0-1.5H8.75ZM5.5 15.75c0-.704-.271-1.286-.72-1.686a2.302 2.302 0 0 0-1.53-.564c-.535 0-1.094.178-1.53.565-.449.399-.72.982-.72 1.685a.75.75 0 0 0 1.5 0c0-.296.104-.464.217-.564A.805.805 0 0 1 3.25 15c.215 0 .406.072.533.185.113.101.217.268.217.565 0 .332-.069.48-.21.657-.092.113-.216.24-.403.419l-.147.14c-.152.144-.33.313-.52.504l-1.5 1.5a.75.75 0 0 0-.22.53v.25c0 .414.336.75.75.75H5A.75.75 0 0 0 5 19H3.31l.47-.47c.176-.176.333-.324.48-.465l.165-.156a5.98 5.98 0 0 0 .536-.566c.358-.447.539-.925.539-1.593Z"></path></svg> identifiers</p></li>
+<li><p>now using |present| and |2ndsource| identifiers</p></li>
 <li><p>Added MC6801L-1 Microcomputer/Microprocessor (MCU/MPU) to in transit list</p></li>
 <li><p>Dealt with transition to intransit icon label</p></li>
 </ul>

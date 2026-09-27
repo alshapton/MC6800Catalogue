@@ -10,7 +10,15 @@ Change Log
 ==========
 
 
-Changes to the repository are documented here. 
+Changes to the repository are documented here.
+
+SEP-2026
+--------
+
+* Bump m2r2 from 0.3.4 to 1.1.0
+* Retro fitting symbols to CHANGELOG back to 2025-11-14
+* Moved some functions to db.py from fom.py
+* further work on deprecating storage.properties file
 
 AUG-2026
 --------
@@ -29,9 +37,10 @@ AUG-2026
 * Integrate sphinx-datatables to provide sorting, searching, and pagination for the timeline
 * Standardize timeline acquisition dates to YYYY-MM-DD format to support the new interactive table functionality
 * Updated front matter
-* Bump release version to 0.3 
+* Bump release version to 0.3
+* Replaced VCF UK 26 logo on README with mc6800.info logo
 * Corrected MEK6803D3 kit to MEK6802D3 (thanks to Stan)
-* Corrected acquired date format in XC6800B   
+* Corrected acquired date format in XC6800B
 
 JUL-2026
 --------
@@ -65,13 +74,13 @@ JUL-2026
 * Further optimising build scripts
 * Corrected issue with incorrect tagging of MC6803NRL
 * Corrected issue with incorrect placement of ICs in storage compared to DB
-* Corrected issue with not importing comments on documents  
+* Corrected issue with not importing comments on documents
 
 JUL-2026.1
 ----------
 
 * Added requirements.txt file for dependabot scans
-* Fixed issue with erroneous entry to timeline  
+* Fixed issue with erroneous entry to timeline
 
 2026-06-20 -> 2026-06-30
 ------------------------
@@ -136,7 +145,7 @@ JUL-2026.1
 * Optimised build script
 * Added some new CHANGELOG symbols
 * Added changelog page to SCOPE page
-* Introduced Dependabot alerting to codebase  
+* Introduced Dependabot alerting to codebase
 
 2026-06-19
 ----------
@@ -151,7 +160,7 @@ JUL-2026.1
 * Added MEX68PP3 PROM Programmer III to listing
 * Added MEX68USM Universal Support Module to listing
 * Added information about  MEX3870M/MC3870 Development System being out of scope for collecting
-* Commenced rationalising modules, development systems and hardware indexes  
+* Commenced rationalising modules, development systems and hardware indexes
 
 2026-06-18
 ----------
@@ -164,14 +173,14 @@ JUL-2026.1
 * Added MEX6821-2 PIA Input Output Module 2 to listing
 * Added MEX6850-2 ACIA SSDA Module II to listing
 * Added MEX68PI2  Printer Interface Module II to listing
-* Added MEX68SA2  Systems Analyser II to listing  
+* Added MEX68SA2  Systems Analyser II to listing
 
 2026-06-17
 ----------
 
 * Added MC68B21S to collection
 * Moved MC6821P in storage
-* Introduced the concept of Brochures and migrated all brochure content  
+* Introduced the concept of Brochures and migrated all brochure content
 
 2026-06-15
 ----------
@@ -179,26 +188,26 @@ JUL-2026.1
 * Added Datasheet for EXORciser 1 Emulator for M6800 Based Systems to listing
 * Added M68DTT2 - 220 Volt Table Top EXORciser 1 to listing
 * Added M68DTTU2B - 220 Volt Table Top EXORciser 1 with USEB to listing
-* Added MEX68RK - Rack Mounted Conversion Kit to listing  
+* Added MEX68RK - Rack Mounted Conversion Kit to listing
 
 2026-06-13
 ----------
 
 * Added HEP EDUCATOR-II Assembly And Operation Manual scan to collection
 * Added HEP EDUCATOR-II Power Supply Assembly And Operation Manual scan to collection
-* Added M68MDM9 to listing  
+* Added M68MDM9 to listing
 
 2026-06-11
 ----------
 
-* Added test link to MCDS document for additional products  
+* Added test link to MCDS document for additional products
 
 2026-06-06
 ----------
 
 * Added image of MC6800S
 * Added Image of MC6802P
-* Added MC6802P-1 to listing  
+* Added MC6802P-1 to listing
 
 2026-06-05
 ----------
@@ -206,27 +215,27 @@ JUL-2026.1
 * Added MC68B50PD Asynchronous Communications Interface Adapter to intransit
 * Added MC68B21S to intransit
 * Added MC68B54PDS to listing
-* Added experimental eBay product search mechanism  
+* Added experimental eBay product search mechanism
 
 2026-05-30
 ----------
 
 * Added better pictures for M68MDOS3(D) and M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User Guide
-* Added MC6801 Support Systems User Guide to listing. 
-* Added MEX68CT MOTEST-1 Component Tester Users Guide to listing  
+* Added MC6801 Support Systems User Guide to listing.
+* Added MEX68CT MOTEST-1 Component Tester Users Guide to listing
 
 2026-05-29
 ----------
 
 * Added invisible function "R" to rename carousel files (exp)
 * Added Motorola Exorset 30 Model M6809 DS35 (M68SETDS351) to listing
-* Fixed a bunch of typos  
+* Fixed a bunch of typos
 
 2026-05-28
 ----------
 
 * Added MC68HC09E 8-bit HCMOS Microprocessor Unit to listing
-* Corrected some build issues with the data  
+* Corrected some build issues with the data
 
 2026-05-24
 ----------
@@ -234,12 +243,12 @@ JUL-2026.1
 * Added MCM6810AL to listing
 * Added MCM6830AL-2 to listing
 * Added MC6800L2 to listing
-* Added new view to database - "present" showing all items present  
+* Added new view to database - "present" showing all items present
 
 2026-05-23
 ----------
 
-* Added MPU Clock 614.4 KHz to listing  
+* Added MPU Clock 614.4 KHz to listing
 
 2026-05-21
 ----------
@@ -272,10 +281,10 @@ JUL-2026.1
 * Added MMS68103-1 8K-byte RAM Module to listing
 * Added M68CIM1 Audio Cassette Interface Module to listing
 * Added M68PPR1 PDS PROM Programmer to listing
-* Added MEC68MIN3E MINIBUG 3E Firmware ROM with Breakpoints capability to listing:new: 
+* Added MEC68MIN3E MINIBUG 3E Firmware ROM with Breakpoints capability to listing:new:
 * Improved preliminary/advance info accuracy
 * Updated ADS-1 and siblings to include detail about configuration
-* Reformatted Other Hardware index page  
+* Reformatted Other Hardware index page
 
 2026-05-20
 ----------
@@ -286,12 +295,12 @@ JUL-2026.1
 * Added Technical Information Publication 000 to collection
 * Added Motorola Microsystems Factory Service Plans and Warranty to collection
 * Added M68KBD1 Full ASCII Keyboard to in transit
-*  Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)  
+*  Upgraded build environment to Sphinx 9.1.0 (incl. dependencies)
 
 2026-05-13
 ----------
 
-* Added M68MMESH(D1) Micromodule Enclosure and System Hardware (etc) to collection  
+* Added M68MMESH(D1) Micromodule Enclosure and System Hardware (etc) to collection
 
 2026-05-12
 ----------
@@ -299,32 +308,32 @@ JUL-2026.1
 * Updated folder 5
 * Added Folder 8
 * Added MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection
-* Added Addendum to MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection  
+* Added Addendum to MEX6864 16K-64K Hidden Refresh Memory Module User's Guide to collection
 
 2026-05-08
 ----------
 
-* Cleaned references to Folder 1 - all complete and accurate  
+* Cleaned references to Folder 1 - all complete and accurate
 
 2026-05-06
 ----------
 
-* Moved ALL reference cards to Folder 7  
+* Moved ALL reference cards to Folder 7
 
 2026-05-04
 ----------
 
-:new Added M68MM01(D4) - Monoboard Microcomputer 1 Micromodule 1 manual to collection  
+:new Added M68MM01(D4) - Monoboard Microcomputer 1 Micromodule 1 manual to collection
 
 2026-05-03
 ----------
 
-* Added M6809 Pascal Compiler Datasheet to listing  
+* Added M6809 Pascal Compiler Datasheet to listing
 
 2026-05-01
 ----------
 
-* Added MC6808P to collection  
+* Added MC6808P to collection
 
 2026-04-27
 ----------
@@ -335,7 +344,7 @@ JUL-2026.1
 * Added M68MMLC1/M68MMLC2 pictures
 * Added M68MMCC05 to pictures
 * Added M68MFLK to pictures
-* Corrected invalid image links  
+* Corrected invalid image links
 
 2026-04-26
 ----------
@@ -352,29 +361,29 @@ JUL-2026.1
 * Added M68MMSC1 Micromodule Short Chassis 115V to listing
 * Added M68MMSC2 Micromodule Short Chassis 220V to listing
 * Added M68MMLC1 Micromodule Long Chassis 115V to listing
-* Added M68MMLC2 Micromodule Long Chassis 220V to listing  
+* Added M68MMLC2 Micromodule Long Chassis 220V to listing
 
 2026-04-23
 ----------
 
-* Added MC6808P to in transit  
+* Added MC6808P to in transit
 
 2026-04-14
 ----------
 
-* Added MC68A40P to collection  
+* Added MC68A40P to collection
 
 2026-04-10
 ----------
 
-* Added Understanding Microprocessors to the collection  
+* Added Understanding Microprocessors to the collection
 
 2026-04-08
 ----------
 
 * Moved MC68B21L to make room for new MC6800 in first drawer
 * Added MC6800CP to collection
-* Added MC6882AL to collection   
+* Added MC6882AL to collection
 
 2026-04-07
 ----------
@@ -386,7 +395,7 @@ JUL-2026.1
 * Updated Micromodule Enclosure and System Hardware (etc) to in transit
 * Updated MEX6864 16K-64K Hidden Refresh Memory Module Users Guide to  in transit
 * Added Understanding Microprocessors document (and added to in transit list)
-* Added EXORset Resident Pascal Compiler Users Guide document (and added to in transit list)  
+* Added EXORset Resident Pascal Compiler Users Guide document (and added to in transit list)
 
 2026-04-01
 ----------
@@ -395,7 +404,7 @@ JUL-2026.1
 * Swapped MC68B00P and MC68B40P positions
 * Swapped MC6800CL and MC68B44P positions
 * Moved XC6845L to Drawer 3
-* Added MC68A00P to collection  
+* Added MC68A00P to collection
 
 2026-03-25
 ----------
@@ -405,12 +414,12 @@ JUL-2026.1
 * Swapped positions of MC6800GMCM and MC68B44L
 * Swapped positions of MC6800L and  MC6821P
 * Changed status for XC6800B and MC6800BQCJC to notpresent
-* Changed MC68A00P to in transit  
+* Changed MC68A00P to in transit
 
 2026-03-21
 ----------
 
-* Full update and recon of site  
+* Full update and recon of site
 
 2026-03-12
 ----------
@@ -419,7 +428,7 @@ JUL-2026.1
 * Added 48K Dynamic RAM Module with parity to listing
 * Added 64K Dynamic RAM Module with parity to listing
 * Added additionnal information re: copyrights
-* Added MC6800BQCJC and XC6800B to under offer  
+* Added MC6800BQCJC and XC6800B to under offer
 
 2026-03-11
 ----------
@@ -427,13 +436,13 @@ JUL-2026.1
 * Added MEX6854 Support Module Users Guide to list
 * Added EXORciser II Development System 220V without Memory to list
 * Added EXORciser II Development System 220V with 32K Dynamic Memory to list
-* Added EXORciser II Development System 220V with 32K Static Memory to list  
+* Added EXORciser II Development System 220V with 32K Static Memory to list
 
 2026-03-10
 ----------
 
 * Changed MC68A45P and MC68A00P to in transit
-* Changed M6800 Microprocessor Programming Manual to notpresent  
+* Changed M6800 Microprocessor Programming Manual to notpresent
 
 2026-03-04
 ----------
@@ -442,7 +451,7 @@ JUL-2026.1
 * Added MEX68488 GPIA Support Module Users Guide to listing
 * Added MEX6821-2 Input/Output Module Users Guide to listing
 * Added M68MM19/M68MM19A Monoboard Microcomputer Micromodule 19/19A User to listing
-* Added MEX6845 CRTC Support Module Users Guide to listing  
+* Added MEX6845 CRTC Support Module Users Guide to listing
 
 2026-03-02
 ----------
@@ -451,7 +460,7 @@ JUL-2026.1
 * Added additional article and image for MES6800
 * Added MEK6803D3 Evaluation Board to listing
 * Added Motorola Exorset 30 Model M6809 Set 30 to listing
-* Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing  
+* Added MEX68SA2/MEX6809SA Systems Analyzer Module Users Guide to listing
 
 2026-02-26
 ----------
@@ -462,46 +471,46 @@ JUL-2026.1
 * Added MEX6820 Input/Output Module Supplement Users Guide to listing
 * Added MEX68USEB User System Evaluator Users Guide to listing
 * Added M6800 Microprocessor Programming Manual to intransit
-* Added MC6800P to collection  
+* Added MC6800P to collection
 
 2026-02-24
 ----------
 
-* Changes for repoint to enable xbuild to work with GH Pages  
+* Changes for repoint to enable xbuild to work with GH Pages
 
 2026-02-23
 ----------
 
-* Added MES6800 Schematic to collection  
+* Added MES6800 Schematic to collection
 
 2026-02-17
 ----------
 
 * Added MC6800CL and MC6800P to in transit
 * Corrected in transit formatting
-* Corrected MC6800GMCM issue  
+* Corrected MC6800GMCM issue
 
 2026-02-16
 ----------
 
- :bug: Added MC6801RM(AD3) MC6801 Reference Manual  
+* Added MC6801RM(AD3) MC6801 Reference Manual
 
 2026-02-15
 ----------
 
-* Added CNAME file  
+* Added CNAME file
 
 2026-02-14
 ----------
 
-* Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection  
+* Added MC68HC11A8RG/AD MC68HC11A8 Programming Reference Guide to collection
 
 2026-02-13
 ----------
 
 * Corrected PASCAL manual location
 * Added M68 Pascal reference Manual to collection
-* Final fixes to make Github pages  
+* Final fixes to make Github pages
 
 2026-02-12
 ----------
@@ -513,16 +522,15 @@ JUL-2026.1
 * Add furo package to requirements
 * Add Sphinx workflow for rendering documentation
 * Removed Family page
-* Removed HoverXF Extension  
+* Removed HoverXF Extension
 
 2026-02-11
 ----------
 
-* Added extra pictures to MES6800  
+* Added extra pictures to MES6800
 
 2026-01-27
 ----------
-
 
 * Added EDUCATOR-II to collection
 * Updated HEPC4801L to include in collection
@@ -538,12 +546,10 @@ JUL-2026.1
 2026-01-09
 ----------
 
-
-* Commenced removing pages with :raw-html-m2r:`<no title>` from search results using :nosearch: pragma ass first line in those pages
+* Commenced removing pages with :raw-html-m2r:`<no title>` from search results using :nosearch: pragma as first line in those pages
 
 2026-01-08
 ----------
-
 
 * Added M6809 XDOS Absolute Assembler Reference Manual to listing
 * Added MC6840L Programmable Timer Module (PTM) to collection
@@ -551,33 +557,28 @@ JUL-2026.1
 2026-01-04
 ----------
 
-
 * Added new pictures to Educator II
-* Corrected _static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address
+* _static/Monitors/EDUCATOR-II/monitor.asm with new disassembly listing with correct base address
 * Added new MEK6800D2 pictures
 * Added MC68488 GPIA Users Manual to listing
 
 2025-12-30
 ----------
 
-
 * Added Motorola HEP Kit Educator II to in transit
 
 2025-12-28
 ----------
-
 
 * Added MC6840L in transit
 
 2025-12-27
 ----------
 
-
 * Added MEX6800-1 to collection
 
 2025-12-26
 ----------
-
 
 * Added MEX6850 ACIA Module Supplement to listing
 * Added MEX68USEC 2Mhz User System Evaluator User Guide to listing
@@ -586,30 +587,25 @@ JUL-2026.1
 2025-12-19
 ----------
 
-
 * Confirmed that JBUG is version 1.8
 
 2025-12-14
 ----------
-
 
 * Added MCM6810S 128 x 8-bit RAM to listing
 
 2025-12-13
 ----------
 
-
 * Added MEX68162(D) - "MEX6808-2,MEX6808-22,MEX6816-21, MEX6816-22S, 8K/16K,1.0 Mhz Users Guide to listing
 
 2025-12-09
 ----------
 
-
 * Added MEX6800-1 MPU to in transit
 
 2025-12-02
 ----------
-
 
 * Added MC6843L to collection
 * Added MDOS 2.20 disk image to collection
@@ -628,14 +624,12 @@ JUL-2026.1
 2025-12-01
 ----------
 
-
-* Completed final updates and successful rebuild of ICs
 * Added last two template files to IC Index folder
+* Completed final updates and successful rebuild of ICs
 * Build script now writes a complete "ICsNEW" shadow setup for ICs
 
 2025-11-30
 ----------
-
 
 * Creating initial shadow IC framework for IC creation from DB
 * pre.fragments created
@@ -644,15 +638,13 @@ JUL-2026.1
 2025-11-29
 ----------
 
-
 * Fixed issue with creation of MC6855 from screatch
 * Added IC list to DB table to drive IC creation
 
 2025-11-27
 ----------
 
-
-* All ICs now aligned.
+* All ICs now aligned
 * Final alignment of straggler ICs
 * Aligned MCM6832
 * Aligned MCM6830
@@ -665,12 +657,10 @@ JUL-2026.1
 2025-11-26
 ----------
 
-
 * Added MC6843SL Floppy Disc controller
 
 2025-11-25
 ----------
-
 
 * Aligned MC6887
 * Aligned MC6888
@@ -690,7 +680,6 @@ JUL-2026.1
 
 2025-11-14
 ----------
-
 
 * Aligned MC6809
 * Aligned MC6809E & MC6820
@@ -714,7 +703,7 @@ JUL-2026.1
 * Added MC68B21P to collection
 * Added M68MM16 Micromodule 16 Memory-I/O-Timer Expansion Module to collection
 * Added M68MM15BEX Low Level Expander Module to collection
-* Added M68MM15B Micromodule Low Level A/D Module to in transiit
+* Added M68MM15B Micromodule Low Level A/D Module to in transit
 * Aligned MC6844
 * Aligned MC6845
 * Fixed issue with generating links to Micromodules for map
@@ -1021,19 +1010,19 @@ JUL-2026.1
 ----------
 
 
-* Migrated to |advanceinfo| and |confirminfo| tags
+* Migrated to \|advanceinfo\| and \|confirminfo\| tags
 
 2025-09-17
 ----------
 
 
-* Migrated to |notpresent| tag
+* Migrated to \|notpresent\| tag
 
 2025-09-16
 ----------
 
 
-* now using |present| and |2ndsource| identifiers
+* now using \|present\| and \|2ndsource\| identifiers
 * Added MC6801L-1 Microcomputer/Microprocessor (MCU/MPU) to in transit list
 * Dealt with transition to intransit icon label
 
