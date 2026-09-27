@@ -494,7 +494,7 @@ def update_IC_pre_fragments():
 
 
 
-def update_storage():
+def update_storage(DB):
     console.print('\tCleaning and prepping storage files\n',style="info")
     snippetfiles = glob.glob('**/*.snippet', recursive=True)
     for snippetfile in snippetfiles:
@@ -528,12 +528,23 @@ def update_storage():
         if 'Storage' in prop:
             storage_properties.append(prop)
         if 'Other' in prop:
-            other_storage.append(prop)
+            other_storage.append(prop) # To deprecate
     file1.close()      
-    if len(other_storage) > 0:
-        oths = ast.literal_eval(other_storage[0])
-        for i in oths["Other"]:
-            misc_storage.append(i)
+    #if len(other_storage) > 0:
+    #    oths = ast.literal_eval(other_storage[0])
+    #    print(oths)
+    print('storage_properties=',storage_properties)
+    storage_properties={'Storage':do_get_storage_boxes(DB)}    
+    print('DB - Storage-properties=',storage_properties)
+
+    print('other_storage',other_storage)
+    oths={'Other':do_get_other_storage(DB)}  
+    print("DB-oths=",oths)
+    
+    for i in oths["Other"]:
+        misc_storage.append(i)
+    print("misc_storage=",misc_storage)
+    #exit()
     with open(ICLABELS_FILE,"w") as c:
         for file in files:
 
@@ -886,7 +897,6 @@ def update_storage():
     console.print('\nProducing V2 Storage Box/Drawer snippet files',style="info")
     produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
     
-    
     # Move snippets into snippets folder
     console.print('\n\t\tMoving snippets into snippets folder',style="info")
 
@@ -907,7 +917,7 @@ def update_storage():
                 
 
             _=line_prepender(snippetfile, PREAMBLE)
-            movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
+            #movefile(snippetfile,  os.path.dirname(snippetfile) + OSSEP + 'snippets' + OSSEP + os.path.basename(snippetfile))
             SF=snippetfile.replace(IC_LOCATIONS + OSSEP + 'tables.fragment.','').replace('.snippet','')
             if POSS_ISOPREAMBLE == ISOPREAMBLE:
                 console.print('     Duplicate tag detected: ' + ISOPREAMBLE,style="warning")
@@ -923,7 +933,7 @@ def update_storage():
             sicif.write('.. include:: Documents'+OSSEP+'Hardware'+OSSEP+'ICs'+OSSEP+'snippets'+OSSEP+ os.path.basename(snippetfile) + '\n\n')
 
             console.print('     Moved ' + os.path.basename(snippetfile) + ' to ' + 'snippets',style="info")
-    
+
     # Produce new Folder snippets files
     console.print('\nProducing V2 Folder snippet files',style="info")
     produce_other_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS)
@@ -1381,7 +1391,7 @@ def do_collection():
         c.write('\n\n')
 
 
-def do_create():
+def do_create(OSSEP):
     console.print("Enter the following information:",style="info")
     product_name = input("  Product name: ")
     product_number = input("  Product number: ")
@@ -1412,43 +1422,43 @@ def do_create():
     if links == "Y":
         linkdocument = input("Document Name : ")
 
-    dotdot = '../../'
-    images = dotdot + 'images/'
+    dotdot = '..' + OSSEP + '..' + OSSEP
+    images = dotdot + 'images' + OSSEP
     match product_type:
         case "A":
-            location = "Documents/ApplicationNotes"
+            location = "Documents!ApplicationNotes".replace('!',OSSEP)
         case "B":
-            location = "Documents/Brochures"
-            images = dotdot + 'images/Brochures/'
+            location = "Documents!Brochures".replace('!',OSSEP)
+            images = dotdot + 'images!Brochures!'.replace('!',OSSEP)
         case "R":
-            location = "Documents/Reference"
-            images = dotdot + 'images/Reference/'
+            location = "Documents!Reference".replace('!',OSSEP)
+            images = dotdot + 'images!Reference!'.replace('!',OSSEP)
         case "D":
-            location = "Documents/Datasheets"
-            images = dotdot + 'images/DataSheets/'
+            location = "Documents!Datasheets".replace('!',OSSEP)
+            images = dotdot + 'images!DataSheets!'.replace('!',OSSEP)
         case "C":
-            location = "Documents/ReferenceCards"
+            location = "Documents!ReferenceCards".replace('!',OSSEP)
         case "M":
-            location = "Software/Monitors"
+            location = "Software!Monitors".replace('!',OSSEP)
         case "N":
-            location = "Documents/Manuals"            
-            images = dotdot + 'images/Manuals/'
+            location = "Documents!Manuals".replace('!',OSSEP)
+            images = dotdot + 'images!Manuals!'.replace('!',OSSEP)
         case "G":
-            location = "Documents/Generic"
+            location = "Documents!Generic".replace('!',OSSEP)
         case "I":
-            location = "Documents/Hardware/ICs"   
-            images = dotdot + 'images/Hardware/ICs/'
+            location = "Documents!Hardware!ICs".replace('!',OSSEP)   
+            images = dotdot + 'images!Hardware!ICs!'.replace('!',OSSEP)
         case "E":
-            location = "Documents/Hardware/EXORciser"
-            images = dotdot + 'images/Hardware/EXORciser/'
+            location = "Documents!Hardware!EXORciser".replace('!',OSSEP)
+            images = dotdot + 'images!Hardware!EXORciser!'.replace('!',OSSEP)
         case "O":
-            location = "Documents/Hardware/Other"
-            images = dotdot + 'images/Hardware/Other/'
+            location = "Documents!Hardware!Other".replace('!',OSSEP)
+            images = dotdot + 'images!Hardware!Other!'.replace('!',OSSEP)
         case _:
             console.print("Invalid product type",style="danger")
             exit() 
 
-    OUTPUT_FILE = f"docs/{location}/@{product_number}.rst"
+    OUTPUT_FILE = f"docs!{location}!@{product_number}.rst".replace('!',OSSEP)
     if os.path.exists(OUTPUT_FILE):
         console.print(f"File {OUTPUT_FILE} already exists",style="danger")
         exit()
@@ -1462,10 +1472,10 @@ def do_create():
         for i in product_name:
             c.write('=')
         c.write('\n\n')
-        original_image = MOVE + '/' + product_number + '.png'
+        original_image = MOVE + OSSEP + product_number + '.png'
         image_present = True
         if not os.path.exists(original_image):
-            c.write('.. image:: '+ dotdot + 'images' + '/NOIMAGE.png\n')
+            c.write('.. image:: '+ dotdot + 'images' + OSSEP + 'NOIMAGE.png\n')
             image_present = False
         else:
             c.write('.. image:: '+ images + product_number + '.png\n')
@@ -1482,16 +1492,16 @@ def do_create():
         original_document = ''
         if links == "Y":
             c.write('\n\n.. rubric:: Links\n\n')
-            target_document =  dotdot + '_static/' + location + "/"+ linkdocument
+            target_document =  dotdot + '_static/' + location + OSSEP + linkdocument
             c.write(":download:`" + product_name + " <" + target_document+ ">`")
-            original_document = MOVE + '/' + linkdocument
+            original_document = MOVE + OSSEP + linkdocument
         
         
-        target_image = images.replace(dotdot,'docs/') + product_number + '.png'
+        target_image = images.replace(dotdot,'docs' + OSSEP) + product_number + '.png'
         console.print('Ready to move.....',style="info")
         
         if links =="Y":
-            target_document =  "docs/_static/" + location + "/"+ linkdocument
+            target_document =  "docs!_static!" + location + "!"+ linkdocument.replace('!',OSSEP)
             movefile(original_document, target_document)
             
         if image_present:
@@ -2423,7 +2433,7 @@ while True:
             output = 'Date Range for week ' + str(w) + ' in year ' + str(y) + ' is from ' + firstdate + ' to ' +  lastdate
             console.print(output, style="info")
         case "2":
-            index_entry = do_create()
+            index_entry = do_create(OSSEP)
             console.print(index_entry,style="info")
         case "3":
             create_new_group_index()
@@ -2449,7 +2459,7 @@ while True:
             console.print('\n\n\tCarousels updated',style="info")
             update_IC_pre_fragments()
             update_IC_index()
-            update_storage()
+            update_storage(DB)
             do_collection()
             do_statistics()
             console.print('Collection updated',style="info")
