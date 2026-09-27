@@ -147,7 +147,6 @@ def produce_ic_snippets_files(IC_LOCATIONS,OSSEP,DB,XBS):
                             opf.write('\n')
                             opf.write('.. csv-table::\n')
                             opf.write('   :header-rows: 0\n')
-                            print('widths=',widths)
                             opf.write('   :widths: ' + widths + '\n')
                             opf.write('\n')
                             for rc in range(0,int(row_count)):                            
