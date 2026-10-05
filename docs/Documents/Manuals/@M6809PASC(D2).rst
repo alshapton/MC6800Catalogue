@@ -2,6 +2,8 @@
 
 .. _M6809PASC(D2):
 
+.. #Metadata {'Product':'@M6809PASC(D2)','Name':'M6809 Resident Pascal Compiler and Interpreter Users Guide','Folder': 'Honeywell Data Systems'}
+
 M6809 Resident Pascal Compiler and Interpreter Users Guide
 ==========================================================
 
@@ -15,4 +17,4 @@ M6809 Resident Pascal Compiler and Interpreter Users Guide
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 02-SEP-2026

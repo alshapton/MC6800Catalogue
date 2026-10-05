@@ -12,10 +12,20 @@ Change Log
 
 Changes to the repository are documented here.
 
+OCT-2026
+--------
+
+* Added M6809 Resident Pascal Compiler and Interpreter Users Guide to collection
+* Added MDOS Linking Loader Reference Manual to collection
+* Bump m2r2 from 1.1.0 to 2.1.0
+* Further restructuring work on build scripts
+
 SEP-2026
 --------
 
 * Bump m2r2 from 0.3.4 to 1.1.0
+* Removed deprecated readthedocs.yaml file
+* Further restructuring work on build scripts
 * Retro fitting symbols to CHANGELOG back to 2025-11-14
 * Moved some functions to db.py from fom.py
 * further work on deprecating storage.properties file

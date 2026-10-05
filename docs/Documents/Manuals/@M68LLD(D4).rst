@@ -2,7 +2,7 @@
 
 .. _M68LLD(D4):
 
-.. #Metadata {'Product':'M68LLD(D4)','Name':'MDOS Linking Loader Reference Manual','Folder': 'None'}
+.. #Metadata {'Product':'M68LLD(D4)','Name':'MDOS Linking Loader Reference Manual','Folder': 'Honeywell Data Dystens'}
 
 MDOS Linking Loader Reference Manual
 ====================================
@@ -17,7 +17,7 @@ MDOS Linking Loader Reference Manual
    :header: "Acquired"
    :widths: auto
 
-   |intransit|
+   |present| 02-SEP-2026
 
 .. rubric:: Links
 
