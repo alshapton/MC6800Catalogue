@@ -17,8 +17,8 @@ Changes to the repository are documented here.
 
 ## OCT-2026
 
+:atom_symbol: Bump m2r2 from 1.1.0 to 2.1.0  
 :ophiuchus: Further restructuring work on build scripts  
-
 
 ## SEP-2026
 
