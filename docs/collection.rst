@@ -2,7 +2,7 @@
 
 Collection
 ===========
-This is the current collection (as at 27-09-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
+This is the current collection (as at 05-10-2026) of the items produced by Motorola in the MC6800 Range of CPUs and their derivatives, support chips and tooling
 
 
 
@@ -280,8 +280,10 @@ This is the current collection (as at 27-09-2026) of the items produced by Motor
 
 	":ref:`M6801RM(AD2) <MC6801RMAD2>`","MC6801 Single Chip Microcomputer Reference Manual"
 	":ref:`M6809BASICM(D1) <M6809BASICM(D1)>`","EXORset 30 BASIC-M User's Guide",":ref:`Folder 5 <5_map_reference>`"
+ 	":ref:`M6809PASC(D2) <M6809PASC(D2)>`","M6809 Resident Pascal Compiler and Interpreter Users Guide",":ref:`Folder Honeywell Data Systems <Honeywell_Data_Systems_map_reference>`"
  	":ref:`M68CRA(D) <M68CRA(D)>`","M6800 Co-Resident Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68CRE(D) <M68CRE(D)>`","M6800 Co-Resident Editor Reference Manual",":ref:`Folder 1 <1_map_reference>`"
+ 	":ref:`M68LLD(D4) <M68LLD(D4)>`","MDOS Linking Loader Reference Manual",":ref:`Folder Honeywell Data Dystens <Honeywell_Data_Dystens_map_reference>`"
  	":ref:`M68MM01A(D4) <M68MM01A(D4)>`","Monoboard Microcomputer 1A Micromodule 1A",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68PLM(D2) <M68PLM(D2)>`","Motorola PASCAL Language Manual",":ref:`Folder 1 <1_map_reference>`"
  	":ref:`M68SAM(D2) <M68SAM(D2)>`","M6800 Cross Assembler Reference Manual",":ref:`Folder 1 <1_map_reference>`"

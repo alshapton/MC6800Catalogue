@@ -17,6 +17,8 @@ Changes to the repository are documented here.
 
 ## OCT-2026
 
+:new: Added M6809 Resident Pascal Compiler and Interpreter Users Guide to collection  
+:new: Added MDOS Linking Loader Reference Manual to collection  
 :atom_symbol: Bump m2r2 from 1.1.0 to 2.1.0  
 :ophiuchus: Further restructuring work on build scripts  
 

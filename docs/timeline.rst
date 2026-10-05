@@ -3,7 +3,7 @@
 Timeline
 ========
 
-This is the timeline of acquisitions (as at 27-09-2026).
+This is the timeline of acquisitions (as at 05-10-2026).
 
 .. csv-table::
    :header: "Date","Product" 
@@ -222,3 +222,5 @@ This is the timeline of acquisitions (as at 27-09-2026).
    2026-08-05,:ref:`MC68A03P Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC680P) <MC68A03P>`
    2026-08-05,:ref:`MC68B09PDS 8-Bit Microprocessing Unit <MC68B09PDS>`
    2026-08-17,:ref:`MC6803L-1 Microcomputer/Microprocessor +128 bytes of RAM (MCU/MPU) (MC6803) <MC6803L-1>`
+   2026-09-02,:ref:`M6809 Resident Pascal Compiler and Interpreter Users Guide <M6809PASC(D2)>`
+   2026-09-02,:ref:`MDOS Linking Loader Reference Manual <M68LLD(D4)>`
